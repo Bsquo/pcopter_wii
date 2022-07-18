@@ -1,6 +1,6 @@
-# MiniCopter: Adventure Flight
+# Radio Helicopter
 
-Also known as *Radio Helicopter* in Europe, and *プチコプターWii アドベンチャーフライト* (*Puchi Copter Wii: Adventure Flight*) in Japan.
+Also known as *MiniCopter: Adventure Flight* in the Americas, and *プチコプターWii アドベンチャーフライト* (*Puchi Copter Wii: Adventure Flight*) in Japan.
 
 Currently, only the European version is supported. It builds the following DOL:
 

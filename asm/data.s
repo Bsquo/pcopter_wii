@@ -1,6 +1,6 @@
 .include "macros.s"
 
-.section .data, "wa"  # 0x801CA560 - 0x801F1F00 ; 0x000279A0
+.section .data, "wa", @progbits  # 0x801CA560 - 0x801F1F00 ; 0x000279A0
 
 
 .global lbl_801CA560

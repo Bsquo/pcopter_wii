@@ -16,7 +16,8 @@ TARGET := pcopter_wii_eur
 
 BUILD_DIR := build/$(TARGET)
 
-ASM_DIRS := asm
+ASM_DIRS := asm                  \
+            asm/src/game
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))

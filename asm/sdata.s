@@ -1,6 +1,6 @@
 .include "macros.s"
 
-.section .sdata, "wa"  # 0x8060DE00 - 0x8060ECE0 ; 0x00000EE0
+.section .sdata, "wa", @progbits  # 0x8060DE00 - 0x8060ECE0 ; 0x00000EE0
 
 
 .global lbl_8060DE00

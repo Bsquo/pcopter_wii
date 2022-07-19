@@ -1,6 +1,6 @@
 .include "macros.s"
 
-.section .bss, "", @nobits  # 0x801F1F00 - 0x8060DE00 ; 0x0041BF00
+.section .bss, "wa", @nobits  # 0x801F1F00 - 0x8060DE00 ; 0x0041BF00
 
 
 .global lbl_801F1F00

@@ -1,6 +1,6 @@
 .include "macros.s"
 
-.section .init, "ax"  # 0x80004000 - 0x800064E0 ; 0x000024E0
+.section .init, "ax", @progbits  # 0x80004000 - 0x800064E0 ; 0x000024E0
 
 
 .global func_80004000

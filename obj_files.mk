@@ -7,7 +7,9 @@ EXTAB_O_FILES :=                                    \
 EXTABINDEX_O_FILES :=                               \
     $(BUILD_DIR)/asm/extabindex_.o
 
-TEXT_O_FILES := 					             \
+TEXT_O_FILES := 					                \
+    $(BUILD_DIR)/asm/src/game/main.o                \
+    $(BUILD_DIR)/asm/src/game/App.o                 \
     $(BUILD_DIR)/asm/text.o
 
 CTORS_O_FILES :=                                    \
@@ -28,11 +30,11 @@ BSS_O_FILES :=                                      \
 SDATA_O_FILES :=                                    \
     $(BUILD_DIR)/asm/sdata.o
 
-SBSS_O_FILES :=                                    \
+SBSS_O_FILES :=                                     \
     $(BUILD_DIR)/asm/sbss.o
 
 SDATA2_O_FILES :=                                   \
     $(BUILD_DIR)/asm/sdata2.o
 
-SBSS2_O_FILES :=                                   \
+SBSS2_O_FILES :=                                    \
     $(BUILD_DIR)/asm/sbss2.o

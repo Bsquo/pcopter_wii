@@ -1,27 +1,7 @@
 .include "macros.s"
 
-.section .sdata2, "wa"  # 0x8060F820 - 0x80611F20 ; 0x00002700
+.section .sdata2, "wa", @progbits  # 0x8060F820 - 0x80611F20 ; 0x00002700
 
-
-.global lbl_8060F820
-lbl_8060F820:
-
-	# ROM: 0x1EEEE0
-	.asciz "CVScene"
-
-.global lbl_8060F828
-lbl_8060F828:
-
-	# ROM: 0x1EEEE8
-	.asciz "CApp"
-	.balign 4
-
-.global lbl_8060F830
-lbl_8060F830:
-
-	# ROM: 0x1EEEF0
-	.asciz "CVApp"
-	.balign 4
 
 .global lbl_8060F838
 lbl_8060F838:

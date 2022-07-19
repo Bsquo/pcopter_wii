@@ -1,6 +1,6 @@
 .include "macros.s"
 
-.section .dtors, "wa"  # 0x801B83E0 - 0x801B8400 ; 0x00000020
+.section .dtors, "a", @progbits  # 0x801B83E0 - 0x801B8400 ; 0x00000020
 
 
 .global lbl_801B83E0

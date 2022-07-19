@@ -2,7 +2,6 @@
 
 .section .init, "ax", @progbits  # 0x80004000 - 0x800064E0 ; 0x000024E0
 
-
 .global func_80004000
 func_80004000:
 /* 80004000 00000100  3C 60 80 00 */	lis r3, 0x800030E4@ha

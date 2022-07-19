@@ -2,7 +2,6 @@
 
 .section extabindex_, "wa"  # 0x8000CB00 - 0x80011660 ; 0x00004B60
 
-
 .global lbl_8000CB00
 lbl_8000CB00:
 

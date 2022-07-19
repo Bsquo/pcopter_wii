@@ -2,7 +2,6 @@
 
 .section .rodata, "a", @progbits  # 0x801B8400 - 0x801CA560 ; 0x00012160
 
-
 .global lbl_801B87A8
 lbl_801B87A8:
 

@@ -2,7 +2,6 @@
 
 .section .bss, "wa", @nobits  # 0x801F1F00 - 0x8060DE00 ; 0x0041BF00
 
-
 .global lbl_801F1F00
 lbl_801F1F00:
 	.skip 0x20

@@ -2,7 +2,6 @@
 
 .section .sbss, "wa", @nobits  # 0x8060ECE0 - 0x8060F820 ; 0x00000B40
 
-
 .global lbl_8060ECE0
 lbl_8060ECE0:
 	.skip 0x1

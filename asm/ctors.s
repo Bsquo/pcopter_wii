@@ -2,7 +2,6 @@
 
 .section .ctors, "a", @progbits  # 0x801B8340 - 0x801B83E0 ; 0x000000A0
 
-
 .global lbl_801B8340
 lbl_801B8340:
 

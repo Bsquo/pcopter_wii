@@ -2,7 +2,6 @@
 
 .section .sdata2, "wa", @progbits  # 0x8060F820 - 0x80611F20 ; 0x00002700
 
-
 .global lbl_8060F838
 lbl_8060F838:
 

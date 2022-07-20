@@ -4,7 +4,7 @@ Also known as *MiniCopter: Adventure Flight* in the Americas, and *プチコプ�
 
 Currently, only the European version is supported. It builds the following DOL:
 
-pcopter_wii_eur.dol: `sha1: 772bec0b25fa6f947701b3355823608ad8171a27`
+pcopter_wii_eur.dol: `sha1: 772bec0b25fa6f947701b3355823608ad8171a27`. Once built, it can be found in `build/pcopter_wii_eur/`
 
 ## Build Instructions
 

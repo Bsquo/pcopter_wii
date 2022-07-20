@@ -9070,7 +9070,7 @@ lbl_80009FD4:
 lbl_8000A000:
 
 	# ROM: 0x1ACDE0
-	.4byte func_8002BBC0
+	.4byte __dt__7CVSceneFv
 
 .global lbl_8000A004
 lbl_8000A004:

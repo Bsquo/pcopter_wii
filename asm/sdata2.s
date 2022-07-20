@@ -1,6 +1,6 @@
 .include "macros.s"
 
-.section .sdata2, "wa", @progbits  # 0x8060F820 - 0x80611F20 ; 0x00002700
+.section .sdata2, "a", @progbits  # 0x8060F820 - 0x80611F20 ; 0x00002700
 
 .global lbl_8060F838
 lbl_8060F838:
@@ -467,14 +467,14 @@ lbl_8060F9A0:
 	.asciz "CVColl"
 	.balign 4
 
-.global lbl_8060F9A8
-lbl_8060F9A8:
+.global _42989
+_42989:
 
 	# ROM: 0x1EF068
 	.4byte 0
 
-.global lbl_8060F9AC
-lbl_8060F9AC:
+.global _42990
+_42990:
 
 	# ROM: 0x1EF06C
 	.4byte 0x437F0000

@@ -16,16 +16,54 @@ TARGET := pcopter_wii_eur
 
 BUILD_DIR := build/$(TARGET)
 
-ASM_DIRS := asm                          \
-            asm/src/game/actors          \
-			asm/src/game/app             \
-			asm/src/game/collision       \
-			asm/src/game/gfx             \
-			asm/src/game/managers        \
-			asm/src/game/math            \
-			asm/src/game/save            \
-			asm/src/game/scenes          \
-			asm/src/game/utils
+ASM_DIRS := asm                      \
+			asm/game                 \
+			asm/game/action          \
+            asm/game/actor           \
+			asm/game/actor/Copter          \
+			asm/game/actor/Copter/parts    \
+			asm/game/actor/Copter/parts    \
+			asm/game/actor/ActScn    \
+			asm/game/app             \
+			asm/game/collision       \
+			asm/game/gfx             \
+			asm/game/hbm             \
+			asm/game/managers        \
+			asm/game/math            \
+			asm/game/save            \
+			asm/game/scenary         \
+			asm/game/scenary/BGShop         \
+			asm/game/scenary/common         \
+			asm/game/scenary/Company         \
+			asm/game/scenary/Hospital         \
+			asm/game/scenary/Hotel         \
+			asm/game/scenary/Japan         \
+			asm/game/scenary/KidsRoom         \
+			asm/game/scenary/MultiPlayer         \
+			asm/game/scenary/Park         \
+			asm/game/scene           \
+			asm/game/scene/Game           \
+			asm/game/scene/GameMulti           \
+			asm/game/scene/Menu           \
+			asm/game/scene/Menu/Areamap           \
+			asm/game/scene/Menu/ClassicCheak           \
+			asm/game/scene/Menu/Config           \
+			asm/game/scene/Menu/CopterSelect           \
+			asm/game/scene/Menu/DataAccess           \
+			asm/game/scene/Menu/Home           \
+			asm/game/scene/Menu/ItemList           \
+			asm/game/scene/Menu/Logo           \
+			asm/game/scene/Menu/Main           \
+			asm/game/scene/Menu/Movie           \
+			asm/game/scene/Menu/PartSelect           \
+			asm/game/scene/Menu/Score           \
+			asm/game/scene/Menu/SDataCheak           \
+			asm/game/scene/Menu/Setting           \
+			asm/game/scene/Menu/Shop           \
+			asm/game/scene/Menu/Strap           \
+			asm/game/scene/Menu/Title           \
+			asm/game/scene/Menu/Treasure           \
+			asm/game/utils
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))

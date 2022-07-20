@@ -1428,7 +1428,7 @@ lbl_8000CB00:
 	.4byte func_8002B9B0
 	.4byte 0x00000098
 	.4byte lbl_80007B60
-	.4byte func_8002BA48
+	.4byte __ct__7CVSceneFv
 	.4byte 0x00000068
 	.4byte lbl_80007B68
 	.4byte func_8002BAB0
@@ -1443,13 +1443,13 @@ lbl_8000CB00:
 	.4byte func_8002BB68
 	.4byte 0x00000058
 	.4byte lbl_80007B88
-	.4byte func_8002BBC0
+	.4byte __dt__7CVSceneFv
 	.4byte 0x0000005C
 	.4byte lbl_80007B90
-	.4byte func_8002BC1C
+	.4byte Start__7CVSceneFv
 	.4byte 0x0000005C
 	.4byte lbl_80007B98
-	.4byte func_8002BC80
+	.4byte End__7CVSceneFv
 	.4byte 0x000000F0
 	.4byte lbl_80007BA0
 	.4byte lbl_8002BD70
@@ -1458,10 +1458,10 @@ lbl_8000CB00:
 	.4byte lbl_8002BDA8
 	.4byte 0x00000030
 	.4byte lbl_80007BB0
-	.4byte func_8002BDEC
+	.4byte Calc__7CVSceneFv
 	.4byte 0x000000A8
 	.4byte lbl_80007BB8
-	.4byte func_8002BEAC
+	.4byte Render__7CVSceneFv
 	.4byte 0x00000070
 	.4byte lbl_80007BC0
 	.4byte func_8002BF34

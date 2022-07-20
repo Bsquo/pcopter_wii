@@ -1488,14 +1488,14 @@ lbl_801CB828:
 	# ROM: 0x1C7928
 	.4byte lbl_8060DE90
 	.4byte 0
-	.4byte lbl_8002BC78
-	.4byte lbl_8002BEA4
-	.4byte lbl_8002BF24
-	.4byte lbl_8002BE9C
-	.4byte lbl_8002BF1C
-	.4byte lbl_8002BE94
-	.4byte lbl_8002BDD8
-	.4byte func_8002BBC0
+	.4byte StartLocal__7CVSceneFv
+	.4byte CalcLocal__7CVSceneFv
+	.4byte RenderLocal__7CVSceneFv
+	.4byte CalcLocalPause__7CVSceneFv
+	.4byte RenderLocalPause__7CVSceneFv
+	.4byte CalcLocalSystem__7CVSceneFv
+	.4byte EndLocal__7CVSceneFv
+	.4byte __dt__7CVSceneFv
 
 .global lbl_801CB850
 lbl_801CB850:
@@ -2868,7 +2868,7 @@ lbl_801CC5B0:
 	.4byte lbl_80055E70
 	.4byte lbl_80055E68
 	.4byte lbl_80056414
-	.4byte lbl_8002BE94
+	.4byte CalcLocalSystem__7CVSceneFv
 	.4byte lbl_8005641C
 	.4byte func_80011A14
 
@@ -2892,7 +2892,7 @@ lbl_801CC5E8:
 	.4byte lbl_800569A8
 	.4byte lbl_800569A0
 	.4byte lbl_80056F78
-	.4byte lbl_8002BE94
+	.4byte CalcLocalSystem__7CVSceneFv
 	.4byte lbl_80056F80
 	.4byte func_800119BC
 
@@ -3191,7 +3191,7 @@ lbl_801CC8F0:
 	.4byte lbl_8005DC50
 	.4byte lbl_8005DC48
 	.4byte lbl_8005DE74
-	.4byte lbl_8002BE94
+	.4byte CalcLocalSystem__7CVSceneFv
 	.4byte lbl_8005DE7C
 	.4byte func_80011AC4
 
@@ -3215,7 +3215,7 @@ lbl_801CC928:
 	.4byte lbl_8005E5F4
 	.4byte lbl_8005E5EC
 	.4byte lbl_8005EAEC
-	.4byte lbl_8002BE94
+	.4byte CalcLocalSystem__7CVSceneFv
 	.4byte lbl_8005EAF4
 	.4byte func_80011A6C
 
@@ -3789,7 +3789,7 @@ lbl_801CCF50:
 	.4byte lbl_80068370
 	.4byte lbl_80068368
 	.4byte lbl_80068BC0
-	.4byte lbl_8002BE94
+	.4byte CalcLocalSystem__7CVSceneFv
 	.4byte lbl_80068BC8
 	.4byte func_80011B1C
 

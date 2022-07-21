@@ -1,5 +1,51 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BA300
+lbl_801BA300:
+
+	# ROM: 0x1B6400
+	.asciz "CVEffect"
+	.balign 4
+	.4byte 0
+
+.global lbl_801BA310
+lbl_801BA310:
+
+	# ROM: 0x1B6410
+	.asciz "loading file (%s) ..."
+	.byte 0x63, 0x61
+	.asciz "nnot open file\n"
+	.asciz "cannot allocate memory\n"
+	.asciz "cannot load file\n"
+	.byte 0x44, 0x6F
+	.4byte 0x6E650A00
+	.asciz "loading file (%s) ..."
+	.byte 0x63, 0x61
+	.asciz "nnot open file\n"
+	.asciz "cannot allocate memory\n"
+	.asciz "cannot load file\n"
+	.byte 0x44, 0x6F
+	.4byte 0x6E650A00
+	.asciz "EffectNode"
+	.byte 0x54
+	.4byte 0x79706500
+	.asciz "Name"
+	.byte 0x4F, 0x66, 0x66
+	.4byte 0x73657400
+	.asciz "Act%d_Node%d"
+	.byte 0x45, 0x66, 0x66
+	.asciz "ect/#%d/type"
+	.byte 0x45, 0x66, 0x66
+	.asciz "ect/#%d/name"
+	.byte 0x45, 0x66, 0x66
+	.asciz "ect/#%d/base_node"
+	.byte 0x45, 0x66
+	.asciz "fect/#%d/base_node"
+	.byte 0x45
+	.asciz "ffect/#%d/start_flg"
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8002F7CC

@@ -4466,20 +4466,20 @@ lbl_801CD660:
 	# ROM: 0x1C9760
 	.4byte lbl_8060E6C0
 	.4byte 0
-	.4byte lbl_800813D8
+	.4byte __dt__15CScenaryJapan05Fv
 	.4byte lbl_80053770
-	.4byte lbl_8007FBEC
+	.4byte Start__15CScenaryJapan05Fv
 	.4byte lbl_8004800C
-	.4byte lbl_80080404
-	.4byte lbl_80080A5C
-	.4byte lbl_80081064
+	.4byte Calc__15CScenaryJapan05Fv
+	.4byte CalcEnding__15CScenaryJapan05Fv
+	.4byte Render__15CScenaryJapan05Fv
 	.4byte lbl_800537A4
 	.4byte func_80053874
-	.4byte lbl_80080114
+	.4byte PutActorDirect__15CScenaryJapan05Fiiff8CVVector
 	.4byte lbl_80048C04
-	.4byte lbl_80081040
+	.4byte GetAchieveRatio__15CScenaryJapan05FPiPi
 	.4byte lbl_80048A50
-	.4byte lbl_80080254
+	.4byte ActionTracking__15CScenaryJapan05FP11CActScnBaseUl8CVVector
 	.4byte lbl_80053BDC
 	.4byte lbl_80053D40
 	.4byte lbl_80053DF0

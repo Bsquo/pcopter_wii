@@ -1,5 +1,98 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801B9C60
+lbl_801B9C60:
+
+	# ROM: 0x1B5D60
+	.asciz "std::tr1::detail::shared_ptr_deleter<char, std::detail::default_delete<char[]>>"
+
+.global lbl_801B9CB0
+lbl_801B9CB0:
+
+	# ROM: 0x1B5DB0
+	.asciz "std::detail::default_delete<char[]>"
+
+.global lbl_801B9CD4
+lbl_801B9CD4:
+
+	# ROM: 0x1B5DD4
+	.asciz "Model/path"
+	.byte 0x56
+	.asciz "Model.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Failed assertion pResFile->GetResMdl(resMdl.GetName()) == resMdl"
+	.asciz "VModel.cpp"
+	.byte 0x4E
+	.asciz "W4R:Pointer Error\nm_pScnMdl(=%p) is not valid pointer."
+	.byte 0x56
+	.asciz "Model.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer Error\ntmp(=%p) is not valid pointer."
+	.asciz "VModel.cpp"
+	.byte 0x4E
+	.asciz "W4R:Failed assertion bBindResult"
+	.byte 0x56, 0x4D, 0x6F
+	.asciz "del.cpp"
+	.asciz "NW4R:Pointer Error\ntmp(=%p) is not valid pointer."
+	.byte 0x56, 0x4D
+	.asciz "odel.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Failed assertion bBindResult"
+	.byte 0x56
+	.asciz "Model.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer Error\ntmp(=%p) is not valid pointer."
+	.asciz "VModel.cpp"
+	.byte 0x4E
+	.asciz "W4R:Failed assertion bBindResult"
+	.byte 0x56, 0x4D, 0x6F
+	.asciz "del.cpp"
+	.asciz "NW4R:Pointer Error\ntmp(=%p) is not valid pointer."
+	.byte 0x56, 0x4D
+	.asciz "odel.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Failed assertion bBindResult"
+	.byte 0x56
+	.asciz "Model.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer Error\ntmp(=%p) is not valid pointer."
+	.asciz "VModel.cpp"
+	.byte 0x4E
+	.asciz "W4R:Failed assertion bBindResult"
+	.byte 0x56, 0x4D, 0x6F
+	.asciz "del.cpp"
+	.asciz "NW4R:Pointer Error\ntmp(=%p) is not valid pointer."
+	.byte 0x56, 0x4D
+	.asciz "odel.cpp"
+	.byte 0x25, 0x73, 0x00
+	.asciz "VModel.cpp"
+	.byte 0x4E
+	.asciz "W4R:Failed assertion resScn.IsValid()"
+	.byte 0x56, 0x4D
+	.asciz "odel.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Failed assertion bBound"
+	.byte 0x56, 0x4D
+	.asciz "odel.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer Error\ntmp(=%p) is not valid pointer."
+	.byte 0x56
+	.asciz "Model.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer Error\nm_pScnMdlEx(=%p) is not valid pointer."
+	.asciz "VModel.cpp"
+	.byte 0x4E
+	.asciz "W4R:Failed assertion bPushBack1"
+	.asciz "DrawOpa"
+	.asciz "DrawXlu"
+	.asciz "!std::exception!!std::logic_error!!std::length_error!!"
+	.byte 0x76
+	.asciz "ector length error"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_80027F34

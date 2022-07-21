@@ -1,5 +1,133 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801B9408
+lbl_801B9408:
+
+	# ROM: 0x1B5508
+	.asciz "CActCopter"
+	.balign 4
+
+.global lbl_801B9414
+lbl_801B9414:
+
+	# ROM: 0x1B5514
+	.asciz "CVListBase"
+	.balign 4
+
+.global lbl_801B9420
+lbl_801B9420:
+
+	# ROM: 0x1B5520
+	.asciz "Model/path#%d"
+	.byte 0x4D, 0x6F
+	.asciz "del/path#0"
+	.byte 0x43
+	.asciz "opter/Rotor/node_num"
+	.byte 0x41, 0x63, 0x74
+	.asciz "or/Rotor"
+	.byte 0x41, 0x63, 0x74
+	.asciz "or/Cannon"
+	.byte 0x41, 0x63
+	.asciz "tor/LiftCup"
+	.asciz "RotorNode_%d"
+	.byte 0x50, 0x43, 0x6F
+	.asciz "pter/PartsParam.txt"
+	.asciz "Group#%d/#%d"
+	.byte 0x41, 0x63, 0x74
+	.asciz "Copter.cpp"
+	.byte 0x4E
+	.asciz "W4R:Failed assertion resMdl.IsValid()"
+	.byte 0x52, 0x69
+	.asciz "gid/m"
+	.byte 0x52, 0x69
+	.asciz "gid/inertia"
+	.asciz "Rigid/inertia"
+	.byte 0x52, 0x69
+	.asciz "gid/inertia"
+	.asciz "Rigid/drag"
+	.byte 0x52
+	.asciz "igid/drag"
+	.byte 0x43, 0x6F
+	.asciz "pter/Rotor/thrust"
+	.byte 0x43, 0x6F
+	.asciz "pter/Rotor/thrust"
+	.byte 0x43, 0x6F
+	.asciz "pter/Rotor/node_num"
+	.asciz "Copter/Force/roll"
+	.byte 0x43, 0x6F
+	.asciz "pter/Force/pitch"
+	.byte 0x43, 0x6F, 0x70
+	.asciz "ter/Force/yaw"
+	.byte 0x43, 0x6F
+	.asciz "pter/Sound/pitch_gain"
+	.byte 0x43, 0x6F
+	.asciz "pter/Sound/pitch_area"
+	.byte 0x43, 0x6F
+	.asciz "pter/Sound/pitch_area"
+	.byte 0x43, 0x6F
+	.asciz "pter/Sound/name"
+	.asciz "Copter/Battery/capacity"
+	.asciz "Copter/Battery/decrease"
+	.asciz "Copter/Body/durability"
+	.byte 0x43
+	.asciz "opter/Body/stability"
+	.byte 0x43, 0x6F, 0x70
+	.asciz "ter/Body/lift_power"
+	.asciz "Copter/SkidAnim/node"
+	.byte 0x43, 0x6F, 0x70
+	.asciz "ter/SkidAnim/rate"
+	.byte 0x43, 0x6F
+	.asciz "pter/AutoHover/thrust"
+	.byte 0x43, 0x6F
+	.asciz "pter/AutoHover/thrust"
+	.byte 0x43, 0x6F
+	.asciz "pter/AutoHover/drag_f"
+	.byte 0x43, 0x6F
+	.asciz "pter/AutoHover/drag_tq"
+	.byte 0x43
+	.asciz "opter/AutoHover/drag_v"
+	.byte 0x43
+	.asciz "opter/AutoHover/drag_w"
+	.byte 0x41
+	.asciz "ctor/Cannon"
+	.asciz "Actor/LiftCup"
+	.byte 0x53, 0x45
+	.asciz "_Select"
+	.asciz "SE_Select"
+	.byte 0x53, 0x45
+	.asciz "2_ACannon"
+	.byte 0x53, 0x45
+	.asciz "2_LiftCup_A"
+	.asciz "speed"
+	.byte 0x73, 0x70
+	.4byte 0x65656400
+	.asciz "SE2_Speed_01"
+	.byte 0x53, 0x45, 0x5F
+	.4byte 0x4E470064
+	.asciz "amage"
+	.byte 0x64, 0x61
+	.asciz "mage"
+	.byte 0x41, 0x63, 0x74
+	.4byte 0x5F315000
+	.asciz "Act_2P"
+	.byte 0x47
+	.asciz "Smoke_1P"
+	.byte 0x47, 0x53, 0x6D
+	.asciz "oke_2P"
+	.byte 0x53
+	.asciz "hadow_1P"
+	.byte 0x53, 0x68, 0x61
+	.asciz "dow_2P"
+	.byte 0x53
+	.asciz "E_Kaifuku_01"
+	.byte 0x43, 0x68, 0x61
+	.4byte 0x72676500
+	.asciz "Charge"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8001A0D0

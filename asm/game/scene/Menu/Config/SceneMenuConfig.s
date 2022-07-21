@@ -1,5 +1,154 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BB3A0
+lbl_801BB3A0:
+
+	# ROM: 0x1B74A0
+	.4byte lbl_8060FBD8
+	.4byte lbl_8060FBE0
+	.4byte lbl_8060FBE8
+	.4byte lbl_8060FBF0
+	.4byte lbl_8060FBF8
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+
+.global lbl_801BB3C8
+lbl_801BB3C8:
+
+	# ROM: 0x1B74C8
+	.asciz "P_InputS"
+	.balign 4
+
+.global lbl_801BB3D4
+lbl_801BB3D4:
+
+	# ROM: 0x1B74D4
+	.asciz "P_SoundS"
+	.balign 4
+	.4byte lbl_8060FC00
+	.4byte lbl_8060FC08
+	.4byte lbl_801BB3C8
+	.4byte lbl_801BB3D4
+	.4byte lbl_8060FC10
+	.4byte lbl_8060FC18
+	.4byte lbl_8060FC20
+	.4byte lbl_8060FC28
+	.4byte lbl_8060FC30
+
+.global lbl_801BB404
+lbl_801BB404:
+
+	# ROM: 0x1B7504
+	.asciz "P_InputM"
+	.balign 4
+
+.global lbl_801BB410
+lbl_801BB410:
+
+	# ROM: 0x1B7510
+	.asciz "P_SoundM"
+	.balign 4
+	.4byte 0
+	.4byte lbl_8060FC38
+	.4byte lbl_8060FC40
+	.4byte lbl_801BB404
+	.4byte lbl_801BB410
+
+.global lbl_801BB430
+lbl_801BB430:
+
+	# ROM: 0x1B7530
+	.asciz "P_LoadMS"
+	.balign 4
+
+.global lbl_801BB43C
+lbl_801BB43C:
+
+	# ROM: 0x1B753C
+	.asciz "P_SaveMS"
+	.balign 4
+
+.global lbl_801BB448
+lbl_801BB448:
+
+	# ROM: 0x1B7548
+	.asciz "P_InputMS"
+	.balign 4
+
+.global lbl_801BB454
+lbl_801BB454:
+
+	# ROM: 0x1B7554
+	.asciz "P_SoundMS"
+	.balign 4
+	.4byte lbl_801BB430
+	.4byte lbl_801BB43C
+	.4byte lbl_801BB448
+	.4byte lbl_801BB454
+	.asciz "CSceneMenuFreeFlight"
+	.balign 4
+	.asciz "CSceneMenuCopterSelect"
+	.balign 4
+
+.global lbl_801BB4A0
+lbl_801BB4A0:
+
+	# ROM: 0x1B75A0
+	.asciz "CSceneMenuConfig"
+	.balign 4
+	.asciz "CSceneMenuBase"
+	.balign 4
+	.asciz "CVPadMgr"
+	.balign 4
+	.asciz "CVSoundMgr"
+	.balign 4
+
+.global lbl_801BB4DC
+lbl_801BB4DC:
+
+	# ROM: 0x1B75DC
+	.4byte 0x2F00436F
+	.asciz "nfig"
+	.byte 0x2E, 0x61, 0x72
+	.4byte 0x63005363
+	.asciz "eneMenuConfig.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer must not be NULL (archiveBuf)"
+	.byte 0x43, 0x6F, 0x6E
+	.4byte 0x66696700
+	.asciz "%s.brlyt"
+	.byte 0x43, 0x6F, 0x6E
+	.4byte 0x66696700
+	.asciz "SceneMenuConfig.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lytRes)"
+	.byte 0x50
+	.asciz "_IMes_P"
+	.asciz "P_IMes_M"
+	.byte 0x50, 0x5F, 0x49
+	.asciz "Mes_C"
+	.byte 0x42, 0x47
+	.asciz "M03_Home"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_B"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_B"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_B"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_B"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_B"
+	.balign 4
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8003A834

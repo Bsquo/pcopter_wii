@@ -1,5 +1,49 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BC208
+lbl_801BC208:
+
+	# ROM: 0x1B8308
+	.asciz "CSceneMenuScore"
+
+.global lbl_801BC218
+lbl_801BC218:
+
+	# ROM: 0x1B8318
+	.asciz "/PCopter/Menu/Result.arc"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuScore.cpp"
+	.asciz "NW4R:Pointer must not be NULL (archiveBuf)"
+	.byte 0x52
+	.asciz "esult"
+	.byte 0x52, 0x65
+	.asciz "sult.brlyt"
+	.byte 0x53
+	.asciz "ceneMenuScore.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer must not be NULL (lytRes)"
+	.byte 0x42, 0x47, 0x4D
+	.asciz "03_Home"
+	.asciz "ZCURSOR"
+	.asciz "SE_Decide_A"
+	.asciz "SE_Cursor_A"
+	.asciz "P_TreasureTitle"
+	.asciz "P_MissionB"
+	.byte 0x50
+	.asciz "_MissionTitle"
+	.byte 0x50, 0x5F
+	.asciz "TreasureB"
+	.byte 0x50, 0x5F
+	.asciz "TreasureTitle"
+	.byte 0x50, 0x5F
+	.asciz "MissionB"
+	.byte 0x50, 0x5F, 0x4D
+	.asciz "issionTitle"
+	.asciz "P_TreasureB"
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_800400FC

@@ -12581,7 +12581,7 @@ lbl_8000BEF4:
 	.4byte 0x00430010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_80081214
+	.4byte __dt__Q34nw4r3g3d8LightSetFv
 
 .global lbl_8000BF0C
 lbl_8000BF0C:
@@ -13386,7 +13386,7 @@ lbl_8000C478:
 lbl_8000C480:
 
 	# ROM: 0x1AF260
-	.4byte lbl_80080000
+	.4byte func_80080000
 	.4byte 0
 
 .global lbl_8000C488

@@ -1,5 +1,385 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BA6E8
+lbl_801BA6E8:
+
+	# ROM: 0x1B67E8
+	.asciz "Picture_Back"
+	.balign 4
+
+.global lbl_801BA6F8
+lbl_801BA6F8:
+
+	# ROM: 0x1B67F8
+	.asciz "Picture_Menu"
+	.balign 4
+
+.global lbl_801BA708
+lbl_801BA708:
+
+	# ROM: 0x1B6808
+	.asciz "Picture_Shop"
+	.balign 4
+
+.global lbl_801BA718
+lbl_801BA718:
+
+	# ROM: 0x1B6818
+	.asciz "Picture_Home"
+	.balign 4
+
+.global lbl_801BA728
+lbl_801BA728:
+
+	# ROM: 0x1B6828
+	.asciz "Picture_00"
+	.balign 4
+
+.global lbl_801BA734
+lbl_801BA734:
+
+	# ROM: 0x1B6834
+	.asciz "Picture_01"
+	.balign 4
+
+.global lbl_801BA740
+lbl_801BA740:
+
+	# ROM: 0x1B6840
+	.asciz "Picture_02"
+	.balign 4
+
+.global lbl_801BA74C
+lbl_801BA74C:
+
+	# ROM: 0x1B684C
+	.asciz "Picture_03"
+	.balign 4
+
+.global lbl_801BA758
+lbl_801BA758:
+
+	# ROM: 0x1B6858
+	.asciz "Picture_04"
+	.balign 4
+
+.global lbl_801BA764
+lbl_801BA764:
+
+	# ROM: 0x1B6864
+	.asciz "Picture_05"
+	.balign 4
+
+.global lbl_801BA770
+lbl_801BA770:
+
+	# ROM: 0x1B6870
+	.4byte lbl_801BA6E8
+	.4byte lbl_801BA6F8
+	.4byte lbl_801BA708
+	.4byte lbl_801BA718
+	.4byte lbl_801BA728
+	.4byte lbl_801BA734
+	.4byte lbl_801BA740
+	.4byte lbl_801BA74C
+	.4byte lbl_801BA758
+	.4byte lbl_801BA764
+
+.global lbl_801BA798
+lbl_801BA798:
+
+	# ROM: 0x1B6898
+	.asciz "Bounding_Back"
+	.balign 4
+
+.global lbl_801BA7A8
+lbl_801BA7A8:
+
+	# ROM: 0x1B68A8
+	.asciz "Bounding_Menu"
+	.balign 4
+
+.global lbl_801BA7B8
+lbl_801BA7B8:
+
+	# ROM: 0x1B68B8
+	.asciz "Bounding_Shop"
+	.balign 4
+
+.global lbl_801BA7C8
+lbl_801BA7C8:
+
+	# ROM: 0x1B68C8
+	.asciz "Bounding_Home"
+	.balign 4
+
+.global lbl_801BA7D8
+lbl_801BA7D8:
+
+	# ROM: 0x1B68D8
+	.4byte lbl_801BA798
+	.4byte lbl_801BA7A8
+	.4byte lbl_801BA7B8
+	.4byte lbl_801BA7C8
+	.4byte lbl_8060FAA0
+	.4byte lbl_8060FAA8
+	.4byte lbl_8060FAB0
+	.4byte lbl_8060FAB8
+	.4byte lbl_8060FAC0
+	.4byte lbl_8060FAC8
+
+.global lbl_801BA800
+lbl_801BA800:
+
+	# ROM: 0x1B6900
+	.asciz "Bounding_05"
+
+.global lbl_801BA80C
+lbl_801BA80C:
+
+	# ROM: 0x1B690C
+	.asciz "Bounding_06"
+
+.global lbl_801BA818
+lbl_801BA818:
+
+	# ROM: 0x1B6918
+	.asciz "Bounding_07"
+
+.global lbl_801BA824
+lbl_801BA824:
+
+	# ROM: 0x1B6924
+	.asciz "picture_3"
+	.balign 4
+
+.global lbl_801BA830
+lbl_801BA830:
+
+	# ROM: 0x1B6930
+	.asciz "picture_4"
+	.balign 4
+
+.global lbl_801BA83C
+lbl_801BA83C:
+
+	# ROM: 0x1B693C
+	.asciz "picture_5"
+	.balign 4
+
+.global lbl_801BA848
+lbl_801BA848:
+
+	# ROM: 0x1B6948
+	.4byte lbl_801BA800
+	.4byte lbl_801BA80C
+	.4byte lbl_801BA818
+	.4byte lbl_801BA824
+	.4byte lbl_801BA830
+	.4byte lbl_801BA83C
+
+.global lbl_801BA860
+lbl_801BA860:
+
+	# ROM: 0x1B6960
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000003
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000009
+	.4byte 0x00000006
+	.4byte 0x0000000A
+	.4byte 0x00000002
+	.4byte 0x00000005
+	.4byte 0x00000004
+	.4byte 0x0000000A
+	.4byte 0x00000006
+	.4byte 0x00000003
+	.4byte 0x00000007
+	.4byte 0x00000008
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000006
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000002
+	.4byte 0x00000005
+	.4byte 0x0000000A
+	.4byte 0x00000005
+	.4byte 0x00000004
+	.4byte 0x00000008
+	.4byte 0x00000007
+	.4byte 0x00000005
+	.4byte 0x00000007
+	.4byte 0x00000009
+	.4byte 0x0000000A
+	.4byte 0x0000000A
+	.4byte 0x00000008
+	.4byte 0x00000002
+
+.global lbl_801BA900
+lbl_801BA900:
+
+	# ROM: 0x1B6A00
+	.asciz "ReturnD_Y"
+	.balign 4
+
+.global lbl_801BA90C
+lbl_801BA90C:
+
+	# ROM: 0x1B6A0C
+	.asciz "ReturnD_N"
+	.balign 4
+
+.global lbl_801BA918
+lbl_801BA918:
+
+	# ROM: 0x1B6A18
+	.asciz "P_ReturnD_Y"
+
+.global lbl_801BA924
+lbl_801BA924:
+
+	# ROM: 0x1B6A24
+	.asciz "P_ReturnD_N"
+
+.global lbl_801BA930
+lbl_801BA930:
+
+	# ROM: 0x1B6A30
+	.asciz "NewAreaD_Y"
+	.balign 4
+
+.global lbl_801BA93C
+lbl_801BA93C:
+
+	# ROM: 0x1B6A3C
+	.asciz "ReturnD_N"
+	.balign 4
+
+.global lbl_801BA948
+lbl_801BA948:
+
+	# ROM: 0x1B6A48
+	.asciz "P_NewAreaD_Y"
+	.balign 4
+
+.global lbl_801BA958
+lbl_801BA958:
+
+	# ROM: 0x1B6A58
+	.asciz "P_ReturnD_N"
+
+.global lbl_801BA964
+lbl_801BA964:
+
+	# ROM: 0x1B6A64
+	.asciz "CSceneMenuAreamap"
+	.balign 4
+
+.global lbl_801BA978
+lbl_801BA978:
+
+	# ROM: 0x1B6A78
+	.asciz "areamap"
+	.4byte 0x2F002E61
+	.4byte 0x72630053
+	.asciz "ceneMenuAreamap.cpp"
+	.asciz "NW4R:Pointer must not be NULL (archiveBuf)"
+	.byte 0x25
+	.asciz "s.brlyt"
+	.asciz "SceneMenuAreamap.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (lytRes)"
+	.asciz "%s_Select.brlan"
+	.asciz "SceneMenuAreamap.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (rlanRes)"
+	.byte 0x50, 0x5F, 0x49
+	.asciz "Mes_P"
+	.byte 0x50, 0x5F
+	.asciz "IMes_M"
+	.byte 0x50
+	.asciz "_IMes_C"
+	.asciz "Picture_0%d"
+	.asciz "Point"
+	.byte 0x2F, 0x50
+	.asciz "Copter/Menu/Scenary.txt"
+	.asciz "%d/#%d"
+	.byte 0x50
+	.asciz "Copter/ResList.txt"
+	.byte 0x47
+	.asciz "roup#6/#%d"
+	.byte 0x53
+	.asciz "cenary/rank_border"
+	.byte 0x53
+	.asciz "cenary/rank_border"
+	.byte 0x53
+	.asciz "cenary/rank_border"
+	.byte 0x42
+	.asciz "GM02_Map"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cancel_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_B"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_A"
+	.byte 0x44, 0x69, 0x61
+	.4byte 0x6C6F6700
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Decide_A"
+	.asciz "Dialog"
+	.byte 0x50
+	.asciz "_Mes_0%d"
+	.byte 0x50, 0x5F, 0x53
+	.asciz "tar_%02d_%02d"
+	.byte 0x50, 0x5F
+	.asciz "Star_%02d_%02d"
+	.byte 0x50
+	.asciz "_ReturnD"
+	.byte 0x50, 0x5F, 0x52
+	.asciz "eturnD_Y"
+	.byte 0x50, 0x5F, 0x52
+	.asciz "eturnD_N"
+	.byte 0x50, 0x5F, 0x52
+	.asciz "eturnD"
+	.byte 0x50
+	.asciz "_ReturnD_Y"
+	.byte 0x50
+	.asciz "_ReturnD_N"
+	.byte 0x53
+	.asciz "E_Cancel_A"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x53
+	.asciz "E_Decide_A"
+	.byte 0x50
+	.asciz "_NewAreaD"
+	.byte 0x50, 0x5F
+	.asciz "NewAreaD_Y"
+	.byte 0x50
+	.asciz "_NewAreaD"
+	.byte 0x50, 0x5F
+	.asciz "NewAreaD_Y"
+	.byte 0x53
+	.asciz "E_Cancel_A"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x53
+	.asciz "E_Decide_A"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8003492C

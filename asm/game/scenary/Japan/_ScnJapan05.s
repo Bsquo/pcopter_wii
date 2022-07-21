@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global lbl_8007FBEC
-lbl_8007FBEC:
+.global Start__15CScenaryJapan05Fv
+Start__15CScenaryJapan05Fv:
 /* 8007FBEC 00070B6C  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 8007FBF0 00070B70  7C 08 02 A6 */	mflr r0
 /* 8007FBF4 00070B74  90 01 00 84 */	stw r0, 0x84(r1)
@@ -268,8 +268,8 @@ lbl_8007FF3C:
 /* 8007FFF8 00070F78  38 80 00 01 */	li r4, 0x1
 /* 8007FFFC 00070F7C  38 A0 00 00 */	li r5, 0x0
 
-.global lbl_80080000
-lbl_80080000:
+.global func_80080000
+func_80080000:
 /* 80080000 00070F80  4B FA 67 C5 */	bl func_800267C4
 /* 80080004 00070F84  38 61 00 20 */	addi r3, r1, 0x20
 /* 80080008 00070F88  38 80 00 02 */	li r4, 0x2
@@ -340,8 +340,8 @@ lbl_80080000:
 /* 8008010C 0007108C  38 21 00 80 */	addi r1, r1, 0x80
 /* 80080110 00071090  4E 80 00 20 */	blr
 
-.global lbl_80080114
-lbl_80080114:
+.global PutActorDirect__15CScenaryJapan05Fiiff8CVVector
+PutActorDirect__15CScenaryJapan05Fiiff8CVVector:
 /* 80080114 00071094  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 80080118 00071098  7C 08 02 A6 */	mflr r0
 /* 8008011C 0007109C  90 01 00 74 */	stw r0, 0x74(r1)
@@ -414,8 +414,6 @@ lbl_800801B8:
 /* 80080224 000711A4  48 00 00 08 */	b func_8008022C
 lbl_80080228:
 /* 80080228 000711A8  38 60 00 00 */	li r3, 0x0
-
-.global func_8008022C
 func_8008022C:
 /* 8008022C 000711AC  E3 E1 00 68 */	psq_l f31, 0x68(r1), 0, qr0
 /* 80080230 000711B0  CB E1 00 60 */	lfd f31, 0x60(r1)
@@ -428,8 +426,8 @@ func_8008022C:
 /* 8008024C 000711CC  38 21 00 70 */	addi r1, r1, 0x70
 /* 80080250 000711D0  4E 80 00 20 */	blr
 
-.global lbl_80080254
-lbl_80080254:
+.global ActionTracking__15CScenaryJapan05FP11CActScnBaseUl8CVVector
+ActionTracking__15CScenaryJapan05FP11CActScnBaseUl8CVVector:
 /* 80080254 000711D4  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 80080258 000711D8  7C 08 02 A6 */	mflr r0
 /* 8008025C 000711DC  2C 04 00 00 */	cmpwi r4, 0x0
@@ -540,8 +538,8 @@ lbl_800803E8:
 /* 800803FC 0007137C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80080400 00071380  4E 80 00 20 */	blr
 
-.global lbl_80080404
-lbl_80080404:
+.global Calc__15CScenaryJapan05Fv
+Calc__15CScenaryJapan05Fv:
 /* 80080404 00071384  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 80080408 00071388  7C 08 02 A6 */	mflr r0
 /* 8008040C 0007138C  90 01 00 74 */	stw r0, 0x74(r1)
@@ -587,8 +585,6 @@ lbl_80080494:
 /* 800804A0 00071420  28 00 01 2C */	cmplwi r0, 0x12c
 /* 800804A4 00071424  40 80 00 08 */	bge func_800804AC
 /* 800804A8 00071428  3B A0 00 02 */	li r29, 0x2
-
-.global func_800804AC
 func_800804AC:
 /* 800804AC 0007142C  4B F9 54 01 */	bl func_800158AC
 /* 800804B0 00071430  3C 80 80 1C */	lis r4, lbl_801C3448@ha
@@ -655,8 +651,6 @@ lbl_8008054C:
 /* 8008059C 0007151C  3B 9C 00 01 */	addi r28, r28, 0x1
 /* 800805A0 00071520  2C 1C 00 04 */	cmpwi r28, 0x4
 /* 800805A4 00071524  41 80 FF A8 */	blt lbl_8008054C
-
-.global func_800805A8
 func_800805A8:
 /* 800805A8 00071528  4B F9 62 7D */	bl func_80016824
 /* 800805AC 0007152C  38 80 00 65 */	li r4, 0x65
@@ -783,8 +777,6 @@ lbl_80080744:
 /* 8008077C 000716FC  38 C0 00 00 */	li r6, 0x0
 /* 80080780 00071700  4B FA 23 E5 */	bl func_80022B64
 /* 80080784 00071704  48 00 00 44 */	b func_800807C8
-
-.global func_80080788
 func_80080788:
 /* 80080788 00071708  4B F9 0E F9 */	bl func_80011680
 /* 8008078C 0007170C  4B F9 C8 85 */	bl func_8001D010
@@ -802,8 +794,6 @@ func_80080788:
 /* 800807BC 0007173C  38 A0 00 01 */	li r5, 0x1
 /* 800807C0 00071740  38 C0 00 00 */	li r6, 0x0
 /* 800807C4 00071744  4B FA 23 A1 */	bl func_80022B64
-
-.global func_800807C8
 func_800807C8:
 /* 800807C8 00071748  4B F9 41 25 */	bl func_800148EC
 /* 800807CC 0007174C  3C 80 80 1C */	lis r4, lbl_801C3448@ha
@@ -817,8 +807,6 @@ func_800807C8:
 /* 800807EC 0007176C  C0 02 91 78 */	lfs f0, lbl_80610998@sda21(r2)
 /* 800807F0 00071770  EC 01 00 2A */	fadds f0, f1, f0
 /* 800807F4 00071774  D0 1E 00 80 */	stfs f0, 0x80(r30)
-
-.global func_800807F8
 func_800807F8:
 /* 800807F8 00071778  C0 1E 00 80 */	lfs f0, 0x80(r30)
 /* 800807FC 0007177C  C0 3E 00 84 */	lfs f1, 0x84(r30)
@@ -967,8 +955,6 @@ lbl_80080A0C:
 /* 80080A28 000719A8  4B F9 50 E5 */	bl func_80015B0C
 /* 80080A2C 000719AC  38 00 00 01 */	li r0, 0x1
 /* 80080A30 000719B0  90 1E 00 08 */	stw r0, 0x8(r30)
-
-.global func_80080A34
 func_80080A34:
 /* 80080A34 000719B4  E3 E1 00 68 */	psq_l f31, 0x68(r1), 0, qr0
 /* 80080A38 000719B8  80 01 00 74 */	lwz r0, 0x74(r1)
@@ -981,8 +967,8 @@ func_80080A34:
 /* 80080A54 000719D4  38 21 00 70 */	addi r1, r1, 0x70
 /* 80080A58 000719D8  4E 80 00 20 */	blr
 
-.global lbl_80080A5C
-lbl_80080A5C:
+.global CalcEnding__15CScenaryJapan05Fv
+CalcEnding__15CScenaryJapan05Fv:
 /* 80080A5C 000719DC  94 21 FE F0 */	stwu r1, -0x110(r1)
 /* 80080A60 000719E0  7C 08 02 A6 */	mflr r0
 /* 80080A64 000719E4  90 01 01 14 */	stw r0, 0x114(r1)
@@ -1159,8 +1145,6 @@ lbl_80080CD0:
 /* 80080D04 00071C84  38 A0 00 00 */	li r5, 0x0
 /* 80080D08 00071C88  38 C0 00 01 */	li r6, 0x1
 /* 80080D0C 00071C8C  4B FA 1E 59 */	bl func_80022B64
-
-.global func_80080D10
 func_80080D10:
 /* 80080D10 00071C90  80 1D 00 DC */	lwz r0, 0xdc(r29)
 /* 80080D14 00071C94  3B 80 00 00 */	li r28, 0x0
@@ -1301,8 +1285,6 @@ lbl_80080EE4:
 /* 80080F20 00071EA0  38 9F 04 70 */	addi r4, r31, 0x470
 /* 80080F24 00071EA4  38 A0 00 00 */	li r5, 0x0
 /* 80080F28 00071EA8  4B FB 04 81 */	bl func_800313A8
-
-.global func_80080F2C
 func_80080F2C:
 /* 80080F2C 00071EAC  48 03 93 09 */	bl func_800BA234
 /* 80080F30 00071EB0  3C A0 2A AB */	lis r5, 0x2aab
@@ -1346,8 +1328,6 @@ lbl_80080FA4:
 /* 80080FC0 00071F40  38 84 34 48 */	addi r4, r4, lbl_801C3448@l
 /* 80080FC4 00071F44  38 84 04 96 */	addi r4, r4, 0x496
 /* 80080FC8 00071F48  4B FA E3 81 */	bl func_8002F348
-
-.global func_80080FCC
 func_80080FCC:
 /* 80080FCC 00071F4C  80 1D 00 D0 */	lwz r0, 0xd0(r29)
 /* 80080FD0 00071F50  7C 1E 00 40 */	cmplw r30, r0
@@ -1380,8 +1360,8 @@ lbl_80080FE8:
 /* 80081038 00071FB8  38 21 01 10 */	addi r1, r1, 0x110
 /* 8008103C 00071FBC  4E 80 00 20 */	blr
 
-.global lbl_80081040
-lbl_80081040:
+.global GetAchieveRatio__15CScenaryJapan05FPiPi
+GetAchieveRatio__15CScenaryJapan05FPiPi:
 /* 80081040 00071FC0  2C 04 00 00 */	cmpwi r4, 0x0
 /* 80081044 00071FC4  41 82 00 0C */	beq lbl_80081050
 /* 80081048 00071FC8  80 03 00 38 */	lwz r0, 0x38(r3)
@@ -1393,8 +1373,8 @@ lbl_80081050:
 /* 8008105C 00071FDC  90 05 00 00 */	stw r0, 0x0(r5)
 /* 80081060 00071FE0  4E 80 00 20 */	blr
 
-.global lbl_80081064
-lbl_80081064:
+.global Render__15CScenaryJapan05Fv
+Render__15CScenaryJapan05Fv:
 /* 80081064 00071FE4  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 80081068 00071FE8  7C 08 02 A6 */	mflr r0
 /* 8008106C 00071FEC  90 01 00 94 */	stw r0, 0x94(r1)
@@ -1422,7 +1402,7 @@ lbl_80081064:
 /* 800810C4 00072044  4B FA 52 99 */	bl __ct__7CVColorFffff
 /* 800810C8 00072048  7C 64 1B 78 */	mr r4, r3
 /* 800810CC 0007204C  38 61 00 58 */	addi r3, r1, 0x58
-/* 800810D0 00072050  48 00 01 85 */	bl func_80081254
+/* 800810D0 00072050  48 00 01 85 */	bl __as__7CVColorFRC7CVColor
 /* 800810D4 00072054  48 00 00 64 */	b func_80081138
 lbl_800810D8:
 /* 800810D8 00072058  4B F9 05 A9 */	bl func_80011680
@@ -1432,26 +1412,24 @@ lbl_800810D8:
 /* 800810E8 00072068  40 82 00 14 */	bne lbl_800810FC
 /* 800810EC 0007206C  38 61 00 58 */	addi r3, r1, 0x58
 /* 800810F0 00072070  38 9F 00 70 */	addi r4, r31, 0x70
-/* 800810F4 00072074  48 00 01 61 */	bl func_80081254
+/* 800810F4 00072074  48 00 01 61 */	bl __as__7CVColorFRC7CVColor
 /* 800810F8 00072078  48 00 00 40 */	b func_80081138
 lbl_800810FC:
 /* 800810FC 0007207C  38 61 00 18 */	addi r3, r1, 0x18
 /* 80081100 00072080  38 9F 00 60 */	addi r4, r31, 0x60
 /* 80081104 00072084  38 BF 00 50 */	addi r5, r31, 0x50
-/* 80081108 00072088  48 00 02 5D */	bl func_80081364
+/* 80081108 00072088  48 00 02 5D */	bl __mi__7CVColorFRC7CVColor
 /* 8008110C 0007208C  C0 3F 00 84 */	lfs f1, 0x84(r31)
 /* 80081110 00072090  38 61 00 28 */	addi r3, r1, 0x28
 /* 80081114 00072094  38 81 00 18 */	addi r4, r1, 0x18
-/* 80081118 00072098  48 00 01 DD */	bl func_800812F4
+/* 80081118 00072098  48 00 01 DD */	bl __ml__7CVColorFf
 /* 8008111C 0007209C  38 61 00 38 */	addi r3, r1, 0x38
 /* 80081120 000720A0  38 9F 00 50 */	addi r4, r31, 0x50
 /* 80081124 000720A4  38 A1 00 28 */	addi r5, r1, 0x28
-/* 80081128 000720A8  48 00 01 59 */	bl func_80081280
+/* 80081128 000720A8  48 00 01 59 */	bl __pl__7CVColorFRC7CVColor
 /* 8008112C 000720AC  38 61 00 58 */	addi r3, r1, 0x58
 /* 80081130 000720B0  38 81 00 38 */	addi r4, r1, 0x38
-/* 80081134 000720B4  48 00 01 21 */	bl func_80081254
-
-.global func_80081138
+/* 80081134 000720B4  48 00 01 21 */	bl __as__7CVColorFRC7CVColor
 func_80081138:
 /* 80081138 000720B8  38 61 00 10 */	addi r3, r1, 0x10
 /* 8008113C 000720BC  38 80 00 00 */	li r4, 0x0
@@ -1504,15 +1482,15 @@ lbl_800811A0:
 lbl_800811F4:
 /* 800811F4 00072174  38 61 00 10 */	addi r3, r1, 0x10
 /* 800811F8 00072178  38 80 FF FF */	li r4, -0x1
-/* 800811FC 0007217C  48 00 00 19 */	bl func_80081214
+/* 800811FC 0007217C  48 00 00 19 */	bl __dt__Q34nw4r3g3d8LightSetFv
 /* 80081200 00072180  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 80081204 00072184  83 E1 00 8C */	lwz r31, 0x8c(r1)
 /* 80081208 00072188  7C 08 03 A6 */	mtlr r0
 /* 8008120C 0007218C  38 21 00 90 */	addi r1, r1, 0x90
 /* 80081210 00072190  4E 80 00 20 */	blr
 
-.global func_80081214
-func_80081214:
+.global __dt__Q34nw4r3g3d8LightSetFv
+__dt__Q34nw4r3g3d8LightSetFv:
 /* 80081214 00072194  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80081218 00072198  7C 08 02 A6 */	mflr r0
 /* 8008121C 0007219C  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1531,8 +1509,8 @@ lbl_8008123C:
 /* 8008124C 000721CC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80081250 000721D0  4E 80 00 20 */	blr
 
-.global func_80081254
-func_80081254:
+.global __as__7CVColorFRC7CVColor
+__as__7CVColorFRC7CVColor:
 /* 80081254 000721D4  7C 03 20 40 */	cmplw r3, r4
 /* 80081258 000721D8  4D 82 00 20 */	beqlr
 /* 8008125C 000721DC  C0 04 00 00 */	lfs f0, 0x0(r4)
@@ -1545,8 +1523,8 @@ func_80081254:
 /* 80081278 000721F8  D0 03 00 0C */	stfs f0, 0xc(r3)
 /* 8008127C 000721FC  4E 80 00 20 */	blr
 
-.global func_80081280
-func_80081280:
+.global __pl__7CVColorFRC7CVColor
+__pl__7CVColorFRC7CVColor:
 /* 80081280 00072200  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80081284 00072204  7C 08 02 A6 */	mflr r0
 /* 80081288 00072208  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1577,8 +1555,8 @@ func_80081280:
 /* 800812EC 0007226C  38 21 00 20 */	addi r1, r1, 0x20
 /* 800812F0 00072270  4E 80 00 20 */	blr
 
-.global func_800812F4
-func_800812F4:
+.global __ml__7CVColorFf
+__ml__7CVColorFf:
 /* 800812F4 00072274  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800812F8 00072278  7C 08 02 A6 */	mflr r0
 /* 800812FC 0007227C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1608,8 +1586,8 @@ func_800812F4:
 /* 8008135C 000722DC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80081360 000722E0  4E 80 00 20 */	blr
 
-.global func_80081364
-func_80081364:
+.global __mi__7CVColorFRC7CVColor
+__mi__7CVColorFRC7CVColor:
 /* 80081364 000722E4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80081368 000722E8  7C 08 02 A6 */	mflr r0
 /* 8008136C 000722EC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1640,8 +1618,8 @@ func_80081364:
 /* 800813D0 00072350  38 21 00 20 */	addi r1, r1, 0x20
 /* 800813D4 00072354  4E 80 00 20 */	blr
 
-.global lbl_800813D8
-lbl_800813D8:
+.global __dt__15CScenaryJapan05Fv
+__dt__15CScenaryJapan05Fv:
 /* 800813D8 00072358  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800813DC 0007235C  7C 08 02 A6 */	mflr r0
 /* 800813E0 00072360  2C 03 00 00 */	cmpwi r3, 0x0

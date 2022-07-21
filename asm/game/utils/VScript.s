@@ -1,5 +1,44 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BA148
+lbl_801BA148:
+
+	# ROM: 0x1B6248
+	.asciz "CVScript"
+	.balign 4
+	.4byte 0
+
+.global lbl_801BA158
+lbl_801BA158:
+
+	# ROM: 0x1B6258
+	.asciz "CVScriptElement"
+
+.global lbl_801BA168
+lbl_801BA168:
+
+	# ROM: 0x1B6268
+	.asciz "CVScriptString"
+	.balign 4
+
+.global lbl_801BA178
+lbl_801BA178:
+
+	# ROM: 0x1B6278
+	.asciz "CVScriptParam"
+	.balign 4
+
+.global lbl_801BA188
+lbl_801BA188:
+
+	# ROM: 0x1B6288
+	.4byte 0x0000002F
+	.4byte 0
+
+
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8002BF34

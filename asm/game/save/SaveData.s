@@ -1,5 +1,50 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits 
+
+.global lbl_801BA570
+lbl_801BA570:
+
+	# ROM: 0x1B6670
+	.4byte 0x2F002F74
+	.asciz "mp/%s"
+	.byte 0x62, 0x61
+	.asciz "nner.bin"
+	.byte 0x2F, 0x74, 0x6D
+	.asciz "p/banner.bin"
+	.byte 0x2F, 0x74, 0x6D
+	.asciz "p/%s"
+	.byte 0x73, 0x61, 0x76
+	.asciz "efile.dat"
+	.byte 0x2F, 0x74
+	.asciz "mp/savefile.dat"
+	.asciz "%s/%s"
+	.byte 0x73, 0x61
+	.asciz "vefile.dat"
+	.byte 0x25
+	.asciz "s/%s"
+	.byte 0x73, 0x61, 0x76
+	.asciz "efile.dat"
+	.byte 0x25, 0x73
+	.4byte 0x2F257300
+	.asciz "banner.bin"
+	.byte 0x4E
+	.asciz "ANDWrite() failed.  Result code: %d\n"
+	.byte 0x4E, 0x41, 0x4E
+	.asciz "DClose() failed.  Result code: %d\n"
+	.byte 0x4E
+	.asciz "ANDWrite() failed.  Result code: %d\n"
+	.byte 0x4E, 0x41, 0x4E
+	.asciz "DClose() failed.  Result code: %d\n"
+	.byte 0x2F
+	.asciz "PCopter/Menu/icon/save_banner.tpl"
+	.byte 0x2F, 0x50
+	.asciz "Copter/Menu/icon/save_icon.tpl"
+	.byte 0x73
+	.asciz "avefile.dat"
+	.asciz "banner.bin"
+	.balign 4
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_80033880

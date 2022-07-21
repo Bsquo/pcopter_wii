@@ -1,4 +1,5 @@
 .vscode
+.pragma
 *.dat
 *.exe
 *.dll

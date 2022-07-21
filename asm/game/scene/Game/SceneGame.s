@@ -1,5 +1,541 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801B87A8
+lbl_801B87A8:
+
+	# ROM: 0x1B48A8
+	.4byte 0x00000014
+	.4byte 0x00000064
+	.4byte 0x000000B4
+	.4byte 0x00000104
+	.4byte 0x00000140
+
+.global lbl_801B87BC
+lbl_801B87BC:
+
+	# ROM: 0x1B48BC
+	.asciz "CVModelMgr"
+	.balign 4
+
+.global lbl_801B87C8
+lbl_801B87C8:
+
+	# ROM: 0x1B48C8
+	.asciz "CSceneGame"
+	.balign 4
+
+.global lbl_801B87D4
+lbl_801B87D4:
+
+	# ROM: 0x1B48D4
+	.asciz "FadeWindow"
+	.byte 0x46
+	.asciz "adeWindow"
+	.byte 0x4A, 0x49
+	.asciz "N_Good"
+	.byte 0x4A
+	.asciz "IN_Bad"
+	.byte 0x4A
+	.asciz "IN_Good"
+	.asciz "SE_Warning"
+	.byte 0x53
+	.asciz "E_Decide_A"
+	.byte 0x43
+	.asciz "lear"
+	.byte 0x53, 0x45, 0x32
+	.asciz "_Mawaru"
+	.asciz "SE_Missile_B"
+	.byte 0x43, 0x6C, 0x65
+	.4byte 0x61720053
+	.asciz "E_LiftCup_Release"
+	.byte 0x53, 0x45
+	.asciz "2_Powa"
+	.byte 0x43
+	.asciz "lear"
+	.byte 0x46, 0x61, 0x64
+	.asciz "eWindow"
+	.asciz "StartCount"
+	.byte 0x50
+	.asciz "auseMenu"
+	.byte 0x52, 0x65, 0x73
+	.4byte 0x756C7400
+	.asciz "GameOver"
+	.byte 0x43, 0x6C, 0x65
+	.4byte 0x61720042
+	.asciz "attery"
+	.byte 0x42
+	.asciz "atteryMessage"
+	.byte 0x4C, 0x69
+	.4byte 0x6665004F
+	.asciz "ption"
+	.byte 0x47, 0x61
+	.asciz "meMain"
+	.byte 0x46
+	.asciz "adeWindow"
+	.byte 0x4D, 0x69
+	.asciz "ssionInfo"
+	.byte 0x53, 0x79
+	.asciz "sDlg_GameMenu"
+	.byte 0x53, 0x79
+	.asciz "sDlg_TrGetItem"
+	.byte 0x50
+	.asciz "ointer"
+	.byte 0x53
+	.asciz "ysDlg_GameMenu"
+	.byte 0x53
+	.asciz "ysDlg_TrGetItem"
+	.asciz "StartCount"
+	.byte 0x50
+	.asciz "auseMenu"
+	.byte 0x52, 0x65, 0x73
+	.4byte 0x756C7400
+	.asciz "GameOver"
+	.byte 0x43, 0x6C, 0x65
+	.4byte 0x61720042
+	.asciz "attery"
+	.byte 0x42
+	.asciz "atteryMessage"
+	.byte 0x4C, 0x69
+	.4byte 0x6665004F
+	.asciz "ption"
+	.byte 0x47, 0x61
+	.asciz "meMain"
+	.byte 0x46
+	.asciz "adeWindow"
+	.byte 0x4D, 0x69
+	.asciz "ssionInfo"
+	.byte 0x53, 0x79
+	.asciz "sDlg_GameMenu"
+	.byte 0x53, 0x79
+	.asciz "sDlg_TrGetItem"
+	.byte 0x50
+	.asciz "ointer"
+	.byte 0x53
+	.asciz "tartCount"
+	.byte 0x46, 0x61
+	.asciz "deWindow"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Ready"
+	.byte 0x53, 0x45
+	.4byte 0x5F476F00
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "PauseMenu"
+	.byte 0x52, 0x65
+	.4byte 0x74727900
+	.asciz "SE_Cursor_A"
+	.asciz "PauseMenu"
+	.byte 0x63, 0x68
+	.4byte 0x65636B00
+	.asciz "SE_Cursor_A"
+	.asciz "PauseMenu"
+	.byte 0x45, 0x6E
+	.4byte 0x64005345
+	.asciz "_Cursor_A"
+	.byte 0x50, 0x61
+	.asciz "useMenu"
+	.asciz "Return"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x50
+	.asciz "auseMenu"
+	.byte 0x52, 0x65, 0x74
+	.4byte 0x72790050
+	.asciz "auseMenu"
+	.byte 0x63, 0x68, 0x65
+	.4byte 0x636B0050
+	.asciz "auseMenu"
+	.byte 0x45, 0x6E, 0x64
+	.4byte 0x00506175
+	.asciz "seMenu"
+	.byte 0x52
+	.asciz "eturn"
+	.byte 0x50, 0x61
+	.asciz "useMenu"
+	.asciz "SE_Cancel_A"
+	.asciz "BGM12_Shop"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x52
+	.asciz "esult"
+	.byte 0x52, 0x65
+	.4byte 0x74727900
+	.asciz "SE_Cursor_A"
+	.asciz "Result"
+	.byte 0x45
+	.4byte 0x6E640053
+	.asciz "E_Cursor_A"
+	.byte 0x52
+	.asciz "esult"
+	.byte 0x52, 0x65
+	.4byte 0x74727900
+	.asciz "Result"
+	.byte 0x45
+	.4byte 0x6E640053
+	.asciz "E2_Powa"
+	.asciz "SE_Point"
+	.byte 0x53, 0x45, 0x5F
+	.4byte 0x42616400
+	.asciz "SE_Good_Cool"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Good_Cool"
+	.byte 0x53, 0x45
+	.asciz "_Perfect"
+	.byte 0x52, 0x65, 0x73
+	.4byte 0x756C7400
+	.asciz "SE2_Mawaru"
+	.byte 0x52
+	.asciz "esult"
+	.byte 0x54, 0x69
+	.asciz "me_num"
+	.byte 0x52
+	.asciz "esult"
+	.byte 0x44, 0x61
+	.asciz "mage_num"
+	.byte 0x52, 0x65, 0x73
+	.4byte 0x756C7400
+	.asciz "Score_num"
+	.byte 0x52, 0x65
+	.asciz "sult"
+	.byte 0x54, 0x6F, 0x74
+	.asciz "alScore_num"
+	.asciz "Result"
+	.byte 0x47
+	.asciz "otPoint_num"
+	.asciz "Result"
+	.byte 0x52
+	.asciz "ank_Bad"
+	.asciz "Result"
+	.byte 0x52
+	.asciz "ank_Good"
+	.byte 0x52, 0x65, 0x73
+	.4byte 0x756C7400
+	.asciz "Rank_Cool"
+	.byte 0x52, 0x65
+	.asciz "sult"
+	.byte 0x52, 0x61, 0x6E
+	.asciz "k_Perfect"
+	.byte 0x42, 0x47
+	.asciz "M12_Shop"
+	.byte 0x52, 0x65, 0x73
+	.4byte 0x756C7400
+	.4byte 0x456E6400
+	.asciz "SE_Cursor_A"
+	.asciz "Result"
+	.byte 0x45
+	.4byte 0x6E640053
+	.asciz "E_Perfect"
+	.byte 0x53, 0x45
+	.4byte 0x5F4F4B00
+	.asciz "Result"
+	.byte 0x53
+	.asciz "E_Point"
+	.asciz "Result"
+	.byte 0x43
+	.asciz "oinScore"
+	.byte 0x52, 0x65, 0x73
+	.4byte 0x756C7400
+	.asciz "StarScore"
+	.byte 0x52, 0x65
+	.asciz "sult"
+	.byte 0x47, 0x6F, 0x74
+	.asciz "Point_num"
+	.byte 0x52, 0x65
+	.asciz "sult"
+	.byte 0x43, 0x6F, 0x69
+	.4byte 0x6E005265
+	.asciz "sult"
+	.byte 0x53, 0x74, 0x61
+	.4byte 0x7200436F
+	.asciz "in_%02d"
+	.asciz "Result"
+	.byte 0x52
+	.asciz "esult"
+	.byte 0x53, 0x74
+	.asciz "ar_%02d"
+	.asciz "Result"
+	.byte 0x52
+	.asciz "esult"
+	.byte 0x52, 0x65
+	.asciz "sult"
+	.byte 0x63, 0x6F, 0x6D
+	.asciz "plete"
+	.byte 0x52, 0x65
+	.asciz "sult"
+	.byte 0x35, 0x30, 0x30
+	.asciz "gold"
+	.byte 0x52, 0x65, 0x73
+	.4byte 0x756C7400
+	.asciz "5000gold"
+	.byte 0x42, 0x47, 0x4D
+	.asciz "12_Shop"
+	.asciz "SE_Cursor_A"
+	.asciz "GameOver"
+	.byte 0x52, 0x65, 0x74
+	.4byte 0x72790053
+	.asciz "E_Cursor_A"
+	.byte 0x47
+	.asciz "ameOver"
+	.4byte 0x456E6400
+	.asciz "SE_Cursor_A"
+	.asciz "GameOver"
+	.byte 0x52, 0x65, 0x74
+	.4byte 0x72790047
+	.asciz "ameOver"
+	.4byte 0x456E6400
+	.asciz "GameOver"
+	.byte 0x4D, 0x69, 0x73
+	.asciz "sionInfo"
+	.byte 0x62, 0x61, 0x63
+	.4byte 0x6B005345
+	.asciz "_Cursor_A"
+	.byte 0x4D, 0x69
+	.asciz "ssionInfo"
+	.byte 0x62, 0x61
+	.4byte 0x636B004D
+	.asciz "issionInfo"
+	.byte 0x4D
+	.asciz "issionInfo"
+	.byte 0x73
+	.asciz "core_00"
+	.asciz "MissionInfo"
+	.asciz "score_01"
+	.byte 0x4D, 0x69, 0x73
+	.asciz "sionInfo"
+	.byte 0x73, 0x63, 0x6F
+	.asciz "re_02"
+	.byte 0x4D, 0x69
+	.asciz "ssionInfo"
+	.byte 0x52, 0x61
+	.asciz "nk_0"
+	.byte 0x4D, 0x69, 0x73
+	.asciz "sionInfo"
+	.byte 0x52, 0x61, 0x6E
+	.4byte 0x6B5F3100
+	.asciz "MissionInfo"
+	.asciz "Rank_2"
+	.byte 0x4D
+	.asciz "issionInfo"
+	.byte 0x52
+	.asciz "ank_3"
+	.byte 0x4D, 0x69
+	.asciz "ssionInfo"
+	.byte 0x73, 0x63
+	.4byte 0x6F726500
+	.asciz "MissionInfo"
+	.asciz "gold"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cancel_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x79, 0x73
+	.asciz "Dlg_GameMenu"
+	.byte 0x42, 0x5F, 0x59
+	.4byte 0x65730053
+	.asciz "E_Cursor_A"
+	.byte 0x53
+	.asciz "ysDlg_GameMenu"
+	.byte 0x42
+	.4byte 0x5F4E6F00
+	.asciz "SE_Cursor_A"
+	.asciz "SysDlg_GameMenu"
+	.asciz "B_Yes"
+	.byte 0x53, 0x79
+	.asciz "sDlg_GameMenu"
+	.byte 0x42, 0x5F
+	.4byte 0x4E6F0053
+	.asciz "ysDlg_GameMenu"
+	.byte 0x53
+	.asciz "E_Cancel_A"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x53
+	.asciz "ysDlg_GameMenu"
+	.byte 0x42
+	.asciz "_Yes_00"
+	.asciz "SE_Cursor_A"
+	.asciz "SysDlg_GameMenu"
+	.asciz "B_No_00"
+	.asciz "SE_Cursor_A"
+	.asciz "SysDlg_GameMenu"
+	.asciz "B_Yes_00"
+	.byte 0x53, 0x79, 0x73
+	.asciz "Dlg_GameMenu"
+	.byte 0x42, 0x5F, 0x4E
+	.asciz "o_00"
+	.byte 0x53, 0x79, 0x73
+	.asciz "Dlg_GameMenu"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cancel_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x79, 0x73
+	.asciz "Dlg_GameMenu"
+	.byte 0x42, 0x5F, 0x59
+	.asciz "es_00"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x53, 0x79
+	.asciz "sDlg_GameMenu"
+	.byte 0x42, 0x5F
+	.asciz "No_00"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x53, 0x79
+	.asciz "sDlg_GameMenu"
+	.byte 0x42, 0x5F
+	.asciz "Yes_01"
+	.byte 0x53
+	.asciz "ysDlg_GameMenu"
+	.byte 0x42
+	.asciz "_No_01"
+	.byte 0x53
+	.asciz "ysDlg_GameMenu"
+	.byte 0x53
+	.asciz "E_Cancel_A"
+	.byte 0x42
+	.asciz "_Ok_%02d"
+	.byte 0x53, 0x79, 0x73
+	.asciz "Dlg_TrGetItem"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x53, 0x79
+	.asciz "sDlg_TrGetItem"
+	.byte 0x53
+	.asciz "ysDlg_TrGetItem"
+	.asciz "FadeWindow"
+	.byte 0x46
+	.asciz "adeWindow"
+	.byte 0x46, 0x61
+	.asciz "deWindow"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_B"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cancel_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_A"
+	.byte 0x41, 0x63, 0x74
+	.4byte 0x5F315000
+	.asciz "Communications with the Wii Remote\nhave been interrupted."
+	.byte 0x44, 0x69
+	.asciz "e Verbindung zur Wii-Fernbedienung \nwurde unterbrochen."
+	.4byte 0x4C612063
+	.4byte 0x6F6E6E65
+	.4byte 0x78696F6E
+	.4byte 0x20617665
+	.4byte 0x63206C61
+	.4byte 0x2074E96C
+	.4byte 0xE9636F6D
+	.4byte 0x6D616E64
+	.4byte 0x65205769
+	.4byte 0x690A6120
+	.4byte 0xE974E920
+	.asciz "interrompue."
+	.byte 0x53, 0x65, 0x20
+	.4byte 0x68612069
+	.4byte 0x6E746572
+	.4byte 0x72756D70
+	.4byte 0x69646F20
+	.4byte 0x6C612063
+	.4byte 0x6F6E6578
+	.4byte 0x69F36E20
+	.asciz "con el mando de Wii."
+	.byte 0x49, 0x6C, 0x20
+	.4byte 0x636F6C6C
+	.4byte 0x6567616D
+	.4byte 0x656E746F
+	.4byte 0x20636F6E
+	.4byte 0x20696C20
+	.4byte 0x74656C65
+	.4byte 0x636F6D61
+	.4byte 0x6E646F20
+	.4byte 0x57696920
+	.4byte 0x736920E8
+	.asciz " interrotto."
+	.byte 0x43, 0x6F, 0x6D
+	.asciz "munications with the Wii Remote\nhave been interrupted."
+	.byte 0x20
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x20576969
+	.4byte 0x838A8382
+	.4byte 0x83528393
+	.4byte 0x82CC92CA
+	.4byte 0x904D82AA
+	.4byte 0x90D882EA
+	.4byte 0x82DC82B5
+	.4byte 0x82BD8142
+	.4byte 0x00506C65
+	.asciz "ase connect Classic Controller to Wii Remote."
+	.byte 0x42, 0x69
+	.4byte 0x74746520
+	.4byte 0x436C6173
+	.4byte 0x73696320
+	.4byte 0x436F6E74
+	.4byte 0x726F6C6C
+	.4byte 0x65722061
+	.4byte 0x6E206469
+	.4byte 0x650A5769
+	.4byte 0x692D4665
+	.4byte 0x726E6265
+	.4byte 0x6469656E
+	.4byte 0x756E6720
+	.4byte 0x616E7363
+	.4byte 0x686C6965
+	.4byte 0xDF656E2E
+	.4byte 0x00566575
+	.4byte 0x696C6C65
+	.4byte 0x7A20636F
+	.4byte 0x6E6E6563
+	.4byte 0x74657220
+	.4byte 0x756E6520
+	.4byte 0x6D616E65
+	.4byte 0x74746520
+	.4byte 0x636C6173
+	.4byte 0x73697175
+	.4byte 0x65200A20
+	.4byte 0xE0206C61
+	.4byte 0x2074E96C
+	.4byte 0xE9636F6D
+	.asciz "mande Wii."
+	.byte 0x43
+	.4byte 0x6F6E6563
+	.4byte 0x74612065
+	.4byte 0x6C206D61
+	.4byte 0x6E646F20
+	.4byte 0x636CE173
+	.asciz "ico al mando de Wii."
+	.byte 0x43, 0x6F, 0x6C
+	.asciz "lega il controller tradizionale\nal telecomando Wii."
+	.asciz "Please connect Classic Controller to Wii Remote."
+	.byte 0x57, 0x69, 0x69
+	.4byte 0x838A8382
+	.4byte 0x83528393
+	.4byte 0x82C9834E
+	.4byte 0x83898356
+	.4byte 0x8362834E
+	.4byte 0x83528393
+	.4byte 0x8367838D
+	.4byte 0x815B8389
+	.4byte 0x82F090DA
+	.4byte 0x91B182B5
+	.4byte 0x82C482AD
+	.4byte 0x82BE82B3
+	.4byte 0x82A28142
+	.4byte 0x00696E69
+	.4byte 0x74004163
+	.asciz "t_1P"
+	.byte 0x47, 0x53, 0x6D
+	.asciz "oke_1P"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global lbl_8001569C

@@ -1,5 +1,20 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BA190
+lbl_801BA190:
+
+	# ROM: 0x1B6290
+	.asciz "VSoundMgr.cpp"
+	.byte 0x43, 0x61
+	.asciz "nnot open soundarchive"
+	.byte 0x56
+	.asciz "SoundMgr.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Failed assertion soundHeap.IsValid()"
+	.balign 4
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global lbl_8002CB08

@@ -1,5 +1,49 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801B9BD0
+lbl_801B9BD0:
+
+	# ROM: 0x1B5CD0
+	.asciz "CVCollPoly"
+	.balign 4
+
+.global lbl_801B9BDC
+lbl_801B9BDC:
+
+	# ROM: 0x1B5CDC
+	.asciz "CVCollLine"
+	.balign 4
+
+.global lbl_801B9BE8
+lbl_801B9BE8:
+
+	# ROM: 0x1B5CE8
+	.asciz "CVCollVertex"
+	.balign 4
+
+.global lbl_801B9BF8
+lbl_801B9BF8:
+
+	# ROM: 0x1B5CF8
+	.asciz "CVCollRet"
+	.balign 4
+
+.global lbl_801B9C04
+lbl_801B9C04:
+
+	# ROM: 0x1B5D04
+	.asciz "DrawOpa"
+	.asciz "DrawXlu"
+	.asciz "CollFlg"
+	.asciz "_hit"
+	.byte 0x5F, 0x6C, 0x69
+	.4byte 0x6D697400
+	.asciz "VColl.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Failed assertion tagDL.IsValid()"
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_800237AC

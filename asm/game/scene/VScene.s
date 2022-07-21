@@ -1,5 +1,14 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BA138
+lbl_801BA138:
+
+	# ROM: 0x1B6238
+	.asciz "Destroy %s\n"
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__7CVSceneFv

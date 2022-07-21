@@ -1,5 +1,15 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BA1F0
+lbl_801BA1F0:
+
+	# ROM: 0x1B62F0
+	.asciz "CVActorMgr"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8002D634

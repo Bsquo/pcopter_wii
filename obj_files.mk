@@ -18,6 +18,7 @@ TEXT_O_FILES :=                                                    \
     $(BUILD_DIR)/asm/game/app/VApp.o                           \
     $(BUILD_DIR)/asm/game/collision/VColl.o                    \
     $(BUILD_DIR)/asm/game/gfx/VColor.o                         \
+	$(BUILD_DIR)/src/game/gfx/VColor.o                         \
     $(BUILD_DIR)/asm/game/utils/VFile.o                        \
     $(BUILD_DIR)/asm/game/utils/VFlag.o                        \
     $(BUILD_DIR)/asm/game/utils/VList.o                        \
@@ -40,6 +41,7 @@ TEXT_O_FILES :=                                                    \
     $(BUILD_DIR)/asm/game/scene/Menu/Config/SceneMenuConfig.o             \
     $(BUILD_DIR)/asm/game/scene/Menu/CopterSelect/SceneMenuCopterSelect.o       \
 	$(BUILD_DIR)/asm/game/scene/Menu/Home/SceneMenuHome.o             \
+	$(BUILD_DIR)/asm/game/scene/Menu/MissionSelect/SceneMenuMissionSelect.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Score/SceneMenuScore.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Shop/SceneMenuShop.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Shop/SceneMenuShopBuy.o             \
@@ -111,7 +113,9 @@ TEXT_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/game/scenary/Japan/ScnJapan03.o            \
 	$(BUILD_DIR)/asm/game/scenary/Japan/ScnJapan02.o            \
 	$(BUILD_DIR)/asm/game/scenary/BGShop/ScnBGShop06.o            \
-	$(BUILD_DIR)/asm/game/scenary/Japan/ScnJapan05.o            \
+	$(BUILD_DIR)/asm/game/scenary/Japan/ScnJapan05_1.o            \
+	$(BUILD_DIR)/src/game/scenary/Japan/ScnJapan05.o            \
+	$(BUILD_DIR)/asm/game/scenary/Japan/ScnJapan05_2.o            \
 	$(BUILD_DIR)/asm/game/scenary/Japan/ScnJapan06.o            \
 	$(BUILD_DIR)/asm/game/scenary/ScenaryMisc.o            \
 	$(BUILD_DIR)/asm/game/scene/GameMulti/SceneGameMultiInit.o            \

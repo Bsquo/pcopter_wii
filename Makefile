@@ -16,6 +16,11 @@ TARGET := pcopter_wii_eur
 
 BUILD_DIR := build/$(TARGET)
 
+SRC_DIRS := src                      \
+			src/game                 \
+			src/game/gfx             \
+			src/game/scenary/Japan
+
 ASM_DIRS := asm                      \
 			asm/game                 \
 			asm/game/action          \
@@ -54,6 +59,7 @@ ASM_DIRS := asm                      \
 			asm/game/scene/Menu/ItemList           \
 			asm/game/scene/Menu/Logo           \
 			asm/game/scene/Menu/Main           \
+			asm/game/scene/Menu/MissionSelect           \
 			asm/game/scene/Menu/Movie           \
 			asm/game/scene/Menu/PartSelect           \
 			asm/game/scene/Menu/Score           \
@@ -67,6 +73,8 @@ ASM_DIRS := asm                      \
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))
+C_FILES := $(foreach dir,$(SRC_DIRS),$(wildcard $(dir)/*.c))
+CPP_FILES := $(foreach dir,$(SRC_DIRS),$(wildcard $(dir)/*.cpp))
 LDSCRIPT := $(BUILD_DIR)/ldscript.lcf
 
 # Outputs
@@ -106,6 +114,7 @@ INCLUDES := -i . -I- -i include
 
 ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -fp hard -nodefaults
+CFLAGS  := -Cpp_exceptions off -proc gekko -fp hard -O4 -nodefaults -msgstyle gcc $(INCLUDES)
 
 # for postprocess.py
 PROCFLAGS := -fprologue-fixup=old_stack
@@ -124,7 +133,7 @@ default: all
 
 all: $(DOL)
 
-ALL_DIRS := build $(BUILD_DIR) $(addprefix $(BUILD_DIR)/, $(ASM_DIRS))
+ALL_DIRS := build $(BUILD_DIR) $(addprefix $(BUILD_DIR)/,$(SRC_DIRS) $(ASM_DIRS))
 
 # Make sure build directory exists before compiling anything
 DUMMY != mkdir -p $(ALL_DIRS)
@@ -139,6 +148,7 @@ $(DOL): $(ELF) | tools
 	$(SHA1SUM) -c $(TARGET).sha1
 
 clean:
+	rm -f -d -r .pragma
 	rm -f -d -r build
 	$(MAKE) -C tools clean
 
@@ -152,4 +162,10 @@ $(ELF): $(O_FILES) $(LDSCRIPT)
 
 $(BUILD_DIR)/%.o: %.s
 	$(AS) $(ASFLAGS) -o $@ $<
+	
+$(BUILD_DIR)/%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+$(BUILD_DIR)/%.o: %.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
 #$(PYTHON) $(POSTPROC) $(PROCFLAGS) $@

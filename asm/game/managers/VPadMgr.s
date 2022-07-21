@@ -1,5 +1,68 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BA458
+lbl_801BA458:
+
+	# ROM: 0x1B6558
+	.asciz "NONE"
+	.byte 0x41, 0x00, 0x42
+	.4byte 0x0043005A
+	.4byte 0x00310032
+	.4byte 0x002B002D
+	.4byte 0x004C4546
+	.4byte 0x54005249
+	.4byte 0x47485400
+	.4byte 0x55500044
+	.4byte 0x4F574E00
+	.asciz "HOME"
+	.byte 0x43, 0x4C, 0x5F
+	.4byte 0x4100434C
+	.4byte 0x5F420043
+	.4byte 0x4C5F5800
+	.asciz "CL_Y"
+	.byte 0x43, 0x4C, 0x5F
+	.4byte 0x2B00434C
+	.4byte 0x5F2D0043
+	.4byte 0x4C5F4C00
+	.asciz "CL_R"
+	.byte 0x43, 0x4C, 0x5F
+	.4byte 0x5A4C0043
+	.asciz "L_ZR"
+	.byte 0x43, 0x4C, 0x5F
+	.asciz "LEFT"
+	.byte 0x43, 0x4C, 0x5F
+	.asciz "RIGHT"
+	.byte 0x43, 0x4C
+	.4byte 0x5F555000
+	.asciz "CL_DOWN"
+	.asciz "CL_HOME"
+	.asciz "ST_LEFT"
+	.asciz "ST_RIGHT"
+	.byte 0x53, 0x54, 0x5F
+	.4byte 0x55500053
+	.asciz "T_DOWN"
+	.byte 0x53
+	.asciz "T_CLL_LEFT"
+	.byte 0x53
+	.asciz "T_CLL_RIGHT"
+	.asciz "ST_CLL_UP"
+	.byte 0x53, 0x54
+	.asciz "_CLL_DOWN"
+	.byte 0x53, 0x54
+	.asciz "_CLR_LEFT"
+	.byte 0x53, 0x54
+	.asciz "_CLR_RIGHT"
+	.byte 0x53
+	.asciz "T_CLR_UP"
+	.byte 0x53, 0x54, 0x5F
+	.asciz "CLR_DOWN"
+	.byte 0x23, 0x25, 0x64
+	.4byte 0x2F233000
+	.asciz "#%d/#%d"
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_80032460

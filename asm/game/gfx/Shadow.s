@@ -1,5 +1,57 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801B97F0
+lbl_801B97F0:
+
+	# ROM: 0x1B58F0
+	.asciz "Shadow.cpp"
+	.byte 0x4E
+	.asciz "W4R:Failed assertion mat.IsValid()"
+	.byte 0x44
+	.asciz "isableShadow"
+	.byte 0x53, 0x68, 0x61
+	.asciz "dow.cpp"
+	.asciz "NW4R:Failed assertion genMode.IsValid()"
+	.asciz "Shadow.cpp"
+	.byte 0x4E
+	.asciz "W4R:Failed assertion tevColor.IsValid()"
+	.asciz "Shadow.cpp"
+	.byte 0x4E
+	.asciz "W4R:Failed assertion texCoordGen.IsValid()"
+	.byte 0x53
+	.asciz "hadow.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Failed assertion texObj.IsValid()"
+	.byte 0x53, 0x68, 0x61
+	.asciz "dow.cpp"
+	.asciz "NW4R:Failed assertion texSrt.IsValid()"
+	.byte 0x53
+	.asciz "hadow.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Failed assertion tev.IsValid()"
+	.byte 0x6D, 0x61
+	.asciz "t '%s' has more than %d textures.(%d)\n"
+	.byte 0x6D
+	.asciz "at '%s' has more than %d tex coord gens.(%d)\n"
+	.byte 0x6D, 0x61
+	.asciz "t '%s' has more than %d tev stages.(%d)\n"
+	.byte 0x53, 0x68, 0x61
+	.asciz "dow.cpp"
+	.asciz "NW4R:Failed assertion ! texObj.IsValidTexObj(sdwTexMapId)"
+	.byte 0x53, 0x68
+	.asciz "adow.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Failed assertion numTevStages + numAddTevStages == numTevStageData"
+	.byte 0x53, 0x68, 0x61
+	.asciz "dow.cpp"
+	.asciz "NW4R:Failed assertion mainCamera.IsValid()"
+	.byte 0x53
+	.asciz "hadow.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Failed assertion texProjCamera.IsValid()"
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8001E6BC

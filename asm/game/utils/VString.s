@@ -1,5 +1,15 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801B9AE8
+lbl_801B9AE8:
+
+	# ROM: 0x1B5BE8
+	.asciz "CVString"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_800205B4

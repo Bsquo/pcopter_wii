@@ -4076,37 +4076,37 @@ lbl_80010138:
 	.4byte lbl_8007FB94
 	.4byte 0x00000058
 	.4byte lbl_8000BE3C
-	.4byte lbl_8007FBEC
+	.4byte Start__15CScenaryJapan05Fv
 	.4byte 0x00000528
 	.4byte lbl_8000BE44
-	.4byte lbl_80080114
+	.4byte PutActorDirect__15CScenaryJapan05Fiiff8CVVector
 	.4byte 0x00000140
 	.4byte lbl_8000BEC4
-	.4byte lbl_80080254
+	.4byte ActionTracking__15CScenaryJapan05FP11CActScnBaseUl8CVVector
 	.4byte 0x000001B0
 	.4byte lbl_8000BECC
-	.4byte lbl_80080404
+	.4byte Calc__15CScenaryJapan05Fv
 	.4byte 0x00000658
 	.4byte lbl_8000BED4
-	.4byte lbl_80080A5C
+	.4byte CalcEnding__15CScenaryJapan05Fv
 	.4byte 0x000005E4
 	.4byte lbl_8000BEDC
-	.4byte lbl_80081064
+	.4byte Render__15CScenaryJapan05Fv
 	.4byte 0x000001B0
 	.4byte lbl_8000BEF4
-	.4byte func_80081214
+	.4byte __dt__Q34nw4r3g3d8LightSetFv
 	.4byte 0x00000040
 	.4byte lbl_8000BF0C
-	.4byte func_80081280
+	.4byte __pl__7CVColorFRC7CVColor
 	.4byte 0x00000074
 	.4byte lbl_8000BF14
-	.4byte func_800812F4
+	.4byte __ml__7CVColorFf
 	.4byte 0x00000070
 	.4byte lbl_8000BF1C
-	.4byte func_80081364
+	.4byte __mi__7CVColorFRC7CVColor
 	.4byte 0x00000074
 	.4byte lbl_8000BF24
-	.4byte lbl_800813D8
+	.4byte __dt__15CScenaryJapan05Fv
 	.4byte 0x00000058
 	.4byte lbl_8000BF2C
 	.4byte lbl_80081430

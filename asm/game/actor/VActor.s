@@ -1,5 +1,47 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801B9AF8
+lbl_801B9AF8:
+
+	# ROM: 0x1B5BF8
+	.asciz "CVActorMtxCallback"
+	.balign 4
+
+.global lbl_801B9B0C
+lbl_801B9B0C:
+
+	# ROM: 0x1B5C0C
+	.asciz "CVActorNode"
+
+.global lbl_801B9B18
+lbl_801B9B18:
+
+	# ROM: 0x1B5C18
+	.asciz "nw4r::g3d::ICalcWorldCallback"
+	.balign 4
+
+.global lbl_801B9B38
+lbl_801B9B38:
+
+	# ROM: 0x1B5C38
+	.asciz "AnimLoop"
+	.byte 0x41, 0x6E, 0x69
+	.asciz "m/#%d/anim_node"
+	.asciz "Anim/#%d/loop_mode"
+	.byte 0x41
+	.asciz "nim/#%d/anim_rate"
+	.byte 0x41, 0x6E
+	.asciz "im/#%d/anim_state"
+	.byte 0x41, 0x6E
+	.asciz "im/#%d/init_state"
+	.byte 0x41, 0x6E
+	.asciz "im/#%d/auto_ret"
+	.asciz "Anim/#%d/anim_node"
+	.byte 0x41
+	.asciz "LL_NODE"
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global lbl_800209F4

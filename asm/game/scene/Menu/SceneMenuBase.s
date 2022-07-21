@@ -1,5 +1,231 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BAC50
+lbl_801BAC50:
+
+	# ROM: 0x1B6D50
+	.4byte lbl_8060FB24
+	.4byte lbl_8060FB2C
+	.4byte lbl_8060FB34
+	.4byte lbl_8060FB40
+	.4byte lbl_8060FB48
+	.4byte lbl_8060FB50
+
+.global lbl_801BAC68
+lbl_801BAC68:
+
+	# ROM: 0x1B6D68
+	.4byte 0x00000800
+	.4byte 0x00000400
+	.4byte 0x00000008
+	.4byte 0x00000004
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000100
+	.4byte 0x00000200
+	.4byte 0x00000002
+	.4byte 0x00000001
+	.4byte 0x00000008
+	.4byte 0x00000004
+	.4byte 0x00000010
+	.4byte 0x00000040
+	.4byte 0x00000001
+	.4byte 0x00004000
+	.4byte 0x00000002
+	.4byte 0x00008000
+
+.global lbl_801BACB0
+lbl_801BACB0:
+
+	# ROM: 0x1B6DB0
+	.asciz "/PCopter/Menu/itemlist.txt"
+	.byte 0x25
+	.asciz "s/num"
+	.byte 0x25, 0x73
+	.asciz "/%d/buy"
+	.asciz "%s/%d/sell"
+	.byte 0x25
+	.asciz "s/%d/model"
+	.byte 0x25
+	.asciz "s/%d/param"
+	.byte 0x42
+	.asciz "ody/num"
+	.asciz "Body/%d/buy"
+	.asciz "Body/%d/sell"
+	.byte 0x42, 0x6F, 0x64
+	.asciz "y/%d/model"
+	.byte 0x42
+	.asciz "ody/%d/param"
+	.byte 0x44, 0x56, 0x44
+	.asciz "_RESULT_FATAL_ERROR"
+	.asciz "DVD_RESULT_CANCELED"
+	.asciz "SceneMenuBase.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Failed assertion readBytes > 0"
+	.byte 0x53, 0x63
+	.asciz "eneMenuBase.cpp"
+	.asciz "NW4R:Pointer must not be NULL (readBuf)"
+	.asciz "SceneMenuBase.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Failed assertion readBytes > 0"
+	.byte 0x53, 0x63
+	.asciz "eneMenuBase.cpp"
+	.asciz "NW4R:Failed assertion readBytes > 0"
+	.asciz "SceneMenuBase.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer must not be NULL (*sMemHandle)"
+	.byte 0x2F, 0x50
+	.asciz "Copter/Menu/Fade.arc"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuBase.cpp"
+	.byte 0x4E
+	.asciz "W4R:Pointer must not be NULL (FadeBuf)"
+	.byte 0x66
+	.4byte 0x61646500
+	.asciz "fade.brlyt"
+	.byte 0x53
+	.asciz "ceneMenuBase.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (lytRes)"
+	.asciz "fade.brlan"
+	.byte 0x2F
+	.asciz "PCopter/Menu/Cursor.arc"
+	.asciz "SceneMenuBase.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer must not be NULL (CursorBuf)"
+	.asciz "Cursor"
+	.byte 0x43
+	.asciz "ursor.brlyt"
+	.asciz "SceneMenuBase.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer must not be NULL (lytRes)"
+	.byte 0x53, 0x79, 0x73
+	.asciz "tem (64MB) = %d bytes (%d%%) free"
+	.byte 0x55, 0x73
+	.asciz "er   (18MB) = %d bytes (%d%%) free"
+	.byte 0x2F
+	.asciz "PCopter/Menu_English"
+	.byte 0x2F, 0x50, 0x43
+	.asciz "opter/Menu_German"
+	.byte 0x2F, 0x50
+	.asciz "Copter/Menu_French"
+	.byte 0x2F
+	.asciz "PCopter/Menu_Spanish"
+	.byte 0x2F, 0x50, 0x43
+	.asciz "opter/Menu_Italian"
+	.byte 0x2F
+	.asciz "PCopter/Menu_English"
+	.byte 0x2F, 0x50, 0x43
+	.asciz "opter/Menu"
+	.byte 0x43
+	.asciz "ommunications with the Wii Remote\nhave been interrupted."
+	.byte 0x44, 0x69, 0x65
+	.asciz " Verbindung zur Wii-Fernbedienung \nwurde unterbrochen."
+	.byte 0x4C
+	.4byte 0x6120636F
+	.4byte 0x6E6E6578
+	.4byte 0x696F6E20
+	.4byte 0x61766563
+	.4byte 0x206C6120
+	.4byte 0x74E96CE9
+	.4byte 0x636F6D6D
+	.4byte 0x616E6465
+	.4byte 0x20576969
+	.4byte 0x0A6120E9
+	.4byte 0x74E92069
+	.asciz "nterrompue."
+	.4byte 0x53652068
+	.4byte 0x6120696E
+	.4byte 0x74657272
+	.4byte 0x756D7069
+	.4byte 0x646F206C
+	.4byte 0x6120636F
+	.4byte 0x6E657869
+	.4byte 0xF36E2063
+	.asciz "on el mando de Wii."
+	.4byte 0x496C2063
+	.4byte 0x6F6C6C65
+	.4byte 0x67616D65
+	.4byte 0x6E746F20
+	.4byte 0x636F6E20
+	.4byte 0x696C2074
+	.4byte 0x656C6563
+	.4byte 0x6F6D616E
+	.4byte 0x646F2057
+	.4byte 0x69692073
+	.4byte 0x6920E820
+	.asciz "interrotto."
+	.asciz "Communications with the Wii Remote\nhave been interrupted."
+	.byte 0x20, 0x20
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x57696983
+	.4byte 0x8A838283
+	.4byte 0x52839382
+	.4byte 0xCC92CA90
+	.4byte 0x4D82AA90
+	.4byte 0xD882EA82
+	.4byte 0xDC82B582
+	.4byte 0xBD814200
+	.asciz "Please connect Classic Controller to Wii Remote."
+	.byte 0x42, 0x69, 0x74
+	.4byte 0x74652043
+	.4byte 0x6C617373
+	.4byte 0x69632043
+	.4byte 0x6F6E7472
+	.4byte 0x6F6C6C65
+	.4byte 0x7220616E
+	.4byte 0x20646965
+	.4byte 0x0A576969
+	.4byte 0x2D466572
+	.4byte 0x6E626564
+	.4byte 0x69656E75
+	.4byte 0x6E672061
+	.4byte 0x6E736368
+	.4byte 0x6C6965DF
+	.4byte 0x656E2E00
+	.4byte 0x56657569
+	.4byte 0x6C6C657A
+	.4byte 0x20636F6E
+	.4byte 0x6E656374
+	.4byte 0x65722075
+	.4byte 0x6E65206D
+	.4byte 0x616E6574
+	.4byte 0x74652063
+	.4byte 0x6C617373
+	.4byte 0x69717565
+	.4byte 0x200A20E0
+	.4byte 0x206C6120
+	.4byte 0x74E96CE9
+	.asciz "commande Wii."
+	.byte 0x43, 0x6F
+	.4byte 0x6E656374
+	.4byte 0x6120656C
+	.4byte 0x206D616E
+	.4byte 0x646F2063
+	.4byte 0x6CE17369
+	.asciz "co al mando de Wii."
+	.asciz "Collega il controller tradizionale\nal telecomando Wii."
+	.byte 0x50
+	.asciz "lease connect Classic Controller to Wii Remote."
+	.4byte 0x57696983
+	.4byte 0x8A838283
+	.4byte 0x52839382
+	.4byte 0xC9834E83
+	.4byte 0x89835683
+	.4byte 0x62834E83
+	.4byte 0x52839383
+	.4byte 0x67838D81
+	.4byte 0x5B838982
+	.4byte 0xF090DA91
+	.4byte 0xB182B582
+	.4byte 0xC482AD82
+	.4byte 0xBE82B382
+	.4byte 0xA2814200
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_80036A04

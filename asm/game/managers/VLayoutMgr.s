@@ -1,5 +1,48 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BA200
+lbl_801BA200:
+
+	# ROM: 0x1B6300
+	.asciz "CVLayout"
+	.balign 4
+
+.global lbl_801BA20C
+lbl_801BA20C:
+
+	# ROM: 0x1B630C
+	.asciz "CVLayoutState"
+	.balign 4
+
+.global lbl_801BA21C
+lbl_801BA21C:
+
+	# ROM: 0x1B631C
+	.asciz "CVArchive"
+	.balign 4
+
+.global lbl_801BA228
+lbl_801BA228:
+
+	# ROM: 0x1B6328
+	.asciz "VLayoutMgr.cpp"
+	.byte 0x4E
+	.asciz "W4R:Pointer must not be NULL (readBuf)"
+	.byte 0x56
+	.asciz "LayoutMgr.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Failed assertion readBytes > 0"
+	.byte 0x56, 0x4C
+	.asciz "ayoutMgr.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (m_pBuf)"
+	.asciz "VLayoutMgr.cpp"
+	.byte 0x4E
+	.asciz "W4R:Pointer must not be NULL (lytRes)"
+	.balign 4
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8002DB68

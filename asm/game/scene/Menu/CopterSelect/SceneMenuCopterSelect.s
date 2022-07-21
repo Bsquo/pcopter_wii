@@ -1,5 +1,314 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BB5F8
+lbl_801BB5F8:
+
+	# ROM: 0x1B76F8
+	.asciz "Picture_C0"
+	.balign 4
+
+.global lbl_801BB604
+lbl_801BB604:
+
+	# ROM: 0x1B7704
+	.asciz "Picture_C1"
+	.balign 4
+
+.global lbl_801BB610
+lbl_801BB610:
+
+	# ROM: 0x1B7710
+	.asciz "Picture_C2"
+	.balign 4
+
+.global lbl_801BB61C
+lbl_801BB61C:
+
+	# ROM: 0x1B771C
+	.asciz "Picture_C3"
+	.balign 4
+
+.global lbl_801BB628
+lbl_801BB628:
+
+	# ROM: 0x1B7728
+	.asciz "Picture_C4"
+	.balign 4
+
+.global lbl_801BB634
+lbl_801BB634:
+
+	# ROM: 0x1B7734
+	.asciz "Picture_C5"
+	.balign 4
+	.4byte lbl_801BB5F8
+	.4byte lbl_801BB604
+	.4byte lbl_801BB610
+	.4byte lbl_801BB61C
+	.4byte lbl_801BB628
+	.4byte lbl_801BB634
+
+.global lbl_801BB658
+lbl_801BB658:
+
+	# ROM: 0x1B7758
+	.4byte 0xFFFFFF26
+	.4byte 0xFFFFFF4A
+	.4byte 0xFFFFFF6E
+	.4byte 0xFFFFFF92
+	.4byte 0x0000004A
+	.4byte 0xFFFFFFD9
+	.4byte lbl_8060FC70
+	.4byte lbl_8060FC78
+	.4byte lbl_8060FC80
+	.4byte lbl_8060FC88
+	.4byte 0x3E4CCCCD
+	.4byte 0x3ECCCCCD
+	.4byte 0x3ECCCCCD
+	.4byte 0x3E4CCCCD
+	.4byte lbl_8060FC90
+	.4byte lbl_8060FC98
+	.4byte lbl_8060FCA0
+	.4byte lbl_8060FCA8
+
+.global lbl_801BB6A0
+lbl_801BB6A0:
+
+	# ROM: 0x1B77A0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000005
+	.4byte 0x00000006
+	.4byte 0x00000004
+	.4byte 0x00000007
+	.4byte 0
+	.4byte 0xFFFFFF10
+	.4byte 0xFFFFFF10
+	.4byte 0xFFFFFF42
+	.4byte 0
+	.4byte 0x000000BE
+	.4byte 0x000000F0
+	.4byte 0x000000F0
+	.4byte 0x000000F0
+	.4byte 0x000000F0
+	.4byte 0x000000F0
+	.4byte 0xFFFFFF10
+	.4byte 0xFFFFFF10
+	.4byte 0xFFFFFF10
+	.4byte 0xFFFFFF88
+	.4byte 0x00000014
+	.4byte 0x00000050
+	.4byte 0x0000005A
+	.4byte 0x0000005A
+	.4byte 0x0000005A
+	.4byte 0x0000005A
+	.4byte 0
+	.4byte 0
+	.4byte 0x42700000
+	.4byte 0x42C80000
+	.4byte 0x42700000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x42700000
+	.4byte 0x42C80000
+	.4byte 0x42700000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x437F0000
+	.4byte 0x437F0000
+	.4byte 0x437F0000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0x437F0000
+	.4byte 0x437F0000
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global lbl_801BB7B0
+lbl_801BB7B0:
+
+	# ROM: 0x1B78B0
+	.4byte 0
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000003
+	.4byte 0x00000004
+	.4byte 0x00000005
+
+.global lbl_801BB7C8
+lbl_801BB7C8:
+
+	# ROM: 0x1B78C8
+	.asciz "P_XK-117"
+	.balign 4
+
+.global lbl_801BB7D4
+lbl_801BB7D4:
+
+	# ROM: 0x1B78D4
+	.4byte lbl_8060FCC8
+	.4byte lbl_801BB7C8
+	.4byte lbl_8060FCD0
+	.4byte lbl_8060FCD8
+	.4byte lbl_8060FCE0
+	.4byte lbl_8060FCE8
+	.4byte lbl_8060FCF0
+	.4byte lbl_8060FCF8
+	.4byte lbl_8060FD00
+
+.global lbl_801BB7F8
+lbl_801BB7F8:
+
+	# ROM: 0x1B78F8
+	.asciz "P_Rotor_"
+	.balign 4
+
+.global lbl_801BB804
+lbl_801BB804:
+
+	# ROM: 0x1B7904
+	.asciz "P_Motor_"
+	.balign 4
+
+.global lbl_801BB810
+lbl_801BB810:
+
+	# ROM: 0x1B7910
+	.asciz "P_Battery_"
+	.balign 4
+	.4byte 0
+
+.global lbl_801BB820
+lbl_801BB820:
+
+	# ROM: 0x1B7920
+	.4byte lbl_801BB7F8
+	.4byte lbl_801BB804
+	.4byte lbl_8060FD08
+	.4byte lbl_801BB810
+	.asciz "CSceneMenuFreeFlight"
+	.balign 4
+	.asciz "CSceneMenuCopterSelect"
+	.balign 4
+	.asciz "CSceneMenuBase"
+	.balign 4
+	.asciz "CVPadMgr"
+	.balign 4
+	.asciz "CVSoundMgr"
+	.balign 4
+
+.global lbl_801BB888
+lbl_801BB888:
+
+	# ROM: 0x1B7988
+	.asciz "Copter2"
+	.asciz "CopterCustomize"
+	.4byte 0x2F002E61
+	.4byte 0x72630053
+	.asciz "ceneMenuCopterSelect.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (archiveBuf)"
+	.asciz "/CopterSelect/CopterSelect_Home.arc"
+	.asciz "/CopterSelect/CopterSelect_Park.arc"
+	.asciz "/CopterSelect/CopterSelect_Hotel.arc"
+	.byte 0x2F, 0x43, 0x6F
+	.asciz "pterSelect/CopterSelect_Hospital.arc"
+	.byte 0x2F, 0x43, 0x6F
+	.asciz "pterSelect/CopterSelect_Office.arc"
+	.byte 0x2F
+	.asciz "CopterSelect/CopterSelect_BShop.arc"
+	.asciz "/CopterSelect/CopterSelect_Japan.arc"
+	.byte 0x2F, 0x43, 0x6F
+	.asciz "pterSelect/CopterSelect_Japan.arc"
+	.byte 0x53, 0x63
+	.asciz "eneMenuCopterSelect.cpp"
+	.asciz "NW4R:Pointer must not be NULL (BGBuf)"
+	.byte 0x69, 0x6D
+	.4byte 0x67002E62
+	.asciz "rlyt"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuCopterSelect.cpp"
+	.byte 0x4E
+	.asciz "W4R:Pointer must not be NULL (lytRes)"
+	.byte 0x2F, 0x50
+	.asciz "Copter/Menu/Copterimg.txt"
+	.byte 0x25, 0x64
+	.asciz "/#%d"
+	.byte 0x25, 0x73, 0x25
+	.asciz "s.arc"
+	.byte 0x2F, 0x50
+	.asciz "Copter/Menu/Copterimg/"
+	.byte 0x53
+	.asciz "ceneMenuCopterSelect.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (CopterBuf[cnt])"
+	.asciz "%s.tpl"
+	.byte 0x43
+	.asciz "opter0%01d"
+	.byte 0x43
+	.asciz "opter"
+	.byte 0x50, 0x5F
+	.asciz "CIcon_0%d"
+	.byte 0x50, 0x5F
+	.asciz "IconSelect"
+	.byte 0x4D
+	.asciz "eter0%01d"
+	.byte 0x50, 0x5F
+	.asciz "IMes_P"
+	.byte 0x50
+	.asciz "_IMes_M"
+	.asciz "P_IMes_C"
+	.byte 0x42, 0x47, 0x4D
+	.asciz "03_Home"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "P_Left"
+	.byte 0x50
+	.asciz "_Right"
+	.byte 0x43
+	.asciz "opter0%01d"
+	.byte 0x4D
+	.asciz "eter0%01d"
+	.byte 0x41, 0x63
+	.asciz "tor/Copter"
+	.byte 0x53
+	.asciz "E_Cancel_A"
+	.byte 0x53
+	.asciz "E_Decide_B"
+	.byte 0x50
+	.asciz "_TITLE_0%d"
+	.byte 0x50
+	.asciz "_CANNON_%02d"
+	.byte 0x50, 0x5F, 0x43
+	.asciz "up_%02d"
+	.asciz "%s%02d"
+	.balign 4
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8003B3EC

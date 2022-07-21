@@ -148,7 +148,6 @@ $(DOL): $(ELF) | tools
 	$(SHA1SUM) -c $(TARGET).sha1
 
 clean:
-	rm -f -d -r .pragma
 	rm -f -d -r build
 	$(MAKE) -C tools clean
 

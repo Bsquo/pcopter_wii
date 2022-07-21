@@ -9,6 +9,9 @@ extern const float _42990; // 255.0f
 
 class CVColor
 {
+	private:
+		f32 mRed, mGreen, mBlue, mAlpha;
+		
     public:
         CVColor();
         CVColor(f32, f32, f32, f32);
@@ -16,8 +19,6 @@ class CVColor
 		CVColor operator+(const CVColor&);
 		CVColor operator*(f32);
 		CVColor operator-(const CVColor&);
-		
-		f32 mRed, mGreen, mBlue, mAlpha;
 };
 
 #endif // VCOLOR_H

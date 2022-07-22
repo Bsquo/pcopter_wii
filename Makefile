@@ -73,10 +73,21 @@ ASM_DIRS := asm                      \
 			asm/game/scene/Menu/Treasure           \
 			asm/game/sys                         \
 			asm/game/utils                         \
+			asm/runtime                         \
 			asm/RVL                              \
+			asm/RVL/ai                              \
+			asm/RVL/AX                              \
 			asm/RVL/base                              \
 			asm/RVL/db                              \
-			asm/RVL/OS
+			asm/RVL/dsp                              \
+			asm/RVL/dvd                              \
+			asm/RVL/GX                              \
+			asm/RVL/hbm                              \
+			asm/RVL/mix                              \
+			asm/RVL/mtx                              \
+			asm/RVL/OS                              \
+			asm/RVL/Pad                              \
+			asm/RVL/vi
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))

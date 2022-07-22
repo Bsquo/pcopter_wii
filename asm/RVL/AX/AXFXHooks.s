@@ -1,0 +1,29 @@
+.include "macros.s"
+
+.section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
+
+.global lbl_800A3F90
+lbl_800A3F90:
+/* 800A3F90 00094F10  7C 64 1B 78 */	mr r4, r3
+/* 800A3F94 00094F14  80 6D 89 50 */	lwz r3, lbl_8060E750@sda21(r13)
+/* 800A3F98 00094F18  4B FE 43 60 */	b func_800882F8
+
+.global lbl_800A3F9C
+lbl_800A3F9C:
+/* 800A3F9C 00094F1C  7C 64 1B 78 */	mr r4, r3
+/* 800A3FA0 00094F20  80 6D 89 50 */	lwz r3, lbl_8060E750@sda21(r13)
+/* 800A3FA4 00094F24  4B FE 44 4C */	b func_800883F0
+
+.global func_800A3FA8
+func_800A3FA8:
+/* 800A3FA8 00094F28  90 6D 8A 40 */	stw r3, lbl_8060E840@sda21(r13)
+/* 800A3FAC 00094F2C  90 8D 8A 44 */	stw r4, lbl_8060E844@sda21(r13)
+/* 800A3FB0 00094F30  4E 80 00 20 */	blr
+
+.global func_800A3FB4
+func_800A3FB4:
+/* 800A3FB4 00094F34  80 0D 8A 40 */	lwz r0, lbl_8060E840@sda21(r13)
+/* 800A3FB8 00094F38  90 03 00 00 */	stw r0, 0x0(r3)
+/* 800A3FBC 00094F3C  80 0D 8A 44 */	lwz r0, lbl_8060E844@sda21(r13)
+/* 800A3FC0 00094F40  90 04 00 00 */	stw r0, 0x0(r4)
+/* 800A3FC4 00094F44  4E 80 00 20 */	blr

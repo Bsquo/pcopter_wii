@@ -158,6 +158,63 @@ TEXT_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/RVL/OS/OSStateFlags.o            \
 	$(BUILD_DIR)/asm/RVL/OS/OSNet.o            \
 	$(BUILD_DIR)/asm/RVL/OS/OSNandbootInfo.o            \
+	$(BUILD_DIR)/asm/runtime/__ppc_eabi_init.o            \
+	$(BUILD_DIR)/asm/RVL/mtx/mtx.o            \
+	$(BUILD_DIR)/asm/RVL/mtx/mtxvec.o            \
+	$(BUILD_DIR)/asm/RVL/mtx/mtx44.o            \
+	$(BUILD_DIR)/asm/RVL/mtx/vec.o            \
+	$(BUILD_DIR)/asm/RVL/dvd/dvdfs.o            \
+	$(BUILD_DIR)/asm/RVL/dvd/dvd.o            \
+	$(BUILD_DIR)/asm/RVL/dvd/dvdqueue.o            \
+	$(BUILD_DIR)/asm/RVL/dvd/dvderror.o            \
+	$(BUILD_DIR)/asm/RVL/dvd/dvdidutils.o            \
+	$(BUILD_DIR)/asm/RVL/dvd/dvdFatal.o            \
+	$(BUILD_DIR)/asm/RVL/dvd/dvd_broadway.o            \
+	$(BUILD_DIR)/asm/RVL/vi/vi.o            \
+	$(BUILD_DIR)/asm/RVL/vi/i2c.o            \
+	$(BUILD_DIR)/asm/RVL/vi/vi3in1.o            \
+	$(BUILD_DIR)/asm/RVL/Pad/Pad.o            \
+	$(BUILD_DIR)/asm/RVL/ai/ai.o            \
+	$(BUILD_DIR)/asm/RVL/AX/AX.o            \
+	$(BUILD_DIR)/asm/RVL/AX/AXAlloc.o            \
+	$(BUILD_DIR)/asm/RVL/AX/AXAux.o            \
+	$(BUILD_DIR)/asm/RVL/AX/AXCL.o            \
+	$(BUILD_DIR)/asm/RVL/AX/AXOut.o            \
+	$(BUILD_DIR)/asm/RVL/AX/AXSPB.o            \
+	$(BUILD_DIR)/asm/RVL/AX/AXVPB.o            \
+	$(BUILD_DIR)/asm/RVL/AX/AXProf.o            \
+	$(BUILD_DIR)/asm/RVL/AX/AXFXReverbHi.o            \
+	$(BUILD_DIR)/asm/RVL/AX/AXFXReverbHiExp.o            \
+	$(BUILD_DIR)/asm/RVL/AX/AXFXHooks.o            \
+	$(BUILD_DIR)/asm/RVL/mix/mix.o            \
+	$(BUILD_DIR)/asm/RVL/mix/remote.o            \
+	$(BUILD_DIR)/asm/RVL/hbm/syn.o            \
+	$(BUILD_DIR)/asm/RVL/hbm/synctrl.o            \
+	$(BUILD_DIR)/asm/RVL/hbm/synenv.o            \
+	$(BUILD_DIR)/asm/RVL/hbm/synlfo.o            \
+	$(BUILD_DIR)/asm/RVL/hbm/synmix.o            \
+	$(BUILD_DIR)/asm/RVL/hbm/synpitch.o            \
+	$(BUILD_DIR)/asm/RVL/hbm/synsample.o            \
+	$(BUILD_DIR)/asm/RVL/hbm/synvoice.o            \
+	$(BUILD_DIR)/asm/RVL/hbm/synwt.o            \
+	$(BUILD_DIR)/asm/RVL/hbm/seq.o            \
+	$(BUILD_DIR)/asm/RVL/dsp/dsp.o            \
+	$(BUILD_DIR)/asm/RVL/dsp/dsp_debug.o            \
+	$(BUILD_DIR)/asm/RVL/dsp/dsp_task.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXInit.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXFifo.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXAttr.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXMisc.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXGeometry.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXFrameBuf.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXLight.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXTexture.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXBump.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXTev.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXPixel.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXDisplayList.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXTransform.o            \
+	$(BUILD_DIR)/asm/RVL/GX/GXPerf.o            \
     $(BUILD_DIR)/asm/text.o
 
 CTORS_O_FILES :=                                                   \

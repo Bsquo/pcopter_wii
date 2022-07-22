@@ -3,8 +3,7 @@
 
 #include "types.h"
 
-class CVScene
-{
+class CVScene {
 	private:
 		u32 unk_0;
 		void* unk_1;

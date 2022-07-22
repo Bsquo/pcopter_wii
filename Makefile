@@ -19,7 +19,9 @@ BUILD_DIR := build/$(TARGET)
 SRC_DIRS := src                      \
 			src/game                 \
 			src/game/gfx             \
-			src/game/scenary/Japan
+			src/game/math            \
+			src/game/scenary/Japan   \
+			src/game/scene/Game
 
 ASM_DIRS := asm                      \
 			asm/game                 \

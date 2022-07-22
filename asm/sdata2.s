@@ -2,8 +2,8 @@
 
 .section .sdata2, "a", @progbits  # 0x8060F820 - 0x80611F20 ; 0x00002700
 
-.global lbl_8060F838
-lbl_8060F838:
+.global _53133
+_53133:
 
 	# ROM: 0x1EEEF8
 	.4byte 0
@@ -506,8 +506,8 @@ lbl_8060F9C8:
 	# ROM: 0x1EF088
 	.4byte 0x3727C5AC
 
-.global lbl_8060F9CC
-lbl_8060F9CC:
+.global _44791
+_44791:
 
 	# ROM: 0x1EF08C
 	.4byte 0

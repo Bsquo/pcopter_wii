@@ -372,10 +372,10 @@ lbl_8000CB00:
 	.4byte func_80016888
 	.4byte 0x0000003C
 	.4byte lbl_80006C18
-	.4byte func_800168F8
+	.4byte __mi__8CVVectorFRC8CVVector
 	.4byte 0x00000074
 	.4byte lbl_80006C20
-	.4byte func_8001696C
+	.4byte __ml__8CVVectorFf
 	.4byte 0x00000070
 	.4byte lbl_80006C28
 	.4byte lbl_800169F0

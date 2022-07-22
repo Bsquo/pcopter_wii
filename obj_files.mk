@@ -126,6 +126,38 @@ TEXT_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/game/scenary/MultiPlayer/ScnRingMP.o            \
 	$(BUILD_DIR)/asm/game/scene/Menu/ClassicCheak/SceneMenuClassicCheak.o            \
 	$(BUILD_DIR)/asm/game/actor/Copter/parts/Rotor.o            \
+	$(BUILD_DIR)/asm/game/sys/BackThread.o            \
+	$(BUILD_DIR)/asm/RVL/base/PPCArch.o            \
+	$(BUILD_DIR)/asm/RVL/db/db.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OS.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSAlarm.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSAlloc.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSArena.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSAudioSystem.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSCache.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSContext.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSError.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSExec.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSFatal.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSFont.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSInterrupt.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSLink.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSMessage.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSMemory.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSMutex.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSReboot.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSReset.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSRtc.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSSync.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSThread.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSTime.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSUtf.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSIpc.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSStateTM.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSPlayRecord.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSStateFlags.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSNet.o            \
+	$(BUILD_DIR)/asm/RVL/OS/OSNandbootInfo.o            \
     $(BUILD_DIR)/asm/text.o
 
 CTORS_O_FILES :=                                                   \

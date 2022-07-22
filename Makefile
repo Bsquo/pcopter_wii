@@ -71,7 +71,12 @@ ASM_DIRS := asm                      \
 			asm/game/scene/Menu/Strap           \
 			asm/game/scene/Menu/Title           \
 			asm/game/scene/Menu/Treasure           \
-			asm/game/utils
+			asm/game/sys                         \
+			asm/game/utils                         \
+			asm/RVL                              \
+			asm/RVL/base                              \
+			asm/RVL/db                              \
+			asm/RVL/OS
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))

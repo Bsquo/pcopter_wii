@@ -1,0 +1,17 @@
+.include "macros.s"
+
+.section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
+
+.global func_800C5CA8
+func_800C5CA8:
+/* 800C5CA8 000B6C28  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 800C5CAC 000B6C2C  7C 08 02 A6 */	mflr r0
+/* 800C5CB0 000B6C30  90 01 00 14 */	stw r0, 0x14(r1)
+/* 800C5CB4 000B6C34  80 83 00 08 */	lwz r4, 0x8(r3)
+/* 800C5CB8 000B6C38  38 63 00 10 */	addi r3, r3, 0x10
+/* 800C5CBC 000B6C3C  48 00 49 21 */	bl func_800CA5DC
+/* 800C5CC0 000B6C40  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 800C5CC4 000B6C44  38 60 00 00 */	li r3, 0x0
+/* 800C5CC8 000B6C48  7C 08 03 A6 */	mtlr r0
+/* 800C5CCC 000B6C4C  38 21 00 10 */	addi r1, r1, 0x10
+/* 800C5CD0 000B6C50  4E 80 00 20 */	blr

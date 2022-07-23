@@ -73,6 +73,13 @@ ASM_DIRS := asm                      \
 			asm/game/scene/Menu/Treasure           \
 			asm/game/sys                         \
 			asm/game/utils                         \
+			asm/MetroTRK                       \
+			asm/MSL_C                       \
+			asm/MSL_C/MSL_Common                       \
+			asm/MSL_C/MSL_Common_Embedded                       \
+			asm/MSL_C/MSL_Common_Embedded/Math                       \
+			asm/MSL_C/PPC_EABI                       \
+			asm/MSL_C/PPC_EABI/Runtime                       \
 			asm/runtime                         \
 			asm/RVL                              \
 			asm/RVL/ai                              \
@@ -81,12 +88,14 @@ ASM_DIRS := asm                      \
 			asm/RVL/db                              \
 			asm/RVL/dsp                              \
 			asm/RVL/dvd                              \
+			asm/RVL/exi                              \
 			asm/RVL/GX                              \
 			asm/RVL/hbm                              \
 			asm/RVL/mix                              \
 			asm/RVL/mtx                              \
 			asm/RVL/OS                              \
 			asm/RVL/Pad                              \
+			asm/RVL/si                              \
 			asm/RVL/vi
 
 # Inputs

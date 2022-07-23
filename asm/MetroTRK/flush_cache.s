@@ -1,0 +1,21 @@
+.include "macros.s"
+
+.section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
+
+.global func_800C80D0
+func_800C80D0:
+/* 800C80D0 000B9050  3C A0 FF FF */	lis r5, 0xFFFFFFF1@h
+/* 800C80D4 000B9054  60 A5 FF F1 */	ori r5, r5, 0xFFFFFFF1@l
+/* 800C80D8 000B9058  7C A5 18 38 */	and r5, r5, r3
+/* 800C80DC 000B905C  7C 65 18 50 */	subf r3, r5, r3
+/* 800C80E0 000B9060  7C 84 1A 14 */	add r4, r4, r3
+lbl_800C80E4:
+/* 800C80E4 000B9064  7C 00 28 6C */	dcbst r0, r5
+/* 800C80E8 000B9068  7C 00 28 AC */	dcbf r0, r5
+/* 800C80EC 000B906C  7C 00 04 AC */	sync
+/* 800C80F0 000B9070  7C 00 2F AC */	icbi r0, r5
+/* 800C80F4 000B9074  30 A5 00 08 */	addic r5, r5, 0x8
+/* 800C80F8 000B9078  34 84 FF F8 */	addic. r4, r4, -0x8
+/* 800C80FC 000B907C  40 80 FF E8 */	bge lbl_800C80E4
+/* 800C8100 000B9080  4C 00 01 2C */	isync
+/* 800C8104 000B9084  4E 80 00 20 */	blr

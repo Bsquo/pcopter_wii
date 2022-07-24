@@ -1,0 +1,45 @@
+.include "macros.s"
+.section .text, "ax"
+.global func_801260A8
+func_801260A8:
+/* 801260A8 00117028  48 00 2E 18 */	b func_80128EC0
+.global func_801260AC
+func_801260AC:
+/* 801260AC 0011702C  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 801260B0 00117030  81 8C 00 10 */	lwz r12, 0x10(r12)
+/* 801260B4 00117034  7D 89 03 A6 */	mtctr r12
+/* 801260B8 00117038  4E 80 04 20 */	bctr
+.global func_801260BC
+func_801260BC:
+/* 801260BC 0011703C  4E 80 00 20 */	blr
+.global lbl_801260C0
+lbl_801260C0:
+/* 801260C0 00117040  4E 80 00 20 */	blr
+.global lbl_801260C4
+lbl_801260C4:
+/* 801260C4 00117044  88 63 00 EA */	lbz r3, 0xea(r3)
+/* 801260C8 00117048  4E 80 00 20 */	blr
+.global lbl_801260CC
+lbl_801260CC:
+/* 801260CC 0011704C  88 63 00 E9 */	lbz r3, 0xe9(r3)
+/* 801260D0 00117050  4E 80 00 20 */	blr
+.global lbl_801260D4
+lbl_801260D4:
+/* 801260D4 00117054  88 63 00 E8 */	lbz r3, 0xe8(r3)
+/* 801260D8 00117058  4E 80 00 20 */	blr
+.global lbl_801260DC
+lbl_801260DC:
+/* 801260DC 0011705C  38 63 FF 30 */	addi r3, r3, -0xd0
+/* 801260E0 00117060  4B FF FF DC */	b func_801260BC
+.global lbl_801260E4
+lbl_801260E4:
+/* 801260E4 00117064  38 63 FF 30 */	addi r3, r3, -0xd0
+/* 801260E8 00117068  48 00 2A 78 */	b func_80128B60
+.global lbl_801260EC
+lbl_801260EC:
+/* 801260EC 0011706C  38 63 FF 24 */	addi r3, r3, -0xdc
+/* 801260F0 00117070  4B FF FF BC */	b func_801260AC
+.global lbl_801260F4
+lbl_801260F4:
+/* 801260F4 00117074  38 63 FF 24 */	addi r3, r3, -0xdc
+/* 801260F8 00117078  4B FF FF B0 */	b func_801260A8

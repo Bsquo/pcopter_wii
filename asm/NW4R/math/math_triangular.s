@@ -1,0 +1,93 @@
+.include "macros.s"
+.section .text, "ax"
+.global func_801B71F0
+func_801B71F0:
+/* 801B71F0 001A8170  FC 60 0A 10 */	fabs f3, f1
+/* 801B71F4 001A8174  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801B71F8 001A8178  C0 02 A6 C0 */	lfs f0, lbl_80611EE0@sda21(r2)
+/* 801B71FC 001A817C  48 00 00 08 */	b func_801B7204
+lbl_801B7200:
+/* 801B7200 001A8180  EC 63 00 28 */	fsubs f3, f3, f0
+.global func_801B7204
+func_801B7204:
+/* 801B7204 001A8184  FC 03 00 40 */	fcmpo cr0, f3, f0
+/* 801B7208 001A8188  41 81 FF F8 */	bgt lbl_801B7200
+/* 801B720C 001A818C  F0 61 B0 0C */	psq_st f3, 0xc(r1), 1, qr3
+/* 801B7210 001A8190  A0 01 00 0C */	lhz r0, 0xc(r1)
+/* 801B7214 001A8194  B0 01 00 08 */	sth r0, 0x8(r1)
+/* 801B7218 001A8198  E0 41 B0 08 */	psq_l f2, 0x8(r1), 1, qr3
+/* 801B721C 001A819C  3C 80 80 1D */	lis r4, lbl_801C9548@ha
+/* 801B7220 001A81A0  54 00 25 36 */	rlwinm r0, r0, 4, 20, 27
+/* 801B7224 001A81A4  C0 02 A6 C4 */	lfs f0, lbl_80611EE4@sda21(r2)
+/* 801B7228 001A81A8  38 84 95 48 */	addi r4, r4, lbl_801C9548@l
+/* 801B722C 001A81AC  EC 83 10 28 */	fsubs f4, f3, f2
+/* 801B7230 001A81B0  7C 64 02 14 */	add r3, r4, r0
+/* 801B7234 001A81B4  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 801B7238 001A81B8  C0 63 00 08 */	lfs f3, 0x8(r3)
+/* 801B723C 001A81BC  7C 44 04 2E */	lfsx f2, r4, r0
+/* 801B7240 001A81C0  EC 04 00 F2 */	fmuls f0, f4, f3
+/* 801B7244 001A81C4  EC 22 00 2A */	fadds f1, f2, f0
+/* 801B7248 001A81C8  40 80 00 08 */	bge lbl_801B7250
+/* 801B724C 001A81CC  FC 20 08 50 */	fneg f1, f1
+lbl_801B7250:
+/* 801B7250 001A81D0  38 21 00 10 */	addi r1, r1, 0x10
+/* 801B7254 001A81D4  4E 80 00 20 */	blr
+.global func_801B7258
+func_801B7258:
+/* 801B7258 001A81D8  FC 20 0A 10 */	fabs f1, f1
+/* 801B725C 001A81DC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801B7260 001A81E0  C0 02 A6 C0 */	lfs f0, lbl_80611EE0@sda21(r2)
+/* 801B7264 001A81E4  48 00 00 08 */	b func_801B726C
+lbl_801B7268:
+/* 801B7268 001A81E8  EC 21 00 28 */	fsubs f1, f1, f0
+.global func_801B726C
+func_801B726C:
+/* 801B726C 001A81EC  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 801B7270 001A81F0  41 81 FF F8 */	bgt lbl_801B7268
+/* 801B7274 001A81F4  F0 21 B0 0C */	psq_st f1, 0xc(r1), 1, qr3
+/* 801B7278 001A81F8  A0 01 00 0C */	lhz r0, 0xc(r1)
+/* 801B727C 001A81FC  B0 01 00 08 */	sth r0, 0x8(r1)
+/* 801B7280 001A8200  E0 01 B0 08 */	psq_l f0, 0x8(r1), 1, qr3
+/* 801B7284 001A8204  3C 60 80 1D */	lis r3, lbl_801C9548@ha
+/* 801B7288 001A8208  54 00 25 36 */	rlwinm r0, r0, 4, 20, 27
+/* 801B728C 001A820C  38 63 95 48 */	addi r3, r3, lbl_801C9548@l
+/* 801B7290 001A8210  EC 41 00 28 */	fsubs f2, f1, f0
+/* 801B7294 001A8214  7C 63 02 14 */	add r3, r3, r0
+/* 801B7298 001A8218  C0 23 00 0C */	lfs f1, 0xc(r3)
+/* 801B729C 001A821C  C0 03 00 04 */	lfs f0, 0x4(r3)
+/* 801B72A0 001A8220  EC 22 00 72 */	fmuls f1, f2, f1
+/* 801B72A4 001A8224  EC 20 08 2A */	fadds f1, f0, f1
+/* 801B72A8 001A8228  38 21 00 10 */	addi r1, r1, 0x10
+/* 801B72AC 001A822C  4E 80 00 20 */	blr
+.global func_801B72B0
+func_801B72B0:
+/* 801B72B0 001A8230  FC 00 0A 10 */	fabs f0, f1
+/* 801B72B4 001A8234  3C A0 80 1D */	lis r5, lbl_801C9548@ha
+/* 801B72B8 001A8238  C0 42 A6 C0 */	lfs f2, lbl_80611EE0@sda21(r2)
+/* 801B72BC 001A823C  38 A5 95 48 */	addi r5, r5, lbl_801C9548@l
+/* 801B72C0 001A8240  F0 03 B0 00 */	psq_st f0, 0x0(r3), 1, qr3
+/* 801B72C4 001A8244  FC 00 10 00 */	fcmpu cr0, f0, f2
+/* 801B72C8 001A8248  40 81 00 14 */	ble lbl_801B72DC
+lbl_801B72CC:
+/* 801B72CC 001A824C  EC 00 10 28 */	fsubs f0, f0, f2
+/* 801B72D0 001A8250  FC 00 10 00 */	fcmpu cr0, f0, f2
+/* 801B72D4 001A8254  41 81 FF F8 */	bgt lbl_801B72CC
+/* 801B72D8 001A8258  F0 03 B0 00 */	psq_st f0, 0x0(r3), 1, qr3
+lbl_801B72DC:
+/* 801B72DC 001A825C  A0 03 00 00 */	lhz r0, 0x0(r3)
+/* 801B72E0 001A8260  EC 82 10 28 */	fsubs f4, f2, f2
+/* 801B72E4 001A8264  54 00 25 36 */	rlwinm r0, r0, 4, 20, 27
+/* 801B72E8 001A8268  7C A5 02 14 */	add r5, r5, r0
+/* 801B72EC 001A826C  E0 43 B0 00 */	psq_l f2, 0x0(r3), 1, qr3
+/* 801B72F0 001A8270  E0 65 00 00 */	psq_l f3, 0x0(r5), 0, qr0
+/* 801B72F4 001A8274  FC 01 20 00 */	fcmpu cr0, f1, f4
+/* 801B72F8 001A8278  EC 40 10 28 */	fsubs f2, f0, f2
+/* 801B72FC 001A827C  E0 05 00 08 */	psq_l f0, 0x8(r5), 0, qr0
+/* 801B7300 001A8280  10 00 18 9C */	ps_madds0 f0, f0, f2, f3
+/* 801B7304 001A8284  10 40 04 A0 */	ps_merge10 f2, f0, f0
+/* 801B7308 001A8288  F0 44 80 00 */	psq_st f2, 0x0(r4), 1, qr0
+/* 801B730C 001A828C  40 80 00 08 */	bge lbl_801B7314
+/* 801B7310 001A8290  10 00 00 50 */	ps_neg f0, f0
+lbl_801B7314:
+/* 801B7314 001A8294  F0 03 80 00 */	psq_st f0, 0x0(r3), 1, qr0
+/* 801B7318 001A8298  4E 80 00 20 */	blr

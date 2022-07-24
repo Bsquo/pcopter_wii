@@ -80,23 +80,54 @@ ASM_DIRS := asm                      \
 			asm/MSL_C/MSL_Common_Embedded/Math                       \
 			asm/MSL_C/PPC_EABI                       \
 			asm/MSL_C/PPC_EABI/Runtime                       \
+			asm/NdevExiA                       \
+			asm/NW4R                       \
+			asm/NW4R/db                       \
+			asm/NW4R/ef                       \
+			asm/NW4R/g3d                       \
+			asm/NW4R/hbm                       \
+			asm/NW4R/lyt                       \
+			asm/NW4R/math                       \
+			asm/NW4R/nw4hbm                       \
+			asm/NW4R/nw4hbm/lyt                       \
+			asm/NW4R/nw4hbm/math                       \
+			asm/NW4R/nw4hbm/ut                       \
+			asm/NW4R/snd                       \
+			asm/NW4R/THP                       \
+			asm/NW4R/ut                       \
 			asm/runtime                         \
+			asm/runtime/init                         \
+			asm/runtime/text                         \
 			asm/RVL                              \
 			asm/RVL/ai                              \
+			asm/RVL/arc                              \
 			asm/RVL/AX                              \
 			asm/RVL/base                              \
+			asm/RVL/bte                              \
 			asm/RVL/db                              \
 			asm/RVL/dsp                              \
 			asm/RVL/dvd                              \
+			asm/RVL/euart                              \
 			asm/RVL/exi                              \
+			asm/RVL/fs                              \
 			asm/RVL/GX                              \
 			asm/RVL/hbm                              \
+			asm/RVL/ipc                              \
+			asm/RVL/KPAD                              \
+			asm/RVL/mem                              \
 			asm/RVL/mix                              \
 			asm/RVL/mtx                              \
+			asm/RVL/NAND                              \
 			asm/RVL/OS                              \
 			asm/RVL/Pad                              \
+			asm/RVL/sc                              \
 			asm/RVL/si                              \
-			asm/RVL/vi
+			asm/RVL/TPL                              \
+			asm/RVL/usb                              \
+			asm/RVL/vi                               \
+			asm/RVL/WENC                              \
+			asm/RVL/WPAD                              \
+			asm/RVL/WUD
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))
@@ -111,9 +142,10 @@ MAP     := $(BUILD_DIR)/pcopter_wii_eur.map
 
 include obj_files.mk
 
-O_FILES := $(INIT_O_FILES) $(EXTAB_O_FILES) $(EXTABINDEX_O_FILES) $(TEXT_O_FILES) \
-           $(CTORS_O_FILES) $(DTORS_O_FILES) $(RODATA_O_FILES) $(DATA_O_FILES)    \
-           $(BSS_O_FILES) $(SDATA_O_FILES) $(SBSS_O_FILES) $(SDATA2_O_FILES) $(SBSS2_O_FILES)
+O_FILES := $(INIT_O_FILES) $(EXTAB_O_FILES) $(EXTABINDEX_O_FILES) $(GAME_O_FILES) \
+           $(SDK_O_FILES) $(NW4R_O_FILES) $(CTORS_O_FILES) $(DTORS_O_FILES)       \
+		   $(RODATA_O_FILES) $(DATA_O_FILES) $(BSS_O_FILES) $(SDATA_O_FILES)      \
+		   $(SBSS_O_FILES) $(SDATA2_O_FILES) $(SBSS2_O_FILES)
 
 #-------------------------------------------------------------------------------
 # Tools
@@ -182,7 +214,9 @@ tools:
 	$(MAKE) -C tools
 
 $(ELF): $(O_FILES) $(LDSCRIPT)
-	$(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) $(O_FILES)
+	# Fixes the "Argument list too long" linker error.
+	@echo $(O_FILES) > build/o_files
+	$(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) @build/o_files
 # The Metrowerks linker doesn't generate physical addresses in the ELF program headers. This fixes it somehow.
 	$(OBJCOPY) $@ $@
 

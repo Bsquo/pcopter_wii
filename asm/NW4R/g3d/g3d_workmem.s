@@ -1,0 +1,28 @@
+.include "macros.s"
+.section .text, "ax"
+.global func_801A7B0C
+func_801A7B0C:
+/* 801A7B0C 00198A8C  3C 60 80 5F */	lis r3, lbl_805F5E00@ha
+/* 801A7B10 00198A90  38 63 5E 00 */	addi r3, r3, lbl_805F5E00@l
+/* 801A7B14 00198A94  4E 80 00 20 */	blr
+.global func_801A7B18
+func_801A7B18:
+/* 801A7B18 00198A98  3C 60 80 5F */	lis r3, lbl_805F5E00@ha
+/* 801A7B1C 00198A9C  38 63 5E 00 */	addi r3, r3, lbl_805F5E00@l
+/* 801A7B20 00198AA0  38 63 60 00 */	addi r3, r3, 0x6000
+/* 801A7B24 00198AA4  4E 80 00 20 */	blr
+.global func_801A7B28
+func_801A7B28:
+/* 801A7B28 00198AA8  3C 60 80 5F */	lis r3, lbl_805F5E00@ha
+/* 801A7B2C 00198AAC  38 63 5E 00 */	addi r3, r3, lbl_805F5E00@l
+/* 801A7B30 00198AB0  4E 80 00 20 */	blr
+.global func_801A7B34
+func_801A7B34:
+/* 801A7B34 00198AB4  3C 60 80 5F */	lis r3, lbl_805F5E00@ha
+/* 801A7B38 00198AB8  38 63 5E 00 */	addi r3, r3, lbl_805F5E00@l
+/* 801A7B3C 00198ABC  4E 80 00 20 */	blr
+.global func_801A7B40
+func_801A7B40:
+/* 801A7B40 00198AC0  3C 60 80 5F */	lis r3, lbl_805F5E00@ha
+/* 801A7B44 00198AC4  38 63 5E 00 */	addi r3, r3, lbl_805F5E00@l
+/* 801A7B48 00198AC8  4E 80 00 20 */	blr

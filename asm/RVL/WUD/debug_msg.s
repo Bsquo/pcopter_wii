@@ -1,0 +1,25 @@
+.include "macros.s"
+.section .text, "ax"
+.global func_800E6E94
+func_800E6E94:
+/* 800E6E94 000D7E14  94 21 FF 90 */	stwu r1, -0x70(r1)
+/* 800E6E98 000D7E18  40 86 00 24 */	bne cr1, lbl_800E6EBC
+/* 800E6E9C 000D7E1C  D8 21 00 28 */	stfd f1, 0x28(r1)
+/* 800E6EA0 000D7E20  D8 41 00 30 */	stfd f2, 0x30(r1)
+/* 800E6EA4 000D7E24  D8 61 00 38 */	stfd f3, 0x38(r1)
+/* 800E6EA8 000D7E28  D8 81 00 40 */	stfd f4, 0x40(r1)
+/* 800E6EAC 000D7E2C  D8 A1 00 48 */	stfd f5, 0x48(r1)
+/* 800E6EB0 000D7E30  D8 C1 00 50 */	stfd f6, 0x50(r1)
+/* 800E6EB4 000D7E34  D8 E1 00 58 */	stfd f7, 0x58(r1)
+/* 800E6EB8 000D7E38  D9 01 00 60 */	stfd f8, 0x60(r1)
+lbl_800E6EBC:
+/* 800E6EBC 000D7E3C  90 61 00 08 */	stw r3, 0x8(r1)
+/* 800E6EC0 000D7E40  90 81 00 0C */	stw r4, 0xc(r1)
+/* 800E6EC4 000D7E44  90 A1 00 10 */	stw r5, 0x10(r1)
+/* 800E6EC8 000D7E48  90 C1 00 14 */	stw r6, 0x14(r1)
+/* 800E6ECC 000D7E4C  90 E1 00 18 */	stw r7, 0x18(r1)
+/* 800E6ED0 000D7E50  91 01 00 1C */	stw r8, 0x1c(r1)
+/* 800E6ED4 000D7E54  91 21 00 20 */	stw r9, 0x20(r1)
+/* 800E6ED8 000D7E58  91 41 00 24 */	stw r10, 0x24(r1)
+/* 800E6EDC 000D7E5C  38 21 00 70 */	addi r1, r1, 0x70
+/* 800E6EE0 000D7E60  4E 80 00 20 */	blr

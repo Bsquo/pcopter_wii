@@ -6,19 +6,19 @@
 lbl_8000CB00:
 
 	# ROM: 0x1AF8E0
-	.4byte func_80011660
+	.4byte main
 	.4byte 0x00000020
 	.4byte lbl_800064E0
-	.4byte func_80011680
+	.4byte GetInstance__4CAppFv
 	.4byte 0x00000064
 	.4byte lbl_800064E8
-	.4byte func_800116E4
+	.4byte __ct__4CAppFv
 	.4byte 0x00000198
 	.4byte lbl_800064F0
-	.4byte func_8001187C
+	.4byte __dt__10CSceneGameFv
 	.4byte 0x00000068
 	.4byte lbl_800067A0
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x00000044
 	.4byte lbl_800067A8
 	.4byte func_80011928
@@ -528,7 +528,7 @@ lbl_8000CB00:
 	.4byte func_8001D1E0
 	.4byte 0x00000054
 	.4byte lbl_80006EDC
-	.4byte func_8001D250
+	.4byte Normalize__8CVVectorFv
 	.4byte 0x00000060
 	.4byte lbl_80006EE4
 	.4byte func_8001D2DC
@@ -1101,7 +1101,7 @@ lbl_8000CB00:
 	.4byte func_80026EAC
 	.4byte 0x00000274
 	.4byte lbl_80007760
-	.4byte func_80027144
+	.4byte GetRoll__8CVVectorFv
 	.4byte 0x00000084
 	.4byte lbl_80007768
 	.4byte func_80027260
@@ -1122,7 +1122,7 @@ lbl_8000CB00:
 	.4byte func_80027588
 	.4byte 0x00000060
 	.4byte lbl_80007798
-	.4byte func_800275E8
+	.4byte __er__8CVVectorFRC8CVVector
 	.4byte 0x0000008C
 	.4byte lbl_800077A0
 	.4byte func_80027674
@@ -1926,7 +1926,7 @@ lbl_8000CB00:
 	.4byte func_80031ED4
 	.4byte 0x0000011C
 	.4byte lbl_80008600
-	.4byte func_80031FF0
+	.4byte __opCQ34nw4r4math4VEC3__8CVVectorFv
 	.4byte 0x00000050
 	.4byte lbl_80008608
 	.4byte func_80032040
@@ -4427,7 +4427,7 @@ lbl_80010138:
 	.4byte func_800BDF98
 	.4byte 0x00000040
 	.4byte lbl_8000C520
-	.4byte func_800BDFD8
+	.4byte asinf
 	.4byte 0x00000028
 	.4byte lbl_8000C528
 	.4byte func_800BE000
@@ -4436,7 +4436,7 @@ lbl_80010138:
 	.4byte func_800BE028
 	.4byte 0x00000028
 	.4byte lbl_8000C538
-	.4byte func_800BE060
+	.4byte func_sqrtf
 	.4byte 0x00000028
 	.4byte lbl_8000C540
 	.4byte func_800C20AC
@@ -4827,7 +4827,7 @@ lbl_80011624:
 	# ROM: 0x1B4404
 	.4byte lbl_8000CB00
 	.4byte lbl_80011624
-	.4byte func_80011660
+	.4byte main
 	.4byte 0x0010B92C
 	.4byte 0
 	.4byte 0

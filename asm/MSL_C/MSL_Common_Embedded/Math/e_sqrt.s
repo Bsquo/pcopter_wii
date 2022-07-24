@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_800C1E5C
-func_800C1E5C:
+.global __ieee754_sqrt
+__ieee754_sqrt:
 /* 800C1E5C 000B2DDC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800C1E60 000B2DE0  D8 21 00 08 */	stfd f1, 0x8(r1)
 /* 800C1E64 000B2DE4  80 C1 00 08 */	lwz r6, 0x8(r1)

@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_800BDFD8
-func_800BDFD8:
+.global asinf
+asinf:
 /* 800BDFD8 000AEF58  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800BDFDC 000AEF5C  7C 08 02 A6 */	mflr r0
 /* 800BDFE0 000AEF60  FC 20 08 18 */	frsp f1, f1
@@ -48,13 +48,13 @@ func_800BE050:
 /* 800BE058 000AEFD8  FC 20 00 18 */	frsp f1, f0
 /* 800BE05C 000AEFDC  4E 80 00 20 */	blr
 
-.global func_800BE060
-func_800BE060:
-/* 800BE060 000AEFE0  94 21 FF F0 */	stwu r1, -0x10(r1)
+.global func_sqrtf
+func_sqrtf:
+/* sqrtf 000AEFE0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800BE064 000AEFE4  7C 08 02 A6 */	mflr r0
 /* 800BE068 000AEFE8  FC 20 08 18 */	frsp f1, f1
 /* 800BE06C 000AEFEC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800BE070 000AEFF0  48 00 40 39 */	bl func_800C20A8
+/* 800BE070 000AEFF0  48 00 40 39 */	bl sqrt
 /* 800BE074 000AEFF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800BE078 000AEFF8  FC 20 08 18 */	frsp f1, f1
 /* 800BE07C 000AEFFC  7C 08 03 A6 */	mtlr r0

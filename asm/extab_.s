@@ -185,7 +185,7 @@ lbl_800064F0:
 	.4byte func_80011964
 	.4byte 0x0780001F
 	.4byte 0x00000148
-	.4byte func_8001187C
+	.4byte __dt__10CSceneGameFv
 	.4byte 0x0780001F
 	.4byte 0x00000138
 	.4byte func_80026778
@@ -1338,7 +1338,7 @@ lbl_80006D98:
 	.4byte 0x00340028
 	.4byte 0
 	.4byte 0x0A80001C
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000008
 	.4byte func_8002C34C
 
@@ -2251,7 +2251,7 @@ lbl_800072E4:
 	.4byte 0x82000030
 	.4byte func_8002C34C
 	.4byte 0x0A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000030
 	.4byte func_8002C34C
 
@@ -2645,11 +2645,11 @@ lbl_80007570:
 	.4byte 0x00000030
 	.4byte 0
 	.4byte 0x8A800015
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A800014
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_800075A8
 lbl_800075A8:
@@ -2772,7 +2772,7 @@ lbl_80007628:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80007640
 lbl_80007640:
@@ -2797,7 +2797,7 @@ lbl_80007650:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001C
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80007668
 lbl_80007668:
@@ -2808,7 +2808,7 @@ lbl_80007668:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001C
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80007680
 lbl_80007680:
@@ -3986,7 +3986,7 @@ lbl_80007C78:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80007C90
 lbl_80007C90:
@@ -4004,7 +4004,7 @@ lbl_80007C98:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80007CB0
 lbl_80007CB0:
@@ -4062,7 +4062,7 @@ lbl_80007CF4:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A800010
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80007D0C
 lbl_80007D0C:
@@ -4094,7 +4094,7 @@ lbl_80007D24:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80007D3C
 lbl_80007D3C:
@@ -4459,7 +4459,7 @@ lbl_80007F18:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80007F30
 lbl_80007F30:
@@ -4484,7 +4484,7 @@ lbl_80007F40:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80007F58
 lbl_80007F58:
@@ -4634,7 +4634,7 @@ lbl_80008030:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80008048
 lbl_80008048:
@@ -4663,7 +4663,7 @@ lbl_80008068:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80008080
 lbl_80008080:
@@ -4674,7 +4674,7 @@ lbl_80008080:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80008098
 lbl_80008098:
@@ -4912,7 +4912,7 @@ lbl_800081E0:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_800081F8
 lbl_800081F8:
@@ -5122,7 +5122,7 @@ lbl_80008460:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80008478
 lbl_80008478:
@@ -5349,7 +5349,7 @@ lbl_80008618:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000008
 	.4byte func_80026778
 
@@ -5364,7 +5364,7 @@ lbl_80008640:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000008
 	.4byte func_80026778
 
@@ -5379,7 +5379,7 @@ lbl_80008668:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000008
 	.4byte func_80026778
 
@@ -5734,9 +5734,9 @@ lbl_80008828:
 	.4byte 0x000000A0
 	.4byte 0
 	.4byte 0x8A80001B
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001C
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x02000014
 	.4byte func_80014574
 	.4byte 0x820000D0
@@ -6172,9 +6172,9 @@ lbl_80008B10:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80008B38
 lbl_80008B38:
@@ -6212,9 +6212,9 @@ lbl_80008B60:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80008B88
 lbl_80008B88:
@@ -6352,9 +6352,9 @@ lbl_80008C50:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80008C78
 lbl_80008C78:
@@ -6418,9 +6418,9 @@ lbl_80008CBC:
 	.4byte 0x00000070
 	.4byte 0
 	.4byte 0x8A80001B
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001B
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x10000000
 	.4byte 0
 	.4byte 0x000005B8
@@ -6555,9 +6555,9 @@ lbl_80008DD8:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80008E00
 lbl_80008E00:
@@ -6624,11 +6624,11 @@ lbl_80008E30:
 	.4byte 0x00000078
 	.4byte 0
 	.4byte 0x0A800014
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000008
 	.4byte func_8002D304
 	.4byte 0x0A800014
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000008
 	.4byte func_8002D304
 	.4byte 0x02000020
@@ -6715,9 +6715,9 @@ lbl_80008F40:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80008F68
 lbl_80008F68:
@@ -6769,9 +6769,9 @@ lbl_80008FA0:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80008FC8
 lbl_80008FC8:
@@ -6844,9 +6844,9 @@ lbl_80009024:
 	.4byte 0x002E0030
 	.4byte 0
 	.4byte 0x8A80001C
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001C
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000008
 	.4byte func_8016834C
 
@@ -6956,9 +6956,9 @@ lbl_800090D4:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_800090FC
 lbl_800090FC:
@@ -7066,7 +7066,7 @@ lbl_800091A0:
 	.4byte 0x00000098
 	.4byte 0
 	.4byte 0x0A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x02000008
 	.4byte func_80020688
 	.4byte 0x02000010
@@ -7076,7 +7076,7 @@ lbl_800091A0:
 	.4byte 0x82000020
 	.4byte func_80020688
 	.4byte 0x0A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x01000080
 
 .global lbl_8000924C
@@ -7350,7 +7350,7 @@ lbl_800093BC:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_800093D4
 lbl_800093D4:
@@ -7381,7 +7381,7 @@ lbl_800093F0:
 	.4byte 0x00000040
 	.4byte 0
 	.4byte 0x0A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x02000008
 	.4byte func_80020688
 	.4byte 0x82000010
@@ -7416,7 +7416,7 @@ lbl_80009454:
 	.4byte 0x00000040
 	.4byte 0
 	.4byte 0x0A80001C
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x02000008
 	.4byte func_80020688
 	.4byte 0x82000010
@@ -7447,7 +7447,7 @@ lbl_800094B8:
 	.4byte 0x82000008
 	.4byte func_80020688
 	.4byte 0x8A80001B
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_800094E0
 lbl_800094E0:
@@ -7514,7 +7514,7 @@ lbl_80009550:
 	.4byte 0x00000070
 	.4byte 0
 	.4byte 0x0A80001A
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x02000008
 	.4byte func_80026778
 	.4byte 0x02000010
@@ -7691,11 +7691,11 @@ lbl_800096B8:
 	.4byte 0x00110040
 	.4byte 0
 	.4byte 0x0A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000008
 	.4byte func_8002C34C
 	.4byte 0x0A80001C
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000008
 	.4byte func_8002C34C
 
@@ -7812,7 +7812,7 @@ lbl_800097C0:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_800097D8
 lbl_800097D8:
@@ -8042,9 +8042,9 @@ lbl_800098DC:
 	.4byte 0x00160030
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000008
 	.4byte func_8016834C
 
@@ -8089,7 +8089,7 @@ lbl_80009944:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_8000995C
 lbl_8000995C:
@@ -8167,7 +8167,7 @@ lbl_800099BC:
 	.4byte 0x00030038
 	.4byte 0
 	.4byte 0x0A800014
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000020
 	.4byte func_80020688
 
@@ -8236,7 +8236,7 @@ lbl_80009A64:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80009A7C
 lbl_80009A7C:
@@ -8374,9 +8374,9 @@ lbl_80009B30:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80009B58
 lbl_80009B58:
@@ -8389,9 +8389,9 @@ lbl_80009B58:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80009B80
 lbl_80009B80:
@@ -8442,9 +8442,9 @@ lbl_80009BC8:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80009BF0
 lbl_80009BF0:
@@ -8493,9 +8493,9 @@ lbl_80009C30:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80009C58
 lbl_80009C58:
@@ -8508,9 +8508,9 @@ lbl_80009C58:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80009C80
 lbl_80009C80:
@@ -8565,9 +8565,9 @@ lbl_80009CB0:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80009CD8
 lbl_80009CD8:
@@ -8605,9 +8605,9 @@ lbl_80009D00:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80009D28
 lbl_80009D28:
@@ -8620,9 +8620,9 @@ lbl_80009D28:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80009D50
 lbl_80009D50:
@@ -8873,23 +8873,23 @@ lbl_80009E50:
 	.4byte 0x00000090
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_80009EE8
 lbl_80009EE8:
@@ -9369,9 +9369,9 @@ lbl_8000A29C:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_8000A2C4
 lbl_8000A2C4:
@@ -9437,9 +9437,9 @@ lbl_8000A30C:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_8000A334
 lbl_8000A334:
@@ -9536,7 +9536,7 @@ lbl_8000A3A4:
 	.4byte 0x00040038
 	.4byte 0
 	.4byte 0x0A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000010
 	.4byte func_80026778
 	.4byte 0x02000008
@@ -9578,7 +9578,7 @@ lbl_8000A424:
 	.4byte 0x00000038
 	.4byte 0
 	.4byte 0x0A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000010
 	.4byte func_80026778
 	.4byte 0x02000008
@@ -9618,7 +9618,7 @@ lbl_8000A48C:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000008
 	.4byte func_80026778
 
@@ -9650,7 +9650,7 @@ lbl_8000A4E4:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000008
 	.4byte func_80026778
 
@@ -10609,9 +10609,9 @@ lbl_8000AD00:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_8000AD28
 lbl_8000AD28:
@@ -10705,9 +10705,9 @@ lbl_8000AD90:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_8000ADB8
 lbl_8000ADB8:
@@ -10784,7 +10784,7 @@ lbl_8000AE20:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_8000AE38
 lbl_8000AE38:
@@ -10803,7 +10803,7 @@ lbl_8000AE38:
 	.4byte 0x0000005C
 	.4byte 0
 	.4byte 0x8A80001C
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x90000000
 	.4byte 0
 	.4byte 0x00000190
@@ -10873,7 +10873,7 @@ lbl_8000AED0:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_8000AEE8
 lbl_8000AEE8:
@@ -11708,9 +11708,9 @@ lbl_8000B6B0:
 	.4byte 0x00F90038
 	.4byte 0
 	.4byte 0x8A80001B
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001C
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x82000024
 	.4byte func_8002C34C
 
@@ -11792,9 +11792,9 @@ lbl_8000B748:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_8000B770
 lbl_8000B770:
@@ -11867,9 +11867,9 @@ lbl_8000B7C0:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001D
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_8000B7E8
 lbl_8000B7E8:
@@ -12692,7 +12692,7 @@ lbl_8000BFAC:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_8000BFC4
 lbl_8000BFC4:
@@ -12983,9 +12983,9 @@ lbl_8000C23C:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x8A80001F
-	.4byte func_800118E4
+	.4byte __dl__FPv
 	.4byte 0x8A80001E
-	.4byte func_800118E4
+	.4byte __dl__FPv
 
 .global lbl_8000C264
 lbl_8000C264:

@@ -1121,7 +1121,7 @@ lbl_801CB4F8:
 	.4byte lbl_80019650
 	.4byte lbl_80015C18
 	.4byte lbl_80019680
-	.4byte func_8001187C
+	.4byte __dt__10CSceneGameFv
 	.4byte lbl_80057FE4
 	.4byte lbl_8005807C
 	.4byte lbl_800582F8

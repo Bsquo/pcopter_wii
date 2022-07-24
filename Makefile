@@ -29,7 +29,6 @@ ASM_DIRS := asm                      \
             asm/game/actor           \
 			asm/game/actor/Copter          \
 			asm/game/actor/Copter/parts    \
-			asm/game/actor/Copter/parts    \
 			asm/game/actor/ActScn    \
 			asm/game/app             \
 			asm/game/collision       \
@@ -172,8 +171,8 @@ PYTHON  := python
 INCLUDES := -i . -I- -i include
 
 ASFLAGS := -mgekko -I include
-LDFLAGS := -map $(MAP) -fp hard -nodefaults
-CFLAGS  := -Cpp_exceptions off -proc gekko -fp hard -O4 -nodefaults -msgstyle gcc $(INCLUDES)
+LDFLAGS := -map $(MAP) -fp fmadd -nodefaults
+CFLAGS  := -Cpp_exceptions off -proc gekko -fp fmadd -O4 -nodefaults -msgstyle gcc $(INCLUDES)
 
 # for postprocess.py
 PROCFLAGS := -fprologue-fixup=old_stack

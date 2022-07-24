@@ -4436,7 +4436,7 @@ lbl_80010138:
 	.4byte func_800BE028
 	.4byte 0x00000028
 	.4byte lbl_8000C538
-	.4byte func_sqrtf
+	.4byte sqrtf
 	.4byte 0x00000028
 	.4byte lbl_8000C540
 	.4byte func_800C20AC

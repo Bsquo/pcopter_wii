@@ -227,7 +227,7 @@ Magnitude__8CVVectorFv:
 
 .global func_8001A214
 func_8001A214:
-/* 8001A214 0000B194  48 0A 3E 4C */	b func_sqrtf
+/* 8001A214 0000B194  48 0A 3E 4C */	b sqrtf
 
 .global __as__8CVVectorFRC8CVV
 __as__8CVVectorFRC8CVV:

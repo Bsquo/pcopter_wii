@@ -5,7 +5,7 @@
 .global func_800BBB14
 func_800BBB14:
 /* 800BBB14 000ACA94  54 A5 08 3C */	slwi r5, r5, 1
-/* 800BBB18 000ACA98  4B F4 88 20 */	b func_80004338
+/* 800BBB18 000ACA98  4B F4 88 20 */	b memcpy
 
 .global func_800BBB1C
 func_800BBB1C:

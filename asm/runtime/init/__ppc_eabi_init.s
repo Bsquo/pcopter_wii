@@ -2,8 +2,8 @@
 
 .section .init, "ax", @progbits  # 0x80004000 - 0x800064E0 ; 0x000024E0
 
-.global func_800042E0
-func_800042E0:
+.global __init_hardware
+__init_hardware:
 /* 800042E0 000003E0  7C 00 00 A6 */	mfmsr r0
 /* 800042E4 000003E4  60 00 20 00 */	ori r0, r0, 0x2000
 /* 800042E8 000003E8  7C 00 01 24 */	mtmsr r0
@@ -14,8 +14,8 @@ func_800042E0:
 /* 800042FC 000003FC  7F E8 03 A6 */	mtlr r31
 /* 80004300 00000400  4E 80 00 20 */	blr
 
-.global func_80004304
-func_80004304:
+.global __flush_cache
+__flush_cache:
 /* 80004304 00000404  3C A0 FF FF */	lis r5, 0xFFFFFFF1@h
 /* 80004308 00000408  60 A5 FF F1 */	ori r5, r5, 0xFFFFFFF1@l
 /* 8000430C 0000040C  7C A5 18 38 */	and r5, r5, r3

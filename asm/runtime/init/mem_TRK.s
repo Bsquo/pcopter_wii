@@ -2,8 +2,8 @@
 
 .section .init, "ax", @progbits  # 0x80004000 - 0x800064E0 ; 0x000024E0
 
-.global func_8000446C
-func_8000446C:
+.global TRK_memset
+TRK_memset:
 /* 8000446C 0000056C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80004470 00000570  7C 08 02 A6 */	mflr r0
 /* 80004474 00000574  90 01 00 14 */	stw r0, 0x14(r1)
@@ -17,8 +17,8 @@ func_8000446C:
 /* 80004494 00000594  38 21 00 10 */	addi r1, r1, 0x10
 /* 80004498 00000598  4E 80 00 20 */	blr
 
-.global func_8000449C
-func_8000449C:
+.global TRK_memcpy
+TRK_memcpy:
 /* 8000449C 0000059C  38 84 FF FF */	addi r4, r4, -0x1
 /* 800044A0 000005A0  38 C3 FF FF */	addi r6, r3, -0x1
 /* 800044A4 000005A4  38 A5 00 01 */	addi r5, r5, 0x1

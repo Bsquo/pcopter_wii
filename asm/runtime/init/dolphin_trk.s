@@ -2,8 +2,8 @@
 
 .section .init, "ax", @progbits  # 0x80004000 - 0x800064E0 ; 0x000024E0
 
-.global func_800063F4
-func_800063F4:
+.global __TRK_reset
+__TRK_reset:
 /* 800063F4 000024F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800063F8 000024F8  7C 08 02 A6 */	mflr r0
 /* 800063FC 000024FC  38 60 00 00 */	li r3, 0x0

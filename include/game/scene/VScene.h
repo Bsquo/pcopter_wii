@@ -5,15 +5,15 @@
 
 class CVScene {
 	private:
-		u32 unk_0;
-		void* unk_1;
-		u32 unk_2;
-		u32 unk_3;
-		u32 unk_4;
+		u32 field_0x0;
+		void* field_0x04;
+		u32 field_0x08;
+		u32 field_0x0C;
+		u32 field_0x10;
 		u32 mIsEnd;
 		u32 mSceneExited;
 		u32 mIsControllerDisconnected;
-		u32 unk_5;
+		u32 field_0x20;
 		u32 mFrameTimer;
 
     public:

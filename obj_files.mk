@@ -34,7 +34,9 @@ GAME_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/game/math/VMath_2.o                         \
     $(BUILD_DIR)/asm/game/gfx/VModel.o                         \
     $(BUILD_DIR)/asm/game/collision/VRigid.o                   \
-    $(BUILD_DIR)/asm/game/scene/VScene.o                      \
+    $(BUILD_DIR)/asm/game/scene/VScene_1.o                      \
+	$(BUILD_DIR)/src/game/scene/VScene.o                      \
+	$(BUILD_DIR)/asm/game/scene/VScene_2.o                      \
     $(BUILD_DIR)/asm/game/utils/VScript.o                      \
     $(BUILD_DIR)/asm/game/managers/VModelMgr.o                 \
     $(BUILD_DIR)/asm/game/managers/VSoundMgr.o                 \

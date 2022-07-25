@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80026760
-func_80026760:
+.global __ct__6CVFlagFv
+__ct__6CVFlagFv:
 /* 80026760 000176E0  3C 80 80 1D */	lis r4, lbl_801CB7A8@ha
 /* 80026764 000176E4  38 00 00 00 */	li r0, 0x0
 /* 80026768 000176E8  38 84 B7 A8 */	addi r4, r4, lbl_801CB7A8@l
@@ -11,8 +11,8 @@ func_80026760:
 /* 80026770 000176F0  90 83 00 04 */	stw r4, 0x4(r3)
 /* 80026774 000176F4  4E 80 00 20 */	blr
 
-.global func_80026778
-func_80026778:
+.global __dt__6CVFlagFv
+__dt__6CVFlagFv:
 /* 80026778 000176F8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002677C 000176FC  7C 08 02 A6 */	mflr r0
 /* 80026780 00017700  2C 03 00 00 */	cmpwi r3, 0x0
@@ -31,14 +31,14 @@ lbl_800267A0:
 /* 800267B0 00017730  38 21 00 10 */	addi r1, r1, 0x10
 /* 800267B4 00017734  4E 80 00 20 */	blr
 
-.global func_800267B8
-func_800267B8:
+.global Clear__6CVFlagFv
+Clear__6CVFlagFv:
 /* 800267B8 00017738  38 00 00 00 */	li r0, 0x0
 /* 800267BC 0001773C  90 03 00 00 */	stw r0, 0x0(r3)
 /* 800267C0 00017740  4E 80 00 20 */	blr
 
-.global func_800267C4
-func_800267C4:
+.global Set__6CVFlagFUsi
+Set__6CVFlagFUsi:
 /* 800267C4 00017744  2C 05 00 00 */	cmpwi r5, 0x0
 /* 800267C8 00017748  38 A0 00 01 */	li r5, 0x1
 /* 800267CC 0001774C  7C A5 20 30 */	slw r5, r5, r4
@@ -53,8 +53,8 @@ lbl_800267E4:
 /* 800267EC 0001776C  90 03 00 00 */	stw r0, 0x0(r3)
 /* 800267F0 00017770  4E 80 00 20 */	blr
 
-.global func_800267F4
-func_800267F4:
+.global Check__6CVFlagFUs
+Check__6CVFlagFUs:
 /* 800267F4 00017774  38 A0 00 01 */	li r5, 0x1
 /* 800267F8 00017778  80 03 00 00 */	lwz r0, 0x0(r3)
 /* 800267FC 0001777C  7C A5 20 30 */	slw r5, r5, r4

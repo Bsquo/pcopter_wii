@@ -1416,7 +1416,7 @@ lbl_801CB7A8:
 	# ROM: 0x1C78A8
 	.4byte lbl_8060DFC0
 	.4byte 0
-	.4byte func_80026778
+	.4byte __dt__6CVFlagFv
 	.4byte 0
 
 .global lbl_801CB7B8

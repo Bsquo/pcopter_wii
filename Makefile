@@ -22,7 +22,8 @@ SRC_DIRS := src                      \
 			src/game/math            \
 			src/game/scenary/Japan   \
 			src/game/scene           \
-			src/game/scene/Game
+			src/game/scene/Game      \
+			src/game/utils
 
 ASM_DIRS := asm                      \
 			asm/game                 \

@@ -1065,7 +1065,7 @@ lbl_8000CB00:
 	.4byte func_80026648
 	.4byte 0x00000118
 	.4byte lbl_80007700
-	.4byte func_80026778
+	.4byte __dt__6CVFlagFv
 	.4byte 0x00000040
 	.4byte lbl_80007708
 	.4byte func_8002683C

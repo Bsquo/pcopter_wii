@@ -149,8 +149,8 @@ lbl_80031820:
 .global __ct__6CVFlagFRC6CVFlag
 __ct__6CVFlagFRC6CVFlag:
 /* 80031870 000227F0  80 04 00 00 */	lwz r0, 0x0(r4)
-/* 80031874 000227F4  3C 80 80 1D */	lis r4, lbl_801CB7A8@ha
-/* 80031878 000227F8  38 84 B7 A8 */	addi r4, r4, lbl_801CB7A8@l
+/* 80031874 000227F4  3C 80 80 1D */	lis r4, __vt__6CVFlag@ha
+/* 80031878 000227F8  38 84 B7 A8 */	addi r4, r4, __vt__6CVFlag@l
 /* 8003187C 000227FC  90 83 00 04 */	stw r4, 0x4(r3)
 /* 80031880 00022800  90 03 00 00 */	stw r0, 0x0(r3)
 /* 80031884 00022804  4E 80 00 20 */	blr

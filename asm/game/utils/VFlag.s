@@ -2,15 +2,6 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global __ct__6CVFlagFv
-__ct__6CVFlagFv:
-/* 80026760 000176E0  3C 80 80 1D */	lis r4, lbl_801CB7A8@ha
-/* 80026764 000176E4  38 00 00 00 */	li r0, 0x0
-/* 80026768 000176E8  38 84 B7 A8 */	addi r4, r4, lbl_801CB7A8@l
-/* 8002676C 000176EC  90 03 00 00 */	stw r0, 0x0(r3)
-/* 80026770 000176F0  90 83 00 04 */	stw r4, 0x4(r3)
-/* 80026774 000176F4  4E 80 00 20 */	blr
-
 .global __dt__6CVFlagFv
 __dt__6CVFlagFv:
 /* 80026778 000176F8  94 21 FF F0 */	stwu r1, -0x10(r1)

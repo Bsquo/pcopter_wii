@@ -1410,8 +1410,8 @@ lbl_801CB79C:
 	.4byte 0
 	.4byte 0
 
-.global lbl_801CB7A8
-lbl_801CB7A8:
+.global __vt__6CVFlag
+__vt__6CVFlag:
 
 	# ROM: 0x1C78A8
 	.4byte lbl_8060DFC0

@@ -361,3 +361,30 @@ func_80026C4C:
 /* 80026C50 00017BD0  38 04 FF FF */	addi r0, r4, -0x1
 /* 80026C54 00017BD4  90 03 00 08 */	stw r0, 0x8(r3)
 /* 80026C58 00017BD8  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB7B8
+lbl_801CB7B8:
+
+	# ROM: 0x1C78B8
+	.4byte lbl_8060DFC8
+	.4byte 0
+	.4byte func_8002696C
+
+.global lbl_801CB7C4
+lbl_801CB7C4:
+
+	# ROM: 0x1C78C4
+	.4byte lbl_8060DF38
+	.4byte 0
+	.4byte func_8002683C
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060DFC8
+lbl_8060DFC8:
+
+	# ROM: 0x1EE1C8
+	.4byte lbl_8060F9BC
+	.4byte 0

@@ -2433,3 +2433,41 @@ lbl_80020524:
 /* 800205A8 00011528  7C 08 03 A6 */	mtlr r0
 /* 800205AC 0001152C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800205B0 00011530  4E 80 00 20 */	blr
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060DF40
+lbl_8060DF40:
+
+	# ROM: 0x1EE140
+	.4byte 0x72656600
+
+.global lbl_8060DF44
+lbl_8060DF44:
+
+	# ROM: 0x1EE144
+	.4byte 0x72656600
+
+.global lbl_8060DF48
+lbl_8060DF48:
+
+	# ROM: 0x1EE148
+	.4byte 0x72656600
+
+.global lbl_8060DF4C
+lbl_8060DF4C:
+
+	# ROM: 0x1EE14C
+	.4byte 0x72656600
+
+.global lbl_8060DF50
+lbl_8060DF50:
+
+	# ROM: 0x1EE150
+	.4byte 0x72656600
+
+.global lbl_8060DF54
+lbl_8060DF54:
+
+	# ROM: 0x1EE154
+	.4byte 0x72656600

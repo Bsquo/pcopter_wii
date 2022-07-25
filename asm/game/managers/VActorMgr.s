@@ -435,3 +435,23 @@ func_8002DB4C:
 /* 8002DB5C 0001EADC  7C 08 03 A6 */	mtlr r0
 /* 8002DB60 0001EAE0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002DB64 0001EAE4  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB8A8
+lbl_801CB8A8:
+
+	# ROM: 0x1C79A8
+	.4byte lbl_8060E010
+	.4byte 0
+	.4byte lbl_800159D8
+	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E010
+lbl_8060E010:
+
+	# ROM: 0x1EE210
+	.4byte lbl_801BA1F0
+	.4byte 0

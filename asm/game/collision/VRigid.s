@@ -796,3 +796,18 @@ func_8002B9B0:
 /* 8002BA3C 0001C9BC  7C 08 03 A6 */	mtlr r0
 /* 8002BA40 0001C9C0  38 21 00 40 */	addi r1, r1, 0x40
 /* 8002BA44 0001C9C4  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB808
+lbl_801CB808:
+
+	# ROM: 0x1C7908
+	.4byte lbl_8060DF30
+	.4byte 0
+	.4byte func_8002AFB4
+	.4byte lbl_8001E64C
+	.4byte lbl_80023154
+	.4byte lbl_8001E644
+	.4byte lbl_800230B8
+	.4byte func_8002B6FC

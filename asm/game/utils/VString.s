@@ -355,3 +355,23 @@ func_800209D4:
 .global func_800209F0
 func_800209F0:
 /* 800209F0 00011970  48 09 9C 7C */	b func_800BA66C
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB670
+lbl_801CB670:
+
+	# ROM: 0x1C7770
+	.4byte lbl_8060DF58
+	.4byte 0
+	.4byte func_80020688
+	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060DF58
+lbl_8060DF58:
+
+	# ROM: 0x1EE158
+	.4byte lbl_801B9AE8
+	.4byte 0

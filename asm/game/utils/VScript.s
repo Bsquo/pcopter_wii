@@ -879,3 +879,92 @@ func_8002C9B4:
 .global func_8002C9CC
 func_8002C9CC:
 /* 8002C9CC 0001D94C  4B FF A0 14 */	b func_800269E0
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB850
+lbl_801CB850:
+
+	# ROM: 0x1C7950
+	.4byte lbl_8060DFF0
+	.4byte 0
+	.4byte func_8002C34C
+
+.global lbl_801CB85C
+lbl_801CB85C:
+
+	# ROM: 0x1C795C
+	.4byte lbl_8060DFF8
+	.4byte 0
+	.4byte lbl_8002C0F0
+
+.global lbl_801CB868
+lbl_801CB868:
+
+	# ROM: 0x1C7968
+	.4byte lbl_8060DF38
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CB874
+lbl_801CB874:
+
+	# ROM: 0x1C7974
+	.4byte lbl_8060E000
+	.4byte 0
+	.4byte lbl_8002C01C
+
+.global lbl_801CB880
+lbl_801CB880:
+
+	# ROM: 0x1C7980
+	.4byte lbl_8060DF38
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CB88C
+lbl_801CB88C:
+
+	# ROM: 0x1C798C
+	.4byte lbl_8060E008
+	.4byte 0
+	.4byte lbl_8002BF78
+
+.global lbl_801CB898
+lbl_801CB898:
+
+	# ROM: 0x1C7998
+	.4byte lbl_8060DF38
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060DFF0
+lbl_8060DFF0:
+
+	# ROM: 0x1EE1F0
+	.4byte lbl_801BA148
+	.4byte 0
+
+.global lbl_8060DFF8
+lbl_8060DFF8:
+
+	# ROM: 0x1EE1F8
+	.4byte lbl_801BA158
+	.4byte lbl_801CB868
+
+.global lbl_8060E000
+lbl_8060E000:
+
+	# ROM: 0x1EE200
+	.4byte lbl_801BA168
+	.4byte lbl_801CB880
+
+.global lbl_8060E008
+lbl_8060E008:
+
+	# ROM: 0x1EE208
+	.4byte lbl_801BA178
+	.4byte lbl_801CB898

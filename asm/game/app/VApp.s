@@ -484,3 +484,16 @@ lbl_80023798:
 /* 800237A0 00014720  7C 08 03 A6 */	mtlr r0
 /* 800237A4 00014724  38 21 00 10 */	addi r1, r1, 0x10
 /* 800237A8 00014728  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB718
+lbl_801CB718:
+
+	# ROM: 0x1C7818
+	.4byte lbl_8060DF00
+	.4byte 0
+	.4byte lbl_800233A0
+	.4byte lbl_80023668
+	.4byte lbl_800233A8
+	.4byte func_8002327C

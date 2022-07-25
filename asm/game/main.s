@@ -3502,10 +3502,1144 @@ lbl_800140D4:
 /* 800140E8 00005068  38 21 00 10 */	addi r1, r1, 0x10
 /* 800140EC 0000506C  4E 80 00 20 */	blr
 
-.section .sdata2, "a", @progbits
+.section .data, "wa", @progbits
 
-.global lbl_8060F820
-lbl_8060F820:
+.global lbl_801CA560
+lbl_801CA560:
 
-	# ROM: 0x1EEEE0
-	.asciz "CVScene"
+	# ROM: 0x1C6660
+	.4byte lbl_8060DE08
+	.4byte 0
+	.4byte lbl_8003B4A4
+	.4byte lbl_8003C0FC
+	.4byte lbl_8003C76C
+	.4byte lbl_8003C764
+	.4byte lbl_8003C854
+	.4byte lbl_80039128
+	.4byte lbl_8003C85C
+	.4byte func_80011F98
+
+.global lbl_801CA588
+lbl_801CA588:
+
+	# ROM: 0x1C6688
+	.4byte lbl_8060DE90
+	.4byte 0
+	.4byte lbl_8060DE18
+	.4byte 0
+	.4byte lbl_8060DE10
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CA5A4
+lbl_801CA5A4:
+
+	# ROM: 0x1C66A4
+	.4byte lbl_8060DE90
+	.4byte 0
+	.4byte lbl_8060DE18
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CA5B8
+lbl_801CA5B8:
+
+	# ROM: 0x1C66B8
+	.4byte lbl_8060DE90
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CA5C4
+lbl_801CA5C4:
+
+	# ROM: 0x1C66C4
+	.4byte lbl_8060DE20
+	.4byte 0
+	.4byte lbl_80012780
+
+.global lbl_801CA5D0
+lbl_801CA5D0:
+
+	# ROM: 0x1C66D0
+	.4byte lbl_8060DE28
+	.4byte 0
+	.4byte lbl_800127E4
+
+.global lbl_801CA5DC
+lbl_801CA5DC:
+
+	# ROM: 0x1C66DC
+	.4byte lbl_8060DE30
+	.4byte 0
+	.4byte lbl_8001288C
+
+.global lbl_801CA5E8
+lbl_801CA5E8:
+
+	# ROM: 0x1C66E8
+	.4byte lbl_8060DE38
+	.4byte 0
+	.4byte lbl_80012A30
+
+.global lbl_801CA5F4
+lbl_801CA5F4:
+
+	# ROM: 0x1C66F4
+	.4byte lbl_8060DE40
+	.4byte 0
+	.4byte lbl_80012AB4
+
+.global lbl_801CA600
+lbl_801CA600:
+
+	# ROM: 0x1C6700
+	.4byte lbl_8060DE48
+	.4byte 0
+	.4byte lbl_80012B24
+
+.global lbl_801CA60C
+lbl_801CA60C:
+
+	# ROM: 0x1C670C
+	.4byte lbl_8060DE50
+	.4byte 0
+	.4byte lbl_80012BAC
+
+.global lbl_801CA618
+lbl_801CA618:
+
+	# ROM: 0x1C6718
+	.4byte lbl_8060DE58
+	.4byte 0
+	.4byte lbl_80012C1C
+	.4byte 0
+
+.global lbl_801CA628
+lbl_801CA628:
+
+	# ROM: 0x1C6728
+	.4byte lbl_8060DE60
+	.4byte 0
+	.4byte lbl_80013B20
+	.4byte lbl_80013744
+	.4byte lbl_80013698
+	.4byte lbl_8001363C
+	.4byte lbl_800135DC
+	.4byte lbl_800135B8
+	.4byte lbl_80013594
+	.4byte lbl_800134E8
+	.4byte lbl_8001348C
+	.4byte lbl_8001342C
+	.4byte lbl_80013408
+	.4byte lbl_800133E4
+	.4byte lbl_80013338
+	.4byte lbl_800132DC
+	.4byte lbl_8001327C
+	.4byte lbl_80013258
+	.4byte lbl_80013234
+	.4byte lbl_80013180
+	.4byte lbl_80013124
+	.4byte lbl_800130C4
+	.4byte lbl_800130A0
+	.4byte lbl_8001307C
+	.4byte lbl_80012EBC
+	.4byte lbl_80012C9C
+
+.global lbl_801CA690
+lbl_801CA690:
+
+	# ROM: 0x1C6790
+	.4byte lbl_8060DE88
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CA69C
+lbl_801CA69C:
+
+	# ROM: 0x1C679C
+	.4byte lbl_8060DE68
+	.4byte 0
+	.4byte lbl_80013224
+
+.global lbl_801CA6A8
+lbl_801CA6A8:
+
+	# ROM: 0x1C67A8
+	.4byte lbl_8060DE70
+	.4byte 0
+	.4byte lbl_800133D4
+
+.global lbl_801CA6B4
+lbl_801CA6B4:
+
+	# ROM: 0x1C67B4
+	.4byte lbl_8060DE78
+	.4byte 0
+	.4byte lbl_80013584
+
+.global lbl_801CA6C0
+lbl_801CA6C0:
+
+	# ROM: 0x1C67C0
+	.4byte lbl_8060DE80
+	.4byte 0
+	.4byte lbl_80013734
+	.4byte 0
+
+.global lbl_801CA6D0
+lbl_801CA6D0:
+
+	# ROM: 0x1C67D0
+	.4byte lbl_8060DE88
+	.4byte 0
+	.4byte func_80013B78
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CA738
+lbl_801CA738:
+
+	# ROM: 0x1C6838
+	.4byte lbl_8060DE98
+	.4byte 0
+	.4byte lbl_80014098
+	.4byte lbl_80013C5C
+
+.global lbl_801CA748
+lbl_801CA748:
+
+	# ROM: 0x1C6848
+	.4byte lbl_8060DEC0
+	.4byte 0
+	.4byte lbl_8060DEA8
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CA760
+lbl_801CA760:
+
+	# ROM: 0x1C6860
+	.4byte lbl_8060DEA0
+	.4byte 0
+	.4byte lbl_80014040
+	.4byte lbl_80013C5C
+
+.global lbl_801CA770
+lbl_801CA770:
+
+	# ROM: 0x1C6870
+	.4byte lbl_8060DEC0
+	.4byte 0
+	.4byte lbl_8060DEA8
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CA788
+lbl_801CA788:
+
+	# ROM: 0x1C6888
+	.4byte lbl_8060DEA8
+	.4byte 0
+	.4byte func_80013C64
+	.4byte lbl_80013C5C
+
+.global lbl_801CA798
+lbl_801CA798:
+
+	# ROM: 0x1C6898
+	.4byte lbl_8060DEC0
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CA7A4
+lbl_801CA7A4:
+
+	# ROM: 0x1C68A4
+	.4byte lbl_8060DEB0
+	.4byte 0
+	.4byte func_80013CCC
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CA7B8
+lbl_801CA7B8:
+
+	# ROM: 0x1C68B8
+	.4byte lbl_8060DEB8
+	.4byte 0
+	.4byte lbl_80013F00
+	.4byte lbl_80013EF4
+
+.global lbl_801CA7C8
+lbl_801CA7C8:
+
+	# ROM: 0x1C68C8
+	.4byte lbl_8060DEC0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CA7D8
+lbl_801CA7D8:
+
+	# ROM: 0x1C68D8
+	.4byte lbl_8060DEC0
+	.4byte 0
+	.4byte func_80013C1C
+	.4byte lbl_80013F70
+
+.global lbl_801CA7E8
+lbl_801CA7E8:
+
+	# ROM: 0x1C68E8
+	.4byte lbl_8060DEC8
+	.4byte 0
+	.4byte lbl_80013F7C
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CA844
+lbl_801CA844:
+
+	# ROM: 0x1C6944
+	.asciz "can't alloc memory."
+
+.global lbl_801CA858
+lbl_801CA858:
+
+	# ROM: 0x1C6958
+	.asciz "layout.h"
+	.balign 4
+	.4byte 0
+
+.global lbl_801CA868
+lbl_801CA868:
+
+	# ROM: 0x1C6968
+	.asciz "NW4R:Failed assertion mHeapStartAddr < mHeapEndAddr && reinterpret_cast<u8*>(mHeapEndAddr) - reinterpret_cast<u8*>(mHeapStartAddr) > headerSize"
+
+.global lbl_801CA8F8
+lbl_801CA8F8:
+
+	# ROM: 0x1C69F8
+	.asciz "memorymanagertmp.h"
+	.balign 4
+
+.global lbl_801CA90C
+lbl_801CA90C:
+
+	# ROM: 0x1C6A0C
+	.asciz "NW4R:Alignment Error(0x%x)\nstartAddress must be aligned to 32 bytes boundary."
+	.balign 4
+
+.global lbl_801CA95C
+lbl_801CA95C:
+
+	# ROM: 0x1C6A5C
+	.asciz "memorymanagertmp.h"
+	.balign 4
+
+.global lbl_801CA970
+lbl_801CA970:
+
+	# ROM: 0x1C6A70
+	.asciz "NW4R:Failed assertion pp->mParticleManager->GetLifeStatus() == ::nw4r::ef::ReferencedObject::NW4R_EF_LS_ACTIVE || pp->mParticleManager->GetLifeStatus() == ::nw4r::ef::ReferencedObject::NW4R_EF_LS_WAIT || pp->mParticleManager->GetLifeStatus() == ::nw4r::ef::ReferencedObject::NW4R_EF_LS_CLOSING"
+	.balign 4
+
+.global lbl_801CAA98
+lbl_801CAA98:
+
+	# ROM: 0x1C6B98
+	.asciz "memorymanagertmp.h"
+	.balign 4
+
+.global lbl_801CAAAC
+lbl_801CAAAC:
+
+	# ROM: 0x1C6BAC
+	.asciz "NW4R:Failed assertion pp->GetRefCount() == 0"
+	.balign 4
+
+.global lbl_801CAADC
+lbl_801CAADC:
+
+	# ROM: 0x1C6BDC
+	.asciz "memorymanagertmp.h"
+	.balign 4
+
+.global lbl_801CAAF0
+lbl_801CAAF0:
+
+	# ROM: 0x1C6BF0
+	.asciz "NW4R:Failed assertion false"
+
+.global lbl_801CAB0C
+lbl_801CAB0C:
+
+	# ROM: 0x1C6C0C
+	.asciz "memorymanagertmp.h"
+	.balign 4
+
+.global lbl_801CAB20
+lbl_801CAB20:
+
+	# ROM: 0x1C6C20
+	.asciz "NW4R:Pointer Error\nfunc(=%p) is not valid pointer."
+	.balign 4
+
+.global lbl_801CAB54
+lbl_801CAB54:
+
+	# ROM: 0x1C6C54
+	.asciz "g3d_anmobj.h"
+	.balign 4
+
+.global lbl_801CAB64
+lbl_801CAB64:
+
+	# ROM: 0x1C6C64
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+
+.global lbl_801CAB80
+lbl_801CAB80:
+
+	# ROM: 0x1C6C80
+	.asciz "g3d_resmat_ac.h"
+
+.global lbl_801CAB90
+lbl_801CAB90:
+
+	# ROM: 0x1C6C90
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+	.4byte 0
+
+.global lbl_801CABB0
+lbl_801CABB0:
+
+	# ROM: 0x1C6CB0
+	.asciz "g3d_resmat_ac.h"
+
+.global lbl_801CABC0
+lbl_801CABC0:
+
+	# ROM: 0x1C6CC0
+	.asciz "NW4R:Failed assertion !((u32)p & 0x1f)"
+	.balign 4
+
+.global lbl_801CABE8
+lbl_801CABE8:
+
+	# ROM: 0x1C6CE8
+	.asciz "g3d_resmat_ac.h"
+
+.global lbl_801CABF8
+lbl_801CABF8:
+
+	# ROM: 0x1C6CF8
+	.asciz "NW4R:Failed assertion !((u32)p & 0x1f)"
+	.balign 4
+
+.global lbl_801CAC20
+lbl_801CAC20:
+
+	# ROM: 0x1C6D20
+	.asciz "g3d_resmat_ac.h"
+
+.global lbl_801CAC30
+lbl_801CAC30:
+
+	# ROM: 0x1C6D30
+	.asciz "NW4R:Failed assertion !((u32)p & 0x3)"
+	.balign 4
+
+.global lbl_801CAC58
+lbl_801CAC58:
+
+	# ROM: 0x1C6D58
+	.asciz "g3d_resmat_ac.h"
+
+.global lbl_801CAC68
+lbl_801CAC68:
+
+	# ROM: 0x1C6D68
+	.asciz "NW4R:Failed assertion IsValid()"
+
+.global lbl_801CAC88
+lbl_801CAC88:
+
+	# ROM: 0x1C6D88
+	.asciz "g3d_resmat_ac.h"
+
+.global lbl_801CAC98
+lbl_801CAC98:
+
+	# ROM: 0x1C6D98
+	.asciz "NW4R:Failed assertion IsValid()"
+
+.global lbl_801CACB8
+lbl_801CACB8:
+
+	# ROM: 0x1C6DB8
+	.asciz "g3d_resmat_ac.h"
+
+.global lbl_801CACC8
+lbl_801CACC8:
+
+	# ROM: 0x1C6DC8
+	.asciz "NW4R:Failed assertion !((u32)p & 0x3)"
+	.balign 4
+
+.global lbl_801CACF0
+lbl_801CACF0:
+
+	# ROM: 0x1C6DF0
+	.asciz "g3d_resmat_ac.h"
+
+.global lbl_801CAD00
+lbl_801CAD00:
+
+	# ROM: 0x1C6E00
+	.asciz "NW4R:Failed assertion !((u32)p & 0x3)"
+	.balign 4
+
+.global lbl_801CAD28
+lbl_801CAD28:
+
+	# ROM: 0x1C6E28
+	.asciz "g3d_resmat_ac.h"
+
+.global lbl_801CAD38
+lbl_801CAD38:
+
+	# ROM: 0x1C6E38
+	.asciz "ResVtxPos"
+	.balign 4
+
+.global lbl_801CAD44
+lbl_801CAD44:
+
+	# ROM: 0x1C6E44
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+
+.global lbl_801CAD60
+lbl_801CAD60:
+
+	# ROM: 0x1C6E60
+	.asciz "g3d_resvtx_ac.h"
+
+.global lbl_801CAD70
+lbl_801CAD70:
+
+	# ROM: 0x1C6E70
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+	.4byte 0
+
+.global lbl_801CAD90
+lbl_801CAD90:
+
+	# ROM: 0x1C6E90
+	.asciz "g3d_resvtx_ac.h"
+
+.global lbl_801CADA0
+lbl_801CADA0:
+
+	# ROM: 0x1C6EA0
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+	.4byte 0
+
+.global lbl_801CADC0
+lbl_801CADC0:
+
+	# ROM: 0x1C6EC0
+	.asciz "g3d_resshp_ac.h"
+
+.global lbl_801CADD0
+lbl_801CADD0:
+
+	# ROM: 0x1C6ED0
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+	.4byte 0
+
+.global lbl_801CADF0
+lbl_801CADF0:
+
+	# ROM: 0x1C6EF0
+	.asciz "g3d_resshp_ac.h"
+
+.global lbl_801CAE00
+lbl_801CAE00:
+
+	# ROM: 0x1C6F00
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+	.4byte 0
+
+.global lbl_801CAE20
+lbl_801CAE20:
+
+	# ROM: 0x1C6F20
+	.asciz "g3d_restev_ac.h"
+
+.global lbl_801CAE30
+lbl_801CAE30:
+
+	# ROM: 0x1C6F30
+	.asciz "NW4R:Failed assertion !((u32)p & 0x1f)"
+	.balign 4
+
+.global lbl_801CAE58
+lbl_801CAE58:
+
+	# ROM: 0x1C6F58
+	.asciz "g3d_resmdl_ac.h"
+
+.global lbl_801CAE68
+lbl_801CAE68:
+
+	# ROM: 0x1C6F68
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+	.4byte 0
+
+.global lbl_801CAE88
+lbl_801CAE88:
+
+	# ROM: 0x1C6F88
+	.asciz "g3d_resmdl_ac.h"
+
+.global lbl_801CAE98
+lbl_801CAE98:
+
+	# ROM: 0x1C6F98
+	.asciz "NW4R:Failed assertion !((u32)p & 0x3)"
+	.balign 4
+
+.global lbl_801CAEC0
+lbl_801CAEC0:
+
+	# ROM: 0x1C6FC0
+	.asciz "g3d_resnode_ac.h"
+	.balign 4
+
+.global lbl_801CAED4
+lbl_801CAED4:
+
+	# ROM: 0x1C6FD4
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+
+.global lbl_801CAEF0
+lbl_801CAEF0:
+
+	# ROM: 0x1C6FF0
+	.asciz "g3d_resnode_ac.h"
+	.balign 4
+	.4byte 0
+
+.global lbl_801CAF08
+lbl_801CAF08:
+
+	# ROM: 0x1C7008
+	.asciz "NW4R:Failed assertion IsValid()"
+
+.global lbl_801CAF28
+lbl_801CAF28:
+
+	# ROM: 0x1C7028
+	.asciz "g3d_resnode_ac.h"
+	.balign 4
+	.4byte 0
+
+.global lbl_801CAF40
+lbl_801CAF40:
+
+	# ROM: 0x1C7040
+	.asciz "NW4R:Failed assertion IsValid()"
+
+.global lbl_801CAF60
+lbl_801CAF60:
+
+	# ROM: 0x1C7060
+	.asciz "g3d_resnode_ac.h"
+	.balign 4
+	.4byte 0
+
+.global lbl_801CAF78
+lbl_801CAF78:
+
+	# ROM: 0x1C7078
+	.asciz "NW4R:Failed assertion IsValid()"
+
+.global lbl_801CAF98
+lbl_801CAF98:
+
+	# ROM: 0x1C7098
+	.asciz "g3d_resnode_ac.h"
+	.balign 4
+
+.global lbl_801CAFAC
+lbl_801CAFAC:
+
+	# ROM: 0x1C70AC
+	.asciz "ResUserData"
+
+.global lbl_801CAFB8
+lbl_801CAFB8:
+
+	# ROM: 0x1C70B8
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+
+.global lbl_801CAFD4
+lbl_801CAFD4:
+
+	# ROM: 0x1C70D4
+	.asciz "g3d_resuser_ac.h"
+	.balign 4
+
+.global lbl_801CAFE8
+lbl_801CAFE8:
+
+	# ROM: 0x1C70E8
+	.asciz "NW4R:Failed assertion !((u32)p & 0x3)"
+	.balign 4
+
+.global lbl_801CB010
+lbl_801CB010:
+
+	# ROM: 0x1C7110
+	.asciz "g3d_resuser_ac.h"
+	.balign 4
+	.4byte 0
+
+.global lbl_801CB028
+lbl_801CB028:
+
+	# ROM: 0x1C7128
+	.asciz "ResUserDataItem"
+
+.global lbl_801CB038
+lbl_801CB038:
+
+	# ROM: 0x1C7138
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+
+.global lbl_801CB054
+lbl_801CB054:
+
+	# ROM: 0x1C7154
+	.asciz "g3d_resuser_ac.h"
+	.balign 4
+
+.global lbl_801CB068
+lbl_801CB068:
+
+	# ROM: 0x1C7168
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+
+.global lbl_801CB084
+lbl_801CB084:
+
+	# ROM: 0x1C7184
+	.asciz "g3d_resuser_ac.h"
+	.balign 4
+
+.global lbl_801CB098
+lbl_801CB098:
+
+	# ROM: 0x1C7198
+	.asciz "NW4R:Failed assertion GetValueType() == ResUserDataItemData::S32"
+	.balign 4
+
+.global lbl_801CB0DC
+lbl_801CB0DC:
+
+	# ROM: 0x1C71DC
+	.asciz "g3d_resuser_ac.h"
+	.balign 4
+
+.global lbl_801CB0F0
+lbl_801CB0F0:
+
+	# ROM: 0x1C71F0
+	.asciz "NW4R:Failed assertion GetValueType() == ResUserDataItemData::F32"
+	.balign 4
+
+.global lbl_801CB134
+lbl_801CB134:
+
+	# ROM: 0x1C7234
+	.asciz "g3d_resuser_ac.h"
+	.balign 4
+
+.global lbl_801CB148
+lbl_801CB148:
+
+	# ROM: 0x1C7248
+	.asciz "NW4R:Failed assertion GetValueType() == ResUserDataItemData::STRING"
+
+.global lbl_801CB18C
+lbl_801CB18C:
+
+	# ROM: 0x1C728C
+	.asciz "g3d_resuser_ac.h"
+	.balign 4
+
+.global lbl_801CB1A0
+lbl_801CB1A0:
+
+	# ROM: 0x1C72A0
+	.asciz "NW4R:Failed assertion !((u32)p & 0x1f)"
+	.balign 4
+
+.global lbl_801CB1C8
+lbl_801CB1C8:
+
+	# ROM: 0x1C72C8
+	.asciz "g3d_resfile_ac.h"
+	.balign 4
+
+.global lbl_801CB1DC
+lbl_801CB1DC:
+
+	# ROM: 0x1C72DC
+	.asciz "NW4R:Failed assertion !((u32)p & 0x3)"
+	.balign 4
+
+.global lbl_801CB204
+lbl_801CB204:
+
+	# ROM: 0x1C7304
+	.asciz "g3d_resdict_ac.h"
+	.balign 4
+
+.global lbl_801CB218
+lbl_801CB218:
+
+	# ROM: 0x1C7318
+	.asciz "NW4R:Failed assertion !((u32)p & 0x3)"
+	.balign 4
+
+.global lbl_801CB240
+lbl_801CB240:
+
+	# ROM: 0x1C7340
+	.asciz "g3d_rescommon_ac.h"
+	.balign 4
+
+.global lbl_801CB254
+lbl_801CB254:
+
+	# ROM: 0x1C7354
+	.asciz "ResTagDL"
+	.balign 4
+
+.global lbl_801CB260
+lbl_801CB260:
+
+	# ROM: 0x1C7360
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+
+.global lbl_801CB27C
+lbl_801CB27C:
+
+	# ROM: 0x1C737C
+	.asciz "g3d_rescommon_ac.h"
+	.balign 4
+
+.global lbl_801CB290
+lbl_801CB290:
+
+	# ROM: 0x1C7390
+	.asciz "%s::%s: Object not valid."
+	.balign 4
+
+.global lbl_801CB2AC
+lbl_801CB2AC:
+
+	# ROM: 0x1C73AC
+	.asciz "g3d_rescommon_ac.h"
+	.balign 4
+
+.global lbl_801CB2C0
+lbl_801CB2C0:
+
+	# ROM: 0x1C73C0
+	.asciz "bad_exception"
+	.balign 4
+
+.global lbl_801CB2D0
+lbl_801CB2D0:
+
+	# ROM: 0x1C73D0
+	.asciz "exception"
+	.balign 4
+	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060DE00
+lbl_8060DE00:
+
+	# ROM: 0x1EE000
+	.4byte lbl_801A0DA4
+	.4byte lbl_801A0DAC
+
+.global lbl_8060DE08
+lbl_8060DE08:
+
+	# ROM: 0x1EE008
+	.4byte lbl_801B8400
+	.4byte lbl_801CA588
+
+.global lbl_8060DE10
+lbl_8060DE10:
+
+	# ROM: 0x1EE010
+	.4byte lbl_801B8418
+	.4byte lbl_801CA5A4
+
+.global lbl_8060DE18
+lbl_8060DE18:
+
+	# ROM: 0x1EE018
+	.4byte lbl_801B8430
+	.4byte lbl_801CA5B8
+
+.global lbl_8060DE20
+lbl_8060DE20:
+
+	# ROM: 0x1EE020
+	.4byte lbl_801B8440
+	.4byte 0
+
+.global lbl_8060DE28
+lbl_8060DE28:
+
+	# ROM: 0x1EE028
+	.4byte lbl_801B844C
+	.4byte 0
+
+.global lbl_8060DE30
+lbl_8060DE30:
+
+	# ROM: 0x1EE030
+	.4byte lbl_801B8458
+	.4byte 0
+
+.global lbl_8060DE38
+lbl_8060DE38:
+
+	# ROM: 0x1EE038
+	.4byte lbl_801B8464
+	.4byte 0
+
+.global lbl_8060DE40
+lbl_8060DE40:
+
+	# ROM: 0x1EE040
+	.4byte lbl_801B8470
+	.4byte 0
+
+.global lbl_8060DE48
+lbl_8060DE48:
+
+	# ROM: 0x1EE048
+	.4byte lbl_801B847C
+	.4byte 0
+
+.global lbl_8060DE50
+lbl_8060DE50:
+
+	# ROM: 0x1EE050
+	.4byte lbl_801B8488
+	.4byte 0
+
+.global lbl_8060DE58
+lbl_8060DE58:
+
+	# ROM: 0x1EE058
+	.4byte lbl_801B8494
+	.4byte 0
+
+.global lbl_8060DE60
+lbl_8060DE60:
+
+	# ROM: 0x1EE060
+	.4byte lbl_801B84A0
+	.4byte lbl_801CA690
+
+.global lbl_8060DE68
+lbl_8060DE68:
+
+	# ROM: 0x1EE068
+	.4byte lbl_801B84B8
+	.4byte 0
+
+.global lbl_8060DE70
+lbl_8060DE70:
+
+	# ROM: 0x1EE070
+	.4byte lbl_801B84E8
+	.4byte 0
+
+.global lbl_8060DE78
+lbl_8060DE78:
+
+	# ROM: 0x1EE078
+	.4byte lbl_801B8520
+	.4byte 0
+
+.global lbl_8060DE80
+lbl_8060DE80:
+
+	# ROM: 0x1EE080
+	.4byte lbl_801B8550
+	.4byte 0
+
+.global lbl_8060DE88
+lbl_8060DE88:
+
+	# ROM: 0x1EE088
+	.4byte lbl_801B8580
+	.4byte 0
+
+.global lbl_8060DE90
+lbl_8060DE90:
+
+	# ROM: 0x1EE090
+	.4byte lbl_8060F820
+	.4byte 0
+
+.global lbl_8060DE98
+lbl_8060DE98:
+
+	# ROM: 0x1EE098
+	.4byte lbl_801B859C
+	.4byte lbl_801CA748
+
+.global lbl_8060DEA0
+lbl_8060DEA0:
+
+	# ROM: 0x1EE0A0
+	.4byte lbl_801B85B0
+	.4byte lbl_801CA770
+
+.global lbl_8060DEA8
+lbl_8060DEA8:
+
+	# ROM: 0x1EE0A8
+	.4byte lbl_801B85C4
+	.4byte lbl_801CA798
+
+.global lbl_8060DEB0
+lbl_8060DEB0:
+
+	# ROM: 0x1EE0B0
+	.4byte lbl_801B85D8
+	.4byte 0
+
+.global lbl_8060DEB8
+lbl_8060DEB8:
+
+	# ROM: 0x1EE0B8
+	.4byte lbl_801B8604
+	.4byte lbl_801CA7C8
+
+.global lbl_8060DEC0
+lbl_8060DEC0:
+
+	# ROM: 0x1EE0C0
+	.4byte lbl_801B8618
+	.4byte 0
+
+.global lbl_8060DEC8
+lbl_8060DEC8:
+
+	# ROM: 0x1EE0C8
+	.4byte lbl_801B8628
+	.4byte 0
+
+.global lbl_8060DED0
+lbl_8060DED0:
+
+	# ROM: 0x1EE0D0
+	.asciz "ResMat"
+	.balign 4
+
+.global lbl_8060DED8
+lbl_8060DED8:
+
+	# ROM: 0x1EE0D8
+	.asciz "ResShp"
+	.balign 4
+
+.global lbl_8060DEE0
+lbl_8060DEE0:
+
+	# ROM: 0x1EE0E0
+	.asciz "ResTev"
+	.balign 4
+
+.global lbl_8060DEE8
+lbl_8060DEE8:
+
+	# ROM: 0x1EE0E8
+	.asciz "ResMdl"
+	.balign 4
+
+.global lbl_8060DEF0
+lbl_8060DEF0:
+
+	# ROM: 0x1EE0F0
+	.asciz "ResNode"

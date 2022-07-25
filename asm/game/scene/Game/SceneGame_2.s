@@ -3941,3 +3941,158 @@ func_8001A080:
 /* 8001A0C4 0000B044  7C 08 03 A6 */	mtlr r0
 /* 8001A0C8 0000B048  38 21 00 20 */	addi r1, r1, 0x20
 /* 8001A0CC 0000B04C  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB438
+lbl_801CB438:
+
+	# ROM: 0x1C7538
+	.4byte lbl_80015B48
+	.4byte lbl_80015B54
+	.4byte lbl_80015B80
+	.4byte lbl_80015B80
+	.4byte lbl_80015BEC
+	.4byte lbl_80015BEC
+	.4byte lbl_80015BEC
+	.4byte lbl_80015BD8
+	.4byte lbl_80015BD8
+	.4byte lbl_80015BEC
+	.4byte lbl_80015BEC
+	.4byte lbl_80015BEC
+	.4byte lbl_80015BEC
+	.4byte lbl_80015BEC
+	.4byte lbl_80015BEC
+	.4byte lbl_80015BEC
+	.4byte lbl_80015BAC
+	.4byte lbl_80015B48
+	.4byte lbl_80015BEC
+
+.global lbl_801CB484
+lbl_801CB484:
+
+	# ROM: 0x1C7584
+	.4byte lbl_80018F14
+	.4byte func_80018F9C
+	.4byte func_80018F9C
+	.4byte func_80018F9C
+	.4byte lbl_80018F88
+	.4byte lbl_80018F30
+	.4byte lbl_80018F48
+	.4byte lbl_80018F78
+	.4byte lbl_80018F48
+	.4byte lbl_80018F60
+
+.global lbl_801CB4AC
+lbl_801CB4AC:
+
+	# ROM: 0x1C75AC
+	.4byte lbl_80018CBC
+	.4byte lbl_80016DD8
+	.4byte lbl_80016F3C
+	.4byte lbl_80017308
+	.4byte lbl_80017AB8
+	.4byte lbl_8001807C
+	.4byte lbl_80018254
+	.4byte lbl_8001858C
+	.4byte lbl_80018780
+	.4byte lbl_80018780
+	.4byte lbl_800189A0
+	.4byte lbl_800189A0
+	.4byte lbl_80018BC4
+	.4byte func_80018D6C
+	.4byte lbl_80018D38
+
+.global lbl_801CB4E8
+lbl_801CB4E8:
+
+	# ROM: 0x1C75E8
+	.4byte lbl_8060DF08
+	.4byte 0
+	.4byte lbl_800197C8
+	.4byte 0
+
+.global lbl_801CB4F8
+lbl_801CB4F8:
+
+	# ROM: 0x1C75F8
+	.4byte lbl_8060DF10
+	.4byte 0
+	.4byte lbl_8001569C
+	.4byte lbl_80015C60
+	.4byte lbl_8001917C
+	.4byte lbl_800169F0
+	.4byte lbl_80019650
+	.4byte lbl_80015C18
+	.4byte lbl_80019680
+	.4byte __dt__10CSceneGameFv
+	.4byte lbl_80057FE4
+	.4byte lbl_8005807C
+	.4byte lbl_800582F8
+	.4byte lbl_800584C8
+	.4byte lbl_80058C4C
+	.4byte lbl_80058F00
+	.4byte lbl_80059868
+	.4byte lbl_800199B4
+	.4byte lbl_80059D94
+	.4byte lbl_80019E84
+
+.global lbl_801CB548
+lbl_801CB548:
+
+	# ROM: 0x1C7648
+	.4byte lbl_8060DE90
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CB554
+lbl_801CB554:
+
+	# ROM: 0x1C7654
+	.4byte 0x00250030
+	.4byte 0x00320064
+	.4byte 0x00270025
+	.4byte 0x00300032
+	.4byte 0x00640022
+	.4byte 0x00250030
+	.4byte 0x00320064
+	.4byte 0x00000025
+	.4byte 0x00640020
+	.4byte 0x002F0020
+	.4byte 0x00250064
+	.4byte 0x00000025
+	.4byte 0x00640000
+	.4byte 0x00250064
+	.4byte 0x00000025
+	.4byte 0x00640000
+	.4byte 0x00250064
+	.4byte 0x00000025
+	.4byte 0x00640000
+	.4byte 0x00250064
+	.4byte 0
+	.4byte 0x00250064
+	.4byte 0x002C0000
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0x00000025
+	.4byte 0x00300032
+	.4byte 0x00640000
+	.4byte 0x00250064
+	.4byte 0
+	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060DF08
+lbl_8060DF08:
+
+	# ROM: 0x1EE108
+	.4byte lbl_801B87BC
+	.4byte 0
+
+.global lbl_8060DF10
+lbl_8060DF10:
+
+	# ROM: 0x1EE110
+	.4byte lbl_801B87C8
+	.4byte lbl_801CB548

@@ -54,3 +54,23 @@ Check__6CVFlagFUs:
 /* 80026808 00017788  7C 00 1B 78 */	or r0, r0, r3
 /* 8002680C 0001778C  54 03 0F FE */	srwi r3, r0, 31
 /* 80026810 00017790  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global __vt__6CVFlag
+__vt__6CVFlag:
+
+	# ROM: 0x1C78A8
+	.4byte __RTTI__6CVFlag
+	.4byte 0
+	.4byte __dt__6CVFlagFv
+	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global __RTTI__6CVFlag
+__RTTI__6CVFlag:
+
+	# ROM: 0x1EE1C0
+	.4byte _42863
+	.4byte 0

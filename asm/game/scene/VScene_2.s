@@ -240,3 +240,20 @@ RenderLocal__7CVSceneFv:
 IsEnd__7CVSceneFv:
 /* 8002BF2C 0001CEAC  80 63 00 14 */	lwz r3, 0x14(r3)
 /* 8002BF30 0001CEB0  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB828
+lbl_801CB828:
+
+	# ROM: 0x1C7928
+	.4byte lbl_8060DE90
+	.4byte 0
+	.4byte StartLocal__7CVSceneFv
+	.4byte CalcLocal__7CVSceneFv
+	.4byte RenderLocal__7CVSceneFv
+	.4byte CalcLocalPause__7CVSceneFv
+	.4byte RenderLocalPause__7CVSceneFv
+	.4byte CalcLocalSystem__7CVSceneFv
+	.4byte EndLocal__7CVSceneFv
+	.4byte __dt__7CVSceneFv

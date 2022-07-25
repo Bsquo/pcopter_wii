@@ -2,6 +2,26 @@
 
 .section .sdata2, "a", @progbits  # 0x8060F820 - 0x80611F20 ; 0x00002700
 
+.global lbl_8060F820
+lbl_8060F820:
+
+	# ROM: 0x1EEEE0
+	.asciz "CVScene"
+
+.global lbl_8060F828
+lbl_8060F828:
+
+	# ROM: 0x1EEEE8
+	.asciz "CApp"
+	.balign 4
+
+.global lbl_8060F830
+lbl_8060F830:
+
+	# ROM: 0x1EEEF0
+	.asciz "CVApp"
+	.balign 4
+
 .global _53133
 _53133:
 
@@ -479,8 +499,8 @@ _42990:
 	# ROM: 0x1EF06C
 	.4byte 0x437F0000
 
-.global lbl_8060F9B0
-lbl_8060F9B0:
+.global _42863
+_42863:
 
 	# ROM: 0x1EF070
 	.asciz "CVFlag"

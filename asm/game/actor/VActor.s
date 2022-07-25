@@ -2969,3 +2969,91 @@ lbl_80023160:
 .global lbl_80023164
 lbl_80023164:
 /* 80023164 000140E4  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB680
+lbl_801CB680:
+
+	# ROM: 0x1C7780
+	.4byte lbl_8060DF28
+	.4byte 0
+	.4byte func_80021228
+	.4byte lbl_8001E64C
+	.4byte lbl_80023154
+	.4byte lbl_8001E644
+	.4byte lbl_800230B8
+	.4byte func_80022304
+	.4byte lbl_800212F0
+	.4byte func_80021378
+	.4byte lbl_800217F0
+	.4byte func_80021F00
+	.4byte func_8002227C
+	.4byte func_80022374
+	.4byte lbl_8002241C
+	.4byte lbl_8001DC3C
+	.4byte func_800225E0
+	.4byte lbl_800229C0
+	.4byte func_80022EC8
+	.4byte 0
+
+.global lbl_801CB6D0
+lbl_801CB6D0:
+
+	# ROM: 0x1C77D0
+	.4byte lbl_8060DF60
+	.4byte 0
+	.4byte func_800211D0
+	.4byte lbl_80020ECC
+	.4byte lbl_80021110
+	.4byte lbl_80021114
+
+.global lbl_801CB6E8
+lbl_801CB6E8:
+
+	# ROM: 0x1C77E8
+	.4byte lbl_8060DF70
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CB6F4
+lbl_801CB6F4:
+
+	# ROM: 0x1C77F4
+	.4byte lbl_8060DF68
+	.4byte 0
+	.4byte lbl_80020A7C
+
+.global lbl_801CB700
+lbl_801CB700:
+
+	# ROM: 0x1C7800
+	.4byte lbl_8060DF70
+	.4byte 0
+	.4byte func_80020DFC
+	.4byte lbl_80023164
+	.4byte lbl_80023160
+	.4byte lbl_8002315C
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060DF60
+lbl_8060DF60:
+
+	# ROM: 0x1EE160
+	.4byte lbl_801B9AF8
+	.4byte lbl_801CB6E8
+
+.global lbl_8060DF68
+lbl_8060DF68:
+
+	# ROM: 0x1EE168
+	.4byte lbl_801B9B0C
+	.4byte 0
+
+.global lbl_8060DF70
+lbl_8060DF70:
+
+	# ROM: 0x1EE170
+	.4byte lbl_801B9B18
+	.4byte 0

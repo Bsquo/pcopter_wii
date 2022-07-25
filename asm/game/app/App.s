@@ -2004,3 +2004,19 @@ lbl_8060DF00:
 	# ROM: 0x1EE100
 	.4byte lbl_8060F830
 	.4byte 0
+
+.section .sdata2, "a", @progbits
+
+.global lbl_8060F828
+lbl_8060F828:
+
+	# ROM: 0x1EEEE8
+	.asciz "CApp"
+	.balign 4
+
+.global lbl_8060F830
+lbl_8060F830:
+
+	# ROM: 0x1EEEF0
+	.asciz "CVApp"
+	.balign 4

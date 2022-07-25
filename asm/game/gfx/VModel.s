@@ -3807,3 +3807,11 @@ lbl_8060DFE8:
 	# ROM: 0x1EE1E8
 	.4byte lbl_801B9CB0
 	.4byte 0
+
+.section .sdata2, "a", @progbits
+
+.global lbl_8060F9E0
+lbl_8060F9E0:
+
+	# ROM: 0x1EF0A0
+	.asciz "CVModel"

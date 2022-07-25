@@ -2471,3 +2471,62 @@ lbl_8060DF54:
 
 	# ROM: 0x1EE154
 	.4byte 0x72656600
+
+.section .sdata2, "a", @progbits
+
+.global lbl_8060F940
+lbl_8060F940:
+
+	# ROM: 0x1EF000
+	.4byte 0
+
+.global lbl_8060F944
+lbl_8060F944:
+
+	# ROM: 0x1EF004
+	.4byte 0xBF800000
+
+.global lbl_8060F948
+lbl_8060F948:
+
+	# ROM: 0x1EF008
+	.4byte 0x3F000000
+	.4byte 0
+
+.global lbl_8060F950
+lbl_8060F950:
+
+	# ROM: 0x1EF010
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_8060F958
+lbl_8060F958:
+
+	# ROM: 0x1EF018
+	.4byte 0x3DF5C28F
+
+.global lbl_8060F95C
+lbl_8060F95C:
+
+	# ROM: 0x1EF01C
+	.4byte 0xBDF5C28F
+
+.global lbl_8060F960
+lbl_8060F960:
+
+	# ROM: 0x1EF020
+	.4byte 0x3C23D70A
+
+.global lbl_8060F964
+lbl_8060F964:
+
+	# ROM: 0x1EF024
+	.4byte 0x42480000
+
+.global lbl_8060F968
+lbl_8060F968:
+
+	# ROM: 0x1EF028
+	.4byte 0x43800000
+	.4byte 0

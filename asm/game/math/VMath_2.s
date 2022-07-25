@@ -1044,3 +1044,41 @@ lbl_80027F08:
 lbl_80027F2C:
 /* 80027F2C 00018EAC  38 60 00 01 */	li r3, 0x1
 /* 80027F30 00018EB0  4E 80 00 20 */	blr
+
+.section .sdata2, "a", @progbits
+
+.global lbl_8060F9C8
+lbl_8060F9C8:
+
+	# ROM: 0x1EF088
+	.4byte 0x3727C5AC
+
+.global _44791
+_44791:
+
+	# ROM: 0x1EF08C
+	.4byte 0
+
+.global lbl_8060F9D0
+lbl_8060F9D0:
+
+	# ROM: 0x1EF090
+	.4byte 0x42652EE0
+
+.global lbl_8060F9D4
+lbl_8060F9D4:
+
+	# ROM: 0x1EF094
+	.4byte 0x43340000
+
+.global lbl_8060F9D8
+lbl_8060F9D8:
+
+	# ROM: 0x1EF098
+	.4byte 0x3F800000
+
+.global lbl_8060F9DC
+lbl_8060F9DC:
+
+	# ROM: 0x1EF09C
+	.4byte 0x3C8EFA35

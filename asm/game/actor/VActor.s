@@ -3057,3 +3057,43 @@ lbl_8060DF70:
 	# ROM: 0x1EE170
 	.4byte lbl_801B9B18
 	.4byte 0
+
+.section .sdata2, "a", @progbits
+
+.global lbl_8060F970
+lbl_8060F970:
+
+	# ROM: 0x1EF030
+	.4byte 0
+
+.global lbl_8060F974
+lbl_8060F974:
+
+	# ROM: 0x1EF034
+	.4byte 0x3F800000
+
+.global lbl_8060F978
+lbl_8060F978:
+
+	# ROM: 0x1EF038
+	.4byte 0x43300000
+	.4byte 0
+
+.global lbl_8060F980
+lbl_8060F980:
+
+	# ROM: 0x1EF040
+	.4byte 0x3C23D70A
+
+.global lbl_8060F984
+lbl_8060F984:
+
+	# ROM: 0x1EF044
+	.4byte 0x42C80000
+
+.global lbl_8060F988
+lbl_8060F988:
+
+	# ROM: 0x1EF048
+	.4byte 0x411CCCCD
+	.4byte 0

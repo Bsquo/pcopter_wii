@@ -388,3 +388,19 @@ lbl_8060DFC8:
 	# ROM: 0x1EE1C8
 	.4byte lbl_8060F9BC
 	.4byte 0
+
+.section .sdata2, "a", @progbits
+
+.global lbl_8060F9B8
+lbl_8060F9B8:
+
+	# ROM: 0x1EF078
+	.4byte 0
+
+.global lbl_8060F9BC
+lbl_8060F9BC:
+
+	# ROM: 0x1EF07C
+	.asciz "CVList"
+	.balign 4
+	.4byte 0

@@ -811,3 +811,50 @@ lbl_801CB808:
 	.4byte lbl_8001E644
 	.4byte lbl_800230B8
 	.4byte func_8002B6FC
+
+.section .sdata2, "a", @progbits
+
+.global lbl_8060F9E8
+lbl_8060F9E8:
+
+	# ROM: 0x1EF0A8
+	.4byte 0
+
+.global lbl_8060F9EC
+lbl_8060F9EC:
+
+	# ROM: 0x1EF0AC
+	.4byte 0x3F7D70A4
+
+.global lbl_8060F9F0
+lbl_8060F9F0:
+
+	# ROM: 0x1EF0B0
+	.4byte 0x3F800000
+
+.global lbl_8060F9F4
+lbl_8060F9F4:
+
+	# ROM: 0x1EF0B4
+	.4byte 0x41400000
+
+.global lbl_8060F9F8
+lbl_8060F9F8:
+
+	# ROM: 0x1EF0B8
+	.4byte 0x3727C5AC
+	.4byte 0
+
+.global lbl_8060FA00
+lbl_8060FA00:
+
+	# ROM: 0x1EF0C0
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_8060FA08
+lbl_8060FA08:
+
+	# ROM: 0x1EF0C8
+	.4byte 0x40C00000
+	.4byte 0

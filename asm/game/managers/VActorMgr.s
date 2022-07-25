@@ -455,3 +455,36 @@ lbl_8060E010:
 	# ROM: 0x1EE210
 	.4byte lbl_801BA1F0
 	.4byte 0
+
+.section .sdata2, "a", @progbits
+
+.global lbl_8060FA20
+lbl_8060FA20:
+
+	# ROM: 0x1EF0E0
+	.4byte 0x42480000
+
+.global lbl_8060FA24
+lbl_8060FA24:
+
+	# ROM: 0x1EF0E4
+	.4byte 0x3DCCCCCD
+
+.global lbl_8060FA28
+lbl_8060FA28:
+
+	# ROM: 0x1EF0E8
+	.4byte 0x3F000000
+
+.global lbl_8060FA2C
+lbl_8060FA2C:
+
+	# ROM: 0x1EF0EC
+	.4byte 0x3A83126F
+
+.global lbl_8060FA30
+lbl_8060FA30:
+
+	# ROM: 0x1EF0F0
+	.4byte 0x3C88893B
+	.4byte 0

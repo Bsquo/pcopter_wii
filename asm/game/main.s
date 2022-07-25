@@ -4643,3 +4643,11 @@ lbl_8060DEF0:
 
 	# ROM: 0x1EE0F0
 	.asciz "ResNode"
+
+.section .sdata2, "a", @progbits
+
+.global lbl_8060F820
+lbl_8060F820:
+
+	# ROM: 0x1EEEE0
+	.asciz "CVScene"

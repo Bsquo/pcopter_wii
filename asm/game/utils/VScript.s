@@ -968,3 +968,12 @@ lbl_8060E008:
 	# ROM: 0x1EE208
 	.4byte lbl_801BA178
 	.4byte lbl_801CB898
+
+.section .sdata2, "a", @progbits
+
+.global lbl_8060FA10
+lbl_8060FA10:
+
+	# ROM: 0x1EF0D0
+	.4byte 0
+	.4byte 0

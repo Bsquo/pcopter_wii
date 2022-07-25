@@ -497,3 +497,17 @@ lbl_801CB718:
 	.4byte lbl_80023668
 	.4byte lbl_800233A8
 	.4byte func_8002327C
+
+.section .sdata2, "a", @progbits
+
+.global lbl_8060F990
+lbl_8060F990:
+
+	# ROM: 0x1EF050
+	.4byte 0x41855557
+
+.global lbl_8060F994
+lbl_8060F994:
+
+	# ROM: 0x1EF054
+	.4byte 0x3F800000

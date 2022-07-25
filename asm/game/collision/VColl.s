@@ -3475,3 +3475,24 @@ lbl_8060DFB8:
 	# ROM: 0x1EE1B8
 	.4byte lbl_801B9BF8
 	.4byte lbl_801CB79C
+
+.section .sdata2, "a", @progbits
+
+.global lbl_8060F998
+lbl_8060F998:
+
+	# ROM: 0x1EF058
+	.4byte 0
+
+.global lbl_8060F99C
+lbl_8060F99C:
+
+	# ROM: 0x1EF05C
+	.4byte 0x40000000
+
+.global lbl_8060F9A0
+lbl_8060F9A0:
+
+	# ROM: 0x1EF060
+	.asciz "CVColl"
+	.balign 4

@@ -20,6 +20,7 @@ SRC_DIRS := src                      \
 			src/game                 \
 			src/game/gfx             \
 			src/game/math            \
+			src/game/managers        \
 			src/game/scenary/Japan   \
 			src/game/scene           \
 			src/game/scene/Game      \

@@ -44,8 +44,12 @@ GAME_O_FILES :=                                                    \
     $(BUILD_DIR)/asm/game/managers/VSoundMgr.o                 \
     $(BUILD_DIR)/asm/game/managers/VActorMgr.o                 \
     $(BUILD_DIR)/asm/game/managers/VLayoutMgr.o                \
-    $(BUILD_DIR)/asm/game/managers/VEffectMgr.o                \
-    $(BUILD_DIR)/asm/game/managers/VCameraMgr.o                \
+    $(BUILD_DIR)/asm/game/managers/VEffectMgr_1.o                \
+	$(BUILD_DIR)/src/game/managers/VEffectMgr.o                \
+	$(BUILD_DIR)/asm/game/managers/VEffectMgr_2.o                \
+    $(BUILD_DIR)/asm/game/managers/VCameraMgr_1.o                \
+	$(BUILD_DIR)/src/game/managers/VCameraMgr.o                \
+	$(BUILD_DIR)/asm/game/managers/VCameraMgr_2.o                \
     $(BUILD_DIR)/asm/game/managers/VPadMgr.o                   \
     $(BUILD_DIR)/asm/game/save/UserData.o                      \
     $(BUILD_DIR)/asm/game/save/SaveData.o                      \

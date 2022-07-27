@@ -1068,25 +1068,25 @@ lbl_8000CB00:
 	.4byte __dt__6CVFlagFv
 	.4byte 0x00000040
 	.4byte _42956
-	.4byte func_8002683C
+	.4byte __dt__10CVListBaseFv
 	.4byte 0x00000074
 	.4byte lbl_80007710
-	.4byte func_800268B0
+	.4byte GetIndex__10CVListBaseFv
 	.4byte 0x00000070
 	.4byte lbl_80007718
-	.4byte func_80026920
+	.4byte __ct__6CVListFv
 	.4byte 0x0000004C
 	.4byte lbl_80007720
-	.4byte func_8002696C
+	.4byte __dt__6CVListFv
 	.4byte 0x00000060
 	.4byte lbl_80007728
-	.4byte func_800269E0
+	.4byte Release__6CVListFv
 	.4byte 0x00000080
 	.4byte lbl_80007730
-	.4byte func_80026A78
+	.4byte GetElement__6CVListFi
 	.4byte 0x000000A0
 	.4byte lbl_80007738
-	.4byte func_80026B18
+	.4byte InsertEnd__6CVListFP10CVListBase
 	.4byte 0x00000080
 	.4byte lbl_80007740
 	.4byte func_80026C5C

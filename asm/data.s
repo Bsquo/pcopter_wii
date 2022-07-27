@@ -14,7 +14,7 @@ lbl_801CB8B8:
 lbl_801CB8C4:
 
 	# ROM: 0x1C79C4
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -30,7 +30,7 @@ lbl_801CB8D0:
 lbl_801CB8DC:
 
 	# ROM: 0x1C79DC
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -46,7 +46,7 @@ lbl_801CB8E8:
 lbl_801CB8F4:
 
 	# ROM: 0x1C79F4
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -62,7 +62,7 @@ lbl_801CB900:
 lbl_801CB90C:
 
 	# ROM: 0x1C7A0C
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -78,7 +78,7 @@ lbl_801CB918:
 lbl_801CB924:
 
 	# ROM: 0x1C7A24
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -461,7 +461,7 @@ lbl_801CBCE8:
 lbl_801CBCF4:
 
 	# ROM: 0x1C7DF4
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -477,7 +477,7 @@ lbl_801CBD00:
 lbl_801CBD0C:
 
 	# ROM: 0x1C7E0C
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -493,7 +493,7 @@ lbl_801CBD18:
 lbl_801CBD24:
 
 	# ROM: 0x1C7E24
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -509,7 +509,7 @@ lbl_801CBD30:
 lbl_801CBD3C:
 
 	# ROM: 0x1C7E3C
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -540,7 +540,7 @@ lbl_801CBD70:
 lbl_801CBD7C:
 
 	# ROM: 0x1C7E7C
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -556,7 +556,7 @@ lbl_801CBD88:
 lbl_801CBD94:
 
 	# ROM: 0x1C7E94
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -572,7 +572,7 @@ lbl_801CBDA0:
 lbl_801CBDAC:
 
 	# ROM: 0x1C7EAC
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -709,7 +709,7 @@ lbl_801CBF38:
 lbl_801CBF44:
 
 	# ROM: 0x1C8044
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -725,7 +725,7 @@ lbl_801CBF50:
 lbl_801CBF5C:
 
 	# ROM: 0x1C805C
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -741,7 +741,7 @@ lbl_801CBF68:
 lbl_801CBF74:
 
 	# ROM: 0x1C8074
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -757,7 +757,7 @@ lbl_801CBF80:
 lbl_801CBF8C:
 
 	# ROM: 0x1C808C
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -1161,7 +1161,7 @@ lbl_801CC3D8:
 lbl_801CC424:
 
 	# ROM: 0x1C8524
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte lbl_8060DF30
 	.4byte 0
@@ -1175,7 +1175,7 @@ lbl_801CC424:
 lbl_801CC448:
 
 	# ROM: 0x1C8548
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte lbl_8060DF30
 	.4byte 0
@@ -1212,7 +1212,7 @@ lbl_801CC468:
 lbl_801CC4B4:
 
 	# ROM: 0x1C85B4
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte lbl_8060DF30
 	.4byte 0
@@ -1250,7 +1250,7 @@ lbl_801CC4D8:
 lbl_801CC524:
 
 	# ROM: 0x1C8624
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte lbl_8060DF30
 	.4byte 0
@@ -1372,7 +1372,7 @@ lbl_801CC620:
 lbl_801CC66C:
 
 	# ROM: 0x1C876C
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte lbl_8060DF30
 	.4byte 0
@@ -1444,7 +1444,7 @@ lbl_801CC6F0:
 lbl_801CC73C:
 
 	# ROM: 0x1C883C
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte lbl_8060DF30
 	.4byte 0
@@ -1482,7 +1482,7 @@ lbl_801CC760:
 lbl_801CC7AC:
 
 	# ROM: 0x1C88AC
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte lbl_8060DF30
 	.4byte 0
@@ -1586,7 +1586,7 @@ lbl_801CC8A0:
 lbl_801CC8AC:
 
 	# ROM: 0x1C89AC
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -1602,7 +1602,7 @@ lbl_801CC8B8:
 lbl_801CC8C4:
 
 	# ROM: 0x1C89C4
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
@@ -2975,7 +2975,7 @@ lbl_801CD710:
 lbl_801CD71C:
 
 	# ROM: 0x1C981C
-	.4byte lbl_8060DF38
+	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 

@@ -4,7 +4,7 @@
 #include "include/game/utils/VListBase.h"
 #include "types.h"
 
-class CVListBase;
+class CVListBase;	// Forward declaration
 
 // Values from .sdata2
 extern const f32 _43178; // 0.0f

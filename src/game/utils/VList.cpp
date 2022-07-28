@@ -17,17 +17,17 @@ CVListBase::~CVListBase() {
 }
 
 s32 CVListBase::GetIndex() {
-    CVListBase* pList_start;
+    CVListBase* currentNode;
     s32 index;
 
     if (pList != nullptr) {
         index = 0;
-        pList_start = pList->GetStart();
-        while (pList_start != nullptr) {
-            if (this == pList_start) {
+        currentNode = pList->GetStart();
+        while (currentNode != nullptr) {
+            if (this == currentNode) {
                 return index;
             }
-            pList_start = pList_start->pNext;
+            currentNode = currentNode->pNext;
             index++;
         }
     }

@@ -217,16 +217,6 @@ func_80026C4C:
 /* 80026C54 00017BD4  90 03 00 08 */	stw r0, 0x8(r3)
 /* 80026C58 00017BD8  4E 80 00 20 */	blr
 
-.section .data, "wa", @progbits
-
-.global __vt__10CVListBase
-__vt__10CVListBase:
-
-	# ROM: 0x1C78C4
-	.4byte __RTTI__10CVListBase
-	.4byte 0
-	.4byte __dt__10CVListBaseFv
-
 .section .sdata, "wa", @progbits
 
 .global __RTTI__6CVList

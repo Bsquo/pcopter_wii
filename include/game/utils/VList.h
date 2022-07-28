@@ -1,15 +1,19 @@
 #ifndef VLIST_H
 #define VLIST_H
 
+#include "include/game/utils/VListBase.h"
 #include "types.h"
+
+class CVListBase;
 
 // Values from .sdata2
 extern const f32 _43178; // 0.0f
 
+// Doubly linked-list composed by nodes of type "CVListBase"
 class CVList {
     private:
-        void* pStart;
-        void* pEnd;
+        CVListBase* pStart;
+        CVListBase* pEnd;
         u32 mSize;
 
     public:
@@ -21,6 +25,18 @@ class CVList {
         void Init();
         // Release__6CVListFv (0x800269e0)
         void Release();
+        // GetSize__6CVListFv (0x80026A60)
+        u32 GetSize();
+        // GetStart__6CVListFv (0x80026A68)
+        CVListBase* GetStart();
+        // GetEnd__6CVListFv (0x80026A70)
+        CVListBase* GetEnd();
+        // GetElement__6CVListFi (0x80026A78)
+        CVListBase* GetElement(int);
+        // InsertEnd__6CVListFP10CVListBase (0x80026B18)
+        void InsertEnd(CVListBase*);
+        // EraseElement__6CVListFP10CVListBase (0x80026B98)
+        void EraseElement(CVListBase*);
 };
 
 #endif // VLIST_H

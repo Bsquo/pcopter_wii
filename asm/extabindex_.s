@@ -726,34 +726,34 @@ lbl_8000CB00:
 	.4byte lbl_80020524
 	.4byte 0x00000090
 	.4byte lbl_8000715C
-	.4byte func_800205CC
+	.4byte __ct__8CVStringFPc
 	.4byte 0x00000070
 	.4byte lbl_80007164
-	.4byte func_8002063C
+	.4byte __nwa__FUl
 	.4byte 0x0000004C
 	.4byte lbl_8000716C
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x00000060
 	.4byte lbl_80007194
-	.4byte func_800206E8
+	.4byte __as__8CVStringFRC8CVString
 	.4byte 0x00000074
 	.4byte lbl_8000719C
-	.4byte func_8002075C
+	.4byte __as__8CVStringFPCc
 	.4byte 0x00000068
 	.4byte lbl_800071A4
-	.4byte func_800207C4
+	.4byte __apl__8CVStringFPCc
 	.4byte 0x0000008C
 	.4byte lbl_800071AC
-	.4byte func_80020850
+	.4byte __eq__8CVStringFPCc
 	.4byte 0x0000002C
 	.4byte lbl_800071B4
-	.4byte func_80020890
+	.4byte Release__8CVStringFv
 	.4byte 0x00000048
 	.4byte lbl_800071BC
-	.4byte func_800208D8
+	.4byte __dla__FPv
 	.4byte 0x00000044
 	.4byte lbl_800071C4
-	.4byte func_80020934
+	.4byte CheckLast__8CVStringFPc
 	.4byte 0x000000BC
 	.4byte lbl_800071EC
 	.4byte lbl_800209F4
@@ -4766,13 +4766,13 @@ lbl_80010138:
 	.4byte func_8011C08C
 	.4byte 0x000000BC
 	.4byte lbl_8000CA6C
-	.4byte func_8011C148
+	.4byte Alloc__4demoFUliQ24demo6Memory
 	.4byte 0x0000008C
 	.4byte lbl_8000CA74
 	.4byte func_8011C1D4
 	.4byte 0x000000C0
 	.4byte lbl_8000CA7C
-	.4byte func_8011C294
+	.4byte Free__4demoFPv
 	.4byte 0x000000E8
 	.4byte lbl_8000CA84
 	.4byte func_8011C37C

@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_800B2818
-func_800B2818:
+.global strlen
+strlen:
 /* 800B2818 000A3798  38 83 FF FF */	addi r4, r3, -0x1
 /* 800B281C 000A379C  38 60 FF FF */	li r3, -0x1
 lbl_800B2820:

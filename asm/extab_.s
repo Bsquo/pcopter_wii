@@ -1303,7 +1303,7 @@ lbl_80006D30:
 	.4byte func_8001A52C
 	.4byte 0x0780001E
 	.4byte 0x00000420
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x0780001E
 	.4byte 0x000003B4
 	.4byte __dt__6CVListFv
@@ -2247,7 +2247,7 @@ lbl_800072E4:
 	.4byte 0
 	.4byte 0x0BC0001B
 	.4byte 0x001D0000
-	.4byte func_800208D8
+	.4byte __dla__FPv
 	.4byte 0x82000030
 	.4byte func_8002C34C
 	.4byte 0x0A80001D
@@ -2285,7 +2285,7 @@ lbl_80007350:
 	.4byte 0x017E0010
 	.4byte 0
 	.4byte 0x82000018
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 
 .global lbl_80007368
 lbl_80007368:
@@ -2602,7 +2602,7 @@ lbl_80007538:
 	.4byte 0x00540010
 	.4byte 0
 	.4byte 0x82000030
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 
 .global lbl_80007550
 lbl_80007550:
@@ -3924,7 +3924,7 @@ lbl_80007BD8:
 	.4byte 0
 	.4byte 0x0780001F
 	.4byte 0x00000014
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8680001F
 	.4byte 0
 	.4byte __dt__10CVListBaseFv
@@ -3958,7 +3958,7 @@ lbl_80007C10:
 	.4byte __dt__6CVListFv
 	.4byte 0x0780001F
 	.4byte 0x00000014
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8680001F
 	.4byte 0
 	.4byte __dt__10CVListBaseFv
@@ -4438,7 +4438,7 @@ lbl_80007EE0:
 	.4byte 0
 	.4byte 0x0780001E
 	.4byte 0x00000018
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8680001E
 	.4byte 0
 	.4byte __dt__10CVListBaseFv
@@ -4808,10 +4808,10 @@ lbl_80008128:
 	.4byte 0
 	.4byte 0x0780001F
 	.4byte 0x0000002C
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x0780001F
 	.4byte 0x00000024
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x0780001F
 	.4byte 0x0000001C
 	.4byte __dt__6CVFlagFv
@@ -5180,11 +5180,11 @@ lbl_800084A0:
 	.4byte 0x00000088
 	.4byte 0
 	.4byte 0x02000010
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x02000018
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x02000020
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x02000028
 	.4byte __dt__6CVFlagFv
 	.4byte 0x8200003C
@@ -5487,7 +5487,7 @@ lbl_80008708:
 	.4byte 0x01430010
 	.4byte 0
 	.4byte 0x82000008
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 
 .global lbl_80008720
 lbl_80008720:
@@ -5502,7 +5502,7 @@ lbl_80008720:
 	.4byte 0x00000028
 	.4byte 0
 	.4byte 0x02000008
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x82000010
 	.4byte func_8002C34C
 
@@ -5756,7 +5756,7 @@ lbl_80008828:
 	.4byte 0x02000028
 	.4byte func_8002C34C
 	.4byte 0x02000018
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x0200003C
 	.4byte func_8002C34C
 	.4byte 0x820000D0
@@ -6634,7 +6634,7 @@ lbl_80008E30:
 	.4byte 0x02000020
 	.4byte func_8002C34C
 	.4byte 0x02000018
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x02000034
 	.4byte func_8002C34C
 	.4byte 0x82000008
@@ -7068,13 +7068,13 @@ lbl_800091A0:
 	.4byte 0x0A80001D
 	.4byte __dl__FPv
 	.4byte 0x02000008
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x02000010
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x02000018
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x82000020
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x0A80001D
 	.4byte __dl__FPv
 	.4byte 0x01000080
@@ -7337,9 +7337,9 @@ lbl_8000937C:
 	.4byte 0x00000038
 	.4byte 0
 	.4byte 0x02000008
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x82000010
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 
 .global lbl_800093BC
 lbl_800093BC:
@@ -7383,9 +7383,9 @@ lbl_800093F0:
 	.4byte 0x0A80001D
 	.4byte __dl__FPv
 	.4byte 0x02000008
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x82000010
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 
 .global lbl_80009438
 lbl_80009438:
@@ -7418,9 +7418,9 @@ lbl_80009454:
 	.4byte 0x0A80001C
 	.4byte __dl__FPv
 	.4byte 0x02000008
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x82000010
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 
 .global lbl_8000949C
 lbl_8000949C:
@@ -7445,7 +7445,7 @@ lbl_800094B8:
 	.4byte 0x00000020
 	.4byte 0
 	.4byte 0x82000008
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8A80001B
 	.4byte __dl__FPv
 
@@ -7479,13 +7479,13 @@ lbl_800094E8:
 	.4byte 0x00000060
 	.4byte 0
 	.4byte 0x02000008
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x02000010
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x02000018
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x82000020
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 
 .global lbl_80009550
 lbl_80009550:
@@ -7518,9 +7518,9 @@ lbl_80009550:
 	.4byte 0x02000008
 	.4byte __dt__6CVFlagFv
 	.4byte 0x02000010
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x82000018
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 
 .global lbl_800095C8
 lbl_800095C8:
@@ -7534,7 +7534,7 @@ lbl_800095C8:
 	.4byte 0
 	.4byte 0x0780001F
 	.4byte 0x00000050
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8680001F
 	.4byte 0
 	.4byte __dt__10CVListBaseFv
@@ -7711,7 +7711,7 @@ lbl_80009710:
 	.4byte 0
 	.4byte 0x0780001F
 	.4byte 0x00000014
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8680001F
 	.4byte 0
 	.4byte __dt__10CVListBaseFv
@@ -7728,7 +7728,7 @@ lbl_80009740:
 	.4byte 0
 	.4byte 0x0780001F
 	.4byte 0x00000014
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8680001F
 	.4byte 0
 	.4byte __dt__10CVListBaseFv
@@ -8145,7 +8145,7 @@ lbl_8000998C:
 	.4byte 0
 	.4byte 0x0780001F
 	.4byte 0x0000012C
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8680001F
 	.4byte 0
 	.4byte __dt__10CVListBaseFv
@@ -8169,7 +8169,7 @@ lbl_800099BC:
 	.4byte 0x0A800014
 	.4byte __dl__FPv
 	.4byte 0x82000020
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 
 .global lbl_800099FC
 lbl_800099FC:
@@ -8183,7 +8183,7 @@ lbl_800099FC:
 	.4byte 0
 	.4byte 0x0780001F
 	.4byte 0x00000014
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8680001F
 	.4byte 0
 	.4byte __dt__10CVListBaseFv
@@ -9062,7 +9062,7 @@ lbl_80009FD4:
 	.4byte 0
 	.4byte 0x0780001D
 	.4byte 0x00000048
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8680001D
 	.4byte 0
 
@@ -9275,7 +9275,7 @@ lbl_8000A1E8:
 	.4byte 0
 	.4byte 0x0780001F
 	.4byte 0x000003E8
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8680001F
 	.4byte 0
 	.4byte func_80057334
@@ -9315,10 +9315,10 @@ lbl_8000A230:
 	.4byte 0
 	.4byte 0x0780001F
 	.4byte 0x000003F0
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x0780001F
 	.4byte 0x000003E8
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8680001F
 	.4byte 0
 	.4byte func_80056FF0
@@ -12791,7 +12791,7 @@ lbl_8000C060:
 	.4byte 0x00000028
 	.4byte 0
 	.4byte 0x02000008
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x8200004C
 	.4byte func_8002C34C
 
@@ -12883,7 +12883,7 @@ lbl_8000C168:
 	.4byte 0x0200000C
 	.4byte func_80014574
 	.4byte 0x02000028
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 	.4byte 0x82000020
 	.4byte func_80014574
 	.4byte 0x02000008
@@ -12899,7 +12899,7 @@ lbl_8000C1BC:
 	.4byte 0x00A40010
 	.4byte 0
 	.4byte 0x82000008
-	.4byte func_80020688
+	.4byte __dt__8CVStringFv
 
 .global lbl_8000C1D4
 lbl_8000C1D4:

@@ -579,8 +579,8 @@ lbl_8011C12C:
 /* 8011C13C 0010D0BC  7C 08 03 A6 */	mtlr r0
 /* 8011C140 0010D0C0  38 21 00 20 */	addi r1, r1, 0x20
 /* 8011C144 0010D0C4  4E 80 00 20 */	blr
-.global func_8011C148
-func_8011C148:
+.global Alloc__4demoFUliQ24demo6Memory
+Alloc__4demoFUliQ24demo6Memory:
 /* 8011C148 0010D0C8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8011C14C 0010D0CC  7C 08 02 A6 */	mflr r0
 /* 8011C150 0010D0D0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -675,8 +675,8 @@ func_8011C278:
 /* 8011C288 0010D208  7C 08 03 A6 */	mtlr r0
 /* 8011C28C 0010D20C  38 21 00 20 */	addi r1, r1, 0x20
 /* 8011C290 0010D210  4E 80 00 20 */	blr
-.global func_8011C294
-func_8011C294:
+.global Free__4demoFPv
+Free__4demoFPv:
 /* 8011C294 0010D214  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8011C298 0010D218  7C 08 02 A6 */	mflr r0
 /* 8011C29C 0010D21C  90 01 00 24 */	stw r0, 0x24(r1)

@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_800B2834
-func_800B2834:
+.global __va_arg
+__va_arg:
 /* 800B2834 000A37B4  88 E3 00 00 */	lbz r7, 0x0(r3)
 /* 800B2838 000A37B8  2C 04 00 03 */	cmpwi r4, 0x3
 /* 800B283C 000A37BC  7C 66 1B 78 */	mr r6, r3

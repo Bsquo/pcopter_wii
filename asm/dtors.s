@@ -6,7 +6,7 @@
 lbl_801B83E0:
 
 	# ROM: 0x1B44E0
-	.4byte lbl_800B2914
+	.4byte func_800B2914
 	.4byte lbl_800B37B8
 	.4byte 0
 	.4byte 0

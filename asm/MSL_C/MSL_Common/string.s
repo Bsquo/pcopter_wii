@@ -87,8 +87,8 @@ func_800BA48C:
 /* 800BA490 000AB410  40 82 FF D4 */	bne lbl_800BA464
 /* 800BA494 000AB414  4E 80 00 20 */	blr
 
-.global func_800BA498
-func_800BA498:
+.global strcat
+strcat:
 /* 800BA498 000AB418  38 84 FF FF */	addi r4, r4, -0x1
 /* 800BA49C 000AB41C  38 A3 FF FF */	addi r5, r3, -0x1
 lbl_800BA4A0:
@@ -133,8 +133,8 @@ func_800BA504:
 /* 800BA508 000AB488  98 06 00 01 */	stb r0, 0x1(r6)
 /* 800BA50C 000AB48C  4E 80 00 20 */	blr
 
-.global func_800BA510
-func_800BA510:
+.global strcmp
+strcmp:
 /* 800BA510 000AB490  88 A3 00 00 */	lbz r5, 0x0(r3)
 /* 800BA514 000AB494  88 04 00 00 */	lbz r0, 0x0(r4)
 /* 800BA518 000AB498  7C 00 28 51 */	subf. r0, r0, r5
@@ -247,8 +247,8 @@ lbl_800BA664:
 /* 800BA664 000AB5E4  38 60 00 00 */	li r3, 0x0
 /* 800BA668 000AB5E8  4E 80 00 20 */	blr
 
-.global func_800BA66C
-func_800BA66C:
+.global strchr
+strchr:
 /* 800BA66C 000AB5EC  38 63 FF FF */	addi r3, r3, -0x1
 /* 800BA670 000AB5F0  54 80 06 3E */	clrlwi r0, r4, 24
 /* 800BA674 000AB5F4  48 00 00 0C */	b func_800BA680

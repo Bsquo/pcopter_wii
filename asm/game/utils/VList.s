@@ -2,61 +2,6 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global Release__6CVListFv
-Release__6CVListFv:
-/* 800269E0 00017960  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 800269E4 00017964  7C 08 02 A6 */	mflr r0
-/* 800269E8 00017968  90 01 00 24 */	stw r0, 0x24(r1)
-/* 800269EC 0001796C  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 800269F0 00017970  3B E0 00 00 */	li r31, 0x0
-/* 800269F4 00017974  93 C1 00 18 */	stw r30, 0x18(r1)
-/* 800269F8 00017978  93 A1 00 14 */	stw r29, 0x14(r1)
-/* 800269FC 0001797C  7C 7D 1B 78 */	mr r29, r3
-/* 80026A00 00017980  80 83 00 00 */	lwz r4, 0x0(r3)
-/* 80026A04 00017984  48 00 00 30 */	b func_80026A34
-lbl_80026A08:
-/* 80026A08 00017988  83 C4 00 0C */	lwz r30, 0xc(r4)
-/* 80026A0C 0001798C  2C 04 00 00 */	cmpwi r4, 0x0
-/* 80026A10 00017990  93 E4 00 00 */	stw r31, 0x0(r4)
-/* 80026A14 00017994  41 82 00 1C */	beq lbl_80026A30
-/* 80026A18 00017998  7C 83 23 78 */	mr r3, r4
-/* 80026A1C 0001799C  38 80 00 01 */	li r4, 0x1
-/* 80026A20 000179A0  81 83 00 10 */	lwz r12, 0x10(r3)
-/* 80026A24 000179A4  81 8C 00 08 */	lwz r12, 0x8(r12)
-/* 80026A28 000179A8  7D 89 03 A6 */	mtctr r12
-/* 80026A2C 000179AC  4E 80 04 21 */	bctrl
-lbl_80026A30:
-/* 80026A30 000179B0  7F C4 F3 78 */	mr r4, r30
-
-.global func_80026A34
-func_80026A34:
-/* 80026A34 000179B4  2C 04 00 00 */	cmpwi r4, 0x0
-/* 80026A38 000179B8  40 82 FF D0 */	bne lbl_80026A08
-/* 80026A3C 000179BC  7F A3 EB 78 */	mr r3, r29
-/* 80026A40 000179C0  4B FF FF 8D */	bl Init__6CVListFv
-/* 80026A44 000179C4  80 01 00 24 */	lwz r0, 0x24(r1)
-/* 80026A48 000179C8  83 E1 00 1C */	lwz r31, 0x1c(r1)
-/* 80026A4C 000179CC  83 C1 00 18 */	lwz r30, 0x18(r1)
-/* 80026A50 000179D0  83 A1 00 14 */	lwz r29, 0x14(r1)
-/* 80026A54 000179D4  7C 08 03 A6 */	mtlr r0
-/* 80026A58 000179D8  38 21 00 20 */	addi r1, r1, 0x20
-/* 80026A5C 000179DC  4E 80 00 20 */	blr
-
-.global GetSize__6CVListFv
-GetSize__6CVListFv:
-/* 80026A60 000179E0  80 63 00 08 */	lwz r3, 0x8(r3)
-/* 80026A64 000179E4  4E 80 00 20 */	blr
-
-.global GetStart__6CVListFv
-GetStart__6CVListFv:
-/* 80026A68 000179E8  80 63 00 00 */	lwz r3, 0x0(r3)
-/* 80026A6C 000179EC  4E 80 00 20 */	blr
-
-.global GetEnd__6CVListFv
-GetEnd__6CVListFv:
-/* 80026A70 000179F0  80 63 00 04 */	lwz r3, 0x4(r3)
-/* 80026A74 000179F4  4E 80 00 20 */	blr
-
 .global GetElement__6CVListFi
 GetElement__6CVListFi:
 /* 80026A78 000179F8  94 21 FF F0 */	stwu r1, -0x10(r1)

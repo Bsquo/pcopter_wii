@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_800BA394
-func_800BA394:
+.global strcpy
+strcpy:
 /* 800BA394 000AB314  54 60 07 BE */	clrlwi r0, r3, 30
 /* 800BA398 000AB318  54 85 07 BE */	clrlwi r5, r4, 30
 /* 800BA39C 000AB31C  7C 00 28 40 */	cmplw r0, r5

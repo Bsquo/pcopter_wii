@@ -25,6 +25,8 @@ typedef volatile f64        vf64;
 
 typedef int                 BOOL;
 
+typedef unsigned long size_t;
+
 #define TRUE 1
 #define FALSE 0
 

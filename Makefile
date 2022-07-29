@@ -83,20 +83,20 @@ ASM_DIRS := asm                      \
 			asm/MSL_C/PPC_EABI                       \
 			asm/MSL_C/PPC_EABI/Runtime                       \
 			asm/NdevExiA                       \
-			asm/NW4R                       \
-			asm/NW4R/db                       \
-			asm/NW4R/ef                       \
-			asm/NW4R/g3d                       \
-			asm/NW4R/hbm                       \
-			asm/NW4R/lyt                       \
-			asm/NW4R/math                       \
-			asm/NW4R/nw4hbm                       \
-			asm/NW4R/nw4hbm/lyt                       \
-			asm/NW4R/nw4hbm/math                       \
-			asm/NW4R/nw4hbm/ut                       \
-			asm/NW4R/snd                       \
-			asm/NW4R/THP                       \
-			asm/NW4R/ut                       \
+			asm/nw4r                       \
+			asm/nw4r/db                       \
+			asm/nw4r/ef                       \
+			asm/nw4r/g3d                       \
+			asm/nw4r/hbm                       \
+			asm/nw4r/lyt                       \
+			asm/nw4r/math                       \
+			asm/nw4r/nw4hbm                       \
+			asm/nw4r/nw4hbm/lyt                       \
+			asm/nw4r/nw4hbm/math                       \
+			asm/nw4r/nw4hbm/ut                       \
+			asm/nw4r/snd                       \
+			asm/nw4r/THP                       \
+			asm/nw4r/ut                       \
 			asm/runtime                         \
 			asm/runtime/init                         \
 			asm/runtime/text                         \
@@ -145,7 +145,7 @@ MAP     := $(BUILD_DIR)/pcopter_wii_eur.map
 include obj_files.mk
 
 O_FILES := $(INIT_O_FILES) $(EXTAB_O_FILES) $(EXTABINDEX_O_FILES) $(GAME_O_FILES) \
-           $(SDK_O_FILES) $(NW4R_O_FILES) $(CTORS_O_FILES) $(DTORS_O_FILES)       \
+           $(SDK_O_FILES) $(nw4r_O_FILES) $(CTORS_O_FILES) $(DTORS_O_FILES)       \
 		   $(RODATA_O_FILES) $(DATA_O_FILES) $(BSS_O_FILES) $(SDATA_O_FILES)      \
 		   $(SBSS_O_FILES) $(SDATA2_O_FILES) $(SBSS2_O_FILES)
 

@@ -1,5 +1,7 @@
-#ifndef MSL_COMMON_STRING_H
-#define MSL_COMMON_STRING_H
+#ifndef DEMO_H
+#define DEMO_H
+
+#include "types.h"
 
 // extern "C" is used to avoid the compiler from mangling the name in C++ code.
 // More info:
@@ -8,10 +10,14 @@
 extern "C" {
 #endif
 
-char* strcpy(char*, const char*);
+namespace demo {
+    class Memory;
+}
+
+void* Alloc__4demoFUliQ24demo6Memory(size_t, int, demo::Memory);
 
 #ifdef __cplusplus
 }
 #endif // __cplusplus
 
-#endif // MSL_COMMON_STRING_H
+#endif // DEMO_H

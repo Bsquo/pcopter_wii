@@ -1,5 +1,7 @@
-#ifndef MSL_COMMON_STRING_H
-#define MSL_COMMON_STRING_H
+#ifndef GECKO_EXCEPTIONPPC_H
+#define GECKO_EXCEPTIONPPC_H
+
+#include "types.h"
 
 // extern "C" is used to avoid the compiler from mangling the name in C++ code.
 // More info:
@@ -8,10 +10,10 @@
 extern "C" {
 #endif
 
-char* strcpy(char*, const char*);
+void __unexpected(void);
 
 #ifdef __cplusplus
 }
 #endif // __cplusplus
 
-#endif // MSL_COMMON_STRING_H
+#endif // GECKO_EXCEPTIONPPC_H

@@ -735,7 +735,7 @@ func_8001A90C:
 /* 8001A928 0000B8A8  48 10 18 21 */	bl Alloc__4demoFUliQ24demo6Memory
 /* 8001A92C 0000B8AC  48 00 00 10 */	b func_8001A93C
 /* 8001A930 0000B8B0  38 7F 00 08 */	addi r3, r31, 0x8
-/* 8001A934 0000B8B4  48 09 9D 89 */	bl func_800B46BC
+/* 8001A934 0000B8B4  48 09 9D 89 */	bl __unexpected
 
 .global func_8001A938
 func_8001A938:

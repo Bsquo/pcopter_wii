@@ -73,7 +73,7 @@ ASM_DIRS := asm                      \
 			asm/game/scene/Menu/Strap           \
 			asm/game/scene/Menu/Title           \
 			asm/game/scene/Menu/Treasure           \
-			asm/game/sys                         \
+			asm/game/system                         \
 			asm/game/utils                         \
 			asm/MetroTRK                       \
 			asm/MSL_C                       \

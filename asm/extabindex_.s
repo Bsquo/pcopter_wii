@@ -4280,7 +4280,7 @@ lbl_80010138:
 	.4byte func_800B41B0
 	.4byte 0x0000050C
 	.4byte lbl_8000C35C
-	.4byte func_800B46BC
+	.4byte __unexpected
 	.4byte 0x000001B8
 	.4byte lbl_8000C370
 	.4byte func_800B4978

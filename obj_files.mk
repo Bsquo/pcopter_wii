@@ -142,7 +142,7 @@ GAME_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/game/scenary/MultiPlayer/ScnRingMP.o            \
 	$(BUILD_DIR)/asm/game/scene/Menu/ClassicCheak/SceneMenuClassicCheak.o            \
 	$(BUILD_DIR)/asm/game/actor/Copter/parts/Rotor.o            \
-	$(BUILD_DIR)/asm/game/sys/BackThread.o
+	$(BUILD_DIR)/asm/game/system/BackThread.o
 	
 SDK_O_FILES :=                                               \
 	$(BUILD_DIR)/asm/RVL/base/PPCArch.o            \
@@ -433,7 +433,7 @@ SDK_O_FILES :=                                               \
 	$(BUILD_DIR)/asm/RVL/TPL/TPL.o    \
 	$(BUILD_DIR)/asm/report.o    \
 	$(BUILD_DIR)/asm/resource.o    \
-	$(BUILD_DIR)/asm/system.o    \
+	$(BUILD_DIR)/asm/game/system/system.o    \
 	$(BUILD_DIR)/asm/DEMOInit.o
 	
 NW4R_O_FILES :=                                         \

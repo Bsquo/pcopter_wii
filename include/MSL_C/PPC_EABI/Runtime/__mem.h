@@ -3,7 +3,8 @@
 
 #include "types.h"
 
-// More info on why extern "C" is used here:
+// extern "C" is used to avoid the compiler from mangling the name in C++ code.
+// More info:
 // https://stackoverflow.com/questions/1041866/what-is-the-effect-of-extern-c-in-c
 #ifdef __cplusplus
 extern "C" {

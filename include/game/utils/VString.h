@@ -45,6 +45,6 @@ class CVString {
 
 // This function goes outside the CVString class.
 // __nwa__FUl (0x8002063c)
-void* __nwa(u32);
+void* operator new[](size_t);
 
 #endif // VSTRING_H

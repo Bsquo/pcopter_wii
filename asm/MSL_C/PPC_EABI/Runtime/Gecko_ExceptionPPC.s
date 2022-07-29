@@ -1200,8 +1200,8 @@ lbl_800B46A8:
 /* 800B46B4 000A5634  38 21 00 30 */	addi r1, r1, 0x30
 /* 800B46B8 000A5638  4E 80 00 20 */	blr
 
-.global func_800B46BC
-func_800B46BC:
+.global __unexpected
+__unexpected:
 /* 800B46BC 000A563C  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 800B46C0 000A5640  7C 08 02 A6 */	mflr r0
 /* 800B46C4 000A5644  90 01 00 54 */	stw r0, 0x54(r1)

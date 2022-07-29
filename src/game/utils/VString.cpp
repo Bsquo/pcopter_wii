@@ -43,3 +43,7 @@ asm void* operator new[](size_t size) {
     /* 80020680 00011600  7C 08 03 A6 */	mtlr r0
     /* 80020684 00011604  4E 80 00 20 */	blr
 }
+
+CVString::~CVString() {
+    Release();
+}

@@ -12,34 +12,6 @@ _42970:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global __dt__8CVStringFv
-__dt__8CVStringFv:
-/* 80020688 00011608  94 21 FF F0 */	stwu r1, -0x10(r1)
-/* 8002068C 0001160C  7C 08 02 A6 */	mflr r0
-/* 80020690 00011610  2C 03 00 00 */	cmpwi r3, 0x0
-/* 80020694 00011614  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80020698 00011618  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 8002069C 0001161C  7C 9F 23 78 */	mr r31, r4
-/* 800206A0 00011620  93 C1 00 08 */	stw r30, 0x8(r1)
-/* 800206A4 00011624  7C 7E 1B 78 */	mr r30, r3
-/* 800206A8 00011628  41 82 00 24 */	beq lbl_800206CC
-/* 800206AC 0001162C  3C 80 80 1D */	lis r4, __vt__8CVString@ha
-/* 800206B0 00011630  38 84 B6 70 */	addi r4, r4, __vt__8CVString@l
-/* 800206B4 00011634  90 83 00 04 */	stw r4, 0x4(r3)
-/* 800206B8 00011638  48 00 01 D9 */	bl Release__8CVStringFv
-/* 800206BC 0001163C  2C 1F 00 00 */	cmpwi r31, 0x0
-/* 800206C0 00011640  40 81 00 0C */	ble lbl_800206CC
-/* 800206C4 00011644  7F C3 F3 78 */	mr r3, r30
-/* 800206C8 00011648  4B FF 12 1D */	bl __dl__FPv
-lbl_800206CC:
-/* 800206CC 0001164C  7F C3 F3 78 */	mr r3, r30
-/* 800206D0 00011650  83 E1 00 0C */	lwz r31, 0xc(r1)
-/* 800206D4 00011654  83 C1 00 08 */	lwz r30, 0x8(r1)
-/* 800206D8 00011658  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800206DC 0001165C  7C 08 03 A6 */	mtlr r0
-/* 800206E0 00011660  38 21 00 10 */	addi r1, r1, 0x10
-/* 800206E4 00011664  4E 80 00 20 */	blr
-
 .global __as__8CVStringFRC8CVString
 __as__8CVStringFRC8CVString:
 /* 800206E8 00011668  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -286,17 +258,6 @@ func_800209D4:
 .global strchr__3stdFPci
 strchr__3stdFPci:
 /* 800209F0 00011970  48 09 9C 7C */	b strchr
-
-.section .data, "wa", @progbits
-
-.global __vt__8CVString
-__vt__8CVString:
-
-	# ROM: 0x1C7770
-	.4byte __RTTI__8CVString
-	.4byte 0
-	.4byte __dt__8CVStringFv
-	.4byte 0
 
 .section .sdata, "wa", @progbits
 

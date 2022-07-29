@@ -18,6 +18,8 @@ BUILD_DIR := build/$(TARGET)
 
 SRC_DIRS := src                      \
 			src/game                 \
+			src/game/actor           \
+			src/game/actor/Copter    \
 			src/game/gfx             \
 			src/game/math            \
 			src/game/managers        \

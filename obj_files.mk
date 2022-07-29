@@ -19,7 +19,9 @@ GAME_O_FILES :=                                                    \
     $(BUILD_DIR)/asm/game/scene/Game/SceneGame_1.o                   \
 	$(BUILD_DIR)/src/game/scene/Game/SceneGame.o                   \
 	$(BUILD_DIR)/asm/game/scene/Game/SceneGame_2.o                   \
-    $(BUILD_DIR)/asm/game/actor/Copter/ActCopter.o                   \
+    $(BUILD_DIR)/asm/game/actor/Copter/ActCopter_1.o                   \
+	$(BUILD_DIR)/src/game/actor/Copter/ActCopter.o                   \
+	$(BUILD_DIR)/asm/game/actor/Copter/ActCopter_2.o                   \
     $(BUILD_DIR)/asm/game/gfx/Shadow.o                         \
     $(BUILD_DIR)/src/game/utils/VString.o                      \
 	$(BUILD_DIR)/asm/game/utils/VString.o                      \

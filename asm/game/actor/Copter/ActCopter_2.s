@@ -1,245 +1,6 @@
 .include "macros.s"
 
-.section .rodata, "a", @progbits
-
-.global lbl_801B9408
-lbl_801B9408:
-
-	# ROM: 0x1B5508
-	.asciz "CActCopter"
-	.balign 4
-
-.global lbl_801B9414
-lbl_801B9414:
-
-	# ROM: 0x1B5514
-	.asciz "CVListBase"
-	.balign 4
-
-.global lbl_801B9420
-lbl_801B9420:
-
-	# ROM: 0x1B5520
-	.asciz "Model/path#%d"
-	.byte 0x4D, 0x6F
-	.asciz "del/path#0"
-	.byte 0x43
-	.asciz "opter/Rotor/node_num"
-	.byte 0x41, 0x63, 0x74
-	.asciz "or/Rotor"
-	.byte 0x41, 0x63, 0x74
-	.asciz "or/Cannon"
-	.byte 0x41, 0x63
-	.asciz "tor/LiftCup"
-	.asciz "RotorNode_%d"
-	.byte 0x50, 0x43, 0x6F
-	.asciz "pter/PartsParam.txt"
-	.asciz "Group#%d/#%d"
-	.byte 0x41, 0x63, 0x74
-	.asciz "Copter.cpp"
-	.byte 0x4E
-	.asciz "W4R:Failed assertion resMdl.IsValid()"
-	.byte 0x52, 0x69
-	.asciz "gid/m"
-	.byte 0x52, 0x69
-	.asciz "gid/inertia"
-	.asciz "Rigid/inertia"
-	.byte 0x52, 0x69
-	.asciz "gid/inertia"
-	.asciz "Rigid/drag"
-	.byte 0x52
-	.asciz "igid/drag"
-	.byte 0x43, 0x6F
-	.asciz "pter/Rotor/thrust"
-	.byte 0x43, 0x6F
-	.asciz "pter/Rotor/thrust"
-	.byte 0x43, 0x6F
-	.asciz "pter/Rotor/node_num"
-	.asciz "Copter/Force/roll"
-	.byte 0x43, 0x6F
-	.asciz "pter/Force/pitch"
-	.byte 0x43, 0x6F, 0x70
-	.asciz "ter/Force/yaw"
-	.byte 0x43, 0x6F
-	.asciz "pter/Sound/pitch_gain"
-	.byte 0x43, 0x6F
-	.asciz "pter/Sound/pitch_area"
-	.byte 0x43, 0x6F
-	.asciz "pter/Sound/pitch_area"
-	.byte 0x43, 0x6F
-	.asciz "pter/Sound/name"
-	.asciz "Copter/Battery/capacity"
-	.asciz "Copter/Battery/decrease"
-	.asciz "Copter/Body/durability"
-	.byte 0x43
-	.asciz "opter/Body/stability"
-	.byte 0x43, 0x6F, 0x70
-	.asciz "ter/Body/lift_power"
-	.asciz "Copter/SkidAnim/node"
-	.byte 0x43, 0x6F, 0x70
-	.asciz "ter/SkidAnim/rate"
-	.byte 0x43, 0x6F
-	.asciz "pter/AutoHover/thrust"
-	.byte 0x43, 0x6F
-	.asciz "pter/AutoHover/thrust"
-	.byte 0x43, 0x6F
-	.asciz "pter/AutoHover/drag_f"
-	.byte 0x43, 0x6F
-	.asciz "pter/AutoHover/drag_tq"
-	.byte 0x43
-	.asciz "opter/AutoHover/drag_v"
-	.byte 0x43
-	.asciz "opter/AutoHover/drag_w"
-	.byte 0x41
-	.asciz "ctor/Cannon"
-	.asciz "Actor/LiftCup"
-	.byte 0x53, 0x45
-	.asciz "_Select"
-	.asciz "SE_Select"
-	.byte 0x53, 0x45
-	.asciz "2_ACannon"
-	.byte 0x53, 0x45
-	.asciz "2_LiftCup_A"
-	.asciz "speed"
-	.byte 0x73, 0x70
-	.4byte 0x65656400
-	.asciz "SE2_Speed_01"
-	.byte 0x53, 0x45, 0x5F
-	.4byte 0x4E470064
-	.asciz "amage"
-	.byte 0x64, 0x61
-	.asciz "mage"
-	.byte 0x41, 0x63, 0x74
-	.4byte 0x5F315000
-	.asciz "Act_2P"
-	.byte 0x47
-	.asciz "Smoke_1P"
-	.byte 0x47, 0x53, 0x6D
-	.asciz "oke_2P"
-	.byte 0x53
-	.asciz "hadow_1P"
-	.byte 0x53, 0x68, 0x61
-	.asciz "dow_2P"
-	.byte 0x53
-	.asciz "E_Kaifuku_01"
-	.byte 0x43, 0x68, 0x61
-	.4byte 0x72676500
-	.asciz "Charge"
-	.balign 4
-	.4byte 0
-
-.section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
-
-.global func_8001A0D0
-func_8001A0D0:
-/* 8001A0D0 0000B050  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 8001A0D4 0000B054  7C 08 02 A6 */	mflr r0
-/* 8001A0D8 0000B058  90 01 00 24 */	stw r0, 0x24(r1)
-/* 8001A0DC 0000B05C  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 8001A0E0 0000B060  93 C1 00 18 */	stw r30, 0x18(r1)
-/* 8001A0E4 0000B064  3B C3 00 F0 */	addi r30, r3, 0xf0
-/* 8001A0E8 0000B068  93 A1 00 14 */	stw r29, 0x14(r1)
-/* 8001A0EC 0000B06C  7C 7D 1B 78 */	mr r29, r3
-/* 8001A0F0 0000B070  7F BF EB 78 */	mr r31, r29
-lbl_8001A0F4:
-/* 8001A0F4 0000B074  7F E3 FB 78 */	mr r3, r31
-/* 8001A0F8 0000B078  48 00 D0 29 */	bl __ct__8CVVectorFv
-/* 8001A0FC 0000B07C  3B FF 00 0C */	addi r31, r31, 0xc
-/* 8001A100 0000B080  7C 1F F0 40 */	cmplw r31, r30
-/* 8001A104 0000B084  41 80 FF F0 */	blt lbl_8001A0F4
-/* 8001A108 0000B088  3B FD 01 E0 */	addi r31, r29, 0x1e0
-lbl_8001A10C:
-/* 8001A10C 0000B08C  7F C3 F3 78 */	mr r3, r30
-/* 8001A110 0000B090  48 00 D0 11 */	bl __ct__8CVVectorFv
-/* 8001A114 0000B094  3B DE 00 0C */	addi r30, r30, 0xc
-/* 8001A118 0000B098  7C 1E F8 40 */	cmplw r30, r31
-/* 8001A11C 0000B09C  41 80 FF F0 */	blt lbl_8001A10C
-/* 8001A120 0000B0A0  38 00 00 00 */	li r0, 0x0
-/* 8001A124 0000B0A4  7F A3 EB 78 */	mr r3, r29
-/* 8001A128 0000B0A8  90 1D 01 E0 */	stw r0, 0x1e0(r29)
-/* 8001A12C 0000B0AC  83 E1 00 1C */	lwz r31, 0x1c(r1)
-/* 8001A130 0000B0B0  83 C1 00 18 */	lwz r30, 0x18(r1)
-/* 8001A134 0000B0B4  83 A1 00 14 */	lwz r29, 0x14(r1)
-/* 8001A138 0000B0B8  80 01 00 24 */	lwz r0, 0x24(r1)
-/* 8001A13C 0000B0BC  7C 08 03 A6 */	mtlr r0
-/* 8001A140 0000B0C0  38 21 00 20 */	addi r1, r1, 0x20
-/* 8001A144 0000B0C4  4E 80 00 20 */	blr
-
-.global func_8001A148
-func_8001A148:
-/* 8001A148 0000B0C8  94 21 FF D0 */	stwu r1, -0x30(r1)
-/* 8001A14C 0000B0CC  7C 08 02 A6 */	mflr r0
-/* 8001A150 0000B0D0  C0 22 80 68 */	lfs f1, lbl_8060F888@sda21(r2)
-/* 8001A154 0000B0D4  90 01 00 34 */	stw r0, 0x34(r1)
-/* 8001A158 0000B0D8  93 E1 00 2C */	stw r31, 0x2c(r1)
-/* 8001A15C 0000B0DC  7C BF 2B 78 */	mr r31, r5
-/* 8001A160 0000B0E0  93 C1 00 28 */	stw r30, 0x28(r1)
-/* 8001A164 0000B0E4  7C 9E 23 78 */	mr r30, r4
-/* 8001A168 0000B0E8  93 A1 00 24 */	stw r29, 0x24(r1)
-/* 8001A16C 0000B0EC  7C 7D 1B 78 */	mr r29, r3
-/* 8001A170 0000B0F0  80 03 01 E0 */	lwz r0, 0x1e0(r3)
-/* 8001A174 0000B0F4  2C 00 00 00 */	cmpwi r0, 0x0
-/* 8001A178 0000B0F8  41 82 00 1C */	beq lbl_8001A194
-/* 8001A17C 0000B0FC  7F A4 EB 78 */	mr r4, r29
-/* 8001A180 0000B100  38 61 00 08 */	addi r3, r1, 0x8
-/* 8001A184 0000B104  38 BE 00 14 */	addi r5, r30, 0x14
-/* 8001A188 0000B108  4B FF C7 71 */	bl __mi__8CVVectorFRC8CVVector
-/* 8001A18C 0000B10C  38 61 00 08 */	addi r3, r1, 0x8
-/* 8001A190 0000B110  48 00 00 69 */	bl Magnitude__8CVVectorFv
-lbl_8001A194:
-/* 8001A194 0000B114  C0 02 80 6C */	lfs f0, lbl_8060F88C@sda21(r2)
-/* 8001A198 0000B118  FC 01 00 40 */	fcmpo cr0, f1, f0
-/* 8001A19C 0000B11C  41 81 00 0C */	bgt lbl_8001A1A8
-/* 8001A1A0 0000B120  2C 1F 00 00 */	cmpwi r31, 0x0
-/* 8001A1A4 0000B124  41 82 00 38 */	beq lbl_8001A1DC
-lbl_8001A1A8:
-/* 8001A1A8 0000B128  7F A3 EB 78 */	mr r3, r29
-/* 8001A1AC 0000B12C  48 00 01 15 */	bl func_8001A2C0
-/* 8001A1B0 0000B130  7F A3 EB 78 */	mr r3, r29
-/* 8001A1B4 0000B134  38 9E 00 14 */	addi r4, r30, 0x14
-/* 8001A1B8 0000B138  48 00 00 61 */	bl __as__8CVVectorFRC8CVV
-/* 8001A1BC 0000B13C  38 7D 00 F0 */	addi r3, r29, 0xf0
-/* 8001A1C0 0000B140  38 9E 00 38 */	addi r4, r30, 0x38
-/* 8001A1C4 0000B144  48 00 00 55 */	bl __as__8CVVectorFRC8CVV
-/* 8001A1C8 0000B148  80 7D 01 E0 */	lwz r3, 0x1e0(r29)
-/* 8001A1CC 0000B14C  28 03 00 13 */	cmplwi r3, 0x13
-/* 8001A1D0 0000B150  40 80 00 0C */	bge lbl_8001A1DC
-/* 8001A1D4 0000B154  38 03 00 01 */	addi r0, r3, 0x1
-/* 8001A1D8 0000B158  90 1D 01 E0 */	stw r0, 0x1e0(r29)
-lbl_8001A1DC:
-/* 8001A1DC 0000B15C  80 01 00 34 */	lwz r0, 0x34(r1)
-/* 8001A1E0 0000B160  83 E1 00 2C */	lwz r31, 0x2c(r1)
-/* 8001A1E4 0000B164  83 C1 00 28 */	lwz r30, 0x28(r1)
-/* 8001A1E8 0000B168  83 A1 00 24 */	lwz r29, 0x24(r1)
-/* 8001A1EC 0000B16C  7C 08 03 A6 */	mtlr r0
-/* 8001A1F0 0000B170  38 21 00 30 */	addi r1, r1, 0x30
-/* 8001A1F4 0000B174  4E 80 00 20 */	blr
-
-.global Magnitude__8CVVectorFv
-Magnitude__8CVVectorFv:
-/* 8001A1F8 0000B178  C0 03 00 04 */	lfs f0, 0x4(r3)
-/* 8001A1FC 0000B17C  C0 23 00 00 */	lfs f1, 0x0(r3)
-/* 8001A200 0000B180  EC 40 00 32 */	fmuls f2, f0, f0
-/* 8001A204 0000B184  C0 03 00 08 */	lfs f0, 0x8(r3)
-/* 8001A208 0000B188  EC 21 10 7A */	fmadds f1, f1, f1, f2
-/* 8001A20C 0000B18C  EC 20 08 3A */	fmadds f1, f0, f0, f1
-/* 8001A210 0000B190  48 00 00 04 */	b func_8001A214
-
-.global func_8001A214
-func_8001A214:
-/* 8001A214 0000B194  48 0A 3E 4C */	b sqrtf
-
-.global __as__8CVVectorFRC8CVV
-__as__8CVVectorFRC8CVV:
-/* 8001A218 0000B198  7C 03 20 40 */	cmplw r3, r4
-/* 8001A21C 0000B19C  4D 82 00 20 */	beqlr
-/* 8001A220 0000B1A0  C0 04 00 00 */	lfs f0, 0x0(r4)
-/* 8001A224 0000B1A4  D0 03 00 00 */	stfs f0, 0x0(r3)
-/* 8001A228 0000B1A8  C0 04 00 04 */	lfs f0, 0x4(r4)
-/* 8001A22C 0000B1AC  D0 03 00 04 */	stfs f0, 0x4(r3)
-/* 8001A230 0000B1B0  C0 04 00 08 */	lfs f0, 0x8(r4)
-/* 8001A234 0000B1B4  D0 03 00 08 */	stfs f0, 0x8(r3)
-/* 8001A238 0000B1B8  4E 80 00 20 */	blr
+.section .text, "ax", @progbits
 
 .global func_8001A23C
 func_8001A23C:
@@ -262,7 +23,7 @@ lbl_8001A270:
 /* 8001A278 0000B1F8  1C 1E 00 0C */	mulli r0, r30, 0xc
 /* 8001A27C 0000B1FC  7C A3 2B 78 */	mr r3, r5
 /* 8001A280 0000B200  7C 9D 02 14 */	add r4, r29, r0
-/* 8001A284 0000B204  4B FF FF 95 */	bl __as__8CVVectorFRC8CVV
+/* 8001A284 0000B204  4B FF FF 95 */	bl __as__8CVVectorFRC8CVVector
 lbl_8001A288:
 /* 8001A288 0000B208  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8001A28C 0000B20C  41 82 00 18 */	beq lbl_8001A2A4
@@ -270,7 +31,7 @@ lbl_8001A288:
 /* 8001A294 0000B214  7F E3 FB 78 */	mr r3, r31
 /* 8001A298 0000B218  7C 9D 02 14 */	add r4, r29, r0
 /* 8001A29C 0000B21C  38 84 00 F0 */	addi r4, r4, 0xf0
-/* 8001A2A0 0000B220  4B FF FF 79 */	bl __as__8CVVectorFRC8CVV
+/* 8001A2A0 0000B220  4B FF FF 79 */	bl __as__8CVVectorFRC8CVVector
 lbl_8001A2A4:
 /* 8001A2A4 0000B224  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8001A2A8 0000B228  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -295,11 +56,11 @@ lbl_8001A2E0:
 /* 8001A2E4 0000B264  7F E3 FB 78 */	mr r3, r31
 /* 8001A2E8 0000B268  1F A0 00 0C */	mulli r29, r0, 0xc
 /* 8001A2EC 0000B26C  7C 9B EA 14 */	add r4, r27, r29
-/* 8001A2F0 0000B270  4B FF FF 29 */	bl __as__8CVVectorFRC8CVV
+/* 8001A2F0 0000B270  4B FF FF 29 */	bl __as__8CVVectorFRC8CVVector
 /* 8001A2F4 0000B274  7C 9B EA 14 */	add r4, r27, r29
 /* 8001A2F8 0000B278  7F C3 F3 78 */	mr r3, r30
 /* 8001A2FC 0000B27C  38 84 00 F0 */	addi r4, r4, 0xf0
-/* 8001A300 0000B280  4B FF FF 19 */	bl __as__8CVVectorFRC8CVV
+/* 8001A300 0000B280  4B FF FF 19 */	bl __as__8CVVectorFRC8CVVector
 /* 8001A304 0000B284  37 9C FF FF */	addic. r28, r28, -0x1
 /* 8001A308 0000B288  3B DE FF F4 */	addi r30, r30, -0xc
 /* 8001A30C 0000B28C  3B FF FF F4 */	addi r31, r31, -0xc
@@ -325,11 +86,11 @@ lbl_8001A348:
 /* 8001A34C 0000B2CC  7F E3 FB 78 */	mr r3, r31
 /* 8001A350 0000B2D0  1F A0 00 0C */	mulli r29, r0, 0xc
 /* 8001A354 0000B2D4  7C 9B EA 14 */	add r4, r27, r29
-/* 8001A358 0000B2D8  4B FF FE C1 */	bl __as__8CVVectorFRC8CVV
+/* 8001A358 0000B2D8  4B FF FE C1 */	bl __as__8CVVectorFRC8CVVector
 /* 8001A35C 0000B2DC  7C 9B EA 14 */	add r4, r27, r29
 /* 8001A360 0000B2E0  7F C3 F3 78 */	mr r3, r30
 /* 8001A364 0000B2E4  38 84 00 F0 */	addi r4, r4, 0xf0
-/* 8001A368 0000B2E8  4B FF FE B1 */	bl __as__8CVVectorFRC8CVV
+/* 8001A368 0000B2E8  4B FF FE B1 */	bl __as__8CVVectorFRC8CVVector
 /* 8001A36C 0000B2EC  3B 9C 00 01 */	addi r28, r28, 0x1
 /* 8001A370 0000B2F0  3B DE 00 0C */	addi r30, r30, 0xc
 /* 8001A374 0000B2F4  2C 1C 00 13 */	cmpwi r28, 0x13
@@ -357,10 +118,10 @@ func_8001A394:
 lbl_8001A3C0:
 /* 8001A3C0 0000B340  7F E3 FB 78 */	mr r3, r31
 /* 8001A3C4 0000B344  38 9C 00 14 */	addi r4, r28, 0x14
-/* 8001A3C8 0000B348  4B FF FE 51 */	bl __as__8CVVectorFRC8CVV
+/* 8001A3C8 0000B348  4B FF FE 51 */	bl __as__8CVVectorFRC8CVVector
 /* 8001A3CC 0000B34C  7F C3 F3 78 */	mr r3, r30
 /* 8001A3D0 0000B350  38 9C 00 38 */	addi r4, r28, 0x38
-/* 8001A3D4 0000B354  4B FF FE 45 */	bl __as__8CVVectorFRC8CVV
+/* 8001A3D4 0000B354  4B FF FE 45 */	bl __as__8CVVectorFRC8CVVector
 /* 8001A3D8 0000B358  3B BD 00 01 */	addi r29, r29, 0x1
 /* 8001A3DC 0000B35C  3B DE 00 0C */	addi r30, r30, 0xc
 /* 8001A3E0 0000B360  2C 1D 00 14 */	cmpwi r29, 0x14
@@ -1663,7 +1424,7 @@ lbl_8001B5D8:
 /* 8001B630 0000C5B0  4E 80 04 21 */	bctrl
 /* 8001B634 0000C5B4  38 7F 04 D4 */	addi r3, r31, 0x4d4
 /* 8001B638 0000C5B8  38 9F 04 F0 */	addi r4, r31, 0x4f0
-/* 8001B63C 0000C5BC  4B FF EB DD */	bl __as__8CVVectorFRC8CVV
+/* 8001B63C 0000C5BC  4B FF EB DD */	bl __as__8CVVectorFRC8CVVector
 /* 8001B640 0000C5C0  7F E3 FB 78 */	mr r3, r31
 /* 8001B644 0000C5C4  48 00 00 B1 */	bl func_8001B6F4
 /* 8001B648 0000C5C8  C0 02 80 68 */	lfs f0, lbl_8060F888@sda21(r2)
@@ -1988,13 +1749,13 @@ lbl_8001BACC:
 /* 8001BAD4 0000CA54  48 01 7C 59 */	bl func_8003372C
 /* 8001BAD8 0000CA58  7C 64 1B 78 */	mr r4, r3
 /* 8001BADC 0000CA5C  38 7F 03 D0 */	addi r3, r31, 0x3d0
-/* 8001BAE0 0000CA60  4B FF E7 39 */	bl __as__8CVVectorFRC8CVV
+/* 8001BAE0 0000CA60  4B FF E7 39 */	bl __as__8CVVectorFRC8CVVector
 /* 8001BAE4 0000CA64  4B FF 89 11 */	bl func_800143F4
 /* 8001BAE8 0000CA68  80 9F 04 EC */	lwz r4, 0x4ec(r31)
 /* 8001BAEC 0000CA6C  48 01 7C 4D */	bl func_80033738
 /* 8001BAF0 0000CA70  7C 64 1B 78 */	mr r4, r3
 /* 8001BAF4 0000CA74  38 7F 03 DC */	addi r3, r31, 0x3dc
-/* 8001BAF8 0000CA78  4B FF E7 21 */	bl __as__8CVVectorFRC8CVV
+/* 8001BAF8 0000CA78  4B FF E7 21 */	bl __as__8CVVectorFRC8CVVector
 /* 8001BAFC 0000CA7C  4B FF 88 F9 */	bl func_800143F4
 /* 8001BB00 0000CA80  80 9F 04 EC */	lwz r4, 0x4ec(r31)
 /* 8001BB04 0000CA84  48 01 7C 41 */	bl func_80033744
@@ -2074,7 +1835,7 @@ lbl_8001BBF4:
 /* 8001BC04 0000CB84  48 01 7B 59 */	bl func_8003375C
 /* 8001BC08 0000CB88  38 61 00 44 */	addi r3, r1, 0x44
 /* 8001BC0C 0000CB8C  38 81 00 2C */	addi r4, r1, 0x2c
-/* 8001BC10 0000CB90  4B FF E6 09 */	bl __as__8CVVectorFRC8CVV
+/* 8001BC10 0000CB90  4B FF E6 09 */	bl __as__8CVVectorFRC8CVVector
 /* 8001BC14 0000CB94  C0 01 00 44 */	lfs f0, 0x44(r1)
 /* 8001BC18 0000CB98  D0 1F 03 D0 */	stfs f0, 0x3d0(r31)
 /* 8001BC1C 0000CB9C  C0 01 00 48 */	lfs f0, 0x48(r1)
@@ -2086,7 +1847,7 @@ lbl_8001BBF4:
 /* 8001BC34 0000CBB4  48 01 7B 35 */	bl func_80033768
 /* 8001BC38 0000CBB8  38 61 00 44 */	addi r3, r1, 0x44
 /* 8001BC3C 0000CBBC  38 81 00 20 */	addi r4, r1, 0x20
-/* 8001BC40 0000CBC0  4B FF E5 D9 */	bl __as__8CVVectorFRC8CVV
+/* 8001BC40 0000CBC0  4B FF E5 D9 */	bl __as__8CVVectorFRC8CVVector
 /* 8001BC44 0000CBC4  C0 21 00 44 */	lfs f1, 0x44(r1)
 /* 8001BC48 0000CBC8  C0 02 80 78 */	lfs f0, lbl_8060F898@sda21(r2)
 /* 8001BC4C 0000CBCC  FC 20 08 50 */	fneg f1, f1
@@ -2129,7 +1890,7 @@ func_8001BCB8:
 /* 8001BCC8 0000CC48  48 01 7A A1 */	bl func_80033768
 /* 8001BCCC 0000CC4C  38 61 00 44 */	addi r3, r1, 0x44
 /* 8001BCD0 0000CC50  38 81 00 14 */	addi r4, r1, 0x14
-/* 8001BCD4 0000CC54  4B FF E5 45 */	bl __as__8CVVectorFRC8CVV
+/* 8001BCD4 0000CC54  4B FF E5 45 */	bl __as__8CVVectorFRC8CVVector
 /* 8001BCD8 0000CC58  C0 01 00 44 */	lfs f0, 0x44(r1)
 /* 8001BCDC 0000CC5C  D0 1F 03 D0 */	stfs f0, 0x3d0(r31)
 /* 8001BCE0 0000CC60  C0 01 00 48 */	lfs f0, 0x48(r1)
@@ -2141,7 +1902,7 @@ func_8001BCB8:
 /* 8001BCF8 0000CC78  48 01 7A 65 */	bl func_8003375C
 /* 8001BCFC 0000CC7C  38 61 00 44 */	addi r3, r1, 0x44
 /* 8001BD00 0000CC80  38 81 00 08 */	addi r4, r1, 0x8
-/* 8001BD04 0000CC84  4B FF E5 15 */	bl __as__8CVVectorFRC8CVV
+/* 8001BD04 0000CC84  4B FF E5 15 */	bl __as__8CVVectorFRC8CVVector
 /* 8001BD08 0000CC88  C0 21 00 44 */	lfs f1, 0x44(r1)
 /* 8001BD0C 0000CC8C  C0 02 80 78 */	lfs f0, lbl_8060F898@sda21(r2)
 /* 8001BD10 0000CC90  FC 20 08 50 */	fneg f1, f1
@@ -2221,13 +1982,13 @@ func_8001BDF8:
 /* 8001BE08 0000CD88  7C 9F 23 78 */	mr r31, r4
 /* 8001BE0C 0000CD8C  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8001BE10 0000CD90  7C 7E 1B 78 */	mr r30, r3
-/* 8001BE14 0000CD94  4B FF E4 05 */	bl __as__8CVVectorFRC8CVV
+/* 8001BE14 0000CD94  4B FF E4 05 */	bl __as__8CVVectorFRC8CVVector
 /* 8001BE18 0000CD98  38 7E 00 0C */	addi r3, r30, 0xc
 /* 8001BE1C 0000CD9C  38 9F 00 0C */	addi r4, r31, 0xc
-/* 8001BE20 0000CDA0  4B FF E3 F9 */	bl __as__8CVVectorFRC8CVV
+/* 8001BE20 0000CDA0  4B FF E3 F9 */	bl __as__8CVVectorFRC8CVVector
 /* 8001BE24 0000CDA4  38 7E 00 18 */	addi r3, r30, 0x18
 /* 8001BE28 0000CDA8  38 9F 00 18 */	addi r4, r31, 0x18
-/* 8001BE2C 0000CDAC  4B FF E3 ED */	bl __as__8CVVectorFRC8CVV
+/* 8001BE2C 0000CDAC  4B FF E3 ED */	bl __as__8CVVectorFRC8CVVector
 /* 8001BE30 0000CDB0  7F C3 F3 78 */	mr r3, r30
 /* 8001BE34 0000CDB4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8001BE38 0000CDB8  83 C1 00 08 */	lwz r30, 0x8(r1)
@@ -3113,7 +2874,7 @@ func_8001CB34:
 /* 8001CB4C 0000DACC  48 00 57 B9 */	bl func_80022304
 /* 8001CB50 0000DAD0  38 61 03 34 */	addi r3, r1, 0x334
 /* 8001CB54 0000DAD4  38 9E 00 38 */	addi r4, r30, 0x38
-/* 8001CB58 0000DAD8  4B FF D6 C1 */	bl __as__8CVVectorFRC8CVV
+/* 8001CB58 0000DAD8  4B FF D6 C1 */	bl __as__8CVVectorFRC8CVVector
 /* 8001CB5C 0000DADC  C0 02 80 78 */	lfs f0, lbl_8060F898@sda21(r2)
 /* 8001CB60 0000DAE0  38 61 00 58 */	addi r3, r1, 0x58
 /* 8001CB64 0000DAE4  38 81 03 34 */	addi r4, r1, 0x334
@@ -3121,7 +2882,7 @@ func_8001CB34:
 /* 8001CB6C 0000DAEC  48 00 06 E5 */	bl Normalize__8CVVectorFv
 /* 8001CB70 0000DAF0  38 61 03 34 */	addi r3, r1, 0x334
 /* 8001CB74 0000DAF4  38 81 00 58 */	addi r4, r1, 0x58
-/* 8001CB78 0000DAF8  4B FF D6 A1 */	bl __as__8CVVectorFRC8CVV
+/* 8001CB78 0000DAF8  4B FF D6 A1 */	bl __as__8CVVectorFRC8CVVector
 /* 8001CB7C 0000DAFC  C0 22 80 78 */	lfs f1, lbl_8060F898@sda21(r2)
 /* 8001CB80 0000DB00  38 61 00 34 */	addi r3, r1, 0x34
 /* 8001CB84 0000DB04  C0 42 80 68 */	lfs f2, lbl_8060F888@sda21(r2)
@@ -3186,14 +2947,14 @@ lbl_8001CC4C:
 /* 8001CC6C 0000DBEC  4B FF 9D 01 */	bl __ml__8CVVectorFf
 /* 8001CC70 0000DBF0  38 7E 01 B8 */	addi r3, r30, 0x1b8
 /* 8001CC74 0000DBF4  38 81 00 28 */	addi r4, r1, 0x28
-/* 8001CC78 0000DBF8  4B FF D5 A1 */	bl __as__8CVVectorFRC8CVV
+/* 8001CC78 0000DBF8  4B FF D5 A1 */	bl __as__8CVVectorFRC8CVVector
 /* 8001CC7C 0000DBFC  C0 22 80 70 */	lfs f1, lbl_8060F890@sda21(r2)
 /* 8001CC80 0000DC00  38 61 00 1C */	addi r3, r1, 0x1c
 /* 8001CC84 0000DC04  38 9E 01 AC */	addi r4, r30, 0x1ac
 /* 8001CC88 0000DC08  4B FF 9C E5 */	bl __ml__8CVVectorFf
 /* 8001CC8C 0000DC0C  38 7E 01 AC */	addi r3, r30, 0x1ac
 /* 8001CC90 0000DC10  38 81 00 1C */	addi r4, r1, 0x1c
-/* 8001CC94 0000DC14  4B FF D5 85 */	bl __as__8CVVectorFRC8CVV
+/* 8001CC94 0000DC14  4B FF D5 85 */	bl __as__8CVVectorFRC8CVVector
 /* 8001CC98 0000DC18  C0 22 80 9C */	lfs f1, lbl_8060F8BC@sda21(r2)
 /* 8001CC9C 0000DC1C  38 7E 01 F4 */	addi r3, r30, 0x1f4
 /* 8001CCA0 0000DC20  48 00 03 91 */	bl __amu__8CVVectorFf
@@ -3485,7 +3246,7 @@ func_8001D058:
 /* 8001D088 0000E008  48 00 A0 99 */	bl __ct__8CVVectorFv
 /* 8001D08C 0000E00C  38 61 00 2C */	addi r3, r1, 0x2c
 /* 8001D090 0000E010  38 81 00 38 */	addi r4, r1, 0x38
-/* 8001D094 0000E014  4B FF D1 85 */	bl __as__8CVVectorFRC8CVV
+/* 8001D094 0000E014  4B FF D1 85 */	bl __as__8CVVectorFRC8CVVector
 /* 8001D098 0000E018  C0 02 80 78 */	lfs f0, lbl_8060F898@sda21(r2)
 /* 8001D09C 0000E01C  38 61 00 20 */	addi r3, r1, 0x20
 /* 8001D0A0 0000E020  38 81 00 2C */	addi r4, r1, 0x2c
@@ -3493,7 +3254,7 @@ func_8001D058:
 /* 8001D0A8 0000E028  48 00 01 A9 */	bl Normalize__8CVVectorFv
 /* 8001D0AC 0000E02C  38 61 00 2C */	addi r3, r1, 0x2c
 /* 8001D0B0 0000E030  38 81 00 20 */	addi r4, r1, 0x20
-/* 8001D0B4 0000E034  4B FF D1 65 */	bl __as__8CVVectorFRC8CVV
+/* 8001D0B4 0000E034  4B FF D1 65 */	bl __as__8CVVectorFRC8CVVector
 /* 8001D0B8 0000E038  C0 21 00 30 */	lfs f1, 0x30(r1)
 /* 8001D0BC 0000E03C  48 00 02 1D */	bl func_8001D2D8
 /* 8001D0C0 0000E040  C0 42 80 E0 */	lfs f2, lbl_8060F900@sda21(r2)
@@ -3513,7 +3274,7 @@ lbl_8001D0E8:
 /* 8001D0F4 0000E074  48 00 A9 89 */	bl func_80027A7C
 /* 8001D0F8 0000E078  38 61 00 2C */	addi r3, r1, 0x2c
 /* 8001D0FC 0000E07C  38 81 00 38 */	addi r4, r1, 0x38
-/* 8001D100 0000E080  4B FF D1 19 */	bl __as__8CVVectorFRC8CVV
+/* 8001D100 0000E080  4B FF D1 19 */	bl __as__8CVVectorFRC8CVVector
 /* 8001D104 0000E084  C0 02 80 78 */	lfs f0, lbl_8060F898@sda21(r2)
 /* 8001D108 0000E088  38 61 00 14 */	addi r3, r1, 0x14
 /* 8001D10C 0000E08C  38 81 00 2C */	addi r4, r1, 0x2c
@@ -3521,7 +3282,7 @@ lbl_8001D0E8:
 /* 8001D114 0000E094  48 00 01 3D */	bl Normalize__8CVVectorFv
 /* 8001D118 0000E098  38 61 00 2C */	addi r3, r1, 0x2c
 /* 8001D11C 0000E09C  38 81 00 14 */	addi r4, r1, 0x14
-/* 8001D120 0000E0A0  4B FF D0 F9 */	bl __as__8CVVectorFRC8CVV
+/* 8001D120 0000E0A0  4B FF D0 F9 */	bl __as__8CVVectorFRC8CVVector
 /* 8001D124 0000E0A4  C0 21 00 34 */	lfs f1, 0x34(r1)
 /* 8001D128 0000E0A8  48 00 01 B1 */	bl func_8001D2D8
 /* 8001D12C 0000E0AC  FC 40 08 50 */	fneg f2, f1
@@ -3542,7 +3303,7 @@ lbl_8001D158:
 /* 8001D164 0000E0E4  48 00 A8 B1 */	bl func_80027A14
 /* 8001D168 0000E0E8  38 61 00 2C */	addi r3, r1, 0x2c
 /* 8001D16C 0000E0EC  38 81 00 50 */	addi r4, r1, 0x50
-/* 8001D170 0000E0F0  4B FF D0 A9 */	bl __as__8CVVectorFRC8CVV
+/* 8001D170 0000E0F0  4B FF D0 A9 */	bl __as__8CVVectorFRC8CVVector
 /* 8001D174 0000E0F4  C0 02 80 78 */	lfs f0, lbl_8060F898@sda21(r2)
 /* 8001D178 0000E0F8  38 61 00 08 */	addi r3, r1, 0x8
 /* 8001D17C 0000E0FC  38 81 00 2C */	addi r4, r1, 0x2c
@@ -3550,7 +3311,7 @@ lbl_8001D158:
 /* 8001D184 0000E104  48 00 00 CD */	bl Normalize__8CVVectorFv
 /* 8001D188 0000E108  38 61 00 2C */	addi r3, r1, 0x2c
 /* 8001D18C 0000E10C  38 81 00 08 */	addi r4, r1, 0x8
-/* 8001D190 0000E110  4B FF D0 89 */	bl __as__8CVVectorFRC8CVV
+/* 8001D190 0000E110  4B FF D0 89 */	bl __as__8CVVectorFRC8CVVector
 /* 8001D194 0000E114  C0 21 00 30 */	lfs f1, 0x30(r1)
 /* 8001D198 0000E118  48 00 01 41 */	bl func_8001D2D8
 /* 8001D19C 0000E11C  FC 40 08 50 */	fneg f2, f1
@@ -3618,7 +3379,7 @@ Normalize__8CVVectorFv:
 /* 8001D26C 0000E1EC  48 00 9E B5 */	bl __ct__8CVVectorFv
 /* 8001D270 0000E1F0  7F C3 F3 78 */	mr r3, r30
 /* 8001D274 0000E1F4  7F E4 FB 78 */	mr r4, r31
-/* 8001D278 0000E1F8  4B FF CF A1 */	bl __as__8CVVectorFRC8CVV
+/* 8001D278 0000E1F8  4B FF CF A1 */	bl __as__8CVVectorFRC8CVVector
 /* 8001D27C 0000E1FC  7F E3 FB 78 */	mr r3, r31
 /* 8001D280 0000E200  4B FF CF 79 */	bl Magnitude__8CVVectorFv
 /* 8001D284 0000E204  C0 02 80 E8 */	lfs f0, lbl_8060F908@sda21(r2)
@@ -3902,10 +3663,10 @@ lbl_8001D634:
 /* 8001D64C 0000E5CC  41 82 00 20 */	beq lbl_8001D66C
 /* 8001D650 0000E5D0  38 7B 04 D4 */	addi r3, r27, 0x4d4
 /* 8001D654 0000E5D4  38 9B 00 14 */	addi r4, r27, 0x14
-/* 8001D658 0000E5D8  4B FF CB C1 */	bl __as__8CVVectorFRC8CVV
+/* 8001D658 0000E5D8  4B FF CB C1 */	bl __as__8CVVectorFRC8CVVector
 /* 8001D65C 0000E5DC  38 7B 04 E0 */	addi r3, r27, 0x4e0
 /* 8001D660 0000E5E0  38 9B 00 38 */	addi r4, r27, 0x38
-/* 8001D664 0000E5E4  4B FF CB B5 */	bl __as__8CVVectorFRC8CVV
+/* 8001D664 0000E5E4  4B FF CB B5 */	bl __as__8CVVectorFRC8CVVector
 /* 8001D668 0000E5E8  48 00 00 38 */	b func_8001D6A0
 lbl_8001D66C:
 /* 8001D66C 0000E5EC  28 1F 00 5A */	cmplwi r31, 0x5a
@@ -4347,10 +4108,10 @@ func_8001DC40:
 /* 8001DC5C 0000EBDC  48 00 00 71 */	bl func_8001DCCC
 /* 8001DC60 0000EBE0  38 7E 00 14 */	addi r3, r30, 0x14
 /* 8001DC64 0000EBE4  38 9F 00 14 */	addi r4, r31, 0x14
-/* 8001DC68 0000EBE8  4B FF C5 B1 */	bl __as__8CVVectorFRC8CVV
+/* 8001DC68 0000EBE8  4B FF C5 B1 */	bl __as__8CVVectorFRC8CVVector
 /* 8001DC6C 0000EBEC  38 7E 00 20 */	addi r3, r30, 0x20
 /* 8001DC70 0000EBF0  38 9F 00 20 */	addi r4, r31, 0x20
-/* 8001DC74 0000EBF4  4B FF C5 A5 */	bl __as__8CVVectorFRC8CVV
+/* 8001DC74 0000EBF4  4B FF C5 A5 */	bl __as__8CVVectorFRC8CVVector
 /* 8001DC78 0000EBF8  C0 1F 00 2C */	lfs f0, 0x2c(r31)
 /* 8001DC7C 0000EBFC  7F C3 F3 78 */	mr r3, r30
 /* 8001DC80 0000EC00  81 1F 00 30 */	lwz r8, 0x30(r31)
@@ -4457,7 +4218,7 @@ lbl_8001DDC4:
 /* 8001DDE4 0000ED64  4B FF 8B 15 */	bl __mi__8CVVectorFRC8CVVector
 /* 8001DDE8 0000ED68  38 61 00 A8 */	addi r3, r1, 0xa8
 /* 8001DDEC 0000ED6C  38 81 00 8C */	addi r4, r1, 0x8c
-/* 8001DDF0 0000ED70  4B FF C4 29 */	bl __as__8CVVectorFRC8CVV
+/* 8001DDF0 0000ED70  4B FF C4 29 */	bl __as__8CVVectorFRC8CVVector
 /* 8001DDF4 0000ED74  2C 1B 00 00 */	cmpwi r27, 0x0
 /* 8001DDF8 0000ED78  41 82 00 A8 */	beq lbl_8001DEA0
 /* 8001DDFC 0000ED7C  4B FF 7B 79 */	bl func_80015974
@@ -4591,7 +4352,7 @@ func_8001DF84:
 /* 8001DFA0 0000EF20  4B FF 89 59 */	bl __mi__8CVVectorFRC8CVVector
 /* 8001DFA4 0000EF24  38 7D 04 44 */	addi r3, r29, 0x444
 /* 8001DFA8 0000EF28  38 81 00 2C */	addi r4, r1, 0x2c
-/* 8001DFAC 0000EF2C  4B FF C2 6D */	bl __as__8CVVectorFRC8CVV
+/* 8001DFAC 0000EF2C  4B FF C2 6D */	bl __as__8CVVectorFRC8CVVector
 /* 8001DFB0 0000EF30  C0 1D 04 50 */	lfs f0, 0x450(r29)
 /* 8001DFB4 0000EF34  C0 22 80 80 */	lfs f1, lbl_8060F8A0@sda21(r2)
 /* 8001DFB8 0000EF38  FC 00 08 40 */	fcmpo cr0, f0, f1
@@ -4605,7 +4366,7 @@ func_8001DF84:
 /* 8001DFD8 0000EF58  4B FF 89 21 */	bl __mi__8CVVectorFRC8CVVector
 /* 8001DFDC 0000EF5C  38 61 00 A8 */	addi r3, r1, 0xa8
 /* 8001DFE0 0000EF60  38 81 00 14 */	addi r4, r1, 0x14
-/* 8001DFE4 0000EF64  4B FF C2 35 */	bl __as__8CVVectorFRC8CVV
+/* 8001DFE4 0000EF64  4B FF C2 35 */	bl __as__8CVVectorFRC8CVVector
 /* 8001DFE8 0000EF68  4B FF 68 59 */	bl func_80014840
 /* 8001DFEC 0000EF6C  C0 21 00 A8 */	lfs f1, 0xa8(r1)
 /* 8001DFF0 0000EF70  7F C4 F3 78 */	mr r4, r30
@@ -4794,13 +4555,13 @@ lbl_8001E25C:
 /* 8001E270 0000F1F0  40 82 00 78 */	bne lbl_8001E2E8
 /* 8001E274 0000F1F4  38 61 00 48 */	addi r3, r1, 0x48
 /* 8001E278 0000F1F8  38 9B 00 14 */	addi r4, r27, 0x14
-/* 8001E27C 0000F1FC  4B FF BF 9D */	bl __as__8CVVectorFRC8CVV
+/* 8001E27C 0000F1FC  4B FF BF 9D */	bl __as__8CVVectorFRC8CVVector
 /* 8001E280 0000F200  C0 01 00 4C */	lfs f0, 0x4c(r1)
 /* 8001E284 0000F204  38 61 00 3C */	addi r3, r1, 0x3c
 /* 8001E288 0000F208  38 9B 00 14 */	addi r4, r27, 0x14
 /* 8001E28C 0000F20C  EC 00 F8 28 */	fsubs f0, f0, f31
 /* 8001E290 0000F210  D0 01 00 4C */	stfs f0, 0x4c(r1)
-/* 8001E294 0000F214  4B FF BF 85 */	bl __as__8CVVectorFRC8CVV
+/* 8001E294 0000F214  4B FF BF 85 */	bl __as__8CVVectorFRC8CVVector
 /* 8001E298 0000F218  C0 01 00 40 */	lfs f0, 0x40(r1)
 /* 8001E29C 0000F21C  38 61 00 14 */	addi r3, r1, 0x14
 /* 8001E2A0 0000F220  81 61 00 3C */	lwz r11, 0x3c(r1)
@@ -4849,7 +4610,7 @@ func_8001E328:
 /* 8001E334 0000F2B4  41 82 00 20 */	beq lbl_8001E354
 /* 8001E338 0000F2B8  38 61 00 30 */	addi r3, r1, 0x30
 /* 8001E33C 0000F2BC  38 9F 00 14 */	addi r4, r31, 0x14
-/* 8001E340 0000F2C0  4B FF BE D9 */	bl __as__8CVVectorFRC8CVV
+/* 8001E340 0000F2C0  4B FF BE D9 */	bl __as__8CVVectorFRC8CVVector
 /* 8001E344 0000F2C4  4B FF 33 3D */	bl GetInstance__4CAppFv
 /* 8001E348 0000F2C8  4B FF EC C9 */	bl GetSceneGame__4CAppFv
 /* 8001E34C 0000F2CC  83 C3 00 98 */	lwz r30, 0x98(r3)
@@ -4861,7 +4622,7 @@ lbl_8001E354:
 /* 8001E360 0000F2E0  40 80 00 20 */	bge func_8001E380
 /* 8001E364 0000F2E4  38 61 00 30 */	addi r3, r1, 0x30
 /* 8001E368 0000F2E8  38 9B 00 14 */	addi r4, r27, 0x14
-/* 8001E36C 0000F2EC  4B FF BE AD */	bl __as__8CVVectorFRC8CVV
+/* 8001E36C 0000F2EC  4B FF BE AD */	bl __as__8CVVectorFRC8CVVector
 /* 8001E370 0000F2F0  C0 02 80 78 */	lfs f0, lbl_8060F898@sda21(r2)
 /* 8001E374 0000F2F4  3B C0 00 01 */	li r30, 0x1
 /* 8001E378 0000F2F8  D0 01 00 34 */	stfs f0, 0x34(r1)

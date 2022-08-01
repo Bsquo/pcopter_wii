@@ -145,9 +145,9 @@ func_8001A408:
 /* 8001A418 0000B398  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8001A41C 0000B39C  7C 7E 1B 78 */	mr r30, r3
 /* 8001A420 0000B3A0  48 00 6C F9 */	bl func_80021118
-/* 8001A424 0000B3A4  3C 80 80 1D */	lis r4, lbl_801CB5D0@ha
+/* 8001A424 0000B3A4  3C 80 80 1D */	lis r4, __vt__10CActCopter@ha
 /* 8001A428 0000B3A8  38 7E 03 B4 */	addi r3, r30, 0x3b4
-/* 8001A42C 0000B3AC  38 84 B5 D0 */	addi r4, r4, lbl_801CB5D0@l
+/* 8001A42C 0000B3AC  38 84 B5 D0 */	addi r4, r4, __vt__10CActCopter@l
 /* 8001A430 0000B3B0  90 9E 00 10 */	stw r4, 0x10(r30)
 /* 8001A434 0000B3B4  48 00 C4 ED */	bl __ct__6CVListFv
 /* 8001A438 0000B3B8  38 7E 03 D0 */	addi r3, r30, 0x3d0
@@ -291,8 +291,8 @@ lbl_8001A608:
 /* 8001A634 0000B5B4  3B 40 00 00 */	li r26, 0x0
 /* 8001A638 0000B5B8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8001A63C 0000B5BC  41 82 00 18 */	beq lbl_8001A654
-/* 8001A640 0000B5C0  3C 80 80 02 */	lis r4, lbl_80020A7C@ha
-/* 8001A644 0000B5C4  38 84 0A 7C */	addi r4, r4, lbl_80020A7C@l
+/* 8001A640 0000B5C0  3C 80 80 02 */	lis r4, __dt__11CVActorNodeFv@ha
+/* 8001A644 0000B5C4  38 84 0A 7C */	addi r4, r4, __dt__11CVActorNodeFv@l
 /* 8001A648 0000B5C8  48 09 88 A1 */	bl func_800B2EE8
 /* 8001A64C 0000B5CC  38 00 00 00 */	li r0, 0x0
 /* 8001A650 0000B5D0  90 1F 02 78 */	stw r0, 0x278(r31)
@@ -520,9 +520,9 @@ func_8001A958:
 /* 8001A964 0000B8E4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8001A968 0000B8E8  7C 7F 1B 78 */	mr r31, r3
 /* 8001A96C 0000B8EC  48 00 BE A9 */	bl __ct__10CVListBaseFv
-/* 8001A970 0000B8F0  3C 80 80 1D */	lis r4, lbl_801CB638@ha
+/* 8001A970 0000B8F0  3C 80 80 1D */	lis r4, __vt__6CRotor@ha
 /* 8001A974 0000B8F4  38 7F 00 14 */	addi r3, r31, 0x14
-/* 8001A978 0000B8F8  38 84 B6 38 */	addi r4, r4, lbl_801CB638@l
+/* 8001A978 0000B8F8  38 84 B6 38 */	addi r4, r4, __vt__6CRotor@l
 /* 8001A97C 0000B8FC  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 8001A980 0000B900  48 00 BD E1 */	bl __ct__6CVFlagFv
 /* 8001A984 0000B904  7F E3 FB 78 */	mr r3, r31
@@ -4842,8 +4842,8 @@ lbl_8001E64C:
 /* 8001E64C 0000F5CC  38 84 00 14 */	addi r4, r4, 0x14
 /* 8001E650 0000F5D0  4B FF EB E4 */	b func_8001D234
 
-.global lbl_8001E654
-lbl_8001E654:
+.global __dt__6CRotorFv
+__dt__6CRotorFv:
 /* 8001E654 0000F5D4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8001E658 0000F5D8  7C 08 02 A6 */	mflr r0
 /* 8001E65C 0000F5DC  2C 03 00 00 */	cmpwi r3, 0x0
@@ -4874,11 +4874,11 @@ lbl_8001E6A0:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CB5D0
-lbl_801CB5D0:
+.global __vt__10CActCopter
+__vt__10CActCopter:
 
 	# ROM: 0x1C76D0
-	.4byte lbl_8060DF18
+	.4byte __RTTI__10CActCopter
 	.4byte 0
 	.4byte lbl_8001A588
 	.4byte lbl_8001E64C
@@ -4898,46 +4898,46 @@ lbl_801CB5D0:
 	.4byte lbl_800229C0
 	.4byte lbl_8001A99C
 
-.global lbl_801CB61C
-lbl_801CB61C:
+.global _52373
+_52373:
 
 	# ROM: 0x1C771C
 	.4byte __RTTI__10CVListBase
 	.4byte 0
-	.4byte lbl_8060DF30
+	.4byte __RTTI__7CVRigid
 	.4byte 0
-	.4byte lbl_8060DF28
+	.4byte __RTTI__7CVActor
 	.4byte 0
 	.4byte 0
 
-.global lbl_801CB638
-lbl_801CB638:
+.global __vt__6CRotor
+__vt__6CRotor:
 
 	# ROM: 0x1C7738
-	.4byte lbl_8060DF20
+	.4byte __RTTI__6CRotor
 	.4byte 0
-	.4byte lbl_8001E654
+	.4byte __dt__6CRotorFv
 
-.global lbl_801CB644
-lbl_801CB644:
+.global _52375
+_52375:
 
 	# ROM: 0x1C7744
 	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
-.global lbl_801CB650
-lbl_801CB650:
+.global _52394
+_52394:
 
 	# ROM: 0x1C7750
 	.4byte __RTTI__10CVListBase
 	.4byte 0
-	.4byte lbl_8060DF30
+	.4byte __RTTI__7CVRigid
 	.4byte 0
 	.4byte 0
 
-.global lbl_801CB664
-lbl_801CB664:
+.global _52396
+_52396:
 
 	# ROM: 0x1C7764
 	.4byte __RTTI__10CVListBase
@@ -4946,39 +4946,39 @@ lbl_801CB664:
 
 .section .sdata, "wa", @progbits 
 
-.global lbl_8060DF18
-lbl_8060DF18:
+.global __RTTI__10CActCopter
+__RTTI__10CActCopter:
 
 	# ROM: 0x1EE118
-	.4byte lbl_801B9408
-	.4byte lbl_801CB61C
+	.4byte _52372
+	.4byte _52373
 
-.global lbl_8060DF20
-lbl_8060DF20:
+.global __RTTI__6CRotor
+__RTTI__6CRotor:
 
 	# ROM: 0x1EE120
-	.4byte lbl_8060F924
-	.4byte lbl_801CB644
+	.4byte _52374
+	.4byte _52375
 
-.global lbl_8060DF28
-lbl_8060DF28:
+.global __RTTI__7CVActor
+__RTTI__7CVActor:
 
 	# ROM: 0x1EE128
-	.4byte lbl_8060F930
-	.4byte lbl_801CB650
+	.4byte _52393
+	.4byte _52394
 
-.global lbl_8060DF30
-lbl_8060DF30:
+.global __RTTI__7CVRigid
+__RTTI__7CVRigid:
 
 	# ROM: 0x1EE130
-	.4byte lbl_8060F938
-	.4byte lbl_801CB664
+	.4byte _52395
+	.4byte _52396
 
 .global __RTTI__10CVListBase
 __RTTI__10CVListBase:
 
 	# ROM: 0x1EE138
-	.4byte lbl_801B9414
+	.4byte _52398
 	.4byte 0
 
 .section .sdata2, "a", @progbits
@@ -5197,22 +5197,22 @@ lbl_8060F920:
 	# ROM: 0x1EEFE0
 	.4byte 0x3C88893B
 
-.global lbl_8060F924
-lbl_8060F924:
+.global _52374
+_52374:
 
 	# ROM: 0x1EEFE4
 	.asciz "CRotor"
 	.balign 4
 	.4byte 0
 
-.global lbl_8060F930
-lbl_8060F930:
+.global _52393
+_52393:
 
 	# ROM: 0x1EEFF0
 	.asciz "CVActor"
 
-.global lbl_8060F938
-lbl_8060F938:
+.global _52395
+_52395:
 
 	# ROM: 0x1EEFF8
 	.asciz "CVRigid"

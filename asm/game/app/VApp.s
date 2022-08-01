@@ -16,9 +16,9 @@ lbl_80023174:
 func_80023180:
 /* 80023180 00014100  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80023184 00014104  7C 08 02 A6 */	mflr r0
-/* 80023188 00014108  3C 80 80 1D */	lis r4, lbl_801CB718@ha
+/* 80023188 00014108  3C 80 80 1D */	lis r4, __vt__5CVApp@ha
 /* 8002318C 0001410C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80023190 00014110  38 84 B7 18 */	addi r4, r4, lbl_801CB718@l
+/* 80023190 00014110  38 84 B7 18 */	addi r4, r4, __vt__5CVApp@l
 /* 80023194 00014114  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80023198 00014118  3B E0 00 00 */	li r31, 0x0
 /* 8002319C 0001411C  93 C1 00 08 */	stw r30, 0x8(r1)
@@ -487,11 +487,11 @@ lbl_80023798:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CB718
-lbl_801CB718:
+.global __vt__5CVApp
+__vt__5CVApp:
 
 	# ROM: 0x1C7818
-	.4byte lbl_8060DF00
+	.4byte __RTTI__5CVApp
 	.4byte 0
 	.4byte lbl_800233A0
 	.4byte lbl_80023668

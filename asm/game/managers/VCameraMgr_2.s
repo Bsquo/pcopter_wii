@@ -850,3 +850,21 @@ lbl_80032444:
 /* 80032454 000233D4  7C 08 03 A6 */	mtlr r0
 /* 80032458 000233D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8003245C 000233DC  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB918
+lbl_801CB918:
+
+	# ROM: 0x1C7A18
+	.4byte lbl_8060E038
+	.4byte 0
+	.4byte lbl_800323F8
+
+.global lbl_801CB924
+lbl_801CB924:
+
+	# ROM: 0x1C7A24
+	.4byte __RTTI__10CVListBase
+	.4byte 0
+	.4byte 0

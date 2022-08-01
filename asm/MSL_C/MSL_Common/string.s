@@ -222,8 +222,8 @@ lbl_800BA61C:
 /* 800BA624 000AB5A4  38 60 00 00 */	li r3, 0x0
 /* 800BA628 000AB5A8  4E 80 00 20 */	blr
 
-.global func_800BA62C
-func_800BA62C:
+.global strncmp
+strncmp:
 /* 800BA62C 000AB5AC  38 63 FF FF */	addi r3, r3, -0x1
 /* 800BA630 000AB5B0  38 84 FF FF */	addi r4, r4, -0x1
 /* 800BA634 000AB5B4  38 C5 00 01 */	addi r6, r5, 0x1

@@ -14,7 +14,9 @@ namespace demo {
     class Memory;
 }
 
+// Temporary
 void* Alloc__4demoFUliQ24demo6Memory(size_t, int, demo::Memory);
+void Free__4demoFPv(void*);
 
 #ifdef __cplusplus
 }

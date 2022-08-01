@@ -1419,7 +1419,7 @@ lbl_80030CD0:
 /* 80030D04 00021C84  7C 64 1B 78 */	mr r4, r3
 /* 80030D08 00021C88  38 7E 00 B0 */	addi r3, r30, 0xb0
 /* 80030D0C 00021C8C  38 A0 00 0A */	li r5, 0xa
-/* 80030D10 00021C90  48 08 99 1D */	bl func_800BA62C
+/* 80030D10 00021C90  48 08 99 1D */	bl strncmp
 /* 80030D14 00021C94  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80030D18 00021C98  40 82 02 14 */	bne lbl_80030F2C
 /* 80030D1C 00021C9C  38 61 00 30 */	addi r3, r1, 0x30
@@ -2100,3 +2100,21 @@ func_80031660:
 /* 8003166C 000225EC  7C 08 03 A6 */	mtlr r0
 /* 80031670 000225F0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80031674 000225F4  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB900
+lbl_801CB900:
+
+	# ROM: 0x1C7A00
+	.4byte lbl_8060E030
+	.4byte 0
+	.4byte lbl_8002F878
+
+.global lbl_801CB90C
+lbl_801CB90C:
+
+	# ROM: 0x1C7A0C
+	.4byte __RTTI__10CVListBase
+	.4byte 0
+	.4byte 0

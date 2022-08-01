@@ -2,200 +2,6 @@
 
 .section .data, "wa", @progbits  # 0x801CA560 - 0x801F1F00 ; 0x000279A0
 
-.global lbl_801CB8B8
-lbl_801CB8B8:
-
-	# ROM: 0x1C79B8
-	.4byte lbl_8060E018
-	.4byte 0
-	.4byte lbl_8002E12C
-
-.global lbl_801CB8C4
-lbl_801CB8C4:
-
-	# ROM: 0x1C79C4
-	.4byte __RTTI__10CVListBase
-	.4byte 0
-	.4byte 0
-
-.global lbl_801CB8D0
-lbl_801CB8D0:
-
-	# ROM: 0x1C79D0
-	.4byte lbl_8060E020
-	.4byte 0
-	.4byte lbl_8002F774
-
-.global lbl_801CB8DC
-lbl_801CB8DC:
-
-	# ROM: 0x1C79DC
-	.4byte __RTTI__10CVListBase
-	.4byte 0
-	.4byte 0
-
-.global lbl_801CB8E8
-lbl_801CB8E8:
-
-	# ROM: 0x1C79E8
-	.4byte lbl_8060E028
-	.4byte 0
-	.4byte lbl_8002DBB8
-
-.global lbl_801CB8F4
-lbl_801CB8F4:
-
-	# ROM: 0x1C79F4
-	.4byte __RTTI__10CVListBase
-	.4byte 0
-	.4byte 0
-
-.global lbl_801CB900
-lbl_801CB900:
-
-	# ROM: 0x1C7A00
-	.4byte lbl_8060E030
-	.4byte 0
-	.4byte lbl_8002F878
-
-.global lbl_801CB90C
-lbl_801CB90C:
-
-	# ROM: 0x1C7A0C
-	.4byte __RTTI__10CVListBase
-	.4byte 0
-	.4byte 0
-
-.global lbl_801CB918
-lbl_801CB918:
-
-	# ROM: 0x1C7A18
-	.4byte lbl_8060E038
-	.4byte 0
-	.4byte lbl_800323F8
-
-.global lbl_801CB924
-lbl_801CB924:
-
-	# ROM: 0x1C7A24
-	.4byte __RTTI__10CVListBase
-	.4byte 0
-	.4byte 0
-
-.global lbl_801CB930
-lbl_801CB930:
-
-	# ROM: 0x1C7A30
-	.4byte 0x00520061
-	.4byte 0x00640069
-	.4byte 0x006F0020
-	.4byte 0x00480065
-	.4byte 0x006C0069
-	.4byte 0x0063006F
-	.4byte 0x00700074
-	.4byte 0x00650072
-	.4byte 0x00000035
-	.4byte 0x00300035
-	.4byte 0x00200047
-	.4byte 0x0061006D
-	.4byte 0x00650073
-	.4byte 0
-
-.global lbl_801CB968
-lbl_801CB968:
-
-	# ROM: 0x1C7A68
-	.4byte lbl_8060E048
-	.4byte 0
-	.4byte lbl_80034988
-	.4byte lbl_8003537C
-	.4byte lbl_8003597C
-	.4byte lbl_80035974
-	.4byte lbl_80035AA4
-	.4byte lbl_80039128
-	.4byte lbl_80035AAC
-	.4byte func_80011CF4
-
-.global lbl_801CB990
-lbl_801CB990:
-
-	# ROM: 0x1C7A90
-	.4byte lbl_8060DE90
-	.4byte 0
-	.4byte lbl_8060DE18
-	.4byte 0
-	.4byte 0
-	.4byte 0
-
-.global lbl_801CB9A8
-lbl_801CB9A8:
-
-	# ROM: 0x1C7AA8
-	.4byte func_800383BC
-	.4byte lbl_800381A8
-	.4byte lbl_80038214
-	.4byte lbl_80038248
-	.4byte lbl_8003829C
-	.4byte lbl_80038324
-	.4byte lbl_80038368
-	.4byte func_800383BC
-
-.global lbl_801CB9C8
-lbl_801CB9C8:
-
-	# ROM: 0x1C7AC8
-	.4byte lbl_80037E5C
-	.4byte lbl_80037E6C
-	.4byte lbl_80037E80
-	.4byte lbl_80037E9C
-	.4byte lbl_80037EB8
-	.4byte lbl_80037ECC
-	.4byte lbl_80037EE0
-	.4byte 0
-
-.global lbl_801CB9E8
-lbl_801CB9E8:
-
-	# ROM: 0x1C7AE8
-	.4byte lbl_8060DE18
-	.4byte 0
-	.4byte lbl_80039120
-	.4byte lbl_8003914C
-	.4byte lbl_8003915C
-	.4byte lbl_80039154
-	.4byte lbl_80039164
-	.4byte lbl_80039128
-	.4byte lbl_8003916C
-	.4byte func_80011C9C
-
-.global lbl_801CBA10
-lbl_801CBA10:
-
-	# ROM: 0x1C7B10
-	.asciz "NW4R:Pointer must not be NULL (p)"
-	.balign 4
-
-.global lbl_801CBA34
-lbl_801CBA34:
-
-	# ROM: 0x1C7B34
-	.asciz "LinkList.h"
-	.balign 4
-
-.global lbl_801CBA40
-lbl_801CBA40:
-
-	# ROM: 0x1C7B40
-	.asciz "NW4R:Pointer must not be NULL (p)"
-	.balign 4
-
-.global lbl_801CBA64
-lbl_801CBA64:
-
-	# ROM: 0x1C7B64
-	.asciz "LinkList.h"
-	.balign 4
-
 .global lbl_801CBA70
 lbl_801CBA70:
 
@@ -1163,9 +969,9 @@ lbl_801CC424:
 	# ROM: 0x1C8524
 	.4byte __RTTI__10CVListBase
 	.4byte 0
-	.4byte lbl_8060DF30
+	.4byte __RTTI__7CVRigid
 	.4byte 0
-	.4byte lbl_8060DF28
+	.4byte __RTTI__7CVActor
 	.4byte 0
 	.4byte lbl_8060E310
 	.4byte 0
@@ -1177,9 +983,9 @@ lbl_801CC448:
 	# ROM: 0x1C8548
 	.4byte __RTTI__10CVListBase
 	.4byte 0
-	.4byte lbl_8060DF30
+	.4byte __RTTI__7CVRigid
 	.4byte 0
-	.4byte lbl_8060DF28
+	.4byte __RTTI__7CVActor
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -1214,9 +1020,9 @@ lbl_801CC4B4:
 	# ROM: 0x1C85B4
 	.4byte __RTTI__10CVListBase
 	.4byte 0
-	.4byte lbl_8060DF30
+	.4byte __RTTI__7CVRigid
 	.4byte 0
-	.4byte lbl_8060DF28
+	.4byte __RTTI__7CVActor
 	.4byte 0
 	.4byte lbl_8060E310
 	.4byte 0
@@ -1252,9 +1058,9 @@ lbl_801CC524:
 	# ROM: 0x1C8624
 	.4byte __RTTI__10CVListBase
 	.4byte 0
-	.4byte lbl_8060DF30
+	.4byte __RTTI__7CVRigid
 	.4byte 0
-	.4byte lbl_8060DF28
+	.4byte __RTTI__7CVActor
 	.4byte 0
 	.4byte lbl_8060E310
 	.4byte 0
@@ -1374,9 +1180,9 @@ lbl_801CC66C:
 	# ROM: 0x1C876C
 	.4byte __RTTI__10CVListBase
 	.4byte 0
-	.4byte lbl_8060DF30
+	.4byte __RTTI__7CVRigid
 	.4byte 0
-	.4byte lbl_8060DF28
+	.4byte __RTTI__7CVActor
 	.4byte 0
 	.4byte lbl_8060E310
 	.4byte 0
@@ -1446,9 +1252,9 @@ lbl_801CC73C:
 	# ROM: 0x1C883C
 	.4byte __RTTI__10CVListBase
 	.4byte 0
-	.4byte lbl_8060DF30
+	.4byte __RTTI__7CVRigid
 	.4byte 0
-	.4byte lbl_8060DF28
+	.4byte __RTTI__7CVActor
 	.4byte 0
 	.4byte lbl_8060E310
 	.4byte 0
@@ -1484,9 +1290,9 @@ lbl_801CC7AC:
 	# ROM: 0x1C88AC
 	.4byte __RTTI__10CVListBase
 	.4byte 0
-	.4byte lbl_8060DF30
+	.4byte __RTTI__7CVRigid
 	.4byte 0
-	.4byte lbl_8060DF28
+	.4byte __RTTI__7CVActor
 	.4byte 0
 	.4byte lbl_8060E310
 	.4byte 0

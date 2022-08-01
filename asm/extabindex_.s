@@ -576,7 +576,7 @@ lbl_8000CB00:
 	.4byte func_8001E4B8
 	.4byte 0x0000018C
 	.4byte lbl_80006F9C
-	.4byte lbl_8001E654
+	.4byte __dt__6CRotorFv
 	.4byte 0x00000068
 	.4byte lbl_80006FA4
 	.4byte func_8001E6BC
@@ -759,7 +759,7 @@ lbl_8000CB00:
 	.4byte lbl_800209F4
 	.4byte 0x00000088
 	.4byte lbl_800071F4
-	.4byte lbl_80020A7C
+	.4byte __dt__11CVActorNodeFv
 	.4byte 0x00000058
 	.4byte lbl_800071FC
 	.4byte func_80020AD4

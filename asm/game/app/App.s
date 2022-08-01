@@ -1984,7 +1984,7 @@ lbl_801CB410:
 lbl_801CB428:
 
 	# ROM: 0x1C7528
-	.4byte lbl_8060DF00
+	.4byte __RTTI__5CVApp
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -1998,8 +1998,8 @@ lbl_8060DEF8:
 	.4byte lbl_8060F828
 	.4byte lbl_801CB428
 
-.global lbl_8060DF00
-lbl_8060DF00:
+.global __RTTI__5CVApp
+__RTTI__5CVApp:
 
 	# ROM: 0x1EE100
 	.4byte lbl_8060F830

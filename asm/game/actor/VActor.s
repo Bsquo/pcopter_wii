@@ -48,9 +48,9 @@ lbl_801B9B38:
 lbl_800209F4:
 /* 800209F4 00011974  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800209F8 00011978  7C 08 02 A6 */	mflr r0
-/* 800209FC 0001197C  3C 80 80 1D */	lis r4, lbl_801CB6F4@ha
+/* 800209FC 0001197C  3C 80 80 1D */	lis r4, __vt__11CVActorNode@ha
 /* 80020A00 00011980  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80020A04 00011984  38 84 B6 F4 */	addi r4, r4, lbl_801CB6F4@l
+/* 80020A04 00011984  38 84 B6 F4 */	addi r4, r4, __vt__11CVActorNode@l
 /* 80020A08 00011988  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80020A0C 0001198C  7C 7F 1B 78 */	mr r31, r3
 /* 80020A10 00011990  90 83 00 34 */	stw r4, 0x34(r3)
@@ -81,8 +81,8 @@ lbl_800209F4:
 /* 80020A74 000119F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80020A78 000119F8  4E 80 00 20 */	blr
 
-.global lbl_80020A7C
-lbl_80020A7C:
+.global __dt__11CVActorNodeFv
+__dt__11CVActorNodeFv:
 /* 80020A7C 000119FC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80020A80 00011A00  7C 08 02 A6 */	mflr r0
 /* 80020A84 00011A04  2C 03 00 00 */	cmpwi r3, 0x0
@@ -325,9 +325,9 @@ func_80020DB8:
 /* 80020DC4 00011D44  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80020DC8 00011D48  7C 7F 1B 78 */	mr r31, r3
 /* 80020DCC 00011D4C  48 00 00 71 */	bl func_80020E3C
-/* 80020DD0 00011D50  3C 80 80 1D */	lis r4, lbl_801CB6D0@ha
+/* 80020DD0 00011D50  3C 80 80 1D */	lis r4, __vt__18CVActorMtxCallback@ha
 /* 80020DD4 00011D54  38 00 00 00 */	li r0, 0x0
-/* 80020DD8 00011D58  38 84 B6 D0 */	addi r4, r4, lbl_801CB6D0@l
+/* 80020DD8 00011D58  38 84 B6 D0 */	addi r4, r4, __vt__18CVActorMtxCallback@l
 /* 80020DDC 00011D5C  90 1F 00 04 */	stw r0, 0x4(r31)
 /* 80020DE0 00011D60  7F E3 FB 78 */	mr r3, r31
 /* 80020DE4 00011D64  90 9F 00 00 */	stw r4, 0x0(r31)
@@ -359,8 +359,8 @@ lbl_80020E24:
 
 .global func_80020E3C
 func_80020E3C:
-/* 80020E3C 00011DBC  3C 80 80 1D */	lis r4, lbl_801CB700@ha
-/* 80020E40 00011DC0  38 84 B7 00 */	addi r4, r4, lbl_801CB700@l
+/* 80020E3C 00011DBC  3C 80 80 1D */	lis r4, __vt__Q34nw4r3g3d18ICalcWorldCallback@ha
+/* 80020E40 00011DC0  38 84 B7 00 */	addi r4, r4, __vt__Q34nw4r3g3d18ICalcWorldCallback@l
 /* 80020E44 00011DC4  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80020E48 00011DC8  4E 80 00 20 */	blr
 
@@ -581,9 +581,9 @@ func_80021118:
 /* 80021128 000120A8  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8002112C 000120AC  7C 7E 1B 78 */	mr r30, r3
 /* 80021130 000120B0  48 00 9D 5D */	bl func_8002AE8C
-/* 80021134 000120B4  3C 80 80 1D */	lis r4, lbl_801CB680@ha
+/* 80021134 000120B4  3C 80 80 1D */	lis r4, __vt__7CVActor@ha
 /* 80021138 000120B8  38 7E 02 48 */	addi r3, r30, 0x248
-/* 8002113C 000120BC  38 84 B6 80 */	addi r4, r4, lbl_801CB680@l
+/* 8002113C 000120BC  38 84 B6 80 */	addi r4, r4, __vt__7CVActor@l
 /* 80021140 000120C0  90 9E 00 10 */	stw r4, 0x10(r30)
 /* 80021144 000120C4  48 00 56 1D */	bl __ct__6CVFlagFv
 /* 80021148 000120C8  3B E0 00 00 */	li r31, 0x0
@@ -659,14 +659,14 @@ func_80021228:
 /* 80021244 000121C4  7C 7E 1B 78 */	mr r30, r3
 /* 80021248 000121C8  41 82 00 8C */	beq lbl_800212D4
 /* 8002124C 000121CC  80 03 02 78 */	lwz r0, 0x278(r3)
-/* 80021250 000121D0  3C 80 80 1D */	lis r4, lbl_801CB680@ha
-/* 80021254 000121D4  38 84 B6 80 */	addi r4, r4, lbl_801CB680@l
+/* 80021250 000121D0  3C 80 80 1D */	lis r4, __vt__7CVActor@ha
+/* 80021254 000121D4  38 84 B6 80 */	addi r4, r4, __vt__7CVActor@l
 /* 80021258 000121D8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8002125C 000121DC  90 83 00 10 */	stw r4, 0x10(r3)
 /* 80021260 000121E0  41 82 00 1C */	beq lbl_8002127C
-/* 80021264 000121E4  3C 80 80 02 */	lis r4, lbl_80020A7C@ha
+/* 80021264 000121E4  3C 80 80 02 */	lis r4, __dt__11CVActorNodeFv@ha
 /* 80021268 000121E8  7C 03 03 78 */	mr r3, r0
-/* 8002126C 000121EC  38 84 0A 7C */	addi r4, r4, lbl_80020A7C@l
+/* 8002126C 000121EC  38 84 0A 7C */	addi r4, r4, __dt__11CVActorNodeFv@l
 /* 80021270 000121F0  48 09 1C 79 */	bl func_800B2EE8
 /* 80021274 000121F4  38 00 00 00 */	li r0, 0x0
 /* 80021278 000121F8  90 1E 02 78 */	stw r0, 0x278(r30)
@@ -714,9 +714,9 @@ lbl_800212F0:
 /* 8002130C 0001228C  80 03 02 78 */	lwz r0, 0x278(r3)
 /* 80021310 00012290  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80021314 00012294  41 82 00 1C */	beq lbl_80021330
-/* 80021318 00012298  3C 80 80 02 */	lis r4, lbl_80020A7C@ha
+/* 80021318 00012298  3C 80 80 02 */	lis r4, __dt__11CVActorNodeFv@ha
 /* 8002131C 0001229C  7C 03 03 78 */	mr r3, r0
-/* 80021320 000122A0  38 84 0A 7C */	addi r4, r4, lbl_80020A7C@l
+/* 80021320 000122A0  38 84 0A 7C */	addi r4, r4, __dt__11CVActorNodeFv@l
 /* 80021324 000122A4  48 09 1B C5 */	bl func_800B2EE8
 /* 80021328 000122A8  38 00 00 00 */	li r0, 0x0
 /* 8002132C 000122AC  90 1E 02 78 */	stw r0, 0x278(r30)
@@ -795,11 +795,11 @@ lbl_800213C8:
 /* 8002143C 000123BC  7C 7D 1B 78 */	mr r29, r3
 /* 80021440 000123C0  41 82 00 28 */	beq lbl_80021468
 /* 80021444 000123C4  3C 80 80 02 */	lis r4, lbl_800209F4@ha
-/* 80021448 000123C8  3C A0 80 02 */	lis r5, lbl_80020A7C@ha
+/* 80021448 000123C8  3C A0 80 02 */	lis r5, __dt__11CVActorNodeFv@ha
 /* 8002144C 000123CC  7F 87 E3 78 */	mr r7, r28
 /* 80021450 000123D0  3B 60 00 01 */	li r27, 0x1
 /* 80021454 000123D4  38 84 09 F4 */	addi r4, r4, lbl_800209F4@l
-/* 80021458 000123D8  38 A5 0A 7C */	addi r5, r5, lbl_80020A7C@l
+/* 80021458 000123D8  38 A5 0A 7C */	addi r5, r5, __dt__11CVActorNodeFv@l
 /* 8002145C 000123DC  38 C0 00 38 */	li r6, 0x38
 /* 80021460 000123E0  48 09 17 59 */	bl func_800B2BB8
 /* 80021464 000123E4  7C 7D 1B 78 */	mr r29, r3
@@ -2972,11 +2972,11 @@ lbl_80023164:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CB680
-lbl_801CB680:
+.global __vt__7CVActor
+__vt__7CVActor:
 
 	# ROM: 0x1C7780
-	.4byte lbl_8060DF28
+	.4byte __RTTI__7CVActor
 	.4byte 0
 	.4byte func_80021228
 	.4byte lbl_8001E64C
@@ -2997,38 +2997,38 @@ lbl_801CB680:
 	.4byte func_80022EC8
 	.4byte 0
 
-.global lbl_801CB6D0
-lbl_801CB6D0:
+.global __vt__18CVActorMtxCallback
+__vt__18CVActorMtxCallback:
 
 	# ROM: 0x1C77D0
-	.4byte lbl_8060DF60
+	.4byte __RTTI__18CVActorMtxCallback
 	.4byte 0
 	.4byte func_800211D0
 	.4byte lbl_80020ECC
 	.4byte lbl_80021110
 	.4byte lbl_80021114
 
-.global lbl_801CB6E8
-lbl_801CB6E8:
+.global _47706
+_47706:
 
 	# ROM: 0x1C77E8
-	.4byte lbl_8060DF70
+	.4byte __RTTI__Q34nw4r3g3d18ICalcWorldCallback
 	.4byte 0
 	.4byte 0
 
-.global lbl_801CB6F4
-lbl_801CB6F4:
+.global __vt__11CVActorNode
+__vt__11CVActorNode:
 
 	# ROM: 0x1C77F4
-	.4byte lbl_8060DF68
+	.4byte __RTTI__11CVActorNode
 	.4byte 0
-	.4byte lbl_80020A7C
+	.4byte __dt__11CVActorNodeFv
 
-.global lbl_801CB700
-lbl_801CB700:
+.global __vt__Q34nw4r3g3d18ICalcWorldCallback
+__vt__Q34nw4r3g3d18ICalcWorldCallback:
 
 	# ROM: 0x1C7800
-	.4byte lbl_8060DF70
+	.4byte __RTTI__Q34nw4r3g3d18ICalcWorldCallback
 	.4byte 0
 	.4byte func_80020DFC
 	.4byte lbl_80023164
@@ -3037,22 +3037,22 @@ lbl_801CB700:
 
 .section .sdata, "wa", @progbits
 
-.global lbl_8060DF60
-lbl_8060DF60:
+.global __RTTI__18CVActorMtxCallback
+__RTTI__18CVActorMtxCallback:
 
 	# ROM: 0x1EE160
 	.4byte lbl_801B9AF8
-	.4byte lbl_801CB6E8
+	.4byte _47706
 
-.global lbl_8060DF68
-lbl_8060DF68:
+.global __RTTI__11CVActorNode
+__RTTI__11CVActorNode:
 
 	# ROM: 0x1EE168
 	.4byte lbl_801B9B0C
 	.4byte 0
 
-.global lbl_8060DF70
-lbl_8060DF70:
+.global __RTTI__Q34nw4r3g3d18ICalcWorldCallback
+__RTTI__Q34nw4r3g3d18ICalcWorldCallback:
 
 	# ROM: 0x1EE170
 	.4byte lbl_801B9B18

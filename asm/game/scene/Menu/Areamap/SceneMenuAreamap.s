@@ -2747,3 +2747,31 @@ lbl_800369F0:
 /* 800369F8 00027978  4C 81 00 20 */	blelr
 /* 800369FC 0002797C  38 60 00 03 */	li r3, 0x3
 /* 80036A00 00027980  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB968
+lbl_801CB968:
+
+	# ROM: 0x1C7A68
+	.4byte lbl_8060E048
+	.4byte 0
+	.4byte lbl_80034988
+	.4byte lbl_8003537C
+	.4byte lbl_8003597C
+	.4byte lbl_80035974
+	.4byte lbl_80035AA4
+	.4byte lbl_80039128
+	.4byte lbl_80035AAC
+	.4byte func_80011CF4
+
+.global lbl_801CB990
+lbl_801CB990:
+
+	# ROM: 0x1C7A90
+	.4byte lbl_8060DE90
+	.4byte 0
+	.4byte lbl_8060DE18
+	.4byte 0
+	.4byte 0
+	.4byte 0

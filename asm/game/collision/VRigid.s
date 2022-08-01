@@ -803,7 +803,7 @@ func_8002B9B0:
 lbl_801CB808:
 
 	# ROM: 0x1C7908
-	.4byte lbl_8060DF30
+	.4byte __RTTI__7CVRigid
 	.4byte 0
 	.4byte func_8002AFB4
 	.4byte lbl_8001E64C

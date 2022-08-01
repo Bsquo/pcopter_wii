@@ -2,15 +2,15 @@
 
 .section .rodata, "a", @progbits
 
-.global lbl_801B9408
-lbl_801B9408:
+.global _52372
+_52372:
 
 	# ROM: 0x1B5508
 	.asciz "CActCopter"
 	.balign 4
 
-.global lbl_801B9414
-lbl_801B9414:
+.global _52398
+_52398:
 
 	# ROM: 0x1B5514
 	.asciz "CVListBase"

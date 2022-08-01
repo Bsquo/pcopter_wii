@@ -4896,3 +4896,74 @@ func_8003A814:
 /* 8003A828 0002B7A8  90 03 15 F4 */	stw r0, 0x15f4(r3)
 /* 8003A82C 0002B7AC  90 03 15 F8 */	stw r0, 0x15f8(r3)
 /* 8003A830 0002B7B0  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB9A8
+lbl_801CB9A8:
+
+	# ROM: 0x1C7AA8
+	.4byte func_800383BC
+	.4byte lbl_800381A8
+	.4byte lbl_80038214
+	.4byte lbl_80038248
+	.4byte lbl_8003829C
+	.4byte lbl_80038324
+	.4byte lbl_80038368
+	.4byte func_800383BC
+
+.global lbl_801CB9C8
+lbl_801CB9C8:
+
+	# ROM: 0x1C7AC8
+	.4byte lbl_80037E5C
+	.4byte lbl_80037E6C
+	.4byte lbl_80037E80
+	.4byte lbl_80037E9C
+	.4byte lbl_80037EB8
+	.4byte lbl_80037ECC
+	.4byte lbl_80037EE0
+	.4byte 0
+
+.global lbl_801CB9E8
+lbl_801CB9E8:
+
+	# ROM: 0x1C7AE8
+	.4byte lbl_8060DE18
+	.4byte 0
+	.4byte lbl_80039120
+	.4byte lbl_8003914C
+	.4byte lbl_8003915C
+	.4byte lbl_80039154
+	.4byte lbl_80039164
+	.4byte lbl_80039128
+	.4byte lbl_8003916C
+	.4byte func_80011C9C
+
+.global lbl_801CBA10
+lbl_801CBA10:
+
+	# ROM: 0x1C7B10
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+
+.global lbl_801CBA34
+lbl_801CBA34:
+
+	# ROM: 0x1C7B34
+	.asciz "LinkList.h"
+	.balign 4
+
+.global lbl_801CBA40
+lbl_801CBA40:
+
+	# ROM: 0x1C7B40
+	.asciz "NW4R:Pointer must not be NULL (p)"
+	.balign 4
+
+.global lbl_801CBA64
+lbl_801CBA64:
+
+	# ROM: 0x1C7B64
+	.asciz "LinkList.h"
+	.balign 4

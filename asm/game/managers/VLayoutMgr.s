@@ -2219,3 +2219,53 @@ lbl_8002F7B0:
 /* 8002F7C0 00020740  7C 08 03 A6 */	mtlr r0
 /* 8002F7C4 00020744  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002F7C8 00020748  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CB8B8
+lbl_801CB8B8:
+
+	# ROM: 0x1C79B8
+	.4byte lbl_8060E018
+	.4byte 0
+	.4byte lbl_8002E12C
+
+.global lbl_801CB8C4
+lbl_801CB8C4:
+
+	# ROM: 0x1C79C4
+	.4byte __RTTI__10CVListBase
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CB8D0
+lbl_801CB8D0:
+
+	# ROM: 0x1C79D0
+	.4byte lbl_8060E020
+	.4byte 0
+	.4byte lbl_8002F774
+
+.global lbl_801CB8DC
+lbl_801CB8DC:
+
+	# ROM: 0x1C79DC
+	.4byte __RTTI__10CVListBase
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CB8E8
+lbl_801CB8E8:
+
+	# ROM: 0x1C79E8
+	.4byte lbl_8060E028
+	.4byte 0
+	.4byte lbl_8002DBB8
+
+.global lbl_801CB8F4
+lbl_801CB8F4:
+
+	# ROM: 0x1C79F4
+	.4byte __RTTI__10CVListBase
+	.4byte 0
+	.4byte 0

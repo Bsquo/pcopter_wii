@@ -107,9 +107,9 @@ func_80023868:
 /* 80023874 000147F4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80023878 000147F8  7C 7F 1B 78 */	mr r31, r3
 /* 8002387C 000147FC  48 00 2F 99 */	bl __ct__10CVListBaseFv
-/* 80023880 00014800  3C 80 80 1D */	lis r4, lbl_801CB760@ha
+/* 80023880 00014800  3C 80 80 1D */	lis r4, __vt__10CVCollLine@ha
 /* 80023884 00014804  38 00 00 00 */	li r0, 0x0
-/* 80023888 00014808  38 84 B7 60 */	addi r4, r4, lbl_801CB760@l
+/* 80023888 00014808  38 84 B7 60 */	addi r4, r4, __vt__10CVCollLine@l
 /* 8002388C 0001480C  90 1F 00 14 */	stw r0, 0x14(r31)
 /* 80023890 00014810  7F E3 FB 78 */	mr r3, r31
 /* 80023894 00014814  90 9F 00 10 */	stw r4, 0x10(r31)
@@ -128,9 +128,9 @@ func_800238B0:
 /* 800238BC 0001483C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800238C0 00014840  7C 7F 1B 78 */	mr r31, r3
 /* 800238C4 00014844  48 00 2F 51 */	bl __ct__10CVListBaseFv
-/* 800238C8 00014848  3C 80 80 1D */	lis r4, lbl_801CB748@ha
+/* 800238C8 00014848  3C 80 80 1D */	lis r4, __vt__10CVCollPoly@ha
 /* 800238CC 0001484C  38 7F 00 24 */	addi r3, r31, 0x24
-/* 800238D0 00014850  38 84 B7 48 */	addi r4, r4, lbl_801CB748@l
+/* 800238D0 00014850  38 84 B7 48 */	addi r4, r4, __vt__10CVCollPoly@l
 /* 800238D4 00014854  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 800238D8 00014858  48 00 38 49 */	bl __ct__8CVVectorFv
 /* 800238DC 0001485C  C0 02 81 78 */	lfs f0, lbl_8060F998@sda21(r2)
@@ -237,10 +237,10 @@ func_80023A08:
 /* 80023A20 000149A0  7C 7E 1B 78 */	mr r30, r3
 /* 80023A24 000149A4  48 00 2D F1 */	bl __ct__10CVListBaseFv
 /* 80023A28 000149A8  C0 02 81 78 */	lfs f0, lbl_8060F998@sda21(r2)
-/* 80023A2C 000149AC  3C 80 80 1D */	lis r4, lbl_801CB730@ha
+/* 80023A2C 000149AC  3C 80 80 1D */	lis r4, __vt__6CVColl@ha
 /* 80023A30 000149B0  38 00 00 00 */	li r0, 0x0
 /* 80023A34 000149B4  38 7E 00 48 */	addi r3, r30, 0x48
-/* 80023A38 000149B8  38 84 B7 30 */	addi r4, r4, lbl_801CB730@l
+/* 80023A38 000149B8  38 84 B7 30 */	addi r4, r4, __vt__6CVColl@l
 /* 80023A3C 000149BC  B0 1E 00 14 */	sth r0, 0x14(r30)
 /* 80023A40 000149C0  90 9E 00 10 */	stw r4, 0x10(r30)
 /* 80023A44 000149C4  90 1E 00 18 */	stw r0, 0x18(r30)
@@ -3316,48 +3316,48 @@ lbl_80026324:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CB730
-lbl_801CB730:
+.global __vt__6CVColl
+__vt__6CVColl:
 
 	# ROM: 0x1C7830
 	.4byte lbl_8060DF98
 	.4byte 0
 	.4byte lbl_80021764
 
-.global lbl_801CB73C
-lbl_801CB73C:
+.global _45005
+_45005:
 
 	# ROM: 0x1C783C
 	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
-.global lbl_801CB748
-lbl_801CB748:
+.global __vt__10CVCollPoly
+__vt__10CVCollPoly:
 
 	# ROM: 0x1C7848
 	.4byte lbl_8060DFA0
 	.4byte 0
 	.4byte lbl_800262E8
 
-.global lbl_801CB754
-lbl_801CB754:
+.global _45007
+_45007:
 
 	# ROM: 0x1C7854
 	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
 
-.global lbl_801CB760
-lbl_801CB760:
+.global __vt__10CVCollLine
+__vt__10CVCollLine:
 
 	# ROM: 0x1C7860
 	.4byte lbl_8060DFA8
 	.4byte 0
 	.4byte lbl_80026290
 
-.global lbl_801CB76C
-lbl_801CB76C:
+.global _45009
+_45009:
 
 	# ROM: 0x1C786C
 	.4byte __RTTI__10CVListBase
@@ -3446,21 +3446,21 @@ lbl_8060DF98:
 
 	# ROM: 0x1EE198
 	.4byte lbl_8060F9A0
-	.4byte lbl_801CB73C
+	.4byte _45005
 
 .global lbl_8060DFA0
 lbl_8060DFA0:
 
 	# ROM: 0x1EE1A0
 	.4byte lbl_801B9BD0
-	.4byte lbl_801CB754
+	.4byte _45007
 
 .global lbl_8060DFA8
 lbl_8060DFA8:
 
 	# ROM: 0x1EE1A8
 	.4byte lbl_801B9BDC
-	.4byte lbl_801CB76C
+	.4byte _45009
 
 .global lbl_8060DFB0
 lbl_8060DFB0:

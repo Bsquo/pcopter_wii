@@ -15,8 +15,8 @@ asinf:
 /* 800BDFF8 000AEF78  38 21 00 10 */	addi r1, r1, 0x10
 /* 800BDFFC 000AEF7C  4E 80 00 20 */	blr
 
-.global func_800BE000
-func_800BE000:
+.global cosf
+cosf:
 /* 800BE000 000AEF80  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800BE004 000AEF84  7C 08 02 A6 */	mflr r0
 /* 800BE008 000AEF88  FC 20 08 18 */	frsp f1, f1
@@ -41,8 +41,8 @@ func_800BE028:
 /* 800BE048 000AEFC8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800BE04C 000AEFCC  4E 80 00 20 */	blr
 
-.global func_800BE050
-func_800BE050:
+.global fabsf
+fabsf:
 /* 800BE050 000AEFD0  FC 00 08 18 */	frsp f0, f1
 /* 800BE054 000AEFD4  FC 00 02 10 */	fabs f0, f0
 /* 800BE058 000AEFD8  FC 20 00 18 */	frsp f1, f0

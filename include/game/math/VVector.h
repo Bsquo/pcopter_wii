@@ -5,15 +5,16 @@
 #include "types.h"
 
 // Values from .sdata2
-extern const f32 _44791; // 0.0f
-extern const f32 _53133; // 0.0f
-extern const f32 lbl_8060F908; // 0x3727C5AC
+extern const f32 _44791; // 0.0
+extern const f32 _45021; // 57.295775
+extern const f32 _45022; // 180.0
+extern const f32 _53133; // 0.0
+extern const f32 _53629; // 0.00001
 
 class CVVector {
-	private:
-		f32 x, y, z;
-		
     public:
+		f32 x, y, z;
+
         CVVector();
         CVVector(f32, f32, f32);
 		CVVector(const CVVector&);
@@ -29,7 +30,7 @@ class CVVector {
 		CVVector operator*=(f32);
 		CVVector operator/=(f32);
 		CVVector operator+(const CVVector&);
-		CVVector operator*(const CVVector&);
+		f32 operator*(const CVVector&);
 		CVVector operator-();
 		CVVector operator-=(const CVVector&);
 		CVVector operator/(f32);

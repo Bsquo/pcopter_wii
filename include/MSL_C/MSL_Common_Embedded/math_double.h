@@ -10,6 +10,7 @@
 extern "C" {
 #endif
 
+f32 cosf(f32);
 f32 sqrtf(f32);
 
 #ifdef __cplusplus

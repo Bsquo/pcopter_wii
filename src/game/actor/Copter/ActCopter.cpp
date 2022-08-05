@@ -1,6 +1,6 @@
 #include "include/game/math/VVector.h"
 #include "include/MSL_C/MSL_Common_Embedded/math_double.h"
-#include "include/std/math/sqrt.h"
+#include "include/std/math/mathf.h"
 
 f32 CVVector::Magnitude () {
     return std::sqrt(x*x + y*y + z*z);

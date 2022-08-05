@@ -504,7 +504,7 @@ lbl_8000CB00:
 	.4byte lbl_8001BD90
 	.4byte 0x00000068
 	.4byte lbl_80006E74
-	.4byte func_8001BDF8
+	.4byte __as__6CVAxisFRC6CVAxis
 	.4byte 0x00000054
 	.4byte lbl_80006E7C
 	.4byte func_8001BE4C
@@ -513,7 +513,7 @@ lbl_8000CB00:
 	.4byte lbl_8001BECC
 	.4byte 0x00000090
 	.4byte lbl_80006E8C
-	.4byte func_8001BFE0
+	.4byte __opC8CVMatrix__6CVAxisFv
 	.4byte 0x00000088
 	.4byte lbl_80006E94
 	.4byte func_8001C068
@@ -531,10 +531,10 @@ lbl_8000CB00:
 	.4byte Normalize__8CVVectorFv
 	.4byte 0x00000060
 	.4byte lbl_80006EE4
-	.4byte func_8001D2DC
+	.4byte __pl__8CVVectorFRC8CVVector
 	.4byte 0x00000074
 	.4byte lbl_80006EEC
-	.4byte func_8001D378
+	.4byte __mi__8CVVectorFv
 	.4byte 0x0000005C
 	.4byte lbl_80006EF4
 	.4byte func_8001D3D4
@@ -828,7 +828,7 @@ lbl_8000CB00:
 	.4byte func_80021FA0
 	.4byte 0x000000B8
 	.4byte lbl_80007378
-	.4byte func_80022058
+	.4byte __ml__8CVMatrixFRC6CVAxis
 	.4byte 0x00000098
 	.4byte lbl_80007380
 	.4byte func_800220F0
@@ -1089,67 +1089,67 @@ lbl_8000CB00:
 	.4byte InsertEnd__6CVListFP10CVListBase
 	.4byte 0x00000080
 	.4byte lbl_80007740
-	.4byte func_80026C5C
+	.4byte CalcLength__6CVMathF8CVVector8CVVector
 	.4byte 0x00000030
 	.4byte lbl_80007748
-	.4byte func_80026C8C
+	.4byte CalcSurfaceNormal__6CVMathF8CVVector8CVVector8CVVector
 	.4byte 0x00000100
 	.4byte lbl_80007750
-	.4byte func_80026D8C
+	.4byte CalcSurfaceCollPos__6CVMathF8CVVector8CVVector8CVVector8CVVector
 	.4byte 0x00000120
 	.4byte lbl_80007758
-	.4byte func_80026EAC
+	.4byte CheckPolyInside3D__6CVMathF8CVVector8CVVector8CVVector8CVVector
 	.4byte 0x00000274
 	.4byte lbl_80007760
 	.4byte GetRoll__8CVVectorFv
 	.4byte 0x00000084
 	.4byte lbl_80007768
-	.4byte func_80027260
+	.4byte InitAsTreatmentR__8CVMatrixFR8CVMatrix
 	.4byte 0x00000084
 	.4byte lbl_80007770
-	.4byte func_800272E4
+	.4byte InitAsRotateX__8CVMatrixFf
 	.4byte 0x000000C0
 	.4byte lbl_80007778
-	.4byte func_800273A8
+	.4byte InitAsRotateY__8CVMatrixFf
 	.4byte 0x000000C0
 	.4byte lbl_80007780
-	.4byte func_80027468
+	.4byte InitAsRotateZ__8CVMatrixFf
 	.4byte 0x000000C0
 	.4byte lbl_80007788
-	.4byte func_80027528
+	.4byte InitAsTranslate__8CVMatrixFfff
 	.4byte 0x00000060
 	.4byte lbl_80007790
-	.4byte func_80027588
+	.4byte InitAsScale__8CVMatrixFfff
 	.4byte 0x00000060
 	.4byte lbl_80007798
 	.4byte __er__8CVVectorFRC8CVVector
 	.4byte 0x0000008C
 	.4byte lbl_800077A0
-	.4byte func_80027674
+	.4byte __ml__8CVMatrixFRC8CVMatrix
 	.4byte 0x00000110
 	.4byte lbl_800077A8
-	.4byte func_80027784
+	.4byte __ct__6CVAxisFv
 	.4byte 0x0000006C
 	.4byte lbl_800077B0
-	.4byte func_800277F0
+	.4byte __ct__6CVAxisF8CVVector8CVVector
 	.4byte 0x000000CC
 	.4byte lbl_800077B8
-	.4byte func_800278BC
+	.4byte RotateLocalX__6CVAxisFf
 	.4byte 0x000000AC
 	.4byte lbl_800077C0
-	.4byte func_80027968
+	.4byte RotateLocalZ__6CVAxisFf
 	.4byte 0x000000AC
 	.4byte lbl_800077C8
-	.4byte func_80027A14
+	.4byte RotateGlobalY__6CVAxisFf
 	.4byte 0x00000068
 	.4byte lbl_800077D0
-	.4byte func_80027A7C
+	.4byte RotateGlobalZ__6CVAxisFf
 	.4byte 0x00000068
 	.4byte lbl_800077D8
-	.4byte func_80027AE4
+	.4byte Approach__6CVAxisF6CVAxisf
 	.4byte 0x00000108
 	.4byte lbl_800077E0
-	.4byte func_80027D5C
+	.4byte GetR__6CVAreaFv
 	.4byte 0x000000F8
 	.4byte lbl_800077E8
 	.4byte func_80027F34
@@ -4430,7 +4430,7 @@ lbl_80010138:
 	.4byte asinf
 	.4byte 0x00000028
 	.4byte lbl_8000C528
-	.4byte func_800BE000
+	.4byte cosf
 	.4byte 0x00000028
 	.4byte lbl_8000C530
 	.4byte func_800BE028

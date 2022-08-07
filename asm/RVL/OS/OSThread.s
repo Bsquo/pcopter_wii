@@ -39,9 +39,9 @@ func_8008FB2C:
 /* 8008FB9C 00080B1C  4B FF 99 CD */	bl func_80089568
 /* 8008FBA0 00080B20  7F C3 F3 78 */	mr r3, r30
 /* 8008FBA4 00080B24  4B FF 97 9D */	bl func_80089340
-/* 8008FBA8 00080B28  3C 80 80 62 */	lis r4, _db_stack_end@ha
+/* 8008FBA8 00080B28  3C 80 80 62 */	lis r4, _stack_addr@ha
 /* 8008FBAC 00080B2C  3C A0 80 61 */	lis r5, _stack_end@ha
-/* 8008FBB0 00080B30  38 84 1F 38 */	addi r4, r4, _db_stack_end@l
+/* 8008FBB0 00080B30  38 84 1F 38 */	addi r4, r4, _stack_addr@l
 /* 8008FBB4 00080B34  3C 60 DE AE */	lis r3, 0xDEADBABE@ha
 /* 8008FBB8 00080B38  38 A5 1F 38 */	addi r5, r5, _stack_end@l
 /* 8008FBBC 00080B3C  90 9E 03 04 */	stw r4, 0x304(r30)

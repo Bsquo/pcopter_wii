@@ -1,6 +1,6 @@
 .include "macros.s"
 
-.section .sbss2, "wa", @nobits  # 0x80611F20 - 0x80611F38 ; 0x00000018
+.section .sbss2, "wa", @nobits  # 0x80611F20 - _stack_end ; 0x00000018
 
 .global lbl_80611F20
 lbl_80611F20:

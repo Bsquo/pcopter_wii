@@ -6,6 +6,8 @@
 #include "include/nw4r/math/math_types.h"
 #include "types.h"
 
+class CVAxis;   // Forward declaration
+
 // Values from .sdata2
 extern const f32 _44791; // 0.0
 extern const f32 _45055; // 1.0
@@ -20,7 +22,7 @@ class CVMatrix {
         CVMatrix(const CVMatrix&);
 
         void operator=(const CVMatrix&);
-        //void operator=(const nw4r::math::MTX34&);
+        //void operator=(const nw4r::math::MTX34&);     // Temporary commented out.
         CVAxis operator*(const CVAxis&);
         CVVector operator*(const CVVector&);
         CVMatrix operator*(const CVMatrix&);

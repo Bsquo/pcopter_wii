@@ -177,7 +177,7 @@ INCLUDES := -i . -I- -i include
 
 ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -fp fmadd -nodefaults
-CFLAGS  := -Cpp_exceptions off -proc gekko -fp fmadd -O4 -nodefaults -msgstyle gcc $(INCLUDES)
+CFLAGS  := -Cpp_exceptions off -proc gekko -fp fmadd -O4 -nodefaults -use_lmw_stmw on -msgstyle gcc $(INCLUDES)
 
 # for postprocess.py
 PROCFLAGS := -fprologue-fixup=old_stack

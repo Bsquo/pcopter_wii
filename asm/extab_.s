@@ -1300,7 +1300,7 @@ lbl_80006D30:
 	.4byte 0
 	.4byte 0x0780001E
 	.4byte 0x00000468
-	.4byte func_8001A52C
+	.4byte __dt__10CAirCannonFv
 	.4byte 0x0780001E
 	.4byte 0x00000420
 	.4byte __dt__8CVStringFv

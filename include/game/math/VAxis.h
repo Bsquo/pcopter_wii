@@ -13,10 +13,9 @@ extern const f32 _44791; // 0.0f
 class CVMatrix;     // Forward declaration
 
 class CVAxis {
-    private:
+    public:
         CVVector mXVec, mYVec, mZVec;
 
-    public:
         CVAxis();
         CVAxis(f32, f32, f32);
         CVAxis(const CVAxis&);

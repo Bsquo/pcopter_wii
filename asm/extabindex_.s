@@ -438,28 +438,28 @@ lbl_8000CB00:
 	.4byte func_8001A080
 	.4byte 0x00000050
 	.4byte lbl_80006CF8
-	.4byte func_8001A0D0
+	.4byte __ct__7CPosLogFv
 	.4byte 0x00000078
 	.4byte lbl_80006D00
-	.4byte func_8001A148
+	.4byte Update__7CPosLogFP7CVActori
 	.4byte 0x000000B0
 	.4byte lbl_80006D08
-	.4byte func_8001A23C
+	.4byte GetLog__7CPosLogFUlP8CVVectorP8CVVector
 	.4byte 0x00000084
 	.4byte lbl_80006D10
-	.4byte func_8001A2C0
+	.4byte ShiftForward__7CPosLogFv
 	.4byte 0x00000068
 	.4byte lbl_80006D18
-	.4byte func_8001A328
+	.4byte ShiftBack__7CPosLogFv
 	.4byte 0x0000006C
 	.4byte lbl_80006D20
-	.4byte func_8001A394
+	.4byte FillList__7CPosLogFP7CVActor
 	.4byte 0x00000074
 	.4byte lbl_80006D28
-	.4byte func_8001A408
+	.4byte __ct__10CActCopterFv
 	.4byte 0x00000124
 	.4byte lbl_80006D30
-	.4byte func_8001A52C
+	.4byte __dt__10CAirCannonFv
 	.4byte 0x0000005C
 	.4byte lbl_80006D88
 	.4byte lbl_8001A588

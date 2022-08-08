@@ -2479,3 +2479,29 @@ lbl_80067CBC:
 /* 80067CE8 00058C68  7C 08 03 A6 */	mtlr r0
 /* 80067CEC 00058C6C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80067CF0 00058C70  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EDB8
+lbl_8060EDB8:
+	.skip 0x4
+
+.global lbl_8060EDBC
+lbl_8060EDBC:
+	.skip 0x4
+
+.global lbl_8060EDC0
+lbl_8060EDC0:
+	.skip 0x4
+
+.global lbl_8060EDC4
+lbl_8060EDC4:
+	.skip 0x4
+
+.global lbl_8060EDC8
+lbl_8060EDC8:
+	.skip 0x8
+
+.global lbl_8060EDD0
+lbl_8060EDD0:
+	.skip 0x8

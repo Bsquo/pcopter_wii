@@ -413,3 +413,9 @@ lbl_800856C8:
 /* 80085710 00076690  7C 08 03 A6 */	mtlr r0
 /* 80085714 00076694  38 21 00 10 */	addi r1, r1, 0x10
 /* 80085718 00076698  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EDE8
+lbl_8060EDE8:
+	.skip 0x8

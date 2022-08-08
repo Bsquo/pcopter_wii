@@ -522,8 +522,8 @@ lbl_8008EFF0:
 /* 8008EFF8 0007FF78  54 03 E8 FE */	srwi r3, r0, 3
 /* 8008EFFC 0007FF7C  4E 80 00 20 */	blr
 
-.global func_8008F000
-func_8008F000:
+.global OSResetSystem
+OSResetSystem:
 /* 8008F000 0007FF80  3C 60 80 1D */	lis r3, lbl_801CEFD0@ha
 /* 8008F004 0007FF84  3C A0 80 1D */	lis r5, lbl_801CF040@ha
 /* 8008F008 0007FF88  38 63 EF D0 */	addi r3, r3, lbl_801CEFD0@l
@@ -531,3 +531,13 @@ func_8008F000:
 /* 8008F010 0007FF90  38 A5 F0 40 */	addi r5, r5, lbl_801CF040@l
 /* 8008F014 0007FF94  4C C6 31 82 */	crclr 6
 /* 8008F018 0007FF98  4B FF A9 EC */	b func_80089A04
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EEC8
+lbl_8060EEC8:
+	.skip 0x8
+
+.global lbl_8060EED0
+lbl_8060EED0:
+	.skip 0x8

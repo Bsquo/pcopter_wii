@@ -326,3 +326,9 @@ lbl_8004C6AC:
 /* 8004C6D8 0003D658  7C 08 03 A6 */	mtlr r0
 /* 8004C6DC 0003D65C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004C6E0 0003D660  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EDB0
+lbl_8060EDB0:
+	.skip 0x8

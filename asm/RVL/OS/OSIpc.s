@@ -20,3 +20,9 @@ func_80091638:
 /* 80091644 000825C4  80 03 31 34 */	lwz r0, 0x3134(r3)
 /* 80091648 000825C8  90 0D 90 E8 */	stw r0, lbl_8060EEE8@sda21(r13)
 /* 8009164C 000825CC  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EEE8
+lbl_8060EEE8:
+	.skip 0x8

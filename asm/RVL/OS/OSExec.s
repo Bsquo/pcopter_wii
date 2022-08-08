@@ -1423,3 +1423,37 @@ func_8008B3C4:
 /* 8008B3CC 0007C34C  7C 08 03 A6 */	mtlr r0
 /* 8008B3D0 0007C350  7D 41 53 78 */	mr r1, r10
 /* 8008B3D4 0007C354  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EE78
+lbl_8060EE78:
+	.skip 0x4
+
+.global lbl_8060EE7C
+lbl_8060EE7C:
+	.skip 0x4
+
+.global lbl_8060EE80
+lbl_8060EE80:
+	.skip 0x4
+
+.global lbl_8060EE84
+lbl_8060EE84:
+	.skip 0x4
+
+.global lbl_8060EE88
+lbl_8060EE88:
+	.skip 0x4
+
+.global lbl_8060EE8C
+lbl_8060EE8C:
+	.skip 0x4
+
+.global lbl_8060EE90
+lbl_8060EE90:
+	.skip 0x4
+
+.global lbl_8060EE94
+lbl_8060EE94:
+	.skip 0x4

@@ -4096,6 +4096,72 @@ lbl_8060DF10:
 	# ROM: 0x1EE110
 	.4byte lbl_801B87C8
 	.4byte lbl_801CB548
+	
+.section .sbss, "wa", @nobits
+
+.global lbl_8060ECF8
+lbl_8060ECF8:
+	.skip 0x1
+
+.global lbl_8060ECF9
+lbl_8060ECF9:
+	.skip 0x3
+
+.global lbl_8060ECFC
+lbl_8060ECFC:
+	.skip 0x4
+
+.global lbl_8060ED00
+lbl_8060ED00:
+	.skip 0x4
+
+.global lbl_8060ED04
+lbl_8060ED04:
+	.skip 0x4
+
+.global lbl_8060ED08
+lbl_8060ED08:
+	.skip 0x4
+
+.global lbl_8060ED0C
+lbl_8060ED0C:
+	.skip 0x4
+
+.global lbl_8060ED10
+lbl_8060ED10:
+	.skip 0x4
+
+.global lbl_8060ED14
+lbl_8060ED14:
+	.skip 0x4
+
+.global lbl_8060ED18
+lbl_8060ED18:
+	.skip 0x4
+
+.global lbl_8060ED1C
+lbl_8060ED1C:
+	.skip 0x4
+
+.global lbl_8060ED20
+lbl_8060ED20:
+	.skip 0x4
+
+.global lbl_8060ED24
+lbl_8060ED24:
+	.skip 0x4
+
+.global lbl_8060ED28
+lbl_8060ED28:
+	.skip 0x4
+
+.global lbl_8060ED2C
+lbl_8060ED2C:
+	.skip 0x4
+
+.global lbl_8060ED30
+lbl_8060ED30:
+	.skip 0x8
 
 .section .sdata2, "a", @progbits
 

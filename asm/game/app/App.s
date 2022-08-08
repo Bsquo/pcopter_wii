@@ -2004,6 +2004,12 @@ __RTTI__5CVApp:
 	# ROM: 0x1EE100
 	.4byte lbl_8060F830
 	.4byte 0
+	
+.section .sbss, "wa", @nobits
+	
+.global lbl_8060ECF0
+lbl_8060ECF0:
+	.skip 0x8
 
 .section .sdata2, "a", @progbits
 

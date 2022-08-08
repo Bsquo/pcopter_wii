@@ -2471,6 +2471,44 @@ lbl_8060DF54:
 
 	# ROM: 0x1EE154
 	.4byte 0x72656600
+	
+.section .sbss, "wa", @nobits
+
+.global lbl_8060ED40
+lbl_8060ED40:
+	.skip 0x1
+
+.global lbl_8060ED41
+lbl_8060ED41:
+	.skip 0x1
+
+.global lbl_8060ED42
+lbl_8060ED42:
+	.skip 0x1
+
+.global lbl_8060ED43
+lbl_8060ED43:
+	.skip 0x1
+
+.global lbl_8060ED44
+lbl_8060ED44:
+	.skip 0x4
+
+.global lbl_8060ED48
+lbl_8060ED48:
+	.skip 0x4
+
+.global lbl_8060ED4C
+lbl_8060ED4C:
+	.skip 0x4
+
+.global lbl_8060ED50
+lbl_8060ED50:
+	.skip 0x4
+
+.global lbl_8060ED54
+lbl_8060ED54:
+	.skip 0x4
 
 .section .sdata2, "a", @progbits
 

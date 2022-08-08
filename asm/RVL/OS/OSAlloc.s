@@ -250,3 +250,21 @@ lbl_80088540:
 lbl_8008854C:
 /* 8008854C 000794CC  38 60 FF FF */	li r3, -0x1
 /* 80088550 000794D0  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EE60
+lbl_8060EE60:
+	.skip 0x4
+
+.global lbl_8060EE64
+lbl_8060EE64:
+	.skip 0x4
+
+.global lbl_8060EE68
+lbl_8060EE68:
+	.skip 0x4
+
+.global lbl_8060EE6C
+lbl_8060EE6C:
+	.skip 0x4

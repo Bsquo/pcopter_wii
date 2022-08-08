@@ -88,3 +88,13 @@ func_800885E8:
 /* 800885FC 0007957C  7C 83 00 38 */	and r3, r4, r0
 /* 80088600 00079580  90 6D 90 70 */	stw r3, lbl_8060EE70@sda21(r13)
 /* 80088604 00079584  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EE70
+lbl_8060EE70:
+	.skip 0x4
+
+.global lbl_8060EE74
+lbl_8060EE74:
+	.skip 0x4

@@ -612,3 +612,25 @@ lbl_8008DAB0:
 /* 8008DAF4 0007EA74  90 04 01 C0 */	stw r0, 0x1c0(r4)
 /* 8008DAF8 0007EA78  94 21 FF F8 */	stwu r1, -0x8(r1)
 /* 8008DAFC 0007EA7C  4B FF FD 10 */	b func_8008D80C
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EEA8
+lbl_8060EEA8:
+	.skip 0x4
+
+.global lbl_8060EEAC
+lbl_8060EEAC:
+	.skip 0x4
+
+.global lbl_8060EEB0
+lbl_8060EEB0:
+	.skip 0x4
+
+.global lbl_8060EEB4
+lbl_8060EEB4:
+	.skip 0x4
+
+.global lbl_8060EEB8
+lbl_8060EEB8:
+	.skip 0x8

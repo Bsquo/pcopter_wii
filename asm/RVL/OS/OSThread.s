@@ -1667,3 +1667,17 @@ lbl_80090FBC:
 /* 80090FD0 00081F50  7C 08 03 A6 */	mtlr r0
 /* 80090FD4 00081F54  38 21 00 10 */	addi r1, r1, 0x10
 /* 80090FD8 00081F58  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EED8
+lbl_8060EED8:
+	.skip 0x4
+
+.global lbl_8060EEDC
+lbl_8060EEDC:
+	.skip 0x4
+
+.global lbl_8060EEE0
+lbl_8060EEE0:
+	.skip 0x8

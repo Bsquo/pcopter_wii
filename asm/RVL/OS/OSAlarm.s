@@ -590,3 +590,9 @@ func_8008823C:
 func_80088244:
 /* 80088244 000791C4  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 80088248 000791C8  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EE58
+lbl_8060EE58:
+	.skip 0x8

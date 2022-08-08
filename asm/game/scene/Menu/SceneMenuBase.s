@@ -4967,3 +4967,29 @@ lbl_801CBA64:
 	# ROM: 0x1C7B64
 	.asciz "LinkList.h"
 	.balign 4
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060ED70
+lbl_8060ED70:
+	.skip 0x8
+
+.global lbl_8060ED78
+lbl_8060ED78:
+	.skip 0x4
+
+.global lbl_8060ED7C
+lbl_8060ED7C:
+	.skip 0x4
+
+.global lbl_8060ED80
+lbl_8060ED80:
+	.skip 0x4
+
+.global lbl_8060ED84
+lbl_8060ED84:
+	.skip 0x4
+
+.global lbl_8060ED88
+lbl_8060ED88:
+	.skip 0x8

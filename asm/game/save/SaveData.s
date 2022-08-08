@@ -1311,3 +1311,17 @@ lbl_801CB930:
 	.4byte 0x0061006D
 	.4byte 0x00650073
 	.4byte 0
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060ED60
+lbl_8060ED60:
+	.skip 0x4
+
+.global lbl_8060ED64
+lbl_8060ED64:
+	.skip 0x4
+
+.global lbl_8060ED68
+lbl_8060ED68:
+	.skip 0x8

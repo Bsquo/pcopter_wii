@@ -73,3 +73,13 @@ lbl_80086714:
 /* 80086730 000776B0  91 41 00 24 */	stw r10, 0x24(r1)
 /* 80086734 000776B4  38 21 00 70 */	addi r1, r1, 0x70
 /* 80086738 000776B8  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EE08
+lbl_8060EE08:
+	.skip 0x4
+
+.global lbl_8060EE0C
+lbl_8060EE0C:
+	.skip 0x4

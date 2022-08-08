@@ -5008,6 +5008,16 @@ __RTTI__10CVListBase:
 	# ROM: 0x1EE138
 	.4byte _52398
 	.4byte 0
+	
+.section .sbss, "wa", @nobits
+
+.global lbl_8060ED38
+lbl_8060ED38:
+	.skip 0x4
+
+.global lbl_8060ED3C
+lbl_8060ED3C:
+	.skip 0x4
 
 .section .sdata2, "a", @progbits
 

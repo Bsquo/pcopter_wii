@@ -7655,3 +7655,9 @@ func_800706C0:
 /* 800706E0 00061660  7C 08 03 A6 */	mtlr r0
 /* 800706E4 00061664  38 21 00 80 */	addi r1, r1, 0x80
 /* 800706E8 00061668  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EDE0
+lbl_8060EDE0:
+	.skip 0x8

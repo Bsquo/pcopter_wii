@@ -1483,3 +1483,21 @@ lbl_8008D368:
 /* 8008D370 0007E2F0  7C 08 03 A6 */	mtlr r0
 /* 8008D374 0007E2F4  38 21 00 20 */	addi r1, r1, 0x20
 /* 8008D378 0007E2F8  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EE98
+lbl_8060EE98:
+	.skip 0x4
+
+.global lbl_8060EE9C
+lbl_8060EE9C:
+	.skip 0x4
+
+.global lbl_8060EEA0
+lbl_8060EEA0:
+	.skip 0x4
+
+.global lbl_8060EEA4
+lbl_8060EEA4:
+	.skip 0x4

@@ -1,6 +1,7 @@
 INIT_O_FILES :=                                                    \
-	$(BUILD_DIR)/asm/runtime/init/__start.o                          \
-	$(BUILD_DIR)/asm/runtime/init/__ppc_eabi_init.o                             \
+	$(BUILD_DIR)/src/MSL_C/PPC_EABI/Runtime/__start.o              \
+	$(BUILD_DIR)/asm/runtime/init/__start.o                        \
+	$(BUILD_DIR)/asm/runtime/init/__ppc_eabi_init.o                \
 	$(BUILD_DIR)/asm/runtime/init/__mem.o                          \
 	$(BUILD_DIR)/asm/runtime/init/mem_TRK.o                          \
 	$(BUILD_DIR)/asm/runtime/init/__exception.o                          \
@@ -71,6 +72,8 @@ GAME_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/game/managers/ResListMgr.o             \
 	$(BUILD_DIR)/asm/game/gfx/SubWindow.o             \
 	$(BUILD_DIR)/asm/game/managers/VAreaMgr.o             \
+	$(BUILD_DIR)/asm/NW4R/THP/THPSimple.o             \
+	$(BUILD_DIR)/asm/NW4R/THP/THPDraw.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Movie/SceneMenuMovie.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Setting/SceneMenuSetting2.o             \
 	$(BUILD_DIR)/asm/game/managers/VTimerMgr.o             \
@@ -436,7 +439,7 @@ SDK_O_FILES :=                                               \
 	$(BUILD_DIR)/asm/game/system/system.o    \
 	$(BUILD_DIR)/asm/DEMOInit.o
 	
-nw4r_O_FILES :=                                         \
+NW4R_O_FILES :=                                         \
 	$(BUILD_DIR)/asm/nw4r/snd/snd_AxManager.o    \
 	$(BUILD_DIR)/asm/nw4r/snd/snd_AxVoice.o    \
 	$(BUILD_DIR)/asm/nw4r/snd/snd_AxVoiceManager.o    \

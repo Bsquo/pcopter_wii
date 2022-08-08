@@ -1350,3 +1350,13 @@ func_80069DCC:
 /* 80069DEC 0005AD6C  7C 08 03 A6 */	mtlr r0
 /* 80069DF0 0005AD70  38 21 00 90 */	addi r1, r1, 0x90
 /* 80069DF4 0005AD74  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EDD8
+lbl_8060EDD8:
+	.skip 0x4
+
+.global lbl_8060EDDC
+lbl_8060EDDC:
+	.skip 0x4

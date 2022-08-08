@@ -4643,6 +4643,52 @@ lbl_8060DEF0:
 
 	# ROM: 0x1EE0F0
 	.asciz "ResNode"
+	
+.section .sbss, "wa", @nobits
+	
+.global lbl_8060ECE0
+lbl_8060ECE0:
+	.skip 0x1
+
+.global lbl_8060ECE1
+lbl_8060ECE1:
+	.skip 0x1
+
+.global lbl_8060ECE2
+lbl_8060ECE2:
+	.skip 0x1
+
+.global lbl_8060ECE3
+lbl_8060ECE3:
+	.skip 0x1
+
+.global lbl_8060ECE4
+lbl_8060ECE4:
+	.skip 0x1
+
+.global lbl_8060ECE5
+lbl_8060ECE5:
+	.skip 0x1
+
+.global lbl_8060ECE6
+lbl_8060ECE6:
+	.skip 0x1
+
+.global lbl_8060ECE7
+lbl_8060ECE7:
+	.skip 0x1
+
+.global lbl_8060ECE8
+lbl_8060ECE8:
+	.skip 0x1
+
+.global lbl_8060ECE9
+lbl_8060ECE9:
+	.skip 0x1
+
+.global lbl_8060ECEA
+lbl_8060ECEA:
+	.skip 0x6
 
 .section .sdata2, "a", @progbits
 

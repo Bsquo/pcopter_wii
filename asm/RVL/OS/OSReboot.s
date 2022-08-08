@@ -36,3 +36,13 @@ func_8008E964:
 /* 8008E96C 0007F8EC  80 0D 90 C4 */	lwz r0, lbl_8060EEC4@sda21(r13)
 /* 8008E970 0007F8F0  90 04 00 00 */	stw r0, 0x0(r4)
 /* 8008E974 0007F8F4  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EEC0
+lbl_8060EEC0:
+	.skip 0x4
+
+.global lbl_8060EEC4
+lbl_8060EEC4:
+	.skip 0x4

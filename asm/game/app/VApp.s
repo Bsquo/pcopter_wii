@@ -497,6 +497,16 @@ __vt__5CVApp:
 	.4byte lbl_80023668
 	.4byte lbl_800233A8
 	.4byte func_8002327C
+	
+.section .sbss, "wa", @nobits
+
+.global lbl_8060ED58
+lbl_8060ED58:
+	.skip 0x1
+
+.global lbl_8060ED59
+lbl_8060ED59:
+	.skip 0x7
 
 .section .sdata2, "a", @progbits
 

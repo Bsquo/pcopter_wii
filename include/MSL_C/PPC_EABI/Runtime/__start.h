@@ -2,8 +2,8 @@
 // https://github.com/CelestialAmber/xenoblade/blob/main/include/MSL_C/PPC_EABI/Runtime/__start.h
 // https://github.com/doldecomp/melee/blob/master/src/dolphin/os/init/__start.h
 
-#include "types.h"
 #include "include/RVL/db/db.h"
+#include "types.h"
 
 #define PAD3_BUTTON_ADDR        0x800030E4
 #define OS_RESET_RESTART        0

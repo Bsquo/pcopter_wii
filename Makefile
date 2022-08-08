@@ -149,8 +149,8 @@ MAP     := $(BUILD_DIR)/pcopter_wii_eur.map
 
 include obj_files.mk
 
-O_FILES := $(INIT_O_FILES) $(EXTAB_O_FILES) $(EXTABINDEX_O_FILES) $(GAME_O_FILES) \
-           $(SDK_O_FILES) $(NW4R_O_FILES) $(CTORS_O_FILES) $(DTORS_O_FILES)       \
+O_FILES := $(EXTAB_O_FILES) $(EXTABINDEX_O_FILES) $(GAME_O_FILES) \
+           $(SDK_O_FILES) $(START_O_FILES) $(SDK_2_O_FILES) $(NW4R_O_FILES) $(CTORS_O_FILES) $(DTORS_O_FILES)       \
 		   $(RODATA_O_FILES) $(DATA_O_FILES) $(BSS_O_FILES) $(SDATA_O_FILES)      \
 		   $(SBSS_O_FILES) $(SDATA2_O_FILES) $(SBSS2_O_FILES)
 

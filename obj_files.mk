@@ -1,13 +1,3 @@
-INIT_O_FILES :=                                                    \
-	$(BUILD_DIR)/src/MSL_C/PPC_EABI/Runtime/__start.o              \
-	$(BUILD_DIR)/asm/runtime/init/__start.o                        \
-	$(BUILD_DIR)/asm/runtime/init/__ppc_eabi_init.o                \
-	$(BUILD_DIR)/asm/runtime/init/__mem.o                          \
-	$(BUILD_DIR)/asm/runtime/init/mem_TRK.o                          \
-	$(BUILD_DIR)/asm/runtime/init/__exception.o                          \
-	$(BUILD_DIR)/asm/runtime/init/dolphin_trk.o                          \
-	$(BUILD_DIR)/asm/runtime/init/math_geometry.o
-
 EXTAB_O_FILES :=                                                   \
     $(BUILD_DIR)/asm/extab_.o
 
@@ -175,6 +165,18 @@ SDK_O_FILES :=                                               \
 	$(BUILD_DIR)/asm/RVL/OS/OSUtf.o            \
 	$(BUILD_DIR)/asm/RVL/OS/OSIpc.o            \
 	$(BUILD_DIR)/asm/RVL/OS/OSStateTM.o            \
+	
+START_O_FILES :=   \
+	$(BUILD_DIR)/src/MSL_C/PPC_EABI/Runtime/__start.o   \
+	$(BUILD_DIR)/asm/runtime/init/__start.o   \
+	$(BUILD_DIR)/asm/runtime/init/__ppc_eabi_init.o                \
+	$(BUILD_DIR)/asm/runtime/init/__mem.o                          \
+	$(BUILD_DIR)/asm/runtime/init/mem_TRK.o                          \
+	$(BUILD_DIR)/asm/runtime/init/__exception.o                          \
+	$(BUILD_DIR)/asm/runtime/init/dolphin_trk.o                          \
+	$(BUILD_DIR)/asm/runtime/init/math_geometry.o
+	
+SDK_2_O_FILES :=   								\
 	$(BUILD_DIR)/asm/RVL/OS/OSPlayRecord.o            \
 	$(BUILD_DIR)/asm/RVL/OS/OSStateFlags.o            \
 	$(BUILD_DIR)/asm/RVL/OS/OSNet.o            \

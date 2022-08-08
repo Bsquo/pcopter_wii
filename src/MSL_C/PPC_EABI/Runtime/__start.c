@@ -8,7 +8,7 @@ void __check_pad3() {
 	}
 	return;
 }
-/*
+
 void __set_debug_bba() {
 	Debug_BBA = 1;
 }
@@ -16,7 +16,7 @@ void __set_debug_bba() {
 u8 __get_debug_bba() {
 	return Debug_BBA;
 }
-
+/*
 __declspec (weak) asm void __start() {
     nofralloc
 	bl __init_registers

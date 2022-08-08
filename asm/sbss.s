@@ -2,66 +2,6 @@
 
 .section .sbss, "wa", @nobits  # 0x8060ECE0 - 0x8060F820 ; 0x00000B40
 
-.global Debug_BBA
-Debug_BBA:
-	.skip 0x8
-
-.global lbl_8060EF18
-lbl_8060EF18:
-	.skip 0x4
-
-.global lbl_8060EF1C
-lbl_8060EF1C:
-	.skip 0x4
-
-.global lbl_8060EF20
-lbl_8060EF20:
-	.skip 0x4
-
-.global lbl_8060EF24
-lbl_8060EF24:
-	.skip 0x4
-
-.global lbl_8060EF28
-lbl_8060EF28:
-	.skip 0x4
-
-.global lbl_8060EF2C
-lbl_8060EF2C:
-	.skip 0x4
-
-.global lbl_8060EF30
-lbl_8060EF30:
-	.skip 0x4
-
-.global lbl_8060EF34
-lbl_8060EF34:
-	.skip 0x4
-
-.global lbl_8060EF38
-lbl_8060EF38:
-	.skip 0x4
-
-.global lbl_8060EF3C
-lbl_8060EF3C:
-	.skip 0x4
-
-.global lbl_8060EF40
-lbl_8060EF40:
-	.skip 0x4
-
-.global lbl_8060EF44
-lbl_8060EF44:
-	.skip 0x4
-
-.global lbl_8060EF48
-lbl_8060EF48:
-	.skip 0x4
-
-.global lbl_8060EF4C
-lbl_8060EF4C:
-	.skip 0x4
-
 .global lbl_8060EF50
 lbl_8060EF50:
 	.skip 0x8

@@ -539,3 +539,37 @@ func_80092380:
 /* 8009238C 0008330C  7C 08 03 A6 */	mtlr r0
 /* 80092390 00083310  38 21 00 20 */	addi r1, r1, 0x20
 /* 80092394 00083314  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EF18
+lbl_8060EF18:
+	.skip 0x4
+
+.global lbl_8060EF1C
+lbl_8060EF1C:
+	.skip 0x4
+
+.global lbl_8060EF20
+lbl_8060EF20:
+	.skip 0x4
+
+.global lbl_8060EF24
+lbl_8060EF24:
+	.skip 0x4
+
+.global lbl_8060EF28
+lbl_8060EF28:
+	.skip 0x4
+
+.global lbl_8060EF2C
+lbl_8060EF2C:
+	.skip 0x4
+
+.global lbl_8060EF30
+lbl_8060EF30:
+	.skip 0x4
+
+.global lbl_8060EF34
+lbl_8060EF34:
+	.skip 0x4

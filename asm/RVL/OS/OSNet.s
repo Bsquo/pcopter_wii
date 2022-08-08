@@ -463,3 +463,29 @@ lbl_80092B28:
 /* 80092B2C 00083AAC  38 60 00 00 */	li r3, 0x0
 /* 80092B30 00083AB0  90 0D 91 3C */	stw r0, lbl_8060EF3C@sda21(r13)
 /* 80092B34 00083AB4  4E 80 00 20 */	blr
+
+.section .sbss, "wa", @nobits
+
+.global lbl_8060EF38
+lbl_8060EF38:
+	.skip 0x4
+
+.global lbl_8060EF3C
+lbl_8060EF3C:
+	.skip 0x4
+
+.global lbl_8060EF40
+lbl_8060EF40:
+	.skip 0x4
+
+.global lbl_8060EF44
+lbl_8060EF44:
+	.skip 0x4
+
+.global lbl_8060EF48
+lbl_8060EF48:
+	.skip 0x4
+
+.global lbl_8060EF4C
+lbl_8060EF4C:
+	.skip 0x4

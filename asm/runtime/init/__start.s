@@ -2,17 +2,6 @@
 
 .section .init, "ax", @progbits  # 0x80004000 - 0x800064E0 ; 0x000024E0
 
-.global __set_debug_bba
-__set_debug_bba:
-/* 80004028 00000128  38 00 00 01 */	li r0, 0x1
-/* 8000402C 0000012C  98 0D 91 10 */	stb r0, Debug_BBA@sda21(r13)
-/* 80004030 00000130  4E 80 00 20 */	blr
-
-.global __get_debug_bba
-__get_debug_bba:
-/* 80004034 00000134  88 6D 91 10 */	lbz r3, Debug_BBA@sda21(r13)
-/* 80004038 00000138  4E 80 00 20 */	blr
-
 .global __start
 __start:
 /* 8000403C 0000013C  48 00 01 6D */	bl __init_registers
@@ -216,3 +205,14 @@ lbl_800042C4:
 /* 800042D4 000003D4  7C 08 03 A6 */	mtlr r0
 /* 800042D8 000003D8  38 21 00 20 */	addi r1, r1, 0x20
 /* 800042DC 000003DC  4E 80 00 20 */	blr
+
+/* Because Debug_BBA is a 1 byte variable, there's 7 seemingly
+unused bytes until the first .bss variable of the next translation unit (lbl_8060EF18)
+
+This is a temporary solution that adds the 7 other bytes, until I figure out a better solution. */
+
+.section .sbss, "wa", @nobits
+
+.global DBG_BBA_PADDING
+DBG_BBA_PADDING:
+	.skip 0x7

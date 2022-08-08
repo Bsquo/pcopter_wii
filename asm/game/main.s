@@ -4690,7 +4690,7 @@ lbl_8060ECE9:
 lbl_8060ECEA:
 	.skip 0x6
 
-.section .sdata2, "a", @progbits
+.section .sdata2, "wa", @progbits
 
 .global lbl_8060F820
 lbl_8060F820:

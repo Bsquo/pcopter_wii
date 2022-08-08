@@ -914,7 +914,7 @@ func_8002D62C:
 /* 8002D62C 0001E5AC  38 63 01 8C */	addi r3, r3, 0x18c
 /* 8002D630 0001E5B0  48 10 00 88 */	b func_8012D6B8
 
-.section .sdata2, "a", @progbits
+.section .sdata2, "wa", @progbits
 
 .global lbl_8060FA18
 lbl_8060FA18:

@@ -1,6 +1,6 @@
 .include "macros.s"
 
-.section extab_, "wa"  # 0x800064E0 - 0x8000CB00 ; 0x00006620
+.section extab_, "a"  # 0x800064E0 - 0x8000CB00 ; 0x00006620
 
 .global lbl_800064E0
 lbl_800064E0:

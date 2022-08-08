@@ -3058,7 +3058,7 @@ __RTTI__Q34nw4r3g3d18ICalcWorldCallback:
 	.4byte lbl_801B9B18
 	.4byte 0
 
-.section .sdata2, "a", @progbits
+.section .sdata2, "wa", @progbits
 
 .global lbl_8060F970
 lbl_8060F970:

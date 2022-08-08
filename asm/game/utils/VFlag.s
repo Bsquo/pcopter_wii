@@ -9,7 +9,7 @@ __RTTI__6CVFlag:
 	.4byte _42863
 	.4byte 0
 
-.section .sdata2, "a", @progbits
+.section .sdata2, "wa", @progbits
 
 .global _42863
 _42863:

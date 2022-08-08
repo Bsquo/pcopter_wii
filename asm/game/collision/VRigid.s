@@ -812,7 +812,7 @@ lbl_801CB808:
 	.4byte lbl_800230B8
 	.4byte func_8002B6FC
 
-.section .sdata2, "a", @progbits
+.section .sdata2, "wa", @progbits
 
 .global lbl_8060F9E8
 lbl_8060F9E8:

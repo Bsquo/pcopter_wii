@@ -171,7 +171,7 @@ __RTTI__6CVList:
 	.4byte _43046
 	.4byte 0
 
-.section .sdata2, "a", @progbits
+.section .sdata2, "wa", @progbits
 
 .global _43178
 _43178:

@@ -5019,7 +5019,7 @@ lbl_8060ED38:
 lbl_8060ED3C:
 	.skip 0x4
 
-.section .sdata2, "a", @progbits
+.section .sdata2, "wa", @progbits
 
 .global _53061
 _53061:

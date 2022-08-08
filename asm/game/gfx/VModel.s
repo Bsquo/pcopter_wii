@@ -3808,7 +3808,7 @@ lbl_8060DFE8:
 	.4byte lbl_801B9CB0
 	.4byte 0
 
-.section .sdata2, "a", @progbits
+.section .sdata2, "wa", @progbits
 
 .global lbl_8060F9E0
 lbl_8060F9E0:

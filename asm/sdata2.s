@@ -1,6 +1,6 @@
 .include "macros.s"
 
-.section .sdata2, "a", @progbits  # 0x8060F820 - 0x80611F20 ; 0x00002700
+.section .sdata2, "wa", @progbits  # 0x8060F820 - 0x80611F20 ; 0x00002700
 
 .global lbl_8060FA38
 lbl_8060FA38:

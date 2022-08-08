@@ -2011,7 +2011,7 @@ __RTTI__5CVApp:
 lbl_8060ECF0:
 	.skip 0x8
 
-.section .sdata2, "a", @progbits
+.section .sdata2, "wa", @progbits
 
 .global lbl_8060F828
 lbl_8060F828:

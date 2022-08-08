@@ -1,6 +1,6 @@
 .include "macros.s"
 
-.section .sdata2, "a", @progbits
+.section .sdata2, "wa", @progbits
 
 .global _42989
 _42989:

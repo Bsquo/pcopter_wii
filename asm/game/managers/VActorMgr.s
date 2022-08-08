@@ -456,7 +456,7 @@ lbl_8060E010:
 	.4byte lbl_801BA1F0
 	.4byte 0
 
-.section .sdata2, "a", @progbits
+.section .sdata2, "wa", @progbits
 
 .global lbl_8060FA20
 lbl_8060FA20:

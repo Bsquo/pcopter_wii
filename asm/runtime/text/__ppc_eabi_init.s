@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80092E28
-func_80092E28:
+.global __init_user
+__init_user:
 /* 80092E28 00083DA8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80092E2C 00083DAC  7C 08 02 A6 */	mflr r0
 /* 80092E30 00083DB0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -38,8 +38,8 @@ func_80092E70:
 /* 80092E88 00083E08  38 21 00 10 */	addi r1, r1, 0x10
 /* 80092E8C 00083E0C  4E 80 00 20 */	blr
 
-.global func_80092E90
-func_80092E90:
+.global exit
+exit:
 /* 80092E90 00083E10  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80092E94 00083E14  7C 08 02 A6 */	mflr r0
 /* 80092E98 00083E18  90 01 00 14 */	stw r0, 0x14(r1)

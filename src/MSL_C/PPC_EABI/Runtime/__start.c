@@ -16,7 +16,7 @@ void __set_debug_bba() {
 u8 __get_debug_bba() {
 	return Debug_BBA;
 }
-/*
+
 __declspec (weak) asm void __start() {
     nofralloc
 	bl __init_registers
@@ -187,7 +187,7 @@ inline static void __init_bss_section(void* dst, unsigned long size) {
 		memset(dst, 0, size);
 	}
 }
-
+/*
 void __init_data() {
 	__rom_copy_info* dci;
 	__bss_init_info* bii;

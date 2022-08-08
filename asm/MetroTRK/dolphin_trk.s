@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global lbl_800CA108
-lbl_800CA108:
+.global InitMetroTRK
+InitMetroTRK:
 /* 800CA108 000BB088  38 21 FF FC */	addi r1, r1, -0x4
 /* 800CA10C 000BB08C  90 61 00 00 */	stw r3, 0x0(r1)
 /* 800CA110 000BB090  3C 60 80 58 */	lis r3, lbl_805839D8@h
@@ -44,8 +44,8 @@ lbl_800CA198:
 /* 800CA198 000BB118  48 00 02 8C */	b func_800CA424
 /* 800CA19C 000BB11C  4E 80 00 20 */	blr
 
-.global func_800CA1A0
-func_800CA1A0:
+.global InitMetroTRK_BBA
+InitMetroTRK_BBA:
 /* 800CA1A0 000BB120  38 21 FF FC */	addi r1, r1, -0x4
 /* 800CA1A4 000BB124  90 61 00 00 */	stw r3, 0x0(r1)
 /* 800CA1A8 000BB128  3C 60 80 58 */	lis r3, lbl_805839D8@h

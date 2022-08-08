@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80086654
-func_80086654:
+.global DBInit
+DBInit:
 /* 80086654 000775D4  3C 80 80 00 */	lis r4, 0x80000040@ha
 /* 80086658 000775D8  3C 60 80 08 */	lis r3, lbl_800866C4@ha
 /* 8008665C 000775DC  38 A4 00 40 */	addi r5, r4, 0x80000040@l

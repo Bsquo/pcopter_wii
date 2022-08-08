@@ -512,7 +512,11 @@ lbl_8060EF08:
 
 .global lbl_8060EF0C
 lbl_8060EF0C:
-	.skip 0xC
+	.skip 0x4
+	
+.global Debug_BBA
+Debug_BBA:
+	.skip 0x8
 
 .global lbl_8060EF18
 lbl_8060EF18:

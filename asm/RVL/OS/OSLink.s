@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8008DB00
-func_8008DB00:
+.global __OSModuleInit
+__OSModuleInit:
 /* 8008DB00 0007EA80  38 00 00 00 */	li r0, 0x0
 /* 8008DB04 0007EA84  3C 60 80 00 */	lis r3, 0x800030CC@ha
 /* 8008DB08 0007EA88  90 03 30 CC */	stw r0, 0x800030CC@l(r3)

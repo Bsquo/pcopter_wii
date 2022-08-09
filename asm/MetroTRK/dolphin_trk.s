@@ -223,8 +223,8 @@ lbl_800CA3F8:
 /* 800CA3FC 000BB37C  64 03 80 00 */	oris r3, r0, 0x8000
 /* 800CA400 000BB380  4E 80 00 20 */	blr
 
-.global func_800CA404
-func_800CA404:
+.global EnableMetroTRKInterrupts
+EnableMetroTRKInterrupts:
 /* 800CA404 000BB384  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800CA408 000BB388  7C 08 02 A6 */	mflr r0
 /* 800CA40C 000BB38C  90 01 00 14 */	stw r0, 0x14(r1)

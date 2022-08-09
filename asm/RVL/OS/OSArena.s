@@ -2,43 +2,43 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80088554
-func_80088554:
+.global OSGetMEM1ArenaHi
+OSGetMEM1ArenaHi:
 /* 80088554 000794D4  80 6D 90 70 */	lwz r3, lbl_8060EE70@sda21(r13)
 /* 80088558 000794D8  4E 80 00 20 */	blr
 
-.global func_8008855C
-func_8008855C:
+.global OSGetMEM2ArenaHi
+OSGetMEM2ArenaHi:
 /* 8008855C 000794DC  80 6D 90 74 */	lwz r3, lbl_8060EE74@sda21(r13)
 /* 80088560 000794E0  4E 80 00 20 */	blr
 
-.global func_80088564
-func_80088564:
+.global OSGetArenaHi
+OSGetArenaHi:
 /* 80088564 000794E4  80 6D 90 70 */	lwz r3, lbl_8060EE70@sda21(r13)
 /* 80088568 000794E8  4E 80 00 20 */	blr
 
-.global func_8008856C
-func_8008856C:
+.global OSGetMEM1ArenaLo
+OSGetMEM1ArenaLo:
 /* 8008856C 000794EC  80 6D 89 58 */	lwz r3, lbl_8060E758@sda21(r13)
 /* 80088570 000794F0  4E 80 00 20 */	blr
 
-.global func_80088574
-func_80088574:
+.global OSGetMEM2ArenaLo
+OSGetMEM2ArenaLo:
 /* 80088574 000794F4  80 6D 89 5C */	lwz r3, lbl_8060E75C@sda21(r13)
 /* 80088578 000794F8  4E 80 00 20 */	blr
 
-.global func_8008857C
-func_8008857C:
+.global OSGetArenaLo
+OSGetArenaLo:
 /* 8008857C 000794FC  80 6D 89 58 */	lwz r3, lbl_8060E758@sda21(r13)
 /* 80088580 00079500  4E 80 00 20 */	blr
 
-.global func_80088584
-func_80088584:
+.global OSSetMEM1ArenaHi
+OSSetMEM1ArenaHi:
 /* 80088584 00079504  90 6D 90 70 */	stw r3, lbl_8060EE70@sda21(r13)
 /* 80088588 00079508  4E 80 00 20 */	blr
 
-.global func_8008858C
-func_8008858C:
+.global OSSetMEM2ArenaHi
+OSSetMEM2ArenaHi:
 /* 8008858C 0007950C  90 6D 90 74 */	stw r3, lbl_8060EE74@sda21(r13)
 /* 80088590 00079510  4E 80 00 20 */	blr
 
@@ -47,13 +47,13 @@ func_80088594:
 /* 80088594 00079514  90 6D 90 70 */	stw r3, lbl_8060EE70@sda21(r13)
 /* 80088598 00079518  4E 80 00 20 */	blr
 
-.global func_8008859C
-func_8008859C:
+.global OSSetMEM1ArenaLo
+OSSetMEM1ArenaLo:
 /* 8008859C 0007951C  90 6D 89 58 */	stw r3, lbl_8060E758@sda21(r13)
 /* 800885A0 00079520  4E 80 00 20 */	blr
 
-.global func_800885A4
-func_800885A4:
+.global OSSetMEM2ArenaLo
+OSSetMEM2ArenaLo:
 /* 800885A4 00079524  90 6D 89 5C */	stw r3, lbl_8060E75C@sda21(r13)
 /* 800885A8 00079528  4E 80 00 20 */	blr
 

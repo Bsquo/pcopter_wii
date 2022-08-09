@@ -8,20 +8,20 @@ func_8008DDEC:
 /* 8008DDF0 0007ED70  80 63 31 00 */	lwz r3, 0x80003100@l(r3)
 /* 8008DDF4 0007ED74  4E 80 00 20 */	blr
 
-.global func_8008DDF8
-func_8008DDF8:
+.global OSGetPhysicalMem2Size
+OSGetPhysicalMem2Size:
 /* 8008DDF8 0007ED78  3C 60 80 00 */	lis r3, 0x80003118@ha
 /* 8008DDFC 0007ED7C  80 63 31 18 */	lwz r3, 0x80003118@l(r3)
 /* 8008DE00 0007ED80  4E 80 00 20 */	blr
 
-.global func_8008DE04
-func_8008DE04:
+.global OSGetConsoleSimulatedMem1Size
+OSGetConsoleSimulatedMem1Size:
 /* 8008DE04 0007ED84  3C 60 80 00 */	lis r3, 0x80003104@ha
 /* 8008DE08 0007ED88  80 63 31 04 */	lwz r3, 0x80003104@l(r3)
 /* 8008DE0C 0007ED8C  4E 80 00 20 */	blr
 
-.global func_8008DE10
-func_8008DE10:
+.global OSGetConsoleSimulatedMem2Size
+OSGetConsoleSimulatedMem2Size:
 /* 8008DE10 0007ED90  3C 60 80 00 */	lis r3, 0x8000311C@ha
 /* 8008DE14 0007ED94  80 63 31 1C */	lwz r3, 0x8000311C@l(r3)
 /* 8008DE18 0007ED98  4E 80 00 20 */	blr
@@ -448,7 +448,7 @@ lbl_8008E43C:
 /* 8008E458 0007F3D8  40 82 00 1C */	bne lbl_8008E474
 /* 8008E45C 0007F3DC  3C 60 81 80 */	lis r3, 0x8180
 /* 8008E460 0007F3E0  3C 80 01 80 */	lis r4, 0x180
-/* 8008E464 0007F3E4  4B FF A6 6D */	bl func_80088AD0
+/* 8008E464 0007F3E4  4B FF A6 6D */	bl DCInvalidateRange
 /* 8008E468 0007F3E8  38 00 00 02 */	li r0, 0x2
 /* 8008E46C 0007F3EC  3C 60 CC 00 */	lis r3, 0xCC004028@ha
 /* 8008E470 0007F3F0  B0 03 40 28 */	sth r0, 0xCC004028@l(r3)
@@ -520,14 +520,14 @@ func_8008E53C:
 /* 8008E548 0007F4C8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8008E54C 0007F4CC  4E 80 00 20 */	blr
 
-.global func_8008E550
-func_8008E550:
+.global __OSInitMemoryProtection
+__OSInitMemoryProtection:
 /* 8008E550 0007F4D0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8008E554 0007F4D4  7C 08 02 A6 */	mflr r0
 /* 8008E558 0007F4D8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8008E55C 0007F4DC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8008E560 0007F4E0  93 C1 00 08 */	stw r30, 0x8(r1)
-/* 8008E564 0007F4E4  4B FF EE 19 */	bl func_8008D37C
+/* 8008E564 0007F4E4  4B FF EE 19 */	bl OSDisableInterrupts
 /* 8008E568 0007F4E8  3C 80 CC 00 */	lis r4, 0xCC004020@ha
 /* 8008E56C 0007F4EC  38 00 00 00 */	li r0, 0x0
 /* 8008E570 0007F4F0  B0 04 40 20 */	sth r0, 0xCC004020@l(r4)

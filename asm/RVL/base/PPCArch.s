@@ -53,33 +53,33 @@ func_80086534:
 /* 8008653C 000774BC  60 00 00 00 */	nop
 /* 80086540 000774C0  4B FF FF F4 */	b func_80086534
 
-.global func_80086544
-func_80086544:
+.global PPCMtmmcr0
+PPCMtmmcr0:
 /* 80086544 000774C4  7C 78 EB A6 */	mtspr 952, r3
 /* 80086548 000774C8  4E 80 00 20 */	blr
 
-.global func_8008654C
-func_8008654C:
+.global PPCMtmmcr1
+PPCMtmmcr1:
 /* 8008654C 000774CC  7C 7C EB A6 */	mtspr 956, r3
 /* 80086550 000774D0  4E 80 00 20 */	blr
 
-.global func_80086554
-func_80086554:
+.global PPCMtpmc1
+PPCMtpmc1:
 /* 80086554 000774D4  7C 79 EB A6 */	mtspr 953, r3
 /* 80086558 000774D8  4E 80 00 20 */	blr
 
-.global func_8008655C
-func_8008655C:
+.global PPCMtpmc2
+PPCMtpmc2:
 /* 8008655C 000774DC  7C 7A EB A6 */	mtspr 954, r3
 /* 80086560 000774E0  4E 80 00 20 */	blr
 
-.global func_80086564
-func_80086564:
+.global PPCMtpmc3
+PPCMtpmc3:
 /* 80086564 000774E4  7C 7D EB A6 */	mtspr 957, r3
 /* 80086568 000774E8  4E 80 00 20 */	blr
 
-.global func_8008656C
-func_8008656C:
+.global PPCMtpmc4
+PPCMtpmc4:
 /* 8008656C 000774EC  7C 7E EB A6 */	mtspr 958, r3
 /* 80086570 000774F0  4E 80 00 20 */	blr
 
@@ -107,13 +107,13 @@ func_80086594:
 /* 800865B4 00077534  38 21 00 20 */	addi r1, r1, 0x20
 /* 800865B8 00077538  4E 80 00 20 */	blr
 
-.global func_800865BC
-func_800865BC:
+.global PPCMfhid2
+PPCMfhid2:
 /* 800865BC 0007753C  7C 78 E2 A6 */	mfspr r3, 920
 /* 800865C0 00077540  4E 80 00 20 */	blr
 
-.global func_800865C4
-func_800865C4:
+.global PPCMthid2
+PPCMthid2:
 /* 800865C4 00077544  7C 78 E3 A6 */	mtspr 920, r3
 /* 800865C8 00077548  4E 80 00 20 */	blr
 
@@ -122,8 +122,8 @@ func_800865CC:
 /* 800865CC 0007754C  7C 79 E3 A6 */	mtspr 921, r3
 /* 800865D0 00077550  4E 80 00 20 */	blr
 
-.global func_800865D4
-func_800865D4:
+.global PPCDisableSpeculation
+PPCDisableSpeculation:
 /* 800865D4 00077554  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800865D8 00077558  7C 08 02 A6 */	mflr r0
 /* 800865DC 0007755C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -135,13 +135,13 @@ func_800865D4:
 /* 800865F4 00077574  38 21 00 10 */	addi r1, r1, 0x10
 /* 800865F8 00077578  4E 80 00 20 */	blr
 
-.global func_800865FC
-func_800865FC:
+.global PPCSetFpNonIEEEMode
+PPCSetFpNonIEEEMode:
 /* 800865FC 0007757C  FF A0 00 4C */	mtfsb1 29
 /* 80086600 00077580  4E 80 00 20 */	blr
 
-.global func_80086604
-func_80086604:
+.global PPCMthid4
+PPCMthid4:
 /* 80086604 00077584  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80086608 00077588  7C 08 02 A6 */	mflr r0
 /* 8008660C 0007758C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -155,7 +155,7 @@ lbl_80086628:
 /* 80086628 000775A8  3C 60 80 1D */	lis r3, lbl_801CD848@ha
 /* 8008662C 000775AC  38 63 D8 48 */	addi r3, r3, lbl_801CD848@l
 /* 80086630 000775B0  4C C6 31 82 */	crclr 6
-/* 80086634 000775B4  48 00 33 41 */	bl func_80089974
+/* 80086634 000775B4  48 00 33 41 */	bl OSReport
 /* 80086638 000775B8  67 FF 80 00 */	oris r31, r31, 0x8000
 /* 8008663C 000775BC  7F F3 FB A6 */	mtspr 1011, r31
 

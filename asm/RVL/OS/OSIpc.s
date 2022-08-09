@@ -12,8 +12,8 @@ func_80091630:
 /* 80091630 000825B0  80 6D 89 90 */	lwz r3, lbl_8060E790@sda21(r13)
 /* 80091634 000825B4  4E 80 00 20 */	blr
 
-.global func_80091638
-func_80091638:
+.global __OSInitIPCBuffer
+__OSInitIPCBuffer:
 /* 80091638 000825B8  3C 60 80 00 */	lis r3, 0x80003130@ha
 /* 8009163C 000825BC  80 03 31 30 */	lwz r0, 0x80003130@l(r3)
 /* 80091640 000825C0  90 0D 89 90 */	stw r0, lbl_8060E790@sda21(r13)

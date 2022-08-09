@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8008D37C
-func_8008D37C:
+.global OSDisableInterrupts
+OSDisableInterrupts:
 /* 8008D37C 0007E2FC  7C 60 00 A6 */	mfmsr r3
 /* 8008D380 0007E300  54 64 04 5E */	rlwinm r4, r3, 0, 17, 15
 /* 8008D384 0007E304  7C 80 01 24 */	mtmsr r4
@@ -13,8 +13,8 @@ lbl_8008D388:
 /* 8008D388 0007E308  54 63 8F FE */	rlwinm r3, r3, 17, 31, 31
 /* 8008D38C 0007E30C  4E 80 00 20 */	blr
 
-.global func_8008D390
-func_8008D390:
+.global OSEnableInterrupts
+OSEnableInterrupts:
 /* 8008D390 0007E310  7C 60 00 A6 */	mfmsr r3
 /* 8008D394 0007E314  60 64 80 00 */	ori r4, r3, 0x8000
 /* 8008D398 0007E318  7C 80 01 24 */	mtmsr r4
@@ -52,8 +52,8 @@ func_8008D3DC:
 /* 8008D3E4 0007E364  7C 64 00 2E */	lwzx r3, r4, r0
 /* 8008D3E8 0007E368  4E 80 00 20 */	blr
 
-.global func_8008D3EC
-func_8008D3EC:
+.global __OSInterruptInit
+__OSInterruptInit:
 /* 8008D3EC 0007E36C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8008D3F0 0007E370  7C 08 02 A6 */	mflr r0
 /* 8008D3F4 0007E374  38 80 00 00 */	li r4, 0x0
@@ -76,7 +76,7 @@ func_8008D3EC:
 /* 8008D438 0007E3B8  3B C0 FF F0 */	li r30, -0x10
 /* 8008D43C 0007E3BC  90 A4 30 04 */	stw r5, 0xCC003004@l(r4)
 /* 8008D440 0007E3C0  90 03 00 34 */	stw r0, 0xCD000034@l(r3)
-/* 8008D444 0007E3C4  4B FF FF 39 */	bl func_8008D37C
+/* 8008D444 0007E3C4  4B FF FF 39 */	bl OSDisableInterrupts
 /* 8008D448 0007E3C8  80 1F 00 C4 */	lwz r0, 0xc4(r31)
 /* 8008D44C 0007E3CC  7C 7D 1B 78 */	mr r29, r3
 /* 8008D450 0007E3D0  80 9F 00 C8 */	lwz r4, 0xc8(r31)
@@ -312,7 +312,7 @@ func_8008D70C:
 /* 8008D71C 0007E69C  7C 7F 1B 78 */	mr r31, r3
 /* 8008D720 0007E6A0  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 8008D724 0007E6A4  93 A1 00 14 */	stw r29, 0x14(r1)
-/* 8008D728 0007E6A8  4B FF FC 55 */	bl func_8008D37C
+/* 8008D728 0007E6A8  4B FF FC 55 */	bl OSDisableInterrupts
 /* 8008D72C 0007E6AC  3C 80 80 00 */	lis r4, 0x800000C4@ha
 /* 8008D730 0007E6B0  7C 7E 1B 78 */	mr r30, r3
 /* 8008D734 0007E6B4  83 A4 00 C4 */	lwz r29, 0x800000C4@l(r4)
@@ -351,7 +351,7 @@ func_8008D78C:
 /* 8008D79C 0007E71C  7C 7F 1B 78 */	mr r31, r3
 /* 8008D7A0 0007E720  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 8008D7A4 0007E724  93 A1 00 14 */	stw r29, 0x14(r1)
-/* 8008D7A8 0007E728  4B FF FB D5 */	bl func_8008D37C
+/* 8008D7A8 0007E728  4B FF FB D5 */	bl OSDisableInterrupts
 /* 8008D7AC 0007E72C  3C 80 80 00 */	lis r4, 0x800000C4@ha
 /* 8008D7B0 0007E730  7C 7E 1B 78 */	mr r30, r3
 /* 8008D7B4 0007E734  83 A4 00 C4 */	lwz r29, 0x800000C4@l(r4)

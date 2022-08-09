@@ -1804,4 +1804,4 @@ lbl_8060F800:
 
 .global lbl_8060F808
 lbl_8060F808:
-	.skip 0x18
+	.skip 0x4

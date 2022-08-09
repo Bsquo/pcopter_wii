@@ -42,7 +42,3 @@ lbl_801B8340:
 	.4byte lbl_8019157C
 	.4byte lbl_801A4B60
 	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0

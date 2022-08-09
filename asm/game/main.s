@@ -2,8 +2,8 @@
 
 .section .rodata, "a", @progbits 
 
-.global lbl_801B8400
-lbl_801B8400:
+.global _51359
+_51359:
 
 	# ROM: 0x1B4500
 	.asciz "CSceneMenuFreeFlight"
@@ -192,10 +192,10 @@ GetInstance__4CAppFv:
 /* 800116A0 00002620  38 7F 88 C0 */	addi r3, r31, lbl_805088C0@l
 /* 800116A4 00002624  48 00 00 41 */	bl __ct__4CAppFv
 /* 800116A8 00002628  3C 80 80 01 */	lis r4, lbl_80012548@ha
-/* 800116AC 0000262C  3C A0 80 1F */	lis r5, lbl_801F1F00@ha
+/* 800116AC 0000262C  3C A0 80 1F */	lis r5, _51209@ha
 /* 800116B0 00002630  38 7F 88 C0 */	addi r3, r31, -0x7740
 /* 800116B4 00002634  38 84 25 48 */	addi r4, r4, lbl_80012548@l
-/* 800116B8 00002638  38 A5 1F 00 */	addi r5, r5, lbl_801F1F00@l
+/* 800116B8 00002638  38 A5 1F 00 */	addi r5, r5, _51209@l
 /* 800116BC 0000263C  48 0A 12 41 */	bl func_800B28FC
 /* 800116C0 00002640  38 00 00 01 */	li r0, 0x1
 /* 800116C4 00002644  98 0D 8E EA */	stb r0, lbl_8060ECEA@sda21(r13)
@@ -4439,7 +4439,7 @@ lbl_8060DE00:
 lbl_8060DE08:
 
 	# ROM: 0x1EE008
-	.4byte lbl_801B8400
+	.4byte _51359
 	.4byte lbl_801CA588
 
 .global lbl_8060DE10
@@ -4558,7 +4558,7 @@ lbl_8060DE88:
 lbl_8060DE90:
 
 	# ROM: 0x1EE090
-	.4byte lbl_8060F820
+	.4byte _51383
 	.4byte 0
 
 .global lbl_8060DE98
@@ -4692,8 +4692,8 @@ lbl_8060ECEA:
 
 .section .sdata2, "wa", @progbits
 
-.global lbl_8060F820
-lbl_8060F820:
+.global _51383
+_51383:
 
 	# ROM: 0x1EEEE0
 	.asciz "CVScene"

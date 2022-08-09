@@ -187,7 +187,7 @@ inline static void __init_bss_section(void* dst, unsigned long size) {
 		memset(dst, 0, size);
 	}
 }
-/*
+
 void __init_data() {
 	__rom_copy_info* dci;
 	__bss_init_info* bii;
@@ -208,4 +208,3 @@ void __init_data() {
 		bii++;
 	}
 }
-*/

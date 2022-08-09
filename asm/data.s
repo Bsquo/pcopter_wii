@@ -36623,4 +36623,3 @@ lbl_801F1EC8:
 	.4byte lbl_801ADB3C
 	.4byte lbl_801ADB48
 	.4byte lbl_801ADD24
-	.4byte 0

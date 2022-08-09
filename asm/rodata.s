@@ -12942,5 +12942,3 @@ lbl_801C9548:
 	.4byte 0x3F800000
 	.4byte 0x3CC90A35
 	.4byte 0xB99DCF89
-	.4byte 0
-	.4byte 0

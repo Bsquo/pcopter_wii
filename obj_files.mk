@@ -173,8 +173,7 @@ START_O_FILES :=   \
 	$(BUILD_DIR)/asm/runtime/init/__mem.o                          \
 	$(BUILD_DIR)/asm/runtime/init/mem_TRK.o                          \
 	$(BUILD_DIR)/asm/runtime/init/__exception.o                          \
-	$(BUILD_DIR)/asm/runtime/init/dolphin_trk.o                          \
-	$(BUILD_DIR)/asm/runtime/init/math_geometry.o
+	$(BUILD_DIR)/asm/runtime/init/dolphin_trk.o
 	
 SDK_2_O_FILES :=   								\
 	$(BUILD_DIR)/asm/RVL/OS/OSPlayRecord.o            \

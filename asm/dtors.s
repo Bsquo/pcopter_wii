@@ -9,8 +9,3 @@ lbl_801B83E0:
 	.4byte func_800B2914
 	.4byte lbl_800B37B8
 	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0

@@ -14552,8 +14552,3 @@ lbl_8000CAE4:
 	# ROM: 0x1AF8C4
 	.4byte 0x00080000
 	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0

@@ -2717,4 +2717,3 @@ lbl_8060ECD8:
 
 	# ROM: 0x1EEED8
 	.4byte lbl_801F1E80
-	.4byte 0

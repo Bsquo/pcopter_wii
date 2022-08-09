@@ -10940,7 +10940,3 @@ lbl_80611F0C:
 
 	# ROM: 0x1F15CC
 	.4byte 0x3F360B61
-	.4byte 0
-	.4byte 0
-	.4byte 0
-	.4byte 0

@@ -2,18 +2,18 @@
 
 #pragma section code_type ".init"
 
-void __check_pad3() {
+void static __check_pad3() {
 	if ((Pad3Button & 0x0eef) == 0x0eef) {
 		OSResetSystem(OS_RESET_RESTART, 0, FALSE);
 	}
 	return;
 }
 
-void __set_debug_bba() {
+void static __set_debug_bba() {
 	Debug_BBA = 1;
 }
 
-u8 __get_debug_bba() {
+u8 static __get_debug_bba() {
 	return Debug_BBA;
 }
 
@@ -188,7 +188,7 @@ inline static void __init_bss_section(void* dst, unsigned long size) {
 	}
 }
 
-void __init_data() {
+void static __init_data() {
 	__rom_copy_info* dci;
 	__bss_init_info* bii;
 

@@ -1,6 +1,6 @@
 .include "macros.s"
 
-.section .rodata, "a", @progbits 
+.section .rodata, "a", @progbits
 
 .global _51359
 _51359:

@@ -16,9 +16,9 @@ Instead, the project will mainly focus on the game's code, though partial header
 
 1. Obtain a copy of `mwcceppc.exe` and `mwldeppc.exe` from CodeWarrior (GC MW 3.0). Place them in `tools/4199_60831`
 
-2. Obtain `powerpc-eabi-as.exe` and `powerpc-eabi-objcopy.exe`, which can be installed with [devkitPro](https://devkitpro.org/wiki/Getting_Started). These will in `tools/devkitPro/devkitPPC/bin`
+2. Obtain `powerpc-eabi-as.exe` and `powerpc-eabi-objcopy.exe`, which can be installed with [devkitPro](https://devkitpro.org/wiki/Getting_Started). These will go in `tools/devkitPro/devkitPPC/bin`
 3. Run `make`.
-4. If the building was successful, the following text should be printed, meaning the built DOL executable matches the one from the retail version:
+4. If the building process was successful, the following text should be printed, meaning the built DOL executable matches the one from the retail version of the game:
 ```bash
 pcopter_wii_eur: OK
 ```

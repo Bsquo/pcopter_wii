@@ -3,7 +3,8 @@
 ```diff
 - WARNING! -
 
-The DOL executable this repository builds is currently NOT shiftable, meaning adding / subtracting code can make the game crash.
+The DOL executable this repository builds is currently NOT shiftable.
+This means adding / subtracting code can make the game crash.
 ```
 
 This repository contains a work-in-progress decompilation of Radio Helicopter, also known as *MiniCopter: Adventure Flight* in the Americas, and *プチコプターWii アドベンチャーフライト* (*Puchi Copter Wii: Adventure Flight*) in Japan.

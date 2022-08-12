@@ -164,16 +164,21 @@ ifeq ($(WINDOWS),1)
 else
   WINE := wine
 endif
-AS      := $(WINE) tools/powerpc-eabi-as.exe
-OBJCOPY := $(WINE) tools/powerpc-eabi-objcopy.exe
+AS      := $(WINE) tools/devkitPro/devkitPPC/bin/powerpc-eabi-as.exe
+OBJCOPY := $(WINE) tools/devkitPro/devkitPPC/bin/powerpc-eabi-objcopy.exe
 CPP     := cpp -P
-CC      := $(WINE) tools/mwcceppc.exe
-LD      := $(WINE) tools/mwldeppc.exe
+
+# The game and most libraries were compiled using the PowerPC Metrowerks C/C++ Compiler, version 4.1 build 60831
+# (aka GC MW 3.0) s hinted by several strings left in the executable (such as "build : build_date (0x4199_60831)")
+# The HBM SDK library was compiled with (0x4199_60726), but we currently don't have it,
+# so we're using (0x4199_60831) for that as well.
+CC      := $(WINE) tools/4199_60831/mwcceppc.exe
+LD      := $(WINE) tools/4199_60831/mwldeppc.exe
+
+# ELF2DOL (from KAR decomp project): https://github.com/doldecomp/kar/tree/main/tools
 ELF2DOL := tools/elf2dol
 SHA1SUM := sha1sum
 PYTHON  := python
-
-#POSTPROC := tools/postprocess.py
 
 # Options
 INCLUDES := -i . -I- -i include
@@ -181,9 +186,6 @@ INCLUDES := -i . -I- -i include
 ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -fp fmadd -nodefaults
 CFLAGS  := -Cpp_exceptions off -proc gekko -fp fmadd -O4 -nodefaults -use_lmw_stmw on -msgstyle gcc $(INCLUDES)
-
-# for postprocess.py
-PROCFLAGS := -fprologue-fixup=old_stack
 
 # elf2dol needs to know these in order to calculate sbss correctly.
 SDATA_PDHR := 9
@@ -235,4 +237,3 @@ $(BUILD_DIR)/%.o: %.c
 
 $(BUILD_DIR)/%.o: %.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
-#$(PYTHON) $(POSTPROC) $(PROCFLAGS) $@

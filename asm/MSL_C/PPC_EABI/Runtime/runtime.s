@@ -98,8 +98,8 @@ func_800B3088:
 func_800B308C:
 /* 800B308C 000A400C  92 0B FF C0 */	stw r16, -0x40(r11)
 
-.global func_800B3090
-func_800B3090:
+.global _savegpr_17
+_savegpr_17:
 /* 800B3090 000A4010  92 2B FF C4 */	stw r17, -0x3c(r11)
 
 .global func_800B3094

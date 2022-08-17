@@ -1,5 +1,11 @@
 .include "macros.s"
 
+.section .ctors, "a", @progbits
+
+.global __init_cpp_exceptions_reference
+__init_cpp_exceptions_reference:
+	.4byte __sinit__Shadow_cpp
+
 .section .rodata, "a", @progbits
 
 .global lbl_801B97F0

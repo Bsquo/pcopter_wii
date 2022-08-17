@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__ut_FileStream_cpp
+
 .section .text, "ax"
+
 .global func_8018A914
 func_8018A914:
 /* 8018A914 0017B894  2C 04 00 00 */	cmpwi r4, 0x0

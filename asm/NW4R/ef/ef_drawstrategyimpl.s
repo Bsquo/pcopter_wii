@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__ef_drawstrategyimpl_cpp
+
 .section .text, "ax"
+
 .global func_8014F368
 func_8014F368:
 /* 8014F368 001402E8  C0 22 A1 38 */	lfs f1, lbl_80611958@sda21(r2)

@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__ut_DvdLockedFileStream_cpp
+
 .section .text, "ax"
+
 .global func_8018AFF4
 func_8018AFF4:
 /* 8018AFF4 0017BF74  94 21 FF F0 */	stwu r1, -0x10(r1)

@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__resource_cpp
+
 .section .text, "ax"
+
 .global func_801194A0
 func_801194A0:
 /* 801194A0 0010A420  94 21 FF 70 */	stwu r1, -0x90(r1)

@@ -1,5 +1,8 @@
 .include "macros.s"
 
+.section .ctors, "a", @progbits
+.4byte __sinit__locale_cpp
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_800C20AC

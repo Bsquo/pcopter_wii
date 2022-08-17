@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__ef_emform_cpp
+
 .section .text, "ax"
+
 .global lbl_8014B11C
 lbl_8014B11C:
 /* 8014B11C 0013C09C  28 04 00 0A */	cmplwi r4, 0xa

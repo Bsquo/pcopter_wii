@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__ut_DvdFileStream_cpp
+
 .section .text, "ax"
+
 .global lbl_8018AA1C
 lbl_8018AA1C:
 /* 8018AA1C 0017B99C  80 84 00 3C */	lwz r4, 0x3c(r4)

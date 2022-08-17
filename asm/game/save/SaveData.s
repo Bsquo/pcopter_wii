@@ -1,5 +1,8 @@
 .include "macros.s"
 
+.section .ctors, "a", @progbits
+.4byte __sinit__SaveData_cpp
+
 .section .rodata, "a", @progbits 
 
 .global lbl_801BA570

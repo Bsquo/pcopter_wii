@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__snd_BasicSound_cpp
+
 .section .text, "ax"
+
 .global func_80122014
 func_80122014:
 /* 80122014 00112F94  C0 02 9B C4 */	lfs f0, lbl_806113E4@sda21(r2)

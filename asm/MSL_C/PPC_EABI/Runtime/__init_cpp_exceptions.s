@@ -37,3 +37,11 @@ lbl_800B37DC:
 /* 800B37E0 000A4760  7C 08 03 A6 */	mtlr r0
 /* 800B37E4 000A4764  38 21 00 10 */	addi r1, r1, 0x10
 /* 800B37E8 000A4768  4E 80 00 20 */	blr
+
+.section .dtors, "a", @progbits  # 0x801B83E0 - 0x801B8400 ; 0x00000020
+
+.global __destroy_global_chain_reference
+__destroy_global_chain_reference:
+
+	# ROM: 0x1B44E0
+	.4byte lbl_800B37B8

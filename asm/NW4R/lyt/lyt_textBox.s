@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__lyt_textBox_cpp
+
 .section .text, "ax"
+
 .global func_80161264
 func_80161264:
 /* 80161264 001521E4  A8 A4 00 00 */	lha r5, 0x0(r4)

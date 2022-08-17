@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__snd_WaveSound_cpp
+
 .section .text, "ax"
+
 .global func_801385F8
 func_801385F8:
 /* 801385F8 00129578  94 21 FF F0 */	stwu r1, -0x10(r1)

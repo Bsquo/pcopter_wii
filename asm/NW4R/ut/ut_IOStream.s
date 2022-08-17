@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__ut_IOStream_cpp
+
 .section .text, "ax"
+
 .global lbl_8018A8F8
 lbl_8018A8F8:
 /* 8018A8F8 0017B878  38 60 00 00 */	li r3, 0x0

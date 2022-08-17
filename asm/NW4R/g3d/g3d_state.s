@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__g3d_state_cpp
+
 .section .text, "ax"
+
 .global lbl_801A1590
 lbl_801A1590:
 /* 801A1590 00192510  94 21 FF A0 */	stwu r1, -0x60(r1)

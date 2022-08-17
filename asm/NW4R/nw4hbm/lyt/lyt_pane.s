@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__nw4hbm_lyt_pane_cpp
+
 .section .text, "ax"
+
 .global func_8017FF74
 func_8017FF74:
 /* 8017FF74 00170EF4  94 21 FF F0 */	stwu r1, -0x10(r1)

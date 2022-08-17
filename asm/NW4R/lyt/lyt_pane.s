@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__lyt_pane_cpp
+
 .section .text, "ax"
+
 .global func_8015E884
 func_8015E884:
 /* 8015E884 0014F804  94 21 FF C0 */	stwu r1, -0x40(r1)

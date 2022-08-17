@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__ut_LockedCache_cpp
+
 .section .text, "ax"
+
 .global func_8018B394
 func_8018B394:
 /* 8018B394 0017C314  94 21 FF F0 */	stwu r1, -0x10(r1)

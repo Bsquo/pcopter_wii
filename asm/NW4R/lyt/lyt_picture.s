@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__lyt_picture_cpp
+
 .section .text, "ax"
+
 .global func_80160C1C
 func_80160C1C:
 /* 80160C1C 00151B9C  94 21 FF E0 */	stwu r1, -0x20(r1)

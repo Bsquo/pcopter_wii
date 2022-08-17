@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__ef_effectsystem_cpp
+
 .section .text, "ax"
+
 .global lbl_8013AA78
 lbl_8013AA78:
 /* 8013AA78 0012B9F8  94 21 FF E0 */	stwu r1, -0x20(r1)

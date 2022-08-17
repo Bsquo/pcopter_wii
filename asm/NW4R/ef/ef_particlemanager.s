@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__ef_particlemanager_cpp
+
 .section .text, "ax"
+
 .global lbl_80146914
 lbl_80146914:
 /* 80146914 00137894  94 21 FF F0 */	stwu r1, -0x10(r1)

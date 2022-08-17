@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__ut_TextWriterBase_cpp
+
 .section .text, "ax"
+
 .global func_8018DEC8
 func_8018DEC8:
 /* 8018DEC8 0017EE48  94 21 FF F0 */	stwu r1, -0x10(r1)

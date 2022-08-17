@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__report_cpp
+
 .section .text, "ax"
+
 .global func_80118DDC
 func_80118DDC:
 /* 80118DDC 00109D5C  94 21 FF C0 */	stwu r1, -0x40(r1)

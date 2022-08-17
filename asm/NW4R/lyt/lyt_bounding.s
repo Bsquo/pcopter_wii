@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__lyt_bounding_cpp
+
 .section .text, "ax"
+
 .global func_8016505C
 func_8016505C:
 /* 8016505C 00155FDC  94 21 FF F0 */	stwu r1, -0x10(r1)

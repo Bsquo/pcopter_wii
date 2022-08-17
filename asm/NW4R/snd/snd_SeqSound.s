@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__snd_SeqSound_cpp
+
 .section .text, "ax"
+
 .global func_8012950C
 func_8012950C:
 /* 8012950C 0011A48C  94 21 FF F0 */	stwu r1, -0x10(r1)

@@ -657,12 +657,6 @@ NW4R_O_FILES :=                                         \
 	$(BUILD_DIR)/asm/nw4r/math/math_types.o    \
 	$(BUILD_DIR)/asm/nw4r/math/math_geometry.o
 
-CTORS_O_FILES :=                                                   \
-    $(BUILD_DIR)/asm/ctors.o
-
-DTORS_O_FILES :=                                                   \
-    $(BUILD_DIR)/asm/dtors.o
-
 RODATA_O_FILES :=                                                  \
     $(BUILD_DIR)/asm/rodata.o
 

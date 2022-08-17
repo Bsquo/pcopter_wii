@@ -1,5 +1,10 @@
 .include "macros.s"
+
+.section .ctors, "a", @progbits
+.4byte __sinit__ef_resource_cpp
+
 .section .text, "ax"
+
 .global func_80148D78
 func_80148D78:
 /* 80148D78 00139CF8  3C 60 80 5F */	lis r3, lbl_805EFC90@ha

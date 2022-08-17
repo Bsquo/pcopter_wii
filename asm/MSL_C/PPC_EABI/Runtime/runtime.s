@@ -187,8 +187,8 @@ func_800B30F0:
 func_800B30F4:
 /* 800B30F4 000A4074  82 EB FF DC */	lwz r23, -0x24(r11)
 
-.global func_800B30F8
-func_800B30F8:
+.global _restgpr_24
+_restgpr_24:
 /* 800B30F8 000A4078  83 0B FF E0 */	lwz r24, -0x20(r11)
 
 .global func_800B30FC
@@ -283,8 +283,8 @@ lbl_800B31FC:
 /* 800B3200 000A4180  38 60 00 00 */	li r3, 0x0
 /* 800B3204 000A4184  4E 80 00 20 */	blr
 
-.global func_800B3208
-func_800B3208:
+.global __div2i
+__div2i:
 /* 800B3208 000A4188  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800B320C 000A418C  54 69 00 01 */	rlwinm. r9, r3, 0, 0, 0
 /* 800B3210 000A4190  41 82 00 0C */	beq lbl_800B321C
@@ -554,8 +554,8 @@ func_800B3530:
 /* 800B354C 000A44CC  7C 84 28 30 */	slw r4, r4, r5
 /* 800B3550 000A44D0  4E 80 00 20 */	blr
 
-.global func_800B3554
-func_800B3554:
+.global __cvt_sll_flt
+__cvt_sll_flt:
 /* 800B3554 000A44D4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800B3558 000A44D8  54 65 00 01 */	rlwinm. r5, r3, 0, 0, 0
 /* 800B355C 000A44DC  41 82 00 0C */	beq lbl_800B3568
@@ -606,8 +606,8 @@ lbl_800B35F0:
 /* 800B3600 000A4580  38 21 00 10 */	addi r1, r1, 0x10
 /* 800B3604 000A4584  4E 80 00 20 */	blr
 
-.global func_800B3608
-func_800B3608:
+.global __cvt_dbl_usll
+__cvt_dbl_usll:
 /* 800B3608 000A4588  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800B360C 000A458C  D8 21 00 08 */	stfd f1, 0x8(r1)
 /* 800B3610 000A4590  80 61 00 08 */	lwz r3, 0x8(r1)

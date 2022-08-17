@@ -1,6 +1,7 @@
 #include "include/game/utils/VString.h"
 #include "include/game/system/demo.h"
 #include "include/MSL_C/PPC_EABI/Runtime/Gecko_ExceptionPPC.h"
+#include "include/MSL_C/MSL_Common/string.h"
 #include "include/std/string/string.h"
 
 CVString::CVString(): pString(nullptr) {}
@@ -45,6 +46,10 @@ asm void* operator new[](size_t size) {
     /* 80020684 00011604  4E 80 00 20 */	blr
 }
 /*
+void* operator new[](size_t size) throw() {
+    return demo::Alloc(size, 4, *(demo::Memory*)0);
+}
+*/
 CVString::~CVString() {
     Release();
 }
@@ -140,7 +145,11 @@ asm void operator delete[](void* ptr) {
     mtlr r0
     blr
 }
-
+/*
+void operator delete[](void* ptr) throw() {
+    return demo::Free(ptr);
+}
+*/
 u32 CVString::GetLength() {
     if (pString != nullptr) {
         return strlen(pString);
@@ -168,7 +177,12 @@ u32 CVString::CheckLast(char* string) {
     }
 }
 
-char* std::strchr(char* str, int character) {
-    return strchr(str, character);
-}
-*/
+
+// Because the std::strchr and the C strchr have the same name,
+// the compiler will call std::strchr on return, rather than the C strchr
+// (even though the C strchr is encapsulated in extern "C").
+// Because of this, this function will be defined in the assembly instead, temporarily.
+
+// char* std::strchr(char* str, int character) {
+//     return strchr(str, character);
+// }

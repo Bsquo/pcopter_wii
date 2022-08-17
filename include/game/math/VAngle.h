@@ -5,9 +5,6 @@
 #include "include/game/math/VMatrix.h"
 #include "types.h"
 
-// Values from .sdata2
-extern const f32 _44791; // 0.0f
-
 class CVAxis;     // Forward declaration
 
 class CVAngle {

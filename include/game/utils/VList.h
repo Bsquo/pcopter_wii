@@ -6,9 +6,6 @@
 
 class CVListBase;	// Forward declaration
 
-// Values from .sdata2
-extern const f32 _43178; // 0.0f
-
 // Doubly linked-list composed by nodes of type "CVListBase"
 class CVList {
     private:

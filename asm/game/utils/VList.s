@@ -173,12 +173,6 @@ __RTTI__6CVList:
 
 .section .sdata2, "wa", @progbits
 
-.global _43178
-_43178:
-
-	# ROM: 0x1EF078
-	.4byte 0
-
 .global _43046
 _43046:
 

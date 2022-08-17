@@ -8,11 +8,6 @@
 
 class CVAxis;   // Forward declaration
 
-// Values from .sdata2
-extern const f32 _44791; // 0.0
-extern const f32 _45055; // 1.0
-extern const f32 _45128; // 0.017453292 (pi/180)
-
 class CVMatrix {
     private:
         f32 mMatrix[4][4];

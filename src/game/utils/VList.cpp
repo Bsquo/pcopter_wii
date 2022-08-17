@@ -5,7 +5,7 @@
 
 CVListBase::CVListBase() {
     pList = nullptr;
-    mData = _43178;
+    mData = 0.0f;
     pPrev = nullptr;
     pNext = nullptr;
 }

@@ -10,8 +10,8 @@ extern "C" {
 
 char* strcpy(char*, const char*);
 char* strcat(char*, const char*);
-int strcmp(const char *s1, const char *s2);
-int strncmp(const char *s1, const char *s2, size_t n);
+int strcmp(const char*, const char*);
+int strncmp(const char*, const char*, size_t);
 char* strchr(char*, int);
 
 #ifdef __cplusplus

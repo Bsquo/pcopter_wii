@@ -75,7 +75,7 @@ func_801B5A34:
 /* 801B5A40 001A69C0  7C 08 03 A6 */	mtlr r0
 /* 801B5A44 001A69C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801B5A48 001A69C8  4E 80 00 20 */	blr
-.global func_801B5A4C
-func_801B5A4C:
+.global G3dReset__Q24nw4r3g3dFv
+G3dReset__Q24nw4r3g3dFv:
 /* 801B5A4C 001A69CC  38 60 07 FF */	li r3, 0x7ff
 /* 801B5A50 001A69D0  4B FE EC 68 */	b func_801A46B8

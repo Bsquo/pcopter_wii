@@ -756,28 +756,28 @@ lbl_8000CB00:
 	.4byte CheckLast__8CVStringFPc
 	.4byte 0x000000BC
 	.4byte lbl_800071EC
-	.4byte lbl_800209F4
+	.4byte __ct__11CVActorNodeFv
 	.4byte 0x00000088
 	.4byte lbl_800071F4
 	.4byte __dt__11CVActorNodeFv
 	.4byte 0x00000058
 	.4byte lbl_800071FC
-	.4byte func_80020AD4
+	.4byte CheckAnimate__11CVActorNodeFv
 	.4byte 0x00000094
 	.4byte lbl_80007204
-	.4byte func_80020B68
+	.4byte CalcAnim__11CVActorNodeFv
 	.4byte 0x00000184
 	.4byte lbl_8000720C
-	.4byte func_80020CEC
+	.4byte SetAnimState__11CVActorNodeFUsi
 	.4byte 0x00000050
 	.4byte lbl_80007214
-	.4byte func_80020D3C
+	.4byte AddAnimState__11CVActorNodeFv
 	.4byte 0x0000007C
 	.4byte lbl_8000721C
-	.4byte func_80020DB8
+	.4byte __ct__18CVActorMtxCallbackFv
 	.4byte 0x00000044
 	.4byte lbl_80007224
-	.4byte func_80020DFC
+	.4byte __dt__Q34nw4r3g3d18ICalcWorldCallbackFv
 	.4byte 0x00000040
 	.4byte lbl_8000722C
 	.4byte func_80020E4C
@@ -873,31 +873,31 @@ lbl_8000CB00:
 	.4byte func_800230C0
 	.4byte 0x00000094
 	.4byte lbl_800073F0
-	.4byte func_80023180
+	.4byte __ct__5CVAppFv
 	.4byte 0x0000006C
 	.4byte lbl_800073F8
-	.4byte func_800231EC
+	.4byte __ct__12CVHomeButtonFv
 	.4byte 0x00000034
 	.4byte lbl_80007400
-	.4byte func_80023220
+	.4byte __dt__12CVHomeButtonFv
 	.4byte 0x0000005C
 	.4byte lbl_80007408
-	.4byte func_8002327C
+	.4byte __dt__5CVAppFv
 	.4byte 0x0000005C
 	.4byte lbl_80007410
-	.4byte func_800232D8
+	.4byte Start__5CVAppFv
 	.4byte 0x000000C8
 	.4byte lbl_80007418
-	.4byte func_800233AC
+	.4byte Loop__5CVAppFv
 	.4byte 0x000002BC
 	.4byte lbl_80007420
-	.4byte func_80023670
+	.4byte StartScene__5CVAppFv
 	.4byte 0x00000080
 	.4byte lbl_80007428
-	.4byte func_800236FC
+	.4byte InitReset__5CVAppFv
 	.4byte 0x0000002C
 	.4byte lbl_80007430
-	.4byte func_80023728
+	.4byte CalcReset__5CVAppFv
 	.4byte 0x00000084
 	.4byte lbl_80007438
 	.4byte func_800237AC
@@ -4466,7 +4466,7 @@ lbl_80010138:
 	.4byte func_80119254
 	.4byte 0x00000044
 	.4byte lbl_8000C668
-	.4byte func_80119298
+	.4byte Report__4demoFiiPCce
 	.4byte 0x000001C4
 	.4byte lbl_8000C670
 	.4byte lbl_8011945C
@@ -4775,10 +4775,10 @@ lbl_80010138:
 	.4byte Free__4demoFPv
 	.4byte 0x000000E8
 	.4byte lbl_8000CA84
-	.4byte func_8011C37C
+	.4byte BeforeRender__4demoFv
 	.4byte 0x0000006C
 	.4byte lbl_8000CA8C
-	.4byte func_8011C3E8
+	.4byte DoneRender__4demoFUlii
 	.4byte 0x00000128
 	.4byte lbl_8000CA94
 	.4byte func_8011C528

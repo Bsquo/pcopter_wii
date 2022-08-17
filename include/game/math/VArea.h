@@ -4,9 +4,6 @@
 #include "include/game/math/VVector.h"
 #include "types.h"
 
-// Values from .sdata2
-extern const f32 _44791; // 0.0f
-
 class CVArea {
     private:
         f32 mArea[3][2];

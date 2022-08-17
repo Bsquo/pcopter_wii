@@ -1428,14 +1428,14 @@ lbl_8009C1D4:
 /* 8009C1E4 0008D164  48 00 33 C9 */	bl func_8009F5AC
 lbl_8009C1E8:
 /* 8009C1E8 0008D168  39 61 00 30 */	addi r11, r1, 0x30
-/* 8009C1EC 0008D16C  48 01 6F 0D */	bl func_800B30F8
+/* 8009C1EC 0008D16C  48 01 6F 0D */	bl _restgpr_24
 /* 8009C1F0 0008D170  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8009C1F4 0008D174  7C 08 03 A6 */	mtlr r0
 /* 8009C1F8 0008D178  38 21 00 30 */	addi r1, r1, 0x30
 /* 8009C1FC 0008D17C  4E 80 00 20 */	blr
 
-.global func_8009C200
-func_8009C200:
+.global VIWaitForRetrace
+VIWaitForRetrace:
 /* 8009C200 0008D180  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8009C204 0008D184  7C 08 02 A6 */	mflr r0
 /* 8009C208 0008D188  90 01 00 14 */	stw r0, 0x14(r1)
@@ -2538,8 +2538,8 @@ lbl_8009D130:
 /* 8009D17C 0008E0FC  38 21 00 30 */	addi r1, r1, 0x30
 /* 8009D180 0008E100  4E 80 00 20 */	blr
 
-.global func_8009D184
-func_8009D184:
+.global VIFlush
+VIFlush:
 /* 8009D184 0008E104  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8009D188 0008E108  7C 08 02 A6 */	mflr r0
 /* 8009D18C 0008E10C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2648,8 +2648,8 @@ func_8009D298:
 /* 8009D2FC 0008E27C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8009D300 0008E280  4E 80 00 20 */	blr
 
-.global func_8009D304
-func_8009D304:
+.global VISetBlack
+VISetBlack:
 /* 8009D304 0008E284  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8009D308 0008E288  7C 08 02 A6 */	mflr r0
 /* 8009D30C 0008E28C  90 01 00 24 */	stw r0, 0x24(r1)

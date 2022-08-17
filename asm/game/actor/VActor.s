@@ -44,43 +44,6 @@ lbl_801B9B38:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global lbl_800209F4
-lbl_800209F4:
-/* 800209F4 00011974  94 21 FF F0 */	stwu r1, -0x10(r1)
-/* 800209F8 00011978  7C 08 02 A6 */	mflr r0
-/* 800209FC 0001197C  3C 80 80 1D */	lis r4, __vt__11CVActorNode@ha
-/* 80020A00 00011980  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80020A04 00011984  38 84 B6 F4 */	addi r4, r4, __vt__11CVActorNode@l
-/* 80020A08 00011988  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80020A0C 0001198C  7C 7F 1B 78 */	mr r31, r3
-/* 80020A10 00011990  90 83 00 34 */	stw r4, 0x34(r3)
-/* 80020A14 00011994  48 00 5D 4D */	bl __ct__6CVFlagFv
-/* 80020A18 00011998  C0 02 81 54 */	lfs f0, lbl_8060F974@sda21(r2)
-/* 80020A1C 0001199C  38 80 00 00 */	li r4, 0x0
-/* 80020A20 000119A0  38 00 00 64 */	li r0, 0x64
-/* 80020A24 000119A4  C0 22 81 50 */	lfs f1, lbl_8060F970@sda21(r2)
-/* 80020A28 000119A8  38 A0 00 02 */	li r5, 0x2
-/* 80020A2C 000119AC  B0 9F 00 12 */	sth r4, 0x12(r31)
-/* 80020A30 000119B0  7F E3 FB 78 */	mr r3, r31
-/* 80020A34 000119B4  B0 BF 00 10 */	sth r5, 0x10(r31)
-/* 80020A38 000119B8  B0 9F 00 14 */	sth r4, 0x14(r31)
-/* 80020A3C 000119BC  D0 3F 00 18 */	stfs f1, 0x18(r31)
-/* 80020A40 000119C0  D0 1F 00 1C */	stfs f0, 0x1c(r31)
-/* 80020A44 000119C4  D0 3F 00 30 */	stfs f1, 0x30(r31)
-/* 80020A48 000119C8  B0 9F 00 08 */	sth r4, 0x8(r31)
-/* 80020A4C 000119CC  B0 1F 00 0A */	sth r0, 0xa(r31)
-/* 80020A50 000119D0  B0 1F 00 0C */	sth r0, 0xc(r31)
-/* 80020A54 000119D4  B0 1F 00 0E */	sth r0, 0xe(r31)
-/* 80020A58 000119D8  D0 1F 00 20 */	stfs f0, 0x20(r31)
-/* 80020A5C 000119DC  D0 1F 00 24 */	stfs f0, 0x24(r31)
-/* 80020A60 000119E0  D0 1F 00 28 */	stfs f0, 0x28(r31)
-/* 80020A64 000119E4  D0 1F 00 2C */	stfs f0, 0x2c(r31)
-/* 80020A68 000119E8  83 E1 00 0C */	lwz r31, 0xc(r1)
-/* 80020A6C 000119EC  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 80020A70 000119F0  7C 08 03 A6 */	mtlr r0
-/* 80020A74 000119F4  38 21 00 10 */	addi r1, r1, 0x10
-/* 80020A78 000119F8  4E 80 00 20 */	blr
-
 .global __dt__11CVActorNodeFv
 __dt__11CVActorNodeFv:
 /* 80020A7C 000119FC  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -107,8 +70,8 @@ lbl_80020AB8:
 /* 80020ACC 00011A4C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80020AD0 00011A50  4E 80 00 20 */	blr
 
-.global func_80020AD4
-func_80020AD4:
+.global CheckAnimate__11CVActorNodeFv
+CheckAnimate__11CVActorNodeFv:
 /* 80020AD4 00011A54  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80020AD8 00011A58  7C 08 02 A6 */	mflr r0
 /* 80020ADC 00011A5C  C8 22 81 58 */	lfd f1, lbl_8060F978@sda21(r2)
@@ -149,8 +112,8 @@ lbl_80020B4C:
 /* 80020B60 00011AE0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80020B64 00011AE4  4E 80 00 20 */	blr
 
-.global func_80020B68
-func_80020B68:
+.global CalcAnim__11CVActorNodeFv
+CalcAnim__11CVActorNodeFv:
 /* 80020B68 00011AE8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80020B6C 00011AEC  7C 08 02 A6 */	mflr r0
 /* 80020B70 00011AF0  3C A0 43 30 */	lis r5, 0x4330
@@ -245,7 +208,7 @@ lbl_80020C94:
 /* 80020CC8 00011C48  7F E3 FB 78 */	mr r3, r31
 /* 80020CCC 00011C4C  38 80 00 00 */	li r4, 0x0
 /* 80020CD0 00011C50  38 A0 00 01 */	li r5, 0x1
-/* 80020CD4 00011C54  48 00 00 19 */	bl func_80020CEC
+/* 80020CD4 00011C54  48 00 00 19 */	bl SetAnimState__11CVActorNodeFUsi
 
 .global func_80020CD8
 func_80020CD8:
@@ -255,8 +218,8 @@ func_80020CD8:
 /* 80020CE4 00011C64  38 21 00 20 */	addi r1, r1, 0x20
 /* 80020CE8 00011C68  4E 80 00 20 */	blr
 
-.global func_80020CEC
-func_80020CEC:
+.global SetAnimState__11CVActorNodeFUsi
+SetAnimState__11CVActorNodeFUsi:
 /* 80020CEC 00011C6C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80020CF0 00011C70  2C 05 00 00 */	cmpwi r5, 0x0
 /* 80020CF4 00011C74  B0 83 00 12 */	sth r4, 0x12(r3)
@@ -279,8 +242,8 @@ lbl_80020D34:
 /* 80020D34 00011CB4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80020D38 00011CB8  4E 80 00 20 */	blr
 
-.global func_80020D3C
-func_80020D3C:
+.global AddAnimState__11CVActorNodeFv
+AddAnimState__11CVActorNodeFv:
 /* 80020D3C 00011CBC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80020D40 00011CC0  7C 08 02 A6 */	mflr r0
 /* 80020D44 00011CC4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -301,13 +264,13 @@ func_80020D3C:
 /* 80020D80 00011D00  7F E3 FB 78 */	mr r3, r31
 /* 80020D84 00011D04  38 80 00 00 */	li r4, 0x0
 /* 80020D88 00011D08  38 A0 00 01 */	li r5, 0x1
-/* 80020D8C 00011D0C  4B FF FF 61 */	bl func_80020CEC
+/* 80020D8C 00011D0C  4B FF FF 61 */	bl SetAnimState__11CVActorNodeFUsi
 /* 80020D90 00011D10  48 00 00 14 */	b func_80020DA4
 lbl_80020D94:
 /* 80020D94 00011D14  7F E3 FB 78 */	mr r3, r31
 /* 80020D98 00011D18  38 80 00 00 */	li r4, 0x0
 /* 80020D9C 00011D1C  38 A0 00 00 */	li r5, 0x0
-/* 80020DA0 00011D20  4B FF FF 4D */	bl func_80020CEC
+/* 80020DA0 00011D20  4B FF FF 4D */	bl SetAnimState__11CVActorNodeFUsi
 
 .global func_80020DA4
 func_80020DA4:
@@ -317,14 +280,14 @@ func_80020DA4:
 /* 80020DB0 00011D30  38 21 00 10 */	addi r1, r1, 0x10
 /* 80020DB4 00011D34  4E 80 00 20 */	blr
 
-.global func_80020DB8
-func_80020DB8:
+.global __ct__18CVActorMtxCallbackFv
+__ct__18CVActorMtxCallbackFv:
 /* 80020DB8 00011D38  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80020DBC 00011D3C  7C 08 02 A6 */	mflr r0
 /* 80020DC0 00011D40  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80020DC4 00011D44  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80020DC8 00011D48  7C 7F 1B 78 */	mr r31, r3
-/* 80020DCC 00011D4C  48 00 00 71 */	bl func_80020E3C
+/* 80020DCC 00011D4C  48 00 00 71 */	bl __ct__Q34nw4r3g3d18ICalcWorldCallbackFv
 /* 80020DD0 00011D50  3C 80 80 1D */	lis r4, __vt__18CVActorMtxCallback@ha
 /* 80020DD4 00011D54  38 00 00 00 */	li r0, 0x0
 /* 80020DD8 00011D58  38 84 B6 D0 */	addi r4, r4, __vt__18CVActorMtxCallback@l
@@ -337,8 +300,8 @@ func_80020DB8:
 /* 80020DF4 00011D74  38 21 00 10 */	addi r1, r1, 0x10
 /* 80020DF8 00011D78  4E 80 00 20 */	blr
 
-.global func_80020DFC
-func_80020DFC:
+.global __dt__Q34nw4r3g3d18ICalcWorldCallbackFv
+__dt__Q34nw4r3g3d18ICalcWorldCallbackFv:
 /* 80020DFC 00011D7C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80020E00 00011D80  7C 08 02 A6 */	mflr r0
 /* 80020E04 00011D84  2C 03 00 00 */	cmpwi r3, 0x0
@@ -357,8 +320,8 @@ lbl_80020E24:
 /* 80020E34 00011DB4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80020E38 00011DB8  4E 80 00 20 */	blr
 
-.global func_80020E3C
-func_80020E3C:
+.global __ct__Q34nw4r3g3d18ICalcWorldCallbackFv
+__ct__Q34nw4r3g3d18ICalcWorldCallbackFv:
 /* 80020E3C 00011DBC  3C 80 80 1D */	lis r4, __vt__Q34nw4r3g3d18ICalcWorldCallback@ha
 /* 80020E40 00011DC0  38 84 B7 00 */	addi r4, r4, __vt__Q34nw4r3g3d18ICalcWorldCallback@l
 /* 80020E44 00011DC4  90 83 00 00 */	stw r4, 0x0(r3)
@@ -596,7 +559,7 @@ func_80021118:
 /* 80021164 000120E4  93 FE 02 78 */	stw r31, 0x278(r30)
 /* 80021168 000120E8  38 7E 02 80 */	addi r3, r30, 0x280
 /* 8002116C 000120EC  93 FE 02 7C */	stw r31, 0x27c(r30)
-/* 80021170 000120F0  4B FF FC 49 */	bl func_80020DB8
+/* 80021170 000120F0  4B FF FC 49 */	bl __ct__18CVActorMtxCallbackFv
 /* 80021174 000120F4  38 7E 02 88 */	addi r3, r30, 0x288
 /* 80021178 000120F8  48 00 57 A9 */	bl __ct__6CVListFv
 /* 8002117C 000120FC  38 7E 02 98 */	addi r3, r30, 0x298
@@ -633,7 +596,7 @@ func_800211D0:
 /* 800211EC 0001216C  7C 7E 1B 78 */	mr r30, r3
 /* 800211F0 00012170  41 82 00 1C */	beq lbl_8002120C
 /* 800211F4 00012174  38 80 00 00 */	li r4, 0x0
-/* 800211F8 00012178  4B FF FC 05 */	bl func_80020DFC
+/* 800211F8 00012178  4B FF FC 05 */	bl __dt__Q34nw4r3g3d18ICalcWorldCallbackFv
 /* 800211FC 0001217C  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80021200 00012180  40 81 00 0C */	ble lbl_8002120C
 /* 80021204 00012184  7F C3 F3 78 */	mr r3, r30
@@ -794,11 +757,11 @@ lbl_800213C8:
 /* 80021438 000123B8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8002143C 000123BC  7C 7D 1B 78 */	mr r29, r3
 /* 80021440 000123C0  41 82 00 28 */	beq lbl_80021468
-/* 80021444 000123C4  3C 80 80 02 */	lis r4, lbl_800209F4@ha
+/* 80021444 000123C4  3C 80 80 02 */	lis r4, __ct__11CVActorNodeFv@ha
 /* 80021448 000123C8  3C A0 80 02 */	lis r5, __dt__11CVActorNodeFv@ha
 /* 8002144C 000123CC  7F 87 E3 78 */	mr r7, r28
 /* 80021450 000123D0  3B 60 00 01 */	li r27, 0x1
-/* 80021454 000123D4  38 84 09 F4 */	addi r4, r4, lbl_800209F4@l
+/* 80021454 000123D4  38 84 09 F4 */	addi r4, r4, __ct__11CVActorNodeFv@l
 /* 80021458 000123D8  38 A5 0A 7C */	addi r5, r5, __dt__11CVActorNodeFv@l
 /* 8002145C 000123DC  38 C0 00 38 */	li r6, 0x38
 /* 80021460 000123E0  48 09 17 59 */	bl func_800B2BB8
@@ -1093,7 +1056,7 @@ lbl_800217F0:
 /* 80021820 000127A0  38 80 00 00 */	li r4, 0x0
 /* 80021824 000127A4  4B FF 92 45 */	bl func_8001AA68
 /* 80021828 000127A8  39 00 00 00 */	li r8, 0x0
-/* 8002182C 000127AC  C0 02 81 54 */	lfs f0, lbl_8060F974@sda21(r2)
+/* 8002182C 000127AC  C0 02 81 54 */	lfs f0, _48067@sda21(r2)
 /* 80021830 000127B0  7D 07 00 34 */	cntlzw r7, r8
 /* 80021834 000127B4  3C 60 80 1C */	lis r3, lbl_801B9B38@ha
 /* 80021838 000127B8  54 E6 DF FE */	rlwinm r6, r7, 27, 31, 31
@@ -1113,7 +1076,7 @@ lbl_800217F0:
 /* 80021870 000127F0  39 00 00 03 */	li r8, 0x3
 /* 80021874 000127F4  B0 81 00 12 */	sth r4, 0x12(r1)
 /* 80021878 000127F8  7C A6 00 D0 */	neg r5, r6
-/* 8002187C 000127FC  C3 E2 81 50 */	lfs f31, lbl_8060F970@sda21(r2)
+/* 8002187C 000127FC  C3 E2 81 50 */	lfs f31, _48066@sda21(r2)
 /* 80021880 00012800  7D 07 00 34 */	cntlzw r7, r8
 /* 80021884 00012804  D0 01 00 24 */	stfs f0, 0x24(r1)
 /* 80021888 00012808  7C 04 28 78 */	andc r4, r0, r5
@@ -1525,7 +1488,7 @@ lbl_80021DDC:
 /* 80021E30 00012DB0  B3 83 00 14 */	sth r28, 0x14(r3)
 /* 80021E34 00012DB4  80 16 02 78 */	lwz r0, 0x278(r22)
 /* 80021E38 00012DB8  7C 60 82 14 */	add r3, r0, r16
-/* 80021E3C 00012DBC  4B FF EE B1 */	bl func_80020CEC
+/* 80021E3C 00012DBC  4B FF EE B1 */	bl SetAnimState__11CVActorNodeFUsi
 /* 80021E40 00012DC0  3B FF 00 01 */	addi r31, r31, 0x1
 
 .global func_80021E44
@@ -1846,7 +1809,7 @@ lbl_800222A4:
 /* 800222A8 00013228  38 A0 00 01 */	li r5, 0x1
 /* 800222AC 0001322C  7C 60 FA 14 */	add r3, r0, r31
 /* 800222B0 00013230  A0 83 00 14 */	lhz r4, 0x14(r3)
-/* 800222B4 00013234  4B FF EA 39 */	bl func_80020CEC
+/* 800222B4 00013234  4B FF EA 39 */	bl SetAnimState__11CVActorNodeFUsi
 /* 800222B8 00013238  3B FF 00 38 */	addi r31, r31, 0x38
 /* 800222BC 0001323C  3B DE 00 01 */	addi r30, r30, 0x1
 
@@ -1917,7 +1880,7 @@ func_80022374:
 lbl_8002239C:
 /* 8002239C 0001331C  80 1D 02 78 */	lwz r0, 0x278(r29)
 /* 800223A0 00013320  7C 60 FA 14 */	add r3, r0, r31
-/* 800223A4 00013324  4B FF E7 C5 */	bl func_80020B68
+/* 800223A4 00013324  4B FF E7 C5 */	bl CalcAnim__11CVActorNodeFv
 /* 800223A8 00013328  3B FF 00 38 */	addi r31, r31, 0x38
 /* 800223AC 0001332C  3B DE 00 01 */	addi r30, r30, 0x1
 
@@ -2437,7 +2400,7 @@ lbl_80022AA8:
 /* 80022AB8 00013A38  1C 03 00 38 */	mulli r0, r3, 0x38
 /* 80022ABC 00013A3C  80 7F 02 78 */	lwz r3, 0x278(r31)
 /* 80022AC0 00013A40  7C 63 02 14 */	add r3, r3, r0
-/* 80022AC4 00013A44  4B FF E2 79 */	bl func_80020D3C
+/* 80022AC4 00013A44  4B FF E2 79 */	bl AddAnimState__11CVActorNodeFv
 lbl_80022AC8:
 /* 80022AC8 00013A48  3B DE 00 04 */	addi r30, r30, 0x4
 /* 80022ACC 00013A4C  3B BD 00 01 */	addi r29, r29, 0x1
@@ -2489,7 +2452,7 @@ func_80022B34:
 /* 80022B50 00013AD0  54 A4 04 3E */	clrlwi r4, r5, 16
 /* 80022B54 00013AD4  7C C5 33 78 */	mr r5, r6
 /* 80022B58 00013AD8  7C 63 02 14 */	add r3, r3, r0
-/* 80022B5C 00013ADC  4B FF E1 90 */	b func_80020CEC
+/* 80022B5C 00013ADC  4B FF E1 90 */	b SetAnimState__11CVActorNodeFUsi
 /* 80022B60 00013AE0  4E 80 00 20 */	blr
 
 .global func_80022B64
@@ -2526,7 +2489,7 @@ func_80022B64:
 /* 80022BD8 00013B58  7F E5 FB 78 */	mr r5, r31
 /* 80022BDC 00013B5C  57 C4 04 3E */	clrlwi r4, r30, 16
 /* 80022BE0 00013B60  7C 60 1A 14 */	add r3, r0, r3
-/* 80022BE4 00013B64  4B FF E1 09 */	bl func_80020CEC
+/* 80022BE4 00013B64  4B FF E1 09 */	bl SetAnimState__11CVActorNodeFUsi
 lbl_80022BE8:
 /* 80022BE8 00013B68  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80022BEC 00013B6C  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -2594,7 +2557,7 @@ func_80022C7C:
 /* 80022CBC 00013C3C  38 61 00 08 */	addi r3, r1, 0x8
 /* 80022CC0 00013C40  7C 84 02 14 */	add r4, r4, r0
 /* 80022CC4 00013C44  48 00 00 D5 */	bl func_80022D98
-/* 80022CC8 00013C48  C0 A2 81 50 */	lfs f5, lbl_8060F970@sda21(r2)
+/* 80022CC8 00013C48  C0 A2 81 50 */	lfs f5, _48066@sda21(r2)
 /* 80022CCC 00013C4C  1C 1E 00 38 */	mulli r0, r30, 0x38
 /* 80022CD0 00013C50  C0 81 00 08 */	lfs f4, 0x8(r1)
 /* 80022CD4 00013C54  80 7D 02 78 */	lwz r3, 0x278(r29)
@@ -2637,7 +2600,7 @@ func_80022C7C:
 /* 80022D68 00013CE8  38 60 00 01 */	li r3, 0x1
 /* 80022D6C 00013CEC  48 00 00 08 */	b func_80022D74
 lbl_80022D70:
-/* 80022D70 00013CF0  4B FF DD 65 */	bl func_80020AD4
+/* 80022D70 00013CF0  4B FF DD 65 */	bl CheckAnimate__11CVActorNodeFv
 
 .global func_80022D74
 func_80022D74:
@@ -2679,9 +2642,9 @@ func_80022D98:
 /* 80022DE8 00013D68  D0 43 00 30 */	stfs f2, 0x30(r3)
 /* 80022DEC 00013D6C  C0 04 00 2C */	lfs f0, 0x2c(r4)
 /* 80022DF0 00013D70  D0 23 00 34 */	stfs f1, 0x34(r3)
-/* 80022DF4 00013D74  C0 22 81 50 */	lfs f1, lbl_8060F970@sda21(r2)
+/* 80022DF4 00013D74  C0 22 81 50 */	lfs f1, _48066@sda21(r2)
 /* 80022DF8 00013D78  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 80022DFC 00013D7C  C0 02 81 54 */	lfs f0, lbl_8060F974@sda21(r2)
+/* 80022DFC 00013D7C  C0 02 81 54 */	lfs f0, _48067@sda21(r2)
 /* 80022E00 00013D80  D0 23 00 0C */	stfs f1, 0xc(r3)
 /* 80022E04 00013D84  D0 23 00 1C */	stfs f1, 0x1c(r3)
 /* 80022E08 00013D88  D0 23 00 2C */	stfs f1, 0x2c(r3)
@@ -3030,7 +2993,7 @@ __vt__Q34nw4r3g3d18ICalcWorldCallback:
 	# ROM: 0x1C7800
 	.4byte __RTTI__Q34nw4r3g3d18ICalcWorldCallback
 	.4byte 0
-	.4byte func_80020DFC
+	.4byte __dt__Q34nw4r3g3d18ICalcWorldCallbackFv
 	.4byte lbl_80023164
 	.4byte lbl_80023160
 	.4byte lbl_8002315C
@@ -3060,14 +3023,14 @@ __RTTI__Q34nw4r3g3d18ICalcWorldCallback:
 
 .section .sdata2, "wa", @progbits
 
-.global lbl_8060F970
-lbl_8060F970:
+.global _48066
+_48066:
 
 	# ROM: 0x1EF030
 	.4byte 0
 
-.global lbl_8060F974
-lbl_8060F974:
+.global _48067
+_48067:
 
 	# ROM: 0x1EF034
 	.4byte 0x3F800000

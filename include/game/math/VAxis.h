@@ -7,9 +7,6 @@
 #include "include/nw4r/math/math_types.h"
 #include "types.h"
 
-// Values from .sdata2
-extern const f32 _44791; // 0.0f
-
 class CVMatrix;     // Forward declaration
 
 class CVAxis {

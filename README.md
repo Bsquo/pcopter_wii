@@ -23,7 +23,7 @@ Instead, the project will mainly focus on the game's code, though partial header
 pcopter_wii_eur: OK
 ```
 
-## DOL
+### DOL
 Currently, only the European version is supported. This repository builds the following DOL executable:
 
 pcopter_wii_eur.dol: `sha1: 772bec0b25fa6f947701b3355823608ad8171a27`.
@@ -33,3 +33,5 @@ Once built, it can be found in `build/pcopter_wii_eur/`
 ## Contributions
 
 Contributions and pull requests are welcome!
+
+<font size="3">**Make sure the project compiles to a matching executable (i.e the building process ends with an `OK`) before submitting!**</font>

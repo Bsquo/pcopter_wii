@@ -4,12 +4,7 @@
 #include "include/nw4r/math/math_types.h"
 #include "types.h"
 
-// Values from .sdata2
-extern const f32 _44791; // 0.0
-extern const f32 _45021; // 57.295775
-extern const f32 _45022; // 180.0
-extern const f32 _53133; // 0.0
-extern const f32 _53629; // 0.00001
+extern const f32 _53133; // 0.0f
 
 class CVVector {
     public:

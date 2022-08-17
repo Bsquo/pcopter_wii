@@ -15,18 +15,18 @@ GAME_O_FILES :=                                                    \
     $(BUILD_DIR)/asm/game/gfx/Shadow.o                         \
     $(BUILD_DIR)/src/game/utils/VString.o                      \
 	$(BUILD_DIR)/asm/game/utils/VString.o                      \
-    $(BUILD_DIR)/asm/game/actor/VActor.o                      \
+    $(BUILD_DIR)/src/game/actor/VActor.o                       \
+	$(BUILD_DIR)/asm/game/actor/VActor.o                       \
+	$(BUILD_DIR)/src/game/app/VApp.o                           \
     $(BUILD_DIR)/asm/game/app/VApp.o                           \
     $(BUILD_DIR)/asm/game/collision/VColl.o                    \
 	$(BUILD_DIR)/src/game/gfx/VColor.o                         \
-	$(BUILD_DIR)/asm/game/gfx/VColor.o                         \
     $(BUILD_DIR)/asm/game/utils/VFile.o                        \
     $(BUILD_DIR)/src/game/utils/VFlag.o                        \
 	$(BUILD_DIR)/asm/game/utils/VFlag.o                        \
     $(BUILD_DIR)/src/game/utils/VList.o                        \
 	$(BUILD_DIR)/asm/game/utils/VList.o                        \
 	$(BUILD_DIR)/src/game/math/VMath.o                         \
-	$(BUILD_DIR)/asm/game/math/VMath.o                         \
     $(BUILD_DIR)/asm/game/gfx/VModel.o                         \
     $(BUILD_DIR)/asm/game/collision/VRigid.o                   \
     $(BUILD_DIR)/asm/game/scene/VScene_1.o                      \

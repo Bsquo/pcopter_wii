@@ -237,8 +237,8 @@ func_8008EC20:
 /* 8008EC38 0007FBB8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8008EC3C 0007FBBC  4E 80 00 20 */	blr
 
-.global func_8008EC40
-func_8008EC40:
+.global OSShutdownSystem
+OSShutdownSystem:
 /* 8008EC40 0007FBC0  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8008EC44 0007FBC4  7C 08 02 A6 */	mflr r0
 /* 8008EC48 0007FBC8  38 80 00 00 */	li r4, 0x0
@@ -372,8 +372,8 @@ lbl_8008EDD8:
 /* 8008EDFC 0007FD7C  38 21 00 30 */	addi r1, r1, 0x30
 /* 8008EE00 0007FD80  4E 80 00 20 */	blr
 
-.global func_8008EE04
-func_8008EE04:
+.global OSRestart
+OSRestart:
 /* 8008EE04 0007FD84  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8008EE08 0007FD88  7C 08 02 A6 */	mflr r0
 /* 8008EE0C 0007FD8C  90 01 00 14 */	stw r0, 0x14(r1)

@@ -5,6 +5,7 @@
 #include "include/game/math/VVector.h"
 #include "include/MSL_C/MSL_Common_Embedded/math_double.h"
 #include "include/std/math/mathf.h"
+#include "include/math_types.h"
 
 f32 CVMath::CalcLength(CVVector vec1, CVVector vec2) {
     CVVector length = vec2 - vec1;
@@ -33,7 +34,7 @@ CVVector CVMath::CalcSurfaceCollPos(CVVector vec1, CVVector vec2, CVVector vec3,
     f3 = vec1.z * (vec4.z - vec3.z) + (vec1.x * (vec4.x - vec3.x) + vec1.y * (vec4.y - vec3.y));
     f1 = std::fabs(f3);
     
-    if (f1 > _44776) {
+    if (f1 > 0.00001f) {
         f3 = -f2 / f3;
         surfaceCollPos = vec3 + ((vec4 - vec3) * f3);
     }
@@ -81,7 +82,7 @@ bool CVMath::CheckPolyInside3D(CVVector vec1, CVVector vec2, CVVector vec3, CVVe
     }
 }
 
-CVVector::CVVector(): x(_44791), y(_44791), z(_44791) {}
+CVVector::CVVector(): x(0.0f), y(0.0f), z(0.0f) {}
 
 CVVector::CVVector(f32 x_, f32 y_, f32 z_): x(x_), y(y_), z(z_) {}
 
@@ -90,11 +91,11 @@ f32 CVVector::GetRoll() {
     f32 roll;
     
     vector = (*this);
-    vector.z = _44791; 
+    vector.z = 0.0f; 
     vector = vector.Normalize();
-    roll = _45021 * std::asin(vector.x);
-    if (vector.y < _44791) {
-        roll = _45022 - roll;
+    roll = ANGLE_RADIANS_TO_DEGREES(std::asin(vector.x));
+    if (vector.y < 0.0f) {
+        roll = 180.0f - roll;
     }
     return roll;
 }
@@ -103,8 +104,8 @@ f32 CVVector::GetRoll() {
 CVMatrix::CVMatrix() {
     for (u32 i = 0; i < 4; i++) {
         for (u32 j = 0; j < 4; j++) {
-            mMatrix[i][j] = _44791;
-            mMatrix[i][i] = _45055;
+            mMatrix[i][j] = 0.0f;
+            mMatrix[i][i] = 1.0f;
         }
     }
 }
@@ -112,8 +113,8 @@ CVMatrix::CVMatrix() {
 void CVMatrix::InitAsUnit() {
     for (u32 i = 0; i < 4; i++) {
         for (u32 j = 0; j < 4; j++) {
-            mMatrix[i][j] = _44791;
-            mMatrix[i][i] = _45055;
+            mMatrix[i][j] = 0.0f;
+            mMatrix[i][i] = 1.0f;
         }
     }
 }
@@ -135,15 +136,15 @@ const CVMatrix& CVMatrix::InitAsRotateX(f32 angle) {
     f32 fabs;
     
     InitAsUnit();
-    cos = std::cos(_45128 * angle);
-    sin = std::sin(_45128 * angle);
+    cos = std::cos(ANGLE_DEGREES_TO_RADIANS(angle));
+    sin = std::sin(ANGLE_DEGREES_TO_RADIANS(angle));
     fabs = std::fabs(cos);
-    if (fabs >= _45055) {
-        sin = _44791;
+    if (fabs >= 1.0f) {
+        sin = 0.0f;
     }
     fabs = std::fabs(sin);
-    if (fabs >= _45055) {
-        cos = _44791;
+    if (fabs >= 1.0f) {
+        cos = 0.0f;
     }
     mMatrix[1][1] = cos;
     mMatrix[1][2] = sin;
@@ -162,15 +163,15 @@ const CVMatrix& CVMatrix::InitAsRotateY(f32 angle) {
     f32 fabs;
     
     InitAsUnit();
-    cos = std::cos(_45128 * angle);
-    sin = std::sin(_45128 * angle);
+    cos = std::cos(ANGLE_DEGREES_TO_RADIANS(angle));
+    sin = std::sin(ANGLE_DEGREES_TO_RADIANS(angle));
     fabs = std::fabs(cos);
-    if (fabs >= _45055) {
-        sin = _44791;
+    if (fabs >= 1.0f) {
+        sin = 0.0f;
     }
     fabs = std::fabs(sin);
-    if (fabs >= _45055) {
-        cos = _44791;
+    if (fabs >= 1.0f) {
+        cos = 0.0f;
     }
     mMatrix[0][0] = cos;
     mMatrix[2][0] = sin;
@@ -185,15 +186,15 @@ const CVMatrix& CVMatrix::InitAsRotateZ(f32 angle) {
     f32 fabs;
     
     InitAsUnit();
-    cos = std::cos(_45128 * angle);
-    sin = std::sin(_45128 * angle);
+    cos = std::cos(ANGLE_DEGREES_TO_RADIANS(angle));
+    sin = std::sin(ANGLE_DEGREES_TO_RADIANS(angle));
     fabs = std::fabs(cos);
-    if (fabs >= _45055) {
-        sin = _44791;
+    if (fabs >= 1.0f) {
+        sin = 0.0f;
     }
     fabs = std::fabs(sin);
-    if (fabs >= _45055) {
-        cos = _44791;
+    if (fabs >= 1.0f) {
+        cos = 0.0f;
     }
     mMatrix[0][0] = cos;
     mMatrix[0][1] = sin;
@@ -233,7 +234,7 @@ CVMatrix CVMatrix::operator*(const CVMatrix& operand) {
 
     for (s32 i = 0; i < 4; i++) {
         for (s32 j = 0; j < 4; j++) {
-            result.mMatrix[i][j] = _44791;
+            result.mMatrix[i][j] = 0.0f;
             for (s32 k = 0; k < 4; k++) {
                 result.mMatrix[i][j] += mMatrix[i][k] * operand.mMatrix[k][j];
             }
@@ -243,17 +244,17 @@ CVMatrix CVMatrix::operator*(const CVMatrix& operand) {
 }
 
 CVAxis::CVAxis() {
-    mXVec.x = _45055;
-    mXVec.y = _44791;
-    mXVec.z = _44791;
+    mXVec.x = 1.0f;
+    mXVec.y = 0.0f;
+    mXVec.z = 0.0f;
     
-    mYVec.x = _44791;
-    mYVec.y = _45055;
-    mYVec.z = _44791;
+    mYVec.x = 0.0f;
+    mYVec.y = 1.0f;
+    mYVec.z = 0.0f;
     
-    mZVec.x = _44791;
-    mZVec.y = _44791;
-    mZVec.z = _45055;
+    mZVec.x = 0.0f;
+    mZVec.y = 0.0f;
+    mZVec.z = 1.0f;
 }
 
 CVAxis::CVAxis(CVVector vec1, CVVector vec2) {
@@ -314,7 +315,7 @@ void CVAxis::Approach(CVAxis param, f32 multiplier) {
     mZVec = mZVec.Normalize();
 }
 
-CVAngle::CVAngle(): x(_44791), y(_44791), z(_44791) {}
+CVAngle::CVAngle(): x(0.0f), y(0.0f), z(0.0f) {}
 
 CVAngle::CVAngle(f32 x_, f32 y_, f32 z_): x(x_), y(y_), z(z_) {}
 
@@ -323,7 +324,7 @@ CVRect::CVRect(f32 side1, f32 side2, f32 side3, f32 side4): mSide1(side1), mSide
 CVArea::CVArea() {
     for (u32 i = 0; i < 3; i++) {
         for (u32 j = 0; j < 2; j++) {
-            mArea[i][j] = _44791;
+            mArea[i][j] = 0.0f;
         }
     }
 }
@@ -340,7 +341,7 @@ CVArea::CVArea(f32 X_start, f32 X_end, f32 Y_start, f32 Y_end, f32 Z_start, f32 
 void CVArea::Init() {
     for (u32 i = 0; i < 3; i++) {
         for (u32 j = 0; j < 2; j++) {
-            mArea[i][j] = _44791;
+            mArea[i][j] = 0.0f;
         }
     }
 }
@@ -402,7 +403,7 @@ f32 CVArea::GetSizeZ() {
 f32 CVArea::GetR() {
     CVVector temp;
     f32 tempMagnitude;
-    f32 R = _44791;
+    f32 R = 0.0f;
 
     s32 x = 0;
     s32 y = 0;

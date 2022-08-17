@@ -191,7 +191,7 @@ lbl_800064F0:
 	.4byte __dt__6CVFlagFv
 	.4byte 0x8680001F
 	.4byte 0
-	.4byte func_8002327C
+	.4byte __dt__5CVAppFv
 
 .global lbl_800067A0
 lbl_800067A0:

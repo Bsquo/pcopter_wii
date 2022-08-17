@@ -2,7 +2,6 @@
 #define VSTRING_H
 
 #include "include/MSL_C/PPC_EABI/Runtime/__mem.h"
-#include "include/MSL_C/MSL_Common/string.h"
 #include "types.h"
 
 class CVString {

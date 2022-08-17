@@ -328,8 +328,8 @@ func_80119254:
 /* 8011928C 0010A20C  7C 08 03 A6 */	mtlr r0
 /* 80119290 0010A210  38 21 00 10 */	addi r1, r1, 0x10
 /* 80119294 0010A214  4E 80 00 20 */	blr
-.global func_80119298
-func_80119298:
+.global Report__4demoFiiPCce
+Report__4demoFiiPCce:
 /* 80119298 0010A218  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 8011929C 0010A21C  7C 08 02 A6 */	mflr r0
 /* 801192A0 0010A220  90 01 00 B4 */	stw r0, 0xb4(r1)

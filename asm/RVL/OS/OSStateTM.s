@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80091650
-func_80091650:
+.global OSSetResetCallback
+OSSetResetCallback:
 /* 80091650 000825D0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80091654 000825D4  7C 08 02 A6 */	mflr r0
 /* 80091658 000825D8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -57,8 +57,8 @@ lbl_800916E4:
 /* 80091704 00082684  38 21 00 20 */	addi r1, r1, 0x20
 /* 80091708 00082688  4E 80 00 20 */	blr
 
-.global func_8009170C
-func_8009170C:
+.global OSSetPowerCallback
+OSSetPowerCallback:
 /* 8009170C 0008268C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80091710 00082690  7C 08 02 A6 */	mflr r0
 /* 80091714 00082694  90 01 00 24 */	stw r0, 0x24(r1)

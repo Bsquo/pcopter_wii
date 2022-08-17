@@ -20,6 +20,7 @@ SRC_DIRS := src                      	\
 			src/game                 	\
 			src/game/actor           	\
 			src/game/actor/Copter    	\
+			src/game/app           	    \
 			src/game/gfx             	\
 			src/game/math            	\
 			src/game/managers        	\
@@ -43,7 +44,6 @@ ASM_DIRS := asm                      \
 			asm/game/gfx             \
 			asm/game/hbm             \
 			asm/game/managers        \
-			asm/game/math            \
 			asm/game/save            \
 			asm/game/scenary         \
 			asm/game/scenary/BGShop         \

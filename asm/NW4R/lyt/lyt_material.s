@@ -1,5 +1,12 @@
 .include "macros.s"
+
+.section .sbss2, "wa", @nobits
+.global DefaultBlackColor
+DefaultBlackColor:
+	.skip 0x8
+
 .section .text, "ax"
+
 .global func_80165108
 func_80165108:
 /* 80165108 00156088  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -232,11 +239,11 @@ func_8016540C:
 /* 80165460 001563E0  91 03 00 0C */	stw r8, 0xc(r3)
 /* 80165464 001563E4  38 63 00 28 */	addi r3, r3, 0x28
 /* 80165468 001563E8  4B F4 D9 11 */	bl func_800B2D78
-/* 8016546C 001563EC  38 A2 A7 10 */	addi r5, r2, lbl_80611F30@sda21
+/* 8016546C 001563EC  38 A2 A7 10 */	addi r5, r2, DefaultBlackColor@sda21
 /* 80165470 001563F0  80 1E 00 3C */	lwz r0, 0x3c(r30)
 /* 80165474 001563F4  80 7E 00 38 */	lwz r3, 0x38(r30)
 /* 80165478 001563F8  38 E0 00 FF */	li r7, 0xff
-/* 8016547C 001563FC  A9 42 A7 10 */	lha r10, lbl_80611F30@sda21(r2)
+/* 8016547C 001563FC  A9 42 A7 10 */	lha r10, DefaultBlackColor@sda21(r2)
 /* 80165480 00156400  54 00 06 FE */	clrlwi r0, r0, 27
 /* 80165484 00156404  54 66 06 FE */	clrlwi r6, r3, 27
 /* 80165488 00156408  A8 85 00 02 */	lha r4, 0x2(r5)
@@ -1052,12 +1059,12 @@ func_80165EA0:
 
 .global func_80165EA8
 func_80165EA8:
-/* 80165EA8 00156E28  38 E2 A7 10 */	addi r7, r2, lbl_80611F30@sda21
+/* 80165EA8 00156E28  38 E2 A7 10 */	addi r7, r2, DefaultBlackColor@sda21
 /* 80165EAC 00156E2C  80 03 00 3C */	lwz r0, 0x3c(r3)
 /* 80165EB0 00156E30  80 A3 00 38 */	lwz r5, 0x38(r3)
 /* 80165EB4 00156E34  38 C0 00 FF */	li r6, 0xff
 /* 80165EB8 00156E38  38 80 00 00 */	li r4, 0x0
-/* 80165EBC 00156E3C  A9 42 A7 10 */	lha r10, lbl_80611F30@sda21(r2)
+/* 80165EBC 00156E3C  A9 42 A7 10 */	lha r10, DefaultBlackColor@sda21(r2)
 /* 80165EC0 00156E40  A9 27 00 02 */	lha r9, 0x2(r7)
 /* 80165EC4 00156E44  54 A5 06 FE */	clrlwi r5, r5, 27
 /* 80165EC8 00156E48  A9 07 00 04 */	lha r8, 0x4(r7)
@@ -2904,10 +2911,10 @@ func_801678C8:
 func_801678D8:
 /* 801678D8 00158858  A8 7B 00 10 */	lha r3, 0x10(r27)
 /* 801678DC 0015885C  38 A0 00 00 */	li r5, 0x0
-/* 801678E0 00158860  A8 02 A7 10 */	lha r0, lbl_80611F30@sda21(r2)
+/* 801678E0 00158860  A8 02 A7 10 */	lha r0, DefaultBlackColor@sda21(r2)
 /* 801678E4 00158864  7C 03 00 00 */	cmpw r3, r0
 /* 801678E8 00158868  40 82 00 3C */	bne lbl_80167924
-/* 801678EC 0015886C  38 82 A7 10 */	addi r4, r2, lbl_80611F30@sda21
+/* 801678EC 0015886C  38 82 A7 10 */	addi r4, r2, DefaultBlackColor@sda21
 /* 801678F0 00158870  A8 7B 00 12 */	lha r3, 0x12(r27)
 /* 801678F4 00158874  A8 04 00 02 */	lha r0, 0x2(r4)
 /* 801678F8 00158878  7C 03 00 00 */	cmpw r3, r0

@@ -1,5 +1,7 @@
 .include "macros.s"
+
 .section .text, "ax"
+
 .global func_8017CB40
 func_8017CB40:
 /* 8017CB40 0016DAC0  94 21 FF D0 */	stwu r1, -0x30(r1)

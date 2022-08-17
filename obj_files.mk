@@ -372,6 +372,7 @@ SDK_2_O_FILES :=   								\
 	$(BUILD_DIR)/asm/RVL/bte/gki_ppc.o    \
 	$(BUILD_DIR)/asm/RVL/bte/hcisu_h2.o    \
 	$(BUILD_DIR)/asm/RVL/bte/uusb_ppc.o    \
+	$(BUILD_DIR)/asm/RVL/bte/bta_dm_cfg.o    \
 	$(BUILD_DIR)/asm/RVL/bte/bte_hcisu.o    \
 	$(BUILD_DIR)/asm/RVL/bte/bte_init.o    \
 	$(BUILD_DIR)/asm/RVL/bte/bte_logmsg.o    \
@@ -674,6 +675,3 @@ SBSS_O_FILES :=                                                    \
 
 SDATA2_O_FILES :=                                                  \
     $(BUILD_DIR)/asm/sdata2.o
-
-SBSS2_O_FILES :=                                                   \
-    $(BUILD_DIR)/asm/sbss2.o

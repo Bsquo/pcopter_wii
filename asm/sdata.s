@@ -2163,7 +2163,7 @@ lbl_8060EAAC:
 lbl_8060EAB0:
 
 	# ROM: 0x1EECB0
-	.4byte lbl_80611F20
+	.4byte bta_dm_pm_cfg
 
 .global lbl_8060EAB4
 lbl_8060EAB4:

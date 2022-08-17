@@ -1,5 +1,12 @@
 .include "macros.s"
+
+.section .sbss2, "wa", @nobits
+.global bd_addr_null
+bd_addr_null:
+	.skip 0x8
+
 .section .text, "ax"
+
 .global func_800EAE78
 func_800EAE78:
 /* 800EAE78 000DBDF8  89 24 00 00 */	lbz r9, 0x0(r4)

@@ -1,5 +1,7 @@
 .include "macros.s"
+
 .section .text, "ax"
+
 .global lbl_800E91AC
 lbl_800E91AC:
 /* 800E91AC 000DA12C  94 21 FF E0 */	stwu r1, -0x20(r1)

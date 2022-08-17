@@ -2454,8 +2454,8 @@ lbl_801514E4:
 /* 801514F0 00142470  7C 08 03 A6 */	mtlr r0
 /* 801514F4 00142474  38 21 00 10 */	addi r1, r1, 0x10
 /* 801514F8 00142478  4E 80 00 20 */	blr
-.global lbl_801514FC
-lbl_801514FC:
+.global __sinit__ef_drawstrategyimpl_cpp
+__sinit__ef_drawstrategyimpl_cpp:
 /* 801514FC 0014247C  3D 00 80 5F */	lis r8, lbl_805F02D0@ha
 /* 80151500 00142480  C0 22 A1 38 */	lfs f1, lbl_80611958@sda21(r2)
 /* 80151504 00142484  39 08 02 D0 */	addi r8, r8, lbl_805F02D0@l

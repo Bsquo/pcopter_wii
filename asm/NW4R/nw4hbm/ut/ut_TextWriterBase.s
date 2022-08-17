@@ -1835,8 +1835,8 @@ func_80189C18:
 /* 80189C3C 0017ABBC  38 21 01 90 */	addi r1, r1, 0x190
 /* 80189C40 0017ABC0  4E 80 00 20 */	blr
 
-.global lbl_80189C44
-lbl_80189C44:
+.global __sinit__nw4hbm_ut_TextWriterBase_cpp
+__sinit__nw4hbm_ut_TextWriterBase_cpp:
 /* 80189C44 0017ABC4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80189C48 0017ABC8  7C 08 02 A6 */	mflr r0
 /* 80189C4C 0017ABCC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1854,7 +1854,7 @@ lbl_80189C44:
 /* 80189C7C 0017ABFC  38 7E 07 48 */	addi r3, r30, 0x748
 /* 80189C80 0017AC00  38 84 7A 98 */	addi r4, r4, lbl_80187A98@l
 /* 80189C84 0017AC04  38 A5 07 30 */	addi r5, r5, lbl_805F0730@l
-/* 80189C88 0017AC08  4B F2 8C 75 */	bl func_800B28FC
+/* 80189C88 0017AC08  4B F2 8C 75 */	bl __register_global_object
 /* 80189C8C 0017AC0C  38 00 00 01 */	li r0, 0x1
 /* 80189C90 0017AC10  98 1F 07 50 */	stb r0, 0x750(r31)
 lbl_80189C94:
@@ -1870,7 +1870,7 @@ lbl_80189C94:
 /* 80189CB8 0017AC38  38 7F 07 4C */	addi r3, r31, 0x74c
 /* 80189CBC 0017AC3C  38 84 7E 80 */	addi r4, r4, lbl_80187E80@l
 /* 80189CC0 0017AC40  38 A5 07 3C */	addi r5, r5, lbl_805F073C@l
-/* 80189CC4 0017AC44  4B F2 8C 39 */	bl func_800B28FC
+/* 80189CC4 0017AC44  4B F2 8C 39 */	bl __register_global_object
 /* 80189CC8 0017AC48  38 00 00 01 */	li r0, 0x1
 /* 80189CCC 0017AC4C  98 1E 07 51 */	stb r0, 0x751(r30)
 lbl_80189CD0:

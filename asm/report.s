@@ -451,8 +451,8 @@ lbl_80119400:
 /* 80119450 0010A3D0  7C 08 03 A6 */	mtlr r0
 /* 80119454 0010A3D4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80119458 0010A3D8  4E 80 00 20 */	blr
-.global lbl_8011945C
-lbl_8011945C:
+.global __sinit__report_cpp
+__sinit__report_cpp:
 /* 8011945C 0010A3DC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80119460 0010A3E0  7C 08 02 A6 */	mflr r0
 /* 80119464 0010A3E4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -465,7 +465,7 @@ lbl_8011945C:
 /* 80119480 0010A400  38 84 B6 3C */	addi r4, r4, lbl_8018B63C@l
 /* 80119484 0010A404  3C A0 80 5C */	lis r5, lbl_805C7DA8@ha
 /* 80119488 0010A408  38 A5 7D A8 */	addi r5, r5, lbl_805C7DA8@l
-/* 8011948C 0010A40C  4B F9 94 71 */	bl func_800B28FC
+/* 8011948C 0010A40C  4B F9 94 71 */	bl __register_global_object
 /* 80119490 0010A410  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80119494 0010A414  7C 08 03 A6 */	mtlr r0
 /* 80119498 0010A418  38 21 00 10 */	addi r1, r1, 0x10

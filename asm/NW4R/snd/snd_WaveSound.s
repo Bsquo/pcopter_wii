@@ -259,8 +259,8 @@ lbl_8013893C:
 lbl_80138944:
 /* 80138944 001298C4  38 6D 97 D8 */	addi r3, r13, lbl_8060F5D8@sda21
 /* 80138948 001298C8  4E 80 00 20 */	blr
-.global lbl_8013894C
-lbl_8013894C:
+.global __sinit__snd_WaveSound_cpp
+__sinit__snd_WaveSound_cpp:
 /* 8013894C 001298CC  38 0D 97 68 */	addi r0, r13, lbl_8060F568@sda21
 /* 80138950 001298D0  90 0D 97 D8 */	stw r0, lbl_8060F5D8@sda21(r13)
 /* 80138954 001298D4  4E 80 00 20 */	blr

@@ -5,16 +5,16 @@
 
 class CVColor {
 	private:
-		f32 mRed, mGreen, mBlue, mAlpha;
+	    f32 mRed, mGreen, mBlue, mAlpha;
 		
     public:
         CVColor();
         CVColor(f32, f32, f32, f32);
-		
-		void operator=(const CVColor&);
-		CVColor operator+(const CVColor&);
-		CVColor operator*(f32);
-		CVColor operator-(const CVColor&);
+
+	    void operator=(const CVColor&);
+	    CVColor operator+(const CVColor&);
+	    CVColor operator*(f32);
+	    CVColor operator-(const CVColor&);
 };
 
 #endif // VCOLOR_H

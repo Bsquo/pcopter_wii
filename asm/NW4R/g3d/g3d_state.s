@@ -3853,8 +3853,8 @@ lbl_801A4B48:
 /* 801A4B54 00195AD4  7C 08 03 A6 */	mtlr r0
 /* 801A4B58 00195AD8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A4B5C 00195ADC  4E 80 00 20 */	blr
-.global lbl_801A4B60
-lbl_801A4B60:
+.global __sinit__g3d_state_cpp
+__sinit__g3d_state_cpp:
 /* 801A4B60 00195AE0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801A4B64 00195AE4  7C 08 02 A6 */	mflr r0
 /* 801A4B68 00195AE8  38 80 00 00 */	li r4, 0x0
@@ -3983,7 +3983,7 @@ lbl_801A4CA8:
 /* 801A4D4C 00195CCC  98 1C 00 26 */	stb r0, 0x26(r28)
 /* 801A4D50 00195CD0  98 1C 00 25 */	stb r0, 0x25(r28)
 /* 801A4D54 00195CD4  98 1C 00 24 */	stb r0, 0x24(r28)
-/* 801A4D58 00195CD8  4B F0 DB A5 */	bl func_800B28FC
+/* 801A4D58 00195CD8  4B F0 DB A5 */	bl __register_global_object
 /* 801A4D5C 00195CDC  38 7F 3A 80 */	addi r3, r31, 0x3a80
 /* 801A4D60 00195CE0  4B FF D7 65 */	bl func_801A24C4
 /* 801A4D64 00195CE4  3C 60 80 1F */	lis r3, lbl_801F1C28@ha
@@ -4014,7 +4014,7 @@ lbl_801A4D88:
 /* 801A4DC4 00195D44  98 1C 00 05 */	stb r0, 0x5(r28)
 /* 801A4DC8 00195D48  98 1C 00 04 */	stb r0, 0x4(r28)
 /* 801A4DCC 00195D4C  98 1C 00 07 */	stb r0, 0x7(r28)
-/* 801A4DD0 00195D50  4B F0 DB 2D */	bl func_800B28FC
+/* 801A4DD0 00195D50  4B F0 DB 2D */	bl __register_global_object
 /* 801A4DD4 00195D54  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801A4DD8 00195D58  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 801A4DDC 00195D5C  83 C1 00 18 */	lwz r30, 0x18(r1)

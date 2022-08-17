@@ -902,8 +902,8 @@ lbl_8060F324:
 lbl_8060F328:
 	.skip 0x8
 
-.global lbl_8060F330
-lbl_8060F330:
+.global __global_destructor_chain
+__global_destructor_chain:
 	.skip 0x8
 
 .global lbl_8060F338

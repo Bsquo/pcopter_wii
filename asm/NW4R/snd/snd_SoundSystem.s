@@ -146,8 +146,8 @@ lbl_801302AC:
 func_801302C4:
 /* 801302C4 00121244  88 6D 97 A8 */	lbz r3, lbl_8060F5A8@sda21(r13)
 /* 801302C8 00121248  4E 80 00 20 */	blr
-.global lbl_801302CC
-lbl_801302CC:
+.global __sinit__snd_SoundSystem_cpp
+__sinit__snd_SoundSystem_cpp:
 /* 801302CC 0012124C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801302D0 00121250  7C 08 02 A6 */	mflr r0
 /* 801302D4 00121254  90 01 00 14 */	stw r0, 0x14(r1)
@@ -160,7 +160,7 @@ lbl_801302CC:
 /* 801302F0 00121270  38 7F 8A 50 */	addi r3, r31, lbl_805C8A50@l
 /* 801302F4 00121274  38 84 4D 30 */	addi r4, r4, lbl_80134D30@l
 /* 801302F8 00121278  38 A5 8A 40 */	addi r5, r5, lbl_805C8A40@l
-/* 801302FC 0012127C  4B F8 26 01 */	bl func_800B28FC
+/* 801302FC 0012127C  4B F8 26 01 */	bl __register_global_object
 /* 80130300 00121280  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80130304 00121284  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80130308 00121288  7C 08 03 A6 */	mtlr r0

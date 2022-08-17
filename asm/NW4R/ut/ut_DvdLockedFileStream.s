@@ -262,8 +262,8 @@ lbl_8018B330:
 /* 8018B37C 0017C2FC  7C 08 03 A6 */	mtlr r0
 /* 8018B380 0017C300  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018B384 0017C304  4E 80 00 20 */	blr
-.global lbl_8018B388
-lbl_8018B388:
+.global __sinit__ut_DvdLockedFileStream_cpp
+__sinit__ut_DvdLockedFileStream_cpp:
 /* 8018B388 0017C308  38 0D 99 98 */	addi r0, r13, lbl_8060F798@sda21
 /* 8018B38C 0017C30C  90 0D 99 A0 */	stw r0, lbl_8060F7A0@sda21(r13)
 /* 8018B390 0017C310  4E 80 00 20 */	blr

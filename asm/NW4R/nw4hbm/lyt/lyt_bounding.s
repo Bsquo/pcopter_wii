@@ -98,8 +98,8 @@ lbl_8017AC78:
 /* 8017AC78 0016BBF8  3C 60 80 5F */	lis r3, lbl_805F06B0@ha
 /* 8017AC7C 0016BBFC  38 63 06 B0 */	addi r3, r3, lbl_805F06B0@l
 /* 8017AC80 0016BC00  4E 80 00 20 */	blr
-.global lbl_8017AC84
-lbl_8017AC84:
+.global __sinit__nw4hbm_lyt_bounding_cpp
+__sinit__nw4hbm_lyt_bounding_cpp:
 /* 8017AC84 0016BC04  3C 80 80 5F */	lis r4, lbl_805F06E8@ha
 /* 8017AC88 0016BC08  3C 60 80 5F */	lis r3, lbl_805F06B0@ha
 /* 8017AC8C 0016BC0C  38 84 06 E8 */	addi r4, r4, lbl_805F06E8@l

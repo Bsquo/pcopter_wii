@@ -428,8 +428,8 @@ func_80119A88:
 /* 80119AA4 0010AA24  7C 08 03 A6 */	mtlr r0
 /* 80119AA8 0010AA28  38 21 00 10 */	addi r1, r1, 0x10
 /* 80119AAC 0010AA2C  4E 80 00 20 */	blr
-.global lbl_80119AB0
-lbl_80119AB0:
+.global __sinit__resource_cpp
+__sinit__resource_cpp:
 /* 80119AB0 0010AA30  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80119AB4 0010AA34  7C 08 02 A6 */	mflr r0
 /* 80119AB8 0010AA38  90 01 00 14 */	stw r0, 0x14(r1)
@@ -442,7 +442,7 @@ lbl_80119AB0:
 /* 80119AD4 0010AA54  38 84 9A F4 */	addi r4, r4, lbl_80119AF4@l
 /* 80119AD8 0010AA58  3C A0 80 5C */	lis r5, lbl_805C7DD0@ha
 /* 80119ADC 0010AA5C  38 A5 7D D0 */	addi r5, r5, lbl_805C7DD0@l
-/* 80119AE0 0010AA60  4B F9 8E 1D */	bl func_800B28FC
+/* 80119AE0 0010AA60  4B F9 8E 1D */	bl __register_global_object
 /* 80119AE4 0010AA64  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80119AE8 0010AA68  7C 08 03 A6 */	mtlr r0
 /* 80119AEC 0010AA6C  38 21 00 10 */	addi r1, r1, 0x10

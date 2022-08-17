@@ -631,8 +631,8 @@ func_800C28E4:
 /* 800C28F4 000B3874  38 21 00 90 */	addi r1, r1, 0x90
 /* 800C28F8 000B3878  4E 80 00 20 */	blr
 
-.global lbl_800C28FC
-lbl_800C28FC:
+.global __sinit__locale_cpp
+__sinit__locale_cpp:
 /* 800C28FC 000B387C  88 0D 95 68 */	lbz r0, lbl_8060F368@sda21(r13)
 /* 800C2900 000B3880  7C 00 07 75 */	extsb. r0, r0
 /* 800C2904 000B3884  40 82 00 0C */	bne lbl_800C2910

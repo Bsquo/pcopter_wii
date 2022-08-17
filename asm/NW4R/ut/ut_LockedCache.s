@@ -129,8 +129,8 @@ func_8018B520:
 .global func_8018B524
 func_8018B524:
 /* 8018B524 0017C4A4  4B EF D8 88 */	b func_80088DAC
-.global lbl_8018B528
-lbl_8018B528:
+.global __sinit__ut_LockedCache_cpp
+__sinit__ut_LockedCache_cpp:
 /* 8018B528 0017C4A8  3C 80 80 5F */	lis r4, lbl_805F0770@ha
 /* 8018B52C 0017C4AC  38 00 00 00 */	li r0, 0x0
 /* 8018B530 0017C4B0  38 64 07 70 */	addi r3, r4, lbl_805F0770@l

@@ -364,8 +364,8 @@ lbl_80181400:
 /* 80181400 00172380  3C 60 80 5F */	lis r3, lbl_805F06F0@ha
 /* 80181404 00172384  38 63 06 F0 */	addi r3, r3, lbl_805F06F0@l
 /* 80181408 00172388  4E 80 00 20 */	blr
-.global lbl_8018140C
-lbl_8018140C:
+.global __sinit__nw4hbm_lyt_picture_cpp
+__sinit__nw4hbm_lyt_picture_cpp:
 /* 8018140C 0017238C  3C 80 80 5F */	lis r4, lbl_805F06E8@ha
 /* 80181410 00172390  3C 60 80 5F */	lis r3, lbl_805F06F0@ha
 /* 80181414 00172394  38 84 06 E8 */	addi r4, r4, lbl_805F06E8@l

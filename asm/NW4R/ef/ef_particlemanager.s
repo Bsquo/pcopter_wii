@@ -2513,6 +2513,6 @@ func_80148D5C:
 /* 80148D68 00139CE8  7C 08 03 A6 */	mtlr r0
 /* 80148D6C 00139CEC  38 21 00 40 */	addi r1, r1, 0x40
 /* 80148D70 00139CF0  4E 80 00 20 */	blr
-.global lbl_80148D74
-lbl_80148D74:
+.global __sinit__ef_particlemanager_cpp
+__sinit__ef_particlemanager_cpp:
 /* 80148D74 00139CF4  4E 80 00 20 */	blr

@@ -2445,8 +2445,8 @@ lbl_80184F9C:
 /* 80184F9C 00175F1C  3C 60 80 5F */	lis r3, lbl_805F0700@ha
 /* 80184FA0 00175F20  38 63 07 00 */	addi r3, r3, lbl_805F0700@l
 /* 80184FA4 00175F24  4E 80 00 20 */	blr
-.global lbl_80184FA8
-lbl_80184FA8:
+.global __sinit__nw4hbm_lyt_window_cpp
+__sinit__nw4hbm_lyt_window_cpp:
 /* 80184FA8 00175F28  3C 80 80 5F */	lis r4, lbl_805F06E8@ha
 /* 80184FAC 00175F2C  3C 60 80 5F */	lis r3, lbl_805F0700@ha
 /* 80184FB0 00175F30  38 84 06 E8 */	addi r4, r4, lbl_805F06E8@l

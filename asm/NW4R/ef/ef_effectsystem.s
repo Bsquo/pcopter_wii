@@ -546,8 +546,8 @@ func_8013B190:
 /* 8013B20C 0012C18C  7C 08 03 A6 */	mtlr r0
 /* 8013B210 0012C190  38 21 00 30 */	addi r1, r1, 0x30
 /* 8013B214 0012C194  4E 80 00 20 */	blr
-.global lbl_8013B218
-lbl_8013B218:
+.global __sinit__ef_effectsystem_cpp
+__sinit__ef_effectsystem_cpp:
 /* 8013B218 0012C198  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8013B21C 0012C19C  7C 08 02 A6 */	mflr r0
 /* 8013B220 0012C1A0  3C 60 80 1F */	lis r3, lbl_801EDAC8@ha
@@ -615,7 +615,7 @@ lbl_8013B2FC:
 /* 8013B314 0012C294  90 06 C0 14 */	stw r0, -0x3fec(r6)
 /* 8013B318 0012C298  38 84 AA 78 */	addi r4, r4, lbl_8013AA78@l
 /* 8013B31C 0012C29C  98 06 C0 64 */	stb r0, -0x3f9c(r6)
-/* 8013B320 0012C2A0  4B F7 75 DD */	bl func_800B28FC
+/* 8013B320 0012C2A0  4B F7 75 DD */	bl __register_global_object
 /* 8013B324 0012C2A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8013B328 0012C2A8  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8013B32C 0012C2AC  83 C1 00 18 */	lwz r30, 0x18(r1)

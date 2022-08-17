@@ -42,8 +42,8 @@ func_80086528:
 /* 80086528 000774A8  44 00 00 02 */	sc
 /* 8008652C 000774AC  4E 80 00 20 */	blr
 
-.global func_80086530
-func_80086530:
+.global PPCHalt
+PPCHalt:
 /* 80086530 000774B0  7C 00 04 AC */	sync
 
 .global func_80086534

@@ -723,7 +723,7 @@ lbl_8000CB00:
 	.4byte func_800204F0
 	.4byte 0x00000034
 	.4byte lbl_80007154
-	.4byte lbl_80020524
+	.4byte __sinit__Shadow_cpp
 	.4byte 0x00000090
 	.4byte lbl_8000715C
 	.4byte __ct__8CVStringFPc
@@ -2289,7 +2289,7 @@ lbl_8000CB00:
 	.4byte func_8003A588
 	.4byte 0x00000248
 	.4byte lbl_80008C38
-	.4byte lbl_8003A7D0
+	.4byte __sinit__SceneMenuBase_cpp
 	.4byte 0x00000044
 	.4byte lbl_80008C40
 	.4byte func_8003A834
@@ -4469,7 +4469,7 @@ lbl_80010138:
 	.4byte Report__4demoFiiPCce
 	.4byte 0x000001C4
 	.4byte lbl_8000C670
-	.4byte lbl_8011945C
+	.4byte __sinit__report_cpp
 	.4byte 0x00000044
 	.4byte lbl_8000C678
 	.4byte func_801194A0
@@ -4493,7 +4493,7 @@ lbl_80010138:
 	.4byte func_80119A88
 	.4byte 0x00000028
 	.4byte lbl_8000C854
-	.4byte lbl_80119AB0
+	.4byte __sinit__resource_cpp
 	.4byte 0x00000044
 	.4byte lbl_8000C9CC
 	.4byte lbl_80119AF4

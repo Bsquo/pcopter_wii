@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_800B37EC
-func_800B37EC:
+.global __register_fragment
+__register_fragment:
 /* 800B37EC 000A476C  3C A0 80 58 */	lis r5, lbl_805818E8@ha
 /* 800B37F0 000A4770  38 A5 18 E8 */	addi r5, r5, lbl_805818E8@l
 /* 800B37F4 000A4774  80 05 00 08 */	lwz r0, 0x8(r5)
@@ -19,8 +19,8 @@ lbl_800B3818:
 /* 800B3818 000A4798  38 60 FF FF */	li r3, -0x1
 /* 800B381C 000A479C  4E 80 00 20 */	blr
 
-.global func_800B3820
-func_800B3820:
+.global __unregister_fragment
+__unregister_fragment:
 /* 800B3820 000A47A0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800B3824 000A47A4  4D 80 00 20 */	bltlr
 /* 800B3828 000A47A8  2C 03 00 01 */	cmpwi r3, 0x1

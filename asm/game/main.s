@@ -196,7 +196,7 @@ GetInstance__4CAppFv:
 /* 800116B0 00002630  38 7F 88 C0 */	addi r3, r31, lbl_805088C0@l
 /* 800116B4 00002634  38 84 25 48 */	addi r4, r4, lbl_80012548@l
 /* 800116B8 00002638  38 A5 1F 00 */	addi r5, r5, _51209@l
-/* 800116BC 0000263C  48 0A 12 41 */	bl func_800B28FC
+/* 800116BC 0000263C  48 0A 12 41 */	bl __register_global_object
 /* 800116C0 00002640  38 00 00 01 */	li r0, 0x1
 /* 800116C4 00002644  98 0D 8E EA */	stb r0, lbl_8060ECEA@sda21(r13)
 lbl_800116C8:

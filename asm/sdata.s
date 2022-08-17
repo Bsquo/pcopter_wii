@@ -1660,8 +1660,8 @@ lbl_8060E8B4:
 	# ROM: 0x1EEAB4
 	.4byte lbl_800B2960
 
-.global lbl_8060E8B8
-lbl_8060E8B8:
+.global fragmentID
+fragmentID:
 
 	# ROM: 0x1EEAB8
 	.4byte 0xFFFFFFFE

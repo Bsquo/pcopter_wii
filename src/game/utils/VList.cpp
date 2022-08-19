@@ -33,6 +33,7 @@ s32 CVListBase::GetIndex() {
     }
     return -1;
 }
+
 CVList::CVList() {
     pStart = nullptr;
     pEnd = nullptr;

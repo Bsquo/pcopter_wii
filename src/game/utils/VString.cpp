@@ -46,8 +46,9 @@ asm void* operator new[](size_t size) {
     /* 80020684 00011604  4E 80 00 20 */	blr
 }
 /*
+// https://decomp.me/scratch/w9brG
 void* operator new[](size_t size) throw() {
-    return demo::Alloc(size, 4, *(demo::Memory*)0);
+    return demo::Alloc(size, 4, demo::MEM_NULL);
 }
 */
 CVString::~CVString() {

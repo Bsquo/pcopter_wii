@@ -2688,6 +2688,11 @@ lbl_801BFF88:
 	.asciz "enary"
 	.byte 0x53, 0x63
 	.4byte 0x656E6172
+
+.global lbl_801C0000
+lbl_801C0000:
+	
+	# ROM: 0x1BC100
 	.byte 0x79
 
 .global lbl_801C0001
@@ -3067,11 +3072,21 @@ lbl_801C003F:
 
 	# ROM: 0x1BC13F
 	.balign 4
+	
+.global lbl_801C0040
+lbl_801C0040:
+
+	# ROM: 0x1BC140
 	.asciz "Scenary"
 	.asciz "Count"
 	.byte 0x53, 0x45
 	.asciz "_Fanfare"
 	.byte 0x53, 0x63, 0x65
+	
+.global lbl_801C005C
+lbl_801C005C:
+
+	# ROM: 0x1BC140
 	.asciz "nary"
 	.byte 0x53, 0x63, 0x65
 	.asciz "nary"

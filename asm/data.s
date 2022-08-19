@@ -21215,6 +21215,8 @@ lbl_801E0024:
 
 	# ROM: 0x1DC124
 	.4byte 0x26FC02A0
+.global lbl_801E0028
+lbl_801E0028:
 	.4byte 0x8000029C
 	.4byte 0x0F4202FF
 	.4byte 0
@@ -21232,6 +21234,8 @@ lbl_801E0024:
 	.4byte 0x02FF8E00
 	.4byte 0x1DBC1DBE
 	.4byte 0x810000DE
+.global lbl_801E006C
+lbl_801E006C:
 	.4byte 0x03070601
 	.4byte 0x02950F72
 	.4byte 0x0E0000FE
@@ -21260,6 +21264,8 @@ lbl_801E0024:
 	.4byte 0x0FAC0FE4
 	.4byte 0x0FE78E00
 	.4byte 0x81008900
+.global lbl_801E00DC
+lbl_801E00DC:
 	.4byte 0x02BF0FEA
 	.4byte 0x27FF009E
 	.4byte 0x0F974C00
@@ -21292,6 +21298,8 @@ lbl_801E0024:
 	.4byte 0x21FF02BF
 	.4byte 0x0FEA23FF
 	.4byte 0x26C902A0
+.global lbl_801E0158
+lbl_801E0158:
 	.4byte 0x0004029C
 	.4byte 0x0FDC029F
 	.4byte 0x80B50021
@@ -21338,6 +21346,8 @@ lbl_801E01A0:
 	.4byte 0x000004FF
 	.4byte 0x000009AD
 	.4byte 0x00000F31
+.global lbl_801E0200
+lbl_801E0200:
 	.4byte 0x3ECCCCCD
 	.4byte 0xBF800000
 	.4byte 0x3E99999A
@@ -21352,6 +21362,8 @@ lbl_801E01A0:
 	.4byte 0x3E99999A
 	.4byte 0xBF666666
 	.4byte 0x3F4CCCCD
+.global lbl_801E0234
+lbl_801E0234:
 	.4byte 0x3E99999A
 	.4byte 0xBF800000
 	.4byte 0x3F333333
@@ -21375,6 +21387,8 @@ lbl_801E0260:
 	.4byte 0x0000002F
 	.4byte 0x00000049
 	.4byte 0x00000043
+.global lbl_801E0280
+lbl_801E0280:
 	.4byte 0x00000095
 	.4byte 0x00000125
 	.4byte 0x000001C1
@@ -21396,6 +21410,8 @@ lbl_801E0260:
 	.4byte 0x000007B5
 	.4byte 0x000001FD
 	.4byte 0x00000095
+.global lbl_801E02D4
+lbl_801E02D4:
 	.4byte 0x0000002F
 	.4byte 0x00000049
 	.4byte 0x00000043
@@ -21415,6 +21431,8 @@ lbl_801E0260:
 	.4byte 0x0000002F
 	.4byte 0x00000049
 	.4byte 0x00000043
+.global lbl_801E0320
+lbl_801E0320:
 	.4byte 0x0000071F
 	.4byte 0x00000935
 	.4byte 0x00000A85
@@ -21442,6 +21460,8 @@ lbl_801E0340:
 	.4byte 0x00010001
 	.4byte 0x00010001
 	.4byte 0x00010001
+.global lbl_801E0378
+lbl_801E0378:
 	.4byte 0x00010001
 	.4byte 0x00010001
 	.4byte 0x00010001
@@ -21463,6 +21483,8 @@ lbl_801E0340:
 	.4byte 0x00020002
 	.4byte 0x00020002
 	.4byte 0x00020002
+.global lbl_801E03CC
+lbl_801E03CC:
 	.4byte 0x00020002
 	.4byte 0x00020002
 	.4byte 0x00020002
@@ -21477,6 +21499,8 @@ lbl_801E0340:
 	.4byte 0x00020002
 	.4byte 0x00020002
 	.4byte 0x00020003
+.global lbl_801E0404
+lbl_801E0404:
 	.4byte 0x00030003
 	.4byte 0x00030003
 	.4byte 0x00030003
@@ -21500,6 +21524,8 @@ lbl_801E0340:
 	.4byte 0x00040004
 	.4byte 0x00040005
 	.4byte 0x00050005
+.global lbl_801E0460
+lbl_801E0460:
 	.4byte 0x00050005
 	.4byte 0x00050005
 	.4byte 0x00050005
@@ -21514,6 +21540,8 @@ lbl_801E0340:
 	.4byte 0x00060006
 	.4byte 0x00060006
 	.4byte 0x00070007
+.global lbl_801E0498
+lbl_801E0498:
 	.4byte 0x00070007
 	.4byte 0x00070007
 	.4byte 0x00070007
@@ -21528,6 +21556,8 @@ lbl_801E0340:
 	.4byte 0x00090009
 	.4byte 0x00090009
 	.4byte 0x00090009
+.global lbl_801E04D0
+lbl_801E04D0:
 	.4byte 0x0009000A
 	.4byte 0x000A000A
 	.4byte 0x000A000A
@@ -21546,6 +21576,8 @@ lbl_801E0340:
 	.4byte 0x000D000E
 	.4byte 0x000E000E
 	.4byte 0x000E000E
+.global lbl_801E0518
+lbl_801E0518:
 	.4byte 0x000E000F
 	.4byte 0x000F000F
 	.4byte 0x000F000F
@@ -21560,6 +21592,8 @@ lbl_801E0340:
 	.4byte 0x00130013
 	.4byte 0x00130013
 	.4byte 0x00140014
+.global lbl_801E0550
+lbl_801E0550:
 	.4byte 0x00140014
 	.4byte 0x00150015
 	.4byte 0x00150015
@@ -21574,6 +21608,8 @@ lbl_801E0340:
 	.4byte 0x001A001A
 	.4byte 0x001B001B
 	.4byte 0x001B001C
+.global lbl_801E0588
+lbl_801E0588:
 	.4byte 0x001C001C
 	.4byte 0x001D001D
 	.4byte 0x001D001E
@@ -21632,6 +21668,8 @@ lbl_801E0340:
 	.4byte 0x00650066
 	.4byte 0x00670068
 	.4byte 0x006A006B
+.global lbl_801E0670
+lbl_801E0670:
 	.4byte 0x006C006D
 	.4byte 0x006F0070
 	.4byte 0x00710072
@@ -21646,6 +21684,8 @@ lbl_801E0340:
 	.4byte 0x008B008D
 	.4byte 0x008F0090
 	.4byte 0x00920094
+.global lbl_801E06A8
+lbl_801E06A8:
 	.4byte 0x00950097
 	.4byte 0x0099009B
 	.4byte 0x009C009E
@@ -21660,6 +21700,8 @@ lbl_801E0340:
 	.4byte 0x00C000C3
 	.4byte 0x00C500C7
 	.4byte 0x00CA00CC
+.global lbl_801E06E0
+lbl_801E06E0:
 	.4byte 0x00CE00D1
 	.4byte 0x00D300D6
 	.4byte 0x00D800DB
@@ -21676,6 +21718,8 @@ lbl_801E0340:
 	.4byte 0x0116011A
 	.4byte 0x011D0120
 	.4byte 0x01240127
+.global lbl_801E0720
+lbl_801E0720:
 	.4byte 0x012A012E
 	.4byte 0x01310135
 	.4byte 0x0138013C
@@ -21694,6 +21738,8 @@ lbl_801E0340:
 	.4byte 0x01A601AB
 	.4byte 0x01AF01B4
 	.4byte 0x01BA01BF
+.global lbl_801E0768
+lbl_801E0768:
 	.4byte 0x01C401C9
 	.4byte 0x01CE01D4
 	.4byte 0x01D901DF
@@ -21709,6 +21755,8 @@ lbl_801E0340:
 	.4byte 0x0254025B
 	.4byte 0x02620269
 	.4byte 0x02700277
+.global lbl_801E07A4
+lbl_801E07A4:
 	.4byte 0x027E0286
 	.4byte 0x028D0295
 	.4byte 0x029D02A4
@@ -21728,6 +21776,8 @@ lbl_801E0340:
 	.4byte 0x039B03A6
 	.4byte 0x03B103BB
 	.4byte 0x03C703D2
+.global lbl_801E07F0
+lbl_801E07F0:
 	.4byte 0x03DD03E9
 	.4byte 0x03F40400
 	.4byte 0x040C0418
@@ -21746,6 +21796,8 @@ lbl_801E0340:
 	.4byte 0x05750586
 	.4byte 0x059605A6
 	.4byte 0x05B705C8
+.global lbl_801E0838
+lbl_801E0838:
 	.4byte 0x05D905EB
 	.4byte 0x05FC060E
 	.4byte 0x06200632
@@ -21760,6 +21812,8 @@ lbl_801E0340:
 	.4byte 0x0789079F
 	.4byte 0x07B607CD
 	.4byte 0x07E407FB
+.global lbl_801E0870
+lbl_801E0870:
 	.4byte 0x0813082B
 	.4byte 0x0843085C
 	.4byte 0x0874088E
@@ -21772,6 +21826,8 @@ lbl_801E0340:
 	.4byte 0x09EF0A0D
 	.4byte 0x0A2A0A48
 	.4byte 0x0A670A86
+.global lbl_801E08A0
+lbl_801E08A0:
 	.4byte 0x0AA50AC5
 	.4byte 0x0AE50B05
 	.4byte 0x0B250B47
@@ -21784,6 +21840,8 @@ lbl_801E0340:
 	.4byte 0x0D190D3F
 	.4byte 0x0D670D8E
 	.4byte 0x0DB70DDF
+.global lbl_801E08D0
+lbl_801E08D0:
 	.4byte 0x0E080E32
 	.4byte 0x0E5C0E87
 	.4byte 0x0EB20EDD
@@ -21798,6 +21856,8 @@ lbl_801E0340:
 	.4byte 0x1214124A
 	.4byte 0x128012B7
 	.4byte 0x12EE1326
+.global lbl_801E0908
+lbl_801E0908:
 	.4byte 0x135F1399
 	.4byte 0x13D3140D
 	.4byte 0x14491485
@@ -21806,6 +21866,8 @@ lbl_801E0340:
 	.4byte 0x15BC15FD
 	.4byte 0x163E1680
 	.4byte 0x16C31706
+.global lbl_801E0928
+lbl_801E0928:
 	.4byte 0x174A178F
 	.4byte 0x17D5181C
 	.4byte 0x186318AC
@@ -21818,6 +21880,8 @@ lbl_801E0340:
 	.4byte 0x1CA71CFC
 	.4byte 0x1D521DA9
 	.4byte 0x1E011E5A
+.global lbl_801E0958
+lbl_801E0958:
 	.4byte 0x1EB41F0F
 	.4byte 0x1F6B1FC8
 	.4byte 0x20262086
@@ -21835,6 +21899,8 @@ lbl_801E0340:
 	.4byte 0x2A622AE0
 	.4byte 0x2B5F2BDF
 	.4byte 0x2C612CE5
+.global lbl_801E099C
+lbl_801E099C:
 	.4byte 0x2D6A2DF1
 	.4byte 0x2E792F03
 	.4byte 0x2F8E301B
@@ -21848,6 +21914,8 @@ lbl_801E0340:
 	.4byte 0x392C39D6
 	.4byte 0x3A813B2F
 	.4byte 0x3BDE3C90
+.global lbl_801E09D0
+lbl_801E09D0:
 	.4byte 0x3D433DF9
 	.4byte 0x3EB13F6A
 	.4byte 0x402640E5
@@ -21873,6 +21941,8 @@ lbl_801E0340:
 	.4byte 0x65AC66D9
 	.4byte 0x680A693F
 	.4byte 0x6A776BB2
+.global lbl_801E0A34
+lbl_801E0A34:
 	.4byte 0x6CF26E35
 	.4byte 0x6F7B70C6
 	.4byte 0x72147366
@@ -21896,6 +21966,8 @@ lbl_801E0340:
 	.4byte 0xACAAAEAA
 	.4byte 0xB0B0B2BC
 	.4byte 0xB4CEB6E5
+.global lbl_801E0A90
+lbl_801E0A90:
 	.4byte 0xB904BB28
 	.4byte 0xBD53BF84
 	.4byte 0xC1BCC3FA
@@ -21924,6 +21996,8 @@ lbl_801E0340:
 	.4byte 0xFFFFFFFD
 	.4byte 0xFFFFFFFC
 	.4byte 0xFFFFFFFC
+.global lbl_801E0B00
+lbl_801E0B00:
 	.4byte 0xFFFFFFFC
 	.4byte 0xFFFFFFFB
 	.4byte 0xFFFFFFFB
@@ -21951,6 +22025,8 @@ lbl_801E0340:
 	.4byte 0xFFFFFFF2
 	.4byte 0xFFFFFFF1
 	.4byte 0xFFFFFFF1
+.global lbl_801E0B6C
+lbl_801E0B6C:
 	.4byte 0xFFFFFFF0
 	.4byte 0xFFFFFFF0
 	.4byte 0xFFFFFFEF
@@ -21968,6 +22044,8 @@ lbl_801E0340:
 	.4byte 0xFFFFFFE9
 	.4byte 0xFFFFFFE8
 	.4byte 0xFFFFFFE7
+.global lbl_801E0BB0
+lbl_801E0BB0:
 	.4byte 0xFFFFFFE7
 	.4byte 0xFFFFFFE6
 	.4byte 0xFFFFFFE6
@@ -21979,6 +22057,8 @@ lbl_801E0340:
 	.4byte 0xFFFFFFE2
 	.4byte 0xFFFFFFE1
 	.4byte 0xFFFFFFE0
+.global lbl_801E0BDC
+lbl_801E0BDC:
 	.4byte 0xFFFFFFDF
 	.4byte 0xFFFFFFDF
 	.4byte 0xFFFFFFDE
@@ -21992,6 +22072,8 @@ lbl_801E0340:
 	.4byte 0xFFFFFFD8
 	.4byte 0xFFFFFFD7
 	.4byte 0xFFFFFFD6
+.global lbl_801E0C10
+lbl_801E0C10:
 	.4byte 0xFFFFFFD5
 	.4byte 0xFFFFFFD4
 	.4byte 0xFFFFFFD3
@@ -22015,6 +22097,8 @@ lbl_801E0340:
 	.4byte 0xFFFFFFBD
 	.4byte 0xFFFFFFBB
 	.4byte 0xFFFFFFB9
+.global lbl_801E0C6C
+lbl_801E0C6C:
 	.4byte 0xFFFFFFB8
 	.4byte 0xFFFFFFB6
 	.4byte 0xFFFFFFB4
@@ -22043,6 +22127,8 @@ lbl_801E0340:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+.global lbl_801E0CDC
+lbl_801E0CDC:
 	.4byte 0
 	.4byte 0
 	.4byte 0
@@ -34414,6 +34500,8 @@ lbl_801F0070:
 	.4byte 0x3C5B4891
 	.4byte 0xBCA888B5
 	.4byte 0x3F58485A
+.global lbl_801F0114
+lbl_801F0114:
 	.4byte 0x3F08F5A1
 	.4byte 0x3C52F1AA
 	.4byte 0xBCAB2BFE

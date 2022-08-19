@@ -180,7 +180,11 @@ lbl_8054D490:
 
 .global lbl_8054D500
 lbl_8054D500:
-	.skip 0x10760
+	.skip 0x3B00
+	
+.global lbl_80551000
+lbl_80551000:
+	.skip 0xCC60
 
 .global lbl_8055DC60
 lbl_8055DC60:
@@ -448,7 +452,15 @@ lbl_8056006C:
 
 .global lbl_80560070
 lbl_80560070:
-	.skip 0x3810
+	.skip 0x2A8
+	
+.global lbl_80560318
+lbl_80560318:
+	.skip 0x100
+	
+.global lbl_80560418
+lbl_80560418:
+	.skip 0x3468
 
 .global lbl_80563880
 lbl_80563880:
@@ -832,7 +844,15 @@ lbl_80591D40:
 
 .global lbl_80591D60
 lbl_80591D60:
-	.skip 0x28AE0
+	.skip 0x1E2CC
+	
+.global lbl_805B002C
+lbl_805B002C:
+	.skip 0x10
+	
+.global lbl_805B003C
+lbl_805B003C:
+	.skip 0xA804
 
 .global lbl_805BA840
 lbl_805BA840:
@@ -1068,7 +1088,11 @@ lbl_805C0038:
 
 .global lbl_805C0DE0
 lbl_805C0DE0:
-	.skip 0x3B0
+	.skip 0x220
+	
+.global lbl_805C1000
+lbl_805C1000:
+	.skip 0x190
 
 .global lbl_805C1190
 lbl_805C1190:

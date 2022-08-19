@@ -3,9 +3,6 @@
 
 #include "types.h"
 
-// extern "C" is used to avoid the compiler from mangling the name in C++ code.
-// More info:
-// https://stackoverflow.com/questions/1041866/what-is-the-effect-of-extern-c-in-c
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -23,3 +20,21 @@ void Free__4demoFPv(void*);
 #endif // __cplusplus
 
 #endif // DEMO_H
+
+/*#ifndef DEMO_H
+#define DEMO_H
+
+#include "types.h"
+
+namespace demo {
+
+    enum Memory {
+        MEM_NULL = 0
+    };
+
+    void* Alloc(size_t size, int align, demo::Memory heap);
+    void Free(void*);
+}
+
+#endif // DEMO_H
+*/

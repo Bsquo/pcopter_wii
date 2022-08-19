@@ -1,6 +1,5 @@
 .vscode
 *.dat
-*.exe
 *.dll
 *.idb
 *.id0
@@ -14,6 +13,7 @@
 *.dol
 *.a
 *.d
-*.map
 *.exe
+*.dump
+asmdiff.sh
 build

@@ -218,6 +218,7 @@ $(DOL): $(ELF) | tools
 clean:
 	rm -f -d -r build
 	$(MAKE) -C tools clean
+	rm -f -d -r *.dump
 
 tools:
 	$(MAKE) -C tools

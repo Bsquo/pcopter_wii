@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__lyt_textBox_cpp
+.4byte __sinit_$3_lyt_textBox_cpp
 
 .section .text, "ax"
 
@@ -1810,8 +1810,8 @@ lbl_80162A94:
 /* 80162A94 00153A14  38 6D 98 40 */	addi r3, r13, lbl_8060F640@sda21
 /* 80162A98 00153A18  4E 80 00 20 */	blr
 
-.global __sinit__lyt_textBox_cpp
-__sinit__lyt_textBox_cpp:
+.global __sinit_$3_lyt_textBox_cpp
+__sinit_$3_lyt_textBox_cpp:
 /* 80162A9C 00153A1C  38 0D 98 28 */	addi r0, r13, lbl_8060F628@sda21
 /* 80162AA0 00153A20  90 0D 98 40 */	stw r0, lbl_8060F640@sda21(r13)
 /* 80162AA4 00153A24  4E 80 00 20 */	blr

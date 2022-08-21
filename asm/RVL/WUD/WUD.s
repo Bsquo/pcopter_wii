@@ -1,5 +1,7 @@
 .include "macros.s"
+
 .section .text, "ax"
+
 .global func_800E25D8
 func_800E25D8:
 /* 800E25D8 000D3558  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1023,7 +1025,7 @@ lbl_800E33B8:
 /* 800E33C4 000D4344  38 A0 00 00 */	li r5, 0x0
 /* 800E33C8 000D4348  38 E7 2B 7C */	addi r7, r7, lbl_800E2B7C@l
 /* 800E33CC 000D434C  38 C0 00 00 */	li r6, 0x0
-/* 800E33D0 000D4350  39 08 10 00 */	addi r8, r8, 0x1000
+/* 800E33D0 000D4350  39 08 10 00 */	addi r8, r8, lbl_80591000@l
 /* 800E33D4 000D4354  4B FA 61 64 */	b func_80089538
 .global func_800E33D8
 func_800E33D8:

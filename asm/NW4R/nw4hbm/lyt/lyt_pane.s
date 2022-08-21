@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__nw4hbm_lyt_pane_cpp
+.4byte __sinit_$3_nw4hbm_lyt_pane_cpp
 
 .section .text, "ax"
 
@@ -1145,8 +1145,8 @@ func_80180EC0:
 lbl_80180ED0:
 /* 80180ED0 00171E50  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 80180ED4 00171E54  4E 80 00 20 */	blr
-.global __sinit__nw4hbm_lyt_pane_cpp
-__sinit__nw4hbm_lyt_pane_cpp:
+.global __sinit_$3_nw4hbm_lyt_pane_cpp
+__sinit_$3_nw4hbm_lyt_pane_cpp:
 /* 80180ED8 00171E58  38 00 00 00 */	li r0, 0x0
 /* 80180EDC 00171E5C  3C 60 80 5F */	lis r3, lbl_805F06E8@ha
 /* 80180EE0 00171E60  90 03 06 E8 */	stw r0, lbl_805F06E8@l(r3)

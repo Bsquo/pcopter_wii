@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__ut_FileStream_cpp
+.4byte __sinit_$3_ut_FileStream_cpp
 
 .section .text, "ax"
 
@@ -87,8 +87,8 @@ lbl_8018AA04:
 func_8018AA08:
 /* 8018AA08 0017B988  90 C3 00 04 */	stw r6, 0x4(r3)
 /* 8018AA0C 0017B98C  4E 80 00 20 */	blr
-.global __sinit__ut_FileStream_cpp
-__sinit__ut_FileStream_cpp:
+.global __sinit_$3_ut_FileStream_cpp
+__sinit_$3_ut_FileStream_cpp:
 /* 8018AA10 0017B990  38 0D 99 88 */	addi r0, r13, lbl_8060F788@sda21
 /* 8018AA14 0017B994  90 0D 99 90 */	stw r0, lbl_8060F790@sda21(r13)
 /* 8018AA18 0017B998  4E 80 00 20 */	blr

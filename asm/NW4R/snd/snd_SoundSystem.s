@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__snd_SoundSystem_cpp
+.4byte __sinit_$3_snd_SoundSystem_cpp
 
 .section .text, "ax"
 
@@ -151,8 +151,8 @@ lbl_801302AC:
 func_801302C4:
 /* 801302C4 00121244  88 6D 97 A8 */	lbz r3, lbl_8060F5A8@sda21(r13)
 /* 801302C8 00121248  4E 80 00 20 */	blr
-.global __sinit__snd_SoundSystem_cpp
-__sinit__snd_SoundSystem_cpp:
+.global __sinit_$3_snd_SoundSystem_cpp
+__sinit_$3_snd_SoundSystem_cpp:
 /* 801302CC 0012124C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801302D0 00121250  7C 08 02 A6 */	mflr r0
 /* 801302D4 00121254  90 01 00 14 */	stw r0, 0x14(r1)

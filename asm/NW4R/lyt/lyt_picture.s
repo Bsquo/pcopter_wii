@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__lyt_picture_cpp
+.4byte __sinit_$3_lyt_picture_cpp
 
 .section .text, "ax"
 
@@ -459,8 +459,8 @@ lbl_80161250:
 /* 80161250 001521D0  38 6D 98 38 */	addi r3, r13, lbl_8060F638@sda21
 /* 80161254 001521D4  4E 80 00 20 */	blr
 
-.global __sinit__lyt_picture_cpp
-__sinit__lyt_picture_cpp:
+.global __sinit_$3_lyt_picture_cpp
+__sinit_$3_lyt_picture_cpp:
 /* 80161258 001521D8  38 0D 98 28 */	addi r0, r13, lbl_8060F628@sda21
 /* 8016125C 001521DC  90 0D 98 38 */	stw r0, lbl_8060F638@sda21(r13)
 /* 80161260 001521E0  4E 80 00 20 */	blr

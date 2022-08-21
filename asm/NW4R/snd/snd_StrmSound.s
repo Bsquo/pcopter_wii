@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__snd_StrmSound_cpp
+.4byte __sinit_$3_snd_StrmSound_cpp
 
 .section .text, "ax"
 
@@ -555,8 +555,8 @@ lbl_80134600:
 lbl_80134608:
 /* 80134608 00125588  38 6D 97 C0 */	addi r3, r13, lbl_8060F5C0@sda21
 /* 8013460C 0012558C  4E 80 00 20 */	blr
-.global __sinit__snd_StrmSound_cpp
-__sinit__snd_StrmSound_cpp:
+.global __sinit_$3_snd_StrmSound_cpp
+__sinit_$3_snd_StrmSound_cpp:
 /* 80134610 00125590  38 0D 97 68 */	addi r0, r13, lbl_8060F568@sda21
 /* 80134614 00125594  90 0D 97 C0 */	stw r0, lbl_8060F5C0@sda21(r13)
 /* 80134618 00125598  4E 80 00 20 */	blr

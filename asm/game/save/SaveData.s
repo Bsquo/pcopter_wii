@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__SaveData_cpp
+.4byte __sinit_$3_SaveData_cpp
 
 .section .rodata, "a", @progbits 
 
@@ -1273,8 +1273,8 @@ func_800348D8:
 /* 800348E8 00025868  7C 83 00 38 */	and r3, r4, r0
 /* 800348EC 0002586C  4E 80 00 20 */	blr
 
-.global __sinit__SaveData_cpp
-__sinit__SaveData_cpp:
+.global __sinit_$3_SaveData_cpp
+__sinit_$3_SaveData_cpp:
 /* 800348F0 00025870  3C 60 80 52 */	lis r3, lbl_8051D6E0@ha
 /* 800348F4 00025874  38 63 D6 E0 */	addi r3, r3, lbl_8051D6E0@l
 /* 800348F8 00025878  48 00 00 04 */	b func_800348FC

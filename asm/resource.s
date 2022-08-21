@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__resource_cpp
+.4byte __sinit_$3_resource_cpp
 
 .section .text, "ax"
 
@@ -433,8 +433,8 @@ func_80119A88:
 /* 80119AA4 0010AA24  7C 08 03 A6 */	mtlr r0
 /* 80119AA8 0010AA28  38 21 00 10 */	addi r1, r1, 0x10
 /* 80119AAC 0010AA2C  4E 80 00 20 */	blr
-.global __sinit__resource_cpp
-__sinit__resource_cpp:
+.global __sinit_$3_resource_cpp
+__sinit_$3_resource_cpp:
 /* 80119AB0 0010AA30  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80119AB4 0010AA34  7C 08 02 A6 */	mflr r0
 /* 80119AB8 0010AA38  90 01 00 14 */	stw r0, 0x14(r1)

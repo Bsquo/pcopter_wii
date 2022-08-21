@@ -832,7 +832,11 @@ lbl_80590CC8:
 
 .global lbl_80590D20
 lbl_80590D20:
-	.skip 0x1000
+	.skip 0x2E0
+	
+.global lbl_80591000
+lbl_80591000:
+	.skip 0xD20
 
 .global lbl_80591D20
 lbl_80591D20:
@@ -1112,7 +1116,11 @@ lbl_805C1EC8:
 
 .global lbl_805C22E0
 lbl_805C22E0:
-	.skip 0x4638
+	.skip 0x4604
+	
+.global lbl_805C68E4
+lbl_805C68E4:
+	.skip 0x34
 
 .global lbl_805C6918
 lbl_805C6918:

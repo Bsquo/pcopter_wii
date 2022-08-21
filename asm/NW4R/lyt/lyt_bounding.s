@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__lyt_bounding_cpp
+.4byte __sinit_$3_lyt_bounding_cpp
 
 .section .text, "ax"
 
@@ -58,8 +58,8 @@ lbl_801650F4:
 /* 801650F4 00156074  38 6D 98 50 */	addi r3, r13, lbl_8060F650@sda21
 /* 801650F8 00156078  4E 80 00 20 */	blr
 
-.global __sinit__lyt_bounding_cpp
-__sinit__lyt_bounding_cpp:
+.global __sinit_$3_lyt_bounding_cpp
+__sinit_$3_lyt_bounding_cpp:
 /* 801650FC 0015607C  38 0D 98 28 */	addi r0, r13, lbl_8060F628@sda21
 /* 80165100 00156080  90 0D 98 50 */	stw r0, lbl_8060F650@sda21(r13)
 /* 80165104 00156084  4E 80 00 20 */	blr

@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__ut_DvdFileStream_cpp
+.4byte __sinit_$3_ut_DvdFileStream_cpp
 
 .section .text, "ax"
 
@@ -427,8 +427,8 @@ lbl_8018AFD8:
 lbl_8018AFE0:
 /* 8018AFE0 0017BF60  38 6D 99 98 */	addi r3, r13, lbl_8060F798@sda21
 /* 8018AFE4 0017BF64  4E 80 00 20 */	blr
-.global __sinit__ut_DvdFileStream_cpp
-__sinit__ut_DvdFileStream_cpp:
+.global __sinit_$3_ut_DvdFileStream_cpp
+__sinit_$3_ut_DvdFileStream_cpp:
 /* 8018AFE8 0017BF68  38 0D 99 90 */	addi r0, r13, lbl_8060F790@sda21
 /* 8018AFEC 0017BF6C  90 0D 99 98 */	stw r0, lbl_8060F798@sda21(r13)
 /* 8018AFF0 0017BF70  4E 80 00 20 */	blr

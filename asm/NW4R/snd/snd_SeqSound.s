@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__snd_SeqSound_cpp
+.4byte __sinit_$3_snd_SeqSound_cpp
 
 .section .text, "ax"
 
@@ -539,8 +539,8 @@ lbl_80129C30:
 lbl_80129C38:
 /* 80129C38 0011ABB8  38 6D 97 90 */	addi r3, r13, lbl_8060F590@sda21
 /* 80129C3C 0011ABBC  4E 80 00 20 */	blr
-.global __sinit__snd_SeqSound_cpp
-__sinit__snd_SeqSound_cpp:
+.global __sinit_$3_snd_SeqSound_cpp
+__sinit_$3_snd_SeqSound_cpp:
 /* 80129C40 0011ABC0  38 0D 97 68 */	addi r0, r13, lbl_8060F568@sda21
 /* 80129C44 0011ABC4  90 0D 97 90 */	stw r0, lbl_8060F590@sda21(r13)
 /* 80129C48 0011ABC8  4E 80 00 20 */	blr

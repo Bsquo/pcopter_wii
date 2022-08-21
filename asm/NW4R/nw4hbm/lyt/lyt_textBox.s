@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__nw4hbm_lyt_textBox_cpp
+.4byte __sinit_$3_nw4hbm_lyt_textBox_cpp
 
 .section .text, "ax"
 
@@ -1608,8 +1608,8 @@ lbl_80182AEC:
 /* 80182AEC 00173A6C  3C 60 80 5F */	lis r3, lbl_805F06F8@ha
 /* 80182AF0 00173A70  38 63 06 F8 */	addi r3, r3, lbl_805F06F8@l
 /* 80182AF4 00173A74  4E 80 00 20 */	blr
-.global __sinit__nw4hbm_lyt_textBox_cpp
-__sinit__nw4hbm_lyt_textBox_cpp:
+.global __sinit_$3_nw4hbm_lyt_textBox_cpp
+__sinit_$3_nw4hbm_lyt_textBox_cpp:
 /* 80182AF8 00173A78  3C 80 80 5F */	lis r4, lbl_805F06E8@ha
 /* 80182AFC 00173A7C  3C 60 80 5F */	lis r3, lbl_805F06F8@ha
 /* 80182B00 00173A80  38 84 06 E8 */	addi r4, r4, lbl_805F06E8@l

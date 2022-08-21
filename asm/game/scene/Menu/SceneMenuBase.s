@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__SceneMenuBase_cpp
+.4byte __sinit_$3_SceneMenuBase_cpp
 
 .section .rodata, "a", @progbits
 
@@ -4869,8 +4869,8 @@ lbl_8003A7B4:
 /* 8003A7C8 0002B748  38 21 00 20 */	addi r1, r1, 0x20
 /* 8003A7CC 0002B74C  4E 80 00 20 */	blr
 
-.global __sinit__SceneMenuBase_cpp
-__sinit__SceneMenuBase_cpp:
+.global __sinit_$3_SceneMenuBase_cpp
+__sinit_$3_SceneMenuBase_cpp:
 /* 8003A7D0 0002B750  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8003A7D4 0002B754  7C 08 02 A6 */	mflr r0
 /* 8003A7D8 0002B758  90 01 00 14 */	stw r0, 0x14(r1)

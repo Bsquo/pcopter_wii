@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__ef_emform_cpp
+.4byte __sinit_$3_ef_emform_cpp
 
 .section .text, "ax"
 
@@ -47,8 +47,8 @@ lbl_8014B16C:
 lbl_8014B174:
 /* 8014B174 0013C0F4  38 60 00 00 */	li r3, 0x0
 /* 8014B178 0013C0F8  4E 80 00 20 */	blr
-.global __sinit__ef_emform_cpp
-__sinit__ef_emform_cpp:
+.global __sinit_$3_ef_emform_cpp
+__sinit_$3_ef_emform_cpp:
 /* 8014B17C 0013C0FC  3D 20 80 1F */	lis r9, lbl_801EDE40@ha
 /* 8014B180 0013C100  3D 00 80 1F */	lis r8, lbl_801EDE30@ha
 /* 8014B184 0013C104  3C E0 80 1F */	lis r7, lbl_801EDE60@ha

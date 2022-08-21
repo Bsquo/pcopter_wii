@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__report_cpp
+.4byte __sinit_$3_report_cpp
 
 .section .text, "ax"
 
@@ -456,8 +456,8 @@ lbl_80119400:
 /* 80119450 0010A3D0  7C 08 03 A6 */	mtlr r0
 /* 80119454 0010A3D4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80119458 0010A3D8  4E 80 00 20 */	blr
-.global __sinit__report_cpp
-__sinit__report_cpp:
+.global __sinit_$3_report_cpp
+__sinit_$3_report_cpp:
 /* 8011945C 0010A3DC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80119460 0010A3E0  7C 08 02 A6 */	mflr r0
 /* 80119464 0010A3E4  90 01 00 14 */	stw r0, 0x14(r1)

@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__lyt_pane_cpp
+.4byte __sinit_$3_lyt_pane_cpp
 
 .section .text, "ax"
 
@@ -1286,8 +1286,8 @@ lbl_8015F8E8:
 /* 8015F8E8 00150868  38 60 00 00 */	li r3, 0x0
 /* 8015F8EC 0015086C  4E 80 00 20 */	blr
 
-.global __sinit__lyt_pane_cpp
-__sinit__lyt_pane_cpp:
+.global __sinit_$3_lyt_pane_cpp
+__sinit_$3_lyt_pane_cpp:
 /* 8015F8F0 00150870  38 00 00 00 */	li r0, 0x0
 /* 8015F8F4 00150874  90 0D 98 28 */	stw r0, lbl_8060F628@sda21(r13)
 /* 8015F8F8 00150878  4E 80 00 20 */	blr

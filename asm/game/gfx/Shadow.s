@@ -4,7 +4,7 @@
 
 .global __init_cpp_exceptions_reference
 __init_cpp_exceptions_reference:
-	.4byte __sinit__Shadow_cpp
+	.4byte __sinit_$3_Shadow_cpp
 
 .section .rodata, "a", @progbits
 
@@ -2401,8 +2401,8 @@ lbl_8002050C:
 /* 8002051C 0001149C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80020520 000114A0  4E 80 00 20 */	blr
 
-.global __sinit__Shadow_cpp
-__sinit__Shadow_cpp:
+.global __sinit_$3_Shadow_cpp
+__sinit_$3_Shadow_cpp:
 /* 80020524 000114A4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80020528 000114A8  7C 08 02 A6 */	mflr r0
 /* 8002052C 000114AC  3C 80 44 44 */	lis r4, 0x44444400@ha

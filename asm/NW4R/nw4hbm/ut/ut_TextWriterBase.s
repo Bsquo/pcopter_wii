@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__nw4hbm_ut_TextWriterBase_cpp
+.4byte __sinit_$3_nw4hbm_ut_TextWriterBase_cpp
 
 .section .text, "ax"
 
@@ -1840,8 +1840,8 @@ func_80189C18:
 /* 80189C3C 0017ABBC  38 21 01 90 */	addi r1, r1, 0x190
 /* 80189C40 0017ABC0  4E 80 00 20 */	blr
 
-.global __sinit__nw4hbm_ut_TextWriterBase_cpp
-__sinit__nw4hbm_ut_TextWriterBase_cpp:
+.global __sinit_$3_nw4hbm_ut_TextWriterBase_cpp
+__sinit_$3_nw4hbm_ut_TextWriterBase_cpp:
 /* 80189C44 0017ABC4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80189C48 0017ABC8  7C 08 02 A6 */	mflr r0
 /* 80189C4C 0017ABCC  90 01 00 14 */	stw r0, 0x14(r1)

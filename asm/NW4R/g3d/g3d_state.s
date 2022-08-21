@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__g3d_state_cpp
+.4byte __sinit_$3_g3d_state_cpp
 
 .section .text, "ax"
 
@@ -3858,8 +3858,8 @@ lbl_801A4B48:
 /* 801A4B54 00195AD4  7C 08 03 A6 */	mtlr r0
 /* 801A4B58 00195AD8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801A4B5C 00195ADC  4E 80 00 20 */	blr
-.global __sinit__g3d_state_cpp
-__sinit__g3d_state_cpp:
+.global __sinit_$3_g3d_state_cpp
+__sinit_$3_g3d_state_cpp:
 /* 801A4B60 00195AE0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801A4B64 00195AE4  7C 08 02 A6 */	mflr r0
 /* 801A4B68 00195AE8  38 80 00 00 */	li r4, 0x0

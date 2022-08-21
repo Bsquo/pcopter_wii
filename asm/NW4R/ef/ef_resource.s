@@ -1,7 +1,7 @@
 .include "macros.s"
 
 .section .ctors, "a", @progbits
-.4byte __sinit__ef_resource_cpp
+.4byte __sinit_$3_ef_resource_cpp
 
 .section .text, "ax"
 
@@ -761,8 +761,8 @@ func_8014974C:
 /* 80149768 0013A6E8  7C 08 03 A6 */	mtlr r0
 /* 8014976C 0013A6EC  38 21 00 30 */	addi r1, r1, 0x30
 /* 80149770 0013A6F0  4E 80 00 20 */	blr
-.global __sinit__ef_resource_cpp
-__sinit__ef_resource_cpp:
+.global __sinit_$3_ef_resource_cpp
+__sinit_$3_ef_resource_cpp:
 /* 80149774 0013A6F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80149778 0013A6F8  7C 08 02 A6 */	mflr r0
 /* 8014977C 0013A6FC  38 80 00 04 */	li r4, 0x4

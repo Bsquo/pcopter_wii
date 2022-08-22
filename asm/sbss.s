@@ -1102,8 +1102,8 @@ lbl_8060F424:
 lbl_8060F428:
 	.skip 0x8
 
-.global lbl_8060F430
-lbl_8060F430:
+.global BgJobStatus
+BgJobStatus:
 	.skip 0x4
 
 .global lbl_8060F434

@@ -1,5 +1,9 @@
 # Radio Helicopter
 
+<a href="https://discord.gg/AsBpasctyc">
+<img src="https://img.shields.io/discord/1011421995008806932?logo=discord"
+            alt="chat on Discord"></a>
+
 ```diff
 - WARNING! -
 
@@ -35,3 +39,7 @@ Once built, it can be found in `build/pcopter_wii_eur/`
 Contributions and pull requests are welcome!
 
 <font size="3">**Make sure the project compiles to a matching executable (i.e the building process ends with an `OK`) before submitting!**</font>
+
+We recommend joining [our Discord server](https://discord.gg/AsBpasctyc) for discussing the game, as well as for getting help if needed.
+
+For more information about GameCube and Wii decompilation projects, check out the [GC/Wii Decompilation Discord](https://discord.gg/hKx3FJJgrV).

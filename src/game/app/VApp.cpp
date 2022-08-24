@@ -1,5 +1,6 @@
 #include "include/game/hbm/VHomeButton.h"
 #include "include/game/app/VApp.h"
+#include "include/RVL/os.h"
 
 bool reset_called;
 bool power_called;
@@ -17,7 +18,7 @@ field_0x24(0), field_0x28(0), pCurrentScene(nullptr), field_0x128(0),
 field_0x124(1), field_0x12C(0), field_0x130(1) {}
 
 CVHomeButton::CVHomeButton() {}
-/*
+
 CVHomeButton::~CVHomeButton() {}
 
 CVApp::~CVApp() {}
@@ -48,4 +49,3 @@ bool CVApp::StartLocal() {
 }
 
 void CVApp::EndLocal() {}
-*/

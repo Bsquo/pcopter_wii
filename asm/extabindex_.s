@@ -276,7 +276,7 @@ lbl_8000CB00:
 	.4byte lbl_80014308
 	.4byte 0x000000EC
 	.4byte lbl_80006A90
-	.4byte func_800143F4
+	.4byte GetInstance__8CVPadMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006AC0
 	.4byte func_80014458
@@ -312,7 +312,7 @@ lbl_8000CB00:
 	.4byte func_800148A4
 	.4byte 0x00000048
 	.4byte lbl_80006B28
-	.4byte func_800148EC
+	.4byte GetInstance__10CVSoundMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006B30
 	.4byte func_80014950
@@ -1986,7 +1986,7 @@ lbl_8000CB00:
 	.4byte func_80033098
 	.4byte 0x000001A8
 	.4byte lbl_80008720
-	.4byte func_8003324C
+	.4byte Update__8CVPadMgrFl
 	.4byte 0x00000088
 	.4byte lbl_80008750
 	.4byte func_800332D4
@@ -3060,10 +3060,10 @@ lbl_8000CB00:
 	.4byte func_800546A4
 	.4byte 0x000001A4
 	.4byte lbl_80009DC8
-	.4byte func_80054894
+	.4byte Calc__12CVHomeButtonFv
 	.4byte 0x000002D8
 	.4byte lbl_80009DD0
-	.4byte func_80054B6C
+	.4byte Render__12CVHomeButtonFv
 	.4byte 0x00000048
 	.4byte lbl_80009DD8
 	.4byte func_80054BC8

@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_800AD838
-func_800AD838:
+.global GXSetMisc
+GXSetMisc:
 /* 800AD838 0009E7B8  2C 03 00 02 */	cmpwi r3, 0x2
 /* 800AD83C 0009E7BC  41 82 00 58 */	beq lbl_800AD894
 /* 800AD840 0009E7C0  40 80 00 14 */	bge lbl_800AD854

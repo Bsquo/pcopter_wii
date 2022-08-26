@@ -1136,8 +1136,8 @@ func_80033240:
 /* 80033244 000241C4  7C 63 02 14 */	add r3, r3, r0
 /* 80033248 000241C8  4B FF F8 98 */	b func_80032AE0
 
-.global func_8003324C
-func_8003324C:
+.global Update__8CVPadMgrFl
+Update__8CVPadMgrFl:
 /* 8003324C 000241CC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80033250 000241D0  7C 08 02 A6 */	mflr r0
 /* 80033254 000241D4  38 A0 00 01 */	li r5, 0x1

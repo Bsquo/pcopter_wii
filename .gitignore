@@ -17,3 +17,4 @@
 *.dump
 asmdiff.sh
 build
+__pycache__

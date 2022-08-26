@@ -909,8 +909,8 @@ func_8002D5E8:
 /* 8002D624 0001E5A4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002D628 0001E5A8  4E 80 00 20 */	blr
 
-.global func_8002D62C
-func_8002D62C:
+.global Update__10CVSoundMgrFv
+Update__10CVSoundMgrFv:
 /* 8002D62C 0001E5AC  38 63 01 8C */	addi r3, r3, 0x18c
 /* 8002D630 0001E5B0  48 10 00 88 */	b func_8012D6B8
 

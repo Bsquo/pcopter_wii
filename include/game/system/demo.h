@@ -1,15 +1,17 @@
 #ifndef DEMO_H
 #define DEMO_H
 
-#include "types.h"
+namespace demo {
+    class Memory;
+    
+    void BeforeRender();
+    void DoneRender(unsigned long, int, int);
+    void Report(int, int, const char*, ...);
+}
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-namespace demo {
-    class Memory;
-}
 
 // Temporary
 void* Alloc__4demoFUliQ24demo6Memory(size_t, int, demo::Memory);

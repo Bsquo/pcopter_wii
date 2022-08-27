@@ -8,13 +8,12 @@ class CVList;	// Forward declaration
 
 // "CVList" node
 class CVListBase {
-    private:
+    public:
         CVList* pList;      // The CVList this node is stored in
         f32 mData;
         CVListBase* pPrev;
         CVListBase* pNext;
 
-    public:
         // __ct__10CVListBaseFv (0x80026814)
         CVListBase();
         // __dt__10CVListBaseFv (0x8002683C)

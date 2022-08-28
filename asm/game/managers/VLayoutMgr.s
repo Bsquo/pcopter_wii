@@ -1556,7 +1556,7 @@ lbl_8002EF50:
 /* 8002EF50 0001FED0  93 FE 00 54 */	stw r31, 0x54(r30)
 /* 8002EF54 0001FED4  38 60 00 00 */	li r3, 0x0
 /* 8002EF58 0001FED8  48 0E D0 95 */	bl GetAllocator__4demoFQ24demo6Memory
-/* 8002EF5C 0001FEDC  48 00 00 1D */	bl func_8002EF78
+/* 8002EF5C 0001FEDC  48 00 00 1D */	bl SetAllocator__Q34nw4r3lyt6LayoutFP12MEMAllocator
 /* 8002EF60 0001FEE0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8002EF64 0001FEE4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8002EF68 0001FEE8  83 C1 00 08 */	lwz r30, 0x8(r1)
@@ -1564,8 +1564,8 @@ lbl_8002EF50:
 /* 8002EF70 0001FEF0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002EF74 0001FEF4  4E 80 00 20 */	blr
 
-.global func_8002EF78
-func_8002EF78:
+.global SetAllocator__Q34nw4r3lyt6LayoutFP12MEMAllocator
+SetAllocator__Q34nw4r3lyt6LayoutFP12MEMAllocator:
 /* 8002EF78 0001FEF8  90 6D 98 30 */	stw r3, lbl_8060F630@sda21(r13)
 /* 8002EF7C 0001FEFC  4E 80 00 20 */	blr
 

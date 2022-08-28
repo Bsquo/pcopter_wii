@@ -1,5 +1,5 @@
-#ifndef VSCENE_MENU_LOGO_H
-#define VSCENE_MENU_LOGO_H
+#ifndef SCENE_MENU_LOGO_H
+#define SCENE_MENU_LOGO_H
 
 #include "include/game/scene/Menu/SceneMenuBase.h"
 #include "types.h"
@@ -16,4 +16,4 @@ class CSceneMenuLogo: public CSceneMenuBase {
 		virtual ~CSceneMenuLogo();
 };
 
-#endif // VSCENE_MENU_LOGO_H
+#endif // SCENE_MENU_LOGO_H

@@ -79,7 +79,7 @@ lbl_8007872C:
 /* 80078740 000696C0  38 A5 00 55 */	addi r5, r5, 0x55
 /* 80078744 000696C4  48 0F 13 ED */	bl Attach__Q34nw4r3lyt19ArcResourceAccessorFPvPCc
 /* 80078748 000696C8  80 7F 00 B4 */	lwz r3, 0xb4(r31)
-/* 8007874C 000696CC  4B FB 68 2D */	bl func_8002EF78
+/* 8007874C 000696CC  4B FB 68 2D */	bl SetAllocator__Q34nw4r3lyt6LayoutFP12MEMAllocator
 /* 80078750 000696D0  38 60 00 20 */	li r3, 0x20
 /* 80078754 000696D4  4B FA 21 B9 */	bl __nw__FUl
 /* 80078758 000696D8  2C 03 00 00 */	cmpwi r3, 0x0

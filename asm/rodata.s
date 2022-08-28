@@ -1271,67 +1271,45 @@ _51466:
 lbl_801BDDF8:
 
 	# ROM: 0x1B9EF8
-	.4byte 0x2F004C6F
-	.4byte 0x676F002E
-	.4byte 0x61726300
+	.asciz "/"
+	.asciz "Logo"
+	.asciz ".arc"
 	.asciz "SceneMenuLogo.cpp"
-	.byte 0x4E, 0x57
-	.asciz "4R:Pointer must not be NULL (archiveBuf)"
-	.byte 0x4C, 0x6F, 0x67
-	.4byte 0x6F004C6F
-	.asciz "go.brlyt"
-	.byte 0x53, 0x63, 0x65
-	.asciz "neMenuLogo.cpp"
-	.byte 0x4E
-	.asciz "W4R:Pointer must not be NULL (lytRes)"
-	.byte 0x4C, 0x6F
-	.asciz "go.brlan"
-	.byte 0x53, 0x63, 0x65
-	.asciz "neMenuLogo.cpp"
-	.byte 0x4E
-	.asciz "W4R:Pointer must not be NULL (lpaRes)"
-	.byte 0x2F, 0x00
-	.asciz "Logo2"
-	.byte 0x2E, 0x61
-	.4byte 0x72630053
-	.asciz "ceneMenuLogo.cpp"
-	.byte 0x4E, 0x57, 0x34
-	.asciz "R:Pointer must not be NULL (archiveBuf)"
-	.asciz "Logo2"
-	.byte 0x4C, 0x6F
-	.asciz "go2.brlyt"
-	.byte 0x53, 0x63
-	.asciz "eneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (archiveBuf)"
+	.asciz "Logo"
+	.asciz "Logo.brlyt"
+	.asciz "SceneMenuLogo.cpp"
 	.asciz "NW4R:Pointer must not be NULL (lytRes)"
-	.byte 0x4C
-	.asciz "ogo2.brlan"
-	.byte 0x53
-	.asciz "ceneMenuLogo.cpp"
-	.byte 0x4E, 0x57, 0x34
-	.asciz "R:Pointer must not be NULL (lpaRes)"
+	.asciz "Logo.brlan"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lpaRes)"
+	.asciz "/"
+	.asciz "Logo2"
+	.asciz ".arc"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (archiveBuf)"
+	.asciz "Logo2"
+	.asciz "Logo2.brlyt"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lytRes)"
+	.asciz "Logo2.brlan"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lpaRes)"
 	.asciz "CManual_M"
-	.byte 0x43, 0x4D
-	.asciz "anual_P"
+	.asciz "CManual_P"
 	.asciz "CManual_C1"
-	.byte 0x43
-	.asciz "Manual_C2"
-	.byte 0x43, 0x4D
-	.asciz "anual_C2"
-	.byte 0x2F, 0x00, 0x2E
-	.4byte 0x61726300
+	.asciz "CManual_C2"
+	.asciz "CManual_C2"
+	.asciz "/"
+	.asciz ".arc"
 	.asciz "SceneMenuLogo.cpp"
-	.byte 0x4E, 0x57
-	.asciz "4R:Pointer must not be NULL (archiveBuf)"
-	.byte 0x2E, 0x62, 0x72
-	.4byte 0x6C797400
+	.asciz "NW4R:Pointer must not be NULL (archiveBuf)"
+	.asciz ".brlyt"
 	.asciz "SceneMenuLogo.cpp"
-	.byte 0x4E, 0x57
-	.asciz "4R:Pointer must not be NULL (lytRes)"
-	.byte 0x2E, 0x62, 0x72
-	.4byte 0x6C616E00
+	.asciz "NW4R:Pointer must not be NULL (lytRes)"
+	.asciz ".brlan"
 	.asciz "SceneMenuLogo.cpp"
-	.byte 0x4E, 0x57
-	.asciz "4R:Pointer must not be NULL (lpaRes)"
+	.asciz "NW4R:Pointer must not be NULL (lpaRes)"
 	.balign 4
 	.4byte 0
 

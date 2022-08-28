@@ -248,7 +248,7 @@ lbl_8003A978:
 /* 8003A98C 0002B90C  38 A5 00 4D */	addi r5, r5, 0x4d
 /* 8003A990 0002B910  48 12 F1 A1 */	bl Attach__Q34nw4r3lyt19ArcResourceAccessorFPvPCc
 /* 8003A994 0002B914  80 7F 00 B8 */	lwz r3, 0xb8(r31)
-/* 8003A998 0002B918  4B FF 45 E1 */	bl func_8002EF78
+/* 8003A998 0002B918  4B FF 45 E1 */	bl SetAllocator__Q34nw4r3lyt6LayoutFP12MEMAllocator
 /* 8003A99C 0002B91C  38 60 00 20 */	li r3, 0x20
 /* 8003A9A0 0002B920  4B FD FF 6D */	bl __nw__FUl
 /* 8003A9A4 0002B924  2C 03 00 00 */	cmpwi r3, 0x0

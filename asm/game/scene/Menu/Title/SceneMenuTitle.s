@@ -1,5 +1,194 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BC590
+lbl_801BC590:
+
+	# ROM: 0x1B8690
+	.asciz "Picture_New"
+
+.global lbl_801BC59C
+lbl_801BC59C:
+
+	# ROM: 0x1B869C
+	.asciz "Picture_Load"
+	.balign 4
+
+.global lbl_801BC5AC
+lbl_801BC5AC:
+
+	# ROM: 0x1B86AC
+	.asciz "Picture_Start"
+	.balign 4
+
+.global lbl_801BC5BC
+lbl_801BC5BC:
+
+	# ROM: 0x1B86BC
+	.asciz "Picture_2P"
+	.balign 4
+
+.global lbl_801BC5C8
+lbl_801BC5C8:
+
+	# ROM: 0x1B86C8
+	.asciz "Picture_Op"
+	.balign 4
+
+.global lbl_801BC5D4
+lbl_801BC5D4:
+
+	# ROM: 0x1B86D4
+	.4byte lbl_801BC590
+	.4byte lbl_801BC59C
+	.4byte lbl_801BC5AC
+	.4byte lbl_801BC5BC
+	.4byte lbl_801BC5C8
+
+.global lbl_801BC5E8
+lbl_801BC5E8:
+
+	# ROM: 0x1B86E8
+	.4byte lbl_8060FE90
+	.4byte lbl_8060FE98
+	.4byte lbl_8060FE9C
+
+.global lbl_801BC5F4
+lbl_801BC5F4:
+
+	# ROM: 0x1B86F4
+	.asciz "Bounding_Yes"
+	.balign 4
+
+.global lbl_801BC604
+lbl_801BC604:
+
+	# ROM: 0x1B8704
+	.asciz "Bounding_No"
+
+.global lbl_801BC610
+lbl_801BC610:
+
+	# ROM: 0x1B8710
+	.asciz "Bounding_Ok"
+
+.global lbl_801BC61C
+lbl_801BC61C:
+
+	# ROM: 0x1B871C
+	.asciz "Bounding_No"
+
+.global _52012
+_52012:
+
+	# ROM: 0x1B8728
+	.asciz "CSceneMenuTitle"
+
+.global lbl_801BC638
+lbl_801BC638:
+
+	# ROM: 0x1B8738
+	.4byte 0x2F007469
+	.4byte 0x746C6500
+	.asciz ".arc"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuTitle.cpp"
+	.asciz "NW4R:Pointer must not be NULL (archiveBuf)"
+	.byte 0x74
+	.asciz "itle"
+	.byte 0x74, 0x69, 0x74
+	.asciz "le.brlyt"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuTitle.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lytRes)"
+	.byte 0x74
+	.asciz "itle_Select.brlan"
+	.byte 0x53, 0x63
+	.asciz "eneMenuTitle.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (rlanRes)"
+	.byte 0x74, 0x69, 0x74
+	.asciz "le_Unselect.brlan"
+	.byte 0x53, 0x63
+	.asciz "eneMenuTitle.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (rlanRes2)"
+	.byte 0x4D, 0x6F
+	.4byte 0x64650053
+	.asciz "tartText"
+	.byte 0x47, 0x52, 0x4F
+	.asciz "UP_SHARE"
+	.byte 0x42, 0x47, 0x4D
+	.asciz "01_Title"
+	.byte 0x53, 0x74, 0x61
+	.asciz "rtText"
+	.byte 0x53
+	.asciz "E_Decide_A"
+	.byte 0x53
+	.asciz "E_Cancel_A"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x53
+	.asciz "E_Decide_A"
+	.byte 0x53
+	.asciz "E_Cancel_A"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x53
+	.asciz "E_Decide_A"
+	.byte 0x53
+	.asciz "tartText"
+	.byte 0x53, 0x74, 0x61
+	.asciz "rtselect"
+	.byte 0x4D, 0x6F, 0x64
+	.4byte 0x65005374
+	.asciz "artText"
+	.asciz "Startselect"
+	.asciz "Picture_Load"
+	.byte 0x4D, 0x6F, 0x64
+	.4byte 0x6500505F
+	.asciz "Dialog"
+	.byte 0x50
+	.asciz "_Yes"
+	.byte 0x50, 0x5F, 0x4E
+	.4byte 0x6F00505F
+	.asciz "DMes"
+	.byte 0x50, 0x5F, 0x44
+	.asciz "ialog"
+	.byte 0x50, 0x5F
+	.4byte 0x59657300
+	.asciz "P_No"
+	.byte 0x50, 0x5F, 0x44
+	.4byte 0x4D657300
+	.asciz "SE_Cancel_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Decide_A"
+	.asciz "P_Dialog"
+	.byte 0x50, 0x5F, 0x4F
+	.4byte 0x6B00505F
+	.asciz "DMes2P"
+	.byte 0x50
+	.asciz "_Dialog"
+	.asciz "P_Ok"
+	.byte 0x50, 0x5F, 0x44
+	.asciz "Mes2P"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x53, 0x45
+	.asciz "_Decide_A"
+	.byte 0x50, 0x5F
+	.asciz "Dialog"
+	.byte 0x50
+	.4byte 0x5F4F6B00
+	.asciz "P_DMesBattery"
+	.byte 0x50, 0x5F
+	.asciz "Dialog"
+	.byte 0x50
+	.4byte 0x5F4F6B00
+	.asciz "P_DMesBattery"
+	.balign 4
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_80041B70

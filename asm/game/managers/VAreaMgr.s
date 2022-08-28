@@ -1,5 +1,15 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BD1C8
+lbl_801BD1C8:
+
+	# ROM: 0x1B92C8
+	.asciz "CVAreaInfo"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8004983C

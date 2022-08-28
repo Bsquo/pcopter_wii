@@ -1,5 +1,30 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BD188
+lbl_801BD188:
+
+	# ROM: 0x1B9288
+	.asciz "CResListGroup"
+	.balign 4
+
+.global lbl_801BD198
+lbl_801BD198:
+
+	# ROM: 0x1B9298
+	.asciz "CResListElement"
+
+.global lbl_801BD1A8
+lbl_801BD1A8:
+
+	# ROM: 0x1B92A8
+	.asciz "Group#%d/name"
+	.byte 0x47, 0x72
+	.asciz "oup#%d/#%d"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_800490B8

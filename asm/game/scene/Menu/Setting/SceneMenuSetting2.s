@@ -1,5 +1,81 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.section .rodata, "a", @progbits  # 0x801B8400 - 0x801CA560 ; 0x00012160
+
+.global lbl_801BD248
+lbl_801BD248:
+
+	# ROM: 0x1B9348
+	.4byte lbl_80610008
+	.4byte lbl_8061000C
+	.4byte lbl_80610014
+
+.global lbl_801BD254
+lbl_801BD254:
+
+	# ROM: 0x1B9354
+	.4byte lbl_80610024
+	.4byte lbl_8061002C
+	.4byte lbl_80610034
+	.4byte lbl_80610040
+	.4byte lbl_80610048
+	.4byte lbl_80610050
+	.4byte lbl_80610058
+
+.global lbl_801BD270
+lbl_801BD270:
+
+	# ROM: 0x1B9370
+	.4byte lbl_8061005C
+	.4byte lbl_80610060
+	.4byte lbl_80610068
+	.4byte lbl_80610070
+	.4byte lbl_80610078
+	.4byte lbl_80610080
+	.4byte lbl_80610088
+
+.global lbl_801BD28C
+lbl_801BD28C:
+
+	# ROM: 0x1B938C
+	.asciz "CSceneMenuSetting2"
+	.balign 4
+
+.global lbl_801BD2A0
+lbl_801BD2A0:
+
+	# ROM: 0x1B93A0
+	.asciz "/PCopter/Menu/Setting2.arc"
+	.byte 0x53
+	.asciz "ceneMenuSetting2.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (archiveBuf)"
+	.asciz "Setting2"
+	.byte 0x53, 0x65, 0x74
+	.asciz "ting2.brlyt"
+	.asciz "SceneMenuSetting2.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer must not be NULL (lytRes)"
+	.byte 0x50, 0x69, 0x63
+	.asciz "tureW_0%d"
+	.byte 0x42, 0x47
+	.asciz "M03_Home"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_A"
+	.byte 0x25, 0x73, 0x00
+	.asciz "%s[Select]"
+	.byte 0x25
+	.4byte 0x73000000
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8004C6E4

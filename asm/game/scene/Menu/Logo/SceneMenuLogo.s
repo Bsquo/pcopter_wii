@@ -1,5 +1,74 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BDDB8
+lbl_801BDDB8:
+
+	# ROM: 0x1B9EB8
+	.asciz "CSceneMenuControllerManual"
+	.balign 4
+	.4byte 0
+
+.global lbl_801BDDD8
+lbl_801BDDD8:
+
+	# ROM: 0x1B9ED8
+	.asciz "CSceneMenuLogo2"
+
+.global _51466
+_51466:
+
+	# ROM: 0x1B9EE8
+	.asciz "CSceneMenuLogo"
+	.balign 4
+
+.global lbl_801BDDF8
+lbl_801BDDF8:
+
+	# ROM: 0x1B9EF8
+	.asciz "/"
+	.asciz "Logo"
+	.asciz ".arc"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (archiveBuf)"
+	.asciz "Logo"
+	.asciz "Logo.brlyt"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lytRes)"
+	.asciz "Logo.brlan"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lpaRes)"
+	.asciz "/"
+	.asciz "Logo2"
+	.asciz ".arc"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (archiveBuf)"
+	.asciz "Logo2"
+	.asciz "Logo2.brlyt"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lytRes)"
+	.asciz "Logo2.brlan"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lpaRes)"
+	.asciz "CManual_M"
+	.asciz "CManual_P"
+	.asciz "CManual_C1"
+	.asciz "CManual_C2"
+	.asciz "CManual_C2"
+	.asciz "/"
+	.asciz ".arc"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (archiveBuf)"
+	.asciz ".brlyt"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lytRes)"
+	.asciz ".brlan"
+	.asciz "SceneMenuLogo.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lpaRes)"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global StartLocal__14CSceneMenuLogoFv

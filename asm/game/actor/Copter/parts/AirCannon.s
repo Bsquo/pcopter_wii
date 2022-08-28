@@ -1,5 +1,48 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BD498
+lbl_801BD498:
+
+	# ROM: 0x1B9598
+	.asciz "CAirBullet"
+	.balign 4
+
+.global lbl_801BD4A4
+lbl_801BD4A4:
+
+	# ROM: 0x1B95A4
+	.asciz "ACLaunch"
+	.byte 0x41, 0x43, 0x4C
+	.asciz "aunch"
+	.byte 0x53, 0x45
+	.asciz "_Tyakudan"
+	.byte 0x41, 0x43
+	.asciz "Bullet"
+	.byte 0x41
+	.asciz "CBullet"
+	.asciz "AirCannon/life"
+	.byte 0x41
+	.asciz "irCannon/limit_num"
+	.byte 0x41
+	.asciz "irCannon/speed"
+	.byte 0x41
+	.asciz "irCannon/power"
+	.byte 0x67
+	.4byte 0x756E006D
+	.asciz "uzzle"
+	.byte 0x67, 0x75
+	.4byte 0x6E006775
+	.4byte 0x6E005345
+	.asciz "_Missile_A02"
+	.byte 0x53, 0x45, 0x32
+	.asciz "_Tama"
+	.byte 0x41, 0x43
+	.asciz "Fire"
+	.byte 0x41, 0x43, 0x46
+	.4byte 0x69726500
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8004DF14

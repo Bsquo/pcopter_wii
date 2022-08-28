@@ -1,5 +1,14 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BD1D8
+lbl_801BD1D8:
+
+	# ROM: 0x1B92D8
+	.4byte 0x54485000
+	.4byte 0
+
 .section .text, "ax"
 
 .global func_8004A498

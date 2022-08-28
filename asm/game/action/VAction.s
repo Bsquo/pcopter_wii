@@ -1,5 +1,45 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BD3B0
+lbl_801BD3B0:
+
+	# ROM: 0x1B94B0
+	.asciz "CVAction"
+	.balign 4
+
+.global lbl_801BD3BC
+lbl_801BD3BC:
+
+	# ROM: 0x1B94BC
+	.asciz "CVActCmd"
+	.balign 4
+
+.global lbl_801BD3C8
+lbl_801BD3C8:
+
+	# ROM: 0x1B94C8
+	.asciz "Action/#%d/loop_mode"
+	.byte 0x41, 0x63, 0x74
+	.asciz "ion/#%d/anim_rate"
+	.byte 0x41, 0x63
+	.asciz "tion/#%d/anim_state"
+	.asciz "Action/#%d/init_state"
+	.byte 0x41, 0x63
+	.asciz "tion/#%d/auto_ret"
+	.byte 0x41, 0x63
+	.asciz "tion/#%d/check_flg"
+	.byte 0x41
+	.asciz "ction/#%d/coll_node"
+	.asciz "Action/#%d/anim_node"
+	.byte 0x41, 0x63, 0x74
+	.asciz "ion/#%d/se"
+	.byte 0x41
+	.asciz "ction/#%d/cmd#%d"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8004D348

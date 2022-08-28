@@ -1,5 +1,30 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BD1E0
+lbl_801BD1E0:
+
+	# ROM: 0x1B92E0
+	.asciz "CSceneMenuMovie"
+
+.global lbl_801BD1F0
+lbl_801BD1F0:
+
+	# ROM: 0x1B92F0
+	.4byte 0x2F006F70
+	.asciz ".thp"
+	.byte 0x65, 0x64, 0x2E
+	.4byte 0x74687000
+	.asciz "logo1.thp"
+	.byte 0x6C, 0x6F
+	.asciz "go2.thp"
+	.asciz "SceneMenuMovie.cpp"
+	.byte 0x46
+	.asciz "ailed to decode video data"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8004C260

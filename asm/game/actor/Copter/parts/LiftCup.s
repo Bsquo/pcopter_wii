@@ -1,5 +1,20 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BD550
+lbl_801BD550:
+
+	# ROM: 0x1B9650
+	.asciz "LiftCup/lift_dist"
+	.byte 0x6C, 0x69
+	.4byte 0x6674006C
+	.4byte 0x69667400
+	.4byte 0x43757000
+	.4byte 0x43757000
+	.asciz "SE_NG_2"
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8004E7FC

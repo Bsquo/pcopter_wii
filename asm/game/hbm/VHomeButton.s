@@ -1,5 +1,42 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BE0F8
+lbl_801BE0F8:
+
+	# ROM: 0x1BA1F8
+	.asciz "SoundCallback: %d, %d\n"
+	.byte 0x68
+	.asciz "bm/HomeButton2"
+	.byte 0x56
+	.asciz "HomeButton.cpp"
+	.byte 0x56
+	.asciz "IGetTvFormat()t: invalid TV format\n"
+	.asciz "/homeBtn.arc"
+	.byte 0x2F, 0x68, 0x6F
+	.asciz "meBtn_ENG.arc"
+	.byte 0x2F, 0x68
+	.asciz "omeBtn_GER.arc"
+	.byte 0x2F
+	.asciz "homeBtn_FRA.arc"
+	.asciz "/homeBtn_SPA.arc"
+	.byte 0x2F, 0x68, 0x6F
+	.asciz "meBtn_ITA.arc"
+	.byte 0x2F, 0x68
+	.asciz "omeBtn_NED.arc"
+	.byte 0x2F
+	.asciz "homeBtn.arc"
+	.asciz "/SpeakerSe.arc"
+	.byte 0x2F
+	.asciz "home.csv"
+	.byte 0x2F, 0x63, 0x6F
+	.asciz "nfig.txt"
+	.byte 0x2F, 0x48, 0x6F
+	.asciz "meButtonSe.arc"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global lbl_80053FA0

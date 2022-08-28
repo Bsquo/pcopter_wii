@@ -1,5 +1,261 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BD7B0
+lbl_801BD7B0:
+
+	# ROM: 0x1B98B0
+	.4byte lbl_80610110
+	.4byte lbl_80610114
+	.4byte lbl_80610118
+	.4byte lbl_8061011C
+	.4byte lbl_80610120
+	.4byte lbl_80610128
+	.4byte lbl_80610130
+	.4byte lbl_80610138
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+	.4byte 0x3ECCCCCD
+	.4byte 0x3ECCCCCD
+	.4byte 0x3E4CCCCD
+
+.global lbl_801BD7F0
+lbl_801BD7F0:
+
+	# ROM: 0x1B98F0
+	.asciz "Bounding_00"
+
+.global lbl_801BD7FC
+lbl_801BD7FC:
+
+	# ROM: 0x1B98FC
+	.asciz "Bounding_01"
+
+.global lbl_801BD808
+lbl_801BD808:
+
+	# ROM: 0x1B9908
+	.asciz "Bounding_02"
+
+.global lbl_801BD814
+lbl_801BD814:
+
+	# ROM: 0x1B9914
+	.asciz "Bounding_03"
+	.4byte lbl_801BD7F0
+	.4byte lbl_801BD7FC
+	.4byte lbl_801BD808
+	.4byte lbl_801BD814
+
+.global lbl_801BD830
+lbl_801BD830:
+
+	# ROM: 0x1B9930
+	.asciz "Bounding_00"
+
+.global lbl_801BD83C
+lbl_801BD83C:
+
+	# ROM: 0x1B993C
+	.asciz "Bounding_01"
+
+.global lbl_801BD848
+lbl_801BD848:
+
+	# ROM: 0x1B9948
+	.asciz "Bounding_02"
+
+.global lbl_801BD854
+lbl_801BD854:
+
+	# ROM: 0x1B9954
+	.asciz "Bounding_03"
+	.4byte lbl_801BD830
+	.4byte lbl_801BD83C
+	.4byte lbl_801BD848
+	.4byte lbl_801BD854
+
+.global lbl_801BD870
+lbl_801BD870:
+
+	# ROM: 0x1B9970
+	.4byte lbl_80610178
+	.4byte lbl_80610180
+	.4byte lbl_80610188
+	.4byte lbl_80610190
+	.asciz "CSceneMenuFreeFlight"
+	.balign 4
+	.asciz "CSceneMenuCopterSelect"
+	.balign 4
+
+.global lbl_801BD8B0
+lbl_801BD8B0:
+
+	# ROM: 0x1B99B0
+	.asciz "CSceneMenuDataAccess"
+	.balign 4
+	.asciz "CSceneMenuBase"
+	.balign 4
+	.asciz "CVPadMgr"
+	.balign 4
+	.asciz "CVSoundMgr"
+	.balign 4
+
+.global lbl_801BD8F0
+lbl_801BD8F0:
+
+	# ROM: 0x1B99F0
+	.asciz "LoadDialog"
+	.byte 0x4C
+	.asciz "oadDialog2"
+	.byte 0x53
+	.asciz "aveDialog"
+	.byte 0x53, 0x61
+	.asciz "veDialog2"
+	.byte 0x2F, 0x00
+	.asciz ".arc"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuDataAccess.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (archiveBuf)"
+	.asciz "%s.brlyt"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuDataAccess.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (lytRes)"
+	.asciz "P_IMes_P"
+	.byte 0x50, 0x5F, 0x49
+	.asciz "Mes_M"
+	.byte 0x50, 0x5F
+	.asciz "IMes_C"
+	.byte 0x53
+	.asciz "E_Cancel_A"
+	.byte 0x53
+	.asciz "E_Cancel_A"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x42
+	.4byte 0x61636B00
+	.asciz "Left"
+	.byte 0x52, 0x69, 0x67
+	.4byte 0x6874004F
+	.4byte 0x6B005345
+	.asciz "_Cursor_A"
+	.byte 0x53, 0x45
+	.asciz "_Decide_A"
+	.byte 0x53, 0x45
+	.asciz "_Decide_A"
+	.byte 0x53, 0x45
+	.asciz "_Cancel_A"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x53, 0x45
+	.asciz "_Decide_A"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x53, 0x45
+	.asciz "_Decide_A"
+	.byte 0x53, 0x45
+	.asciz "_Decide_A"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x53, 0x45
+	.asciz "_Decide_A"
+	.byte 0x42, 0x61
+	.4byte 0x636B0053
+	.asciz "E_Cursor_A"
+	.byte 0x53
+	.asciz "E_Decide_A"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x53
+	.asciz "E_Decide_A"
+	.byte 0x2F
+	.asciz "PCopter/Menu/SDialogMes0%d.arc"
+	.byte 0x53
+	.asciz "ceneMenuDataAccess.cpp"
+	.byte 0x4E
+	.asciz "W4R:Pointer must not be NULL (DialogBuf)"
+	.byte 0x53, 0x44, 0x69
+	.asciz "alogMes0%d"
+	.byte 0x53
+	.asciz "DialogMes0%d.brlyt"
+	.byte 0x53
+	.asciz "ceneMenuDataAccess.cpp"
+	.byte 0x4E
+	.asciz "W4R:Pointer must not be NULL (lytRes)"
+	.byte 0x2F, 0x00
+	.asciz "SaveDialog103"
+	.byte 0x53, 0x61
+	.asciz "veDialog109"
+	.asciz "SaveDialog113"
+	.byte 0x53, 0x61
+	.asciz "veDialog114"
+	.asciz "SaveDialog104"
+	.byte 0x53, 0x61
+	.asciz "veDialog105"
+	.asciz "SaveDialog107"
+	.byte 0x53, 0x61
+	.asciz "veDialog111"
+	.asciz "SaveDialog115"
+	.byte 0x53, 0x61
+	.asciz "veDialog116"
+	.asciz "SaveDialog108"
+	.byte 0x53, 0x61
+	.asciz "veDialog112"
+	.asciz "SaveDialog117"
+	.byte 0x53, 0x61
+	.asciz "veDialog118"
+	.asciz "SaveDialog106"
+	.byte 0x53, 0x61
+	.asciz "veDialog110"
+	.asciz ".arc"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuDataAccess.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (DialogBuf)"
+	.byte 0x25
+	.asciz "s.brlyt"
+	.asciz "SceneMenuDataAccess.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lytRes)"
+	.byte 0x50
+	.asciz "_Slot_0%d"
+	.byte 0x53, 0x61
+	.asciz "veTime_0%d"
+	.byte 0x50
+	.asciz "layTime_0%d"
+	.asciz "progress_0%d"
+	.byte 0x49, 0x43, 0x4F
+	.asciz "N%d_0%d"
+	.asciz "SaveTime_0%d"
+	.byte 0x50, 0x6C, 0x61
+	.asciz "yTime_0%d"
+	.byte 0x70, 0x72
+	.asciz "ogress_0%d"
+	.byte 0x49
+	.asciz "CON%d_0%d"
+	.byte 0x50, 0x5F
+	.4byte 0x4F4E0050
+	.asciz "_OFF"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cancel_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_B"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_80050048

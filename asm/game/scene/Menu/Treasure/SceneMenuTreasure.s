@@ -1,5 +1,126 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BC910
+lbl_801BC910:
+
+	# ROM: 0x1B8A10
+	.asciz "Stage_00"
+	.balign 4
+
+.global lbl_801BC91C
+lbl_801BC91C:
+
+	# ROM: 0x1B8A1C
+	.asciz "Stage_01"
+	.balign 4
+
+.global lbl_801BC928
+lbl_801BC928:
+
+	# ROM: 0x1B8A28
+	.asciz "Stage_02"
+	.balign 4
+
+.global lbl_801BC934
+lbl_801BC934:
+
+	# ROM: 0x1B8A34
+	.asciz "Stage_03"
+	.balign 4
+
+.global lbl_801BC940
+lbl_801BC940:
+
+	# ROM: 0x1B8A40
+	.4byte lbl_801BC910
+	.4byte lbl_801BC91C
+	.4byte lbl_801BC928
+	.4byte lbl_801BC934
+	.4byte lbl_8060FF18
+	.4byte lbl_8060FF20
+
+.global lbl_801BC958
+lbl_801BC958:
+
+	# ROM: 0x1B8A58
+	.asciz "Stage_00"
+	.balign 4
+
+.global lbl_801BC964
+lbl_801BC964:
+
+	# ROM: 0x1B8A64
+	.asciz "Stage_01"
+	.balign 4
+
+.global lbl_801BC970
+lbl_801BC970:
+
+	# ROM: 0x1B8A70
+	.asciz "Stage_02"
+	.balign 4
+
+.global lbl_801BC97C
+lbl_801BC97C:
+
+	# ROM: 0x1B8A7C
+	.asciz "Stage_03"
+	.balign 4
+
+.global lbl_801BC988
+lbl_801BC988:
+
+	# ROM: 0x1B8A88
+	.4byte lbl_801BC958
+	.4byte lbl_801BC964
+	.4byte lbl_801BC970
+	.4byte lbl_801BC97C
+	.4byte lbl_8060FF30
+	.4byte lbl_8060FF38
+
+.global lbl_801BC9A0
+lbl_801BC9A0:
+
+	# ROM: 0x1B8AA0
+	.asciz "CSceneMenuTreasure"
+	.balign 4
+
+.global lbl_801BC9B4
+lbl_801BC9B4:
+
+	# ROM: 0x1B8AB4
+	.asciz "/PCopter/Menu/Treasure.arc"
+	.byte 0x53
+	.asciz "ceneMenuTreasure.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (archiveBuf)"
+	.asciz "Treasure"
+	.byte 0x54, 0x72, 0x65
+	.asciz "asure.brlyt"
+	.asciz "SceneMenuTreasure.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer must not be NULL (lytRes)"
+	.byte 0x54, 0x72, 0x65
+	.asciz "asure_Select.brlan"
+	.byte 0x53
+	.asciz "ceneMenuTreasure.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (rlanRes)"
+	.byte 0x6D, 0x69, 0x73
+	.asciz "sionselect_bg.brlyt"
+	.asciz "SceneMenuTreasure.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer must not be NULL (lytRes)"
+	.byte 0x5A, 0x43, 0x55
+	.asciz "RSOR"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Decide_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.balign 4
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_80044390

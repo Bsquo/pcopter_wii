@@ -1,5 +1,32 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BE0A8
+lbl_801BE0A8:
+
+	# ROM: 0x1BA1A8
+	.asciz "CScenary"
+	.balign 4
+
+.global lbl_801BE0B4
+lbl_801BE0B4:
+
+	# ROM: 0x1BA1B4
+	.asciz "SE_LiftCup_Hold"
+	.asciz "Star"
+	.byte 0x53, 0x74, 0x61
+	.4byte 0x72005345
+	.asciz "_Star"
+	.byte 0x53, 0x45
+	.asciz "_Star"
+	.byte 0x53, 0x74
+	.4byte 0x61720053
+	.4byte 0x74617200
+	.asciz "SE_Message"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global lbl_80053770

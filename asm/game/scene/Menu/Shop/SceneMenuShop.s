@@ -1,5 +1,152 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BC358
+lbl_801BC358:
+
+	# ROM: 0x1B8458
+	.asciz "P_Setting"
+	.balign 4
+	.4byte 0
+	.4byte lbl_8060FDE8
+	.4byte lbl_8060FDF0
+	.4byte lbl_801BC358
+	.4byte lbl_8060FDF8
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+
+.global lbl_801BC38C
+lbl_801BC38C:
+
+	# ROM: 0x1B848C
+	.asciz "P_SettingS"
+	.balign 4
+	.4byte lbl_8060FE00
+	.4byte lbl_8060FE08
+	.4byte lbl_801BC38C
+	.4byte 0
+	.4byte lbl_8060FE10
+	.4byte lbl_8060FE14
+	.4byte lbl_8060FE20
+	.4byte lbl_8060FE28
+
+.global lbl_801BC3B8
+lbl_801BC3B8:
+
+	# ROM: 0x1B84B8
+	.asciz "P_SettingM"
+	.balign 4
+	.4byte lbl_8060FE30
+	.4byte lbl_8060FE38
+	.4byte lbl_801BC3B8
+
+.global lbl_801BC3D0
+lbl_801BC3D0:
+
+	# ROM: 0x1B84D0
+	.asciz "P_SellMS"
+	.balign 4
+
+.global lbl_801BC3DC
+lbl_801BC3DC:
+
+	# ROM: 0x1B84DC
+	.asciz "P_SettingMS"
+	.4byte lbl_8060FE40
+	.4byte lbl_801BC3D0
+	.4byte lbl_801BC3DC
+
+.global lbl_801BC3F4
+lbl_801BC3F4:
+
+	# ROM: 0x1B84F4
+	.asciz "NewItemD_Y"
+	.balign 4
+
+.global lbl_801BC400
+lbl_801BC400:
+
+	# ROM: 0x1B8500
+	.asciz "ReturnD_N"
+	.balign 4
+
+.global lbl_801BC40C
+lbl_801BC40C:
+
+	# ROM: 0x1B850C
+	.asciz "P_NewItemD_Y"
+	.balign 4
+
+.global lbl_801BC41C
+lbl_801BC41C:
+
+	# ROM: 0x1B851C
+	.asciz "P_ReturnD_N"
+
+.global lbl_801BC428
+lbl_801BC428:
+
+	# ROM: 0x1B8528
+	.asciz "CSceneMenuShop"
+	.balign 4
+	.asciz "CSceneMenuBase"
+	.balign 4
+	.asciz "CVSoundMgr"
+	.balign 4
+
+.global lbl_801BC454
+lbl_801BC454:
+
+	# ROM: 0x1B8554
+	.4byte 0x2F005368
+	.4byte 0x6F70002E
+	.4byte 0x61726300
+	.asciz "SceneMenuShop.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer must not be NULL (archiveBuf)"
+	.byte 0x53, 0x68, 0x6F
+	.4byte 0x70005368
+	.asciz "op.brlyt"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuShop.cpp"
+	.byte 0x4E
+	.asciz "W4R:Pointer must not be NULL (lytRes)"
+	.byte 0x50, 0x6F
+	.4byte 0x696E7400
+	.asciz "P_IMes_P"
+	.byte 0x50, 0x5F, 0x49
+	.asciz "Mes_M"
+	.byte 0x50, 0x5F
+	.asciz "IMes_C"
+	.byte 0x42
+	.asciz "GM12_Shop"
+	.byte 0x53, 0x45
+	.asciz "_Decide_A"
+	.byte 0x53, 0x45
+	.asciz "_Decide_A"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x50, 0x5F
+	.asciz "NewItemD"
+	.byte 0x50, 0x5F, 0x4E
+	.asciz "ewItemD_Y"
+	.byte 0x50, 0x5F
+	.asciz "NewItemD"
+	.byte 0x50, 0x5F, 0x4E
+	.asciz "ewItemD_Y"
+	.byte 0x53, 0x45
+	.asciz "_Cancel_A"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x53, 0x45
+	.asciz "_Decide_A"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8004085C

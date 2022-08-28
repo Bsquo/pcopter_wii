@@ -1,5 +1,257 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BCB30
+lbl_801BCB30:
+
+	# ROM: 0x1B8C30
+	.asciz "CScenaryEffect"
+	.balign 4
+
+.global lbl_801BCB40
+lbl_801BCB40:
+
+	# ROM: 0x1B8C40
+	.asciz "CScenaryEnvSnd"
+	.balign 4
+
+.global lbl_801BCB50
+lbl_801BCB50:
+
+	# ROM: 0x1B8C50
+	.asciz "CScenaryWind"
+	.balign 4
+
+.global lbl_801BCB60
+lbl_801BCB60:
+
+	# ROM: 0x1B8C60
+	.asciz "CScenaryPosGroup"
+	.balign 4
+
+.global lbl_801BCB74
+lbl_801BCB74:
+
+	# ROM: 0x1B8C74
+	.asciz "Scenary/max_point"
+	.byte 0x53, 0x63
+	.asciz "enary/border_time"
+	.byte 0x53, 0x63
+	.asciz "enary/exit_size"
+	.asciz "Scenary/rank_border"
+	.asciz "Scenary/limit_time"
+	.byte 0x52
+	.asciz "oom/name"
+	.byte 0x41, 0x63, 0x74
+	.asciz "or/Room"
+	.asciz "Scenary/type"
+	.byte 0x53, 0x74, 0x61
+	.4byte 0x72005269
+	.4byte 0x6E670048
+	.asciz "eliPad"
+	.byte 0x53
+	.asciz "tarMP"
+	.byte 0x52, 0x69
+	.asciz "ngMP"
+	.byte 0x50, 0x61, 0x72
+	.4byte 0x6B303200
+	.asciz "Park03"
+	.byte 0x50
+	.asciz "ark05"
+	.byte 0x50, 0x61
+	.asciz "rk06"
+	.byte 0x48, 0x6F, 0x73
+	.asciz "pital02"
+	.asciz "Hospital03"
+	.byte 0x48
+	.asciz "ospital05"
+	.byte 0x48, 0x6F
+	.asciz "spital06"
+	.byte 0x4B, 0x69, 0x64
+	.asciz "sRoom02"
+	.asciz "KidsRoom03"
+	.byte 0x4B
+	.asciz "idsRoom04"
+	.byte 0x4B, 0x69
+	.asciz "dsRoom06"
+	.byte 0x48, 0x6F, 0x74
+	.asciz "el02"
+	.byte 0x48, 0x6F, 0x74
+	.asciz "el03"
+	.byte 0x48, 0x6F, 0x74
+	.asciz "el05"
+	.byte 0x48, 0x6F, 0x74
+	.asciz "el06"
+	.byte 0x43, 0x6F, 0x6D
+	.asciz "pany02"
+	.byte 0x43
+	.asciz "ompany03"
+	.byte 0x43, 0x6F, 0x6D
+	.asciz "pany05"
+	.byte 0x43
+	.asciz "ompany06"
+	.byte 0x42, 0x47, 0x53
+	.asciz "hop02"
+	.byte 0x42, 0x47
+	.asciz "Shop03"
+	.byte 0x42
+	.asciz "GShop05"
+	.asciz "BGShop06"
+	.byte 0x4A, 0x61, 0x70
+	.asciz "an02"
+	.byte 0x4A, 0x61, 0x70
+	.asciz "an03"
+	.byte 0x4A, 0x61, 0x70
+	.asciz "an05"
+	.byte 0x4A, 0x61, 0x70
+	.asciz "an06"
+	.byte 0x41, 0x64, 0x64
+	.asciz "Actor/#%d"
+	.byte 0x43, 0x6F
+	.asciz "in_G"
+	.byte 0x43, 0x6F, 0x69
+	.4byte 0x6E5F5300
+	.asciz "Star"
+	.byte 0x41, 0x64, 0x64
+	.asciz "Pos/Group#%d/#%d"
+	.byte 0x52, 0x6F, 0x6F
+	.asciz "m/add_scene"
+	.asciz "AddPos/Group#%d/#0"
+	.byte 0x41
+	.asciz "ddPos/Group#%d/#%d"
+	.byte 0x41
+	.asciz "ddWind/#%d/node"
+	.asciz "AddWind/#%d/pow"
+	.asciz "AddWind/#%d/r"
+	.byte 0x41, 0x64
+	.asciz "dWind/#%d/eff"
+	.byte 0x41, 0x64
+	.asciz "dEnvSnd/#%d/node"
+	.byte 0x41, 0x64, 0x64
+	.asciz "EnvSnd/#%d/r"
+	.byte 0x41, 0x64, 0x64
+	.asciz "EnvSnd/#%d/snd"
+	.byte 0x41
+	.asciz "ddEnvSnd/#%d/vol"
+	.byte 0x41, 0x64, 0x64
+	.asciz "Actor/#%d"
+	.byte 0x53, 0x74
+	.asciz "artPos1"
+	.asciz "StartPos2"
+	.byte 0x53, 0x74
+	.asciz "artPos"
+	.byte 0x53
+	.asciz "tartPos"
+	.asciz "PCopter/Layout_English/Scenary/"
+	.asciz "PCopter/Layout_German/Scenary/"
+	.byte 0x50
+	.asciz "Copter/Layout_French/Scenary/"
+	.byte 0x50, 0x43
+	.asciz "opter/Layout_Spanish/Scenary/"
+	.byte 0x50, 0x43
+	.asciz "opter/Layout_Italian/Scenary/"
+	.byte 0x50, 0x43
+	.asciz "opter/Layout_English/Scenary/"
+	.byte 0x50, 0x43
+	.asciz "opter/Layout/Scenary/"
+	.byte 0x41, 0x64
+	.asciz "dLayout/archive"
+	.asciz "AddLayout/archive2"
+	.byte 0x41
+	.asciz "ddLayout/#%d/info"
+	.byte 0x53, 0x63
+	.asciz "enary"
+	.byte 0x4D, 0x69
+	.asciz "ssionInfo"
+	.byte 0x41, 0x64
+	.asciz "dLayout/#%d/state#%d"
+	.byte 0x41, 0x64, 0x64
+	.asciz "Effect/#%d"
+	.byte 0x41
+	.asciz "ddEffect/#%d/eft"
+	.byte 0x41, 0x64, 0x64
+	.asciz "Effect/#%d/node"
+	.asciz "AddEffect/#%d/offset"
+	.byte 0x41, 0x64, 0x64
+	.asciz "Effect/#%d/state"
+	.byte 0x53, 0x6F, 0x75
+	.asciz "nd/add_group"
+	.byte 0x53, 0x6F, 0x75
+	.asciz "nd/bgm"
+	.byte 0x41
+	.asciz "rrowMarker_2"
+	.byte 0x53, 0x45, 0x54
+	.asciz "_FLG"
+	.byte 0x54, 0x4F, 0x47
+	.asciz "GLE_FLG"
+	.asciz "SHOW_ACTOR"
+	.byte 0x53
+	.asciz "HOW_ACTOR_E"
+	.asciz "SE_Star"
+	.asciz "SHOW_ACTOR_E"
+	.byte 0x53, 0x74, 0x61
+	.4byte 0x72005374
+	.4byte 0x61720048
+	.asciz "IDE_ACTOR"
+	.byte 0x48, 0x49
+	.asciz "DE_ACTOR_E"
+	.byte 0x53
+	.asciz "E_Star"
+	.byte 0x48
+	.asciz "IDE_ACTOR_E"
+	.asciz "Star"
+	.byte 0x53, 0x74, 0x61
+	.4byte 0x7200544F
+	.asciz "GGLE_ACTOR"
+	.byte 0x54
+	.asciz "OGGLE_ACTOR_E"
+	.byte 0x53, 0x45
+	.asciz "_Star"
+	.byte 0x54, 0x4F
+	.asciz "GGLE_ACTOR_E"
+	.byte 0x53, 0x74, 0x61
+	.4byte 0x72005374
+	.4byte 0x61720041
+	.asciz "DD_WIND_STATE"
+	.byte 0x41, 0x44
+	.asciz "D_SND_STATE"
+	.asciz "ADD_EF_STATE"
+	.byte 0x43, 0x48, 0x45
+	.asciz "CK_BUSY"
+	.asciz "Scenary"
+	.asciz "LastTime"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Jikan"
+	.byte 0x53, 0x63
+	.asciz "enary"
+	.byte 0x53, 0x63
+	.asciz "enary"
+	.byte 0x53, 0x63
+	.asciz "enary"
+	.byte 0x53, 0x63
+	.asciz "enary"
+	.byte 0x53, 0x63
+	.asciz "enary"
+	.byte 0x53, 0x63
+	.asciz "enary"
+	.byte 0x53, 0x63
+	.asciz "enary"
+	.byte 0x47, 0x61
+	.asciz "meMain"
+	.byte 0x74
+	.asciz "ime_number"
+	.byte 0x47
+	.asciz "ameMain"
+	.asciz "last_number"
+	.asciz "GameMain"
+	.byte 0x73, 0x63, 0x6F
+	.asciz "re_number"
+	.byte 0x4C, 0x61
+	.asciz "stTime"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_80044BF0

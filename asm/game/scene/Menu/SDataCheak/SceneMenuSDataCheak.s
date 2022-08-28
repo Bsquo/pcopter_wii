@@ -1,5 +1,71 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BD580
+lbl_801BD580:
+
+	# ROM: 0x1B9680
+	.asciz "CSceneMenuSDataCheak"
+	.balign 4
+
+.global lbl_801BD598
+lbl_801BD598:
+
+	# ROM: 0x1B9698
+	.asciz "SE_Decide_A"
+	.asciz "BUSY"
+	.byte 0x2F, 0x50, 0x43
+	.asciz "opter/Menu/SDialogMes0%d.arc"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuSDataCheak.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (DialogBuf)"
+	.byte 0x53
+	.asciz "DialogMes0%d"
+	.byte 0x53, 0x44, 0x69
+	.asciz "alogMes0%d.brlyt"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuSDataCheak.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (lytRes)"
+	.4byte 0x2F005361
+	.asciz "veDialog06"
+	.byte 0x53
+	.asciz "aveDialog08"
+	.asciz "SaveDialog07"
+	.byte 0x53, 0x61, 0x76
+	.asciz "eDialog02"
+	.byte 0x53, 0x61
+	.asciz "veDialog03"
+	.byte 0x53
+	.asciz "aveDialog04"
+	.asciz "SaveDialog05"
+	.byte 0x53, 0x61, 0x76
+	.asciz "eDialog09"
+	.byte 0x53, 0x61
+	.asciz "veDialog10"
+	.byte 0x53
+	.asciz "aveDialog11"
+	.asciz ".arc"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuSDataCheak.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (DialogBuf)"
+	.byte 0x25
+	.asciz "s.brlyt"
+	.asciz "SceneMenuSDataCheak.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lytRes)"
+	.byte 0x53
+	.asciz "E_Cancel_A"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x53
+	.asciz "E_Decide_A"
+	.balign 4
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global func_8004EEAC

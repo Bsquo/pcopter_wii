@@ -224,8 +224,8 @@ lbl_801BC61C:
 	# ROM: 0x1B871C
 	.asciz "Bounding_No"
 
-.global lbl_801BC628
-lbl_801BC628:
+.global _52012
+_52012:
 
 	# ROM: 0x1B8728
 	.asciz "CSceneMenuTitle"
@@ -1260,8 +1260,8 @@ lbl_801BDDD8:
 	# ROM: 0x1B9ED8
 	.asciz "CSceneMenuLogo2"
 
-.global lbl_801BDDE8
-lbl_801BDDE8:
+.global _51466
+_51466:
 
 	# ROM: 0x1B9EE8
 	.asciz "CSceneMenuLogo"

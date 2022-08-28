@@ -272,7 +272,7 @@ __ct__4CAppFv:
 /* 800117D0 00002750  48 03 AA 91 */	bl func_8004C260
 /* 800117D4 00002754  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 800117D8 00002758  38 63 CE F4 */	addi r3, r3, -0x310c
-/* 800117DC 0000275C  48 04 15 85 */	bl func_80052D60
+/* 800117DC 0000275C  48 04 15 85 */	bl __ct__14CSceneMenuLogoFv
 /* 800117E0 00002760  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 800117E4 00002764  38 63 CF 98 */	addi r3, r3, -0x3068
 /* 800117E8 00002768  48 00 0A 29 */	bl func_80012210
@@ -1015,8 +1015,8 @@ lbl_8001219C:
 /* 800121B0 00003130  38 21 00 10 */	addi r1, r1, 0x10
 /* 800121B4 00003134  4E 80 00 20 */	blr
 
-.global func_800121B8
-func_800121B8:
+.global __dt__14CSceneMenuLogoFv
+__dt__14CSceneMenuLogoFv:
 /* 800121B8 00003138  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800121BC 0000313C  7C 08 02 A6 */	mflr r0
 /* 800121C0 00003140  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1048,7 +1048,7 @@ func_80012210:
 /* 80012218 00003198  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8001221C 0000319C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80012220 000031A0  7C 7F 1B 78 */	mr r31, r3
-/* 80012224 000031A4  48 04 0B 3D */	bl func_80052D60
+/* 80012224 000031A4  48 04 0B 3D */	bl __ct__14CSceneMenuLogoFv
 /* 80012228 000031A8  3C 80 80 1D */	lis r4, lbl_801CC2E0@ha
 /* 8001222C 000031AC  7F E3 FB 78 */	mr r3, r31
 /* 80012230 000031B0  38 84 C2 E0 */	addi r4, r4, lbl_801CC2E0@l
@@ -1071,7 +1071,7 @@ func_8001224C:
 /* 80012268 000031E8  7C 7E 1B 78 */	mr r30, r3
 /* 8001226C 000031EC  41 82 00 1C */	beq lbl_80012288
 /* 80012270 000031F0  38 80 00 00 */	li r4, 0x0
-/* 80012274 000031F4  4B FF FF 45 */	bl func_800121B8
+/* 80012274 000031F4  4B FF FF 45 */	bl __dt__14CSceneMenuLogoFv
 /* 80012278 000031F8  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8001227C 000031FC  40 81 00 0C */	ble lbl_80012288
 /* 80012280 00003200  7F C3 F3 78 */	mr r3, r30
@@ -1248,7 +1248,7 @@ func_800124B4:
 /* 800124BC 0000343C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800124C0 00003440  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800124C4 00003444  7C 7F 1B 78 */	mr r31, r3
-/* 800124C8 00003448  48 04 08 99 */	bl func_80052D60
+/* 800124C8 00003448  48 04 08 99 */	bl __ct__14CSceneMenuLogoFv
 /* 800124CC 0000344C  3C 80 80 1D */	lis r4, lbl_801CC298@ha
 /* 800124D0 00003450  7F E3 FB 78 */	mr r3, r31
 /* 800124D4 00003454  38 84 C2 98 */	addi r4, r4, lbl_801CC298@l
@@ -1271,7 +1271,7 @@ func_800124F0:
 /* 8001250C 0000348C  7C 7E 1B 78 */	mr r30, r3
 /* 80012510 00003490  41 82 00 1C */	beq lbl_8001252C
 /* 80012514 00003494  38 80 00 00 */	li r4, 0x0
-/* 80012518 00003498  4B FF FC A1 */	bl func_800121B8
+/* 80012518 00003498  4B FF FC A1 */	bl __dt__14CSceneMenuLogoFv
 /* 8001251C 0000349C  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80012520 000034A0  40 81 00 0C */	ble lbl_8001252C
 /* 80012524 000034A4  7F C3 F3 78 */	mr r3, r30
@@ -1343,7 +1343,7 @@ lbl_80012548:
 /* 8001261C 0000359C  3C 7E 00 01 */	addis r3, r30, 0x1
 /* 80012620 000035A0  38 80 FF FF */	li r4, -0x1
 /* 80012624 000035A4  38 63 CE F4 */	addi r3, r3, -0x310c
-/* 80012628 000035A8  4B FF FB 91 */	bl func_800121B8
+/* 80012628 000035A8  4B FF FB 91 */	bl __dt__14CSceneMenuLogoFv
 /* 8001262C 000035AC  3C 7E 00 01 */	addis r3, r30, 0x1
 /* 80012630 000035B0  38 80 FF FF */	li r4, -0x1
 /* 80012634 000035B4  38 63 CE 18 */	addi r3, r3, -0x31e8
@@ -2110,7 +2110,7 @@ func_80013038:
 /* 8001304C 00003FCC  38 80 02 5D */	li r4, 0x25d
 /* 80013050 00003FD0  38 A5 AA F0 */	addi r5, r5, lbl_801CAAF0@l
 /* 80013054 00003FD4  4C C6 31 82 */	crclr 6
-/* 80013058 00003FD8  48 17 ED B1 */	bl func_80191E08
+/* 80013058 00003FD8  48 17 ED B1 */	bl Panic__Q24nw4r2dbFPCciPCce
 /* 8001305C 00003FDC  38 60 00 00 */	li r3, 0x0
 
 .global func_80013060
@@ -2760,7 +2760,7 @@ lbl_80013798:
 /* 800137B8 00004738  38 BC AA AC */	addi r5, r28, lbl_801CAAAC@l
 /* 800137BC 0000473C  38 80 01 93 */	li r4, 0x193
 /* 800137C0 00004740  4C C6 31 82 */	crclr 6
-/* 800137C4 00004744  48 17 E6 45 */	bl func_80191E08
+/* 800137C4 00004744  48 17 E6 45 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_800137C8:
 /* 800137C8 00004748  80 78 00 C8 */	lwz r3, 0xc8(r24)
 /* 800137CC 0000474C  3B A0 00 00 */	li r29, 0x0
@@ -2784,7 +2784,7 @@ lbl_80013800:
 /* 8001380C 0000478C  38 BF A9 70 */	addi r5, r31, lbl_801CA970@l
 /* 80013810 00004790  38 80 01 96 */	li r4, 0x196
 /* 80013814 00004794  4C C6 31 82 */	crclr 6
-/* 80013818 00004798  48 17 E5 F1 */	bl func_80191E08
+/* 80013818 00004798  48 17 E5 F1 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_8001381C:
 /* 8001381C 0000479C  80 78 00 C8 */	lwz r3, 0xc8(r24)
 /* 80013820 000047A0  7F 04 C3 78 */	mr r4, r24
@@ -3209,7 +3209,7 @@ func_80013D1C:
 /* 80013D50 00004CD0  38 80 00 72 */	li r4, 0x72
 /* 80013D54 00004CD4  38 A5 AE 30 */	addi r5, r5, lbl_801CAE30@l
 /* 80013D58 00004CD8  4C C6 31 82 */	crclr 6
-/* 80013D5C 00004CDC  48 17 E0 AD */	bl func_80191E08
+/* 80013D5C 00004CDC  48 17 E0 AD */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_80013D60:
 /* 80013D60 00004CE0  7F C3 F3 78 */	mr r3, r30
 /* 80013D64 00004CE4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3515,7 +3515,7 @@ lbl_801CA560:
 	.4byte lbl_8003C76C
 	.4byte lbl_8003C764
 	.4byte lbl_8003C854
-	.4byte lbl_80039128
+	.4byte CalcLocalSystem__14CSceneMenuBaseFv
 	.4byte lbl_8003C85C
 	.4byte func_80011F98
 
@@ -3523,9 +3523,9 @@ lbl_801CA560:
 lbl_801CA588:
 
 	# ROM: 0x1C6688
-	.4byte lbl_8060DE90
+	.4byte __RTTI__7CVScene
 	.4byte 0
-	.4byte lbl_8060DE18
+	.4byte __RTTI__14CSceneMenuBase
 	.4byte 0
 	.4byte lbl_8060DE10
 	.4byte 0
@@ -3535,9 +3535,9 @@ lbl_801CA588:
 lbl_801CA5A4:
 
 	# ROM: 0x1C66A4
-	.4byte lbl_8060DE90
+	.4byte __RTTI__7CVScene
 	.4byte 0
-	.4byte lbl_8060DE18
+	.4byte __RTTI__14CSceneMenuBase
 	.4byte 0
 	.4byte 0
 
@@ -3545,7 +3545,7 @@ lbl_801CA5A4:
 lbl_801CA5B8:
 
 	# ROM: 0x1C66B8
-	.4byte lbl_8060DE90
+	.4byte __RTTI__7CVScene
 	.4byte 0
 	.4byte 0
 
@@ -4449,8 +4449,8 @@ lbl_8060DE10:
 	.4byte lbl_801B8418
 	.4byte lbl_801CA5A4
 
-.global lbl_8060DE18
-lbl_8060DE18:
+.global __RTTI__14CSceneMenuBase
+__RTTI__14CSceneMenuBase:
 
 	# ROM: 0x1EE018
 	.4byte lbl_801B8430
@@ -4554,8 +4554,8 @@ lbl_8060DE88:
 	.4byte lbl_801B8580
 	.4byte 0
 
-.global lbl_8060DE90
-lbl_8060DE90:
+.global __RTTI__7CVScene
+__RTTI__7CVScene:
 
 	# ROM: 0x1EE090
 	.4byte _51383

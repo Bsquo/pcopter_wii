@@ -96,7 +96,7 @@ lbl_8000CB00:
 	.4byte func_80012160
 	.4byte 0x00000058
 	.4byte lbl_80006890
-	.4byte func_800121B8
+	.4byte __dt__14CSceneMenuLogoFv
 	.4byte 0x00000058
 	.4byte lbl_80006898
 	.4byte func_80012210
@@ -468,7 +468,7 @@ lbl_8000CB00:
 	.4byte lbl_8001A608
 	.4byte 0x00000304
 	.4byte lbl_80006D98
-	.4byte func_8001A90C
+	.4byte __nw__FUl
 	.4byte 0x0000004C
 	.4byte lbl_80006DC8
 	.4byte func_8001A958
@@ -2226,13 +2226,13 @@ lbl_8000CB00:
 	.4byte func_80038E68
 	.4byte 0x000000DC
 	.4byte lbl_80008AE0
-	.4byte func_80038F5C
+	.4byte ReadDvdFile__14CSceneMenuBaseFPCcPPvQ24demo6Memory
 	.4byte 0x00000158
 	.4byte lbl_80008AF8
-	.4byte func_800390CC
+	.4byte __ct__14CSceneMenuBaseFv
 	.4byte 0x00000054
 	.4byte lbl_80008B00
-	.4byte lbl_80039128
+	.4byte CalcLocalSystem__14CSceneMenuBaseFv
 	.4byte 0x00000024
 	.4byte lbl_80008B08
 	.4byte func_80039198
@@ -2283,7 +2283,7 @@ lbl_8000CB00:
 	.4byte func_8003A3D4
 	.4byte 0x000000AC
 	.4byte lbl_80008C28
-	.4byte func_8003A480
+	.4byte GetMenuDataPath__14CSceneMenuBaseFPc
 	.4byte 0x00000108
 	.4byte lbl_80008C30
 	.4byte func_8003A588
@@ -2991,25 +2991,25 @@ lbl_8000CB00:
 	.4byte func_800529A0
 	.4byte 0x000003AC
 	.4byte lbl_80009CA0
-	.4byte func_80052D60
+	.4byte __ct__14CSceneMenuLogoFv
 	.4byte 0x0000003C
 	.4byte lbl_80009CA8
-	.4byte lbl_80052D9C
+	.4byte StartLocal__14CSceneMenuLogoFv
 	.4byte 0x00000210
 	.4byte lbl_80009CB0
-	.4byte lbl_80052FAC
+	.4byte CalcLocal__14CSceneMenuLogoFv
 	.4byte 0x00000148
 	.4byte lbl_80009CD8
-	.4byte lbl_800530FC
+	.4byte RenderLocal__14CSceneMenuLogoFv
 	.4byte 0x00000104
 	.4byte lbl_80009CE0
-	.4byte lbl_80053208
+	.4byte EndLocal__14CSceneMenuLogoFv
 	.4byte 0x0000007C
 	.4byte lbl_80009CF8
-	.4byte lbl_80053284
+	.4byte StartLocal__15CSceneMenuLogo2Fv
 	.4byte 0x00000210
 	.4byte lbl_80009D00
-	.4byte lbl_80053494
+	.4byte StartLocal__26CSceneMenuControllerManualFv
 	.4byte 0x000002DC
 	.4byte lbl_80009D28
 	.4byte lbl_800537A4
@@ -4760,7 +4760,7 @@ lbl_80010138:
 	.4byte func_8011BF84
 	.4byte 0x00000060
 	.4byte lbl_8000CA4C
-	.4byte func_8011BFEC
+	.4byte GetAllocator__4demoFQ24demo6Memory
 	.4byte 0x000000A0
 	.4byte lbl_8000CA64
 	.4byte func_8011C08C

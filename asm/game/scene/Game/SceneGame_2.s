@@ -4041,7 +4041,7 @@ lbl_801CB4F8:
 lbl_801CB548:
 
 	# ROM: 0x1C7648
-	.4byte lbl_8060DE90
+	.4byte __RTTI__7CVScene
 	.4byte 0
 	.4byte 0
 

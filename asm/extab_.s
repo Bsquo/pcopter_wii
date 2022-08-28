@@ -122,7 +122,7 @@ lbl_800064F0:
 	.4byte func_8001224C
 	.4byte 0x0780001F
 	.4byte 0x0000CEF4
-	.4byte func_800121B8
+	.4byte __dt__14CSceneMenuLogoFv
 	.4byte 0x0780001F
 	.4byte 0x0000CE18
 	.4byte func_80012160

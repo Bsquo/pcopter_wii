@@ -10,6 +10,6 @@ u32 CVScene::Start() {
     return 1;
 }
 
-u32 CVScene::StartLocal() {
-    return 1;
+bool CVScene::StartLocal() {
+    return true;
 }

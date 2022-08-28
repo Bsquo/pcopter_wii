@@ -232,7 +232,7 @@ lbl_8060E1F8:
 
 	# ROM: 0x1EE3F8
 	.4byte lbl_801BC428
-	.4byte lbl_801CBBE0
+	.4byte _51685
 
 .global lbl_8060E200
 lbl_8060E200:
@@ -267,12 +267,12 @@ lbl_8060E244:
 	# ROM: 0x1EE444
 	.4byte 0xFFFFFFFF
 
-.global lbl_8060E248
-lbl_8060E248:
+.global __RTTI__15CSceneMenuTitle
+__RTTI__15CSceneMenuTitle:
 
 	# ROM: 0x1EE448
-	.4byte lbl_801BC628
-	.4byte lbl_801CBC90
+	.4byte _52012
+	.4byte _52013
 
 .global lbl_8060E250
 lbl_8060E250:
@@ -421,12 +421,12 @@ lbl_8060E2F0:
 	.4byte lbl_801BDDD8
 	.4byte lbl_801CC308
 
-.global lbl_8060E2F8
-lbl_8060E2F8:
+.global __RTTI__14CSceneMenuLogo
+__RTTI__14CSceneMenuLogo:
 
 	# ROM: 0x1EE4F8
-	.4byte lbl_801BDDE8
-	.4byte lbl_801CC350
+	.4byte _51466
+	.4byte _51467
 
 .global lbl_8060E300
 lbl_8060E300:

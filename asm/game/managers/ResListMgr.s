@@ -99,7 +99,7 @@ func_800491AC:
 /* 800491D0 0003A150  7C 7B 1B 78 */	mr r27, r3
 /* 800491D4 0003A154  41 82 00 E8 */	beq lbl_800492BC
 /* 800491D8 0003A158  38 60 00 2C */	li r3, 0x2c
-/* 800491DC 0003A15C  4B FD 17 31 */	bl func_8001A90C
+/* 800491DC 0003A15C  4B FD 17 31 */	bl __nw__FUl
 /* 800491E0 0003A160  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800491E4 0003A164  7C 7D 1B 78 */	mr r29, r3
 /* 800491E8 0003A168  41 82 00 08 */	beq lbl_800491F0
@@ -130,7 +130,7 @@ func_80049214:
 /* 8004923C 0003A1BC  7C 7B 1B 78 */	mr r27, r3
 /* 80049240 0003A1C0  41 82 00 68 */	beq lbl_800492A8
 /* 80049244 0003A1C4  38 60 00 24 */	li r3, 0x24
-/* 80049248 0003A1C8  4B FD 16 C5 */	bl func_8001A90C
+/* 80049248 0003A1C8  4B FD 16 C5 */	bl __nw__FUl
 /* 8004924C 0003A1CC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80049250 0003A1D0  7C 7C 1B 78 */	mr r28, r3
 /* 80049254 0003A1D4  41 82 00 08 */	beq lbl_8004925C
@@ -401,3 +401,37 @@ lbl_80049578:
 /* 80049588 0003A508  7C 08 03 A6 */	mtlr r0
 /* 8004958C 0003A50C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80049590 0003A510  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CBD70
+lbl_801CBD70:
+
+	# ROM: 0x1C7E70
+	.4byte lbl_8060E280
+	.4byte 0
+	.4byte lbl_80049520
+
+.global lbl_801CBD7C
+lbl_801CBD7C:
+
+	# ROM: 0x1C7E7C
+	.4byte __RTTI__10CVListBase
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CBD88
+lbl_801CBD88:
+
+	# ROM: 0x1C7E88
+	.4byte lbl_8060E288
+	.4byte 0
+	.4byte lbl_800494AC
+
+.global lbl_801CBD94
+lbl_801CBD94:
+
+	# ROM: 0x1C7E94
+	.4byte __RTTI__10CVListBase
+	.4byte 0
+	.4byte 0

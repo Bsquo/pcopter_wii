@@ -161,8 +161,8 @@ lbl_80191DF0:
 /* 80191DFC 00182D7C  7C 08 03 A6 */	mtlr r0
 /* 80191E00 00182D80  38 21 00 20 */	addi r1, r1, 0x20
 /* 80191E04 00182D84  4E 80 00 20 */	blr
-.global func_80191E08
-func_80191E08:
+.global Panic__Q24nw4r2dbFPCciPCce
+Panic__Q24nw4r2dbFPCciPCce:
 /* 80191E08 00182D88  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 80191E0C 00182D8C  7C 08 02 A6 */	mflr r0
 /* 80191E10 00182D90  90 01 00 84 */	stw r0, 0x84(r1)

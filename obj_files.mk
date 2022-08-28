@@ -72,6 +72,7 @@ GAME_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/game/actor/Copter/parts/LiftCup.o                \
 	$(BUILD_DIR)/asm/game/scene/Menu/SDataCheak/SceneMenuSDataCheak.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/DataAccess/SceneMenuDataAccess.o             \
+	$(BUILD_DIR)/src/game/scene/Menu/Logo/SceneMenuLogo.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Logo/SceneMenuLogo.o             \
 	$(BUILD_DIR)/asm/game/scenary/Scenary.o             \
 	$(BUILD_DIR)/asm/game/hbm/VHomeButton.o             \

@@ -32,7 +32,7 @@ class CVScene {
 
         // vtable (__vt__7CVScene): 0x801cb828
 		// StartLocal__7CVSceneFv (0x8002bc78)
-		virtual u32 StartLocal();
+		virtual bool StartLocal();
 		// CalcLocal__7CVSceneFv (0x8002bea4)
 		virtual void CalcLocal();
 		// RenderLocal__7CVSceneFv (0x8002bf24)

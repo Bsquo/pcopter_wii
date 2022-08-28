@@ -9,7 +9,7 @@ func_8004EEAC:
 /* 8004EEB4 0003FE34  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8004EEB8 0003FE38  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8004EEBC 0003FE3C  7C 7F 1B 78 */	mr r31, r3
-/* 8004EEC0 0003FE40  4B FE A2 0D */	bl func_800390CC
+/* 8004EEC0 0003FE40  4B FE A2 0D */	bl __ct__14CSceneMenuBaseFv
 /* 8004EEC4 0003FE44  3C 80 80 1D */	lis r4, lbl_801CC0A0@ha
 /* 8004EEC8 0003FE48  38 7F 00 F0 */	addi r3, r31, 0xf0
 /* 8004EECC 0003FE4C  38 84 C0 A0 */	addi r4, r4, lbl_801CC0A0@l
@@ -35,7 +35,7 @@ lbl_8004EEF8:
 /* 8004EF10 0003FE90  7C 7E 1B 78 */	mr r30, r3
 /* 8004EF14 0003FE94  93 E3 00 18 */	stw r31, 0x18(r3)
 /* 8004EF18 0003FE98  38 60 00 00 */	li r3, 0x0
-/* 8004EF1C 0003FE9C  48 0C D0 D1 */	bl func_8011BFEC
+/* 8004EF1C 0003FE9C  48 0C D0 D1 */	bl GetAllocator__4demoFQ24demo6Memory
 /* 8004EF20 0003FEA0  90 7E 00 B8 */	stw r3, 0xb8(r30)
 /* 8004EF24 0003FEA4  4B FE 00 55 */	bl func_8002EF78
 /* 8004EF28 0003FEA8  93 FE 00 CC */	stw r31, 0xcc(r30)
@@ -710,7 +710,7 @@ func_8004F744:
 /* 8004F78C 0004070C  38 81 00 08 */	addi r4, r1, 0x8
 /* 8004F790 00040710  38 BC 00 D4 */	addi r5, r28, 0xd4
 /* 8004F794 00040714  38 C0 00 00 */	li r6, 0x0
-/* 8004F798 00040718  4B FE 97 C5 */	bl func_80038F5C
+/* 8004F798 00040718  4B FE 97 C5 */	bl ReadDvdFile__14CSceneMenuBaseFPCcPPvQ24demo6Memory
 /* 8004F79C 0004071C  80 1C 00 D4 */	lwz r0, 0xd4(r28)
 /* 8004F7A0 00040720  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8004F7A4 00040724  40 82 00 18 */	bne lbl_8004F7BC
@@ -718,14 +718,14 @@ func_8004F744:
 /* 8004F7AC 0004072C  38 BF 00 49 */	addi r5, r31, 0x49
 /* 8004F7B0 00040730  38 80 02 19 */	li r4, 0x219
 /* 8004F7B4 00040734  4C C6 31 82 */	crclr 6
-/* 8004F7B8 00040738  48 14 26 51 */	bl func_80191E08
+/* 8004F7B8 00040738  48 14 26 51 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_8004F7BC:
 /* 8004F7BC 0004073C  38 60 00 B0 */	li r3, 0xb0
-/* 8004F7C0 00040740  4B FC B1 4D */	bl func_8001A90C
+/* 8004F7C0 00040740  4B FC B1 4D */	bl __nw__FUl
 /* 8004F7C4 00040744  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8004F7C8 00040748  7C 7F 1B 78 */	mr r31, r3
 /* 8004F7CC 0004074C  41 82 00 08 */	beq lbl_8004F7D4
-/* 8004F7D0 00040750  48 11 A3 05 */	bl func_80169AD4
+/* 8004F7D0 00040750  48 11 A3 05 */	bl __ct__Q34nw4r3lyt19ArcResourceAccessorFv
 lbl_8004F7D4:
 /* 8004F7D4 00040754  3C 80 80 1C */	lis r4, lbl_801BD598@ha
 /* 8004F7D8 00040758  93 FC 00 C8 */	stw r31, 0xc8(r28)
@@ -738,13 +738,13 @@ lbl_8004F7D4:
 /* 8004F7F4 00040774  80 7C 00 C8 */	lwz r3, 0xc8(r28)
 /* 8004F7F8 00040778  38 A1 00 08 */	addi r5, r1, 0x8
 /* 8004F7FC 0004077C  80 9C 00 D4 */	lwz r4, 0xd4(r28)
-/* 8004F800 00040780  48 11 A3 31 */	bl func_80169B30
+/* 8004F800 00040780  48 11 A3 31 */	bl Attach__Q34nw4r3lyt19ArcResourceAccessorFPvPCc
 /* 8004F804 00040784  38 60 00 20 */	li r3, 0x20
-/* 8004F808 00040788  4B FC B1 05 */	bl func_8001A90C
+/* 8004F808 00040788  4B FC B1 05 */	bl __nw__FUl
 /* 8004F80C 0004078C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8004F810 00040790  7C 7E 1B 78 */	mr r30, r3
 /* 8004F814 00040794  41 82 00 08 */	beq lbl_8004F81C
-/* 8004F818 00040798  48 11 06 99 */	bl func_8015FEB0
+/* 8004F818 00040798  48 11 06 99 */	bl __ct__Q34nw4r3lyt6LayoutFv
 lbl_8004F81C:
 /* 8004F81C 0004079C  3F E0 80 1C */	lis r31, lbl_801BD598@ha
 /* 8004F820 000407A0  93 DC 00 CC */	stw r30, 0xcc(r28)
@@ -769,7 +769,7 @@ lbl_8004F81C:
 /* 8004F86C 000407EC  38 BF 00 AD */	addi r5, r31, 0xad
 /* 8004F870 000407F0  38 80 02 2B */	li r4, 0x22b
 /* 8004F874 000407F4  4C C6 31 82 */	crclr 6
-/* 8004F878 000407F8  48 14 25 91 */	bl func_80191E08
+/* 8004F878 000407F8  48 14 25 91 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_8004F87C:
 /* 8004F87C 000407FC  80 7C 00 CC */	lwz r3, 0xcc(r28)
 /* 8004F880 00040800  7F C4 F3 78 */	mr r4, r30
@@ -806,7 +806,7 @@ func_8004F8D0:
 /* 8004F8F0 00040870  48 00 02 61 */	bl func_8004FB50
 /* 8004F8F4 00040874  7F A3 EB 78 */	mr r3, r29
 /* 8004F8F8 00040878  38 81 00 70 */	addi r4, r1, 0x70
-/* 8004F8FC 0004087C  4B FE AB 85 */	bl func_8003A480
+/* 8004F8FC 0004087C  4B FE AB 85 */	bl GetMenuDataPath__14CSceneMenuBaseFPc
 /* 8004F900 00040880  3F E0 80 1C */	lis r31, lbl_801BD598@ha
 /* 8004F904 00040884  38 61 00 70 */	addi r3, r1, 0x70
 /* 8004F908 00040888  3B FF D5 98 */	addi r31, r31, lbl_801BD598@l
@@ -920,7 +920,7 @@ func_8004FA04:
 /* 8004FA28 000409A8  38 81 00 70 */	addi r4, r1, 0x70
 /* 8004FA2C 000409AC  38 BD 00 D4 */	addi r5, r29, 0xd4
 /* 8004FA30 000409B0  38 C0 00 00 */	li r6, 0x0
-/* 8004FA34 000409B4  4B FE 95 29 */	bl func_80038F5C
+/* 8004FA34 000409B4  4B FE 95 29 */	bl ReadDvdFile__14CSceneMenuBaseFPCcPPvQ24demo6Memory
 /* 8004FA38 000409B8  80 1D 00 D4 */	lwz r0, 0xd4(r29)
 /* 8004FA3C 000409BC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8004FA40 000409C0  40 82 00 18 */	bne lbl_8004FA58
@@ -928,26 +928,26 @@ func_8004FA04:
 /* 8004FA48 000409C8  38 BF 01 75 */	addi r5, r31, 0x175
 /* 8004FA4C 000409CC  38 80 02 5A */	li r4, 0x25a
 /* 8004FA50 000409D0  4C C6 31 82 */	crclr 6
-/* 8004FA54 000409D4  48 14 23 B5 */	bl func_80191E08
+/* 8004FA54 000409D4  48 14 23 B5 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_8004FA58:
 /* 8004FA58 000409D8  38 60 00 B0 */	li r3, 0xb0
-/* 8004FA5C 000409DC  4B FC AE B1 */	bl func_8001A90C
+/* 8004FA5C 000409DC  4B FC AE B1 */	bl __nw__FUl
 /* 8004FA60 000409E0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8004FA64 000409E4  7C 7F 1B 78 */	mr r31, r3
 /* 8004FA68 000409E8  41 82 00 08 */	beq lbl_8004FA70
-/* 8004FA6C 000409EC  48 11 A0 69 */	bl func_80169AD4
+/* 8004FA6C 000409EC  48 11 A0 69 */	bl __ct__Q34nw4r3lyt19ArcResourceAccessorFv
 lbl_8004FA70:
 /* 8004FA70 000409F0  93 FD 00 C8 */	stw r31, 0xc8(r29)
 /* 8004FA74 000409F4  7F E3 FB 78 */	mr r3, r31
 /* 8004FA78 000409F8  80 9D 00 D4 */	lwz r4, 0xd4(r29)
 /* 8004FA7C 000409FC  38 A1 00 08 */	addi r5, r1, 0x8
-/* 8004FA80 00040A00  48 11 A0 B1 */	bl func_80169B30
+/* 8004FA80 00040A00  48 11 A0 B1 */	bl Attach__Q34nw4r3lyt19ArcResourceAccessorFPvPCc
 /* 8004FA84 00040A04  38 60 00 20 */	li r3, 0x20
-/* 8004FA88 00040A08  4B FC AE 85 */	bl func_8001A90C
+/* 8004FA88 00040A08  4B FC AE 85 */	bl __nw__FUl
 /* 8004FA8C 00040A0C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8004FA90 00040A10  7C 7E 1B 78 */	mr r30, r3
 /* 8004FA94 00040A14  41 82 00 08 */	beq lbl_8004FA9C
-/* 8004FA98 00040A18  48 11 04 19 */	bl func_8015FEB0
+/* 8004FA98 00040A18  48 11 04 19 */	bl __ct__Q34nw4r3lyt6LayoutFv
 lbl_8004FA9C:
 /* 8004FA9C 00040A1C  3F E0 80 1C */	lis r31, lbl_801BD598@ha
 /* 8004FAA0 00040A20  93 DD 00 CC */	stw r30, 0xcc(r29)
@@ -972,7 +972,7 @@ lbl_8004FA9C:
 /* 8004FAEC 00040A6C  38 BF 01 C0 */	addi r5, r31, 0x1c0
 /* 8004FAF0 00040A70  38 80 02 6C */	li r4, 0x26c
 /* 8004FAF4 00040A74  4C C6 31 82 */	crclr 6
-/* 8004FAF8 00040A78  48 14 23 11 */	bl func_80191E08
+/* 8004FAF8 00040A78  48 14 23 11 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_8004FAFC:
 /* 8004FAFC 00040A7C  80 7D 00 CC */	lwz r3, 0xcc(r29)
 /* 8004FB00 00040A80  7F C4 F3 78 */	mr r4, r30
@@ -1397,3 +1397,117 @@ func_80050010:
 /* 8005003C 00040FBC  7C 08 03 A6 */	mtlr r0
 /* 80050040 00040FC0  38 21 00 80 */	addi r1, r1, 0x80
 /* 80050044 00040FC4  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CBF98
+lbl_801CBF98:
+
+	# ROM: 0x1C8098
+	.4byte lbl_8004F03C
+	.4byte lbl_8004F0B4
+	.4byte lbl_8004F12C
+	.4byte lbl_8004F164
+	.4byte lbl_8004F1B4
+	.4byte lbl_8004F1E8
+	.4byte lbl_8004F234
+	.4byte lbl_8004F274
+	.4byte lbl_8004F2E4
+	.4byte lbl_8004F31C
+	.4byte lbl_8004F334
+	.4byte func_8004F350
+	.4byte lbl_8004F0FC
+	.4byte lbl_8004F114
+
+.global lbl_801CBFD0
+lbl_801CBFD0:
+
+	# ROM: 0x1C80D0
+	.4byte func_8004F728
+	.4byte lbl_8004F5CC
+	.4byte lbl_8004F5DC
+	.4byte lbl_8004F5F8
+	.4byte lbl_8004F614
+	.4byte lbl_8004F620
+	.4byte lbl_8004F63C
+	.4byte lbl_8004F5CC
+	.4byte lbl_8004F658
+	.4byte lbl_8004F674
+	.4byte lbl_8004F684
+	.4byte func_8004F728
+	.4byte lbl_8004F6A0
+	.4byte lbl_8004F6BC
+	.4byte lbl_8004F6D8
+	.4byte lbl_8004F6F4
+	.4byte lbl_8004F710
+
+.global lbl_801CC014
+lbl_801CC014:
+
+	# ROM: 0x1C8114
+	.4byte lbl_8004F9FC
+	.4byte lbl_8004F9FC
+	.4byte lbl_8004F934
+	.4byte lbl_8004F948
+	.4byte lbl_8004F9FC
+	.4byte lbl_8004F9FC
+	.4byte lbl_8004F95C
+	.4byte lbl_8004F9FC
+	.4byte lbl_8004F970
+	.4byte lbl_8004F9FC
+	.4byte lbl_8004F984
+	.4byte lbl_8004F9FC
+	.4byte lbl_8004F998
+	.4byte lbl_8004F9AC
+	.4byte lbl_8004F9C0
+	.4byte lbl_8004F9D4
+	.4byte lbl_8004F9E8
+
+.global lbl_801CC058
+lbl_801CC058:
+
+	# ROM: 0x1C8158
+	.4byte lbl_8004FC48
+	.4byte lbl_8004FC3C
+	.4byte lbl_8004FC78
+	.4byte lbl_8004FC78
+	.4byte lbl_8004FC78
+	.4byte lbl_8004FC78
+	.4byte lbl_8004FC78
+	.4byte lbl_8004FC6C
+	.4byte lbl_8004FC78
+	.4byte lbl_8004FC60
+	.4byte lbl_8004FC78
+	.4byte lbl_8004FC78
+	.4byte lbl_8004FC78
+	.4byte lbl_8004FC78
+	.4byte lbl_8004FC54
+	.4byte lbl_8004FC30
+	.4byte lbl_8004FC24
+	.4byte 0
+
+.global lbl_801CC0A0
+lbl_801CC0A0:
+
+	# ROM: 0x1C81A0
+	.4byte lbl_8060E2D0
+	.4byte 0
+	.4byte lbl_8004EEF8
+	.4byte lbl_8004EFB8
+	.4byte lbl_8004F374
+	.4byte lbl_8004F36C
+	.4byte lbl_8004F518
+	.4byte CalcLocalSystem__14CSceneMenuBaseFv
+	.4byte lbl_8004F520
+	.4byte func_80011C44
+
+.global lbl_801CC0C8
+lbl_801CC0C8:
+
+	# ROM: 0x1C81C8
+	.4byte __RTTI__7CVScene
+	.4byte 0
+	.4byte __RTTI__14CSceneMenuBase
+	.4byte 0
+	.4byte 0
+	.4byte 0

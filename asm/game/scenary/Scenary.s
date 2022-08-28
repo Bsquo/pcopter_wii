@@ -587,3 +587,30 @@ func_80053F68:
 /* 80053F94 00044F14  7C 08 03 A6 */	mtlr r0
 /* 80053F98 00044F18  38 21 00 80 */	addi r1, r1, 0x80
 /* 80053F9C 00044F1C  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CC368
+lbl_801CC368:
+
+	# ROM: 0x1C8468
+	.4byte lbl_8060E300
+	.4byte 0
+	.4byte func_80044D0C
+	.4byte lbl_80053770
+	.4byte lbl_8004799C
+	.4byte lbl_8004800C
+	.4byte lbl_800485BC
+	.4byte lbl_800485C0
+	.4byte lbl_80048664
+	.4byte lbl_800537A4
+	.4byte func_80053874
+	.4byte func_80053978
+	.4byte lbl_80048C04
+	.4byte lbl_80048A18
+	.4byte lbl_80048A50
+	.4byte lbl_80048BCC
+	.4byte lbl_80053BDC
+	.4byte lbl_80053D40
+	.4byte lbl_80053DF0
+	.4byte 0

@@ -247,7 +247,7 @@ IsEnd__7CVSceneFv:
 lbl_801CB828:
 
 	# ROM: 0x1C7928
-	.4byte lbl_8060DE90
+	.4byte __RTTI__7CVScene
 	.4byte 0
 	.4byte StartLocal__7CVSceneFv
 	.4byte CalcLocal__7CVSceneFv

@@ -9,7 +9,7 @@ func_8004C260:
 /* 8004C268 0003D1E8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8004C26C 0003D1EC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8004C270 0003D1F0  7C 7F 1B 78 */	mr r31, r3
-/* 8004C274 0003D1F4  4B FE CE 59 */	bl func_800390CC
+/* 8004C274 0003D1F4  4B FE CE 59 */	bl __ct__14CSceneMenuBaseFv
 /* 8004C278 0003D1F8  3C 80 80 1D */	lis r4, lbl_801CBEB8@ha
 /* 8004C27C 0003D1FC  7F E3 FB 78 */	mr r3, r31
 /* 8004C280 0003D200  38 84 BE B8 */	addi r4, r4, lbl_801CBEB8@l
@@ -40,7 +40,7 @@ lbl_8004C29C:
 lbl_8004C2D8:
 /* 8004C2D8 0003D258  7F C3 F3 78 */	mr r3, r30
 /* 8004C2DC 0003D25C  38 81 00 08 */	addi r4, r1, 0x8
-/* 8004C2E0 0003D260  4B FE E1 A1 */	bl func_8003A480
+/* 8004C2E0 0003D260  4B FE E1 A1 */	bl GetMenuDataPath__14CSceneMenuBaseFPc
 /* 8004C2E4 0003D264  3F E0 80 1C */	lis r31, lbl_801BD1F0@ha
 /* 8004C2E8 0003D268  38 61 00 08 */	addi r3, r1, 0x8
 /* 8004C2EC 0003D26C  38 9F D1 F0 */	addi r4, r31, lbl_801BD1F0@l
@@ -326,6 +326,34 @@ lbl_8004C6AC:
 /* 8004C6D8 0003D658  7C 08 03 A6 */	mtlr r0
 /* 8004C6DC 0003D65C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004C6E0 0003D660  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CBEB8
+lbl_801CBEB8:
+
+	# ROM: 0x1C7FB8
+	.4byte lbl_8060E298
+	.4byte 0
+	.4byte lbl_8004C29C
+	.4byte lbl_8004C418
+	.4byte lbl_8004C620
+	.4byte lbl_8004C618
+	.4byte lbl_8004C6A4
+	.4byte CalcLocalSystem__14CSceneMenuBaseFv
+	.4byte lbl_8004C6AC
+	.4byte func_80012160
+
+.global lbl_801CBEE0
+lbl_801CBEE0:
+
+	# ROM: 0x1C7FE0
+	.4byte __RTTI__7CVScene
+	.4byte 0
+	.4byte __RTTI__14CSceneMenuBase
+	.4byte 0
+	.4byte 0
+	.4byte 0
 
 .section .sbss, "wa", @nobits
 

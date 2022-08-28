@@ -233,8 +233,8 @@ func_8015FE98:
 /* 8015FEA8 00150E28  38 21 00 20 */	addi r1, r1, 0x20
 /* 8015FEAC 00150E2C  4E 80 00 20 */	blr
 
-.global func_8015FEB0
-func_8015FEB0:
+.global __ct__Q34nw4r3lyt6LayoutFv
+__ct__Q34nw4r3lyt6LayoutFv:
 /* 8015FEB0 00150E30  38 00 00 00 */	li r0, 0x0
 /* 8015FEB4 00150E34  C0 02 A2 B8 */	lfs f0, lbl_80611AD8@sda21(r2)
 /* 8015FEB8 00150E38  3C 80 80 1F */	lis r4, lbl_801EE180@ha

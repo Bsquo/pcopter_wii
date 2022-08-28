@@ -2,26 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80052D60
-func_80052D60:
-/* 80052D60 00043CE0  94 21 FF F0 */	stwu r1, -0x10(r1)
-/* 80052D64 00043CE4  7C 08 02 A6 */	mflr r0
-/* 80052D68 00043CE8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80052D6C 00043CEC  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80052D70 00043CF0  7C 7F 1B 78 */	mr r31, r3
-/* 80052D74 00043CF4  4B FE 63 59 */	bl func_800390CC
-/* 80052D78 00043CF8  3C 80 80 1D */	lis r4, lbl_801CC328@ha
-/* 80052D7C 00043CFC  7F E3 FB 78 */	mr r3, r31
-/* 80052D80 00043D00  38 84 C3 28 */	addi r4, r4, lbl_801CC328@l
-/* 80052D84 00043D04  90 9F 00 28 */	stw r4, 0x28(r31)
-/* 80052D88 00043D08  83 E1 00 0C */	lwz r31, 0xc(r1)
-/* 80052D8C 00043D0C  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 80052D90 00043D10  7C 08 03 A6 */	mtlr r0
-/* 80052D94 00043D14  38 21 00 10 */	addi r1, r1, 0x10
-/* 80052D98 00043D18  4E 80 00 20 */	blr
-
-.global lbl_80052D9C
-lbl_80052D9C:
+.global StartLocal__14CSceneMenuLogoFv
+StartLocal__14CSceneMenuLogoFv:
 /* 80052D9C 00043D1C  94 21 FE E0 */	stwu r1, -0x120(r1)
 /* 80052DA0 00043D20  7C 08 02 A6 */	mflr r0
 /* 80052DA4 00043D24  90 01 01 24 */	stw r0, 0x124(r1)
@@ -32,11 +14,11 @@ lbl_80052D9C:
 /* 80052DB8 00043D38  7C 7D 1B 78 */	mr r29, r3
 /* 80052DBC 00043D3C  90 03 00 18 */	stw r0, 0x18(r3)
 /* 80052DC0 00043D40  38 60 00 00 */	li r3, 0x0
-/* 80052DC4 00043D44  48 0C 92 29 */	bl func_8011BFEC
+/* 80052DC4 00043D44  48 0C 92 29 */	bl GetAllocator__4demoFQ24demo6Memory
 /* 80052DC8 00043D48  90 7D 00 88 */	stw r3, 0x88(r29)
 /* 80052DCC 00043D4C  7F A3 EB 78 */	mr r3, r29
 /* 80052DD0 00043D50  38 81 00 08 */	addi r4, r1, 0x8
-/* 80052DD4 00043D54  4B FE 76 AD */	bl func_8003A480
+/* 80052DD4 00043D54  4B FE 76 AD */	bl GetMenuDataPath__14CSceneMenuBaseFPc
 /* 80052DD8 00043D58  3F E0 80 1C */	lis r31, lbl_801BDDF8@ha
 /* 80052DDC 00043D5C  38 61 00 08 */	addi r3, r1, 0x8
 /* 80052DE0 00043D60  38 9F DD F8 */	addi r4, r31, lbl_801BDDF8@l
@@ -52,7 +34,7 @@ lbl_80052D9C:
 /* 80052E08 00043D88  38 81 00 08 */	addi r4, r1, 0x8
 /* 80052E0C 00043D8C  38 BD 00 90 */	addi r5, r29, 0x90
 /* 80052E10 00043D90  38 C0 00 00 */	li r6, 0x0
-/* 80052E14 00043D94  4B FE 61 49 */	bl func_80038F5C
+/* 80052E14 00043D94  4B FE 61 49 */	bl ReadDvdFile__14CSceneMenuBaseFPCcPPvQ24demo6Memory
 /* 80052E18 00043D98  80 1D 00 90 */	lwz r0, 0x90(r29)
 /* 80052E1C 00043D9C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80052E20 00043DA0  40 82 00 18 */	bne lbl_80052E38
@@ -60,14 +42,14 @@ lbl_80052D9C:
 /* 80052E28 00043DA8  38 BF 00 1E */	addi r5, r31, 0x1e
 /* 80052E2C 00043DAC  38 80 00 40 */	li r4, 0x40
 /* 80052E30 00043DB0  4C C6 31 82 */	crclr 6
-/* 80052E34 00043DB4  48 13 EF D5 */	bl func_80191E08
+/* 80052E34 00043DB4  48 13 EF D5 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_80052E38:
 /* 80052E38 00043DB8  38 60 00 B0 */	li r3, 0xb0
-/* 80052E3C 00043DBC  4B FC 7A D1 */	bl func_8001A90C
+/* 80052E3C 00043DBC  4B FC 7A D1 */	bl __nw__FUl
 /* 80052E40 00043DC0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80052E44 00043DC4  7C 7F 1B 78 */	mr r31, r3
 /* 80052E48 00043DC8  41 82 00 08 */	beq lbl_80052E50
-/* 80052E4C 00043DCC  48 11 6C 89 */	bl func_80169AD4
+/* 80052E4C 00043DCC  48 11 6C 89 */	bl __ct__Q34nw4r3lyt19ArcResourceAccessorFv
 lbl_80052E50:
 /* 80052E50 00043DD0  3C A0 80 1C */	lis r5, lbl_801BDDF8@ha
 /* 80052E54 00043DD4  93 FD 00 80 */	stw r31, 0x80(r29)
@@ -75,15 +57,15 @@ lbl_80052E50:
 /* 80052E5C 00043DDC  80 9D 00 90 */	lwz r4, 0x90(r29)
 /* 80052E60 00043DE0  7F E3 FB 78 */	mr r3, r31
 /* 80052E64 00043DE4  38 A5 00 49 */	addi r5, r5, 0x49
-/* 80052E68 00043DE8  48 11 6C C9 */	bl func_80169B30
+/* 80052E68 00043DE8  48 11 6C C9 */	bl Attach__Q34nw4r3lyt19ArcResourceAccessorFPvPCc
 /* 80052E6C 00043DEC  80 7D 00 88 */	lwz r3, 0x88(r29)
 /* 80052E70 00043DF0  4B FD C1 09 */	bl func_8002EF78
 /* 80052E74 00043DF4  38 60 00 20 */	li r3, 0x20
-/* 80052E78 00043DF8  4B FC 7A 95 */	bl func_8001A90C
+/* 80052E78 00043DF8  4B FC 7A 95 */	bl __nw__FUl
 /* 80052E7C 00043DFC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80052E80 00043E00  7C 7F 1B 78 */	mr r31, r3
 /* 80052E84 00043E04  41 82 00 08 */	beq lbl_80052E8C
-/* 80052E88 00043E08  48 10 D0 29 */	bl func_8015FEB0
+/* 80052E88 00043E08  48 10 D0 29 */	bl __ct__Q34nw4r3lyt6LayoutFv
 lbl_80052E8C:
 /* 80052E8C 00043E0C  93 FD 00 8C */	stw r31, 0x8c(r29)
 /* 80052E90 00043E10  3F E0 80 1C */	lis r31, lbl_801BDDF8@ha
@@ -103,7 +85,7 @@ lbl_80052E8C:
 /* 80052EC8 00043E48  38 BF 00 6B */	addi r5, r31, 0x6b
 /* 80052ECC 00043E4C  38 80 00 4D */	li r4, 0x4d
 /* 80052ED0 00043E50  4C C6 31 82 */	crclr 6
-/* 80052ED4 00043E54  48 13 EF 35 */	bl func_80191E08
+/* 80052ED4 00043E54  48 13 EF 35 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_80052ED8:
 /* 80052ED8 00043E58  80 7D 00 8C */	lwz r3, 0x8c(r29)
 /* 80052EDC 00043E5C  7F C4 F3 78 */	mr r4, r30
@@ -131,7 +113,7 @@ lbl_80052ED8:
 /* 80052F34 00043EB4  38 BF 00 AF */	addi r5, r31, 0xaf
 /* 80052F38 00043EB8  38 80 00 54 */	li r4, 0x54
 /* 80052F3C 00043EBC  4C C6 31 82 */	crclr 6
-/* 80052F40 00043EC0  48 13 EE C9 */	bl func_80191E08
+/* 80052F40 00043EC0  48 13 EE C9 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_80052F44:
 /* 80052F44 00043EC4  80 7D 00 8C */	lwz r3, 0x8c(r29)
 /* 80052F48 00043EC8  7F C4 F3 78 */	mr r4, r30
@@ -160,8 +142,8 @@ lbl_80052F44:
 /* 80052FA4 00043F24  38 21 01 20 */	addi r1, r1, 0x120
 /* 80052FA8 00043F28  4E 80 00 20 */	blr
 
-.global lbl_80052FAC
-lbl_80052FAC:
+.global CalcLocal__14CSceneMenuLogoFv
+CalcLocal__14CSceneMenuLogoFv:
 /* 80052FAC 00043F2C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80052FB0 00043F30  7C 08 02 A6 */	mflr r0
 /* 80052FB4 00043F34  90 01 00 24 */	stw r0, 0x24(r1)
@@ -248,13 +230,13 @@ lbl_800530CC:
 /* 800530EC 0004406C  38 21 00 20 */	addi r1, r1, 0x20
 /* 800530F0 00044070  4E 80 00 20 */	blr
 
-.global lbl_800530F4
-lbl_800530F4:
+.global CalcLocalPause__14CSceneMenuLogoFv
+CalcLocalPause__14CSceneMenuLogoFv:
 /* 800530F4 00044074  38 60 00 01 */	li r3, 0x1
 /* 800530F8 00044078  4E 80 00 20 */	blr
 
-.global lbl_800530FC
-lbl_800530FC:
+.global RenderLocal__14CSceneMenuLogoFv
+RenderLocal__14CSceneMenuLogoFv:
 /* 800530FC 0004407C  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 80053100 00044080  7C 08 02 A6 */	mflr r0
 /* 80053104 00044084  90 01 00 84 */	stw r0, 0x84(r1)
@@ -321,13 +303,13 @@ lbl_800530FC:
 /* 800531F8 00044178  38 21 00 80 */	addi r1, r1, 0x80
 /* 800531FC 0004417C  4E 80 00 20 */	blr
 
-.global lbl_80053200
-lbl_80053200:
+.global RenderLocalPause__14CSceneMenuLogoFv
+RenderLocalPause__14CSceneMenuLogoFv:
 /* 80053200 00044180  38 60 00 01 */	li r3, 0x1
 /* 80053204 00044184  4E 80 00 20 */	blr
 
-.global lbl_80053208
-lbl_80053208:
+.global EndLocal__14CSceneMenuLogoFv
+EndLocal__14CSceneMenuLogoFv:
 /* 80053208 00044188  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005320C 0004418C  7C 08 02 A6 */	mflr r0
 /* 80053210 00044190  90 01 00 14 */	stw r0, 0x14(r1)
@@ -362,8 +344,8 @@ lbl_80053260:
 /* 8005327C 000441FC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80053280 00044200  4E 80 00 20 */	blr
 
-.global lbl_80053284
-lbl_80053284:
+.global StartLocal__15CSceneMenuLogo2Fv
+StartLocal__15CSceneMenuLogo2Fv:
 /* 80053284 00044204  94 21 FE E0 */	stwu r1, -0x120(r1)
 /* 80053288 00044208  7C 08 02 A6 */	mflr r0
 /* 8005328C 0004420C  90 01 01 24 */	stw r0, 0x124(r1)
@@ -374,11 +356,11 @@ lbl_80053284:
 /* 800532A0 00044220  7C 7D 1B 78 */	mr r29, r3
 /* 800532A4 00044224  90 03 00 18 */	stw r0, 0x18(r3)
 /* 800532A8 00044228  38 60 00 00 */	li r3, 0x0
-/* 800532AC 0004422C  48 0C 8D 41 */	bl func_8011BFEC
+/* 800532AC 0004422C  48 0C 8D 41 */	bl GetAllocator__4demoFQ24demo6Memory
 /* 800532B0 00044230  90 7D 00 88 */	stw r3, 0x88(r29)
 /* 800532B4 00044234  7F A3 EB 78 */	mr r3, r29
 /* 800532B8 00044238  38 81 00 08 */	addi r4, r1, 0x8
-/* 800532BC 0004423C  4B FE 71 C5 */	bl func_8003A480
+/* 800532BC 0004423C  4B FE 71 C5 */	bl GetMenuDataPath__14CSceneMenuBaseFPc
 /* 800532C0 00044240  3F E0 80 1C */	lis r31, lbl_801BDDF8@ha
 /* 800532C4 00044244  38 61 00 08 */	addi r3, r1, 0x8
 /* 800532C8 00044248  3B FF DD F8 */	addi r31, r31, lbl_801BDDF8@l
@@ -394,7 +376,7 @@ lbl_80053284:
 /* 800532F0 00044270  38 81 00 08 */	addi r4, r1, 0x8
 /* 800532F4 00044274  38 BD 00 90 */	addi r5, r29, 0x90
 /* 800532F8 00044278  38 C0 00 00 */	li r6, 0x0
-/* 800532FC 0004427C  4B FE 5C 61 */	bl func_80038F5C
+/* 800532FC 0004427C  4B FE 5C 61 */	bl ReadDvdFile__14CSceneMenuBaseFPCcPPvQ24demo6Memory
 /* 80053300 00044280  80 1D 00 90 */	lwz r0, 0x90(r29)
 /* 80053304 00044284  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80053308 00044288  40 82 00 18 */	bne lbl_80053320
@@ -402,14 +384,14 @@ lbl_80053284:
 /* 80053310 00044290  38 BF 00 F5 */	addi r5, r31, 0xf5
 /* 80053314 00044294  38 80 01 0E */	li r4, 0x10e
 /* 80053318 00044298  4C C6 31 82 */	crclr 6
-/* 8005331C 0004429C  48 13 EA ED */	bl func_80191E08
+/* 8005331C 0004429C  48 13 EA ED */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_80053320:
 /* 80053320 000442A0  38 60 00 B0 */	li r3, 0xb0
-/* 80053324 000442A4  4B FC 75 E9 */	bl func_8001A90C
+/* 80053324 000442A4  4B FC 75 E9 */	bl __nw__FUl
 /* 80053328 000442A8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005332C 000442AC  7C 7F 1B 78 */	mr r31, r3
 /* 80053330 000442B0  41 82 00 08 */	beq lbl_80053338
-/* 80053334 000442B4  48 11 67 A1 */	bl func_80169AD4
+/* 80053334 000442B4  48 11 67 A1 */	bl __ct__Q34nw4r3lyt19ArcResourceAccessorFv
 lbl_80053338:
 /* 80053338 000442B8  3C A0 80 1C */	lis r5, lbl_801BDDF8@ha
 /* 8005333C 000442BC  93 FD 00 80 */	stw r31, 0x80(r29)
@@ -417,15 +399,15 @@ lbl_80053338:
 /* 80053344 000442C4  80 9D 00 90 */	lwz r4, 0x90(r29)
 /* 80053348 000442C8  7F E3 FB 78 */	mr r3, r31
 /* 8005334C 000442CC  38 A5 01 20 */	addi r5, r5, 0x120
-/* 80053350 000442D0  48 11 67 E1 */	bl func_80169B30
+/* 80053350 000442D0  48 11 67 E1 */	bl Attach__Q34nw4r3lyt19ArcResourceAccessorFPvPCc
 /* 80053354 000442D4  80 7D 00 88 */	lwz r3, 0x88(r29)
 /* 80053358 000442D8  4B FD BC 21 */	bl func_8002EF78
 /* 8005335C 000442DC  38 60 00 20 */	li r3, 0x20
-/* 80053360 000442E0  4B FC 75 AD */	bl func_8001A90C
+/* 80053360 000442E0  4B FC 75 AD */	bl __nw__FUl
 /* 80053364 000442E4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80053368 000442E8  7C 7F 1B 78 */	mr r31, r3
 /* 8005336C 000442EC  41 82 00 08 */	beq lbl_80053374
-/* 80053370 000442F0  48 10 CB 41 */	bl func_8015FEB0
+/* 80053370 000442F0  48 10 CB 41 */	bl __ct__Q34nw4r3lyt6LayoutFv
 lbl_80053374:
 /* 80053374 000442F4  93 FD 00 8C */	stw r31, 0x8c(r29)
 /* 80053378 000442F8  3F E0 80 1C */	lis r31, lbl_801BDDF8@ha
@@ -445,7 +427,7 @@ lbl_80053374:
 /* 800533B0 00044330  38 BF 01 44 */	addi r5, r31, 0x144
 /* 800533B4 00044334  38 80 01 1B */	li r4, 0x11b
 /* 800533B8 00044338  4C C6 31 82 */	crclr 6
-/* 800533BC 0004433C  48 13 EA 4D */	bl func_80191E08
+/* 800533BC 0004433C  48 13 EA 4D */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_800533C0:
 /* 800533C0 00044340  80 7D 00 8C */	lwz r3, 0x8c(r29)
 /* 800533C4 00044344  7F C4 F3 78 */	mr r4, r30
@@ -473,7 +455,7 @@ lbl_800533C0:
 /* 8005341C 0004439C  38 BF 01 89 */	addi r5, r31, 0x189
 /* 80053420 000443A0  38 80 01 22 */	li r4, 0x122
 /* 80053424 000443A4  4C C6 31 82 */	crclr 6
-/* 80053428 000443A8  48 13 E9 E1 */	bl func_80191E08
+/* 80053428 000443A8  48 13 E9 E1 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_8005342C:
 /* 8005342C 000443AC  80 7D 00 8C */	lwz r3, 0x8c(r29)
 /* 80053430 000443B0  7F C4 F3 78 */	mr r4, r30
@@ -502,8 +484,8 @@ lbl_8005342C:
 /* 8005348C 0004440C  38 21 01 20 */	addi r1, r1, 0x120
 /* 80053490 00044410  4E 80 00 20 */	blr
 
-.global lbl_80053494
-lbl_80053494:
+.global StartLocal__26CSceneMenuControllerManualFv
+StartLocal__26CSceneMenuControllerManualFv:
 /* 80053494 00044414  94 21 FB E0 */	stwu r1, -0x420(r1)
 /* 80053498 00044418  7C 08 02 A6 */	mflr r0
 /* 8005349C 0004441C  90 01 04 24 */	stw r0, 0x424(r1)
@@ -568,11 +550,11 @@ func_80053548:
 .global func_8005355C
 func_8005355C:
 /* 8005355C 000444DC  38 60 00 00 */	li r3, 0x0
-/* 80053560 000444E0  48 0C 8A 8D */	bl func_8011BFEC
+/* 80053560 000444E0  48 0C 8A 8D */	bl GetAllocator__4demoFQ24demo6Memory
 /* 80053564 000444E4  90 7F 00 88 */	stw r3, 0x88(r31)
 /* 80053568 000444E8  7F E3 FB 78 */	mr r3, r31
 /* 8005356C 000444EC  38 81 02 08 */	addi r4, r1, 0x208
-/* 80053570 000444F0  4B FE 6F 11 */	bl func_8003A480
+/* 80053570 000444F0  4B FE 6F 11 */	bl GetMenuDataPath__14CSceneMenuBaseFPc
 /* 80053574 000444F4  3F C0 80 1C */	lis r30, lbl_801BDDF8@ha
 /* 80053578 000444F8  38 61 02 08 */	addi r3, r1, 0x208
 /* 8005357C 000444FC  3B DE DD F8 */	addi r30, r30, lbl_801BDDF8@l
@@ -588,7 +570,7 @@ func_8005355C:
 /* 800535A4 00044524  38 81 02 08 */	addi r4, r1, 0x208
 /* 800535A8 00044528  38 BF 00 90 */	addi r5, r31, 0x90
 /* 800535AC 0004452C  38 C0 00 00 */	li r6, 0x0
-/* 800535B0 00044530  4B FE 59 AD */	bl func_80038F5C
+/* 800535B0 00044530  4B FE 59 AD */	bl ReadDvdFile__14CSceneMenuBaseFPCcPPvQ24demo6Memory
 /* 800535B4 00044534  80 1F 00 90 */	lwz r0, 0x90(r31)
 /* 800535B8 00044538  2C 00 00 00 */	cmpwi r0, 0x0
 /* 800535BC 0004453C  40 82 00 18 */	bne lbl_800535D4
@@ -596,28 +578,28 @@ func_8005355C:
 /* 800535C4 00044544  38 BE 01 FE */	addi r5, r30, 0x1fe
 /* 800535C8 00044548  38 80 01 57 */	li r4, 0x157
 /* 800535CC 0004454C  4C C6 31 82 */	crclr 6
-/* 800535D0 00044550  48 13 E8 39 */	bl func_80191E08
+/* 800535D0 00044550  48 13 E8 39 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_800535D4:
 /* 800535D4 00044554  38 60 00 B0 */	li r3, 0xb0
-/* 800535D8 00044558  4B FC 73 35 */	bl func_8001A90C
+/* 800535D8 00044558  4B FC 73 35 */	bl __nw__FUl
 /* 800535DC 0004455C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800535E0 00044560  7C 7E 1B 78 */	mr r30, r3
 /* 800535E4 00044564  41 82 00 08 */	beq lbl_800535EC
-/* 800535E8 00044568  48 11 64 ED */	bl func_80169AD4
+/* 800535E8 00044568  48 11 64 ED */	bl __ct__Q34nw4r3lyt19ArcResourceAccessorFv
 lbl_800535EC:
 /* 800535EC 0004456C  93 DF 00 80 */	stw r30, 0x80(r31)
 /* 800535F0 00044570  7F C3 F3 78 */	mr r3, r30
 /* 800535F4 00044574  80 9F 00 90 */	lwz r4, 0x90(r31)
 /* 800535F8 00044578  38 A1 03 08 */	addi r5, r1, 0x308
-/* 800535FC 0004457C  48 11 65 35 */	bl func_80169B30
+/* 800535FC 0004457C  48 11 65 35 */	bl Attach__Q34nw4r3lyt19ArcResourceAccessorFPvPCc
 /* 80053600 00044580  80 7F 00 88 */	lwz r3, 0x88(r31)
 /* 80053604 00044584  4B FD B9 75 */	bl func_8002EF78
 /* 80053608 00044588  38 60 00 20 */	li r3, 0x20
-/* 8005360C 0004458C  4B FC 73 01 */	bl func_8001A90C
+/* 8005360C 0004458C  4B FC 73 01 */	bl __nw__FUl
 /* 80053610 00044590  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80053614 00044594  7C 7E 1B 78 */	mr r30, r3
 /* 80053618 00044598  41 82 00 08 */	beq lbl_80053620
-/* 8005361C 0004459C  48 10 C8 95 */	bl func_8015FEB0
+/* 8005361C 0004459C  48 10 C8 95 */	bl __ct__Q34nw4r3lyt6LayoutFv
 lbl_80053620:
 /* 80053620 000445A0  93 DF 00 8C */	stw r30, 0x8c(r31)
 /* 80053624 000445A4  38 61 01 08 */	addi r3, r1, 0x108
@@ -643,7 +625,7 @@ lbl_80053620:
 /* 80053674 000445F4  38 BE 02 42 */	addi r5, r30, 0x242
 /* 80053678 000445F8  38 80 01 67 */	li r4, 0x167
 /* 8005367C 000445FC  4C C6 31 82 */	crclr 6
-/* 80053680 00044600  48 13 E7 89 */	bl func_80191E08
+/* 80053680 00044600  48 13 E7 89 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_80053684:
 /* 80053684 00044604  80 7F 00 8C */	lwz r3, 0x8c(r31)
 /* 80053688 00044608  7F A4 EB 78 */	mr r4, r29
@@ -677,7 +659,7 @@ lbl_80053684:
 /* 800536F8 00044678  38 BE 02 82 */	addi r5, r30, 0x282
 /* 800536FC 0004467C  38 80 01 71 */	li r4, 0x171
 /* 80053700 00044680  4C C6 31 82 */	crclr 6
-/* 80053704 00044684  48 13 E7 05 */	bl func_80191E08
+/* 80053704 00044684  48 13 E7 05 */	bl Panic__Q24nw4r2dbFPCciPCce
 lbl_80053708:
 /* 80053708 00044688  80 7F 00 8C */	lwz r3, 0x8c(r31)
 /* 8005370C 0004468C  7F A4 EB 78 */	mr r4, r29
@@ -705,3 +687,87 @@ lbl_80053708:
 /* 80053764 000446E4  7C 08 03 A6 */	mtlr r0
 /* 80053768 000446E8  38 21 04 20 */	addi r1, r1, 0x420
 /* 8005376C 000446EC  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CC298
+lbl_801CC298:
+
+	# ROM: 0x1C8398
+	.4byte lbl_8060E2E8
+	.4byte 0
+	.4byte StartLocal__26CSceneMenuControllerManualFv
+	.4byte CalcLocal__14CSceneMenuLogoFv
+	.4byte RenderLocal__14CSceneMenuLogoFv
+	.4byte CalcLocalPause__14CSceneMenuLogoFv
+	.4byte RenderLocalPause__14CSceneMenuLogoFv
+	.4byte CalcLocalSystem__14CSceneMenuBaseFv
+	.4byte EndLocal__14CSceneMenuLogoFv
+	.4byte func_800124F0
+
+.global lbl_801CC2C0
+lbl_801CC2C0:
+
+	# ROM: 0x1C83C0
+	.4byte __RTTI__7CVScene
+	.4byte 0
+	.4byte __RTTI__14CSceneMenuBase
+	.4byte 0
+	.4byte __RTTI__14CSceneMenuLogo
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global lbl_801CC2E0
+lbl_801CC2E0:
+
+	# ROM: 0x1C83E0
+	.4byte lbl_8060E2F0
+	.4byte 0
+	.4byte StartLocal__15CSceneMenuLogo2Fv
+	.4byte CalcLocal__14CSceneMenuLogoFv
+	.4byte RenderLocal__14CSceneMenuLogoFv
+	.4byte CalcLocalPause__14CSceneMenuLogoFv
+	.4byte RenderLocalPause__14CSceneMenuLogoFv
+	.4byte CalcLocalSystem__14CSceneMenuBaseFv
+	.4byte EndLocal__14CSceneMenuLogoFv
+	.4byte func_8001224C
+
+.global lbl_801CC308
+lbl_801CC308:
+
+	# ROM: 0x1C8408
+	.4byte __RTTI__7CVScene
+	.4byte 0
+	.4byte __RTTI__14CSceneMenuBase
+	.4byte 0
+	.4byte __RTTI__14CSceneMenuLogo
+	.4byte 0
+	.4byte 0
+	.4byte 0
+
+.global __vt__14CSceneMenuLogo
+__vt__14CSceneMenuLogo:
+
+	# ROM: 0x1C8428
+	.4byte __RTTI__14CSceneMenuLogo
+	.4byte 0
+	.4byte StartLocal__14CSceneMenuLogoFv
+	.4byte CalcLocal__14CSceneMenuLogoFv
+	.4byte RenderLocal__14CSceneMenuLogoFv
+	.4byte CalcLocalPause__14CSceneMenuLogoFv
+	.4byte RenderLocalPause__14CSceneMenuLogoFv
+	.4byte CalcLocalSystem__14CSceneMenuBaseFv
+	.4byte EndLocal__14CSceneMenuLogoFv
+	.4byte __dt__14CSceneMenuLogoFv
+
+.global _51467
+_51467:
+
+	# ROM: 0x1C8450
+	.4byte __RTTI__7CVScene
+	.4byte 0
+	.4byte __RTTI__14CSceneMenuBase
+	.4byte 0
+	.4byte 0
+	.4byte 0

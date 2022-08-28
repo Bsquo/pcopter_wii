@@ -155,8 +155,8 @@ func_80169ABC:
 /* 80169ACC 0015AA4C  38 21 00 40 */	addi r1, r1, 0x40
 /* 80169AD0 0015AA50  4E 80 00 20 */	blr
 
-.global func_80169AD4
-func_80169AD4:
+.global __ct__Q34nw4r3lyt19ArcResourceAccessorFv
+__ct__Q34nw4r3lyt19ArcResourceAccessorFv:
 /* 80169AD4 0015AA54  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80169AD8 0015AA58  7C 08 02 A6 */	mflr r0
 /* 80169ADC 0015AA5C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -181,8 +181,8 @@ func_80169AD4:
 /* 80169B28 0015AAA8  38 21 00 10 */	addi r1, r1, 0x10
 /* 80169B2C 0015AAAC  4E 80 00 20 */	blr
 
-.global func_80169B30
-func_80169B30:
+.global Attach__Q34nw4r3lyt19ArcResourceAccessorFPvPCc
+Attach__Q34nw4r3lyt19ArcResourceAccessorFPvPCc:
 /* 80169B30 0015AAB0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80169B34 0015AAB4  7C 08 02 A6 */	mflr r0
 /* 80169B38 0015AAB8  90 01 00 24 */	stw r0, 0x24(r1)

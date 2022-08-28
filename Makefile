@@ -27,6 +27,8 @@ SRC_DIRS := src                      	\
 			src/game/scenary/Japan   	\
 			src/game/scene           	\
 			src/game/scene/Game      	\
+			src/game/scene/Menu      	\
+			src/game/scene/Menu/Logo    \
 			src/game/utils           	\
 			src/MSL_C                	\
 			src/MSL_C/PPC_EABI       	\

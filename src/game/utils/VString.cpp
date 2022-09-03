@@ -48,7 +48,7 @@ asm void* operator new[](size_t size) {
 /*
 // https://decomp.me/scratch/w9brG
 void* operator new[](size_t size) throw() {
-    return demo::Alloc(size, 4, demo::MEM_NULL);
+    return demo::Alloc(size, 4, demo::USER1_MEM);
 }
 */
 CVString::~CVString() {

@@ -10,6 +10,7 @@
 *.o
 *.out
 *.elf
+*.rel
 *.dol
 *.a
 *.d

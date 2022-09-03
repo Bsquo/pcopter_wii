@@ -46,8 +46,8 @@ lbl_801BC218:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_800400FC
-func_800400FC:
+.global __ct__15CSceneMenuScoreFv
+__ct__15CSceneMenuScoreFv:
 /* 800400FC 0003107C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80040100 00031080  7C 08 02 A6 */	mflr r0
 /* 80040104 00031084  90 01 00 14 */	stw r0, 0x14(r1)
@@ -273,7 +273,7 @@ lbl_800403F8:
 /* 80040430 000313B0  4B FD 3F C5 */	bl GetInstance__8CVPadMgrFv
 /* 80040434 000313B4  38 80 00 00 */	li r4, 0x0
 /* 80040438 000313B8  38 A0 08 00 */	li r5, 0x800
-/* 8004043C 000313BC  4B FF 2F 09 */	bl func_80033344
+/* 8004043C 000313BC  4B FF 2F 09 */	bl CheckDown__8CVPadMgrFlUl
 /* 80040440 000313C0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80040444 000313C4  41 82 00 5C */	beq func_800404A0
 /* 80040448 000313C8  4B FD 44 A5 */	bl GetInstance__10CVSoundMgrFv

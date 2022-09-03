@@ -24,6 +24,7 @@ SRC_DIRS := src                      	\
 			src/game/gfx             	\
 			src/game/math            	\
 			src/game/managers        	\
+			src/game/save           	\
 			src/game/scenary/Japan   	\
 			src/game/scene           	\
 			src/game/scene/Game      	\
@@ -187,7 +188,7 @@ INCLUDES := -i . -I- -i include
 
 ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -fp fmadd -nodefaults
-CFLAGS  := -Cpp_exceptions off -proc gekko -fp fmadd -O4 -nodefaults -use_lmw_stmw on -str pool -msgstyle gcc $(INCLUDES)
+CFLAGS  := -Cpp_exceptions off -proc gekko -fp fmadd -O4 -nodefaults -enum int -use_lmw_stmw on -str pool -msgstyle gcc $(INCLUDES)
 
 # elf2dol needs to know these in order to calculate sbss correctly.
 SDATA_PDHR := 9

@@ -7,13 +7,13 @@ class CVScene {
 	private:
 		u32 field_0x0;
 		void* field_0x04;	// std::vector<nw4r::g3d::G3dObj>*
-		u32 field_0x08;
-		u32 field_0x0C;
-		u32 field_0x10;
+		UNK32 field_0x08;
+		UNK32 field_0x0C;
+		UNK32 field_0x10;
 		u32 mIsEnd;
 		u32 mSceneExited;
 		u32 mIsControllerDisconnected;
-		u32 field_0x20;
+		UNK32 field_0x20;
 		u32 mFrameTimer;
 
     public:
@@ -34,7 +34,7 @@ class CVScene {
 		// StartLocal__7CVSceneFv (0x8002bc78)
 		virtual bool StartLocal();
 		// CalcLocal__7CVSceneFv (0x8002bea4)
-		virtual void CalcLocal();
+		virtual bool CalcLocal();
 		// RenderLocal__7CVSceneFv (0x8002bf24)
 		virtual void RenderLocal();
 		// CalcLocalPause__7CVSceneFv (0x8002be9c)
@@ -47,6 +47,44 @@ class CVScene {
 		virtual void EndLocal();
 		// __dt__7CVSceneFv (0x8002bbc0)
 		virtual ~CVScene();
+};
+
+// Scene list
+// https://tcrf.net/Notes:MiniCopter:_Adventure_Flight#Scene_List
+enum eScene {
+	Game,
+	GameMulti,
+	MenuMain,
+	MenuMain2,
+	MenuMain3,
+	MenuMain4,
+	MenuMain5,
+	MenuTitle,
+	MenuAreamap,
+	MenuMissionSelect,
+	MenuCopterSelect,
+	MenuScore,
+	MenuConfig,
+	MenuHome,
+	MenuShop,
+	MenuShopBuy,
+	MenuFreeFlight,
+	MenuTreasure,
+	MenuCopterSelectCustomize,
+	MenuCustomize,
+	MenuSetting2,
+	MenuMovie,
+	MenuLogo,
+	MenuLogo2,
+	MenuSDataCheak,
+	MenuSoundSetting,
+	MenuKeySetting,
+	MenuDataAccess,
+	MenuMultiCopterSelect,
+	MenuMultiModeSelect,
+	MenuStrap,
+	MenuClassicCheak,
+	MenuControllerManual
 };
 
 #endif // VSCENE_H

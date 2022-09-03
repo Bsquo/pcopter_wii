@@ -201,8 +201,8 @@ func_80168620:
 /* 80168628 001595A8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8016862C 001595AC  4E 80 00 20 */	blr
 
-.global func_80168630
-func_80168630:
+.global GetFrameSize__Q34nw4r3lyt13AnimTransformCFv
+GetFrameSize__Q34nw4r3lyt13AnimTransformCFv:
 /* 80168630 001595B0  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 80168634 001595B4  A0 63 00 08 */	lhz r3, 0x8(r3)
 /* 80168638 001595B8  4E 80 00 20 */	blr

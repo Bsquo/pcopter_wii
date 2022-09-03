@@ -348,8 +348,8 @@ func_8003B440:
 /* 8003B440 0002C3C0  38 60 00 00 */	li r3, 0x0
 /* 8003B444 0002C3C4  4E 80 00 20 */	blr
 
-.global func_8003B448
-func_8003B448:
+.global __ct__22CSceneMenuCopterSelectFv
+__ct__22CSceneMenuCopterSelectFv:
 /* 8003B448 0002C3C8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8003B44C 0002C3CC  7C 08 02 A6 */	mflr r0
 /* 8003B450 0002C3D0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1673,7 +1673,7 @@ lbl_8003C654:
 /* 8003C660 0002D5E0  4B FD 7D 95 */	bl GetInstance__8CVPadMgrFv
 /* 8003C664 0002D5E4  38 80 00 00 */	li r4, 0x0
 /* 8003C668 0002D5E8  38 A0 08 00 */	li r5, 0x800
-/* 8003C66C 0002D5EC  4B FF 6C D9 */	bl func_80033344
+/* 8003C66C 0002D5EC  4B FF 6C D9 */	bl CheckDown__8CVPadMgrFlUl
 /* 8003C670 0002D5F0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8003C674 0002D5F4  41 82 00 68 */	beq func_8003C6DC
 /* 8003C678 0002D5F8  80 19 1F BC */	lwz r0, 0x1fbc(r25)

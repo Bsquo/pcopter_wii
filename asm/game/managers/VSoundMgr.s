@@ -750,8 +750,8 @@ func_8002D420:
 /* 8002D428 0001E3A8  D0 23 02 BC */	stfs f1, 0x2bc(r3)
 /* 8002D42C 0001E3AC  4E 80 00 20 */	blr
 
-.global func_8002D430
-func_8002D430:
+.global SetVolume__10CVSoundMgrFiif
+SetVolume__10CVSoundMgrFiif:
 /* 8002D430 0001E3B0  7C 80 23 78 */	mr r0, r4
 /* 8002D434 0001E3B4  7C A4 2B 78 */	mr r4, r5
 /* 8002D438 0001E3B8  1C 00 00 28 */	mulli r0, r0, 0x28

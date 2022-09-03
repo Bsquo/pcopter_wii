@@ -31,7 +31,8 @@ void Free__4demoFPv(void*);
 namespace demo {
 
     enum Memory {
-        MEM_NULL = 0
+        USER1_MEM,
+        USER2_MEM
     };
 
     void* Alloc(size_t size, int align, demo::Memory heap);

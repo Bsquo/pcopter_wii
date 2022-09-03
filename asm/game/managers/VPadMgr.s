@@ -1219,8 +1219,8 @@ func_80033330:
 /* 8003333C 000242BC  7C 63 02 14 */	add r3, r3, r0
 /* 80033340 000242C0  4B FF F4 40 */	b func_80032780
 
-.global func_80033344
-func_80033344:
+.global CheckDown__8CVPadMgrFlUl
+CheckDown__8CVPadMgrFlUl:
 /* 80033344 000242C4  7C 80 23 78 */	mr r0, r4
 /* 80033348 000242C8  7C A4 2B 78 */	mr r4, r5
 /* 8003334C 000242CC  1C 00 01 0C */	mulli r0, r0, 0x10c
@@ -1243,8 +1243,8 @@ func_8003336C:
 /* 80033378 000242F8  7C 63 02 14 */	add r3, r3, r0
 /* 8003337C 000242FC  4B FF F4 4C */	b func_800327C8
 
-.global func_80033380
-func_80033380:
+.global CheckDownCL__8CVPadMgrFlUl
+CheckDownCL__8CVPadMgrFlUl:
 /* 80033380 00024300  7C 80 23 78 */	mr r0, r4
 /* 80033384 00024304  7C A4 2B 78 */	mr r4, r5
 /* 80033388 00024308  1C 00 01 0C */	mulli r0, r0, 0x10c
@@ -1401,7 +1401,7 @@ lbl_80033568:
 lbl_80033574:
 /* 80033574 000244F4  7F C3 F3 78 */	mr r3, r30
 /* 80033578 000244F8  7F E4 FB 78 */	mr r4, r31
-/* 8003357C 000244FC  4B FF FD C9 */	bl func_80033344
+/* 8003357C 000244FC  4B FF FD C9 */	bl CheckDown__8CVPadMgrFlUl
 /* 80033580 00024500  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80033584 00024504  41 82 00 48 */	beq func_800335CC
 /* 80033588 00024508  38 60 00 01 */	li r3, 0x1
@@ -1423,7 +1423,7 @@ lbl_80033590:
 func_800335BC:
 /* 800335BC 0002453C  7F C3 F3 78 */	mr r3, r30
 /* 800335C0 00024540  7F E4 FB 78 */	mr r4, r31
-/* 800335C4 00024544  4B FF FD BD */	bl func_80033380
+/* 800335C4 00024544  4B FF FD BD */	bl CheckDownCL__8CVPadMgrFlUl
 /* 800335C8 00024548  48 00 00 1C */	b func_800335E4
 
 .global func_800335CC
@@ -1594,3 +1594,84 @@ func_8003377C:
 lbl_8003378C:
 /* 8003378C 0002470C  7C 83 23 78 */	mr r3, r4
 /* 80033790 00024710  48 0E 52 6C */	b func_801189FC
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FA50
+lbl_8060FA50:
+
+	# ROM: 0x1EF110
+	.4byte 0
+
+.global lbl_8060FA54
+lbl_8060FA54:
+
+	# ROM: 0x1EF114
+	.4byte 0x3F800000
+
+.global lbl_8060FA58
+lbl_8060FA58:
+
+	# ROM: 0x1EF118
+	.4byte 0x3FB6DB6E
+
+.global lbl_8060FA5C
+lbl_8060FA5C:
+
+	# ROM: 0x1EF11C
+	.4byte 0x42700000
+
+.global lbl_8060FA60
+lbl_8060FA60:
+
+	# ROM: 0x1EF120
+	.4byte 0x3FAAAAAB
+
+.global lbl_8060FA64
+lbl_8060FA64:
+
+	# ROM: 0x1EF124
+	.4byte 0x3DCCCCCD
+
+.global lbl_8060FA68
+lbl_8060FA68:
+
+	# ROM: 0x1EF128
+	.4byte 0x3C23D70A
+
+.global lbl_8060FA6C
+lbl_8060FA6C:
+
+	# ROM: 0x1EF12C
+	.4byte 0x42C80000
+
+.global lbl_8060FA70
+lbl_8060FA70:
+
+	# ROM: 0x1EF130
+	.4byte 0xBF800000
+
+.global lbl_8060FA74
+lbl_8060FA74:
+
+	# ROM: 0x1EF134
+	.4byte 0x3F800000
+
+.global lbl_8060FA78
+lbl_8060FA78:
+
+	# ROM: 0x1EF138
+	.4byte 0x42B40000
+
+.global lbl_8060FA7C
+lbl_8060FA7C:
+
+	# ROM: 0x1EF13C
+	.4byte 0
+
+.global lbl_8060FA80
+lbl_8060FA80:
+
+	# ROM: 0x1EF140
+	.4byte 0x3F000000
+	.4byte 0

@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8005A944
-func_8005A944:
+.global __ct__22CSceneMenuSoundSettingFv
+__ct__22CSceneMenuSoundSettingFv:
 /* 8005A944 0004B8C4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005A948 0004B8C8  7C 08 02 A6 */	mflr r0
 /* 8005A94C 0004B8CC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1214,7 +1214,7 @@ lbl_8005B988:
 /* 8005B9D8 0004C958  C0 3C 04 54 */	lfs f1, 0x454(r28)
 /* 8005B9DC 0004C95C  38 80 00 00 */	li r4, 0x0
 /* 8005B9E0 0004C960  38 A0 00 07 */	li r5, 0x7
-/* 8005B9E4 0004C964  4B FD 1A 4D */	bl func_8002D430
+/* 8005B9E4 0004C964  4B FD 1A 4D */	bl SetVolume__10CVSoundMgrFiif
 /* 8005B9E8 0004C968  48 00 00 38 */	b func_8005BA20
 lbl_8005B9EC:
 /* 8005B9EC 0004C96C  4B FB 8F 01 */	bl GetInstance__10CVSoundMgrFv
@@ -1265,7 +1265,7 @@ lbl_8005BA3C:
 /* 8005BA8C 0004CA0C  C0 3D 04 54 */	lfs f1, 0x454(r29)
 /* 8005BA90 0004CA10  38 80 00 00 */	li r4, 0x0
 /* 8005BA94 0004CA14  38 A0 00 07 */	li r5, 0x7
-/* 8005BA98 0004CA18  4B FD 19 99 */	bl func_8002D430
+/* 8005BA98 0004CA18  4B FD 19 99 */	bl SetVolume__10CVSoundMgrFiif
 /* 8005BA9C 0004CA1C  48 00 00 38 */	b func_8005BAD4
 lbl_8005BAA0:
 /* 8005BAA0 0004CA20  4B FB 8E 4D */	bl GetInstance__10CVSoundMgrFv

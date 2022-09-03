@@ -14,6 +14,7 @@ typedef enum eFadeState {
 	FADE_OUT_FINISHED
 } eFadeState;
 
+// Base class for the different menus.
 class CSceneMenuBase: public CVScene {
 	private:
 		eFadeState mFadeState;
@@ -40,7 +41,7 @@ class CSceneMenuBase: public CVScene {
     public:
 		CSceneMenuBase();
 		virtual bool StartLocal();
-		virtual void CalcLocal();
+		virtual bool CalcLocal();
 		virtual void RenderLocal();
 		virtual void CalcLocalPause();
 		virtual void RenderLocalPause();

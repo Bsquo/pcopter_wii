@@ -5,8 +5,10 @@ EXTABINDEX_O_FILES :=                                              \
     $(BUILD_DIR)/asm/extabindex_.o
 
 GAME_O_FILES :=                                                    \
+	$(BUILD_DIR)/src/game/main.o                               \
     $(BUILD_DIR)/asm/game/main.o                               \
-    $(BUILD_DIR)/asm/game/app/App.o                            \
+    $(BUILD_DIR)/src/game/app/App.o                            \
+	$(BUILD_DIR)/asm/game/app/App.o                            \
     $(BUILD_DIR)/asm/game/scene/Game/SceneGame_1.o                   \
 	$(BUILD_DIR)/src/game/scene/Game/SceneGame.o                   \
 	$(BUILD_DIR)/asm/game/scene/Game/SceneGame_2.o                   \
@@ -18,7 +20,6 @@ GAME_O_FILES :=                                                    \
     $(BUILD_DIR)/src/game/actor/VActor.o                       \
 	$(BUILD_DIR)/asm/game/actor/VActor.o                       \
 	$(BUILD_DIR)/src/game/app/VApp.o                           \
-    $(BUILD_DIR)/asm/game/app/VApp.o                           \
     $(BUILD_DIR)/asm/game/collision/VColl.o                    \
 	$(BUILD_DIR)/src/game/gfx/VColor.o                         \
     $(BUILD_DIR)/asm/game/utils/VFile.o                        \
@@ -44,7 +45,7 @@ GAME_O_FILES :=                                                    \
 	$(BUILD_DIR)/src/game/managers/VCameraMgr.o                \
 	$(BUILD_DIR)/asm/game/managers/VCameraMgr_2.o                \
     $(BUILD_DIR)/asm/game/managers/VPadMgr.o                   \
-    $(BUILD_DIR)/asm/game/save/UserData.o                      \
+	$(BUILD_DIR)/src/game/save/UserData.o                      \
     $(BUILD_DIR)/asm/game/save/SaveData.o                      \
     $(BUILD_DIR)/asm/game/scene/Menu/Areamap/SceneMenuAreamap.o            \
     $(BUILD_DIR)/asm/game/scene/Menu/SceneMenuBase.o               \

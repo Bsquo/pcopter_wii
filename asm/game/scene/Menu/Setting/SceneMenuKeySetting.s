@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80078634
-func_80078634:
+.global __ct__20CSceneMenuKeySettingFv
+__ct__20CSceneMenuKeySettingFv:
 /* 80078634 000695B4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078638 000695B8  7C 08 02 A6 */	mflr r0
 /* 8007863C 000695BC  90 01 00 14 */	stw r0, 0x14(r1)

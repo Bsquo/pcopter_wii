@@ -851,8 +851,8 @@ func_80075660:
 /* 80075660 000665E0  38 60 00 00 */	li r3, 0x0
 /* 80075664 000665E4  4E 80 00 20 */	blr
 
-.global func_80075668
-func_80075668:
+.global __ct__27CSceneMenuMultiCopterSelectFv
+__ct__27CSceneMenuMultiCopterSelectFv:
 /* 80075668 000665E8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8007566C 000665EC  7C 08 02 A6 */	mflr r0
 /* 80075670 000665F0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -2737,8 +2737,8 @@ func_80077034:
 /* 8007704C 00067FCC  90 03 00 EC */	stw r0, 0xec(r3)
 /* 80077050 00067FD0  4E 80 00 20 */	blr
 
-.global func_80077054
-func_80077054:
+.global __ct__25CSceneMenuMultiModeSelectFv
+__ct__25CSceneMenuMultiModeSelectFv:
 /* 80077054 00067FD4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80077058 00067FD8  7C 08 02 A6 */	mflr r0
 /* 8007705C 00067FDC  90 01 00 14 */	stw r0, 0x14(r1)

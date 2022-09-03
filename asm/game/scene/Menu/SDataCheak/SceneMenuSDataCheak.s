@@ -68,8 +68,8 @@ lbl_801BD598:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8004EEAC
-func_8004EEAC:
+.global __ct__20CSceneMenuSDataCheakFv
+__ct__20CSceneMenuSDataCheakFv:
 /* 8004EEAC 0003FE2C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004EEB0 0003FE30  7C 08 02 A6 */	mflr r0
 /* 8004EEB4 0003FE34  90 01 00 14 */	stw r0, 0x14(r1)
@@ -126,7 +126,7 @@ lbl_8004EEF8:
 /* 8004EF74 0003FEF4  C8 01 00 08 */	lfd f0, 0x8(r1)
 /* 8004EF78 0003FEF8  93 FE 00 30 */	stw r31, 0x30(r30)
 /* 8004EF7C 0003FEFC  EC 20 08 28 */	fsubs f1, f0, f1
-/* 8004EF80 0003FF00  4B FD F6 89 */	bl func_8002E608
+/* 8004EF80 0003FF00  4B FD F6 89 */	bl SetFrame__Q34nw4r3lyt13AnimTransformFf
 /* 8004EF84 0003FF04  80 7E 00 38 */	lwz r3, 0x38(r30)
 /* 8004EF88 0003FF08  38 80 00 00 */	li r4, 0x0
 /* 8004EF8C 0003FF0C  81 83 00 00 */	lwz r12, 0x0(r3)

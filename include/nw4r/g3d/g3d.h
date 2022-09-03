@@ -10,4 +10,4 @@ namespace nw4r {
 }
 
 
-#endif // NW4R_G3D_ICALCWORLDCALLBACK_H
+#endif // NW4R_G3D_H

@@ -21,7 +21,7 @@ lbl_8000CB00:
 	.4byte __dl__FPv
 	.4byte 0x00000044
 	.4byte lbl_800067A8
-	.4byte func_80011928
+	.4byte __ct__15CSceneGameMultiFv
 	.4byte 0x0000003C
 	.4byte lbl_800067D0
 	.4byte func_80011964
@@ -75,7 +75,7 @@ lbl_8000CB00:
 	.4byte func_80011F04
 	.4byte 0x00000058
 	.4byte lbl_80006858
-	.4byte func_80011F5C
+	.4byte __ct__20CSceneMenuFreeFlightFv
 	.4byte 0x0000003C
 	.4byte lbl_80006860
 	.4byte func_80011F98
@@ -99,7 +99,7 @@ lbl_8000CB00:
 	.4byte __dt__14CSceneMenuLogoFv
 	.4byte 0x00000058
 	.4byte lbl_80006898
-	.4byte func_80012210
+	.4byte __ct__15CSceneMenuLogo2Fv
 	.4byte 0x0000003C
 	.4byte lbl_800068A0
 	.4byte func_8001224C
@@ -123,13 +123,13 @@ lbl_8000CB00:
 	.4byte func_8001245C
 	.4byte 0x00000058
 	.4byte lbl_800068D8
-	.4byte func_800124B4
+	.4byte __ct__26CSceneMenuControllerManualFv
 	.4byte 0x0000003C
 	.4byte lbl_800068E0
 	.4byte func_800124F0
 	.4byte 0x00000058
 	.4byte lbl_800068E8
-	.4byte lbl_80012548
+	.4byte __dt__4CAppFv
 	.4byte 0x00000238
 	.4byte lbl_800068F0
 	.4byte lbl_80012780
@@ -270,7 +270,7 @@ lbl_8000CB00:
 	.4byte lbl_80014098
 	.4byte 0x00000058
 	.4byte lbl_80006A80
-	.4byte func_800140F0
+	.4byte SetSceneIndex__4CAppFi
 	.4byte 0x00000218
 	.4byte lbl_80006A88
 	.4byte lbl_80014308
@@ -306,7 +306,7 @@ lbl_8000CB00:
 	.4byte lbl_800147E8
 	.4byte 0x00000058
 	.4byte lbl_80006B18
-	.4byte func_80014840
+	.4byte GetInstance__11CVEffectMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006B20
 	.4byte func_800148A4
@@ -1878,7 +1878,7 @@ lbl_8000CB00:
 	.4byte func_80031064
 	.4byte 0x00000344
 	.4byte lbl_800084A0
-	.4byte func_800313A8
+	.4byte StartEffect__11CVEffectMgrFPci
 	.4byte 0x0000004C
 	.4byte lbl_80008530
 	.4byte func_800313F4
@@ -1893,7 +1893,7 @@ lbl_8000CB00:
 	.4byte func_800314E0
 	.4byte 0x0000003C
 	.4byte lbl_80008550
-	.4byte func_8003151C
+	.4byte SetPos__11CVEffectMgrFPcfff
 	.4byte 0x0000005C
 	.4byte lbl_80008558
 	.4byte func_80031578
@@ -2064,7 +2064,7 @@ lbl_8000CB00:
 	.4byte func_800348FC
 	.4byte 0x00000030
 	.4byte lbl_80008818
-	.4byte func_8003492C
+	.4byte __ct__17CSceneMenuAreamapFv
 	.4byte 0x0000005C
 	.4byte lbl_80008820
 	.4byte lbl_80034988
@@ -2292,7 +2292,7 @@ lbl_8000CB00:
 	.4byte __sinit_$3_SceneMenuBase_cpp
 	.4byte 0x00000044
 	.4byte lbl_80008C40
-	.4byte func_8003A834
+	.4byte __ct__16CSceneMenuConfigFv
 	.4byte 0x0000004C
 	.4byte lbl_80008C48
 	.4byte lbl_8003A880
@@ -2307,7 +2307,7 @@ lbl_8000CB00:
 	.4byte lbl_8003B328
 	.4byte 0x000000A4
 	.4byte lbl_80008C98
-	.4byte func_8003B448
+	.4byte __ct__22CSceneMenuCopterSelectFv
 	.4byte 0x0000005C
 	.4byte lbl_80008CA0
 	.4byte lbl_8003B4A4
@@ -2355,7 +2355,7 @@ lbl_8000CB00:
 	.4byte func_8003D800
 	.4byte 0x000001C4
 	.4byte lbl_80008DC8
-	.4byte func_8003D9C4
+	.4byte __ct__14CSceneMenuHomeFv
 	.4byte 0x0000003C
 	.4byte lbl_80008DD0
 	.4byte lbl_8003DA00
@@ -2370,7 +2370,7 @@ lbl_8000CB00:
 	.4byte lbl_8003E130
 	.4byte 0x000000AC
 	.4byte lbl_80008E20
-	.4byte func_8003E1DC
+	.4byte __ct__23CSceneMenuMissionSelectFv
 	.4byte 0x00000048
 	.4byte lbl_80008E28
 	.4byte lbl_8003E224
@@ -2397,7 +2397,7 @@ lbl_8000CB00:
 	.4byte func_8003FFA4
 	.4byte 0x000000E8
 	.4byte lbl_80008F30
-	.4byte func_800400FC
+	.4byte __ct__15CSceneMenuScoreFv
 	.4byte 0x0000003C
 	.4byte lbl_80008F38
 	.4byte lbl_80040138
@@ -2415,7 +2415,7 @@ lbl_8000CB00:
 	.4byte func_800406CC
 	.4byte 0x00000190
 	.4byte lbl_80008F90
-	.4byte func_8004085C
+	.4byte __ct__14CSceneMenuShopFv
 	.4byte 0x00000048
 	.4byte lbl_80008F98
 	.4byte lbl_800408A4
@@ -2439,7 +2439,7 @@ lbl_8000CB00:
 	.4byte func_8004163C
 	.4byte 0x000002AC
 	.4byte lbl_80009000
-	.4byte func_80041B70
+	.4byte __ct__15CSceneMenuTitleFv
 	.4byte 0x0000004C
 	.4byte lbl_80009008
 	.4byte lbl_80041BBC
@@ -2481,7 +2481,7 @@ lbl_8000CB00:
 	.4byte func_800442B8
 	.4byte 0x000000D8
 	.4byte lbl_800090C4
-	.4byte func_80044390
+	.4byte __ct__18CSceneMenuTreasureFv
 	.4byte 0x00000048
 	.4byte lbl_800090CC
 	.4byte lbl_800443D8
@@ -2673,7 +2673,7 @@ lbl_8000CB00:
 	.4byte func_80048A54
 	.4byte 0x00000110
 	.4byte lbl_80009678
-	.4byte func_80048B64
+	.4byte ActionTracking__11CScenaryMgrFP11CActScnBaseUl8CVVector
 	.4byte 0x00000068
 	.4byte lbl_80009680
 	.4byte func_80048C08
@@ -2808,7 +2808,7 @@ lbl_8000CB00:
 	.4byte func_8004C050
 	.4byte 0x000001E8
 	.4byte lbl_80009890
-	.4byte func_8004C260
+	.4byte __ct__15CSceneMenuMovieFv
 	.4byte 0x0000003C
 	.4byte lbl_80009898
 	.4byte lbl_8004C29C
@@ -2823,7 +2823,7 @@ lbl_8000CB00:
 	.4byte lbl_8004C6AC
 	.4byte 0x00000038
 	.4byte lbl_800098B8
-	.4byte func_8004C6E4
+	.4byte __ct__18CSceneMenuSetting2Fv
 	.4byte 0x00000044
 	.4byte lbl_800098C0
 	.4byte lbl_8004C728
@@ -2877,7 +2877,7 @@ lbl_8000CB00:
 	.4byte func_8004DF14
 	.4byte 0x00000074
 	.4byte lbl_80009A34
-	.4byte func_8004DF88
+	.4byte Calc__10CAirBulletFv
 	.4byte 0x00000218
 	.4byte lbl_80009A3C
 	.4byte func_8004E1A0
@@ -2916,7 +2916,7 @@ lbl_8000CB00:
 	.4byte func_8004EE50
 	.4byte 0x0000005C
 	.4byte lbl_80009ACC
-	.4byte func_8004EEAC
+	.4byte __ct__20CSceneMenuSDataCheakFv
 	.4byte 0x0000004C
 	.4byte lbl_80009AD4
 	.4byte lbl_8004EEF8
@@ -2952,7 +2952,7 @@ lbl_8000CB00:
 	.4byte func_8004FC94
 	.4byte 0x000003B4
 	.4byte lbl_80009B90
-	.4byte func_80050048
+	.4byte __ct__20CSceneMenuDataAccessFv
 	.4byte 0x0000005C
 	.4byte lbl_80009B98
 	.4byte lbl_800500A4
@@ -3111,7 +3111,7 @@ lbl_8000CB00:
 	.4byte func_800553A0
 	.4byte 0x00000198
 	.4byte lbl_80009E50
-	.4byte func_80055538
+	.4byte __ct__15CSceneMenuMain2Fv
 	.4byte 0x00000044
 	.4byte lbl_80009EE8
 	.4byte lbl_8005557C
@@ -3123,7 +3123,7 @@ lbl_8000CB00:
 	.4byte lbl_80055E70
 	.4byte 0x000005A4
 	.4byte lbl_80009F00
-	.4byte func_80056424
+	.4byte __ct__14CSceneMenuMainFv
 	.4byte 0x00000050
 	.4byte lbl_80009F08
 	.4byte lbl_80056474
@@ -3171,7 +3171,7 @@ lbl_8000CB00:
 	.4byte func_800574D4
 	.4byte 0x00000268
 	.4byte lbl_80009FCC
-	.4byte func_8005773C
+	.4byte __ct__10CSceneGameFv
 	.4byte 0x0000009C
 	.4byte lbl_80009FD4
 	.4byte func_800577D8
@@ -3243,7 +3243,7 @@ lbl_8000CB00:
 	.4byte lbl_8005A460
 	.4byte 0x000004E4
 	.4byte lbl_8000A28C
-	.4byte func_8005A944
+	.4byte __ct__22CSceneMenuSoundSettingFv
 	.4byte 0x00000044
 	.4byte lbl_8000A294
 	.4byte lbl_8005A988
@@ -3267,7 +3267,7 @@ lbl_8000CB00:
 	.4byte func_8005BB18
 	.4byte 0x00000174
 	.4byte lbl_8000A2FC
-	.4byte func_8005BC8C
+	.4byte __ct__15CSceneMenuStrapFv
 	.4byte 0x0000003C
 	.4byte lbl_8000A304
 	.4byte lbl_8005BCC8
@@ -3351,7 +3351,7 @@ lbl_8000CB00:
 	.4byte lbl_8005D60C
 	.4byte 0x00000074
 	.4byte lbl_8000A55C
-	.4byte func_8005D680
+	.4byte __ct__15CSceneMenuMain4Fv
 	.4byte 0x00000044
 	.4byte lbl_8000A564
 	.4byte lbl_8005D6C4
@@ -3363,7 +3363,7 @@ lbl_8000CB00:
 	.4byte lbl_8005DC50
 	.4byte 0x00000224
 	.4byte lbl_8000A57C
-	.4byte func_8005DE84
+	.4byte __ct__15CSceneMenuMain3Fv
 	.4byte 0x00000054
 	.4byte lbl_8000A584
 	.4byte lbl_8005DED8
@@ -3581,7 +3581,7 @@ lbl_80010138:
 	.4byte lbl_80067BD4
 	.4byte 0x00000120
 	.4byte lbl_8000ACBC
-	.4byte func_80067CF4
+	.4byte __ct__15CSceneMenuMain5Fv
 	.4byte 0x00000048
 	.4byte lbl_8000ACC4
 	.4byte lbl_80067D3C
@@ -3593,7 +3593,7 @@ lbl_80010138:
 	.4byte lbl_80068370
 	.4byte 0x00000850
 	.4byte lbl_8000ACDC
-	.4byte func_80068BD0
+	.4byte __ct__20CSceneMenuPartSelectFv
 	.4byte 0x00000044
 	.4byte lbl_8000ACE4
 	.4byte lbl_80068C14
@@ -3878,7 +3878,7 @@ lbl_80010138:
 	.4byte lbl_800755B4
 	.4byte 0x00000058
 	.4byte lbl_8000B6A0
-	.4byte func_80075668
+	.4byte __ct__27CSceneMenuMultiCopterSelectFv
 	.4byte 0x00000050
 	.4byte lbl_8000B6A8
 	.4byte lbl_800756B8
@@ -3908,7 +3908,7 @@ lbl_80010138:
 	.4byte func_80076EB8
 	.4byte 0x0000017C
 	.4byte lbl_8000B738
-	.4byte func_80077054
+	.4byte __ct__25CSceneMenuMultiModeSelectFv
 	.4byte 0x0000004C
 	.4byte lbl_8000B740
 	.4byte lbl_800770A0
@@ -3935,7 +3935,7 @@ lbl_80010138:
 	.4byte func_800784D4
 	.4byte 0x00000160
 	.4byte lbl_8000B7B0
-	.4byte func_80078634
+	.4byte __ct__20CSceneMenuKeySettingFv
 	.4byte 0x00000044
 	.4byte lbl_8000B7B8
 	.4byte lbl_80078678
@@ -4202,7 +4202,7 @@ lbl_80010138:
 	.4byte lbl_80085104
 	.4byte 0x00000058
 	.4byte lbl_8000C22C
-	.4byte func_8008515C
+	.4byte __ct__22CSceneMenuClassicCheakFv
 	.4byte 0x0000003C
 	.4byte lbl_8000C234
 	.4byte lbl_80085198

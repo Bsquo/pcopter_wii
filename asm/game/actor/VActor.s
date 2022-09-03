@@ -2935,6 +2935,7 @@ lbl_80023164:
 
 .section .data, "wa", @progbits
 
+.balign 8				# Needed to fix the issue with CVString vtable (the extra padding was due to file boundary with the .data section)
 .global __vt__7CVActor
 __vt__7CVActor:
 

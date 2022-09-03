@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8005DE84
-func_8005DE84:
+.global __ct__15CSceneMenuMain3Fv
+__ct__15CSceneMenuMain3Fv:
 /* 8005DE84 0004EE04  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005DE88 0004EE08  7C 08 02 A6 */	mflr r0
 /* 8005DE8C 0004EE0C  90 01 00 14 */	stw r0, 0x14(r1)

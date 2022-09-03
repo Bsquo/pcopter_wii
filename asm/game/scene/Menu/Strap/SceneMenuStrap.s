@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8005BC8C
-func_8005BC8C:
+.global __ct__15CSceneMenuStrapFv
+__ct__15CSceneMenuStrapFv:
 /* 8005BC8C 0004CC0C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005BC90 0004CC10  7C 08 02 A6 */	mflr r0
 /* 8005BC94 0004CC14  90 01 00 14 */	stw r0, 0x14(r1)
@@ -331,7 +331,7 @@ func_8005C0C0:
 /* 8005C0F0 0004D070  80 7F 00 98 */	lwz r3, 0x98(r31)
 /* 8005C0F4 0004D074  EC 01 00 2A */	fadds f0, f1, f0
 /* 8005C0F8 0004D078  D0 1F 00 94 */	stfs f0, 0x94(r31)
-/* 8005C0FC 0004D07C  48 10 C5 35 */	bl func_80168630
+/* 8005C0FC 0004D07C  48 10 C5 35 */	bl GetFrameSize__Q34nw4r3lyt13AnimTransformCFv
 /* 8005C100 0004D080  54 63 04 3E */	clrlwi r3, r3, 16
 /* 8005C104 0004D084  3C 00 43 30 */	lis r0, 0x4330
 /* 8005C108 0004D088  90 61 00 0C */	stw r3, 0xc(r1)
@@ -533,7 +533,7 @@ func_8005C3F0:
 /* 8005C400 0004D380  FC 20 00 90 */	fmr f1, f0
 lbl_8005C404:
 /* 8005C404 0004D384  80 7F 00 98 */	lwz r3, 0x98(r31)
-/* 8005C408 0004D388  4B FD 22 01 */	bl func_8002E608
+/* 8005C408 0004D388  4B FD 22 01 */	bl SetFrame__Q34nw4r3lyt13AnimTransformFf
 /* 8005C40C 0004D38C  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8005C410 0004D390  38 60 00 01 */	li r3, 0x1
 /* 8005C414 0004D394  83 C1 00 18 */	lwz r30, 0x18(r1)

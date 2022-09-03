@@ -840,7 +840,7 @@ func_8002E57C:
 /* 8002E5E0 0001F560  90 01 00 08 */	stw r0, 0x8(r1)
 /* 8002E5E4 0001F564  C8 01 00 08 */	lfd f0, 0x8(r1)
 /* 8002E5E8 0001F568  EC 20 08 28 */	fsubs f1, f0, f1
-/* 8002E5EC 0001F56C  48 00 00 1D */	bl func_8002E608
+/* 8002E5EC 0001F56C  48 00 00 1D */	bl SetFrame__Q34nw4r3lyt13AnimTransformFf
 lbl_8002E5F0:
 /* 8002E5F0 0001F570  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8002E5F4 0001F574  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -849,8 +849,8 @@ lbl_8002E5F0:
 /* 8002E600 0001F580  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002E604 0001F584  4E 80 00 20 */	blr
 
-.global func_8002E608
-func_8002E608:
+.global SetFrame__Q34nw4r3lyt13AnimTransformFf
+SetFrame__Q34nw4r3lyt13AnimTransformFf:
 /* 8002E608 0001F588  D0 23 00 10 */	stfs f1, 0x10(r3)
 /* 8002E60C 0001F58C  4E 80 00 20 */	blr
 
@@ -871,7 +871,7 @@ func_8002E610:
 /* 8002E640 0001F5C0  90 01 00 08 */	stw r0, 0x8(r1)
 /* 8002E644 0001F5C4  C8 01 00 08 */	lfd f0, 0x8(r1)
 /* 8002E648 0001F5C8  EC 20 08 28 */	fsubs f1, f0, f1
-/* 8002E64C 0001F5CC  4B FF FF BD */	bl func_8002E608
+/* 8002E64C 0001F5CC  4B FF FF BD */	bl SetFrame__Q34nw4r3lyt13AnimTransformFf
 lbl_8002E650:
 /* 8002E650 0001F5D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8002E654 0001F5D4  7C 08 03 A6 */	mtlr r0
@@ -1467,7 +1467,7 @@ func_8002EDFC:
 /* 8002EE1C 0001FD9C  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8002EE20 0001FDA0  C8 01 00 08 */	lfd f0, 0x8(r1)
 /* 8002EE24 0001FDA4  EC 20 08 28 */	fsubs f1, f0, f1
-/* 8002EE28 0001FDA8  4B FF F7 E1 */	bl func_8002E608
+/* 8002EE28 0001FDA8  4B FF F7 E1 */	bl SetFrame__Q34nw4r3lyt13AnimTransformFf
 lbl_8002EE2C:
 /* 8002EE2C 0001FDAC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8002EE30 0001FDB0  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -2269,3 +2269,24 @@ lbl_801CB8F4:
 	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
+	
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FA38
+lbl_8060FA38:
+
+	# ROM: 0x1EF0F8
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_8060FA40
+lbl_8060FA40:
+
+	# ROM: 0x1EF100
+	.4byte 0
+
+.global lbl_8060FA44
+lbl_8060FA44:
+
+	# ROM: 0x1EF104
+	.4byte 0x43FA0000

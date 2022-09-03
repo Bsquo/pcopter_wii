@@ -32,3 +32,10 @@ typedef unsigned long size_t;
 
 #define NULL ((void*)0)
 #define nullptr 0
+
+// Unknwon types
+typedef long long           UNK64;
+typedef int                 UNK32;
+typedef short               UNK16;
+typedef char                UNK8;
+typedef void*               UNK_PTR;

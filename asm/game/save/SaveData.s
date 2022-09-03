@@ -1317,6 +1317,7 @@ lbl_801CB930:
 
 .section .sbss, "wa", @nobits
 
+.balign 8
 .global lbl_8060ED60
 lbl_8060ED60:
 	.skip 0x4
@@ -1328,3 +1329,31 @@ lbl_8060ED64:
 .global lbl_8060ED68
 lbl_8060ED68:
 	.skip 0x8
+
+.section .sdata2, "wa", @progbits
+
+.balign 8	# Needed to add the extra 4 bytes seen at the end of UserData.cpp's sdata2 (due to file boundary)
+.global lbl_8060FA90
+lbl_8060FA90:
+
+	# ROM: 0x1EF150
+	.byte 0x50
+
+.global lbl_8060FA91
+lbl_8060FA91:
+
+	# ROM: 0x1EF151
+	.byte 0x43
+
+.global lbl_8060FA92
+lbl_8060FA92:
+
+	# ROM: 0x1EF152
+	.byte 0x54
+
+.global lbl_8060FA93
+lbl_8060FA93:
+
+	# ROM: 0x1EF153
+	.byte 0x57
+	.4byte 0

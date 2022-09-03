@@ -15,13 +15,6 @@ _42970:
 .global strchr__3stdFPci
 strchr__3stdFPci:
 /* 800209F0 00011970  48 09 9C 7C */	b strchr
-	
-.section .data, "wa", @progbits
-
-/* Temporary workaround until I figure out how to make the linker add the last 4 bytes to CVString's vtable */
-.global PADDING__vt__8CVString
-PADDING__vt__8CVString:
-	.4byte 0
 
 .section .sdata, "wa", @progbits
 

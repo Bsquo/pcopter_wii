@@ -165,20 +165,6 @@ lbl_801B8628:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x800140f0
 
-.global main
-main:
-/* 80011660 000025E0  94 21 FF F0 */	stwu r1, -0x10(r1)
-/* 80011664 000025E4  7C 08 02 A6 */	mflr r0
-/* 80011668 000025E8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8001166C 000025EC  48 00 00 15 */	bl GetInstance__4CAppFv
-/* 80011670 000025F0  48 01 1C 69 */	bl Start__5CVAppFv
-
-.global func_80011674
-func_80011674:
-/* 80011674 000025F4  48 00 00 0D */	bl GetInstance__4CAppFv
-/* 80011678 000025F8  48 01 1D 35 */	bl Loop__5CVAppFv
-/* 8001167C 000025FC  4B FF FF F8 */	b func_80011674
-
 .global GetInstance__4CAppFv
 GetInstance__4CAppFv:
 /* 80011680 00002600  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -191,10 +177,10 @@ GetInstance__4CAppFv:
 /* 8001169C 0000261C  3F E0 80 51 */	lis r31, lbl_805088C0@ha
 /* 800116A0 00002620  38 7F 88 C0 */	addi r3, r31, lbl_805088C0@l
 /* 800116A4 00002624  48 00 00 41 */	bl __ct__4CAppFv
-/* 800116A8 00002628  3C 80 80 01 */	lis r4, lbl_80012548@ha
+/* 800116A8 00002628  3C 80 80 01 */	lis r4, __dt__4CAppFv@ha
 /* 800116AC 0000262C  3C A0 80 1F */	lis r5, _51209@ha
 /* 800116B0 00002630  38 7F 88 C0 */	addi r3, r31, lbl_805088C0@l
-/* 800116B4 00002634  38 84 25 48 */	addi r4, r4, lbl_80012548@l
+/* 800116B4 00002634  38 84 25 48 */	addi r4, r4, __dt__4CAppFv@l
 /* 800116B8 00002638  38 A5 1F 00 */	addi r5, r5, _51209@l
 /* 800116BC 0000263C  48 0A 12 41 */	bl __register_global_object
 /* 800116C0 00002640  38 00 00 01 */	li r0, 0x1
@@ -216,96 +202,96 @@ __ct__4CAppFv:
 /* 800116F0 00002670  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800116F4 00002674  7C 7F 1B 78 */	mr r31, r3
 /* 800116F8 00002678  48 01 1A 89 */	bl __ct__5CVAppFv
-/* 800116FC 0000267C  3C 80 80 1D */	lis r4, lbl_801CB410@ha
+/* 800116FC 0000267C  3C 80 80 1D */	lis r4, __vt__4CApp@ha
 /* 80011700 00002680  38 7F 01 38 */	addi r3, r31, 0x138
-/* 80011704 00002684  38 84 B4 10 */	addi r4, r4, lbl_801CB410@l
+/* 80011704 00002684  38 84 B4 10 */	addi r4, r4, __vt__4CApp@l
 /* 80011708 00002688  90 9F 01 34 */	stw r4, 0x134(r31)
 /* 8001170C 0000268C  48 01 50 55 */	bl __ct__6CVFlagFv
 /* 80011710 00002690  38 7F 01 48 */	addi r3, r31, 0x148
-/* 80011714 00002694  48 04 60 29 */	bl func_8005773C
+/* 80011714 00002694  48 04 60 29 */	bl __ct__10CSceneGameFv
 /* 80011718 00002698  38 7F 02 10 */	addi r3, r31, 0x210
-/* 8001171C 0000269C  48 00 02 0D */	bl func_80011928
+/* 8001171C 0000269C  48 00 02 0D */	bl __ct__15CSceneGameMultiFv
 /* 80011720 000026A0  38 7F 02 D8 */	addi r3, r31, 0x2d8
-/* 80011724 000026A4  48 04 4D 01 */	bl func_80056424
+/* 80011724 000026A4  48 04 4D 01 */	bl __ct__14CSceneMenuMainFv
 /* 80011728 000026A8  38 7F 03 10 */	addi r3, r31, 0x310
-/* 8001172C 000026AC  48 04 3E 0D */	bl func_80055538
+/* 8001172C 000026AC  48 04 3E 0D */	bl __ct__15CSceneMenuMain2Fv
 /* 80011730 000026B0  38 7F 03 40 */	addi r3, r31, 0x340
-/* 80011734 000026B4  48 04 C7 51 */	bl func_8005DE84
+/* 80011734 000026B4  48 04 C7 51 */	bl __ct__15CSceneMenuMain3Fv
 /* 80011738 000026B8  38 7F 03 7C */	addi r3, r31, 0x37c
-/* 8001173C 000026BC  48 04 BF 45 */	bl func_8005D680
+/* 8001173C 000026BC  48 04 BF 45 */	bl __ct__15CSceneMenuMain4Fv
 /* 80011740 000026C0  38 7F 03 AC */	addi r3, r31, 0x3ac
-/* 80011744 000026C4  48 05 65 B1 */	bl func_80067CF4
+/* 80011744 000026C4  48 05 65 B1 */	bl __ct__15CSceneMenuMain5Fv
 /* 80011748 000026C8  38 7F 03 E0 */	addi r3, r31, 0x3e0
-/* 8001174C 000026CC  48 02 20 49 */	bl func_80033794
+/* 8001174C 000026CC  48 02 20 49 */	bl __ct__9CUserDataFv
 /* 80011750 000026D0  38 7F 04 E0 */	addi r3, r31, 0x4e0
-/* 80011754 000026D4  48 03 04 1D */	bl func_80041B70
+/* 80011754 000026D4  48 03 04 1D */	bl __ct__15CSceneMenuTitleFv
 /* 80011758 000026D8  38 7F 44 00 */	addi r3, r31, 0x4400
-/* 8001175C 000026DC  48 02 31 D1 */	bl func_8003492C
+/* 8001175C 000026DC  48 02 31 D1 */	bl __ct__17CSceneMenuAreamapFv
 /* 80011760 000026E0  38 7F 47 A8 */	addi r3, r31, 0x47a8
-/* 80011764 000026E4  48 02 CA 79 */	bl func_8003E1DC
+/* 80011764 000026E4  48 02 CA 79 */	bl __ct__23CSceneMenuMissionSelectFv
 /* 80011768 000026E8  38 7F 49 98 */	addi r3, r31, 0x4998
-/* 8001176C 000026EC  48 02 9C DD */	bl func_8003B448
+/* 8001176C 000026EC  48 02 9C DD */	bl __ct__22CSceneMenuCopterSelectFv
 /* 80011770 000026F0  38 7F 69 70 */	addi r3, r31, 0x6970
-/* 80011774 000026F4  48 02 E9 89 */	bl func_800400FC
+/* 80011774 000026F4  48 02 E9 89 */	bl __ct__15CSceneMenuScoreFv
 /* 80011778 000026F8  38 7F 6A 20 */	addi r3, r31, 0x6a20
-/* 8001177C 000026FC  48 02 90 B9 */	bl func_8003A834
+/* 8001177C 000026FC  48 02 90 B9 */	bl __ct__16CSceneMenuConfigFv
 /* 80011780 00002700  38 7F 6A FC */	addi r3, r31, 0x6afc
-/* 80011784 00002704  48 02 C2 41 */	bl func_8003D9C4
+/* 80011784 00002704  48 02 C2 41 */	bl __ct__14CSceneMenuHomeFv
 /* 80011788 00002708  38 7F 6B B8 */	addi r3, r31, 0x6bb8
-/* 8001178C 0000270C  48 02 F0 D1 */	bl func_8004085C
+/* 8001178C 0000270C  48 02 F0 D1 */	bl __ct__14CSceneMenuShopFv
 /* 80011790 00002710  38 7F 6C A8 */	addi r3, r31, 0x6ca8
-/* 80011794 00002714  48 00 07 C9 */	bl func_80011F5C
+/* 80011794 00002714  48 00 07 C9 */	bl __ct__20CSceneMenuFreeFlightFv
 /* 80011798 00002718  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 8001179C 0000271C  38 63 8C 80 */	addi r3, r3, -0x7380
-/* 800117A0 00002720  48 03 2B F1 */	bl func_80044390
+/* 800117A0 00002720  48 03 2B F1 */	bl __ct__18CSceneMenuTreasureFv
 /* 800117A4 00002724  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 800117A8 00002728  38 63 8D 60 */	addi r3, r3, -0x72a0
-/* 800117AC 0000272C  48 02 9C 9D */	bl func_8003B448
+/* 800117AC 0000272C  48 02 9C 9D */	bl __ct__22CSceneMenuCopterSelectFv
 /* 800117B0 00002730  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 800117B4 00002734  38 63 AD 38 */	addi r3, r3, -0x52c8
-/* 800117B8 00002738  48 05 74 19 */	bl func_80068BD0
+/* 800117B8 00002738  48 05 74 19 */	bl __ct__20CSceneMenuPartSelectFv
 /* 800117BC 0000273C  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 800117C0 00002740  38 63 C5 F0 */	addi r3, r3, -0x3a10
-/* 800117C4 00002744  48 03 AF 21 */	bl func_8004C6E4
+/* 800117C4 00002744  48 03 AF 21 */	bl __ct__18CSceneMenuSetting2Fv
 /* 800117C8 00002748  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 800117CC 0000274C  38 63 CE 18 */	addi r3, r3, -0x31e8
-/* 800117D0 00002750  48 03 AA 91 */	bl func_8004C260
+/* 800117D0 00002750  48 03 AA 91 */	bl __ct__15CSceneMenuMovieFv
 /* 800117D4 00002754  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 800117D8 00002758  38 63 CE F4 */	addi r3, r3, -0x310c
 /* 800117DC 0000275C  48 04 15 85 */	bl __ct__14CSceneMenuLogoFv
 /* 800117E0 00002760  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 800117E4 00002764  38 63 CF 98 */	addi r3, r3, -0x3068
-/* 800117E8 00002768  48 00 0A 29 */	bl func_80012210
+/* 800117E8 00002768  48 00 0A 29 */	bl __ct__15CSceneMenuLogo2Fv
 /* 800117EC 0000276C  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 800117F0 00002770  38 63 D0 3C */	addi r3, r3, -0x2fc4
-/* 800117F4 00002774  48 04 A4 99 */	bl func_8005BC8C
+/* 800117F4 00002774  48 04 A4 99 */	bl __ct__15CSceneMenuStrapFv
 /* 800117F8 00002778  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 800117FC 0000277C  38 63 D0 E8 */	addi r3, r3, -0x2f18
-/* 80011800 00002780  48 03 D6 AD */	bl func_8004EEAC
+/* 80011800 00002780  48 03 D6 AD */	bl __ct__20CSceneMenuSDataCheakFv
 /* 80011804 00002784  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 80011808 00002788  38 63 EF A8 */	addi r3, r3, -0x1058
-/* 8001180C 0000278C  48 04 91 39 */	bl func_8005A944
+/* 8001180C 0000278C  48 04 91 39 */	bl __ct__22CSceneMenuSoundSettingFv
 /* 80011810 00002790  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 80011814 00002794  38 63 F0 CC */	addi r3, r3, -0xf34
-/* 80011818 00002798  48 06 6E 1D */	bl func_80078634
+/* 80011818 00002798  48 06 6E 1D */	bl __ct__20CSceneMenuKeySettingFv
 /* 8001181C 0000279C  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 80011820 000027A0  38 63 F1 D8 */	addi r3, r3, -0xe28
-/* 80011824 000027A4  48 03 E8 25 */	bl func_80050048
+/* 80011824 000027A4  48 03 E8 25 */	bl __ct__20CSceneMenuDataAccessFv
 /* 80011828 000027A8  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 8001182C 000027AC  38 63 2F B0 */	addi r3, r3, 0x2fb0
-/* 80011830 000027B0  48 05 73 A1 */	bl func_80068BD0
+/* 80011830 000027B0  48 05 73 A1 */	bl __ct__20CSceneMenuPartSelectFv
 /* 80011834 000027B4  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 80011838 000027B8  38 63 48 64 */	addi r3, r3, 0x4864
-/* 8001183C 000027BC  48 06 3E 2D */	bl func_80075668
+/* 8001183C 000027BC  48 06 3E 2D */	bl __ct__27CSceneMenuMultiCopterSelectFv
 /* 80011840 000027C0  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 80011844 000027C4  38 63 4A 98 */	addi r3, r3, 0x4a98
-/* 80011848 000027C8  48 06 58 0D */	bl func_80077054
+/* 80011848 000027C8  48 06 58 0D */	bl __ct__25CSceneMenuMultiModeSelectFv
 /* 8001184C 000027CC  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 80011850 000027D0  38 63 4B BC */	addi r3, r3, 0x4bbc
-/* 80011854 000027D4  48 07 39 09 */	bl func_8008515C
+/* 80011854 000027D4  48 07 39 09 */	bl __ct__22CSceneMenuClassicCheakFv
 /* 80011858 000027D8  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 8001185C 000027DC  38 63 4C 5C */	addi r3, r3, 0x4c5c
-/* 80011860 000027E0  48 00 0C 55 */	bl func_800124B4
+/* 80011860 000027E0  48 00 0C 55 */	bl __ct__26CSceneMenuControllerManualFv
 /* 80011864 000027E4  7F E3 FB 78 */	mr r3, r31
 /* 80011868 000027E8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8001186C 000027EC  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -369,14 +355,14 @@ func_8001190C:
 /* 80011920 000028A0  7C 08 03 A6 */	mtlr r0
 /* 80011924 000028A4  4E 80 00 20 */	blr
 
-.global func_80011928
-func_80011928:
+.global __ct__15CSceneGameMultiFv
+__ct__15CSceneGameMultiFv:
 /* 80011928 000028A8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8001192C 000028AC  7C 08 02 A6 */	mflr r0
 /* 80011930 000028B0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80011934 000028B4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80011938 000028B8  7C 7F 1B 78 */	mr r31, r3
-/* 8001193C 000028BC  48 04 5E 01 */	bl func_8005773C
+/* 8001193C 000028BC  48 04 5E 01 */	bl __ct__10CSceneGameFv
 /* 80011940 000028C0  3C 80 80 1D */	lis r4, lbl_801CCEC8@ha
 /* 80011944 000028C4  7F E3 FB 78 */	mr r3, r31
 /* 80011948 000028C8  38 84 CE C8 */	addi r4, r4, lbl_801CCEC8@l
@@ -837,14 +823,14 @@ lbl_80011F40:
 /* 80011F54 00002ED4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80011F58 00002ED8  4E 80 00 20 */	blr
 
-.global func_80011F5C
-func_80011F5C:
+.global __ct__20CSceneMenuFreeFlightFv
+__ct__20CSceneMenuFreeFlightFv:
 /* 80011F5C 00002EDC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80011F60 00002EE0  7C 08 02 A6 */	mflr r0
 /* 80011F64 00002EE4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80011F68 00002EE8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80011F6C 00002EEC  7C 7F 1B 78 */	mr r31, r3
-/* 80011F70 00002EF0  48 02 94 D9 */	bl func_8003B448
+/* 80011F70 00002EF0  48 02 94 D9 */	bl __ct__22CSceneMenuCopterSelectFv
 /* 80011F74 00002EF4  3C 80 80 1D */	lis r4, lbl_801CA560@ha
 /* 80011F78 00002EF8  7F E3 FB 78 */	mr r3, r31
 /* 80011F7C 00002EFC  38 84 A5 60 */	addi r4, r4, lbl_801CA560@l
@@ -1041,8 +1027,8 @@ lbl_800121F4:
 /* 80012208 00003188  38 21 00 10 */	addi r1, r1, 0x10
 /* 8001220C 0000318C  4E 80 00 20 */	blr
 
-.global func_80012210
-func_80012210:
+.global __ct__15CSceneMenuLogo2Fv
+__ct__15CSceneMenuLogo2Fv:
 /* 80012210 00003190  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80012214 00003194  7C 08 02 A6 */	mflr r0
 /* 80012218 00003198  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1241,8 +1227,8 @@ lbl_80012498:
 /* 800124AC 0000342C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800124B0 00003430  4E 80 00 20 */	blr
 
-.global func_800124B4
-func_800124B4:
+.global __ct__26CSceneMenuControllerManualFv
+__ct__26CSceneMenuControllerManualFv:
 /* 800124B4 00003434  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800124B8 00003438  7C 08 02 A6 */	mflr r0
 /* 800124BC 0000343C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1285,8 +1271,8 @@ lbl_8001252C:
 /* 80012540 000034C0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80012544 000034C4  4E 80 00 20 */	blr
 
-.global lbl_80012548
-lbl_80012548:
+.global __dt__4CAppFv
+__dt__4CAppFv:
 /* 80012548 000034C8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8001254C 000034CC  7C 08 02 A6 */	mflr r0
 /* 80012550 000034D0  2C 03 00 00 */	cmpwi r3, 0x0

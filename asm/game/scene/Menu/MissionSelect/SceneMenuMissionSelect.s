@@ -130,8 +130,8 @@ lbl_801BBE6C:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8003E1DC
-func_8003E1DC:
+.global __ct__23CSceneMenuMissionSelectFv
+__ct__23CSceneMenuMissionSelectFv:
 /* 8003E1DC 0002F15C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8003E1E0 0002F160  7C 08 02 A6 */	mflr r0
 /* 8003E1E4 0002F164  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1413,7 +1413,7 @@ lbl_8003F39C:
 /* 8003F3A8 00030328  4B FD 50 4D */	bl GetInstance__8CVPadMgrFv
 /* 8003F3AC 0003032C  38 80 00 00 */	li r4, 0x0
 /* 8003F3B0 00030330  38 A0 08 00 */	li r5, 0x800
-/* 8003F3B4 00030334  4B FF 3F 91 */	bl func_80033344
+/* 8003F3B4 00030334  4B FF 3F 91 */	bl CheckDown__8CVPadMgrFlUl
 /* 8003F3B8 00030338  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8003F3BC 0003033C  41 82 00 88 */	beq func_8003F444
 /* 8003F3C0 00030340  4B FD 55 2D */	bl GetInstance__10CVSoundMgrFv

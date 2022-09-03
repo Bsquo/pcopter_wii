@@ -123,8 +123,8 @@ lbl_801BC9B4:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80044390
-func_80044390:
+.global __ct__18CSceneMenuTreasureFv
+__ct__18CSceneMenuTreasureFv:
 /* 80044390 00035310  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80044394 00035314  7C 08 02 A6 */	mflr r0
 /* 80044398 00035318  90 01 00 14 */	stw r0, 0x14(r1)
@@ -279,7 +279,7 @@ lbl_800445C4:
 /* 800445C4 00035544  D3 FF 00 C0 */	stfs f31, 0xc0(r31)
 /* 800445C8 00035548  FC 20 F8 90 */	fmr f1, f31
 /* 800445CC 0003554C  80 7F 00 A8 */	lwz r3, 0xa8(r31)
-/* 800445D0 00035550  4B FE A0 39 */	bl func_8002E608
+/* 800445D0 00035550  4B FE A0 39 */	bl SetFrame__Q34nw4r3lyt13AnimTransformFf
 /* 800445D4 00035554  3B 9C 00 01 */	addi r28, r28, 0x1
 /* 800445D8 00035558  3B DE 00 04 */	addi r30, r30, 0x4
 /* 800445DC 0003555C  2C 1C 00 06 */	cmpwi r28, 0x6
@@ -445,7 +445,7 @@ lbl_800447F8:
 /* 80044830 000357B0  4B FC FB C5 */	bl GetInstance__8CVPadMgrFv
 /* 80044834 000357B4  38 80 00 00 */	li r4, 0x0
 /* 80044838 000357B8  38 A0 08 00 */	li r5, 0x800
-/* 8004483C 000357BC  4B FE EB 09 */	bl func_80033344
+/* 8004483C 000357BC  4B FE EB 09 */	bl CheckDown__8CVPadMgrFlUl
 /* 80044840 000357C0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80044844 000357C4  41 82 00 54 */	beq func_80044898
 /* 80044848 000357C8  4B FD 00 A5 */	bl GetInstance__10CVSoundMgrFv
@@ -509,7 +509,7 @@ lbl_800448F4:
 /* 80044908 00035888  48 00 00 2C */	b func_80044934
 lbl_8004490C:
 /* 8004490C 0003588C  80 7F 00 A8 */	lwz r3, 0xa8(r31)
-/* 80044910 00035890  48 12 3D 21 */	bl func_80168630
+/* 80044910 00035890  48 12 3D 21 */	bl GetFrameSize__Q34nw4r3lyt13AnimTransformCFv
 /* 80044914 00035894  54 63 04 3E */	clrlwi r3, r3, 16
 /* 80044918 00035898  93 C1 00 20 */	stw r30, 0x20(r1)
 /* 8004491C 0003589C  38 03 FF FF */	addi r0, r3, -0x1
@@ -522,7 +522,7 @@ lbl_8004490C:
 .global func_80044934
 func_80044934:
 /* 80044934 000358B4  80 7F 00 A8 */	lwz r3, 0xa8(r31)
-/* 80044938 000358B8  48 12 3C F9 */	bl func_80168630
+/* 80044938 000358B8  48 12 3C F9 */	bl GetFrameSize__Q34nw4r3lyt13AnimTransformCFv
 /* 8004493C 000358BC  54 60 04 3E */	clrlwi r0, r3, 16
 /* 80044940 000358C0  93 C1 00 20 */	stw r30, 0x20(r1)
 /* 80044944 000358C4  C0 1F 00 C0 */	lfs f0, 0xc0(r31)
@@ -551,7 +551,7 @@ func_80044978:
 func_80044984:
 /* 80044984 00035904  80 7F 00 A8 */	lwz r3, 0xa8(r31)
 /* 80044988 00035908  C0 3F 00 C0 */	lfs f1, 0xc0(r31)
-/* 8004498C 0003590C  4B FE 9C 7D */	bl func_8002E608
+/* 8004498C 0003590C  4B FE 9C 7D */	bl SetFrame__Q34nw4r3lyt13AnimTransformFf
 /* 80044990 00035910  3B 18 00 01 */	addi r24, r24, 0x1
 /* 80044994 00035914  3B FF 00 04 */	addi r31, r31, 0x4
 /* 80044998 00035918  2C 18 00 06 */	cmpwi r24, 0x6

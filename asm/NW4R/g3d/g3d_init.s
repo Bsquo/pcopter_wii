@@ -1,7 +1,7 @@
 .include "macros.s"
 .section .text, "ax"
-.global func_801B5958
-func_801B5958:
+.global G3dInit__Q24nw4r3g3dFb
+G3dInit__Q24nw4r3g3dFb:
 /* 801B5958 001A68D8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B595C 001A68DC  7C 08 02 A6 */	mflr r0
 /* 801B5960 001A68E0  90 01 00 14 */	stw r0, 0x14(r1)

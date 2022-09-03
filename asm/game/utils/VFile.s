@@ -28,8 +28,8 @@ func_80026370:
 /* 800263A0 00017320  38 21 00 10 */	addi r1, r1, 0x10
 /* 800263A4 00017324  4E 80 00 20 */	blr
 
-.global func_800263A8
-func_800263A8:
+.global __ct__10CVFilePathFPc
+__ct__10CVFilePathFPc:
 /* 800263A8 00017328  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800263AC 0001732C  7C 08 02 A6 */	mflr r0
 /* 800263B0 00017330  90 01 00 14 */	stw r0, 0x14(r1)

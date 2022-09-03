@@ -151,8 +151,8 @@ func_800D437C:
 /* 800D4384 000C5304  7C 08 03 A6 */	mtlr r0
 /* 800D4388 000C5308  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D438C 000C530C  4E 80 00 20 */	blr
-.global func_800D4390
-func_800D4390:
+.global SCGetSoundMode
+SCGetSoundMode:
 /* 800D4390 000C5310  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D4394 000C5314  7C 08 02 A6 */	mflr r0
 /* 800D4398 000C5318  38 80 00 11 */	li r4, 0x11

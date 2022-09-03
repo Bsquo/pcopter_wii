@@ -37,8 +37,8 @@ func_80085D28:
 /* 80085D5C 00076CDC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80085D60 00076CE0  4E 80 00 20 */	blr
 
-.global func_80085D64
-func_80085D64:
+.global BackThreadStart__Fv
+BackThreadStart__Fv:
 /* 80085D64 00076CE4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80085D68 00076CE8  7C 08 02 A6 */	mflr r0
 /* 80085D6C 00076CEC  3C A0 80 55 */	lis r5, lbl_8054C418@ha

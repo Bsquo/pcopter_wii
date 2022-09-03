@@ -1,4 +1,12 @@
 #include "include/game/app/App.h"
+#include "include/game/utils/VScript.h"
+#include "include/RVL/os.h"
+#include "include/nw4r/g3d/g3d.h"
+#include "include/nw4r/ut/ut_Color.h"
+#include "include/nw4r/db/db_DbgPrintBase.h"
+#include "include/game/system/demo.h"
+#include "include/game/system/BackThread.h"
+#include "include/game/managers/CVPadMgr.h"
 
 bool CApp::SetSceneIndex(int sceneIndex) {
     mPreviousScene = mCurrentScene;

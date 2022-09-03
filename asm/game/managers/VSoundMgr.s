@@ -509,8 +509,8 @@ func_8002D110:
 /* 8002D13C 0001E0BC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002D140 0001E0C0  4E 80 00 20 */	blr
 
-.global func_8002D144
-func_8002D144:
+.global InitArchive__10CVSoundMgrFPc
+InitArchive__10CVSoundMgrFPc:
 /* 8002D144 0001E0C4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8002D148 0001E0C8  7C 08 02 A6 */	mflr r0
 /* 8002D14C 0001E0CC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -766,8 +766,8 @@ func_8002D448:
 /* 8002D450 0001E3D0  D0 23 02 B8 */	stfs f1, 0x2b8(r3)
 /* 8002D454 0001E3D4  4E 80 00 20 */	blr
 
-.global func_8002D458
-func_8002D458:
+.global SetOutPutMode__10CVSoundMgrFi
+SetOutPutMode__10CVSoundMgrFi:
 /* 8002D458 0001E3D8  7C 83 23 78 */	mr r3, r4
 /* 8002D45C 0001E3DC  48 00 00 04 */	b func_8002D460
 

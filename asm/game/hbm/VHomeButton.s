@@ -112,8 +112,8 @@ func_80054074:
 /* 8005408C 0004500C  38 21 00 60 */	addi r1, r1, 0x60
 /* 80054090 00045010  4E 80 00 20 */	blr
 
-.global func_80054094
-func_80054094:
+.global Init__12CVHomeButtonFPc
+Init__12CVHomeButtonFPc:
 /* 80054094 00045014  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80054098 00045018  7C 08 02 A6 */	mflr r0
 /* 8005409C 0004501C  90 01 00 14 */	stw r0, 0x14(r1)

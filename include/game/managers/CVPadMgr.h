@@ -10,6 +10,7 @@ class CVPadMgr {
     public:
         static CVPadMgr* GetInstance();
         void Update(s32);
+        void Init();
 };
 
 #endif // VPADMGR_H

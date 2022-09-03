@@ -1,12 +1,15 @@
 #ifndef DEMO_H
 #define DEMO_H
 
+#include "include/RVL/GX/GXFrameBuf.h"
+
 namespace demo {
     class Memory;
     
     void BeforeRender();
     void DoneRender(unsigned long, int, int);
     void Report(int, int, const char*, ...);
+    void InitDemoLib(const _GXRenderModeObj*);
 }
 
 #ifdef __cplusplus

@@ -273,31 +273,31 @@ lbl_8000CB00:
 	.4byte SetSceneIndex__4CAppFi
 	.4byte 0x00000218
 	.4byte lbl_80006A88
-	.4byte lbl_80014308
+	.4byte StartLocal__4CAppFv
 	.4byte 0x000000EC
 	.4byte lbl_80006A90
 	.4byte GetInstance__8CVPadMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006AC0
-	.4byte func_80014458
+	.4byte __ct__8CVPadMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006AC8
-	.4byte func_800144BC
+	.4byte __ct__9CVPadDataFv
 	.4byte 0x00000044
 	.4byte lbl_80006AD0
-	.4byte func_80014500
+	.4byte __ct__Q34nw4r2ut5ColorFUl
 	.4byte 0x00000030
 	.4byte lbl_80006AD8
-	.4byte func_80014530
+	.4byte __as__Q34nw4r2ut5ColorFUl
 	.4byte 0x00000040
 	.4byte lbl_80006AE0
-	.4byte func_80014574
+	.4byte __dt__Q34nw4r2ut5ColorFv
 	.4byte 0x00000040
 	.4byte lbl_80006AE8
-	.4byte func_800145B4
+	.4byte StartLocal2__4CAppFv
 	.4byte 0x000001A0
 	.4byte lbl_80006AF0
-	.4byte func_80014754
+	.4byte GetInstance__11CResListMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006B08
 	.4byte func_800147B8
@@ -318,10 +318,10 @@ lbl_8000CB00:
 	.4byte func_80014950
 	.4byte 0x0000006C
 	.4byte lbl_80006B38
-	.4byte lbl_800149BC
+	.4byte LoopLocal__4CAppFv
 	.4byte 0x000002D4
 	.4byte lbl_80006B7C
-	.4byte lbl_80014C98
+	.4byte EndLocal__4CAppFv
 	.4byte 0x0000002C
 	.4byte lbl_80006B84
 	.4byte func_80014CC4
@@ -1038,7 +1038,7 @@ lbl_8000CB00:
 	.4byte func_80026370
 	.4byte 0x00000038
 	.4byte lbl_800076B8
-	.4byte func_800263A8
+	.4byte __ct__10CVFilePathFPc
 	.4byte 0x00000030
 	.4byte lbl_800076C0
 	.4byte func_800263D8
@@ -1497,16 +1497,16 @@ lbl_8000CB00:
 	.4byte func_8002C2D0
 	.4byte 0x00000038
 	.4byte lbl_80007CB0
-	.4byte func_8002C308
+	.4byte __ct__8CVScriptFv
 	.4byte 0x00000044
 	.4byte lbl_80007CB8
-	.4byte func_8002C34C
+	.4byte __dt__8CVScriptFv
 	.4byte 0x0000006C
 	.4byte lbl_80007CD4
 	.4byte func_8002C3B8
 	.4byte 0x0000006C
 	.4byte lbl_80007CDC
-	.4byte func_8002C428
+	.4byte GetParam__8CVScriptFPci
 	.4byte 0x00000080
 	.4byte lbl_80007CE4
 	.4byte func_8002C4A8
@@ -1515,7 +1515,7 @@ lbl_8000CB00:
 	.4byte func_8002C528
 	.4byte 0x000003CC
 	.4byte lbl_80007CF4
-	.4byte func_8002C8F4
+	.4byte LoadFromFile__8CVScriptFPc
 	.4byte 0x000000C0
 	.4byte lbl_80007D0C
 	.4byte func_8002C9D0
@@ -1575,7 +1575,7 @@ lbl_8000CB00:
 	.4byte func_8002D110
 	.4byte 0x00000034
 	.4byte lbl_80007DB4
-	.4byte func_8002D144
+	.4byte InitArchive__10CVSoundMgrFPc
 	.4byte 0x00000170
 	.4byte lbl_80007DBC
 	.4byte func_8002D2D4
@@ -1833,7 +1833,7 @@ lbl_8000CB00:
 	.4byte func_8002FE6C
 	.4byte 0x00000140
 	.4byte lbl_800081D8
-	.4byte func_8002FFAC
+	.4byte Init__11CVEffectMgrFi
 	.4byte 0x00000090
 	.4byte lbl_800081E0
 	.4byte func_8003003C
@@ -1851,7 +1851,7 @@ lbl_8000CB00:
 	.4byte func_800307F4
 	.4byte 0x000000A4
 	.4byte lbl_80008438
-	.4byte func_800308B0
+	.4byte Load__11CVEffectMgrF10CVFilePath10CVFilePath
 	.4byte 0x00000070
 	.4byte lbl_80008440
 	.4byte func_80030920
@@ -1971,7 +1971,7 @@ lbl_8000CB00:
 	.4byte func_800329AC
 	.4byte 0x00000058
 	.4byte lbl_800086D8
-	.4byte func_80032A04
+	.4byte Init__8CVPadMgrFv
 	.4byte 0x00000064
 	.4byte lbl_800086E0
 	.4byte lbl_80032A68
@@ -1983,7 +1983,7 @@ lbl_8000CB00:
 	.4byte func_80032AEC
 	.4byte 0x000005AC
 	.4byte lbl_80008708
-	.4byte func_80033098
+	.4byte InitControlMap__8CVPadMgrF10CVFilePath
 	.4byte 0x000001A8
 	.4byte lbl_80008720
 	.4byte Update__8CVPadMgrFl
@@ -2694,7 +2694,7 @@ lbl_8000CB00:
 	.4byte func_800490C0
 	.4byte 0x0000006C
 	.4byte lbl_800096B0
-	.4byte func_80049134
+	.4byte Init__11CResListMgrFPc
 	.4byte 0x000001AC
 	.4byte lbl_800096B8
 	.4byte func_800492E0
@@ -3039,7 +3039,7 @@ lbl_8000CB00:
 	.4byte func_80053FDC
 	.4byte 0x000000B8
 	.4byte lbl_80009D90
-	.4byte func_80054094
+	.4byte Init__12CVHomeButtonFPc
 	.4byte 0x000000B8
 	.4byte lbl_80009D98
 	.4byte func_80054180
@@ -4229,7 +4229,7 @@ lbl_80010138:
 	.4byte func_80085D28
 	.4byte 0x0000003C
 	.4byte lbl_8000C2B4
-	.4byte func_80085D64
+	.4byte BackThreadStart__Fv
 	.4byte 0x0000006C
 	.4byte lbl_8000C2BC
 	.4byte lbl_80085DD0
@@ -4757,7 +4757,7 @@ lbl_80010138:
 	.4byte func_8011BB88
 	.4byte 0x000003FC
 	.4byte lbl_8000CA34
-	.4byte func_8011BF84
+	.4byte InitDemoLib__4demoFPC16_GXRenderModeObj
 	.4byte 0x00000060
 	.4byte lbl_8000CA4C
 	.4byte GetAllocator__4demoFQ24demo6Memory

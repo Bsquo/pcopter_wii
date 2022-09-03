@@ -336,8 +336,8 @@ func_8002C2F8:
 /* 8002C300 0001D280  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002C304 0001D284  4E 80 00 20 */	blr
 
-.global func_8002C308
-func_8002C308:
+.global __ct__8CVScriptFv
+__ct__8CVScriptFv:
 /* 8002C308 0001D288  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002C30C 0001D28C  7C 08 02 A6 */	mflr r0
 /* 8002C310 0001D290  3C 80 80 1D */	lis r4, lbl_801CB850@ha
@@ -356,8 +356,8 @@ func_8002C308:
 /* 8002C344 0001D2C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002C348 0001D2C8  4E 80 00 20 */	blr
 
-.global func_8002C34C
-func_8002C34C:
+.global __dt__8CVScriptFv
+__dt__8CVScriptFv:
 /* 8002C34C 0001D2CC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002C350 0001D2D0  7C 08 02 A6 */	mflr r0
 /* 8002C354 0001D2D4  2C 03 00 00 */	cmpwi r3, 0x0
@@ -429,8 +429,8 @@ func_8002C40C:
 func_8002C424:
 /* 8002C424 0001D3A4  4B FF A6 F4 */	b InsertEnd__6CVListFP10CVListBase
 
-.global func_8002C428
-func_8002C428:
+.global GetParam__8CVScriptFPci
+GetParam__8CVScriptFPci:
 /* 8002C428 0001D3A8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8002C42C 0001D3AC  7C 08 02 A6 */	mflr r0
 /* 8002C430 0001D3B0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -812,8 +812,8 @@ func_8002C8D0:
 /* 8002C8EC 0001D86C  38 21 06 50 */	addi r1, r1, 0x650
 /* 8002C8F0 0001D870  4E 80 00 20 */	blr
 
-.global func_8002C8F4
-func_8002C8F4:
+.global LoadFromFile__8CVScriptFPc
+LoadFromFile__8CVScriptFPc:
 /* 8002C8F4 0001D874  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 8002C8F8 0001D878  7C 08 02 A6 */	mflr r0
 /* 8002C8FC 0001D87C  90 01 00 64 */	stw r0, 0x64(r1)
@@ -888,7 +888,7 @@ lbl_801CB850:
 	# ROM: 0x1C7950
 	.4byte lbl_8060DFF0
 	.4byte 0
-	.4byte func_8002C34C
+	.4byte __dt__8CVScriptFv
 
 .global lbl_801CB85C
 lbl_801CB85C:

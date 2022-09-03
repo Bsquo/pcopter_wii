@@ -1,7 +1,7 @@
 .include "macros.s"
 .section .text, "ax"
-.global func_801916D4
-func_801916D4:
+.global "GetInstance__Q34nw4r2db15DbgPrintBase<c>Fv"
+"GetInstance__Q34nw4r2db15DbgPrintBase<c>Fv":
 /* 801916D4 00182654  80 6D 99 D4 */	lwz r3, lbl_8060F7D4@sda21(r13)
 /* 801916D8 00182658  4E 80 00 20 */	blr
 .global func_801916DC
@@ -43,8 +43,8 @@ lbl_80191750:
 /* 80191760 001826E0  7C 08 03 A6 */	mtlr r0
 /* 80191764 001826E4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80191768 001826E8  4E 80 00 20 */	blr
-.global func_8019176C
-func_8019176C:
+.global "SetTextColor__Q34nw4r2db15DbgPrintBase<c>FQ34nw4r2ut5Color"
+"SetTextColor__Q34nw4r2db15DbgPrintBase<c>FQ34nw4r2ut5Color":
 /* 8019176C 001826EC  88 E4 00 00 */	lbz r7, 0x0(r4)
 /* 80191770 001826F0  88 C4 00 01 */	lbz r6, 0x1(r4)
 /* 80191774 001826F4  88 A4 00 02 */	lbz r5, 0x2(r4)

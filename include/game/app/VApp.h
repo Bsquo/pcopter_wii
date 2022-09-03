@@ -6,7 +6,7 @@
 #include "types.h"
 
 class CVApp {
-    private:
+    protected:
         s64 mSceneStartTime;        // Time when the current scene was started
         s64 mSceneCurrentTime;      // Current time value
         f32 mSceneRunningTime;      // Total time the current scene has been running

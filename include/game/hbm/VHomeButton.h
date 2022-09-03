@@ -14,7 +14,7 @@ class CVHomeButton {
         bool IsOpen();
         void Calc();
         void Render();
-        // ... //
+        void Init(char*);
 };
 
 #endif // VHOMEBUTTON_H

@@ -84,6 +84,7 @@ class CApp: public CVApp {
     public:
         static CApp* GetInstance();
         bool StartLocal();
+        bool StartLocal2();
         bool LoopLocal;
         void EndLocal();
         bool SetSceneIndex(int);

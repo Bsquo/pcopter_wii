@@ -11,8 +11,8 @@ lbl_801B9C58:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80026370
-func_80026370:
+.global __ct__10CVFilePathFv
+__ct__10CVFilePathFv:
 /* 80026370 000172F0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80026374 000172F4  7C 08 02 A6 */	mflr r0
 /* 80026378 000172F8  3C 80 80 1C */	lis r4, lbl_801B9C58@ha
@@ -43,8 +43,8 @@ __ct__10CVFilePathFPc:
 /* 800263D0 00017350  38 21 00 10 */	addi r1, r1, 0x10
 /* 800263D4 00017354  4E 80 00 20 */	blr
 
-.global func_800263D8
-func_800263D8:
+.global __as__10CVFilePathFRC10CVFilePath
+__as__10CVFilePathFRC10CVFilePath:
 /* 800263D8 00017358  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800263DC 0001735C  7C 08 02 A6 */	mflr r0
 /* 800263E0 00017360  7C 03 20 40 */	cmplw r3, r4
@@ -61,8 +61,8 @@ lbl_800263F8:
 /* 80026408 00017388  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002640C 0001738C  4E 80 00 20 */	blr
 
-.global func_80026410
-func_80026410:
+.global __as__10CVFilePathFPCc
+__as__10CVFilePathFPCc:
 /* 80026410 00017390  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80026414 00017394  7C 08 02 A6 */	mflr r0
 /* 80026418 00017398  90 01 00 14 */	stw r0, 0x14(r1)
@@ -76,8 +76,8 @@ func_80026410:
 /* 80026438 000173B8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002643C 000173BC  4E 80 00 20 */	blr
 
-.global func_80026440
-func_80026440:
+.global __apl__10CVFilePathFPCc
+__apl__10CVFilePathFPCc:
 /* 80026440 000173C0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80026444 000173C4  7C 08 02 A6 */	mflr r0
 /* 80026448 000173C8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -91,8 +91,8 @@ func_80026440:
 /* 80026468 000173E8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002646C 000173EC  4E 80 00 20 */	blr
 
-.global func_80026470
-func_80026470:
+.global __opPCc__10CVFilePathFv
+__opPCc__10CVFilePathFv:
 /* 80026470 000173F0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80026474 000173F4  7C 08 02 A6 */	mflr r0
 /* 80026478 000173F8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -110,8 +110,8 @@ lbl_80026494:
 /* 800264A4 00017424  38 21 00 10 */	addi r1, r1, 0x10
 /* 800264A8 00017428  4E 80 00 20 */	blr
 
-.global func_800264AC
-func_800264AC:
+.global __opPc__10CVFilePathFv
+__opPc__10CVFilePathFv:
 /* 800264AC 0001742C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800264B0 00017430  7C 08 02 A6 */	mflr r0
 /* 800264B4 00017434  90 01 00 14 */	stw r0, 0x14(r1)
@@ -129,19 +129,19 @@ lbl_800264D0:
 /* 800264E0 00017460  38 21 00 10 */	addi r1, r1, 0x10
 /* 800264E4 00017464  4E 80 00 20 */	blr
 
-.global func_800264E8
-func_800264E8:
+.global Init__10CVFilePathFv
+Init__10CVFilePathFv:
 /* 800264E8 00017468  3C 80 80 1C */	lis r4, lbl_801B9C58@ha
 /* 800264EC 0001746C  38 84 9C 58 */	addi r4, r4, lbl_801B9C58@l
 /* 800264F0 00017470  38 84 00 01 */	addi r4, r4, 0x1
 /* 800264F4 00017474  48 09 3E A0 */	b strcpy
 
-.global func_800264F8
-func_800264F8:
+.global GetLength__10CVFilePathFv
+GetLength__10CVFilePathFv:
 /* 800264F8 00017478  48 08 C3 20 */	b strlen
 
-.global func_800264FC
-func_800264FC:
+.global GetDirectory__10CVFilePathFv
+GetDirectory__10CVFilePathFv:
 /* 800264FC 0001747C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80026500 00017480  7C 08 02 A6 */	mflr r0
 /* 80026504 00017484  90 01 00 14 */	stw r0, 0x14(r1)
@@ -149,10 +149,10 @@ func_800264FC:
 /* 8002650C 0001748C  7C 9F 23 78 */	mr r31, r4
 /* 80026510 00017490  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80026514 00017494  7C 7E 1B 78 */	mr r30, r3
-/* 80026518 00017498  4B FF FE 59 */	bl func_80026370
+/* 80026518 00017498  4B FF FE 59 */	bl __ct__10CVFilePathFv
 /* 8002651C 0001749C  7F C3 F3 78 */	mr r3, r30
 /* 80026520 000174A0  7F E4 FB 78 */	mr r4, r31
-/* 80026524 000174A4  4B FF FE B5 */	bl func_800263D8
+/* 80026524 000174A4  4B FF FE B5 */	bl __as__10CVFilePathFRC10CVFilePath
 /* 80026528 000174A8  7F C3 F3 78 */	mr r3, r30
 /* 8002652C 000174AC  48 00 01 19 */	bl func_80026644
 /* 80026530 000174B0  38 80 00 00 */	li r4, 0x0
@@ -193,7 +193,7 @@ func_80026580:
 /* 80026598 00017518  7C 9D 23 78 */	mr r29, r4
 /* 8002659C 0001751C  93 81 00 10 */	stw r28, 0x10(r1)
 /* 800265A0 00017520  7C 7C 1B 78 */	mr r28, r3
-/* 800265A4 00017524  4B FF FD CD */	bl func_80026370
+/* 800265A4 00017524  4B FF FD CD */	bl __ct__10CVFilePathFv
 /* 800265A8 00017528  7F A3 EB 78 */	mr r3, r29
 /* 800265AC 0001752C  38 80 00 00 */	li r4, 0x0
 /* 800265B0 00017530  4B FF A4 41 */	bl strchr__3stdFPci
@@ -260,9 +260,9 @@ func_80026648:
 /* 80026660 000175E0  7C 9E 23 78 */	mr r30, r4
 /* 80026664 000175E4  93 A1 01 14 */	stw r29, 0x114(r1)
 /* 80026668 000175E8  7C 7D 1B 78 */	mr r29, r3
-/* 8002666C 000175EC  4B FF FD 05 */	bl func_80026370
+/* 8002666C 000175EC  4B FF FD 05 */	bl __ct__10CVFilePathFv
 /* 80026670 000175F0  7F E3 FB 78 */	mr r3, r31
-/* 80026674 000175F4  4B FF FD FD */	bl func_80026470
+/* 80026674 000175F4  4B FF FD FD */	bl __opPCc__10CVFilePathFv
 /* 80026678 000175F8  7C 64 1B 78 */	mr r4, r3
 /* 8002667C 000175FC  38 61 00 08 */	addi r3, r1, 0x8
 /* 80026680 00017600  48 09 3D 15 */	bl strcpy
@@ -331,7 +331,7 @@ func_8002672C:
 /* 80026734 000176B4  48 09 3C 61 */	bl strcpy
 /* 80026738 000176B8  7F A3 EB 78 */	mr r3, r29
 /* 8002673C 000176BC  38 81 00 08 */	addi r4, r1, 0x8
-/* 80026740 000176C0  4B FF FC D1 */	bl func_80026410
+/* 80026740 000176C0  4B FF FC D1 */	bl __as__10CVFilePathFPCc
 /* 80026744 000176C4  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 80026748 000176C8  83 E1 01 1C */	lwz r31, 0x11c(r1)
 /* 8002674C 000176CC  83 C1 01 18 */	lwz r30, 0x118(r1)

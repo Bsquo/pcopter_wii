@@ -1035,28 +1035,28 @@ lbl_8000CB00:
 	.4byte lbl_800262E8
 	.4byte 0x00000058
 	.4byte lbl_800076B0
-	.4byte func_80026370
+	.4byte __ct__10CVFilePathFv
 	.4byte 0x00000038
 	.4byte lbl_800076B8
 	.4byte __ct__10CVFilePathFPc
 	.4byte 0x00000030
 	.4byte lbl_800076C0
-	.4byte func_800263D8
+	.4byte __as__10CVFilePathFRC10CVFilePath
 	.4byte 0x00000038
 	.4byte lbl_800076C8
-	.4byte func_80026410
+	.4byte __as__10CVFilePathFPCc
 	.4byte 0x00000030
 	.4byte lbl_800076D0
-	.4byte func_80026440
+	.4byte __apl__10CVFilePathFPCc
 	.4byte 0x00000030
 	.4byte lbl_800076D8
-	.4byte func_80026470
+	.4byte __opPCc__10CVFilePathFv
 	.4byte 0x0000003C
 	.4byte lbl_800076E0
-	.4byte func_800264AC
+	.4byte __opPc__10CVFilePathFv
 	.4byte 0x0000003C
 	.4byte lbl_800076E8
-	.4byte func_800264FC
+	.4byte GetDirectory__10CVFilePathFv
 	.4byte 0x00000084
 	.4byte lbl_800076F0
 	.4byte func_80026580

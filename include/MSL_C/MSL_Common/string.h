@@ -13,6 +13,7 @@ char* strcat(char*, const char*);
 int strcmp(const char*, const char*);
 int strncmp(const char*, const char*, size_t);
 char* strchr(char*, int);
+size_t strlen(const char * str);
 
 #ifdef __cplusplus
 }

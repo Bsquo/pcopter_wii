@@ -27,20 +27,14 @@ lbl_801B9B38:
 
 	# ROM: 0x1B5C38
 	.asciz "AnimLoop"
-	.byte 0x41, 0x6E, 0x69
-	.asciz "m/#%d/anim_node"
-	.asciz "Anim/#%d/loop_mode"
-	.byte 0x41
-	.asciz "nim/#%d/anim_rate"
-	.byte 0x41, 0x6E
-	.asciz "im/#%d/anim_state"
-	.byte 0x41, 0x6E
-	.asciz "im/#%d/init_state"
-	.byte 0x41, 0x6E
-	.asciz "im/#%d/auto_ret"
 	.asciz "Anim/#%d/anim_node"
-	.byte 0x41
-	.asciz "LL_NODE"
+	.asciz "Anim/#%d/loop_mode"
+	.asciz "Anim/#%d/anim_rate"
+	.asciz "Anim/#%d/anim_state"
+	.asciz "Anim/#%d/init_state"
+	.asciz "Anim/#%d/auto_ret"
+	.asciz "Anim/#%d/anim_node"
+	.asciz "ALL_NODE"
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
@@ -2360,7 +2354,7 @@ func_80022A1C:
 /* 80022A2C 000139AC  3B C0 00 00 */	li r30, 0x0
 /* 80022A30 000139B0  2C 1D FF FF */	cmpwi r29, -0x1
 /* 80022A34 000139B4  41 82 00 24 */	beq lbl_80022A58
-/* 80022A38 000139B8  4B FF 2E D9 */	bl func_80015910
+/* 80022A38 000139B8  4B FF 2E D9 */	bl GetInstance__11CScenaryMgrFv
 /* 80022A3C 000139BC  57 A4 04 3E */	clrlwi r4, r29, 16
 /* 80022A40 000139C0  38 63 02 0C */	addi r3, r3, 0x20c
 /* 80022A44 000139C4  48 00 3D B1 */	bl Check__6CVFlagFUs
@@ -2382,7 +2376,7 @@ lbl_80022A70:
 /* 80022A7C 000139FC  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80022A80 00013A00  40 82 00 14 */	bne lbl_80022A94
 lbl_80022A84:
-/* 80022A84 00013A04  4B FF 2E 8D */	bl func_80015910
+/* 80022A84 00013A04  4B FF 2E 8D */	bl GetInstance__11CScenaryMgrFv
 /* 80022A88 00013A08  7F 84 E3 78 */	mr r4, r28
 /* 80022A8C 00013A0C  48 02 4F 15 */	bl func_800479A0
 /* 80022A90 00013A10  7F 7B 18 38 */	and r27, r27, r3

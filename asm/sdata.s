@@ -372,8 +372,8 @@ lbl_8060E2B8:
 	.4byte lbl_801BD3BC
 	.4byte lbl_801CBF74
 
-.global lbl_8060E2C0
-lbl_8060E2C0:
+.global __RTTI__10CAirBullet
+__RTTI__10CAirBullet:
 
 	# ROM: 0x1EE4C0
 	.4byte lbl_801BD498

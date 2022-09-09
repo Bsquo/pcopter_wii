@@ -336,7 +336,7 @@ lbl_8000CB00:
 	.4byte func_800158AC
 	.4byte 0x00000064
 	.4byte lbl_80006BA4
-	.4byte func_80015910
+	.4byte GetInstance__11CScenaryMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006BAC
 	.4byte func_80015974
@@ -2874,7 +2874,7 @@ lbl_8000CB00:
 	.4byte lbl_8004DE94
 	.4byte 0x00000080
 	.4byte lbl_80009A2C
-	.4byte func_8004DF14
+	.4byte __ct__10CAirBulletF8CVVector8CVVectorP7CVActorUlUl
 	.4byte 0x00000074
 	.4byte lbl_80009A34
 	.4byte Calc__10CAirBulletFv
@@ -2892,7 +2892,7 @@ lbl_8000CB00:
 	.4byte func_8004E638
 	.4byte 0x0000016C
 	.4byte lbl_80009A7C
-	.4byte lbl_8004E7A4
+	.4byte __dt__10CAirBulletFv
 	.4byte 0x00000058
 	.4byte lbl_80009A84
 	.4byte func_8004E7FC

@@ -14,39 +14,27 @@ lbl_801BD4A4:
 
 	# ROM: 0x1B95A4
 	.asciz "ACLaunch"
-	.byte 0x41, 0x43, 0x4C
-	.asciz "aunch"
-	.byte 0x53, 0x45
-	.asciz "_Tyakudan"
-	.byte 0x41, 0x43
-	.asciz "Bullet"
-	.byte 0x41
-	.asciz "CBullet"
+	.asciz "ACLaunch"
+	.asciz "SE_Tyakudan"
+	.asciz "ACBullet"
+	.asciz "ACBullet"
 	.asciz "AirCannon/life"
-	.byte 0x41
-	.asciz "irCannon/limit_num"
-	.byte 0x41
-	.asciz "irCannon/speed"
-	.byte 0x41
-	.asciz "irCannon/power"
-	.byte 0x67
-	.4byte 0x756E006D
-	.asciz "uzzle"
-	.byte 0x67, 0x75
-	.4byte 0x6E006775
-	.4byte 0x6E005345
-	.asciz "_Missile_A02"
-	.byte 0x53, 0x45, 0x32
-	.asciz "_Tama"
-	.byte 0x41, 0x43
-	.asciz "Fire"
-	.byte 0x41, 0x43, 0x46
-	.4byte 0x69726500
+	.asciz "AirCannon/limit_num"
+	.asciz "AirCannon/speed"
+	.asciz "AirCannon/power"
+	.asciz "gun"
+	.asciz "muzzle"
+	.asciz "gun"
+	.asciz "gun"
+	.asciz "SE_Missile_A02"
+	.asciz "SE2_Tama"
+	.asciz "ACFire"
+	.asciz "ACFire"
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8004DF14
-func_8004DF14:
+.global __ct__10CAirBulletF8CVVector8CVVectorP7CVActorUlUl
+__ct__10CAirBulletF8CVVector8CVVectorP7CVActorUlUl:
 /* 8004DF14 0003EE94  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8004DF18 0003EE98  7C 08 02 A6 */	mflr r0
 /* 8004DF1C 0003EE9C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -58,9 +46,9 @@ func_8004DF14:
 /* 8004DF34 0003EEB4  7C FE 3B 78 */	mr r30, r7
 /* 8004DF38 0003EEB8  7D 1F 43 78 */	mr r31, r8
 /* 8004DF3C 0003EEBC  4B FD 88 D9 */	bl __ct__10CVListBaseFv
-/* 8004DF40 0003EEC0  3C A0 80 1D */	lis r5, lbl_801CBF80@ha
+/* 8004DF40 0003EEC0  3C A0 80 1D */	lis r5, __vt__10CAirBullet@ha
 /* 8004DF44 0003EEC4  7F 64 DB 78 */	mr r4, r27
-/* 8004DF48 0003EEC8  38 A5 BF 80 */	addi r5, r5, lbl_801CBF80@l
+/* 8004DF48 0003EEC8  38 A5 BF 80 */	addi r5, r5, __vt__10CAirBullet@l
 /* 8004DF4C 0003EECC  38 7A 00 14 */	addi r3, r26, 0x14
 /* 8004DF50 0003EED0  90 BA 00 10 */	stw r5, 0x10(r26)
 /* 8004DF54 0003EED4  4B FC F2 E1 */	bl __ct__8CVVectorFRC8CVVector
@@ -113,7 +101,7 @@ Calc__10CAirBulletFv:
 /* 8004E004 0003EF84  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8004E008 0003EF88  80 1F 00 1C */	lwz r0, 0x1c(r31)
 /* 8004E00C 0003EF8C  90 01 00 28 */	stw r0, 0x28(r1)
-/* 8004E010 0003EF90  4B FC 79 01 */	bl func_80015910
+/* 8004E010 0003EF90  4B FC 79 01 */	bl GetInstance__11CScenaryMgrFv
 /* 8004E014 0003EF94  80 9F 00 2C */	lwz r4, 0x2c(r31)
 /* 8004E018 0003EF98  38 C1 00 20 */	addi r6, r1, 0x20
 /* 8004E01C 0003EF9C  80 BF 00 30 */	lwz r5, 0x30(r31)
@@ -500,7 +488,7 @@ func_8004E53C:
 /* 8004E588 0003F508  91 41 00 14 */	stw r10, 0x14(r1)
 /* 8004E58C 0003F50C  91 21 00 18 */	stw r9, 0x18(r1)
 /* 8004E590 0003F510  90 01 00 1C */	stw r0, 0x1c(r1)
-/* 8004E594 0003F514  4B FF F9 81 */	bl func_8004DF14
+/* 8004E594 0003F514  4B FF F9 81 */	bl __ct__10CAirBulletF8CVVector8CVVectorP7CVActorUlUl
 lbl_8004E598:
 /* 8004E598 0003F518  2C 1E 00 00 */	cmpwi r30, 0x0
 /* 8004E59C 0003F51C  41 82 00 78 */	beq lbl_8004E614
@@ -652,8 +640,8 @@ func_8004E784:
 /* 8004E79C 0003F71C  38 21 00 50 */	addi r1, r1, 0x50
 /* 8004E7A0 0003F720  4E 80 00 20 */	blr
 
-.global lbl_8004E7A4
-lbl_8004E7A4:
+.global __dt__10CAirBulletFv
+__dt__10CAirBulletFv:
 /* 8004E7A4 0003F724  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004E7A8 0003F728  7C 08 02 A6 */	mflr r0
 /* 8004E7AC 0003F72C  2C 03 00 00 */	cmpwi r3, 0x0
@@ -680,13 +668,13 @@ lbl_8004E7E0:
 
 .section .data, "wa", @progbits 
 
-.global lbl_801CBF80
-lbl_801CBF80:
+.global __vt__10CAirBullet
+__vt__10CAirBullet:
 
 	# ROM: 0x1C8080
-	.4byte lbl_8060E2C0
+	.4byte __RTTI__10CAirBullet
 	.4byte 0
-	.4byte lbl_8004E7A4
+	.4byte __dt__10CAirBulletFv
 
 .global lbl_801CBF8C
 lbl_801CBF8C:

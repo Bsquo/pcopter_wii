@@ -38,7 +38,7 @@
 #include "types.h"
 
 class CApp: public CVApp {
-    private:
+    public:
         CVFlag mFlags;
         s32 mCurrentScene;
         s32 mPreviousScene;
@@ -85,9 +85,10 @@ class CApp: public CVApp {
         static CApp* GetInstance();
         bool StartLocal();
         bool StartLocal2();
-        bool LoopLocal;
+        bool LoopLocal();
         void EndLocal();
         bool SetSceneIndex(int);
+        bool MenuSeenEndCheak();
         ~CApp();
 };
 

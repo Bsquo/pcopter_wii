@@ -5,14 +5,17 @@
 #include "include/game/scene/Menu/ItemList/SceneMenuItemList.h"
 #include "types.h"
 
-// Unused Treasure scene
+// Customize menu & Shop Buy / Sell menu
 class CSceneMenuPartSelect: public CSceneMenuBase {
-	private:
+	public:
 		CSceneMenuItemList mMenuItemList;
-		UNK8 field_0x17EC[200];
+        UNK8 field_0x17EC[72];
+        UNK32 field_0x1834;
+		UNK8 field_0x1838[124];
 
 	public:
 		CSceneMenuPartSelect();
+        void SetSelectCopter(int);
 		virtual bool StartLocal();
 		virtual bool CalcLocal();
 		virtual void RenderLocal();

@@ -13,7 +13,7 @@ enum eOption {
 
 // Options scene
 class CSceneMenuConfig: public CSceneMenuBase {
-	private:
+	public:
 		UNK32 field_0x7C;
 		eOption mOption;
 		UNK8 field_0x84[84];

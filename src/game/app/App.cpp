@@ -166,7 +166,7 @@ bool CApp::StartLocal() {
     // The game goes to the Debug Menu. Otherwise it goes to the Title Screen.
     // The final game doesn't read the "Cheats" category, so you will go to the Strap screen
     // no matter if you change the flag in the text file or not.
-    if (GetInstance()->mFlags.Check(6)) {
+    if (GetInstance()->mFlags.Check(SIMPLE_MENU)) {
         StartLocal2();
         SetSceneIndex(MenuMain);
         StartScene();

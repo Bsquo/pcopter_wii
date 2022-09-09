@@ -1,7 +1,7 @@
 .include "macros.s"
 .section .text, "ax"
-.global func_8012F314
-func_8012F314:
+.global __ct__Q34nw4r3snd9SoundHeapFv
+__ct__Q34nw4r3snd9SoundHeapFv:
 /* 8012F314 00120294  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8012F318 00120298  7C 08 02 A6 */	mflr r0
 /* 8012F31C 0012029C  3C 80 80 1F */	lis r4, lbl_801ED8E0@ha

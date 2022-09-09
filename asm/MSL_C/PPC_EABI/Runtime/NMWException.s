@@ -333,8 +333,8 @@ lbl_800B2D58:
 /* 800B2D70 000A3CF0  38 21 00 20 */	addi r1, r1, 0x20
 /* 800B2D74 000A3CF4  4E 80 00 20 */	blr
 
-.global func_800B2D78
-func_800B2D78:
+.global __construct_array
+__construct_array:
 /* 800B2D78 000A3CF8  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800B2D7C 000A3CFC  7C 08 02 A6 */	mflr r0
 /* 800B2D80 000A3D00  90 01 00 34 */	stw r0, 0x34(r1)

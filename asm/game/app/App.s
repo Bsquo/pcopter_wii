@@ -104,10 +104,10 @@ GetInstance__8CVPadMgrFv:
 /* 80014410 00005390  3F E0 80 50 */	lis r31, lbl_80502068@ha
 /* 80014414 00005394  38 7F 20 68 */	addi r3, r31, lbl_80502068@l
 /* 80014418 00005398  48 00 00 41 */	bl __ct__8CVPadMgrFv
-/* 8001441C 0000539C  3C 80 80 01 */	lis r4, lbl_80012780@ha
+/* 8001441C 0000539C  3C 80 80 01 */	lis r4, __dt__8CVPadMgrFv@ha
 /* 80014420 000053A0  3C A0 80 52 */	lis r5, lbl_8051D5D8@ha
 /* 80014424 000053A4  38 7F 20 68 */	addi r3, r31, lbl_80502068@l
-/* 80014428 000053A8  38 84 27 80 */	addi r4, r4, lbl_80012780@l
+/* 80014428 000053A8  38 84 27 80 */	addi r4, r4, __dt__8CVPadMgrFv@l
 /* 8001442C 000053AC  38 A5 D5 D8 */	addi r5, r5, lbl_8051D5D8@l
 /* 80014430 000053B0  48 09 E4 CD */	bl __register_global_object
 /* 80014434 000053B4  38 00 00 01 */	li r0, 0x1
@@ -261,7 +261,7 @@ StartLocal2__4CAppFv:
 /* 80014624 000055A4  7F E5 FB 78 */	mr r5, r31
 /* 80014628 000055A8  48 01 C2 89 */	bl Load__11CVEffectMgrF10CVFilePath10CVFilePath
 /* 8001462C 000055AC  48 00 02 C1 */	bl GetInstance__10CVSoundMgrFv
-/* 80014630 000055B0  48 01 8A E1 */	bl func_8002D110
+/* 80014630 000055B0  48 01 8A E1 */	bl Init__10CVSoundMgrFv
 /* 80014634 000055B4  48 00 02 B9 */	bl GetInstance__10CVSoundMgrFv
 /* 80014638 000055B8  38 9D 01 0B */	addi r4, r29, 0x10b
 /* 8001463C 000055BC  48 01 8B 09 */	bl InitArchive__10CVSoundMgrFPc
@@ -356,11 +356,11 @@ GetInstance__11CResListMgrFv:
 /* 8001476C 000056EC  40 82 00 30 */	bne lbl_8001479C
 /* 80014770 000056F0  3F E0 80 52 */	lis r31, lbl_8051D5F0@ha
 /* 80014774 000056F4  38 7F D5 F0 */	addi r3, r31, lbl_8051D5F0@l
-/* 80014778 000056F8  48 00 00 41 */	bl func_800147B8
-/* 8001477C 000056FC  3C 80 80 01 */	lis r4, lbl_800147E8@ha
+/* 80014778 000056F8  48 00 00 41 */	bl __ct__11CResListMgrFv
+/* 8001477C 000056FC  3C 80 80 01 */	lis r4, __dt__11CResListMgrFv@ha
 /* 80014780 00005700  3C A0 80 52 */	lis r5, lbl_8051D5E4@ha
 /* 80014784 00005704  38 7F D5 F0 */	addi r3, r31, lbl_8051D5F0@l
-/* 80014788 00005708  38 84 47 E8 */	addi r4, r4, lbl_800147E8@l
+/* 80014788 00005708  38 84 47 E8 */	addi r4, r4, __dt__11CResListMgrFv@l
 /* 8001478C 0000570C  38 A5 D5 E4 */	addi r5, r5, lbl_8051D5E4@l
 /* 80014790 00005710  48 09 E1 6D */	bl __register_global_object
 /* 80014794 00005714  38 00 00 01 */	li r0, 0x1
@@ -374,8 +374,8 @@ lbl_8001479C:
 /* 800147B0 00005730  38 21 00 10 */	addi r1, r1, 0x10
 /* 800147B4 00005734  4E 80 00 20 */	blr
 
-.global func_800147B8
-func_800147B8:
+.global __ct__11CResListMgrFv
+__ct__11CResListMgrFv:
 /* 800147B8 00005738  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800147BC 0000573C  7C 08 02 A6 */	mflr r0
 /* 800147C0 00005740  90 01 00 14 */	stw r0, 0x14(r1)
@@ -389,8 +389,8 @@ func_800147B8:
 /* 800147E0 00005760  38 21 00 10 */	addi r1, r1, 0x10
 /* 800147E4 00005764  4E 80 00 20 */	blr
 
-.global lbl_800147E8
-lbl_800147E8:
+.global __dt__11CResListMgrFv
+__dt__11CResListMgrFv:
 /* 800147E8 00005768  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800147EC 0000576C  7C 08 02 A6 */	mflr r0
 /* 800147F0 00005770  2C 03 00 00 */	cmpwi r3, 0x0
@@ -426,7 +426,7 @@ GetInstance__11CVEffectMgrFv:
 /* 80014858 000057D8  40 82 00 30 */	bne lbl_80014888
 /* 8001485C 000057DC  3F E0 80 1F */	lis r31, lbl_801F1F20@ha
 /* 80014860 000057E0  38 7F 1F 20 */	addi r3, r31, lbl_801F1F20@l
-/* 80014864 000057E4  48 00 00 41 */	bl func_800148A4
+/* 80014864 000057E4  48 00 00 41 */	bl __ct__11CVEffectMgrFv
 /* 80014868 000057E8  3C 80 80 01 */	lis r4, lbl_80012C1C@ha
 /* 8001486C 000057EC  3C A0 80 52 */	lis r5, lbl_8051D5C0@ha
 /* 80014870 000057F0  38 7F 1F 20 */	addi r3, r31, lbl_801F1F20@l
@@ -444,8 +444,8 @@ lbl_80014888:
 /* 8001489C 0000581C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800148A0 00005820  4E 80 00 20 */	blr
 
-.global func_800148A4
-func_800148A4:
+.global __ct__11CVEffectMgrFv
+__ct__11CVEffectMgrFv:
 /* 800148A4 00005824  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800148A8 00005828  7C 08 02 A6 */	mflr r0
 /* 800148AC 0000582C  3C A0 80 1D */	lis r5, lbl_801CA618@ha
@@ -476,7 +476,7 @@ GetInstance__10CVSoundMgrFv:
 /* 80014904 00005884  40 82 00 30 */	bne lbl_80014934
 /* 80014908 00005888  3F E0 80 50 */	lis r31, lbl_80501A74@ha
 /* 8001490C 0000588C  38 7F 1A 74 */	addi r3, r31, lbl_80501A74@l
-/* 80014910 00005890  48 00 00 41 */	bl func_80014950
+/* 80014910 00005890  48 00 00 41 */	bl __ct__10CVSoundMgrFv
 /* 80014914 00005894  3C 80 80 01 */	lis r4, lbl_8001288C@ha
 /* 80014918 00005898  3C A0 80 52 */	lis r5, lbl_8051D5CC@ha
 /* 8001491C 0000589C  38 7F 1A 74 */	addi r3, r31, lbl_80501A74@l
@@ -494,8 +494,8 @@ lbl_80014934:
 /* 80014948 000058C8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8001494C 000058CC  4E 80 00 20 */	blr
 
-.global func_80014950
-func_80014950:
+.global __ct__10CVSoundMgrFv
+__ct__10CVSoundMgrFv:
 /* 80014950 000058D0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80014954 000058D4  7C 08 02 A6 */	mflr r0
 /* 80014958 000058D8  3C 80 80 1D */	lis r4, lbl_801CA5DC@ha
@@ -504,19 +504,19 @@ func_80014950:
 /* 80014964 000058E4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80014968 000058E8  7C 7F 1B 78 */	mr r31, r3
 /* 8001496C 000058EC  90 83 03 D8 */	stw r4, 0x3d8(r3)
-/* 80014970 000058F0  48 11 00 A1 */	bl func_80124A10
+/* 80014970 000058F0  48 11 00 A1 */	bl __ct__Q34nw4r3snd15DvdSoundArchiveFv
 /* 80014974 000058F4  38 7F 01 8C */	addi r3, r31, 0x18c
-/* 80014978 000058F8  48 11 82 5D */	bl func_8012CBD4
+/* 80014978 000058F8  48 11 82 5D */	bl __ct__Q34nw4r3snd18SoundArchivePlayerFv
 /* 8001497C 000058FC  38 7F 02 6C */	addi r3, r31, 0x26c
-/* 80014980 00005900  48 11 A9 95 */	bl func_8012F314
-/* 80014984 00005904  3C 80 80 03 */	lis r4, lbl_8002CB08@ha
-/* 80014988 00005908  3C A0 80 01 */	lis r5, lbl_8001292C@ha
+/* 80014980 00005900  48 11 A9 95 */	bl __ct__Q34nw4r3snd9SoundHeapFv
+/* 80014984 00005904  3C 80 80 03 */	lis r4, __ct__12CVSoundGroupFv@ha
+/* 80014988 00005908  3C A0 80 01 */	lis r5, __dt__12CVSoundGroupFv@ha
 /* 8001498C 0000590C  38 7F 02 98 */	addi r3, r31, 0x298
 /* 80014990 00005910  38 C0 00 28 */	li r6, 0x28
-/* 80014994 00005914  38 84 CB 08 */	addi r4, r4, lbl_8002CB08@l
-/* 80014998 00005918  38 A5 29 2C */	addi r5, r5, lbl_8001292C@l
+/* 80014994 00005914  38 84 CB 08 */	addi r4, r4, __ct__12CVSoundGroupFv@l
+/* 80014998 00005918  38 A5 29 2C */	addi r5, r5, __dt__12CVSoundGroupFv@l
 /* 8001499C 0000591C  38 E0 00 08 */	li r7, 0x8
-/* 800149A0 00005920  48 09 E3 D9 */	bl func_800B2D78
+/* 800149A0 00005920  48 09 E3 D9 */	bl __construct_array
 /* 800149A4 00005924  7F E3 FB 78 */	mr r3, r31
 /* 800149A8 00005928  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800149AC 0000592C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -749,7 +749,7 @@ func_80014C40:
 /* 80014C48 00005BC8  48 00 00 0C */	b func_80014C54
 lbl_80014C4C:
 /* 80014C4C 00005BCC  7F E3 FB 78 */	mr r3, r31
-/* 80014C50 00005BD0  48 00 00 75 */	bl func_80014CC4
+/* 80014C50 00005BD0  48 00 00 75 */	bl MenuSeenEndCheak__4CAppFv
 
 .global func_80014C54
 func_80014C54:
@@ -782,16 +782,16 @@ EndLocal__4CAppFv:
 /* 80014C9C 00005C1C  7C 08 02 A6 */	mflr r0
 /* 80014CA0 00005C20  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80014CA4 00005C24  4B FF FA B1 */	bl GetInstance__11CResListMgrFv
-/* 80014CA8 00005C28  48 03 46 D1 */	bl func_80049378
-/* 80014CAC 00005C2C  48 07 14 91 */	bl func_8008613C
-/* 80014CB0 00005C30  48 03 58 F1 */	bl func_8004A5A0
+/* 80014CA8 00005C28  48 03 46 D1 */	bl Release__11CResListMgrFv
+/* 80014CAC 00005C2C  48 07 14 91 */	bl BackThreadEnd__Fv
+/* 80014CB0 00005C30  48 03 58 F1 */	bl THPSimpleQuit
 /* 80014CB4 00005C34  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80014CB8 00005C38  7C 08 03 A6 */	mtlr r0
 /* 80014CBC 00005C3C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80014CC0 00005C40  4E 80 00 20 */	blr
 
-.global func_80014CC4
-func_80014CC4:
+.global MenuSeenEndCheak__4CAppFv
+MenuSeenEndCheak__4CAppFv:
 /* 80014CC4 00005C44  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80014CC8 00005C48  7C 08 02 A6 */	mflr r0
 /* 80014CCC 00005C4C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1270,7 +1270,7 @@ lbl_80015260:
 /* 80015280 00006200  7C 64 1B 78 */	mr r4, r3
 /* 80015284 00006204  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 80015288 00006208  38 63 AD 38 */	addi r3, r3, -0x52c8
-/* 8001528C 0000620C  48 00 03 D1 */	bl func_8001565C
+/* 8001528C 0000620C  48 00 03 D1 */	bl SetSelectCopter__20CSceneMenuPartSelectFi
 /* 80015290 00006210  3C 7F 00 01 */	addis r3, r31, 0x1
 /* 80015294 00006214  38 00 00 02 */	li r0, 0x2
 /* 80015298 00006218  90 03 C5 6C */	stw r0, -0x3a94(r3)
@@ -1594,15 +1594,15 @@ func_8001564C:
 /* 80015654 000065D4  90 03 01 80 */	stw r0, 0x180(r3)
 /* 80015658 000065D8  4E 80 00 20 */	blr
 
-.global func_8001565C
-func_8001565C:
+.global SetSelectCopter__20CSceneMenuPartSelectFi
+SetSelectCopter__20CSceneMenuPartSelectFi:
 /* 8001565C 000065DC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80015660 000065E0  7C 08 02 A6 */	mflr r0
 /* 80015664 000065E4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80015668 000065E8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8001566C 000065EC  7C 7F 1B 78 */	mr r31, r3
 /* 80015670 000065F0  38 63 00 7C */	addi r3, r3, 0x7c
-/* 80015674 000065F4  48 05 AE 75 */	bl func_800704E8
+/* 80015674 000065F4  48 05 AE 75 */	bl SetCopter__18CSceneMenuItemListFi
 /* 80015678 000065F8  38 00 00 06 */	li r0, 0x6
 /* 8001567C 000065FC  90 1F 18 3C */	stw r0, 0x183c(r31)
 /* 80015680 00006600  83 E1 00 0C */	lwz r31, 0xc(r1)

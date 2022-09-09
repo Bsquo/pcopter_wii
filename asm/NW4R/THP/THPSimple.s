@@ -86,8 +86,8 @@ func_8004A58C:
 /* 8004A598 0003B518  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004A59C 0003B51C  4E 80 00 20 */	blr
 
-.global func_8004A5A0
-func_8004A5A0:
+.global THPSimpleQuit
+THPSimpleQuit:
 /* 8004A5A0 0003B520  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004A5A4 0003B524  7C 08 02 A6 */	mflr r0
 /* 8004A5A8 0003B528  90 01 00 14 */	stw r0, 0x14(r1)

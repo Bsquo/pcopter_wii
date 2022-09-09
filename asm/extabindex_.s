@@ -132,7 +132,7 @@ lbl_8000CB00:
 	.4byte __dt__4CAppFv
 	.4byte 0x00000238
 	.4byte lbl_800068F0
-	.4byte lbl_80012780
+	.4byte __dt__8CVPadMgrFv
 	.4byte 0x00000060
 	.4byte lbl_800068F8
 	.4byte lbl_800127E4
@@ -141,7 +141,7 @@ lbl_8000CB00:
 	.4byte lbl_8001288C
 	.4byte 0x0000009C
 	.4byte lbl_80006908
-	.4byte lbl_8001292C
+	.4byte __dt__12CVSoundGroupFv
 	.4byte 0x00000064
 	.4byte lbl_80006910
 	.4byte lbl_80012990
@@ -300,22 +300,22 @@ lbl_8000CB00:
 	.4byte GetInstance__11CResListMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006B08
-	.4byte func_800147B8
+	.4byte __ct__11CResListMgrFv
 	.4byte 0x00000030
 	.4byte lbl_80006B10
-	.4byte lbl_800147E8
+	.4byte __dt__11CResListMgrFv
 	.4byte 0x00000058
 	.4byte lbl_80006B18
 	.4byte GetInstance__11CVEffectMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006B20
-	.4byte func_800148A4
+	.4byte __ct__11CVEffectMgrFv
 	.4byte 0x00000048
 	.4byte lbl_80006B28
 	.4byte GetInstance__10CVSoundMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006B30
-	.4byte func_80014950
+	.4byte __ct__10CVSoundMgrFv
 	.4byte 0x0000006C
 	.4byte lbl_80006B38
 	.4byte LoopLocal__4CAppFv
@@ -324,10 +324,10 @@ lbl_8000CB00:
 	.4byte EndLocal__4CAppFv
 	.4byte 0x0000002C
 	.4byte lbl_80006B84
-	.4byte func_80014CC4
+	.4byte MenuSeenEndCheak__4CAppFv
 	.4byte 0x0000095C
 	.4byte lbl_80006B8C
-	.4byte func_8001565C
+	.4byte SetSelectCopter__20CSceneMenuPartSelectFi
 	.4byte 0x00000038
 	.4byte lbl_80006B94
 	.4byte lbl_8001569C
@@ -1527,7 +1527,7 @@ lbl_8000CB00:
 	.4byte func_8002CA48
 	.4byte 0x000000BC
 	.4byte lbl_80007D24
-	.4byte lbl_8002CB08
+	.4byte __ct__12CVSoundGroupFv
 	.4byte 0x00000054
 	.4byte lbl_80007D3C
 	.4byte lbl_8002CB5C
@@ -1572,7 +1572,7 @@ lbl_8000CB00:
 	.4byte func_8002D0A4
 	.4byte 0x0000005C
 	.4byte lbl_80007DAC
-	.4byte func_8002D110
+	.4byte Init__10CVSoundMgrFv
 	.4byte 0x00000034
 	.4byte lbl_80007DB4
 	.4byte InitArchive__10CVSoundMgrFPc
@@ -2751,7 +2751,7 @@ lbl_8000CB00:
 	.4byte func_8004A498
 	.4byte 0x00000108
 	.4byte lbl_800097F8
-	.4byte func_8004A5A0
+	.4byte THPSimpleQuit
 	.4byte 0x00000054
 	.4byte lbl_80009800
 	.4byte func_8004A5F4
@@ -3752,7 +3752,7 @@ lbl_80010138:
 	.4byte func_80070420
 	.4byte 0x000000C8
 	.4byte lbl_8000B11C
-	.4byte func_800704E8
+	.4byte SetCopter__18CSceneMenuItemListFi
 	.4byte 0x0000004C
 	.4byte lbl_8000B124
 	.4byte func_80070534
@@ -4259,7 +4259,7 @@ lbl_80010138:
 	.4byte lbl_800B2CBC
 	.4byte 0x000000BC
 	.4byte lbl_8000C314
-	.4byte func_800B2D78
+	.4byte __construct_array
 	.4byte 0x000000F8
 	.4byte lbl_8000C31C
 	.4byte func_800B2E70

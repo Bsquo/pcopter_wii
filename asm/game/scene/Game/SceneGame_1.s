@@ -842,7 +842,7 @@ func_80015A94:
 /* 80015AE4 00006A64  38 84 69 20 */	addi r4, r4, __ct__6CVListFv@l
 /* 80015AE8 00006A68  38 A5 69 6C */	addi r5, r5, __dt__6CVListFv@l
 /* 80015AEC 00006A6C  38 E0 0F A0 */	li r7, 0xfa0
-/* 80015AF0 00006A70  48 09 D2 89 */	bl func_800B2D78
+/* 80015AF0 00006A70  48 09 D2 89 */	bl __construct_array
 /* 80015AF4 00006A74  7F E3 FB 78 */	mr r3, r31
 /* 80015AF8 00006A78  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80015AFC 00006A7C  80 01 00 14 */	lwz r0, 0x14(r1)

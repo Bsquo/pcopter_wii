@@ -10,6 +10,8 @@ class CVScript {
 
     public:
         CVScript();
+        bool LoadFromFile(char*);
+        f32 GetParam(char*, int);
         virtual ~CVScript();
 };
 

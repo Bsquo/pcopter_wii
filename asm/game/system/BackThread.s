@@ -354,8 +354,8 @@ func_8008610C:
 /* 80086134 000770B4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80086138 000770B8  4E 80 00 20 */	blr
 
-.global func_8008613C
-func_8008613C:
+.global BackThreadEnd__Fv
+BackThreadEnd__Fv:
 /* 8008613C 000770BC  38 00 00 00 */	li r0, 0x0
 /* 80086140 000770C0  90 0D 8F F0 */	stw r0, lbl_8060EDF0@sda21(r13)
 /* 80086144 000770C4  4E 80 00 20 */	blr

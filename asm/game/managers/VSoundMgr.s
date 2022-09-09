@@ -17,8 +17,8 @@ lbl_801BA190:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global lbl_8002CB08
-lbl_8002CB08:
+.global __ct__12CVSoundGroupFv
+__ct__12CVSoundGroupFv:
 /* 8002CB08 0001DA88  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002CB0C 0001DA8C  7C 08 02 A6 */	mflr r0
 /* 8002CB10 0001DA90  3C 80 80 03 */	lis r4, lbl_8002CB5C@ha
@@ -30,7 +30,7 @@ lbl_8002CB08:
 /* 8002CB28 0001DAA8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8002CB2C 0001DAAC  7C 7F 1B 78 */	mr r31, r3
 /* 8002CB30 0001DAB0  38 E0 00 08 */	li r7, 0x8
-/* 8002CB34 0001DAB4  48 08 62 45 */	bl func_800B2D78
+/* 8002CB34 0001DAB4  48 08 62 45 */	bl __construct_array
 /* 8002CB38 0001DAB8  C0 02 81 F8 */	lfs f0, lbl_8060FA18@sda21(r2)
 /* 8002CB3C 0001DABC  7F E3 FB 78 */	mr r3, r31
 /* 8002CB40 0001DAC0  D0 1F 00 20 */	stfs f0, 0x20(r31)
@@ -493,8 +493,8 @@ func_8002D100:
 /* 8002D108 0001E088  7C 63 02 14 */	add r3, r3, r0
 /* 8002D10C 0001E08C  4B FF FC 48 */	b func_8002CD54
 
-.global func_8002D110
-func_8002D110:
+.global Init__10CVSoundMgrFv
+Init__10CVSoundMgrFv:
 /* 8002D110 0001E090  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002D114 0001E094  7C 08 02 A6 */	mflr r0
 /* 8002D118 0001E098  38 60 00 00 */	li r3, 0x0

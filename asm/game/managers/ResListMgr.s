@@ -94,7 +94,7 @@ Init__11CResListMgrFPc:
 /* 8004916C 0003A0EC  48 00 01 60 */	b func_800492CC
 lbl_80049170:
 /* 80049170 0003A0F0  7F 03 C3 78 */	mr r3, r24
-/* 80049174 0003A0F4  48 00 02 05 */	bl func_80049378
+/* 80049174 0003A0F4  48 00 02 05 */	bl Release__11CResListMgrFv
 /* 80049178 0003A0F8  7F 24 CB 78 */	mr r4, r25
 /* 8004917C 0003A0FC  38 61 00 08 */	addi r3, r1, 0x8
 /* 80049180 0003A100  4B FE 37 75 */	bl LoadFromFile__8CVScriptFPc
@@ -246,8 +246,8 @@ func_8004932C:
 /* 80049370 0003A2F0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80049374 0003A2F4  4E 80 00 20 */	blr
 
-.global func_80049378
-func_80049378:
+.global Release__11CResListMgrFv
+Release__11CResListMgrFv:
 /* 80049378 0003A2F8  4B FD D6 68 */	b Release__6CVListFv
 
 .global func_8004937C

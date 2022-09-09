@@ -1417,8 +1417,8 @@ lbl_80012764:
 /* 80012778 000036F8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8001277C 000036FC  4E 80 00 20 */	blr
 
-.global lbl_80012780
-lbl_80012780:
+.global __dt__8CVPadMgrFv
+__dt__8CVPadMgrFv:
 /* 80012780 00003700  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80012784 00003704  7C 08 02 A6 */	mflr r0
 /* 80012788 00003708  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1510,9 +1510,9 @@ lbl_8001288C:
 /* 800128B4 00003834  38 84 A5 DC */	addi r4, r4, lbl_801CA5DC@l
 /* 800128B8 00003838  90 83 03 D8 */	stw r4, 0x3d8(r3)
 /* 800128BC 0000383C  48 00 00 6D */	bl func_80012928
-/* 800128C0 00003840  3C 80 80 01 */	lis r4, lbl_8001292C@ha
+/* 800128C0 00003840  3C 80 80 01 */	lis r4, __dt__12CVSoundGroupFv@ha
 /* 800128C4 00003844  38 7E 02 98 */	addi r3, r30, 0x298
-/* 800128C8 00003848  38 84 29 2C */	addi r4, r4, lbl_8001292C@l
+/* 800128C8 00003848  38 84 29 2C */	addi r4, r4, __dt__12CVSoundGroupFv@l
 /* 800128CC 0000384C  38 A0 00 28 */	li r5, 0x28
 /* 800128D0 00003850  38 C0 00 08 */	li r6, 0x8
 /* 800128D4 00003854  48 0A 05 9D */	bl func_800B2E70
@@ -1542,8 +1542,8 @@ lbl_8001290C:
 func_80012928:
 /* 80012928 000038A8  48 01 AA 4C */	b func_8002D374
 
-.global lbl_8001292C
-lbl_8001292C:
+.global __dt__12CVSoundGroupFv
+__dt__12CVSoundGroupFv:
 /* 8001292C 000038AC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80012930 000038B0  7C 08 02 A6 */	mflr r0
 /* 80012934 000038B4  2C 03 00 00 */	cmpwi r3, 0x0
@@ -3541,7 +3541,7 @@ __vt__8CVPadMgr:
 	# ROM: 0x1C66C4
 	.4byte lbl_8060DE20
 	.4byte 0
-	.4byte lbl_80012780
+	.4byte __dt__8CVPadMgrFv
 
 .global lbl_801CA5D0
 lbl_801CA5D0:

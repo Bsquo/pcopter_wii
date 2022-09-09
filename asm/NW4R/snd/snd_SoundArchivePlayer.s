@@ -1,7 +1,7 @@
 .include "macros.s"
 .section .text, "ax"
-.global func_8012CBD4
-func_8012CBD4:
+.global __ct__Q34nw4r3snd18SoundArchivePlayerFv
+__ct__Q34nw4r3snd18SoundArchivePlayerFv:
 /* 8012CBD4 0011DB54  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8012CBD8 0011DB58  7C 08 02 A6 */	mflr r0
 /* 8012CBDC 0011DB5C  3C C0 80 1F */	lis r6, lbl_801ED890@ha
@@ -829,7 +829,7 @@ func_8012D6F0:
 /* 8012D724 0011E6A4  38 84 CD 80 */	addi r4, r4, lbl_8012CD80@l
 /* 8012D728 0011E6A8  38 A5 CD A0 */	addi r5, r5, lbl_8012CDA0@l
 /* 8012D72C 0011E6AC  38 E0 00 80 */	li r7, 0x80
-/* 8012D730 0011E6B0  4B F8 56 49 */	bl func_800B2D78
+/* 8012D730 0011E6B0  4B F8 56 49 */	bl __construct_array
 /* 8012D734 0011E6B4  48 00 00 5C */	b func_8012D790
 lbl_8012D738:
 /* 8012D738 0011E6B8  83 7F 00 40 */	lwz r27, 0x40(r31)
@@ -913,7 +913,7 @@ lbl_8012D81C:
 /* 8012D844 0011E7C4  38 84 CD F8 */	addi r4, r4, lbl_8012CDF8@l
 /* 8012D848 0011E7C8  38 A5 CE 18 */	addi r5, r5, lbl_8012CE18@l
 /* 8012D84C 0011E7CC  38 E0 00 80 */	li r7, 0x80
-/* 8012D850 0011E7D0  4B F8 55 29 */	bl func_800B2D78
+/* 8012D850 0011E7D0  4B F8 55 29 */	bl __construct_array
 /* 8012D854 0011E7D4  48 00 00 5C */	b func_8012D8B0
 lbl_8012D858:
 /* 8012D858 0011E7D8  83 5F 00 68 */	lwz r26, 0x68(r31)
@@ -997,7 +997,7 @@ lbl_8012D93C:
 /* 8012D964 0011E8E4  38 84 CE 70 */	addi r4, r4, lbl_8012CE70@l
 /* 8012D968 0011E8E8  38 A5 CE 90 */	addi r5, r5, lbl_8012CE90@l
 /* 8012D96C 0011E8EC  38 E0 00 80 */	li r7, 0x80
-/* 8012D970 0011E8F0  4B F8 54 09 */	bl func_800B2D78
+/* 8012D970 0011E8F0  4B F8 54 09 */	bl __construct_array
 /* 8012D974 0011E8F4  48 00 00 5C */	b func_8012D9D0
 lbl_8012D978:
 /* 8012D978 0011E8F8  83 5F 00 90 */	lwz r26, 0x90(r31)

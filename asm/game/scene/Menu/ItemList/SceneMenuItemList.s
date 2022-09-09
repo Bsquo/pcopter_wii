@@ -7504,8 +7504,8 @@ func_800704D0:
 /* 800704E0 00061460  38 21 00 10 */	addi r1, r1, 0x10
 /* 800704E4 00061464  4E 80 00 20 */	blr
 
-.global func_800704E8
-func_800704E8:
+.global SetCopter__18CSceneMenuItemListFi
+SetCopter__18CSceneMenuItemListFi:
 /* 800704E8 00061468  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800704EC 0006146C  7C 08 02 A6 */	mflr r0
 /* 800704F0 00061470  90 01 00 14 */	stw r0, 0x14(r1)

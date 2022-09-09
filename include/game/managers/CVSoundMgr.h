@@ -9,7 +9,11 @@ class CVSoundMgr {
         CVSoundMgr();
     public:
         static CVSoundMgr* GetInstance();
+        void Init();
+        void InitArchive(char*);
+        void SetOutPutMode(int);
         void Update();
+        virtual ~CVSoundMgr();
 };
 
 #endif // VSOUNDMGR_H

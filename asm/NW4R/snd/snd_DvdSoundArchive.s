@@ -1,7 +1,7 @@
 .include "macros.s"
 .section .text, "ax"
-.global func_80124A10
-func_80124A10:
+.global __ct__Q34nw4r3snd15DvdSoundArchiveFv
+__ct__Q34nw4r3snd15DvdSoundArchiveFv:
 /* 80124A10 00115990  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80124A14 00115994  7C 08 02 A6 */	mflr r0
 /* 80124A18 00115998  90 01 00 14 */	stw r0, 0x14(r1)

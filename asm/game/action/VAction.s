@@ -838,7 +838,7 @@ func_8004DE30:
 /* 8004DE6C 0003EDEC  38 84 05 B4 */	addi r4, r4, __ct__8CVStringFv@l
 /* 8004DE70 0003EDF0  38 A5 06 88 */	addi r5, r5, __dt__8CVStringFv@l
 /* 8004DE74 0003EDF4  38 E0 00 04 */	li r7, 0x4
-/* 8004DE78 0003EDF8  48 06 4F 01 */	bl func_800B2D78
+/* 8004DE78 0003EDF8  48 06 4F 01 */	bl __construct_array
 /* 8004DE7C 0003EDFC  7F E3 FB 78 */	mr r3, r31
 /* 8004DE80 0003EE00  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8004DE84 0003EE04  80 01 00 14 */	lwz r0, 0x14(r1)

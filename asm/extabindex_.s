@@ -1059,10 +1059,10 @@ lbl_8000CB00:
 	.4byte GetDirectory__10CVFilePathFv
 	.4byte 0x00000084
 	.4byte lbl_800076F0
-	.4byte func_80026580
+	.4byte GetNameOnly__10CVFilePathFv
 	.4byte 0x000000C4
 	.4byte lbl_800076F8
-	.4byte func_80026648
+	.4byte CalcFullPath__10CVFilePathFP10CVFilePath
 	.4byte 0x00000118
 	.4byte lbl_80007700
 	.4byte __dt__6CVFlagFv

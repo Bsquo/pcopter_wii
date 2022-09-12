@@ -16,6 +16,11 @@ class CVFilePath {
         operator const char* ();
         operator char* ();
         void Init();
+        u32 GetLength();
+        CVFilePath GetDirectory();
+        char* GetFullPath();
+        CVFilePath GetNameOnly();
+        void CalcFullPath(CVFilePath*);
 };
 
 #endif // VFILEPATH_H

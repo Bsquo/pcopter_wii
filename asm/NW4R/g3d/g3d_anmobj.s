@@ -1,11 +1,11 @@
 .include "macros.s"
 .section .text, "ax"
-.global lbl_801A0DA4
-lbl_801A0DA4:
+.global PlayPolicy_Onetime__Q24nw4r3g3dFfff
+PlayPolicy_Onetime__Q24nw4r3g3dFfff:
 /* 801A0DA4 00191D24  FC 20 18 90 */	fmr f1, f3
 /* 801A0DA8 00191D28  4E 80 00 20 */	blr
-.global lbl_801A0DAC
-lbl_801A0DAC:
+.global PlayPolicy_Loop__Q24nw4r3g3dFfff
+PlayPolicy_Loop__Q24nw4r3g3dFfff:
 /* 801A0DAC 00191D2C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801A0DB0 00191D30  7C 08 02 A6 */	mflr r0
 /* 801A0DB4 00191D34  90 01 00 24 */	stw r0, 0x24(r1)

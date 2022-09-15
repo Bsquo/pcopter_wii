@@ -374,8 +374,8 @@ __ct__22CSceneMenuCopterSelectFv:
 /* 8003B49C 0002C41C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8003B4A0 0002C420  4E 80 00 20 */	blr
 
-.global lbl_8003B4A4
-lbl_8003B4A4:
+.global StartLocal__22CSceneMenuCopterSelectFv
+StartLocal__22CSceneMenuCopterSelectFv:
 /* 8003B4A4 0002C424  94 21 F1 10 */	stwu r1, -0xef0(r1)
 /* 8003B4A8 0002C428  7C 08 02 A6 */	mflr r0
 /* 8003B4AC 0002C42C  90 01 0E F4 */	stw r0, 0xef4(r1)
@@ -704,7 +704,7 @@ lbl_8003B8E8:
 /* 8003B910 0002C890  7C DA 02 14 */	add r6, r26, r0
 /* 8003B914 0002C894  80 C6 1A 40 */	lwz r6, 0x1a40(r6)
 /* 8003B918 0002C898  4C C6 31 82 */	crclr 6
-/* 8003B91C 0002C89C  48 07 E8 49 */	bl func_800BA164
+/* 8003B91C 0002C89C  48 07 E8 49 */	bl sprintf
 /* 8003B920 0002C8A0  38 7F 00 70 */	addi r3, r31, 0x70
 /* 8003B924 0002C8A4  38 9F 06 60 */	addi r4, r31, 0x660
 /* 8003B928 0002C8A8  38 A0 00 00 */	li r5, 0x0
@@ -712,13 +712,13 @@ lbl_8003B8E8:
 /* 8003B930 0002C8B0  7C 64 1B 78 */	mr r4, r3
 /* 8003B934 0002C8B4  38 7F 05 60 */	addi r3, r31, 0x560
 /* 8003B938 0002C8B8  4C C6 31 82 */	crclr 6
-/* 8003B93C 0002C8BC  48 07 E8 29 */	bl func_800BA164
+/* 8003B93C 0002C8BC  48 07 E8 29 */	bl sprintf
 /* 8003B940 0002C8C0  38 7F 06 60 */	addi r3, r31, 0x660
 /* 8003B944 0002C8C4  38 9B 02 3D */	addi r4, r27, 0x23d
 /* 8003B948 0002C8C8  38 BB 02 46 */	addi r5, r27, 0x246
 /* 8003B94C 0002C8CC  38 DF 05 60 */	addi r6, r31, 0x560
 /* 8003B950 0002C8D0  4C C6 31 82 */	crclr 6
-/* 8003B954 0002C8D4  48 07 E8 11 */	bl func_800BA164
+/* 8003B954 0002C8D4  48 07 E8 11 */	bl sprintf
 /* 8003B958 0002C8D8  7F 43 D3 78 */	mr r3, r26
 /* 8003B95C 0002C8DC  7F C5 F3 78 */	mr r5, r30
 /* 8003B960 0002C8E0  38 9F 06 60 */	addi r4, r31, 0x660
@@ -754,7 +754,7 @@ lbl_8003B9A4:
 /* 8003B9D0 0002C950  38 BF 05 60 */	addi r5, r31, 0x560
 /* 8003B9D4 0002C954  38 84 02 A8 */	addi r4, r4, 0x2a8
 /* 8003B9D8 0002C958  4C C6 31 82 */	crclr 6
-/* 8003B9DC 0002C95C  48 07 E7 89 */	bl func_800BA164
+/* 8003B9DC 0002C95C  48 07 E7 89 */	bl sprintf
 /* 8003B9E0 0002C960  80 7A 1E B8 */	lwz r3, 0x1eb8(r26)
 /* 8003B9E4 0002C964  38 BF 04 60 */	addi r5, r31, 0x460
 /* 8003B9E8 0002C968  38 80 00 00 */	li r4, 0x0
@@ -809,7 +809,7 @@ func_8003BA78:
 /* 8003BAA0 0002CA20  38 7F 03 60 */	addi r3, r31, 0x360
 /* 8003BAA4 0002CA24  38 9B 02 AF */	addi r4, r27, 0x2af
 /* 8003BAA8 0002CA28  4C C6 31 82 */	crclr 6
-/* 8003BAAC 0002CA2C  48 07 E6 B9 */	bl func_800BA164
+/* 8003BAAC 0002CA2C  48 07 E6 B9 */	bl sprintf
 /* 8003BAB0 0002CA30  7F 83 E3 78 */	mr r3, r28
 /* 8003BAB4 0002CA34  38 9F 03 60 */	addi r4, r31, 0x360
 /* 8003BAB8 0002CA38  48 12 31 69 */	bl func_8015EC20
@@ -890,7 +890,7 @@ lbl_8003BBA8:
 /* 8003BBB4 0002CB34  38 7F 02 60 */	addi r3, r31, 0x260
 /* 8003BBB8 0002CB38  38 84 02 C2 */	addi r4, r4, 0x2c2
 /* 8003BBBC 0002CB3C  4C C6 31 82 */	crclr 6
-/* 8003BBC0 0002CB40  48 07 E5 A5 */	bl func_800BA164
+/* 8003BBC0 0002CB40  48 07 E5 A5 */	bl sprintf
 /* 8003BBC4 0002CB44  80 7A 1F 10 */	lwz r3, 0x1f10(r26)
 /* 8003BBC8 0002CB48  4B FF 29 29 */	bl func_8002E4F0
 /* 8003BBCC 0002CB4C  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -990,7 +990,7 @@ lbl_8003BD10:
 /* 8003BD1C 0002CC9C  38 7F 01 60 */	addi r3, r31, 0x160
 /* 8003BD20 0002CCA0  38 84 02 DB */	addi r4, r4, 0x2db
 /* 8003BD24 0002CCA4  4C C6 31 82 */	crclr 6
-/* 8003BD28 0002CCA8  48 07 E4 3D */	bl func_800BA164
+/* 8003BD28 0002CCA8  48 07 E4 3D */	bl sprintf
 /* 8003BD2C 0002CCAC  80 7A 1F 10 */	lwz r3, 0x1f10(r26)
 /* 8003BD30 0002CCB0  4B FF 27 C1 */	bl func_8002E4F0
 /* 8003BD34 0002CCB4  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -1280,8 +1280,8 @@ func_8003C0F0:
 /* 8003C0F4 0002D074  D0 43 00 04 */	stfs f2, 0x4(r3)
 /* 8003C0F8 0002D078  4E 80 00 20 */	blr
 
-.global lbl_8003C0FC
-lbl_8003C0FC:
+.global CalcLocal__22CSceneMenuCopterSelectFv
+CalcLocal__22CSceneMenuCopterSelectFv:
 /* 8003C0FC 0002D07C  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 8003C100 0002D080  7C 08 02 A6 */	mflr r0
 /* 8003C104 0002D084  90 01 00 94 */	stw r0, 0x94(r1)
@@ -1752,13 +1752,13 @@ func_8003C734:
 /* 8003C75C 0002D6DC  38 21 00 90 */	addi r1, r1, 0x90
 /* 8003C760 0002D6E0  4E 80 00 20 */	blr
 
-.global lbl_8003C764
-lbl_8003C764:
+.global CalcLocalPause__22CSceneMenuCopterSelectFv
+CalcLocalPause__22CSceneMenuCopterSelectFv:
 /* 8003C764 0002D6E4  38 60 00 01 */	li r3, 0x1
 /* 8003C768 0002D6E8  4E 80 00 20 */	blr
 
-.global lbl_8003C76C
-lbl_8003C76C:
+.global RenderLocal__22CSceneMenuCopterSelectFv
+RenderLocal__22CSceneMenuCopterSelectFv:
 /* 8003C76C 0002D6EC  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 8003C770 0002D6F0  7C 08 02 A6 */	mflr r0
 /* 8003C774 0002D6F4  90 01 00 74 */	stw r0, 0x74(r1)
@@ -1819,13 +1819,13 @@ lbl_8003C828:
 /* 8003C84C 0002D7CC  38 21 00 70 */	addi r1, r1, 0x70
 /* 8003C850 0002D7D0  4E 80 00 20 */	blr
 
-.global lbl_8003C854
-lbl_8003C854:
+.global RenderLocalPause__22CSceneMenuCopterSelectFv
+RenderLocalPause__22CSceneMenuCopterSelectFv:
 /* 8003C854 0002D7D4  38 60 00 01 */	li r3, 0x1
 /* 8003C858 0002D7D8  4E 80 00 20 */	blr
 
-.global lbl_8003C85C
-lbl_8003C85C:
+.global EndLocal__22CSceneMenuCopterSelectFv
+EndLocal__22CSceneMenuCopterSelectFv:
 /* 8003C85C 0002D7DC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8003C860 0002D7E0  7C 08 02 A6 */	mflr r0
 /* 8003C864 0002D7E4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2213,7 +2213,7 @@ lbl_8003CDC0:
 /* 8003CDC4 0002DD44  38 61 02 10 */	addi r3, r1, 0x210
 /* 8003CDC8 0002DD48  38 9E 03 57 */	addi r4, r30, 0x357
 /* 8003CDCC 0002DD4C  4C C6 31 82 */	crclr 6
-/* 8003CDD0 0002DD50  48 07 D3 95 */	bl func_800BA164
+/* 8003CDD0 0002DD50  48 07 D3 95 */	bl sprintf
 /* 8003CDD4 0002DD54  80 7F 1F 10 */	lwz r3, 0x1f10(r31)
 /* 8003CDD8 0002DD58  4B FF 17 19 */	bl func_8002E4F0
 /* 8003CDDC 0002DD5C  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -2388,7 +2388,7 @@ lbl_8003D020:
 /* 8003D024 0002DFA4  38 61 01 10 */	addi r3, r1, 0x110
 /* 8003D028 0002DFA8  38 9D 03 63 */	addi r4, r29, 0x363
 /* 8003D02C 0002DFAC  4C C6 31 82 */	crclr 6
-/* 8003D030 0002DFB0  48 07 D1 35 */	bl func_800BA164
+/* 8003D030 0002DFB0  48 07 D1 35 */	bl sprintf
 /* 8003D034 0002DFB4  80 7F 1F 10 */	lwz r3, 0x1f10(r31)
 /* 8003D038 0002DFB8  4B FF 14 B9 */	bl func_8002E4F0
 /* 8003D03C 0002DFBC  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -2896,7 +2896,7 @@ lbl_8003D700:
 /* 8003D708 0002E688  38 84 B8 88 */	addi r4, r4, lbl_801BB888@l
 /* 8003D70C 0002E68C  38 84 03 93 */	addi r4, r4, 0x393
 /* 8003D710 0002E690  4C C6 31 82 */	crclr 6
-/* 8003D714 0002E694  48 07 CA 51 */	bl func_800BA164
+/* 8003D714 0002E694  48 07 CA 51 */	bl sprintf
 /* 8003D718 0002E698  80 7F 1F 10 */	lwz r3, 0x1f10(r31)
 /* 8003D71C 0002E69C  4B FF 0D D5 */	bl func_8002E4F0
 /* 8003D720 0002E6A0  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -2982,7 +2982,7 @@ lbl_8003D828:
 /* 8003D82C 0002E7AC  38 61 02 08 */	addi r3, r1, 0x208
 /* 8003D830 0002E7B0  38 9F 03 9F */	addi r4, r31, 0x39f
 /* 8003D834 0002E7B4  4C C6 31 82 */	crclr 6
-/* 8003D838 0002E7B8  48 07 C9 2D */	bl func_800BA164
+/* 8003D838 0002E7B8  48 07 C9 2D */	bl sprintf
 /* 8003D83C 0002E7BC  80 7A 1F 10 */	lwz r3, 0x1f10(r26)
 /* 8003D840 0002E7C0  4B FF 0C B1 */	bl func_8002E4F0
 /* 8003D844 0002E7C4  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -3016,7 +3016,7 @@ lbl_8003D89C:
 /* 8003D8A0 0002E820  38 61 01 08 */	addi r3, r1, 0x108
 /* 8003D8A4 0002E824  38 9F 03 AD */	addi r4, r31, 0x3ad
 /* 8003D8A8 0002E828  4C C6 31 82 */	crclr 6
-/* 8003D8AC 0002E82C  48 07 C8 B9 */	bl func_800BA164
+/* 8003D8AC 0002E82C  48 07 C8 B9 */	bl sprintf
 /* 8003D8B0 0002E830  80 7A 1F 10 */	lwz r3, 0x1f10(r26)
 /* 8003D8B4 0002E834  4B FF 0C 3D */	bl func_8002E4F0
 /* 8003D8B8 0002E838  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -3061,7 +3061,7 @@ lbl_8003D930:
 /* 8003D938 0002E8B8  38 61 00 08 */	addi r3, r1, 0x8
 /* 8003D93C 0002E8BC  38 9F 03 B8 */	addi r4, r31, 0x3b8
 /* 8003D940 0002E8C0  4C C6 31 82 */	crclr 6
-/* 8003D944 0002E8C4  48 07 C8 21 */	bl func_800BA164
+/* 8003D944 0002E8C4  48 07 C8 21 */	bl sprintf
 /* 8003D948 0002E8C8  80 7A 1F 10 */	lwz r3, 0x1f10(r26)
 /* 8003D94C 0002E8CC  4B FF 0B A5 */	bl func_8002E4F0
 /* 8003D950 0002E8D0  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -3118,13 +3118,13 @@ lbl_801CBAB0:
 lbl_801CBAD0:
 
 	# ROM: 0x1C7BD0
-	.4byte lbl_8060DE10
+	.4byte __RTTI__22CSceneMenuCopterSelect
 	.4byte 0
-	.4byte lbl_8003B4A4
-	.4byte lbl_8003C0FC
-	.4byte lbl_8003C76C
-	.4byte lbl_8003C764
-	.4byte lbl_8003C854
+	.4byte StartLocal__22CSceneMenuCopterSelectFv
+	.4byte CalcLocal__22CSceneMenuCopterSelectFv
+	.4byte RenderLocal__22CSceneMenuCopterSelectFv
+	.4byte CalcLocalPause__22CSceneMenuCopterSelectFv
+	.4byte RenderLocalPause__22CSceneMenuCopterSelectFv
 	.4byte CalcLocalSystem__14CSceneMenuBaseFv
-	.4byte lbl_8003C85C
+	.4byte EndLocal__22CSceneMenuCopterSelectFv
 	.4byte func_80011DA4

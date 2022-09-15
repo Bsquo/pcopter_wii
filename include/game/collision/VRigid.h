@@ -10,7 +10,7 @@
 class CVRigid: public CVListBase {
     public:
         CVVector mPos;
-        CVAxis field_0x20;
+        CVAxis mAxis;
         CVVector field_0x44;
         CVMatrix field_0x50;
         CVMatrix field_0x90;

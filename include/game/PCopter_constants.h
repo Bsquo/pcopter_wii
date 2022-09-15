@@ -16,8 +16,8 @@ enum eBody {
     PWR_03      // Sa-52 Sand Tiger
 };
 
-enum eRotor {
-    NORMAL_ROTOR,         // Normal Blade
+enum eBlade {
+    NORMAL_BLADE,         // Normal Blade
     WOOD,           // Wooden Blade 
     GRASS,          // Fiberglass Blade
     CARBON,         // Carbon Blade

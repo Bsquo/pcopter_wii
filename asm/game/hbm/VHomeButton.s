@@ -969,3 +969,18 @@ IsOpen__12CVHomeButtonFv:
 /* 80054BBC 00045B3C  7C 00 00 34 */	cntlzw r0, r0
 /* 80054BC0 00045B40  54 03 D9 7E */	srwi r3, r0, 5
 /* 80054BC4 00045B44  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CC3B8
+lbl_801CC3B8:
+
+	# ROM: 0x1C84B8
+	.4byte lbl_800542BC
+	.4byte lbl_800542D4
+	.4byte lbl_800542EC
+	.4byte lbl_80054304
+	.4byte lbl_8005431C
+	.4byte lbl_80054334
+	.4byte lbl_8005434C
+	.4byte 0

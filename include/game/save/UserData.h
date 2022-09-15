@@ -9,7 +9,7 @@ class CUserData {
         UNK32 field_0x00;
         UNK32 field_0x04;
         eBody mBody;
-        eRotor mRotor;
+        eBlade mRotor;
         eMotor mMotor;
         eGyro mGyro;
         eBattery mBattery;

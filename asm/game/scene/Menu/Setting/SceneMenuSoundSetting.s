@@ -1110,7 +1110,7 @@ lbl_8005B870:
 /* 8005B878 0004C7F8  38 61 00 08 */	addi r3, r1, 0x8
 /* 8005B87C 0004C7FC  38 9F 01 28 */	addi r4, r31, 0x128
 /* 8005B880 0004C800  4C C6 31 82 */	crclr 6
-/* 8005B884 0004C804  48 05 E8 E1 */	bl func_800BA164
+/* 8005B884 0004C804  48 05 E8 E1 */	bl sprintf
 /* 8005B888 0004C808  80 7B 00 C8 */	lwz r3, 0xc8(r27)
 /* 8005B88C 0004C80C  4B FD 2C 65 */	bl func_8002E4F0
 /* 8005B890 0004C810  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -1418,3 +1418,46 @@ func_8005BC74:
 /* 8005BC80 0004CC00  7C 08 03 A6 */	mtlr r0
 /* 8005BC84 0004CC04  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005BC88 0004CC08  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CC7D8
+lbl_801CC7D8:
+
+	# ROM: 0x1C88D8
+	.4byte lbl_8005B458
+	.4byte lbl_8005B458
+	.4byte lbl_8005B468
+	.4byte lbl_8005B47C
+	.4byte lbl_8005B490
+	.4byte lbl_8005B4A4
+	.4byte lbl_8005B4B8
+	.4byte lbl_8005B4CC
+	.4byte lbl_8005B4E0
+	.4byte lbl_8005B524
+
+.global lbl_801CC800
+lbl_801CC800:
+
+	# ROM: 0x1C8900
+	.4byte lbl_8060E358
+	.4byte 0
+	.4byte lbl_8005A988
+	.4byte lbl_8005ADA8
+	.4byte lbl_8005B694
+	.4byte lbl_8005B68C
+	.4byte lbl_8005B77C
+	.4byte CalcLocalSystem__14CSceneMenuBaseFv
+	.4byte lbl_8005B784
+	.4byte func_800122FC
+
+.global lbl_801CC828
+lbl_801CC828:
+
+	# ROM: 0x1C8928
+	.4byte __RTTI__7CVScene
+	.4byte 0
+	.4byte __RTTI__14CSceneMenuBase
+	.4byte 0
+	.4byte 0
+	.4byte 0

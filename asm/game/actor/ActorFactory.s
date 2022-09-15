@@ -122,7 +122,7 @@ lbl_800554F0:
 /* 800554F8 00046478  98 65 00 01 */	stb r3, 0x1(r5)
 /* 800554FC 0004647C  9C 05 00 02 */	stbu r0, 0x2(r5)
 /* 80055500 00046480  42 00 FF F0 */	bdnz lbl_800554F0
-/* 80055504 00046484  4B FC 04 71 */	bl func_80015974
+/* 80055504 00046484  4B FC 04 71 */	bl GetInstance__10CVActorMgrFv
 /* 80055508 00046488  7F C4 F3 78 */	mr r4, r30
 /* 8005550C 0004648C  7F E6 FB 78 */	mr r6, r31
 /* 80055510 00046490  38 A1 00 08 */	addi r5, r1, 0x8
@@ -135,3 +135,26 @@ lbl_800554F0:
 /* 8005552C 000464AC  7C 08 03 A6 */	mtlr r0
 /* 80055530 000464B0  38 21 01 20 */	addi r1, r1, 0x120
 /* 80055534 000464B4  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CC548
+lbl_801CC548:
+
+	# ROM: 0x1C8648
+	.4byte lbl_800553E0
+	.4byte lbl_80055420
+	.4byte lbl_8005543C
+	.4byte lbl_800553E0
+	.4byte lbl_800553E0
+	.4byte lbl_800553E0
+	.4byte lbl_800553E0
+	.4byte lbl_800553E0
+	.4byte lbl_800553E0
+	.4byte lbl_800553E0
+	.4byte lbl_80055458
+	.4byte lbl_80055474
+	.4byte lbl_80055490
+	.4byte lbl_800554AC
+	.4byte lbl_800554C8
+	.4byte 0

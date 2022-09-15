@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global lbl_8005C5E0
-lbl_8005C5E0:
+.global __dt__7CMarkerFv
+__dt__7CMarkerFv:
 /* 8005C5E0 0004D560  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005C5E4 0004D564  7C 08 02 A6 */	mflr r0
 /* 8005C5E8 0004D568  2C 03 00 00 */	cmpwi r3, 0x0
@@ -13,10 +13,10 @@ lbl_8005C5E0:
 /* 8005C5F8 0004D578  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8005C5FC 0004D57C  7C 7E 1B 78 */	mr r30, r3
 /* 8005C600 0004D580  41 82 00 48 */	beq lbl_8005C648
-/* 8005C604 0004D584  3C 80 80 1D */	lis r4, lbl_801CC8B8@ha
-/* 8005C608 0004D588  38 84 C8 B8 */	addi r4, r4, lbl_801CC8B8@l
+/* 8005C604 0004D584  3C 80 80 1D */	lis r4, __vt__7CMarker@ha
+/* 8005C608 0004D588  38 84 C8 B8 */	addi r4, r4, __vt__7CMarker@l
 /* 8005C60C 0004D58C  90 83 00 10 */	stw r4, 0x10(r3)
-/* 8005C610 0004D590  48 00 01 E5 */	bl func_8005C7F4
+/* 8005C610 0004D590  48 00 01 E5 */	bl Release__7CMarkerFv
 /* 8005C614 0004D594  38 7E 00 2C */	addi r3, r30, 0x2c
 /* 8005C618 0004D598  38 80 FF FF */	li r4, -0x1
 /* 8005C61C 0004D59C  4B FC 40 6D */	bl __dt__8CVStringFv
@@ -39,13 +39,13 @@ lbl_8005C648:
 /* 8005C65C 0004D5DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005C660 0004D5E0  4E 80 00 20 */	blr
 
-.global func_8005C664
-func_8005C664:
+.global Init__7CMarkerFPcPv6CVFlagi8CVVector
+Init__7CMarkerFPcPv6CVFlagi8CVVector:
 /* 8005C664 0004D5E4  94 21 FE A0 */	stwu r1, -0x160(r1)
 /* 8005C668 0004D5E8  7C 08 02 A6 */	mflr r0
 /* 8005C66C 0004D5EC  90 01 01 64 */	stw r0, 0x164(r1)
 /* 8005C670 0004D5F0  39 61 01 60 */	addi r11, r1, 0x160
-/* 8005C674 0004D5F4  48 05 6A 41 */	bl func_800B30B4
+/* 8005C674 0004D5F4  48 05 6A 41 */	bl _savegpr_26
 /* 8005C678 0004D5F8  7C 7A 1B 78 */	mr r26, r3
 /* 8005C67C 0004D5FC  7C 9B 23 78 */	mr r27, r4
 /* 8005C680 0004D600  7C BC 2B 78 */	mr r28, r5
@@ -70,7 +70,7 @@ func_8005C664:
 /* 8005C6CC 0004D64C  38 61 00 40 */	addi r3, r1, 0x40
 /* 8005C6D0 0004D650  38 84 FA 50 */	addi r4, r4, lbl_801BFA50@l
 /* 8005C6D4 0004D654  4C C6 31 82 */	crclr 6
-/* 8005C6D8 0004D658  48 05 DA 8D */	bl func_800BA164
+/* 8005C6D8 0004D658  48 05 DA 8D */	bl sprintf
 /* 8005C6DC 0004D65C  38 7A 00 2C */	addi r3, r26, 0x2c
 /* 8005C6E0 0004D660  38 81 00 40 */	addi r4, r1, 0x40
 /* 8005C6E4 0004D664  4B FC 40 79 */	bl __as__8CVStringFPCc
@@ -79,13 +79,13 @@ func_8005C664:
 /* 8005C6F0 0004D670  4B FB DB 29 */	bl __as__8CVVectorFRC8CVVector
 /* 8005C6F4 0004D674  7F 44 D3 78 */	mr r4, r26
 /* 8005C6F8 0004D678  38 61 00 1C */	addi r3, r1, 0x1c
-/* 8005C6FC 0004D67C  48 00 01 39 */	bl func_8005C834
+/* 8005C6FC 0004D67C  48 00 01 39 */	bl GetPos__7CMarkerFv
 /* 8005C700 0004D680  38 61 00 34 */	addi r3, r1, 0x34
 /* 8005C704 0004D684  38 81 00 1C */	addi r4, r1, 0x1c
 /* 8005C708 0004D688  4B FB DB 11 */	bl __as__8CVVectorFRC8CVVector
 /* 8005C70C 0004D68C  7F 44 D3 78 */	mr r4, r26
 /* 8005C710 0004D690  38 61 00 10 */	addi r3, r1, 0x10
-/* 8005C714 0004D694  48 00 01 B1 */	bl func_8005C8C4
+/* 8005C714 0004D694  48 00 01 B1 */	bl GetRoll__7CMarkerFv
 /* 8005C718 0004D698  38 61 00 28 */	addi r3, r1, 0x28
 /* 8005C71C 0004D69C  38 81 00 10 */	addi r4, r1, 0x10
 /* 8005C720 0004D6A0  4B FB DA F9 */	bl __as__8CVVectorFRC8CVVector
@@ -94,7 +94,7 @@ func_8005C664:
 /* 8005C72C 0004D6AC  7C 7F 1B 78 */	mr r31, r3
 /* 8005C730 0004D6B0  4B FB 81 11 */	bl GetInstance__11CVEffectMgrFv
 /* 8005C734 0004D6B4  7F E4 FB 78 */	mr r4, r31
-/* 8005C738 0004D6B8  4B FD 4D 65 */	bl func_8003149C
+/* 8005C738 0004D6B8  4B FD 4D 65 */	bl Delete__11CVEffectMgrFPc
 /* 8005C73C 0004D6BC  38 7A 00 2C */	addi r3, r26, 0x2c
 /* 8005C740 0004D6C0  4B FC 41 45 */	bl __opPc__8CVStringFv
 /* 8005C744 0004D6C4  7C 7F 1B 78 */	mr r31, r3
@@ -106,7 +106,7 @@ func_8005C664:
 /* 8005C75C 0004D6DC  39 00 00 00 */	li r8, 0x0
 /* 8005C760 0004D6E0  39 20 00 00 */	li r9, 0x0
 /* 8005C764 0004D6E4  39 40 00 00 */	li r10, 0x0
-/* 8005C768 0004D6E8  4B FD 44 55 */	bl func_80030BBC
+/* 8005C768 0004D6E8  4B FD 44 55 */	bl Create__11CVEffectMgrFPcPciP6CVFlagP7CVActoriP8CVVector
 /* 8005C76C 0004D6EC  38 7A 00 2C */	addi r3, r26, 0x2c
 /* 8005C770 0004D6F0  4B FC 41 15 */	bl __opPc__8CVStringFv
 /* 8005C774 0004D6F4  7C 7F 1B 78 */	mr r31, r3
@@ -124,7 +124,7 @@ func_8005C664:
 /* 8005C7A4 0004D724  7F E4 FB 78 */	mr r4, r31
 /* 8005C7A8 0004D728  C0 41 00 2C */	lfs f2, 0x2c(r1)
 /* 8005C7AC 0004D72C  C0 61 00 30 */	lfs f3, 0x30(r1)
-/* 8005C7B0 0004D730  4B FD 4D C9 */	bl func_80031578
+/* 8005C7B0 0004D730  4B FD 4D C9 */	bl SetRoll__11CVEffectMgrFPcfff
 /* 8005C7B4 0004D734  38 7A 00 2C */	addi r3, r26, 0x2c
 /* 8005C7B8 0004D738  4B FC 40 CD */	bl __opPc__8CVStringFv
 /* 8005C7BC 0004D73C  7C 7F 1B 78 */	mr r31, r3
@@ -136,14 +136,14 @@ func_8005C664:
 /* 8005C7D4 0004D754  38 80 FF FF */	li r4, -0x1
 /* 8005C7D8 0004D758  4B FC 9F A1 */	bl __dt__6CVFlagFv
 /* 8005C7DC 0004D75C  39 61 01 60 */	addi r11, r1, 0x160
-/* 8005C7E0 0004D760  48 05 69 21 */	bl func_800B3100
+/* 8005C7E0 0004D760  48 05 69 21 */	bl _restgpr_26
 /* 8005C7E4 0004D764  80 01 01 64 */	lwz r0, 0x164(r1)
 /* 8005C7E8 0004D768  7C 08 03 A6 */	mtlr r0
 /* 8005C7EC 0004D76C  38 21 01 60 */	addi r1, r1, 0x160
 /* 8005C7F0 0004D770  4E 80 00 20 */	blr
 
-.global func_8005C7F4
-func_8005C7F4:
+.global Release__7CMarkerFv
+Release__7CMarkerFv:
 /* 8005C7F4 0004D774  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005C7F8 0004D778  7C 08 02 A6 */	mflr r0
 /* 8005C7FC 0004D77C  38 63 00 2C */	addi r3, r3, 0x2c
@@ -154,15 +154,15 @@ func_8005C7F4:
 /* 8005C810 0004D790  4B FB 80 31 */	bl GetInstance__11CVEffectMgrFv
 /* 8005C814 0004D794  7F E4 FB 78 */	mr r4, r31
 /* 8005C818 0004D798  38 A0 00 01 */	li r5, 0x1
-/* 8005C81C 0004D79C  4B FD 4B D9 */	bl func_800313F4
+/* 8005C81C 0004D79C  4B FD 4B D9 */	bl StopEffect__11CVEffectMgrFPci
 /* 8005C820 0004D7A0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005C824 0004D7A4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8005C828 0004D7A8  7C 08 03 A6 */	mtlr r0
 /* 8005C82C 0004D7AC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005C830 0004D7B0  4E 80 00 20 */	blr
 
-.global func_8005C834
-func_8005C834:
+.global GetPos__7CMarkerFv
+GetPos__7CMarkerFv:
 /* 8005C834 0004D7B4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005C838 0004D7B8  7C 08 02 A6 */	mflr r0
 /* 8005C83C 0004D7BC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -205,8 +205,8 @@ func_8005C8AC:
 /* 8005C8BC 0004D83C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005C8C0 0004D840  4E 80 00 20 */	blr
 
-.global func_8005C8C4
-func_8005C8C4:
+.global GetRoll__7CMarkerFv
+GetRoll__7CMarkerFv:
 /* 8005C8C4 0004D844  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005C8C8 0004D848  7C 08 02 A6 */	mflr r0
 /* 8005C8CC 0004D84C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -239,8 +239,8 @@ func_8005C918:
 /* 8005C928 0004D8A8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005C92C 0004D8AC  4E 80 00 20 */	blr
 
-.global func_8005C930
-func_8005C930:
+.global Update__7CMarkerF8CVVectoriii
+Update__7CMarkerF8CVVectoriii:
 /* 8005C930 0004D8B0  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 8005C934 0004D8B4  7C 08 02 A6 */	mflr r0
 /* 8005C938 0004D8B8  90 01 00 94 */	stw r0, 0x94(r1)
@@ -259,7 +259,7 @@ func_8005C930:
 /* 8005C96C 0004D8EC  4B FC A7 B5 */	bl __ct__8CVVectorFv
 /* 8005C970 0004D8F0  7F 64 DB 78 */	mr r4, r27
 /* 8005C974 0004D8F4  38 61 00 38 */	addi r3, r1, 0x38
-/* 8005C978 0004D8F8  4B FF FE BD */	bl func_8005C834
+/* 8005C978 0004D8F8  4B FF FE BD */	bl GetPos__7CMarkerFv
 /* 8005C97C 0004D8FC  38 61 00 50 */	addi r3, r1, 0x50
 /* 8005C980 0004D900  38 81 00 38 */	addi r4, r1, 0x38
 /* 8005C984 0004D904  4B FB D8 95 */	bl __as__8CVVectorFRC8CVVector
@@ -326,7 +326,7 @@ lbl_8005CA54:
 /* 8005CA6C 0004D9EC  4B FB 7D D5 */	bl GetInstance__11CVEffectMgrFv
 /* 8005CA70 0004D9F0  7F C4 F3 78 */	mr r4, r30
 /* 8005CA74 0004D9F4  38 A0 00 01 */	li r5, 0x1
-/* 8005CA78 0004D9F8  4B FD 4A 69 */	bl func_800314E0
+/* 8005CA78 0004D9F8  4B FD 4A 69 */	bl SetVisible__11CVEffectMgrFPci
 /* 8005CA7C 0004D9FC  48 00 00 84 */	b func_8005CB00
 lbl_8005CA80:
 /* 8005CA80 0004DA00  38 7B 00 14 */	addi r3, r27, 0x14
@@ -353,7 +353,7 @@ lbl_8005CAC4:
 /* 8005CAD0 0004DA50  4B FB 7D 71 */	bl GetInstance__11CVEffectMgrFv
 /* 8005CAD4 0004DA54  7F E4 FB 78 */	mr r4, r31
 /* 8005CAD8 0004DA58  7F C5 F3 78 */	mr r5, r30
-/* 8005CADC 0004DA5C  4B FD 4A 05 */	bl func_800314E0
+/* 8005CADC 0004DA5C  4B FD 4A 05 */	bl SetVisible__11CVEffectMgrFPci
 /* 8005CAE0 0004DA60  48 00 00 20 */	b func_8005CB00
 lbl_8005CAE4:
 /* 8005CAE4 0004DA64  38 7B 00 2C */	addi r3, r27, 0x2c
@@ -362,7 +362,7 @@ lbl_8005CAE4:
 /* 8005CAF0 0004DA70  4B FB 7D 51 */	bl GetInstance__11CVEffectMgrFv
 /* 8005CAF4 0004DA74  7F E4 FB 78 */	mr r4, r31
 /* 8005CAF8 0004DA78  7F A5 EB 78 */	mr r5, r29
-/* 8005CAFC 0004DA7C  4B FD 49 E5 */	bl func_800314E0
+/* 8005CAFC 0004DA7C  4B FD 49 E5 */	bl SetVisible__11CVEffectMgrFPci
 
 .global func_8005CB00
 func_8005CB00:
@@ -375,8 +375,8 @@ func_8005CB00:
 /* 8005CB18 0004DA98  38 21 00 90 */	addi r1, r1, 0x90
 /* 8005CB1C 0004DA9C  4E 80 00 20 */	blr
 
-.global func_8005CB20
-func_8005CB20:
+.global IsEnable__7CMarkerFv
+IsEnable__7CMarkerFv:
 /* 8005CB20 0004DAA0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005CB24 0004DAA4  7C 08 02 A6 */	mflr r0
 /* 8005CB28 0004DAA8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -423,8 +423,8 @@ func_8005CBA4:
 /* 8005CBB8 0004DB38  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005CBBC 0004DB3C  4E 80 00 20 */	blr
 
-.global func_8005CBC0
-func_8005CBC0:
+.global InitByAct__12CMarkerGroupFiiPc6CVFlag8CVVector
+InitByAct__12CMarkerGroupFiiPc6CVFlag8CVVector:
 /* 8005CBC0 0004DB40  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 8005CBC4 0004DB44  7C 08 02 A6 */	mflr r0
 /* 8005CBC8 0004DB48  90 01 00 54 */	stw r0, 0x54(r1)
@@ -453,9 +453,9 @@ func_8005CBC0:
 /* 8005CC24 0004DBA4  38 80 00 01 */	li r4, 0x1
 /* 8005CC28 0004DBA8  38 A0 00 01 */	li r5, 0x1
 /* 8005CC2C 0004DBAC  4B FC 9B 99 */	bl Set__6CVFlagFUsi
-/* 8005CC30 0004DBB0  4B FB 8D 45 */	bl func_80015974
+/* 8005CC30 0004DBB0  4B FB 8D 45 */	bl GetInstance__10CVActorMgrFv
 /* 8005CC34 0004DBB4  7F 64 DB 78 */	mr r4, r27
-/* 8005CC38 0004DBB8  4B FD 0C 89 */	bl func_8002D8C0
+/* 8005CC38 0004DBB8  4B FD 0C 89 */	bl GetStart__10CVActorMgrFi
 /* 8005CC3C 0004DBBC  7C 7E 1B 78 */	mr r30, r3
 /* 8005CC40 0004DBC0  48 00 00 98 */	b func_8005CCD8
 lbl_8005CC44:
@@ -464,7 +464,7 @@ lbl_8005CC44:
 /* 8005CC4C 0004DBCC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005CC50 0004DBD0  7C 7F 1B 78 */	mr r31, r3
 /* 8005CC54 0004DBD4  41 82 00 08 */	beq lbl_8005CC5C
-/* 8005CC58 0004DBD8  48 00 00 A9 */	bl func_8005CD00
+/* 8005CC58 0004DBD8  48 00 00 A9 */	bl __ct__7CMarkerFv
 lbl_8005CC5C:
 /* 8005CC5C 0004DBDC  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8005CC60 0004DBE0  41 82 00 64 */	beq lbl_8005CCC4
@@ -488,15 +488,15 @@ lbl_8005CC5C:
 /* 8005CCA8 0004DC28  7F C5 F3 78 */	mr r5, r30
 /* 8005CCAC 0004DC2C  38 C1 00 08 */	addi r6, r1, 0x8
 /* 8005CCB0 0004DC30  39 01 00 18 */	addi r8, r1, 0x18
-/* 8005CCB4 0004DC34  4B FF F9 B1 */	bl func_8005C664
+/* 8005CCB4 0004DC34  4B FF F9 B1 */	bl Init__7CMarkerFPcPv6CVFlagi8CVVector
 /* 8005CCB8 0004DC38  38 61 00 08 */	addi r3, r1, 0x8
 /* 8005CCBC 0004DC3C  38 80 FF FF */	li r4, -0x1
 /* 8005CCC0 0004DC40  4B FC 9A B9 */	bl __dt__6CVFlagFv
 lbl_8005CCC4:
-/* 8005CCC4 0004DC44  4B FB 8C B1 */	bl func_80015974
+/* 8005CCC4 0004DC44  4B FB 8C B1 */	bl GetInstance__10CVActorMgrFv
 /* 8005CCC8 0004DC48  7F C4 F3 78 */	mr r4, r30
 /* 8005CCCC 0004DC4C  7F 65 DB 78 */	mr r5, r27
-/* 8005CCD0 0004DC50  4B FD 0C 69 */	bl func_8002D938
+/* 8005CCD0 0004DC50  4B FD 0C 69 */	bl GetNext__10CVActorMgrFP7CVActori
 /* 8005CCD4 0004DC54  7C 7E 1B 78 */	mr r30, r3
 
 .global func_8005CCD8
@@ -512,17 +512,17 @@ func_8005CCD8:
 /* 8005CCF8 0004DC78  38 21 00 50 */	addi r1, r1, 0x50
 /* 8005CCFC 0004DC7C  4E 80 00 20 */	blr
 
-.global func_8005CD00
-func_8005CD00:
+.global __ct__7CMarkerFv
+__ct__7CMarkerFv:
 /* 8005CD00 0004DC80  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005CD04 0004DC84  7C 08 02 A6 */	mflr r0
 /* 8005CD08 0004DC88  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8005CD0C 0004DC8C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8005CD10 0004DC90  7C 7F 1B 78 */	mr r31, r3
 /* 8005CD14 0004DC94  4B FC 9B 01 */	bl __ct__10CVListBaseFv
-/* 8005CD18 0004DC98  3C 80 80 1D */	lis r4, lbl_801CC8B8@ha
+/* 8005CD18 0004DC98  3C 80 80 1D */	lis r4, __vt__7CMarker@ha
 /* 8005CD1C 0004DC9C  38 7F 00 14 */	addi r3, r31, 0x14
-/* 8005CD20 0004DCA0  38 84 C8 B8 */	addi r4, r4, lbl_801CC8B8@l
+/* 8005CD20 0004DCA0  38 84 C8 B8 */	addi r4, r4, __vt__7CMarker@l
 /* 8005CD24 0004DCA4  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 8005CD28 0004DCA8  4B FC 9A 39 */	bl __ct__6CVFlagFv
 /* 8005CD2C 0004DCAC  38 7F 00 20 */	addi r3, r31, 0x20
@@ -536,8 +536,8 @@ func_8005CD00:
 /* 8005CD4C 0004DCCC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005CD50 0004DCD0  4E 80 00 20 */	blr
 
-.global func_8005CD54
-func_8005CD54:
+.global InitByPos__12CMarkerGroupFiiPc6CVFlag8CVVector
+InitByPos__12CMarkerGroupFiiPc6CVFlag8CVVector:
 /* 8005CD54 0004DCD4  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 8005CD58 0004DCD8  7C 08 02 A6 */	mflr r0
 /* 8005CD5C 0004DCDC  90 01 00 54 */	stw r0, 0x54(r1)
@@ -582,7 +582,7 @@ func_8005CDC8:
 /* 8005CDEC 0004DD6C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005CDF0 0004DD70  7C 7F 1B 78 */	mr r31, r3
 /* 8005CDF4 0004DD74  41 82 00 08 */	beq lbl_8005CDFC
-/* 8005CDF8 0004DD78  4B FF FF 09 */	bl func_8005CD00
+/* 8005CDF8 0004DD78  4B FF FF 09 */	bl __ct__7CMarkerFv
 lbl_8005CDFC:
 /* 8005CDFC 0004DD7C  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8005CE00 0004DD80  41 82 00 64 */	beq lbl_8005CE64
@@ -606,7 +606,7 @@ lbl_8005CDFC:
 /* 8005CE48 0004DDC8  7F C5 F3 78 */	mr r5, r30
 /* 8005CE4C 0004DDCC  38 C1 00 08 */	addi r6, r1, 0x8
 /* 8005CE50 0004DDD0  39 01 00 18 */	addi r8, r1, 0x18
-/* 8005CE54 0004DDD4  4B FF F8 11 */	bl func_8005C664
+/* 8005CE54 0004DDD4  4B FF F8 11 */	bl Init__7CMarkerFPcPv6CVFlagi8CVVector
 /* 8005CE58 0004DDD8  38 61 00 08 */	addi r3, r1, 0x8
 /* 8005CE5C 0004DDDC  38 80 FF FF */	li r4, -0x1
 /* 8005CE60 0004DDE0  4B FC 99 19 */	bl __dt__6CVFlagFv
@@ -623,8 +623,8 @@ lbl_8005CE6C:
 /* 8005CE84 0004DE04  38 21 00 50 */	addi r1, r1, 0x50
 /* 8005CE88 0004DE08  4E 80 00 20 */	blr
 
-.global func_8005CE8C
-func_8005CE8C:
+.global GetNearestMarker__12CMarkerGroupF8CVVector8CVVector
+GetNearestMarker__12CMarkerGroupF8CVVector8CVVector:
 /* 8005CE8C 0004DE0C  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 8005CE90 0004DE10  7C 08 02 A6 */	mflr r0
 /* 8005CE94 0004DE14  90 01 00 84 */	stw r0, 0x84(r1)
@@ -652,12 +652,12 @@ func_8005CE8C:
 /* 8005CEEC 0004DE6C  48 00 00 88 */	b func_8005CF74
 lbl_8005CEF0:
 /* 8005CEF0 0004DE70  7F E3 FB 78 */	mr r3, r31
-/* 8005CEF4 0004DE74  4B FF FC 2D */	bl func_8005CB20
+/* 8005CEF4 0004DE74  4B FF FC 2D */	bl IsEnable__7CMarkerFv
 /* 8005CEF8 0004DE78  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005CEFC 0004DE7C  41 82 00 74 */	beq lbl_8005CF70
 /* 8005CF00 0004DE80  7F E4 FB 78 */	mr r4, r31
 /* 8005CF04 0004DE84  38 61 00 14 */	addi r3, r1, 0x14
-/* 8005CF08 0004DE88  4B FF F9 2D */	bl func_8005C834
+/* 8005CF08 0004DE88  4B FF F9 2D */	bl GetPos__7CMarkerFv
 /* 8005CF0C 0004DE8C  7F 85 E3 78 */	mr r5, r28
 /* 8005CF10 0004DE90  38 61 00 20 */	addi r3, r1, 0x20
 /* 8005CF14 0004DE94  38 81 00 14 */	addi r4, r1, 0x14
@@ -706,8 +706,8 @@ func_8005CF74:
 /* 8005CFB0 0004DF30  38 21 00 80 */	addi r1, r1, 0x80
 /* 8005CFB4 0004DF34  4E 80 00 20 */	blr
 
-.global func_8005CFB8
-func_8005CFB8:
+.global Update__12CMarkerGroupF8CVVector8CVVectori
+Update__12CMarkerGroupF8CVVector8CVVectori:
 /* 8005CFB8 0004DF38  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 8005CFBC 0004DF3C  7C 08 02 A6 */	mflr r0
 /* 8005CFC0 0004DF40  90 01 00 54 */	stw r0, 0x54(r1)
@@ -736,7 +736,7 @@ func_8005CFB8:
 /* 8005D01C 0004DF9C  90 E1 00 20 */	stw r7, 0x20(r1)
 /* 8005D020 0004DFA0  90 C1 00 24 */	stw r6, 0x24(r1)
 /* 8005D024 0004DFA4  90 01 00 28 */	stw r0, 0x28(r1)
-/* 8005D028 0004DFA8  4B FF FE 65 */	bl func_8005CE8C
+/* 8005D028 0004DFA8  4B FF FE 65 */	bl GetNearestMarker__12CMarkerGroupF8CVVector8CVVector
 /* 8005D02C 0004DFAC  7C 7A 1B 78 */	mr r26, r3
 lbl_8005D030:
 /* 8005D030 0004DFB0  38 7D 00 1C */	addi r3, r29, 0x1c
@@ -783,7 +783,7 @@ lbl_8005D09C:
 /* 8005D0C8 0004E048  7F 25 CB 78 */	mr r5, r25
 /* 8005D0CC 0004E04C  7F 87 E3 78 */	mr r7, r28
 /* 8005D0D0 0004E050  38 81 00 08 */	addi r4, r1, 0x8
-/* 8005D0D4 0004E054  4B FF F8 5D */	bl func_8005C930
+/* 8005D0D4 0004E054  4B FF F8 5D */	bl Update__7CMarkerF8CVVectoriii
 /* 8005D0D8 0004E058  83 7B 00 0C */	lwz r27, 0xc(r27)
 
 .global func_8005D0DC
@@ -796,12 +796,12 @@ func_8005D0DC:
 /* 8005D0F0 0004E070  38 21 00 50 */	addi r1, r1, 0x50
 /* 8005D0F4 0004E074  4E 80 00 20 */	blr
 
-.global func_8005D0F8
-func_8005D0F8:
+.global Release__10CMarkerMgrFv
+Release__10CMarkerMgrFv:
 /* 8005D0F8 0004E078  4B FC 98 E8 */	b Release__6CVListFv
 
-.global func_8005D0FC
-func_8005D0FC:
+.global GetGrp__10CMarkerMgrFi
+GetGrp__10CMarkerMgrFi:
 /* 8005D0FC 0004E07C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005D100 0004E080  7C 08 02 A6 */	mflr r0
 /* 8005D104 0004E084  90 01 00 14 */	stw r0, 0x14(r1)
@@ -831,8 +831,8 @@ func_8005D138:
 /* 8005D144 0004E0C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005D148 0004E0C8  4E 80 00 20 */	blr
 
-.global func_8005D14C
-func_8005D14C:
+.global AddGrpByAct__10CMarkerMgrFiiPc6CVFlag8CVVector
+AddGrpByAct__10CMarkerMgrFiiPc6CVFlag8CVVector:
 /* 8005D14C 0004E0CC  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8005D150 0004E0D0  7C 08 02 A6 */	mflr r0
 /* 8005D154 0004E0D4  90 01 00 44 */	stw r0, 0x44(r1)
@@ -848,7 +848,7 @@ func_8005D14C:
 /* 8005D17C 0004E0FC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D180 0004E100  7C 7F 1B 78 */	mr r31, r3
 /* 8005D184 0004E104  41 82 00 08 */	beq lbl_8005D18C
-/* 8005D188 0004E108  48 00 00 79 */	bl func_8005D200
+/* 8005D188 0004E108  48 00 00 79 */	bl __ct__12CMarkerGroupFv
 lbl_8005D18C:
 /* 8005D18C 0004E10C  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8005D190 0004E110  41 82 00 5C */	beq lbl_8005D1EC
@@ -870,7 +870,7 @@ lbl_8005D18C:
 /* 8005D1D0 0004E150  39 01 00 10 */	addi r8, r1, 0x10
 /* 8005D1D4 0004E154  91 21 00 14 */	stw r9, 0x14(r1)
 /* 8005D1D8 0004E158  90 01 00 18 */	stw r0, 0x18(r1)
-/* 8005D1DC 0004E15C  4B FF F9 E5 */	bl func_8005CBC0
+/* 8005D1DC 0004E15C  4B FF F9 E5 */	bl InitByAct__12CMarkerGroupFiiPc6CVFlag8CVVector
 /* 8005D1E0 0004E160  38 61 00 08 */	addi r3, r1, 0x8
 /* 8005D1E4 0004E164  38 80 FF FF */	li r4, -0x1
 /* 8005D1E8 0004E168  4B FC 95 91 */	bl __dt__6CVFlagFv
@@ -881,17 +881,17 @@ lbl_8005D1EC:
 /* 8005D1F8 0004E178  38 21 00 40 */	addi r1, r1, 0x40
 /* 8005D1FC 0004E17C  4E 80 00 20 */	blr
 
-.global func_8005D200
-func_8005D200:
+.global __ct__12CMarkerGroupFv
+__ct__12CMarkerGroupFv:
 /* 8005D200 0004E180  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005D204 0004E184  7C 08 02 A6 */	mflr r0
 /* 8005D208 0004E188  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8005D20C 0004E18C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8005D210 0004E190  7C 7F 1B 78 */	mr r31, r3
 /* 8005D214 0004E194  4B FC 96 01 */	bl __ct__10CVListBaseFv
-/* 8005D218 0004E198  3C 80 80 1D */	lis r4, lbl_801CC8A0@ha
+/* 8005D218 0004E198  3C 80 80 1D */	lis r4, __vt__12CMarkerGroup@ha
 /* 8005D21C 0004E19C  38 7F 00 14 */	addi r3, r31, 0x14
-/* 8005D220 0004E1A0  38 84 C8 A0 */	addi r4, r4, lbl_801CC8A0@l
+/* 8005D220 0004E1A0  38 84 C8 A0 */	addi r4, r4, __vt__12CMarkerGroup@l
 /* 8005D224 0004E1A4  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 8005D228 0004E1A8  4B FC 95 39 */	bl __ct__6CVFlagFv
 /* 8005D22C 0004E1AC  38 7F 00 1C */	addi r3, r31, 0x1c
@@ -903,8 +903,8 @@ func_8005D200:
 /* 8005D244 0004E1C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005D248 0004E1C8  4E 80 00 20 */	blr
 
-.global func_8005D24C
-func_8005D24C:
+.global AddGrpByPos__10CMarkerMgrFiiPc6CVFlag8CVVector
+AddGrpByPos__10CMarkerMgrFiiPc6CVFlag8CVVector:
 /* 8005D24C 0004E1CC  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8005D250 0004E1D0  7C 08 02 A6 */	mflr r0
 /* 8005D254 0004E1D4  90 01 00 44 */	stw r0, 0x44(r1)
@@ -920,7 +920,7 @@ func_8005D24C:
 /* 8005D27C 0004E1FC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D280 0004E200  7C 7F 1B 78 */	mr r31, r3
 /* 8005D284 0004E204  41 82 00 08 */	beq lbl_8005D28C
-/* 8005D288 0004E208  4B FF FF 79 */	bl func_8005D200
+/* 8005D288 0004E208  4B FF FF 79 */	bl __ct__12CMarkerGroupFv
 lbl_8005D28C:
 /* 8005D28C 0004E20C  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8005D290 0004E210  41 82 00 5C */	beq lbl_8005D2EC
@@ -942,7 +942,7 @@ lbl_8005D28C:
 /* 8005D2D0 0004E250  39 01 00 10 */	addi r8, r1, 0x10
 /* 8005D2D4 0004E254  91 21 00 14 */	stw r9, 0x14(r1)
 /* 8005D2D8 0004E258  90 01 00 18 */	stw r0, 0x18(r1)
-/* 8005D2DC 0004E25C  4B FF FA 79 */	bl func_8005CD54
+/* 8005D2DC 0004E25C  4B FF FA 79 */	bl InitByPos__12CMarkerGroupFiiPc6CVFlag8CVVector
 /* 8005D2E0 0004E260  38 61 00 08 */	addi r3, r1, 0x8
 /* 8005D2E4 0004E264  38 80 FF FF */	li r4, -0x1
 /* 8005D2E8 0004E268  4B FC 94 91 */	bl __dt__6CVFlagFv
@@ -953,8 +953,8 @@ lbl_8005D2EC:
 /* 8005D2F8 0004E278  38 21 00 40 */	addi r1, r1, 0x40
 /* 8005D2FC 0004E27C  4E 80 00 20 */	blr
 
-.global func_8005D300
-func_8005D300:
+.global AddPosByAct__10CMarkerMgrFiiPc6CVFlag8CVVector
+AddPosByAct__10CMarkerMgrFiiPc6CVFlag8CVVector:
 /* 8005D300 0004E280  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8005D304 0004E284  7C 08 02 A6 */	mflr r0
 /* 8005D308 0004E288  90 01 00 44 */	stw r0, 0x44(r1)
@@ -964,7 +964,7 @@ func_8005D300:
 /* 8005D318 0004E298  7C DC 33 78 */	mr r28, r6
 /* 8005D31C 0004E29C  7C FD 3B 78 */	mr r29, r7
 /* 8005D320 0004E2A0  7D 1E 43 78 */	mr r30, r8
-/* 8005D324 0004E2A4  4B FF FD D9 */	bl func_8005D0FC
+/* 8005D324 0004E2A4  4B FF FD D9 */	bl GetGrp__10CMarkerMgrFi
 /* 8005D328 0004E2A8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D32C 0004E2AC  7C 7F 1B 78 */	mr r31, r3
 /* 8005D330 0004E2B0  41 82 00 50 */	beq lbl_8005D380
@@ -983,7 +983,7 @@ func_8005D300:
 /* 8005D364 0004E2E4  39 01 00 10 */	addi r8, r1, 0x10
 /* 8005D368 0004E2E8  91 21 00 14 */	stw r9, 0x14(r1)
 /* 8005D36C 0004E2EC  90 01 00 18 */	stw r0, 0x18(r1)
-/* 8005D370 0004E2F0  4B FF F8 51 */	bl func_8005CBC0
+/* 8005D370 0004E2F0  4B FF F8 51 */	bl InitByAct__12CMarkerGroupFiiPc6CVFlag8CVVector
 /* 8005D374 0004E2F4  38 61 00 08 */	addi r3, r1, 0x8
 /* 8005D378 0004E2F8  38 80 FF FF */	li r4, -0x1
 /* 8005D37C 0004E2FC  4B FC 93 FD */	bl __dt__6CVFlagFv
@@ -994,8 +994,8 @@ lbl_8005D380:
 /* 8005D38C 0004E30C  38 21 00 40 */	addi r1, r1, 0x40
 /* 8005D390 0004E310  4E 80 00 20 */	blr
 
-.global func_8005D394
-func_8005D394:
+.global AddPosByPos__10CMarkerMgrFiiPc6CVFlag8CVVector
+AddPosByPos__10CMarkerMgrFiiPc6CVFlag8CVVector:
 /* 8005D394 0004E314  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8005D398 0004E318  7C 08 02 A6 */	mflr r0
 /* 8005D39C 0004E31C  90 01 00 44 */	stw r0, 0x44(r1)
@@ -1005,7 +1005,7 @@ func_8005D394:
 /* 8005D3AC 0004E32C  7C DC 33 78 */	mr r28, r6
 /* 8005D3B0 0004E330  7C FD 3B 78 */	mr r29, r7
 /* 8005D3B4 0004E334  7D 1E 43 78 */	mr r30, r8
-/* 8005D3B8 0004E338  4B FF FD 45 */	bl func_8005D0FC
+/* 8005D3B8 0004E338  4B FF FD 45 */	bl GetGrp__10CMarkerMgrFi
 /* 8005D3BC 0004E33C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D3C0 0004E340  7C 7F 1B 78 */	mr r31, r3
 /* 8005D3C4 0004E344  41 82 00 50 */	beq lbl_8005D414
@@ -1024,7 +1024,7 @@ func_8005D394:
 /* 8005D3F8 0004E378  39 01 00 10 */	addi r8, r1, 0x10
 /* 8005D3FC 0004E37C  91 21 00 14 */	stw r9, 0x14(r1)
 /* 8005D400 0004E380  90 01 00 18 */	stw r0, 0x18(r1)
-/* 8005D404 0004E384  4B FF F9 51 */	bl func_8005CD54
+/* 8005D404 0004E384  4B FF F9 51 */	bl InitByPos__12CMarkerGroupFiiPc6CVFlag8CVVector
 /* 8005D408 0004E388  38 61 00 08 */	addi r3, r1, 0x8
 /* 8005D40C 0004E38C  38 80 FF FF */	li r4, -0x1
 /* 8005D410 0004E390  4B FC 93 69 */	bl __dt__6CVFlagFv
@@ -1035,19 +1035,19 @@ lbl_8005D414:
 /* 8005D420 0004E3A0  38 21 00 40 */	addi r1, r1, 0x40
 /* 8005D424 0004E3A4  4E 80 00 20 */	blr
 
-.global func_8005D428
-func_8005D428:
+.global SetVisible__10CMarkerMgrFi
+SetVisible__10CMarkerMgrFi:
 /* 8005D428 0004E3A8  90 83 00 10 */	stw r4, 0x10(r3)
 /* 8005D42C 0004E3AC  4E 80 00 20 */	blr
 
-.global func_8005D430
-func_8005D430:
+.global SetVisible__10CMarkerMgrFii
+SetVisible__10CMarkerMgrFii:
 /* 8005D430 0004E3B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005D434 0004E3B4  7C 08 02 A6 */	mflr r0
 /* 8005D438 0004E3B8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8005D43C 0004E3BC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8005D440 0004E3C0  7C BF 2B 78 */	mr r31, r5
-/* 8005D444 0004E3C4  4B FF FC B9 */	bl func_8005D0FC
+/* 8005D444 0004E3C4  4B FF FC B9 */	bl GetGrp__10CMarkerMgrFi
 /* 8005D448 0004E3C8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D44C 0004E3CC  41 82 00 14 */	beq lbl_8005D460
 /* 8005D450 0004E3D0  7F E5 FB 78 */	mr r5, r31
@@ -1061,8 +1061,8 @@ lbl_8005D460:
 /* 8005D46C 0004E3EC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005D470 0004E3F0  4E 80 00 20 */	blr
 
-.global func_8005D474
-func_8005D474:
+.global SetVisible__10CMarkerMgrFiii
+SetVisible__10CMarkerMgrFiii:
 /* 8005D474 0004E3F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005D478 0004E3F8  7C 08 02 A6 */	mflr r0
 /* 8005D47C 0004E3FC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1070,7 +1070,7 @@ func_8005D474:
 /* 8005D484 0004E404  7C DF 33 78 */	mr r31, r6
 /* 8005D488 0004E408  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8005D48C 0004E40C  7C BE 2B 78 */	mr r30, r5
-/* 8005D490 0004E410  4B FF FC 6D */	bl func_8005D0FC
+/* 8005D490 0004E410  4B FF FC 6D */	bl GetGrp__10CMarkerMgrFi
 /* 8005D494 0004E414  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D498 0004E418  41 82 00 28 */	beq lbl_8005D4C0
 /* 8005D49C 0004E41C  7F C4 F3 78 */	mr r4, r30
@@ -1090,14 +1090,14 @@ lbl_8005D4C0:
 /* 8005D4D0 0004E450  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005D4D4 0004E454  4E 80 00 20 */	blr
 
-.global func_8005D4D8
-func_8005D4D8:
+.global SetForceVisible__10CMarkerMgrFii
+SetForceVisible__10CMarkerMgrFii:
 /* 8005D4D8 0004E458  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005D4DC 0004E45C  7C 08 02 A6 */	mflr r0
 /* 8005D4E0 0004E460  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8005D4E4 0004E464  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8005D4E8 0004E468  7C BF 2B 78 */	mr r31, r5
-/* 8005D4EC 0004E46C  4B FF FC 11 */	bl func_8005D0FC
+/* 8005D4EC 0004E46C  4B FF FC 11 */	bl GetGrp__10CMarkerMgrFi
 /* 8005D4F0 0004E470  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D4F4 0004E474  41 82 00 14 */	beq lbl_8005D508
 /* 8005D4F8 0004E478  7F E5 FB 78 */	mr r5, r31
@@ -1111,8 +1111,8 @@ lbl_8005D508:
 /* 8005D514 0004E494  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005D518 0004E498  4E 80 00 20 */	blr
 
-.global func_8005D51C
-func_8005D51C:
+.global Update__10CMarkerMgrFP8CVCamera
+Update__10CMarkerMgrFP8CVCamera:
 /* 8005D51C 0004E49C  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 8005D520 0004E4A0  7C 08 02 A6 */	mflr r0
 /* 8005D524 0004E4A4  90 01 00 64 */	stw r0, 0x64(r1)
@@ -1164,7 +1164,7 @@ lbl_8005D5A4:
 /* 8005D5D8 0004E558  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 8005D5DC 0004E55C  90 01 00 1C */	stw r0, 0x1c(r1)
 /* 8005D5E0 0004E560  80 DE 00 10 */	lwz r6, 0x10(r30)
-/* 8005D5E4 0004E564  4B FF F9 D5 */	bl func_8005CFB8
+/* 8005D5E4 0004E564  4B FF F9 D5 */	bl Update__12CMarkerGroupF8CVVector8CVVectori
 /* 8005D5E8 0004E568  83 FF 00 0C */	lwz r31, 0xc(r31)
 
 .global func_8005D5EC
@@ -1179,8 +1179,8 @@ lbl_8005D5F4:
 /* 8005D604 0004E584  38 21 00 60 */	addi r1, r1, 0x60
 /* 8005D608 0004E588  4E 80 00 20 */	blr
 
-.global lbl_8005D60C
-lbl_8005D60C:
+.global __dt__12CMarkerGroupFv
+__dt__12CMarkerGroupFv:
 /* 8005D60C 0004E58C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005D610 0004E590  7C 08 02 A6 */	mflr r0
 /* 8005D614 0004E594  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1211,3 +1211,37 @@ lbl_8005D664:
 /* 8005D674 0004E5F4  7C 08 03 A6 */	mtlr r0
 /* 8005D678 0004E5F8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005D67C 0004E5FC  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global __vt__12CMarkerGroup
+__vt__12CMarkerGroup:
+
+	# ROM: 0x1C89A0
+	.4byte __RTTI__12CMarkerGroup
+	.4byte 0
+	.4byte __dt__12CMarkerGroupFv
+
+.global lbl_801CC8AC
+lbl_801CC8AC:
+
+	# ROM: 0x1C89AC
+	.4byte __RTTI__10CVListBase
+	.4byte 0
+	.4byte 0
+
+.global __vt__7CMarker
+__vt__7CMarker:
+
+	# ROM: 0x1C89B8
+	.4byte __RTTI__7CMarker
+	.4byte 0
+	.4byte __dt__7CMarkerFv
+
+.global lbl_801CC8C4
+lbl_801CC8C4:
+
+	# ROM: 0x1C89C4
+	.4byte __RTTI__10CVListBase
+	.4byte 0
+	.4byte 0

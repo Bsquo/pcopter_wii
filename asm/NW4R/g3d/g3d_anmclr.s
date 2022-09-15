@@ -147,7 +147,7 @@ func_8019C154:
 /* 8019C1B8 0018D138  90 81 00 0C */	stw r4, 0xc(r1)
 /* 8019C1BC 0018D13C  54 A5 10 3A */	slwi r5, r5, 2
 /* 8019C1C0 0018D140  C0 02 A4 CC */	lfs f0, lbl_80611CEC@sda21(r2)
-/* 8019C1C4 0018D144  38 8D 80 00 */	addi r4, r13, lbl_8060DE00@sda21
+/* 8019C1C4 0018D144  38 8D 80 00 */	addi r4, r13, "@LOCAL@GetAnmPlayPolicy__Q24nw4r3g3dFQ34nw4r3g3d9AnmPolicy@policyTable"@sda21
 /* 8019C1C8 0018D148  90 01 00 08 */	stw r0, 0x8(r1)
 /* 8019C1CC 0018D14C  38 63 17 E8 */	addi r3, r3, lbl_801F17E8@l
 /* 8019C1D0 0018D150  C8 62 A4 D0 */	lfd f3, lbl_80611CF0@sda21(r2)

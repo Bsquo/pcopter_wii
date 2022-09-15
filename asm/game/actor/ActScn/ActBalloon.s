@@ -501,3 +501,45 @@ lbl_8005A8A8:
 /* 8005A938 0004B8B8  7C 08 03 A6 */	mtlr r0
 /* 8005A93C 0004B8BC  38 21 01 10 */	addi r1, r1, 0x110
 /* 8005A940 0004B8C0  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CC760
+lbl_801CC760:
+
+	# ROM: 0x1C8860
+	.4byte lbl_8060E348
+	.4byte 0
+	.4byte lbl_8005A268
+	.4byte lbl_8001E64C
+	.4byte lbl_80023154
+	.4byte lbl_8001E644
+	.4byte lbl_800230B8
+	.4byte lbl_8005A460
+	.4byte lbl_800212F0
+	.4byte lbl_80057048
+	.4byte lbl_800217F0
+	.4byte func_80021F00
+	.4byte lbl_800571A0
+	.4byte lbl_800571D4
+	.4byte lbl_8002241C
+	.4byte lbl_8005A3A4
+	.4byte func_800225E0
+	.4byte lbl_8005A3A0
+	.4byte lbl_800570C0
+
+.global lbl_801CC7AC
+lbl_801CC7AC:
+
+	# ROM: 0x1C88AC
+	.4byte __RTTI__10CVListBase
+	.4byte 0
+	.4byte __RTTI__7CVRigid
+	.4byte 0
+	.4byte __RTTI__7CVActor
+	.4byte 0
+	.4byte lbl_8060E310
+	.4byte 0
+	.4byte lbl_8060E338
+	.4byte 0
+	.4byte 0

@@ -519,15 +519,15 @@ lbl_8060E360:
 	.4byte lbl_801BF8F0
 	.4byte lbl_801CC888
 
-.global lbl_8060E368
-lbl_8060E368:
+.global __RTTI__12CMarkerGroup
+__RTTI__12CMarkerGroup:
 
 	# ROM: 0x1EE568
 	.4byte lbl_801BFA40
 	.4byte lbl_801CC8AC
 
-.global lbl_8060E370
-lbl_8060E370:
+.global __RTTI__7CMarker
+__RTTI__7CMarker:
 
 	# ROM: 0x1EE570
 	.4byte lbl_806103A8

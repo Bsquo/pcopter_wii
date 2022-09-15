@@ -15,7 +15,7 @@ void CPosLog::Update(CVActor* actor, int iVar1) {
     if (magnitude > _53062 || iVar1 != 0) {
         ShiftForward();
         mLog1[0] = actor->mPos;
-        mLog2[0] = actor->field_0x20.mZVec;
+        mLog2[0] = actor->mAxis.mYaw;
         if (mCount < 19)
             mCount++;
     }

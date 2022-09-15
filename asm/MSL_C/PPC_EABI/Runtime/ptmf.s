@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_800B2F68
-func_800B2F68:
+.global __ptmf_scall
+__ptmf_scall:
 /* 800B2F68 000A3EE8  80 0C 00 00 */	lwz r0, 0x0(r12)
 /* 800B2F6C 000A3EEC  81 6C 00 04 */	lwz r11, 0x4(r12)
 /* 800B2F70 000A3EF0  81 8C 00 08 */	lwz r12, 0x8(r12)

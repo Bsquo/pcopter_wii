@@ -19,7 +19,7 @@ CUserData::CUserData() {
     field_0xF4 = 0;
     field_0x00 = 0;
     mBody = NRM_01;
-    mRotor = NORMAL_ROTOR;
+    mRotor = NORMAL_BLADE;
     mMotor = NORMAL_MOTOR;
     mGyro = NORMAL_GYRO;
     mBattery = NORMAL_BATTERY;

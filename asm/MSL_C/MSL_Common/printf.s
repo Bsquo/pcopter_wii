@@ -2809,8 +2809,8 @@ func_800BA150:
 /* 800BA15C 000AB0DC  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 800BA160 000AB0E0  4E 80 00 20 */	blr
 
-.global func_800BA164
-func_800BA164:
+.global sprintf
+sprintf:
 /* 800BA164 000AB0E4  94 21 FF 60 */	stwu r1, -0xa0(r1)
 /* 800BA168 000AB0E8  7C 08 02 A6 */	mflr r0
 /* 800BA16C 000AB0EC  90 01 00 A4 */	stw r0, 0xa4(r1)

@@ -582,3 +582,42 @@ lbl_8005DE74:
 lbl_8005DE7C:
 /* 8005DE7C 0004EDFC  38 60 00 01 */	li r3, 0x1
 /* 8005DE80 0004EE00  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CC8D0
+lbl_801CC8D0:
+
+	# ROM: 0x1C89D0
+	.4byte lbl_8005D804
+	.4byte lbl_8005D88C
+	.4byte lbl_8005D914
+	.4byte lbl_8005D99C
+	.4byte lbl_8005DA24
+	.4byte lbl_8005DAAC
+	.4byte lbl_8005DB34
+	.4byte lbl_8005DBBC
+
+.global lbl_801CC8F0
+lbl_801CC8F0:
+
+	# ROM: 0x1C89F0
+	.4byte lbl_8060E378
+	.4byte 0
+	.4byte lbl_8005D6C4
+	.4byte lbl_8005D71C
+	.4byte lbl_8005DC50
+	.4byte lbl_8005DC48
+	.4byte lbl_8005DE74
+	.4byte CalcLocalSystem__7CVSceneFv
+	.4byte lbl_8005DE7C
+	.4byte func_80011AC4
+
+.global lbl_801CC918
+lbl_801CC918:
+
+	# ROM: 0x1C8A18
+	.4byte __RTTI__7CVScene
+	.4byte 0
+	.4byte 0
+	.4byte 0

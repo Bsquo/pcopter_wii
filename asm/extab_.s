@@ -140,7 +140,7 @@ lbl_800064F0:
 	.4byte func_80011FF0
 	.4byte 0x0780001F
 	.4byte 0x00006CA8
-	.4byte func_80011F98
+	.4byte __dt__20CSceneMenuFreeFlightFv
 	.4byte 0x0780001F
 	.4byte 0x00006BB8
 	.4byte func_80011F04

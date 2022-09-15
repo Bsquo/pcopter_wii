@@ -78,7 +78,7 @@ lbl_8000CB00:
 	.4byte __ct__20CSceneMenuFreeFlightFv
 	.4byte 0x0000003C
 	.4byte lbl_80006860
-	.4byte func_80011F98
+	.4byte __dt__20CSceneMenuFreeFlightFv
 	.4byte 0x00000058
 	.4byte lbl_80006868
 	.4byte func_80011FF0
@@ -135,10 +135,10 @@ lbl_8000CB00:
 	.4byte __dt__8CVPadMgrFv
 	.4byte 0x00000060
 	.4byte lbl_800068F8
-	.4byte lbl_800127E4
+	.4byte __dt__11CScenaryMgrFv
 	.4byte 0x000000A8
 	.4byte lbl_80006900
-	.4byte lbl_8001288C
+	.4byte __dt__10CVSoundMgrFv
 	.4byte 0x0000009C
 	.4byte lbl_80006908
 	.4byte __dt__12CVSoundGroupFv
@@ -150,19 +150,19 @@ lbl_8000CB00:
 	.4byte func_800129F0
 	.4byte 0x00000040
 	.4byte lbl_80006920
-	.4byte lbl_80012A30
+	.4byte __dt__11CVLayoutMgrFv
 	.4byte 0x00000084
 	.4byte lbl_80006928
-	.4byte lbl_80012AB4
+	.4byte __dt__10CVTimerMgrFv
 	.4byte 0x0000006C
 	.4byte lbl_80006930
-	.4byte lbl_80012B24
+	.4byte __dt__9CVAreaMgrFv
 	.4byte 0x00000088
 	.4byte lbl_80006938
-	.4byte lbl_80012BAC
+	.4byte __dt__11CVCameraMgrFv
 	.4byte 0x0000006C
 	.4byte lbl_80006940
-	.4byte lbl_80012C1C
+	.4byte __dt__11CVEffectMgrFv
 	.4byte 0x00000074
 	.4byte lbl_80006948
 	.4byte lbl_80012C9C
@@ -339,7 +339,7 @@ lbl_8000CB00:
 	.4byte GetInstance__11CScenaryMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006BAC
-	.4byte func_80015974
+	.4byte GetInstance__10CVActorMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006BB4
 	.4byte lbl_800159D8
@@ -1617,7 +1617,7 @@ lbl_8000CB00:
 	.4byte func_8002D82C
 	.4byte 0x00000094
 	.4byte lbl_80007E34
-	.4byte func_8002D8C0
+	.4byte GetStart__10CVActorMgrFi
 	.4byte 0x00000078
 	.4byte lbl_80007E3C
 	.4byte func_8002D97C
@@ -1863,7 +1863,7 @@ lbl_8000CB00:
 	.4byte func_80030B00
 	.4byte 0x000000B8
 	.4byte lbl_80008458
-	.4byte func_80030BBC
+	.4byte Create__11CVEffectMgrFPcPciP6CVFlagP7CVActoriP8CVVector
 	.4byte 0x00000098
 	.4byte lbl_80008460
 	.4byte func_80030C54
@@ -1881,22 +1881,22 @@ lbl_8000CB00:
 	.4byte StartEffect__11CVEffectMgrFPci
 	.4byte 0x0000004C
 	.4byte lbl_80008530
-	.4byte func_800313F4
+	.4byte StopEffect__11CVEffectMgrFPci
 	.4byte 0x0000003C
 	.4byte lbl_80008538
 	.4byte func_80031430
 	.4byte 0x0000006C
 	.4byte lbl_80008540
-	.4byte func_8003149C
+	.4byte Delete__11CVEffectMgrFPc
 	.4byte 0x00000044
 	.4byte lbl_80008548
-	.4byte func_800314E0
+	.4byte SetVisible__11CVEffectMgrFPci
 	.4byte 0x0000003C
 	.4byte lbl_80008550
 	.4byte SetPos__11CVEffectMgrFPcfff
 	.4byte 0x0000005C
 	.4byte lbl_80008558
-	.4byte func_80031578
+	.4byte SetRoll__11CVEffectMgrFPcfff
 	.4byte 0x0000008C
 	.4byte lbl_80008560
 	.4byte func_80031604
@@ -2310,7 +2310,7 @@ lbl_8000CB00:
 	.4byte __ct__22CSceneMenuCopterSelectFv
 	.4byte 0x0000005C
 	.4byte lbl_80008CA0
-	.4byte lbl_8003B4A4
+	.4byte StartLocal__22CSceneMenuCopterSelectFv
 	.4byte 0x00000B6C
 	.4byte lbl_80008CBC
 	.4byte func_8003C010
@@ -2319,13 +2319,13 @@ lbl_8000CB00:
 	.4byte func_8003C06C
 	.4byte 0x00000048
 	.4byte lbl_80008D58
-	.4byte lbl_8003C0FC
+	.4byte CalcLocal__22CSceneMenuCopterSelectFv
 	.4byte 0x00000668
 	.4byte lbl_80008D60
-	.4byte lbl_8003C76C
+	.4byte RenderLocal__22CSceneMenuCopterSelectFv
 	.4byte 0x000000E8
 	.4byte lbl_80008D68
-	.4byte lbl_8003C85C
+	.4byte EndLocal__22CSceneMenuCopterSelectFv
 	.4byte 0x00000124
 	.4byte lbl_80008D80
 	.4byte func_8003C980
@@ -3282,73 +3282,73 @@ lbl_8000CB00:
 	.4byte lbl_8005C53C
 	.4byte 0x000000A4
 	.4byte lbl_8000A354
-	.4byte lbl_8005C5E0
+	.4byte __dt__7CMarkerFv
 	.4byte 0x00000084
 	.4byte lbl_8000A35C
-	.4byte func_8005C664
+	.4byte Init__7CMarkerFPcPv6CVFlagi8CVVector
 	.4byte 0x00000190
 	.4byte lbl_8000A364
-	.4byte func_8005C7F4
+	.4byte Release__7CMarkerFv
 	.4byte 0x00000040
 	.4byte lbl_8000A37C
-	.4byte func_8005C834
+	.4byte GetPos__7CMarkerFv
 	.4byte 0x00000090
 	.4byte lbl_8000A384
-	.4byte func_8005C8C4
+	.4byte GetRoll__7CMarkerFv
 	.4byte 0x0000006C
 	.4byte lbl_8000A38C
-	.4byte func_8005C930
+	.4byte Update__7CMarkerF8CVVectoriii
 	.4byte 0x000001F0
 	.4byte lbl_8000A394
-	.4byte func_8005CB20
+	.4byte IsEnable__7CMarkerFv
 	.4byte 0x000000A0
 	.4byte lbl_8000A39C
-	.4byte func_8005CBC0
+	.4byte InitByAct__12CMarkerGroupFiiPc6CVFlag8CVVector
 	.4byte 0x00000140
 	.4byte lbl_8000A3A4
-	.4byte func_8005CD00
+	.4byte __ct__7CMarkerFv
 	.4byte 0x00000054
 	.4byte lbl_8000A3F4
-	.4byte func_8005CD54
+	.4byte InitByPos__12CMarkerGroupFiiPc6CVFlag8CVVector
 	.4byte 0x00000138
 	.4byte lbl_8000A424
-	.4byte func_8005CE8C
+	.4byte GetNearestMarker__12CMarkerGroupF8CVVector8CVVector
 	.4byte 0x0000012C
 	.4byte lbl_8000A474
-	.4byte func_8005CFB8
+	.4byte Update__12CMarkerGroupF8CVVector8CVVectori
 	.4byte 0x00000140
 	.4byte lbl_8000A47C
-	.4byte func_8005D0FC
+	.4byte GetGrp__10CMarkerMgrFi
 	.4byte 0x00000050
 	.4byte lbl_8000A484
-	.4byte func_8005D14C
+	.4byte AddGrpByAct__10CMarkerMgrFiiPc6CVFlag8CVVector
 	.4byte 0x000000B4
 	.4byte lbl_8000A48C
-	.4byte func_8005D200
+	.4byte __ct__12CMarkerGroupFv
 	.4byte 0x0000004C
 	.4byte lbl_8000A4B4
-	.4byte func_8005D24C
+	.4byte AddGrpByPos__10CMarkerMgrFiiPc6CVFlag8CVVector
 	.4byte 0x000000B4
 	.4byte lbl_8000A4E4
-	.4byte func_8005D300
+	.4byte AddPosByAct__10CMarkerMgrFiiPc6CVFlag8CVVector
 	.4byte 0x00000094
 	.4byte lbl_8000A50C
-	.4byte func_8005D394
+	.4byte AddPosByPos__10CMarkerMgrFiiPc6CVFlag8CVVector
 	.4byte 0x00000094
 	.4byte lbl_8000A524
-	.4byte func_8005D430
+	.4byte SetVisible__10CMarkerMgrFii
 	.4byte 0x00000044
 	.4byte lbl_8000A53C
-	.4byte func_8005D474
+	.4byte SetVisible__10CMarkerMgrFiii
 	.4byte 0x00000064
 	.4byte lbl_8000A544
-	.4byte func_8005D4D8
+	.4byte SetForceVisible__10CMarkerMgrFii
 	.4byte 0x00000044
 	.4byte lbl_8000A54C
-	.4byte func_8005D51C
+	.4byte Update__10CMarkerMgrFP8CVCamera
 	.4byte 0x000000F0
 	.4byte lbl_8000A554
-	.4byte lbl_8005D60C
+	.4byte __dt__12CMarkerGroupFv
 	.4byte 0x00000074
 	.4byte lbl_8000A55C
 	.4byte __ct__15CSceneMenuMain4Fv
@@ -4385,7 +4385,7 @@ lbl_80010138:
 	.4byte func_800BA08C
 	.4byte 0x000000D8
 	.4byte lbl_8000C4B0
-	.4byte func_800BA164
+	.4byte sprintf
 	.4byte 0x000000D0
 	.4byte lbl_8000C4B8
 	.4byte func_800BA2E4

@@ -14,6 +14,7 @@ int strcmp(const char*, const char*);
 int strncmp(const char*, const char*, size_t);
 char* strchr(char*, int);
 size_t strlen(const char * str);
+int sprintf(char* str, const char* format, ...);
 
 #ifdef __cplusplus
 }

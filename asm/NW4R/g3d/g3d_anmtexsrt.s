@@ -147,7 +147,7 @@ func_8019D904:
 /* 8019D968 0018E8E8  90 81 00 0C */	stw r4, 0xc(r1)
 /* 8019D96C 0018E8EC  54 A5 10 3A */	slwi r5, r5, 2
 /* 8019D970 0018E8F0  C0 02 A4 EC */	lfs f0, lbl_80611D0C@sda21(r2)
-/* 8019D974 0018E8F4  38 8D 80 00 */	addi r4, r13, lbl_8060DE00@sda21
+/* 8019D974 0018E8F4  38 8D 80 00 */	addi r4, r13, "@LOCAL@GetAnmPlayPolicy__Q24nw4r3g3dFQ34nw4r3g3d9AnmPolicy@policyTable"@sda21
 /* 8019D978 0018E8F8  90 01 00 08 */	stw r0, 0x8(r1)
 /* 8019D97C 0018E8FC  38 63 19 08 */	addi r3, r3, lbl_801F1908@l
 /* 8019D980 0018E900  C8 62 A4 F0 */	lfd f3, lbl_80611D10@sda21(r2)

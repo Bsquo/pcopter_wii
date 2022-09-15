@@ -134,8 +134,8 @@ _savegpr_24:
 func_800B30B0:
 /* 800B30B0 000A4030  93 2B FF E4 */	stw r25, -0x1c(r11)
 
-.global func_800B30B4
-func_800B30B4:
+.global _savegpr_26
+_savegpr_26:
 /* 800B30B4 000A4034  93 4B FF E8 */	stw r26, -0x18(r11)
 
 .global _savegpr_27
@@ -195,8 +195,8 @@ _restgpr_24:
 func_800B30FC:
 /* 800B30FC 000A407C  83 2B FF E4 */	lwz r25, -0x1c(r11)
 
-.global func_800B3100
-func_800B3100:
+.global _restgpr_26
+_restgpr_26:
 /* 800B3100 000A4080  83 4B FF E8 */	lwz r26, -0x18(r11)
 
 .global _restgpr_27

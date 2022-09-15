@@ -324,3 +324,30 @@ lbl_80057724:
 /* 80057730 000486B0  7C 08 03 A6 */	mtlr r0
 /* 80057734 000486B4  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 80057738 000486B8  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CC690
+lbl_801CC690:
+
+	# ROM: 0x1C8790
+	.4byte lbl_8060E310
+	.4byte 0
+	.4byte func_80057334
+	.4byte lbl_8001E64C
+	.4byte lbl_80023154
+	.4byte lbl_8001E644
+	.4byte lbl_800230B8
+	.4byte func_80022304
+	.4byte lbl_800212F0
+	.4byte func_80021378
+	.4byte lbl_800217F0
+	.4byte func_80021F00
+	.4byte func_800573B4
+	.4byte func_800574D4
+	.4byte lbl_8002241C
+	.4byte lbl_8001DC3C
+	.4byte func_800225E0
+	.4byte lbl_800229C0
+	.4byte func_80022EC8
+	.4byte 0

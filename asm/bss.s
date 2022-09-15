@@ -46,8 +46,8 @@ lbl_80501E50:
 lbl_80502068:
 	.skip 0x6858
 
-.global lbl_805088C0
-lbl_805088C0:
+.global "@LOCAL@GetInstance__4CAppFv@m_instance"
+"@LOCAL@GetInstance__4CAppFv@m_instance":
 	.skip 0x14D00
 
 .global lbl_8051D5C0

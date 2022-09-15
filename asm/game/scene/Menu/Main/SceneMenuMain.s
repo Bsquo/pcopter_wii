@@ -790,3 +790,29 @@ lbl_80056F78:
 lbl_80056F80:
 /* 80056F80 00047F00  38 60 00 01 */	li r3, 0x1
 /* 80056F84 00047F04  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CC5E8
+lbl_801CC5E8:
+
+	# ROM: 0x1C86E8
+	.4byte lbl_8060E330
+	.4byte 0
+	.4byte lbl_80056474
+	.4byte lbl_800564B4
+	.4byte lbl_800569A8
+	.4byte lbl_800569A0
+	.4byte lbl_80056F78
+	.4byte CalcLocalSystem__7CVSceneFv
+	.4byte lbl_80056F80
+	.4byte func_800119BC
+
+.global lbl_801CC610
+lbl_801CC610:
+
+	# ROM: 0x1C8710
+	.4byte __RTTI__7CVScene
+	.4byte 0
+	.4byte 0
+	.4byte 0

@@ -1069,3 +1069,44 @@ lbl_80056414:
 lbl_8005641C:
 /* 8005641C 0004739C  38 60 00 01 */	li r3, 0x1
 /* 80056420 000473A0  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CC588
+lbl_801CC588:
+
+	# ROM: 0x1C8688
+	.4byte lbl_800556BC
+	.4byte lbl_80055794
+	.4byte lbl_80055854
+	.4byte lbl_8005592C
+	.4byte lbl_800559EC
+	.4byte lbl_80055AAC
+	.4byte lbl_80055B6C
+	.4byte lbl_80055C44
+	.4byte lbl_80055D1C
+	.4byte lbl_80055DDC
+
+.global lbl_801CC5B0
+lbl_801CC5B0:
+
+	# ROM: 0x1C86B0
+	.4byte lbl_8060E328
+	.4byte 0
+	.4byte lbl_8005557C
+	.4byte lbl_800555D4
+	.4byte lbl_80055E70
+	.4byte lbl_80055E68
+	.4byte lbl_80056414
+	.4byte CalcLocalSystem__7CVSceneFv
+	.4byte lbl_8005641C
+	.4byte func_80011A14
+
+.global lbl_801CC5D8
+lbl_801CC5D8:
+
+	# ROM: 0x1C86D8
+	.4byte __RTTI__7CVScene
+	.4byte 0
+	.4byte 0
+	.4byte 0

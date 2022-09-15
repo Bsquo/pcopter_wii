@@ -11,7 +11,7 @@ class CVMatrix;     // Forward declaration
 
 class CVAxis {
     public:
-        CVVector mXVec, mYVec, mZVec;
+        CVVector mRoll, mPitch, mYaw;
 
         CVAxis();
         CVAxis(f32, f32, f32);

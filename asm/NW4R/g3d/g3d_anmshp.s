@@ -178,7 +178,7 @@ func_8019EFDC:
 /* 8019F02C 0018FFAC  90 81 00 0C */	stw r4, 0xc(r1)
 /* 8019F030 0018FFB0  54 A5 10 3A */	slwi r5, r5, 2
 /* 8019F034 0018FFB4  C0 02 A5 1C */	lfs f0, lbl_80611D3C@sda21(r2)
-/* 8019F038 0018FFB8  38 8D 80 00 */	addi r4, r13, lbl_8060DE00@sda21
+/* 8019F038 0018FFB8  38 8D 80 00 */	addi r4, r13, "@LOCAL@GetAnmPlayPolicy__Q24nw4r3g3dFQ34nw4r3g3d9AnmPolicy@policyTable"@sda21
 /* 8019F03C 0018FFBC  90 01 00 08 */	stw r0, 0x8(r1)
 /* 8019F040 0018FFC0  38 63 1A 48 */	addi r3, r3, lbl_801F1A48@l
 /* 8019F044 0018FFC4  C8 62 A5 20 */	lfd f3, lbl_80611D40@sda21(r2)

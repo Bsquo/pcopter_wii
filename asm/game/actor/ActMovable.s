@@ -244,3 +244,43 @@ func_800572B4:
 /* 800572BC 0004823C  7C 08 03 A6 */	mtlr r0
 /* 800572C0 00048240  38 21 00 60 */	addi r1, r1, 0x60
 /* 800572C4 00048244  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CC620
+lbl_801CC620:
+
+	# ROM: 0x1C8720
+	.4byte lbl_8060E338
+	.4byte 0
+	.4byte func_80056FF0
+	.4byte lbl_8001E64C
+	.4byte lbl_80023154
+	.4byte lbl_8001E644
+	.4byte lbl_800230B8
+	.4byte func_80022304
+	.4byte lbl_800212F0
+	.4byte lbl_80057048
+	.4byte lbl_800217F0
+	.4byte func_80021F00
+	.4byte lbl_800571A0
+	.4byte lbl_800571D4
+	.4byte lbl_8002241C
+	.4byte lbl_8001DC3C
+	.4byte func_800225E0
+	.4byte lbl_800229C0
+	.4byte lbl_800570C0
+
+.global lbl_801CC66C
+lbl_801CC66C:
+
+	# ROM: 0x1C876C
+	.4byte __RTTI__10CVListBase
+	.4byte 0
+	.4byte __RTTI__7CVRigid
+	.4byte 0
+	.4byte __RTTI__7CVActor
+	.4byte 0
+	.4byte lbl_8060E310
+	.4byte 0
+	.4byte 0

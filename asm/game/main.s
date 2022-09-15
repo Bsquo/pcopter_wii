@@ -171,25 +171,25 @@ GetInstance__4CAppFv:
 /* 80011684 00002604  7C 08 02 A6 */	mflr r0
 /* 80011688 00002608  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8001168C 0000260C  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80011690 00002610  88 0D 8E EA */	lbz r0, lbl_8060ECEA@sda21(r13)
+/* 80011690 00002610  88 0D 8E EA */	lbz r0, "@GUARD@GetInstance__4CAppFv@m_instance"@sda21(r13)
 /* 80011694 00002614  7C 00 07 75 */	extsb. r0, r0
 /* 80011698 00002618  40 82 00 30 */	bne lbl_800116C8
-/* 8001169C 0000261C  3F E0 80 51 */	lis r31, lbl_805088C0@ha
-/* 800116A0 00002620  38 7F 88 C0 */	addi r3, r31, lbl_805088C0@l
+/* 8001169C 0000261C  3F E0 80 51 */	lis r31, "@LOCAL@GetInstance__4CAppFv@m_instance"@ha
+/* 800116A0 00002620  38 7F 88 C0 */	addi r3, r31, "@LOCAL@GetInstance__4CAppFv@m_instance"@l
 /* 800116A4 00002624  48 00 00 41 */	bl __ct__4CAppFv
 /* 800116A8 00002628  3C 80 80 01 */	lis r4, __dt__4CAppFv@ha
 /* 800116AC 0000262C  3C A0 80 1F */	lis r5, _51209@ha
-/* 800116B0 00002630  38 7F 88 C0 */	addi r3, r31, lbl_805088C0@l
+/* 800116B0 00002630  38 7F 88 C0 */	addi r3, r31, "@LOCAL@GetInstance__4CAppFv@m_instance"@l
 /* 800116B4 00002634  38 84 25 48 */	addi r4, r4, __dt__4CAppFv@l
 /* 800116B8 00002638  38 A5 1F 00 */	addi r5, r5, _51209@l
 /* 800116BC 0000263C  48 0A 12 41 */	bl __register_global_object
 /* 800116C0 00002640  38 00 00 01 */	li r0, 0x1
-/* 800116C4 00002644  98 0D 8E EA */	stb r0, lbl_8060ECEA@sda21(r13)
+/* 800116C4 00002644  98 0D 8E EA */	stb r0, "@GUARD@GetInstance__4CAppFv@m_instance"@sda21(r13)
 lbl_800116C8:
 /* 800116C8 00002648  83 E1 00 0C */	lwz r31, 0xc(r1)
-/* 800116CC 0000264C  3C 60 80 51 */	lis r3, lbl_805088C0@ha
+/* 800116CC 0000264C  3C 60 80 51 */	lis r3, "@LOCAL@GetInstance__4CAppFv@m_instance"@ha
 /* 800116D0 00002650  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800116D4 00002654  38 63 88 C0 */	addi r3, r3, lbl_805088C0@l
+/* 800116D4 00002654  38 63 88 C0 */	addi r3, r3, "@LOCAL@GetInstance__4CAppFv@m_instance"@l
 /* 800116D8 00002658  7C 08 03 A6 */	mtlr r0
 /* 800116DC 0000265C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800116E0 00002660  4E 80 00 20 */	blr
@@ -831,9 +831,9 @@ __ct__20CSceneMenuFreeFlightFv:
 /* 80011F68 00002EE8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80011F6C 00002EEC  7C 7F 1B 78 */	mr r31, r3
 /* 80011F70 00002EF0  48 02 94 D9 */	bl __ct__22CSceneMenuCopterSelectFv
-/* 80011F74 00002EF4  3C 80 80 1D */	lis r4, lbl_801CA560@ha
+/* 80011F74 00002EF4  3C 80 80 1D */	lis r4, __vt__20CSceneMenuFreeFlight@ha
 /* 80011F78 00002EF8  7F E3 FB 78 */	mr r3, r31
-/* 80011F7C 00002EFC  38 84 A5 60 */	addi r4, r4, lbl_801CA560@l
+/* 80011F7C 00002EFC  38 84 A5 60 */	addi r4, r4, __vt__20CSceneMenuFreeFlight@l
 /* 80011F80 00002F00  90 9F 00 28 */	stw r4, 0x28(r31)
 /* 80011F84 00002F04  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80011F88 00002F08  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -841,8 +841,8 @@ __ct__20CSceneMenuFreeFlightFv:
 /* 80011F90 00002F10  38 21 00 10 */	addi r1, r1, 0x10
 /* 80011F94 00002F14  4E 80 00 20 */	blr
 
-.global func_80011F98
-func_80011F98:
+.global __dt__20CSceneMenuFreeFlightFv
+__dt__20CSceneMenuFreeFlightFv:
 /* 80011F98 00002F18  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80011F9C 00002F1C  7C 08 02 A6 */	mflr r0
 /* 80011FA0 00002F20  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1352,7 +1352,7 @@ __dt__4CAppFv:
 /* 80012678 000035F8  4B FF F9 79 */	bl func_80011FF0
 /* 8001267C 000035FC  38 7E 6C A8 */	addi r3, r30, 0x6ca8
 /* 80012680 00003600  38 80 FF FF */	li r4, -0x1
-/* 80012684 00003604  4B FF F9 15 */	bl func_80011F98
+/* 80012684 00003604  4B FF F9 15 */	bl __dt__20CSceneMenuFreeFlightFv
 /* 80012688 00003608  38 7E 6B B8 */	addi r3, r30, 0x6bb8
 /* 8001268C 0000360C  38 80 FF FF */	li r4, -0x1
 /* 80012690 00003610  4B FF F8 75 */	bl func_80011F04
@@ -1449,8 +1449,8 @@ lbl_800127C4:
 func_800127E0:
 /* 800127E0 00003760  4E 80 00 20 */	blr
 
-.global lbl_800127E4
-lbl_800127E4:
+.global __dt__11CScenaryMgrFv
+__dt__11CScenaryMgrFv:
 /* 800127E4 00003764  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800127E8 00003768  7C 08 02 A6 */	mflr r0
 /* 800127EC 0000376C  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1495,8 +1495,8 @@ lbl_80012870:
 /* 80012884 00003804  38 21 00 10 */	addi r1, r1, 0x10
 /* 80012888 00003808  4E 80 00 20 */	blr
 
-.global lbl_8001288C
-lbl_8001288C:
+.global __dt__10CVSoundMgrFv
+__dt__10CVSoundMgrFv:
 /* 8001288C 0000380C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80012890 00003810  7C 08 02 A6 */	mflr r0
 /* 80012894 00003814  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1506,8 +1506,8 @@ lbl_8001288C:
 /* 800128A4 00003824  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 800128A8 00003828  7C 7E 1B 78 */	mr r30, r3
 /* 800128AC 0000382C  41 82 00 60 */	beq lbl_8001290C
-/* 800128B0 00003830  3C 80 80 1D */	lis r4, lbl_801CA5DC@ha
-/* 800128B4 00003834  38 84 A5 DC */	addi r4, r4, lbl_801CA5DC@l
+/* 800128B0 00003830  3C 80 80 1D */	lis r4, __vt__10CVSoundMgr@ha
+/* 800128B4 00003834  38 84 A5 DC */	addi r4, r4, __vt__10CVSoundMgr@l
 /* 800128B8 00003838  90 83 03 D8 */	stw r4, 0x3d8(r3)
 /* 800128BC 0000383C  48 00 00 6D */	bl func_80012928
 /* 800128C0 00003840  3C 80 80 01 */	lis r4, __dt__12CVSoundGroupFv@ha
@@ -1619,8 +1619,8 @@ lbl_80012A18:
 /* 80012A28 000039A8  38 21 00 10 */	addi r1, r1, 0x10
 /* 80012A2C 000039AC  4E 80 00 20 */	blr
 
-.global lbl_80012A30
-lbl_80012A30:
+.global __dt__11CVLayoutMgrFv
+__dt__11CVLayoutMgrFv:
 /* 80012A30 000039B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80012A34 000039B4  7C 08 02 A6 */	mflr r0
 /* 80012A38 000039B8  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1630,8 +1630,8 @@ lbl_80012A30:
 /* 80012A48 000039C8  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80012A4C 000039CC  7C 7E 1B 78 */	mr r30, r3
 /* 80012A50 000039D0  41 82 00 48 */	beq lbl_80012A98
-/* 80012A54 000039D4  3C 80 80 1D */	lis r4, lbl_801CA5E8@ha
-/* 80012A58 000039D8  38 84 A5 E8 */	addi r4, r4, lbl_801CA5E8@l
+/* 80012A54 000039D4  3C 80 80 1D */	lis r4, __vt__11CVLayoutMgr@ha
+/* 80012A58 000039D8  38 84 A5 E8 */	addi r4, r4, __vt__11CVLayoutMgr@l
 /* 80012A5C 000039DC  90 83 00 78 */	stw r4, 0x78(r3)
 /* 80012A60 000039E0  48 01 C5 21 */	bl func_8002EF80
 /* 80012A64 000039E4  38 7E 00 68 */	addi r3, r30, 0x68
@@ -1656,8 +1656,8 @@ lbl_80012A98:
 /* 80012AAC 00003A2C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80012AB0 00003A30  4E 80 00 20 */	blr
 
-.global lbl_80012AB4
-lbl_80012AB4:
+.global __dt__10CVTimerMgrFv
+__dt__10CVTimerMgrFv:
 /* 80012AB4 00003A34  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80012AB8 00003A38  7C 08 02 A6 */	mflr r0
 /* 80012ABC 00003A3C  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1667,8 +1667,8 @@ lbl_80012AB4:
 /* 80012ACC 00003A4C  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80012AD0 00003A50  7C 7E 1B 78 */	mr r30, r3
 /* 80012AD4 00003A54  41 82 00 30 */	beq lbl_80012B04
-/* 80012AD8 00003A58  3C 80 80 1D */	lis r4, lbl_801CA5F4@ha
-/* 80012ADC 00003A5C  38 84 A5 F4 */	addi r4, r4, lbl_801CA5F4@l
+/* 80012AD8 00003A58  3C 80 80 1D */	lis r4, __vt__10CVTimerMgr@ha
+/* 80012ADC 00003A5C  38 84 A5 F4 */	addi r4, r4, __vt__10CVTimerMgr@l
 /* 80012AE0 00003A60  90 83 00 10 */	stw r4, 0x10(r3)
 /* 80012AE4 00003A64  48 00 00 3D */	bl func_80012B20
 /* 80012AE8 00003A68  7F C3 F3 78 */	mr r3, r30
@@ -1691,8 +1691,8 @@ lbl_80012B04:
 func_80012B20:
 /* 80012B20 00003AA0  48 01 3E C0 */	b Release__6CVListFv
 
-.global lbl_80012B24
-lbl_80012B24:
+.global __dt__9CVAreaMgrFv
+__dt__9CVAreaMgrFv:
 /* 80012B24 00003AA4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80012B28 00003AA8  7C 08 02 A6 */	mflr r0
 /* 80012B2C 00003AAC  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1702,9 +1702,9 @@ lbl_80012B24:
 /* 80012B3C 00003ABC  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80012B40 00003AC0  7C 7E 1B 78 */	mr r30, r3
 /* 80012B44 00003AC4  41 82 00 4C */	beq lbl_80012B90
-/* 80012B48 00003AC8  3C A0 80 1D */	lis r5, lbl_801CA600@ha
+/* 80012B48 00003AC8  3C A0 80 1D */	lis r5, __vt__9CVAreaMgr@ha
 /* 80012B4C 00003ACC  3C 83 00 01 */	addis r4, r3, 0x1
-/* 80012B50 00003AD0  38 A5 A6 00 */	addi r5, r5, lbl_801CA600@l
+/* 80012B50 00003AD0  38 A5 A6 00 */	addi r5, r5, __vt__9CVAreaMgr@l
 /* 80012B54 00003AD4  90 A4 FA 4C */	stw r5, -0x5b4(r4)
 /* 80012B58 00003AD8  48 03 6C E5 */	bl func_8004983C
 /* 80012B5C 00003ADC  3C 80 80 02 */	lis r4, __dt__6CVListFv@ha
@@ -1729,8 +1729,8 @@ lbl_80012B90:
 /* 80012BA4 00003B24  38 21 00 10 */	addi r1, r1, 0x10
 /* 80012BA8 00003B28  4E 80 00 20 */	blr
 
-.global lbl_80012BAC
-lbl_80012BAC:
+.global __dt__11CVCameraMgrFv
+__dt__11CVCameraMgrFv:
 /* 80012BAC 00003B2C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80012BB0 00003B30  7C 08 02 A6 */	mflr r0
 /* 80012BB4 00003B34  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1740,8 +1740,8 @@ lbl_80012BAC:
 /* 80012BC4 00003B44  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80012BC8 00003B48  7C 7E 1B 78 */	mr r30, r3
 /* 80012BCC 00003B4C  41 82 00 30 */	beq lbl_80012BFC
-/* 80012BD0 00003B50  3C 80 80 1D */	lis r4, lbl_801CA60C@ha
-/* 80012BD4 00003B54  38 84 A6 0C */	addi r4, r4, lbl_801CA60C@l
+/* 80012BD0 00003B50  3C 80 80 1D */	lis r4, __vt__11CVCameraMgr@ha
+/* 80012BD4 00003B54  38 84 A6 0C */	addi r4, r4, __vt__11CVCameraMgr@l
 /* 80012BD8 00003B58  90 83 00 14 */	stw r4, 0x14(r3)
 /* 80012BDC 00003B5C  48 00 00 3D */	bl func_80012C18
 /* 80012BE0 00003B60  7F C3 F3 78 */	mr r3, r30
@@ -1764,8 +1764,8 @@ lbl_80012BFC:
 func_80012C18:
 /* 80012C18 00003B98  48 01 3D C8 */	b Release__6CVListFv
 
-.global lbl_80012C1C
-lbl_80012C1C:
+.global __dt__11CVEffectMgrFv
+__dt__11CVEffectMgrFv:
 /* 80012C1C 00003B9C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80012C20 00003BA0  7C 08 02 A6 */	mflr r0
 /* 80012C24 00003BA4  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1775,9 +1775,9 @@ lbl_80012C1C:
 /* 80012C34 00003BB4  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80012C38 00003BB8  7C 7E 1B 78 */	mr r30, r3
 /* 80012C3C 00003BBC  41 82 00 38 */	beq lbl_80012C74
-/* 80012C40 00003BC0  3C A0 80 1D */	lis r5, lbl_801CA618@ha
+/* 80012C40 00003BC0  3C A0 80 1D */	lis r5, __vt__11CVEffectMgr@ha
 /* 80012C44 00003BC4  3C 83 00 30 */	addis r4, r3, 0x30
-/* 80012C48 00003BC8  38 A5 A6 18 */	addi r5, r5, lbl_801CA618@l
+/* 80012C48 00003BC8  38 A5 A6 18 */	addi r5, r5, __vt__11CVEffectMgr@l
 /* 80012C4C 00003BCC  90 A4 00 30 */	stw r5, 0x30(r4)
 /* 80012C50 00003BD0  48 00 00 41 */	bl func_80012C90
 /* 80012C54 00003BD4  3C 7E 00 30 */	addis r3, r30, 0x30
@@ -3490,20 +3490,20 @@ lbl_800140D4:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CA560
-lbl_801CA560:
+.global __vt__20CSceneMenuFreeFlight
+__vt__20CSceneMenuFreeFlight:
 
 	# ROM: 0x1C6660
-	.4byte lbl_8060DE08
+	.4byte __RTTI__20CSceneMenuFreeFlight
 	.4byte 0
-	.4byte lbl_8003B4A4
-	.4byte lbl_8003C0FC
-	.4byte lbl_8003C76C
-	.4byte lbl_8003C764
-	.4byte lbl_8003C854
+	.4byte StartLocal__22CSceneMenuCopterSelectFv
+	.4byte CalcLocal__22CSceneMenuCopterSelectFv
+	.4byte RenderLocal__22CSceneMenuCopterSelectFv
+	.4byte CalcLocalPause__22CSceneMenuCopterSelectFv
+	.4byte RenderLocalPause__22CSceneMenuCopterSelectFv
 	.4byte CalcLocalSystem__14CSceneMenuBaseFv
-	.4byte lbl_8003C85C
-	.4byte func_80011F98
+	.4byte EndLocal__22CSceneMenuCopterSelectFv
+	.4byte __dt__20CSceneMenuFreeFlightFv
 
 .global lbl_801CA588
 lbl_801CA588:
@@ -3513,7 +3513,7 @@ lbl_801CA588:
 	.4byte 0
 	.4byte __RTTI__14CSceneMenuBase
 	.4byte 0
-	.4byte lbl_8060DE10
+	.4byte __RTTI__22CSceneMenuCopterSelect
 	.4byte 0
 	.4byte 0
 
@@ -3539,7 +3539,7 @@ lbl_801CA5B8:
 __vt__8CVPadMgr:
 
 	# ROM: 0x1C66C4
-	.4byte lbl_8060DE20
+	.4byte __RTTI__8CVPadMgr
 	.4byte 0
 	.4byte __dt__8CVPadMgrFv
 
@@ -3547,64 +3547,64 @@ __vt__8CVPadMgr:
 lbl_801CA5D0:
 
 	# ROM: 0x1C66D0
-	.4byte lbl_8060DE28
+	.4byte __RTTI__11CScenaryMgr
 	.4byte 0
-	.4byte lbl_800127E4
+	.4byte __dt__11CScenaryMgrFv
 
-.global lbl_801CA5DC
-lbl_801CA5DC:
+.global __vt__10CVSoundMgr
+__vt__10CVSoundMgr:
 
 	# ROM: 0x1C66DC
-	.4byte lbl_8060DE30
+	.4byte __RTTI__10CVSoundMgr
 	.4byte 0
-	.4byte lbl_8001288C
+	.4byte __dt__10CVSoundMgrFv
 
-.global lbl_801CA5E8
-lbl_801CA5E8:
+.global __vt__11CVLayoutMgr
+__vt__11CVLayoutMgr:
 
 	# ROM: 0x1C66E8
-	.4byte lbl_8060DE38
+	.4byte __RTTI__11CVLayoutMgr
 	.4byte 0
-	.4byte lbl_80012A30
+	.4byte __dt__11CVLayoutMgrFv
 
-.global lbl_801CA5F4
-lbl_801CA5F4:
+.global __vt__10CVTimerMgr
+__vt__10CVTimerMgr:
 
 	# ROM: 0x1C66F4
-	.4byte lbl_8060DE40
+	.4byte __RTTI__10CVTimerMgr
 	.4byte 0
-	.4byte lbl_80012AB4
+	.4byte __dt__10CVTimerMgrFv
 
-.global lbl_801CA600
-lbl_801CA600:
+.global __vt__9CVAreaMgr
+__vt__9CVAreaMgr:
 
 	# ROM: 0x1C6700
-	.4byte lbl_8060DE48
+	.4byte __RTTI__9CVAreaMgr
 	.4byte 0
-	.4byte lbl_80012B24
+	.4byte __dt__9CVAreaMgrFv
 
-.global lbl_801CA60C
-lbl_801CA60C:
+.global __vt__11CVCameraMgr
+__vt__11CVCameraMgr:
 
 	# ROM: 0x1C670C
-	.4byte lbl_8060DE50
+	.4byte __RTTI__11CVCameraMgr
 	.4byte 0
-	.4byte lbl_80012BAC
+	.4byte __dt__11CVCameraMgrFv
 
-.global lbl_801CA618
-lbl_801CA618:
+.global __vt__11CVEffectMgr
+__vt__11CVEffectMgr:
 
 	# ROM: 0x1C6718
-	.4byte lbl_8060DE58
+	.4byte __RTTI__11CVEffectMgr
 	.4byte 0
-	.4byte lbl_80012C1C
+	.4byte __dt__11CVEffectMgrFv
 	.4byte 0
 
-.global lbl_801CA628
-lbl_801CA628:
+.global __vt__Q34nw4r2ef13MemoryManager
+__vt__Q34nw4r2ef13MemoryManager:
 
 	# ROM: 0x1C6728
-	.4byte lbl_8060DE60
+	.4byte __RTTI__Q34nw4r2ef13MemoryManager
 	.4byte 0
 	.4byte lbl_80013B20
 	.4byte lbl_80013744
@@ -4414,22 +4414,22 @@ lbl_801CB2D0:
 
 .section .sdata, "wa", @progbits
 
-.global lbl_8060DE00
-lbl_8060DE00:
+.global "@LOCAL@GetAnmPlayPolicy__Q24nw4r3g3dFQ34nw4r3g3d9AnmPolicy@policyTable"
+"@LOCAL@GetAnmPlayPolicy__Q24nw4r3g3dFQ34nw4r3g3d9AnmPolicy@policyTable":
 
 	# ROM: 0x1EE000
-	.4byte lbl_801A0DA4
-	.4byte lbl_801A0DAC
+	.4byte PlayPolicy_Onetime__Q24nw4r3g3dFfff
+	.4byte PlayPolicy_Loop__Q24nw4r3g3dFfff
 
-.global lbl_8060DE08
-lbl_8060DE08:
+.global __RTTI__20CSceneMenuFreeFlight
+__RTTI__20CSceneMenuFreeFlight:
 
 	# ROM: 0x1EE008
 	.4byte _51359
 	.4byte lbl_801CA588
 
-.global lbl_8060DE10
-lbl_8060DE10:
+.global __RTTI__22CSceneMenuCopterSelect
+__RTTI__22CSceneMenuCopterSelect:
 
 	# ROM: 0x1EE010
 	.4byte lbl_801B8418
@@ -4442,64 +4442,64 @@ __RTTI__14CSceneMenuBase:
 	.4byte lbl_801B8430
 	.4byte lbl_801CA5B8
 
-.global lbl_8060DE20
-lbl_8060DE20:
+.global __RTTI__8CVPadMgr
+__RTTI__8CVPadMgr:
 
 	# ROM: 0x1EE020
 	.4byte lbl_801B8440
 	.4byte 0
 
-.global lbl_8060DE28
-lbl_8060DE28:
+.global __RTTI__11CScenaryMgr
+__RTTI__11CScenaryMgr:
 
 	# ROM: 0x1EE028
 	.4byte lbl_801B844C
 	.4byte 0
 
-.global lbl_8060DE30
-lbl_8060DE30:
+.global __RTTI__10CVSoundMgr
+__RTTI__10CVSoundMgr:
 
 	# ROM: 0x1EE030
 	.4byte lbl_801B8458
 	.4byte 0
 
-.global lbl_8060DE38
-lbl_8060DE38:
+.global __RTTI__11CVLayoutMgr
+__RTTI__11CVLayoutMgr:
 
 	# ROM: 0x1EE038
 	.4byte lbl_801B8464
 	.4byte 0
 
-.global lbl_8060DE40
-lbl_8060DE40:
+.global __RTTI__10CVTimerMgr
+__RTTI__10CVTimerMgr:
 
 	# ROM: 0x1EE040
 	.4byte lbl_801B8470
 	.4byte 0
 
-.global lbl_8060DE48
-lbl_8060DE48:
+.global __RTTI__9CVAreaMgr
+__RTTI__9CVAreaMgr:
 
 	# ROM: 0x1EE048
 	.4byte lbl_801B847C
 	.4byte 0
 
-.global lbl_8060DE50
-lbl_8060DE50:
+.global __RTTI__11CVCameraMgr
+__RTTI__11CVCameraMgr:
 
 	# ROM: 0x1EE050
 	.4byte lbl_801B8488
 	.4byte 0
 
-.global lbl_8060DE58
-lbl_8060DE58:
+.global __RTTI__11CVEffectMgr
+__RTTI__11CVEffectMgr:
 
 	# ROM: 0x1EE058
 	.4byte lbl_801B8494
 	.4byte 0
 
-.global lbl_8060DE60
-lbl_8060DE60:
+.global __RTTI__Q34nw4r2ef13MemoryManager
+__RTTI__Q34nw4r2ef13MemoryManager:
 
 	# ROM: 0x1EE060
 	.4byte lbl_801B84A0
@@ -4632,48 +4632,48 @@ lbl_8060DEF0:
 	
 .section .sbss, "wa", @nobits
 	
-.global lbl_8060ECE0
-lbl_8060ECE0:
+.global "@GUARD@GetInstance__11CVEffectMgrFv@m_instance"
+"@GUARD@GetInstance__11CVEffectMgrFv@m_instance":
 	.skip 0x1
 
-.global lbl_8060ECE1
-lbl_8060ECE1:
+.global "@GUARD@GetInstance__11CVCameraMgrFv@m_instance"
+"@GUARD@GetInstance__11CVCameraMgrFv@m_instance":
 	.skip 0x1
 
-.global lbl_8060ECE2
-lbl_8060ECE2:
+.global "@GUARD@GetInstance__9CVAreaMgrFv@m_instance"
+"@GUARD@GetInstance__9CVAreaMgrFv@m_instance":
 	.skip 0x1
 
-.global lbl_8060ECE3
-lbl_8060ECE3:
+.global "@GUARD@GetInstance__10CVTimerMgrFv@m_instance"
+"@GUARD@GetInstance__10CVTimerMgrFv@m_instance":
 	.skip 0x1
 
-.global lbl_8060ECE4
-lbl_8060ECE4:
+.global "@GUARD@GetInstance__10CVActorMgrFv@m_instance"
+"@GUARD@GetInstance__10CVActorMgrFv@m_instance":
 	.skip 0x1
 
-.global lbl_8060ECE5
-lbl_8060ECE5:
+.global "@GUARD@GetInstance__11CVLayoutMgrFv@m_instance"
+"@GUARD@GetInstance__11CVLayoutMgrFv@m_instance":
 	.skip 0x1
 
-.global lbl_8060ECE6
-lbl_8060ECE6:
+.global "@GUARD@GetInstance__10CVSoundMgrFv@m_instance"
+"@GUARD@GetInstance__10CVSoundMgrFv@m_instance":
 	.skip 0x1
 
-.global lbl_8060ECE7
-lbl_8060ECE7:
+.global "@GUARD@GetInstance__11CScenaryMgrFv@m_instance"
+"@GUARD@GetInstance__11CScenaryMgrFv@m_instance":
 	.skip 0x1
 
-.global lbl_8060ECE8
-lbl_8060ECE8:
+.global "@LOCAL@GetInstance__13CActorFactoryFv@m_instance"
+"@LOCAL@GetInstance__13CActorFactoryFv@m_instance":
 	.skip 0x1
 
-.global lbl_8060ECE9
-lbl_8060ECE9:
+.global "@GUARD@GetInstance__8CVPadMgrFv@m_instance"
+"@GUARD@GetInstance__8CVPadMgrFv@m_instance":
 	.skip 0x1
 
-.global lbl_8060ECEA
-lbl_8060ECEA:
+.global "@GUARD@GetInstance__4CAppFv@m_instance"
+"@GUARD@GetInstance__4CAppFv@m_instance":
 	.skip 0x6
 
 .section .sdata2, "wa", @progbits

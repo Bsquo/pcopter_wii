@@ -244,25 +244,25 @@ CVMatrix CVMatrix::operator*(const CVMatrix& operand) {
 }
 
 CVAxis::CVAxis() {
-    mXVec.x = 1.0f;
-    mXVec.y = 0.0f;
-    mXVec.z = 0.0f;
+    mRoll.x = 1.0f;
+    mRoll.y = 0.0f;
+    mRoll.z = 0.0f;
     
-    mYVec.x = 0.0f;
-    mYVec.y = 1.0f;
-    mYVec.z = 0.0f;
+    mPitch.x = 0.0f;
+    mPitch.y = 1.0f;
+    mPitch.z = 0.0f;
     
-    mZVec.x = 0.0f;
-    mZVec.y = 0.0f;
-    mZVec.z = 1.0f;
+    mYaw.x = 0.0f;
+    mYaw.y = 0.0f;
+    mYaw.z = 1.0f;
 }
 
 CVAxis::CVAxis(CVVector vec1, CVVector vec2) {
-    mZVec = vec1;
-    mZVec = mZVec.Normalize();
-    mXVec = vec2 ^ mZVec;
-    mXVec = mXVec.Normalize();
-    mYVec = mZVec ^ mXVec;
+    mYaw = vec1;
+    mYaw = mYaw.Normalize();
+    mRoll = vec2 ^ mYaw;
+    mRoll = mRoll.Normalize();
+    mPitch = mYaw ^ mRoll;
 }
 
 const CVAxis& CVAxis::RotateLocalX(f32 angle) {
@@ -306,13 +306,13 @@ const CVAxis& CVAxis::RotateGlobalZ(f32 angle) {
 }
 
 void CVAxis::Approach(CVAxis param, f32 multiplier) {
-    mXVec += (param.mXVec - mXVec) * multiplier;
-    mYVec += (param.mYVec - mYVec) * multiplier;
-    mZVec += (param.mZVec - mZVec) * multiplier;
+    mRoll += (param.mRoll - mRoll) * multiplier;
+    mPitch += (param.mPitch - mPitch) * multiplier;
+    mYaw += (param.mYaw - mYaw) * multiplier;
 
-    mXVec = mXVec.Normalize();
-    mYVec = mYVec.Normalize();
-    mZVec = mZVec.Normalize();
+    mRoll = mRoll.Normalize();
+    mPitch = mPitch.Normalize();
+    mYaw = mYaw.Normalize();
 }
 
 CVAngle::CVAngle(): x(0.0f), y(0.0f), z(0.0f) {}

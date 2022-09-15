@@ -90,6 +90,7 @@ GAME_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/game/scene/Menu/Setting/SceneMenuSoundSetting.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Strap/SceneMenuStrap.o             \
 	$(BUILD_DIR)/asm/game/managers/MarkerMgr.o             \
+	$(BUILD_DIR)/src/game/managers/MarkerMgr.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Main/SceneMenuMain4.o            \
 	$(BUILD_DIR)/asm/game/scene/Menu/Main/SceneMenuMain3.o            \
 	$(BUILD_DIR)/asm/game/scenary/Hospital/ScnHospital02.o            \

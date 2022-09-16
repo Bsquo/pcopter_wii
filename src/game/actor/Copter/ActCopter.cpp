@@ -38,15 +38,15 @@ void CVVector::operator=(const CVVector& vector) {
 	z = vector.z;
 }
 
-void CPosLog::GetLog(u32 logIndex, CVVector* posVec1, CVVector* posVec2) {
-    CVVector* log = &mPrevPos[0];
+void CPosLog::GetLog(u32 logIndex, CVVector* prevPos, CVVector* prevYaw) {
+    CVVector* firstPrevPos = &mPrevPos[0];      // Unused
 
 	if (mCount < logIndex)
 		logIndex = mCount;
-	if (posVec1 != nullptr)
-		*posVec1 = mPrevPos[logIndex];
-	if (posVec2 != nullptr)
-		*posVec2 = mPrevYaw[logIndex];
+	if (prevPos != nullptr)
+		*prevPos = mPrevPos[logIndex];
+	if (prevYaw != nullptr)
+		*prevYaw = mPrevYaw[logIndex];
 }
 
 void CPosLog::ShiftForward() {

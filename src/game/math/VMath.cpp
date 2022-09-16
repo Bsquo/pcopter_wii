@@ -351,39 +351,39 @@ void CVArea::Init() {
 // the ternary operator in this particular case.
 //https://decomp.me/scratch/PXkUB
 void CVArea::Update(CVVector vector) {
-    f32 areaComponent;
-    f32 vecComponent1;
-    f32 vecComponent2;
+    f32 X;
+    f32 Y;
+    f32 Z;
 
-    vecComponent1 = vector.x;
-    areaComponent = mAreaVertex[0][0];
-    vecComponent1 = (vector.x < mAreaVertex[0][0]) ? areaComponent = vecComponent1 : vecComponent1 = areaComponent;
-    mAreaVertex[0][0] = vecComponent1;
+    X = vector.x;
+    Z = mAreaVertex[0][0];
+    X = (vector.x < mAreaVertex[0][0]) ? Z = X : X = Z;
+    mAreaVertex[0][0] = X;
 
-    vecComponent2 = vector.x;
-    areaComponent = mAreaVertex[0][1];
-    vecComponent2 = (vector.x > mAreaVertex[0][1]) ? areaComponent = vecComponent2 : vecComponent2 = areaComponent;
-    mAreaVertex[0][1] = vecComponent2;
+    Y = vector.x;
+    Z = mAreaVertex[0][1];
+    Y = (vector.x > mAreaVertex[0][1]) ? Z = Y : Y = Z;
+    mAreaVertex[0][1] = Y;
 
-    vecComponent2 = vector.y;
-    areaComponent = mAreaVertex[1][0];
-    vecComponent2 = (vector.y < mAreaVertex[1][0]) ? areaComponent = vecComponent2 : vecComponent2 = areaComponent;
-    mAreaVertex[1][0] = vecComponent2;
+    Y = vector.y;
+    Z = mAreaVertex[1][0];
+    Y = (vector.y < mAreaVertex[1][0]) ? Z = Y : Y = Z;
+    mAreaVertex[1][0] = Y;
 
-    vecComponent2 = vector.y;
-    areaComponent = mAreaVertex[1][1];
-    vecComponent2 = (vector.y > mAreaVertex[1][1]) ? areaComponent = vecComponent2 : vecComponent2 = areaComponent;
-    mAreaVertex[1][1] = vecComponent2;
+    Y = vector.y;
+    Z = mAreaVertex[1][1];
+    Y = (vector.y > mAreaVertex[1][1]) ? Z = Y : Y = Z;
+    mAreaVertex[1][1] = Y;
 
-    vecComponent1 = vector.z;
-    areaComponent = mAreaVertex[2][0];
-    vecComponent1 = (vector.z < mAreaVertex[2][0]) ? areaComponent = vecComponent1 : vecComponent1 = areaComponent;
-    mAreaVertex[2][0] = vecComponent1;
+    X = vector.z;
+    Z = mAreaVertex[2][0];
+    X = (vector.z < mAreaVertex[2][0]) ? Z = X : X = Z;
+    mAreaVertex[2][0] = X;
     
-    areaComponent = vector.z;
-    vecComponent1 = mAreaVertex[2][1];
-    vecComponent1 = (vector.z > mAreaVertex[2][1]) ? vecComponent1 = areaComponent : areaComponent = vecComponent1;
-    mAreaVertex[2][1] = vecComponent1;
+    Z = vector.z;
+    X = mAreaVertex[2][1];
+    X = (vector.z > mAreaVertex[2][1]) ? X = Z : Z = X;
+    mAreaVertex[2][1] = X;
 }
 
 f32 CVArea::GetSizeX() {

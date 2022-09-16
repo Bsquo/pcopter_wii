@@ -324,24 +324,24 @@ CVRect::CVRect(f32 side1, f32 side2, f32 side3, f32 side4): mSide1(side1), mSide
 CVArea::CVArea() {
     for (u32 i = 0; i < 3; i++) {
         for (u32 j = 0; j < 2; j++) {
-            mArea[i][j] = 0.0f;
+            mAreaVertex[i][j] = 0.0f;
         }
     }
 }
 
 CVArea::CVArea(f32 X_start, f32 X_end, f32 Y_start, f32 Y_end, f32 Z_start, f32 Z_end) {
-    mArea[0][0] = X_start;
-    mArea[0][1] = X_end;
-    mArea[1][0] = Y_start;
-    mArea[1][1] = Y_end;
-    mArea[2][0] = Z_start;
-    mArea[2][1] = Z_end;
+    mAreaVertex[0][0] = X_start;
+    mAreaVertex[0][1] = X_end;
+    mAreaVertex[1][0] = Y_start;
+    mAreaVertex[1][1] = Y_end;
+    mAreaVertex[2][0] = Z_start;
+    mAreaVertex[2][1] = Z_end;
 }
 
 void CVArea::Init() {
     for (u32 i = 0; i < 3; i++) {
         for (u32 j = 0; j < 2; j++) {
-            mArea[i][j] = 0.0f;
+            mAreaVertex[i][j] = 0.0f;
         }
     }
 }
@@ -356,91 +356,80 @@ void CVArea::Update(CVVector vector) {
     f32 vecComponent2;
 
     vecComponent1 = vector.x;
-    areaComponent = mArea[0][0];
-    vecComponent1 = (vector.x < mArea[0][0]) ? areaComponent = vecComponent1 : vecComponent1 = areaComponent;
-    mArea[0][0] = vecComponent1;
+    areaComponent = mAreaVertex[0][0];
+    vecComponent1 = (vector.x < mAreaVertex[0][0]) ? areaComponent = vecComponent1 : vecComponent1 = areaComponent;
+    mAreaVertex[0][0] = vecComponent1;
 
     vecComponent2 = vector.x;
-    areaComponent = mArea[0][1];
-    vecComponent2 = (vector.x > mArea[0][1]) ? areaComponent = vecComponent2 : vecComponent2 = areaComponent;
-    mArea[0][1] = vecComponent2;
+    areaComponent = mAreaVertex[0][1];
+    vecComponent2 = (vector.x > mAreaVertex[0][1]) ? areaComponent = vecComponent2 : vecComponent2 = areaComponent;
+    mAreaVertex[0][1] = vecComponent2;
 
     vecComponent2 = vector.y;
-    areaComponent = mArea[1][0];
-    vecComponent2 = (vector.y < mArea[1][0]) ? areaComponent = vecComponent2 : vecComponent2 = areaComponent;
-    mArea[1][0] = vecComponent2;
+    areaComponent = mAreaVertex[1][0];
+    vecComponent2 = (vector.y < mAreaVertex[1][0]) ? areaComponent = vecComponent2 : vecComponent2 = areaComponent;
+    mAreaVertex[1][0] = vecComponent2;
 
     vecComponent2 = vector.y;
-    areaComponent = mArea[1][1];
-    vecComponent2 = (vector.y > mArea[1][1]) ? areaComponent = vecComponent2 : vecComponent2 = areaComponent;
-    mArea[1][1] = vecComponent2;
+    areaComponent = mAreaVertex[1][1];
+    vecComponent2 = (vector.y > mAreaVertex[1][1]) ? areaComponent = vecComponent2 : vecComponent2 = areaComponent;
+    mAreaVertex[1][1] = vecComponent2;
 
     vecComponent1 = vector.z;
-    areaComponent = mArea[2][0];
-    vecComponent1 = (vector.z < mArea[2][0]) ? areaComponent = vecComponent1 : vecComponent1 = areaComponent;
-    mArea[2][0] = vecComponent1;
+    areaComponent = mAreaVertex[2][0];
+    vecComponent1 = (vector.z < mAreaVertex[2][0]) ? areaComponent = vecComponent1 : vecComponent1 = areaComponent;
+    mAreaVertex[2][0] = vecComponent1;
     
     areaComponent = vector.z;
-    vecComponent1 = mArea[2][1];
-    vecComponent1 = (vector.z > mArea[2][1]) ? vecComponent1 = areaComponent : areaComponent = vecComponent1;
-    mArea[2][1] = vecComponent1;
+    vecComponent1 = mAreaVertex[2][1];
+    vecComponent1 = (vector.z > mAreaVertex[2][1]) ? vecComponent1 = areaComponent : areaComponent = vecComponent1;
+    mAreaVertex[2][1] = vecComponent1;
 }
 
 f32 CVArea::GetSizeX() {
-    return mArea[0][1] - mArea[0][0];
+    return mAreaVertex[0][1] - mAreaVertex[0][0];
 }
 
 f32 CVArea::GetSizeY() {
-    return mArea[1][1] - mArea[1][0];
+    return mAreaVertex[1][1] - mAreaVertex[1][0];
 }
 
 f32 CVArea::GetSizeZ() {
-    return mArea[2][1] - mArea[2][0];
+    return mAreaVertex[2][1] - mAreaVertex[2][0];
 }
 
-// TODO: Attempt to make it look better, if possible. This is the only way I could make it to match.
 // https://decomp.me/scratch/aXSD8
 f32 CVArea::GetR() {
     CVVector temp;
-    f32 tempMagnitude;
+    f32 f0;
     f32 R = 0.0f;
 
-    s32 x = 0;
-    s32 y = 0;
-    s32 z = 0;
-    
-    do {
-        y = 0;
-        do {
-            z = 0;
-            do {
-                temp.x = (x == 0) ? mArea[0][0] : mArea[0][1];
-                temp.y = (y == 0) ? mArea[1][0] : mArea[1][1];
-                temp.z = (z == 0) ? mArea[2][0] : mArea[2][1];
-                tempMagnitude = temp.Magnitude();
-                R = (R > tempMagnitude) ? tempMagnitude = R : R = temp.Magnitude();
-                z++;
-            } while (z < 2);
-            y++;
-        } while (y < 2);
-        x++;
-    } while (x < 2);
-    
+    for (s32 i = 0; i < 2; i++) {
+        for (s32 j = 0; j < 2; j++) {
+            for (s32 k = 0; k < 2; k++) {
+                temp.x = (i == 0) ? mAreaVertex[0][0] : mAreaVertex[0][1];
+                temp.y = (j == 0) ? mAreaVertex[1][0] : mAreaVertex[1][1];
+                temp.z = (k == 0) ? mAreaVertex[2][0] : mAreaVertex[2][1];
+                f0 = temp.Magnitude();
+                R = (R > f0) ? f0 = R : R = temp.Magnitude();
+            }
+        }
+    }
     return R;
 }
 
 bool CVArea::CheckCollLine(CVVector vec1, CVVector vec2) {
-    if (vec1.y < mArea[1][0] && vec2.y < mArea[1][0])
+    if (vec1.y < mAreaVertex[1][0] && vec2.y < mAreaVertex[1][0])
         return false;
-    if (vec1.y > mArea[1][1] && vec2.y > mArea[1][1])
+    if (vec1.y > mAreaVertex[1][1] && vec2.y > mAreaVertex[1][1])
         return false;
-    if (vec1.x < mArea[0][0] && vec2.x < mArea[0][0])
+    if (vec1.x < mAreaVertex[0][0] && vec2.x < mAreaVertex[0][0])
         return false;
-    if (vec1.x > mArea[0][1] && vec2.x > mArea[0][1])
+    if (vec1.x > mAreaVertex[0][1] && vec2.x > mAreaVertex[0][1])
         return false;
-    if (vec1.z < mArea[2][0] && vec2.z < mArea[2][0])
+    if (vec1.z < mAreaVertex[2][0] && vec2.z < mAreaVertex[2][0])
         return false;
-    if (vec1.z > mArea[2][1] && vec2.z > mArea[2][1])
+    if (vec1.z > mAreaVertex[2][1] && vec2.z > mAreaVertex[2][1])
         return false;
     return true;
 }

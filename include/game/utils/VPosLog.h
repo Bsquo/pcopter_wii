@@ -6,8 +6,8 @@
 
 class CPosLog {
     private:
-        CVVector mLog1[20];
-        CVVector mLog2[20];
+        CVVector mPrevPos[20];      // Log of the previous position of the helicopter
+        CVVector mPrevYaw[20];      // Log of the previous yaw angles of the helicopter
         u32 mCount;
 
     public:

@@ -10,12 +10,12 @@ void CPosLog::Update(CVActor* actor, int iVar1) {
     f32 magnitude = _53061;
 
     if (mCount != 0) {
-        magnitude = (mLog1[0] - actor->mPos).Magnitude();
+        magnitude = (mPrevPos[0] - actor->mPos).Magnitude();
     }
     if (magnitude > _53062 || iVar1 != 0) {
         ShiftForward();
-        mLog1[0] = actor->mPos;
-        mLog2[0] = actor->mAxis.mYaw;
+        mPrevPos[0] = actor->mPos;
+        mPrevYaw[0] = actor->mAxis.mYaw;
         if (mCount < 19)
             mCount++;
     }
@@ -39,14 +39,14 @@ void CVVector::operator=(const CVVector& vector) {
 }
 
 void CPosLog::GetLog(u32 logIndex, CVVector* posVec1, CVVector* posVec2) {
-    CVVector* log = &mLog1[0];
+    CVVector* log = &mPrevPos[0];
 
 	if (mCount < logIndex)
 		logIndex = mCount;
 	if (posVec1 != nullptr)
-		*posVec1 = mLog1[logIndex];
+		*posVec1 = mPrevPos[logIndex];
 	if (posVec2 != nullptr)
-		*posVec2 = mLog2[logIndex];
+		*posVec2 = mPrevYaw[logIndex];
 }
 
 void CPosLog::ShiftForward() {
@@ -54,8 +54,8 @@ void CPosLog::ShiftForward() {
 
     for (u32 prevIdx = curIdx; 0 < curIdx; --curIdx) {
         prevIdx = curIdx - 1;
-        mLog1[curIdx] = mLog1[prevIdx];
-        mLog2[curIdx] = mLog2[prevIdx];
+        mPrevPos[curIdx] = mPrevPos[prevIdx];
+        mPrevYaw[curIdx] = mPrevYaw[prevIdx];
     }
 }
 
@@ -64,7 +64,7 @@ void CPosLog::ShiftBack() {
 
     for (u32 nextIdx = curIdx; curIdx < 19; ++curIdx) {
         nextIdx = curIdx + 1;
-        mLog1[curIdx] = mLog1[nextIdx];
-        mLog2[curIdx] = mLog2[nextIdx];
+        mPrevPos[curIdx] = mPrevPos[nextIdx];
+        mPrevYaw[curIdx] = mPrevYaw[nextIdx];
     }
 }

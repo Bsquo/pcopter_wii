@@ -6,7 +6,7 @@
 
 class CVArea {
     private:
-        f32 mArea[3][2];
+        f32 mAreaVertex[3][2];      // A 2D triangle
 
     public:
         CVArea();

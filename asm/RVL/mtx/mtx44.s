@@ -106,8 +106,8 @@ func_80093B40:
 /* 80093C24 00084BA4  38 21 00 40 */	addi r1, r1, 0x40
 /* 80093C28 00084BA8  4E 80 00 20 */	blr
 
-.global func_80093C2C
-func_80093C2C:
+.global C_MTXOrtho
+C_MTXOrtho:
 /* 80093C2C 00084BAC  ED 64 18 28 */	fsubs f11, f4, f3
 /* 80093C30 00084BB0  C1 02 92 E8 */	lfs f8, lbl_80610B08@sda21(r2)
 /* 80093C34 00084BB4  C1 42 92 E0 */	lfs f10, lbl_80610B00@sda21(r2)

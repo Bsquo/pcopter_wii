@@ -414,8 +414,8 @@ func_8008EE68:
 /* 8008EE88 0007FE08  38 21 00 10 */	addi r1, r1, 0x10
 /* 8008EE8C 0007FE0C  4E 80 00 20 */	blr
 
-.global func_8008EE90
-func_8008EE90:
+.global OSReturnToMenu
+OSReturnToMenu:
 /* 8008EE90 0007FE10  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8008EE94 0007FE14  7C 08 02 A6 */	mflr r0
 /* 8008EE98 0007FE18  90 01 00 34 */	stw r0, 0x34(r1)

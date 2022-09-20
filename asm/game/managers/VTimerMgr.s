@@ -14,9 +14,9 @@ func_8004D090:
 /* 8004D0AC 0003E02C  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 8004D0B0 0003E030  7C 7D 1B 78 */	mr r29, r3
 /* 8004D0B4 0003E034  4B FD 97 61 */	bl __ct__10CVListBaseFv
-/* 8004D0B8 0003E038  3C 80 80 1D */	lis r4, lbl_801CBF38@ha
+/* 8004D0B8 0003E038  3C 80 80 1D */	lis r4, __vt__7CVTimer@ha
 /* 8004D0BC 0003E03C  93 DD 00 14 */	stw r30, 0x14(r29)
-/* 8004D0C0 0003E040  38 84 BF 38 */	addi r4, r4, lbl_801CBF38@l
+/* 8004D0C0 0003E040  38 84 BF 38 */	addi r4, r4, __vt__7CVTimer@l
 /* 8004D0C4 0003E044  7F A3 EB 78 */	mr r3, r29
 /* 8004D0C8 0003E048  90 9D 00 10 */	stw r4, 0x10(r29)
 /* 8004D0CC 0003E04C  93 FD 00 18 */	stw r31, 0x18(r29)
@@ -225,8 +225,8 @@ func_8004D328:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CBF38
-lbl_801CBF38:
+.global __vt__7CVTimer
+__vt__7CVTimer:
 
 	# ROM: 0x1C8038
 	.4byte lbl_8060E2A8

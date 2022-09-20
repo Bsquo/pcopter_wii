@@ -806,10 +806,10 @@ lbl_801CB808:
 	.4byte __RTTI__7CVRigid
 	.4byte 0
 	.4byte func_8002AFB4
-	.4byte lbl_8001E64C
-	.4byte lbl_80023154
-	.4byte lbl_8001E644
-	.4byte lbl_800230B8
+	.4byte GetPos__7CVRigidFv
+	.4byte GetAxis__7CVRigidFv
+	.4byte GetScale__7CVRigidFv
+	.4byte GetMtx__7CVRigidFv
 	.4byte func_8002B6FC
 
 .section .sdata2, "wa", @progbits

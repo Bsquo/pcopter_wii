@@ -289,7 +289,7 @@ lbl_8001A588:
 /* 8001A5CC 0000B54C  48 00 C3 A1 */	bl __dt__6CVListFv
 /* 8001A5D0 0000B550  7F C3 F3 78 */	mr r3, r30
 /* 8001A5D4 0000B554  38 80 00 00 */	li r4, 0x0
-/* 8001A5D8 0000B558  48 00 6C 51 */	bl func_80021228
+/* 8001A5D8 0000B558  48 00 6C 51 */	bl __dt__7CVActorFv
 /* 8001A5DC 0000B55C  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8001A5E0 0000B560  40 81 00 0C */	ble lbl_8001A5EC
 /* 8001A5E4 0000B564  7F C3 F3 78 */	mr r3, r30
@@ -575,7 +575,7 @@ lbl_8001A99C:
 /* 8001A9C4 0000B944  38 61 00 18 */	addi r3, r1, 0x18
 /* 8001A9C8 0000B948  48 00 C7 59 */	bl __ct__8CVVectorFv
 /* 8001A9CC 0000B94C  7F A3 EB 78 */	mr r3, r29
-/* 8001A9D0 0000B950  48 00 84 F9 */	bl func_80022EC8
+/* 8001A9D0 0000B950  48 00 84 F9 */	bl UpdateArea__7CVActorFv
 /* 8001A9D4 0000B954  3F E0 80 1C */	lis r31, lbl_801B9420@ha
 /* 8001A9D8 0000B958  3B C0 00 00 */	li r30, 0x0
 /* 8001A9DC 0000B95C  3B FF 94 20 */	addi r31, r31, lbl_801B9420@l
@@ -879,7 +879,7 @@ lbl_8001ADC4:
 /* 8001ADFC 0000BD7C  38 61 00 10 */	addi r3, r1, 0x10
 /* 8001AE00 0000BD80  48 00 C3 21 */	bl __ct__8CVVectorFv
 /* 8001AE04 0000BD84  7F E3 FB 78 */	mr r3, r31
-/* 8001AE08 0000BD88  48 00 65 71 */	bl func_80021378
+/* 8001AE08 0000BD88  48 00 65 71 */	bl InitParam__7CVActorFv
 /* 8001AE0C 0000BD8C  80 7F 02 54 */	lwz r3, 0x254(r31)
 /* 8001AE10 0000BD90  80 63 00 1C */	lwz r3, 0x1c(r3)
 /* 8001AE14 0000BD94  48 00 06 7D */	bl func_8001B490
@@ -1381,7 +1381,7 @@ lbl_8001B4E8:
 /* 8001B528 0000C4A8  90 E1 00 14 */	stw r7, 0x14(r1)
 /* 8001B52C 0000C4AC  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 8001B530 0000C4B0  90 01 00 1C */	stw r0, 0x1c(r1)
-/* 8001B534 0000C4B4  48 00 69 CD */	bl func_80021F00
+/* 8001B534 0000C4B4  48 00 69 CD */	bl InitPos__7CVActorF8CVVector8CVVector
 /* 8001B538 0000C4B8  C0 02 80 78 */	lfs f0, lbl_8060F898@sda21(r2)
 /* 8001B53C 0000C4BC  38 7F 02 48 */	addi r3, r31, 0x248
 /* 8001B540 0000C4C0  D0 1F 03 C4 */	stfs f0, 0x3c4(r31)
@@ -2790,7 +2790,7 @@ lbl_8001C8D0:
 /* 8001C9AC 0000D92C  90 E1 01 0C */	stw r7, 0x10c(r1)
 /* 8001C9B0 0000D930  90 C1 01 10 */	stw r6, 0x110(r1)
 /* 8001C9B4 0000D934  90 01 01 14 */	stw r0, 0x114(r1)
-/* 8001C9B8 0000D938  48 00 55 49 */	bl func_80021F00
+/* 8001C9B8 0000D938  48 00 55 49 */	bl InitPos__7CVActorF8CVVector8CVVector
 /* 8001C9BC 0000D93C  38 7E 01 B8 */	addi r3, r30, 0x1b8
 /* 8001C9C0 0000D940  4B FF A0 1D */	bl Clear__8CVVectorFv
 /* 8001C9C4 0000D944  38 7E 01 AC */	addi r3, r30, 0x1ac
@@ -2874,7 +2874,7 @@ lbl_8001CA04:
 /* 8001CAF0 0000DA70  90 E1 00 A0 */	stw r7, 0xa0(r1)
 /* 8001CAF4 0000DA74  90 C1 00 A4 */	stw r6, 0xa4(r1)
 /* 8001CAF8 0000DA78  90 01 00 A8 */	stw r0, 0xa8(r1)
-/* 8001CAFC 0000DA7C  48 00 54 05 */	bl func_80021F00
+/* 8001CAFC 0000DA7C  48 00 54 05 */	bl InitPos__7CVActorF8CVVector8CVVector
 lbl_8001CB00:
 /* 8001CB00 0000DA80  38 7E 02 48 */	addi r3, r30, 0x248
 /* 8001CB04 0000DA84  38 80 00 09 */	li r4, 0x9
@@ -2899,7 +2899,7 @@ func_8001CB34:
 /* 8001CB40 0000DAC0  48 00 9C 85 */	bl Set__6CVFlagFUsi
 /* 8001CB44 0000DAC4  FC 20 F0 90 */	fmr f1, f30
 /* 8001CB48 0000DAC8  7F C3 F3 78 */	mr r3, r30
-/* 8001CB4C 0000DACC  48 00 57 B9 */	bl func_80022304
+/* 8001CB4C 0000DACC  48 00 57 B9 */	bl Move__7CVActorFf
 /* 8001CB50 0000DAD0  38 61 03 34 */	addi r3, r1, 0x334
 /* 8001CB54 0000DAD4  38 9E 00 38 */	addi r4, r30, 0x38
 /* 8001CB58 0000DAD8  4B FF D6 C1 */	bl __as__8CVVectorFRC8CVVector
@@ -3791,7 +3791,7 @@ lbl_8001D7A0:
 /* 8001D7A8 0000E728  FC 40 E8 90 */	fmr f2, f29
 /* 8001D7AC 0000E72C  FC 60 F0 90 */	fmr f3, f30
 /* 8001D7B0 0000E730  FC 80 F8 90 */	fmr f4, f31
-/* 8001D7B4 0000E734  48 00 4E 2D */	bl func_800225E0
+/* 8001D7B4 0000E734  48 00 4E 2D */	bl CalcCollEffect__7CVActorFffff
 /* 8001D7B8 0000E738  E3 E1 00 48 */	psq_l f31, 0x48(r1), 0, qr0
 /* 8001D7BC 0000E73C  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 8001D7C0 0000E740  E3 C1 00 38 */	psq_l f30, 0x38(r1), 0, qr0
@@ -4120,8 +4120,8 @@ func_8001DC1C:
 /* 8001DC34 0000EBB4  38 21 00 60 */	addi r1, r1, 0x60
 /* 8001DC38 0000EBB8  4E 80 00 20 */	blr
 
-.global lbl_8001DC3C
-lbl_8001DC3C:
+.global Destroyed__7CVActorF8CVVectorP6CVFlag
+Destroyed__7CVActorF8CVVectorP6CVFlag:
 /* 8001DC3C 0000EBBC  4E 80 00 20 */	blr
 
 .global func_8001DC40
@@ -4860,13 +4860,13 @@ lbl_8001E618:
 /* 8001E63C 0000F5BC  38 21 00 40 */	addi r1, r1, 0x40
 /* 8001E640 0000F5C0  4E 80 00 20 */	blr
 
-.global lbl_8001E644
-lbl_8001E644:
+.global GetScale__7CVRigidFv
+GetScale__7CVRigidFv:
 /* 8001E644 0000F5C4  38 84 00 44 */	addi r4, r4, 0x44
 /* 8001E648 0000F5C8  4B FF EB EC */	b __ct__8CVVectorFRC8CVVector
 
-.global lbl_8001E64C
-lbl_8001E64C:
+.global GetPos__7CVRigidFv
+GetPos__7CVRigidFv:
 /* 8001E64C 0000F5CC  38 84 00 14 */	addi r4, r4, 0x14
 /* 8001E650 0000F5D0  4B FF EB E4 */	b __ct__8CVVectorFRC8CVVector
 
@@ -4909,21 +4909,21 @@ __vt__10CActCopter:
 	.4byte __RTTI__10CActCopter
 	.4byte 0
 	.4byte lbl_8001A588
-	.4byte lbl_8001E64C
+	.4byte GetPos__7CVRigidFv
 	.4byte lbl_8001BD90
-	.4byte lbl_8001E644
+	.4byte GetScale__7CVRigidFv
 	.4byte lbl_8001BECC
 	.4byte lbl_8001C188
 	.4byte lbl_8001A608
 	.4byte lbl_8001ADC4
-	.4byte lbl_800217F0
+	.4byte InitAnimParam__7CVActorFP8CVScript
 	.4byte lbl_8001B4E8
 	.4byte lbl_8001B5D8
-	.4byte func_80022374
-	.4byte lbl_8002241C
+	.4byte Animate__7CVActorFv
+	.4byte CheckColl__7CVActorFv
 	.4byte lbl_8001D570
 	.4byte lbl_8001D6E8
-	.4byte lbl_800229C0
+	.4byte ExecAction__7CVActorFi
 	.4byte lbl_8001A99C
 
 .global _52373

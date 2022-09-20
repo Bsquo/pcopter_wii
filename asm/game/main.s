@@ -1460,8 +1460,8 @@ __dt__11CScenaryMgrFv:
 /* 800127FC 0000377C  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80012800 00003780  7C 7E 1B 78 */	mr r30, r3
 /* 80012804 00003784  41 82 00 6C */	beq lbl_80012870
-/* 80012808 00003788  3C 80 80 1D */	lis r4, lbl_801CA5D0@ha
-/* 8001280C 0000378C  38 84 A5 D0 */	addi r4, r4, lbl_801CA5D0@l
+/* 80012808 00003788  3C 80 80 1D */	lis r4, __vt__11CScenaryMgr@ha
+/* 8001280C 0000378C  38 84 A5 D0 */	addi r4, r4, __vt__11CScenaryMgr@l
 /* 80012810 00003790  90 83 02 14 */	stw r4, 0x214(r3)
 /* 80012814 00003794  48 03 24 69 */	bl func_80044C7C
 /* 80012818 00003798  38 7E 02 0C */	addi r3, r30, 0x20c
@@ -3543,8 +3543,8 @@ __vt__8CVPadMgr:
 	.4byte 0
 	.4byte __dt__8CVPadMgrFv
 
-.global lbl_801CA5D0
-lbl_801CA5D0:
+.global __vt__11CScenaryMgr
+__vt__11CScenaryMgr:
 
 	# ROM: 0x1C66D0
 	.4byte __RTTI__11CScenaryMgr

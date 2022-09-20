@@ -1,7 +1,7 @@
 .include "macros.s"
 .section .text, "ax"
-.global func_800D41A8
-func_800D41A8:
+.global SCGetAspectRatio
+SCGetAspectRatio:
 /* 800D41A8 000C5128  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D41AC 000C512C  7C 08 02 A6 */	mflr r0
 /* 800D41B0 000C5130  38 80 00 01 */	li r4, 0x1
@@ -66,8 +66,8 @@ func_800D4270:
 /* 800D4270 000C51F0  38 80 00 02 */	li r4, 0x2
 /* 800D4274 000C51F4  38 A0 00 09 */	li r5, 0x9
 /* 800D4278 000C51F8  4B FF F4 0C */	b func_800D3684
-.global func_800D427C
-func_800D427C:
+.global SCGetLanguage
+SCGetLanguage:
 /* 800D427C 000C51FC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D4280 000C5200  7C 08 02 A6 */	mflr r0
 /* 800D4284 000C5204  38 80 00 0B */	li r4, 0xb

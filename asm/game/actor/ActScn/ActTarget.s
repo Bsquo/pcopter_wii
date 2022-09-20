@@ -175,7 +175,7 @@ lbl_8005A190:
 .global func_8005A1D4
 func_8005A1D4:
 /* 8005A1D4 0004B154  7F C3 F3 78 */	mr r3, r30
-/* 8005A1D8 0004B158  4B FC 81 9D */	bl func_80022374
+/* 8005A1D8 0004B158  4B FC 81 9D */	bl Animate__7CVActorFv
 /* 8005A1DC 0004B15C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005A1E0 0004B160  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8005A1E4 0004B164  83 C1 00 08 */	lwz r30, 0x8(r1)
@@ -192,22 +192,22 @@ lbl_801CC6F0:
 	.4byte lbl_8060E340
 	.4byte 0
 	.4byte lbl_80059FC4
-	.4byte lbl_8001E64C
-	.4byte lbl_80023154
-	.4byte lbl_8001E644
-	.4byte lbl_800230B8
-	.4byte func_80022304
-	.4byte lbl_800212F0
-	.4byte func_80021378
-	.4byte lbl_800217F0
-	.4byte func_80021F00
+	.4byte GetPos__7CVRigidFv
+	.4byte GetAxis__7CVRigidFv
+	.4byte GetScale__7CVRigidFv
+	.4byte GetMtx__7CVRigidFv
+	.4byte Move__7CVActorFf
+	.4byte BindModel__7CVActorF10CVFilePath
+	.4byte InitParam__7CVActorFv
+	.4byte InitAnimParam__7CVActorFP8CVScript
+	.4byte InitPos__7CVActorF8CVVector8CVVector
 	.4byte func_800573B4
 	.4byte lbl_8005A13C
-	.4byte lbl_8002241C
-	.4byte lbl_8001DC3C
-	.4byte func_800225E0
+	.4byte CheckColl__7CVActorFv
+	.4byte Destroyed__7CVActorF8CVVectorP6CVFlag
+	.4byte CalcCollEffect__7CVActorFffff
 	.4byte lbl_8005A038
-	.4byte func_80022EC8
+	.4byte UpdateArea__7CVActorFv
 
 .global lbl_801CC73C
 lbl_801CC73C:

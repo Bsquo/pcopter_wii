@@ -1,18 +1,16 @@
 #include "include/game/actor/VActorNode.h"
 
-CVActorNode::CVActorNode() {
-    field_0x08[4] = 2;
-    field_0x08[5] = 0;
-    field_0x08[6] = 0;
-    field_0x18[0] = _48066;
-    field_0x18[1] = _48067;
-    field_0x18[6] = _48066;
-    field_0x08[0] = 0;
-    field_0x08[1] = 100;
-    field_0x08[2] = 100;
-    field_0x08[3] = 100;
-    field_0x18[2] = _48067;
-    field_0x18[3] = _48067;
-    field_0x18[4] = _48067;
-    field_0x18[5] = _48067;
+CVActorNode::CVActorNode(): current_state(0), max_state(2) {
+    init_state = 0;
+    mCurrentAnimFrame = _48066;
+    mCurrentAnimSpeed = _48067;
+    field_0x30 = _48066;
+    anim_state[0] = 0;
+    anim_state[1] = 100;
+    anim_state[2] = 100;
+    anim_state[3] = 100;
+    anim_rate[0] = _48067;
+    anim_rate[1] = _48067;
+    anim_rate[2] = _48067;
+    anim_rate[3] = _48067;
 }

@@ -22,6 +22,7 @@ SRC_DIRS := src                      	\
 			src/game/actor/Copter    	\
 			src/game/app           	    \
 			src/game/gfx             	\
+			src/game/hbm             	\
 			src/game/math            	\
 			src/game/managers        	\
 			src/game/save           	\

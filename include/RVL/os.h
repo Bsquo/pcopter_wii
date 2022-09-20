@@ -14,4 +14,5 @@ extern "C" {
     void OSSetResetCallback(void*);
     void OSSetPowerCallback(void*);
     OSTime OSGetTime();
+    void OSReport(char*, ...);
 }

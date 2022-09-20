@@ -2770,8 +2770,8 @@ lbl_8009D494:
 /* 8009D4A8 0008E428  38 21 00 10 */	addi r1, r1, 0x10
 /* 8009D4AC 0008E42C  4E 80 00 20 */	blr
 
-.global func_8009D4B0
-func_8009D4B0:
+.global VIGetTvFormat
+VIGetTvFormat:
 /* 8009D4B0 0008E430  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8009D4B4 0008E434  7C 08 02 A6 */	mflr r0
 /* 8009D4B8 0008E438  90 01 00 14 */	stw r0, 0x14(r1)

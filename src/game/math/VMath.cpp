@@ -349,7 +349,7 @@ void CVArea::Init() {
 // The "fmr" instruction hints local float variables being created and used.
 // The "bge/ble" right before a "b" instructions is equivalent to using
 // the ternary operator in this particular case.
-//https://decomp.me/scratch/PXkUB
+// https://decomp.me/scratch/PXkUB
 void CVArea::Update(CVVector vector) {
     f32 X;
     f32 Y;

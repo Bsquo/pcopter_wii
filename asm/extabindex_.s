@@ -783,7 +783,7 @@ lbl_8000CB00:
 	.4byte func_80020E4C
 	.4byte 0x00000078
 	.4byte lbl_80007234
-	.4byte lbl_80020ECC
+	.4byte ExecCallbackA__18CVActorMtxCallbackFPQ34nw4r3g3d12ChrAnmResultQ34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
 	.4byte 0x00000144
 	.4byte lbl_8000723C
 	.4byte func_80021020
@@ -795,16 +795,16 @@ lbl_8000CB00:
 	.4byte func_80021118
 	.4byte 0x000000B8
 	.4byte lbl_80007254
-	.4byte func_800211D0
+	.4byte __dt__18CVActorMtxCallbackFv
 	.4byte 0x00000058
 	.4byte lbl_800072CC
-	.4byte func_80021228
+	.4byte __dt__7CVActorFv
 	.4byte 0x000000C8
 	.4byte lbl_800072D4
-	.4byte lbl_800212F0
+	.4byte BindModel__7CVActorF10CVFilePath
 	.4byte 0x00000088
 	.4byte lbl_800072DC
-	.4byte func_80021378
+	.4byte InitParam__7CVActorFv
 	.4byte 0x0000033C
 	.4byte lbl_800072E4
 	.4byte func_800216D0
@@ -816,13 +816,13 @@ lbl_8000CB00:
 	.4byte lbl_80021764
 	.4byte 0x0000008C
 	.4byte lbl_80007348
-	.4byte lbl_800217F0
+	.4byte InitAnimParam__7CVActorFP8CVScript
 	.4byte 0x00000694
 	.4byte lbl_80007350
 	.4byte func_80021E84
 	.4byte 0x00000074
 	.4byte lbl_80007368
-	.4byte func_80021F00
+	.4byte InitPos__7CVActorF8CVVector8CVVector
 	.4byte 0x000000A0
 	.4byte lbl_80007370
 	.4byte func_80021FA0
@@ -837,22 +837,22 @@ lbl_8000CB00:
 	.4byte func_800221E4
 	.4byte 0x00000098
 	.4byte lbl_80007390
-	.4byte func_8002227C
+	.4byte Recovery__7CVActorFv
 	.4byte 0x00000088
 	.4byte lbl_80007398
-	.4byte func_80022304
+	.4byte Move__7CVActorFf
 	.4byte 0x00000070
 	.4byte lbl_800073A0
-	.4byte func_80022374
+	.4byte Animate__7CVActorFv
 	.4byte 0x000000A8
 	.4byte lbl_800073A8
-	.4byte lbl_8002241C
+	.4byte CheckColl__7CVActorFv
 	.4byte 0x000001C4
 	.4byte lbl_800073B0
-	.4byte func_800225E0
+	.4byte CalcCollEffect__7CVActorFffff
 	.4byte 0x000003AC
 	.4byte lbl_800073B8
-	.4byte lbl_800229C0
+	.4byte ExecAction__7CVActorFi
 	.4byte 0x00000174
 	.4byte lbl_800073C0
 	.4byte func_80022B64
@@ -867,7 +867,7 @@ lbl_8000CB00:
 	.4byte func_80022E14
 	.4byte 0x000000B4
 	.4byte lbl_800073E0
-	.4byte func_80022EC8
+	.4byte UpdateArea__7CVActorFv
 	.4byte 0x00000108
 	.4byte lbl_800073E8
 	.4byte func_800230C0
@@ -1593,10 +1593,10 @@ lbl_8000CB00:
 	.4byte func_8002D4D0
 	.4byte 0x00000060
 	.4byte lbl_80007DF4
-	.4byte func_8002D530
+	.4byte PauseSoundAll__10CVSoundMgrFii
 	.4byte 0x00000070
 	.4byte lbl_80007DFC
-	.4byte func_8002D5A0
+	.4byte ClearEffectAll__10CVSoundMgrFi
 	.4byte 0x00000048
 	.4byte lbl_80007E04
 	.4byte func_8002D5E8
@@ -3033,31 +3033,31 @@ lbl_8000CB00:
 	.4byte lbl_80053DF0
 	.4byte 0x000001B0
 	.4byte lbl_80009D80
-	.4byte lbl_80053FA0
+	.4byte SoundCallback__Fii
 	.4byte 0x0000003C
 	.4byte lbl_80009D88
-	.4byte func_80053FDC
+	.4byte ReadDvdFile__12CVHomeButtonFPCcP12MEMAllocatorPUl
 	.4byte 0x000000B8
 	.4byte lbl_80009D90
 	.4byte Init__12CVHomeButtonFPc
 	.4byte 0x000000B8
 	.4byte lbl_80009D98
-	.4byte func_80054180
+	.4byte Release__12CVHomeButtonFv
 	.4byte 0x00000068
 	.4byte lbl_80009DA0
-	.4byte func_800541E8
+	.4byte SetProjection__12CVHomeButtonFi
 	.4byte 0x00000074
 	.4byte lbl_80009DA8
-	.4byte func_8005425C
+	.4byte InitHomeButtonInfo__12CVHomeButtonFP11HBMDataInfo
 	.4byte 0x00000274
 	.4byte lbl_80009DB0
-	.4byte func_800544D0
+	.4byte InitSound__12CVHomeButtonFv
 	.4byte 0x000000A0
 	.4byte lbl_80009DB8
-	.4byte func_800545D4
+	.4byte calcAnalogCursorPos__12CVHomeButtonFffP4Vec2
 	.4byte 0x000000D0
 	.4byte lbl_80009DC0
-	.4byte func_800546A4
+	.4byte calcDigitalCursorPos__12CVHomeButtonFUlP4Vec2
 	.4byte 0x000001A4
 	.4byte lbl_80009DC8
 	.4byte Calc__12CVHomeButtonFv

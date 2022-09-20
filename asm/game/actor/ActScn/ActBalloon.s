@@ -511,20 +511,20 @@ lbl_801CC760:
 	.4byte lbl_8060E348
 	.4byte 0
 	.4byte lbl_8005A268
-	.4byte lbl_8001E64C
-	.4byte lbl_80023154
-	.4byte lbl_8001E644
-	.4byte lbl_800230B8
+	.4byte GetPos__7CVRigidFv
+	.4byte GetAxis__7CVRigidFv
+	.4byte GetScale__7CVRigidFv
+	.4byte GetMtx__7CVRigidFv
 	.4byte lbl_8005A460
-	.4byte lbl_800212F0
+	.4byte BindModel__7CVActorF10CVFilePath
 	.4byte lbl_80057048
-	.4byte lbl_800217F0
-	.4byte func_80021F00
+	.4byte InitAnimParam__7CVActorFP8CVScript
+	.4byte InitPos__7CVActorF8CVVector8CVVector
 	.4byte lbl_800571A0
 	.4byte lbl_800571D4
-	.4byte lbl_8002241C
+	.4byte CheckColl__7CVActorFv
 	.4byte lbl_8005A3A4
-	.4byte func_800225E0
+	.4byte CalcCollEffect__7CVActorFffff
 	.4byte lbl_8005A3A0
 	.4byte lbl_800570C0
 

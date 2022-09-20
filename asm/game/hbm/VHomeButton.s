@@ -7,40 +7,28 @@ lbl_801BE0F8:
 
 	# ROM: 0x1BA1F8
 	.asciz "SoundCallback: %d, %d\n"
-	.byte 0x68
-	.asciz "bm/HomeButton2"
-	.byte 0x56
-	.asciz "HomeButton.cpp"
-	.byte 0x56
-	.asciz "IGetTvFormat()t: invalid TV format\n"
+	.asciz "hbm/HomeButton2"
+	.asciz "VHomeButton.cpp"
+	.asciz "VIGetTvFormat()t: invalid TV format\n"
 	.asciz "/homeBtn.arc"
-	.byte 0x2F, 0x68, 0x6F
-	.asciz "meBtn_ENG.arc"
-	.byte 0x2F, 0x68
-	.asciz "omeBtn_GER.arc"
-	.byte 0x2F
-	.asciz "homeBtn_FRA.arc"
+	.asciz "/homeBtn_ENG.arc"
+	.asciz "/homeBtn_GER.arc"
+	.asciz "/homeBtn_FRA.arc"
 	.asciz "/homeBtn_SPA.arc"
-	.byte 0x2F, 0x68, 0x6F
-	.asciz "meBtn_ITA.arc"
-	.byte 0x2F, 0x68
-	.asciz "omeBtn_NED.arc"
-	.byte 0x2F
-	.asciz "homeBtn.arc"
+	.asciz "/homeBtn_ITA.arc"
+	.asciz "/homeBtn_NED.arc"
+	.asciz "/homeBtn.arc"
 	.asciz "/SpeakerSe.arc"
-	.byte 0x2F
-	.asciz "home.csv"
-	.byte 0x2F, 0x63, 0x6F
-	.asciz "nfig.txt"
-	.byte 0x2F, 0x48, 0x6F
-	.asciz "meButtonSe.arc"
+	.asciz "/home.csv"
+	.asciz "/config.txt"
+	.asciz "/HomeButtonSe.arc"
 	.balign 4
 	.4byte 0
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global lbl_80053FA0
-lbl_80053FA0:
+.global SoundCallback__Fii
+SoundCallback__Fii:
 /* 80053FA0 00044F20  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80053FA4 00044F24  7C 08 02 A6 */	mflr r0
 /* 80053FA8 00044F28  7C 85 23 78 */	mr r5, r4
@@ -57,8 +45,8 @@ lbl_80053FA0:
 /* 80053FD4 00044F54  38 21 00 10 */	addi r1, r1, 0x10
 /* 80053FD8 00044F58  4E 80 00 20 */	blr
 
-.global func_80053FDC
-func_80053FDC:
+.global ReadDvdFile__12CVHomeButtonFPCcP12MEMAllocatorPUl
+ReadDvdFile__12CVHomeButtonFPCcP12MEMAllocatorPUl:
 /* 80053FDC 00044F5C  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80053FE0 00044F60  7C 08 02 A6 */	mflr r0
 /* 80053FE4 00044F64  7C 83 23 78 */	mr r3, r4
@@ -70,7 +58,7 @@ func_80053FDC:
 /* 80053FFC 00044F7C  7C BD 2B 78 */	mr r29, r5
 /* 80054000 00044F80  93 81 00 50 */	stw r28, 0x50(r1)
 /* 80054004 00044F84  7C DC 33 78 */	mr r28, r6
-/* 80054008 00044F88  48 04 02 65 */	bl func_8009426C
+/* 80054008 00044F88  48 04 02 65 */	bl DVDOpen
 /* 8005400C 00044F8C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80054010 00044F90  40 82 00 0C */	bne lbl_8005401C
 /* 80054014 00044F94  38 60 00 00 */	li r3, 0x0
@@ -85,20 +73,20 @@ lbl_8005401C:
 lbl_80054034:
 /* 80054034 00044FB4  7F A3 EB 78 */	mr r3, r29
 /* 80054038 00044FB8  7F E4 FB 78 */	mr r4, r31
-/* 8005403C 00044FBC  48 07 8B 75 */	bl func_800CCBB0
+/* 8005403C 00044FBC  48 07 8B 75 */	bl MEMAllocFromAllocator
 /* 80054040 00044FC0  7C 7D 1B 78 */	mr r29, r3
 /* 80054044 00044FC4  7F E5 FB 78 */	mr r5, r31
 /* 80054048 00044FC8  7F A4 EB 78 */	mr r4, r29
 /* 8005404C 00044FCC  38 61 00 08 */	addi r3, r1, 0x8
 /* 80054050 00044FD0  38 C0 00 00 */	li r6, 0x0
 /* 80054054 00044FD4  38 E0 00 02 */	li r7, 0x2
-/* 80054058 00044FD8  48 04 07 8D */	bl func_800947E4
+/* 80054058 00044FD8  48 04 07 8D */	bl DVDReadPrio
 /* 8005405C 00044FDC  2C 1C 00 00 */	cmpwi r28, 0x0
 /* 80054060 00044FE0  41 82 00 08 */	beq lbl_80054068
 /* 80054064 00044FE4  93 DC 00 00 */	stw r30, 0x0(r28)
 lbl_80054068:
 /* 80054068 00044FE8  38 61 00 08 */	addi r3, r1, 0x8
-/* 8005406C 00044FEC  48 04 04 AD */	bl func_80094518
+/* 8005406C 00044FEC  48 04 04 AD */	bl DVDClose
 /* 80054070 00044FF0  7F A3 EB 78 */	mr r3, r29
 
 .global func_80054074
@@ -126,7 +114,7 @@ Init__12CVHomeButtonFPc:
 /* 800540B8 00045038  38 84 E0 F8 */	addi r4, r4, lbl_801BE0F8@l
 /* 800540BC 0004503C  38 84 00 17 */	addi r4, r4, 0x17
 /* 800540C0 00045040  4B FC C7 05 */	bl __apl__8CVStringFPCc
-/* 800540C4 00045044  48 04 93 ED */	bl func_8009D4B0
+/* 800540C4 00045044  48 04 93 ED */	bl VIGetTvFormat
 /* 800540C8 00045048  2C 03 00 02 */	cmpwi r3, 0x2
 /* 800540CC 0004504C  41 82 00 24 */	beq lbl_800540F0
 /* 800540D0 00045050  40 80 00 14 */	bge lbl_800540E4
@@ -164,15 +152,15 @@ lbl_80054128:
 /* 80054128 000450A8  48 07 E7 BD */	bl SCCheckStatus
 /* 8005412C 000450AC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80054130 000450B0  40 82 FF F8 */	bne lbl_80054128
-/* 80054134 000450B4  48 00 00 19 */	bl func_8005414C
+/* 80054134 000450B4  48 00 00 19 */	bl OSInitFastCast
 /* 80054138 000450B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005413C 000450BC  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80054140 000450C0  7C 08 03 A6 */	mtlr r0
 /* 80054144 000450C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80054148 000450C8  4E 80 00 20 */	blr
 
-.global func_8005414C
-func_8005414C:
+.global OSInitFastCast
+OSInitFastCast:
 /* 8005414C 000450CC  38 60 00 04 */	li r3, 0x4
 /* 80054150 000450D0  64 63 00 04 */	oris r3, r3, 0x4
 /* 80054154 000450D4  7C 72 E3 A6 */	mtspr 914, r3
@@ -187,15 +175,15 @@ func_8005414C:
 /* 80054178 000450F8  7C 75 E3 A6 */	mtspr 917, r3
 /* 8005417C 000450FC  4E 80 00 20 */	blr
 
-.global func_80054180
-func_80054180:
+.global Release__12CVHomeButtonFv
+Release__12CVHomeButtonFv:
 /* 80054180 00045100  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80054184 00045104  7C 08 02 A6 */	mflr r0
 /* 80054188 00045108  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8005418C 0004510C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80054190 00045110  7C 7F 1B 78 */	mr r31, r3
-/* 80054194 00045114  48 11 D8 0D */	bl func_801719A0
-/* 80054198 00045118  48 11 DA C5 */	bl func_80171C5C
+/* 80054194 00045114  48 11 D8 0D */	bl HBMDelete
+/* 80054198 00045118  48 11 DA C5 */	bl HBMDeleteSound
 /* 8005419C 0004511C  80 7F 00 00 */	lwz r3, 0x0(r31)
 /* 800541A0 00045120  48 0C 80 F5 */	bl Free__4demoFPv
 /* 800541A4 00045124  80 7F 00 04 */	lwz r3, 0x4(r31)
@@ -216,8 +204,8 @@ func_80054180:
 /* 800541E0 00045160  38 21 00 10 */	addi r1, r1, 0x10
 /* 800541E4 00045164  4E 80 00 20 */	blr
 
-.global func_800541E8
-func_800541E8:
+.global SetProjection__12CVHomeButtonFi
+SetProjection__12CVHomeButtonFi:
 /* 800541E8 00045168  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 800541EC 0004516C  7C 08 02 A6 */	mflr r0
 /* 800541F0 00045170  2C 04 00 00 */	cmpwi r4, 0x0
@@ -230,7 +218,7 @@ func_800541E8:
 /* 8005420C 0004518C  C0 82 89 EC */	lfs f4, lbl_8061020C@sda21(r2)
 /* 80054210 00045190  C0 A2 89 F0 */	lfs f5, lbl_80610210@sda21(r2)
 /* 80054214 00045194  C0 C2 89 F4 */	lfs f6, lbl_80610214@sda21(r2)
-/* 80054218 00045198  48 03 FA 15 */	bl func_80093C2C
+/* 80054218 00045198  48 03 FA 15 */	bl C_MTXOrtho
 /* 8005421C 0004519C  48 00 00 24 */	b func_80054240
 lbl_80054220:
 /* 80054220 000451A0  C0 22 89 E0 */	lfs f1, lbl_80610200@sda21(r2)
@@ -240,7 +228,7 @@ lbl_80054220:
 /* 80054230 000451B0  C0 82 89 FC */	lfs f4, lbl_8061021C@sda21(r2)
 /* 80054234 000451B4  C0 A2 89 F0 */	lfs f5, lbl_80610210@sda21(r2)
 /* 80054238 000451B8  C0 C2 89 F4 */	lfs f6, lbl_80610214@sda21(r2)
-/* 8005423C 000451BC  48 03 F9 F1 */	bl func_80093C2C
+/* 8005423C 000451BC  48 03 F9 F1 */	bl C_MTXOrtho
 
 .global func_80054240
 func_80054240:
@@ -252,8 +240,8 @@ func_80054240:
 /* 80054254 000451D4  38 21 00 50 */	addi r1, r1, 0x50
 /* 80054258 000451D8  4E 80 00 20 */	blr
 
-.global func_8005425C
-func_8005425C:
+.global InitHomeButtonInfo__12CVHomeButtonFP11HBMDataInfo
+InitHomeButtonInfo__12CVHomeButtonFP11HBMDataInfo:
 /* 8005425C 000451DC  94 21 FE E0 */	stwu r1, -0x120(r1)
 /* 80054260 000451E0  7C 08 02 A6 */	mflr r0
 /* 80054264 000451E4  90 01 01 24 */	stw r0, 0x124(r1)
@@ -267,7 +255,7 @@ func_8005425C:
 /* 80054284 00045204  7C 64 1B 78 */	mr r4, r3
 /* 80054288 00045208  38 61 00 08 */	addi r3, r1, 0x8
 /* 8005428C 0004520C  48 06 61 09 */	bl strcpy
-/* 80054290 00045210  48 07 FF ED */	bl func_800D427C
+/* 80054290 00045210  48 07 FF ED */	bl SCGetLanguage
 /* 80054294 00045214  54 60 06 3E */	clrlwi r0, r3, 24
 /* 80054298 00045218  28 00 00 06 */	cmplwi r0, 0x6
 /* 8005429C 0004521C  90 1E 00 1C */	stw r0, 0x1c(r30)
@@ -358,7 +346,7 @@ func_80054380:
 /* 8005438C 0004530C  7F A3 EB 78 */	mr r3, r29
 /* 80054390 00045310  38 81 00 08 */	addi r4, r1, 0x8
 /* 80054394 00045314  38 C0 00 00 */	li r6, 0x0
-/* 80054398 00045318  4B FF FC 45 */	bl func_80053FDC
+/* 80054398 00045318  4B FF FC 45 */	bl ReadDvdFile__12CVHomeButtonFPCcP12MEMAllocatorPUl
 /* 8005439C 0004531C  90 7E 00 00 */	stw r3, 0x0(r30)
 /* 800543A0 00045320  38 7D 00 EC */	addi r3, r29, 0xec
 /* 800543A4 00045324  4B FC C4 D9 */	bl __opPCc__8CVStringFv
@@ -376,7 +364,7 @@ func_80054380:
 /* 800543D4 00045354  7F A3 EB 78 */	mr r3, r29
 /* 800543D8 00045358  38 81 00 08 */	addi r4, r1, 0x8
 /* 800543DC 0004535C  38 C0 00 00 */	li r6, 0x0
-/* 800543E0 00045360  4B FF FB FD */	bl func_80053FDC
+/* 800543E0 00045360  4B FF FB FD */	bl ReadDvdFile__12CVHomeButtonFPCcP12MEMAllocatorPUl
 /* 800543E4 00045364  90 7E 00 04 */	stw r3, 0x4(r30)
 /* 800543E8 00045368  38 7D 00 EC */	addi r3, r29, 0xec
 /* 800543EC 0004536C  4B FC C4 91 */	bl __opPCc__8CVStringFv
@@ -392,7 +380,7 @@ func_80054380:
 /* 80054414 00045394  7F A3 EB 78 */	mr r3, r29
 /* 80054418 00045398  38 81 00 08 */	addi r4, r1, 0x8
 /* 8005441C 0004539C  38 C0 00 00 */	li r6, 0x0
-/* 80054420 000453A0  4B FF FB BD */	bl func_80053FDC
+/* 80054420 000453A0  4B FF FB BD */	bl ReadDvdFile__12CVHomeButtonFPCcP12MEMAllocatorPUl
 /* 80054424 000453A4  90 7E 00 08 */	stw r3, 0x8(r30)
 /* 80054428 000453A8  38 7D 00 EC */	addi r3, r29, 0xec
 /* 8005442C 000453AC  4B FC C4 51 */	bl __opPCc__8CVStringFv
@@ -408,12 +396,12 @@ func_80054380:
 /* 80054454 000453D4  7F A3 EB 78 */	mr r3, r29
 /* 80054458 000453D8  38 81 00 08 */	addi r4, r1, 0x8
 /* 8005445C 000453DC  38 DE 00 28 */	addi r6, r30, 0x28
-/* 80054460 000453E0  4B FF FB 7D */	bl func_80053FDC
+/* 80054460 000453E0  4B FF FB 7D */	bl ReadDvdFile__12CVHomeButtonFPCcP12MEMAllocatorPUl
 /* 80054464 000453E4  C0 02 8A 04 */	lfs f0, lbl_80610224@sda21(r2)
-/* 80054468 000453E8  3C A0 80 05 */	lis r5, lbl_80053FA0@ha
+/* 80054468 000453E8  3C A0 80 05 */	lis r5, SoundCallback__Fii@ha
 /* 8005446C 000453EC  3B E0 00 00 */	li r31, 0x0
 /* 80054470 000453F0  C0 22 8A 00 */	lfs f1, lbl_80610220@sda21(r2)
-/* 80054474 000453F4  38 A5 3F A0 */	addi r5, r5, lbl_80053FA0@l
+/* 80054474 000453F4  38 A5 3F A0 */	addi r5, r5, SoundCallback__Fii@l
 /* 80054478 000453F8  90 7E 00 0C */	stw r3, 0xc(r30)
 /* 8005447C 000453FC  3C 60 00 08 */	lis r3, 0x8
 /* 80054480 00045400  38 80 00 20 */	li r4, 0x20
@@ -437,8 +425,8 @@ func_80054380:
 /* 800544C8 00045448  38 21 01 20 */	addi r1, r1, 0x120
 /* 800544CC 0004544C  4E 80 00 20 */	blr
 
-.global func_800544D0
-func_800544D0:
+.global InitSound__12CVHomeButtonFv
+InitSound__12CVHomeButtonFv:
 /* 800544D0 00045450  94 21 FE F0 */	stwu r1, -0x110(r1)
 /* 800544D4 00045454  7C 08 02 A6 */	mflr r0
 /* 800544D8 00045458  90 01 01 14 */	stw r0, 0x114(r1)
@@ -461,7 +449,7 @@ func_800544D0:
 /* 8005451C 0004549C  7F C3 F3 78 */	mr r3, r30
 /* 80054520 000454A0  38 81 00 08 */	addi r4, r1, 0x8
 /* 80054524 000454A4  38 C0 00 00 */	li r6, 0x0
-/* 80054528 000454A8  4B FF FA B5 */	bl func_80053FDC
+/* 80054528 000454A8  4B FF FA B5 */	bl ReadDvdFile__12CVHomeButtonFPCcP12MEMAllocatorPUl
 /* 8005452C 000454AC  90 7E 00 04 */	stw r3, 0x4(r30)
 /* 80054530 000454B0  3F E0 00 02 */	lis r31, 0x2
 /* 80054534 000454B4  38 7F D1 28 */	addi r3, r31, -0x2ed8
@@ -472,7 +460,7 @@ func_800544D0:
 /* 80054548 000454C8  90 7E 00 00 */	stw r3, 0x0(r30)
 /* 8005454C 000454CC  80 7E 00 04 */	lwz r3, 0x4(r30)
 /* 80054550 000454D0  38 BF D1 28 */	addi r5, r31, -0x2ed8
-/* 80054554 000454D4  48 11 D7 05 */	bl func_80171C58
+/* 80054554 000454D4  48 11 D7 05 */	bl HBMCreateSound
 /* 80054558 000454D8  80 01 01 14 */	lwz r0, 0x114(r1)
 /* 8005455C 000454DC  83 E1 01 0C */	lwz r31, 0x10c(r1)
 /* 80054560 000454E0  83 C1 01 08 */	lwz r30, 0x108(r1)
@@ -480,8 +468,8 @@ func_800544D0:
 /* 80054568 000454E8  38 21 01 10 */	addi r1, r1, 0x110
 /* 8005456C 000454EC  4E 80 00 20 */	blr
 
-.global func_80054570
-func_80054570:
+.global InitControllerData__12CVHomeButtonFP17HBMControllerData
+InitControllerData__12CVHomeButtonFP17HBMControllerData:
 /* 80054570 000454F0  C0 02 89 F0 */	lfs f0, lbl_80610210@sda21(r2)
 /* 80054574 000454F4  38 00 00 00 */	li r0, 0x0
 /* 80054578 000454F8  90 04 00 0C */	stw r0, 0xc(r4)
@@ -498,8 +486,8 @@ func_80054570:
 /* 800545A4 00045524  90 04 00 3C */	stw r0, 0x3c(r4)
 /* 800545A8 00045528  4E 80 00 20 */	blr
 
-.global func_800545AC
-func_800545AC:
+.global AbsClamp__12CVHomeButtonFff
+AbsClamp__12CVHomeButtonFff:
 /* 800545AC 0004552C  FC 01 10 40 */	fcmpo cr0, f1, f2
 /* 800545B0 00045530  40 81 00 08 */	ble lbl_800545B8
 /* 800545B4 00045534  48 00 00 18 */	b func_800545CC
@@ -516,8 +504,8 @@ func_800545CC:
 /* 800545CC 0004554C  FC 20 10 90 */	fmr f1, f2
 /* 800545D0 00045550  4E 80 00 20 */	blr
 
-.global func_800545D4
-func_800545D4:
+.global calcAnalogCursorPos__12CVHomeButtonFffP4Vec2
+calcAnalogCursorPos__12CVHomeButtonFffP4Vec2:
 /* 800545D4 00045554  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800545D8 00045558  7C 08 02 A6 */	mflr r0
 /* 800545DC 0004555C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -533,12 +521,12 @@ func_800545D4:
 /* 80054604 00045584  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80054608 00045588  7C 7E 1B 78 */	mr r30, r3
 /* 8005460C 0004558C  EC 21 00 24 */	fdivs f1, f1, f0
-/* 80054610 00045590  4B FF FF 9D */	bl func_800545AC
+/* 80054610 00045590  4B FF FF 9D */	bl AbsClamp__12CVHomeButtonFff
 /* 80054614 00045594  FF C0 08 90 */	fmr f30, f1
 /* 80054618 00045598  C0 42 8A 04 */	lfs f2, lbl_80610224@sda21(r2)
 /* 8005461C 0004559C  FC 20 F8 90 */	fmr f1, f31
 /* 80054620 000455A0  7F C3 F3 78 */	mr r3, r30
-/* 80054624 000455A4  4B FF FF 89 */	bl func_800545AC
+/* 80054624 000455A4  4B FF FF 89 */	bl AbsClamp__12CVHomeButtonFff
 /* 80054628 000455A8  C0 02 89 F0 */	lfs f0, lbl_80610210@sda21(r2)
 /* 8005462C 000455AC  FF E0 08 90 */	fmr f31, f1
 /* 80054630 000455B0  FC 00 F0 00 */	fcmpu cr0, f0, f30
@@ -552,13 +540,13 @@ lbl_80054648:
 /* 8005464C 000455CC  7F C3 F3 78 */	mr r3, r30
 /* 80054650 000455D0  C0 42 8A 04 */	lfs f2, lbl_80610224@sda21(r2)
 /* 80054654 000455D4  EC 20 F0 2A */	fadds f1, f0, f30
-/* 80054658 000455D8  4B FF FF 55 */	bl func_800545AC
+/* 80054658 000455D8  4B FF FF 55 */	bl AbsClamp__12CVHomeButtonFff
 /* 8005465C 000455DC  C0 1F 00 04 */	lfs f0, 0x4(r31)
 /* 80054660 000455E0  7F C3 F3 78 */	mr r3, r30
 /* 80054664 000455E4  D0 3F 00 00 */	stfs f1, 0x0(r31)
 /* 80054668 000455E8  EC 20 F8 28 */	fsubs f1, f0, f31
 /* 8005466C 000455EC  C0 42 8A 04 */	lfs f2, lbl_80610224@sda21(r2)
-/* 80054670 000455F0  4B FF FF 3D */	bl func_800545AC
+/* 80054670 000455F0  4B FF FF 3D */	bl AbsClamp__12CVHomeButtonFff
 /* 80054674 000455F4  D0 3F 00 04 */	stfs f1, 0x4(r31)
 /* 80054678 000455F8  38 60 00 01 */	li r3, 0x1
 
@@ -575,8 +563,8 @@ func_8005467C:
 /* 8005469C 0004561C  38 21 00 30 */	addi r1, r1, 0x30
 /* 800546A0 00045620  4E 80 00 20 */	blr
 
-.global func_800546A4
-func_800546A4:
+.global calcDigitalCursorPos__12CVHomeButtonFUlP4Vec2
+calcDigitalCursorPos__12CVHomeButtonFUlP4Vec2:
 /* 800546A4 00045624  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800546A8 00045628  7C 08 02 A6 */	mflr r0
 /* 800546AC 0004562C  70 84 C0 03 */	andi. r4, r4, 0xc003
@@ -685,12 +673,12 @@ func_80054804:
 /* 80054804 00045784  C0 25 00 00 */	lfs f1, 0x0(r5)
 /* 80054808 00045788  7F C3 F3 78 */	mr r3, r30
 /* 8005480C 0004578C  C0 42 8A 04 */	lfs f2, lbl_80610224@sda21(r2)
-/* 80054810 00045790  4B FF FD 9D */	bl func_800545AC
+/* 80054810 00045790  4B FF FD 9D */	bl AbsClamp__12CVHomeButtonFff
 /* 80054814 00045794  D0 3F 00 00 */	stfs f1, 0x0(r31)
 /* 80054818 00045798  7F C3 F3 78 */	mr r3, r30
 /* 8005481C 0004579C  C0 3F 00 04 */	lfs f1, 0x4(r31)
 /* 80054820 000457A0  C0 42 8A 04 */	lfs f2, lbl_80610224@sda21(r2)
-/* 80054824 000457A4  4B FF FD 89 */	bl func_800545AC
+/* 80054824 000457A4  4B FF FD 89 */	bl AbsClamp__12CVHomeButtonFff
 /* 80054828 000457A8  D0 3F 00 04 */	stfs f1, 0x4(r31)
 /* 8005482C 000457AC  38 60 00 01 */	li r3, 0x1
 
@@ -703,8 +691,8 @@ func_80054830:
 /* 80054840 000457C0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80054844 000457C4  4E 80 00 20 */	blr
 
-.global func_80054848
-func_80054848:
+.global SetAdjustValue__12CVHomeButtonFP11HBMDataInfoi
+SetAdjustValue__12CVHomeButtonFP11HBMDataInfoi:
 /* 80054848 000457C8  2C 05 00 00 */	cmpwi r5, 0x0
 /* 8005484C 000457CC  40 82 00 14 */	bne lbl_80054860
 /* 80054850 000457D0  C0 02 8A 04 */	lfs f0, lbl_80610224@sda21(r2)
@@ -748,7 +736,7 @@ Calc__12CVHomeButtonFv:
 lbl_800548C8:
 /* 800548C8 00045848  7F E3 FB 78 */	mr r3, r31
 /* 800548CC 0004584C  7F 84 E3 78 */	mr r4, r28
-/* 800548D0 00045850  48 08 3D 3D */	bl func_800D860C
+/* 800548D0 00045850  48 08 3D 3D */	bl WPADProbe
 /* 800548D4 00045854  90 7B 00 94 */	stw r3, 0x94(r27)
 /* 800548D8 00045858  80 1B 00 A4 */	lwz r0, 0xa4(r27)
 /* 800548DC 0004585C  90 1A 00 58 */	stw r0, 0x58(r26)
@@ -772,14 +760,14 @@ lbl_80054910:
 /* 8005491C 0004589C  90 9A 00 4C */	stw r4, 0x4c(r26)
 /* 80054920 000458A0  7F 05 C3 78 */	mr r5, r24
 /* 80054924 000458A4  80 84 00 60 */	lwz r4, 0x60(r4)
-/* 80054928 000458A8  4B FF FD 7D */	bl func_800546A4
+/* 80054928 000458A8  4B FF FD 7D */	bl calcDigitalCursorPos__12CVHomeButtonFUlP4Vec2
 /* 8005492C 000458AC  90 7E 00 D4 */	stw r3, 0xd4(r30)
 /* 80054930 000458B0  7F C3 F3 78 */	mr r3, r30
 /* 80054934 000458B4  7F 04 C3 78 */	mr r4, r24
 /* 80054938 000458B8  80 BA 00 4C */	lwz r5, 0x4c(r26)
 /* 8005493C 000458BC  C0 25 00 6C */	lfs f1, 0x6c(r5)
 /* 80054940 000458C0  C0 45 00 70 */	lfs f2, 0x70(r5)
-/* 80054944 000458C4  4B FF FC 91 */	bl func_800545D4
+/* 80054944 000458C4  4B FF FC 91 */	bl calcAnalogCursorPos__12CVHomeButtonFffP4Vec2
 /* 80054948 000458C8  80 1E 00 D4 */	lwz r0, 0xd4(r30)
 /* 8005494C 000458CC  7C 00 1B 79 */	or. r0, r0, r3
 /* 80054950 000458D0  90 1E 00 D4 */	stw r0, 0xd4(r30)
@@ -843,48 +831,48 @@ func_80054A04:
 /* 80054A08 00045988  41 82 00 88 */	beq lbl_80054A90
 /* 80054A0C 0004598C  4B FB FE E1 */	bl GetInstance__10CVSoundMgrFv
 /* 80054A10 00045990  38 80 00 FA */	li r4, 0xfa
-/* 80054A14 00045994  4B FD 8B 8D */	bl func_8002D5A0
+/* 80054A14 00045994  4B FD 8B 8D */	bl ClearEffectAll__10CVSoundMgrFi
 /* 80054A18 00045998  4B FB FE D5 */	bl GetInstance__10CVSoundMgrFv
 /* 80054A1C 0004599C  38 80 00 01 */	li r4, 0x1
 /* 80054A20 000459A0  38 A0 00 00 */	li r5, 0x0
-/* 80054A24 000459A4  4B FD 8B 0D */	bl func_8002D530
+/* 80054A24 000459A4  4B FD 8B 0D */	bl PauseSoundAll__10CVSoundMgrFii
 /* 80054A28 000459A8  3B 00 00 00 */	li r24, 0x0
 lbl_80054A2C:
 /* 80054A2C 000459AC  4B FB F9 C9 */	bl GetInstance__8CVPadMgrFv
 /* 80054A30 000459B0  7F 04 C3 78 */	mr r4, r24
 /* 80054A34 000459B4  38 A0 00 01 */	li r5, 0x1
-/* 80054A38 000459B8  4B FD ED 45 */	bl func_8003377C
+/* 80054A38 000459B8  4B FD ED 45 */	bl SetDPDPower__8CVPadMgrFli
 /* 80054A3C 000459BC  3B 18 00 01 */	addi r24, r24, 0x1
 /* 80054A40 000459C0  2C 18 00 04 */	cmpwi r24, 0x4
 /* 80054A44 000459C4  41 80 FF E8 */	blt lbl_80054A2C
 /* 80054A48 000459C8  7F C3 F3 78 */	mr r3, r30
 /* 80054A4C 000459CC  38 9E 00 4C */	addi r4, r30, 0x4c
-/* 80054A50 000459D0  4B FF FB 21 */	bl func_80054570
+/* 80054A50 000459D0  4B FF FB 21 */	bl InitControllerData__12CVHomeButtonFP17HBMControllerData
 /* 80054A54 000459D4  7F C3 F3 78 */	mr r3, r30
 /* 80054A58 000459D8  38 9E 00 0C */	addi r4, r30, 0xc
-/* 80054A5C 000459DC  4B FF F8 01 */	bl func_8005425C
-/* 80054A60 000459E0  48 07 F7 49 */	bl func_800D41A8
+/* 80054A5C 000459DC  4B FF F8 01 */	bl InitHomeButtonInfo__12CVHomeButtonFP11HBMDataInfo
+/* 80054A60 000459E0  48 07 F7 49 */	bl SCGetAspectRatio
 /* 80054A64 000459E4  54 65 06 3E */	clrlwi r5, r3, 24
 /* 80054A68 000459E8  7F C3 F3 78 */	mr r3, r30
 /* 80054A6C 000459EC  38 9E 00 0C */	addi r4, r30, 0xc
-/* 80054A70 000459F0  4B FF FD D9 */	bl func_80054848
+/* 80054A70 000459F0  4B FF FD D9 */	bl SetAdjustValue__12CVHomeButtonFP11HBMDataInfoi
 /* 80054A74 000459F4  38 7E 00 0C */	addi r3, r30, 0xc
-/* 80054A78 000459F8  48 11 CD D9 */	bl func_80171850
-/* 80054A7C 000459FC  48 11 CF BD */	bl func_80171A38
+/* 80054A78 000459F8  48 11 CD D9 */	bl HBMCreate
+/* 80054A7C 000459FC  48 11 CF BD */	bl HBMInit
 /* 80054A80 00045A00  38 60 00 01 */	li r3, 0x1
-/* 80054A84 00045A04  48 11 D1 B9 */	bl func_80171C3C
+/* 80054A84 00045A04  48 11 D1 B9 */	bl HBMSetAdjustFlag
 /* 80054A88 00045A08  7F C3 F3 78 */	mr r3, r30
-/* 80054A8C 00045A0C  4B FF FA 45 */	bl func_800544D0
+/* 80054A8C 00045A0C  4B FF FA 45 */	bl InitSound__12CVHomeButtonFv
 lbl_80054A90:
 /* 80054A90 00045A10  80 1E 00 8C */	lwz r0, 0x8c(r30)
 /* 80054A94 00045A14  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80054A98 00045A18  41 82 00 BC */	beq lbl_80054B54
-/* 80054A9C 00045A1C  48 11 D1 C5 */	bl func_80171C60
+/* 80054A9C 00045A1C  48 11 D1 C5 */	bl HBMUpdateSound
 /* 80054AA0 00045A20  38 7E 00 4C */	addi r3, r30, 0x4c
-/* 80054AA4 00045A24  48 11 CF C9 */	bl func_80171A6C
+/* 80054AA4 00045A24  48 11 CF C9 */	bl HBMCalc
 /* 80054AA8 00045A28  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80054AAC 00045A2C  41 80 00 A8 */	blt lbl_80054B54
-/* 80054AB0 00045A30  48 11 D1 69 */	bl func_80171C18
+/* 80054AB0 00045A30  48 11 D1 69 */	bl HBMGetSelectBtnNum
 /* 80054AB4 00045A34  2C 03 00 02 */	cmpwi r3, 0x2
 /* 80054AB8 00045A38  41 82 00 84 */	beq lbl_80054B3C
 /* 80054ABC 00045A3C  40 80 00 88 */	bge func_80054B44
@@ -896,11 +884,11 @@ lbl_80054A90:
 lbl_80054AD4:
 /* 80054AD4 00045A54  4B FB FE 19 */	bl GetInstance__10CVSoundMgrFv
 /* 80054AD8 00045A58  38 80 00 FA */	li r4, 0xfa
-/* 80054ADC 00045A5C  4B FD 8A C5 */	bl func_8002D5A0
+/* 80054ADC 00045A5C  4B FD 8A C5 */	bl ClearEffectAll__10CVSoundMgrFi
 /* 80054AE0 00045A60  4B FB FE 0D */	bl GetInstance__10CVSoundMgrFv
 /* 80054AE4 00045A64  38 80 00 00 */	li r4, 0x0
 /* 80054AE8 00045A68  38 A0 00 00 */	li r5, 0x0
-/* 80054AEC 00045A6C  4B FD 8A 45 */	bl func_8002D530
+/* 80054AEC 00045A6C  4B FD 8A 45 */	bl PauseSoundAll__10CVSoundMgrFii
 /* 80054AF0 00045A70  3B 00 00 00 */	li r24, 0x0
 /* 80054AF4 00045A74  3B A0 00 00 */	li r29, 0x0
 lbl_80054AF8:
@@ -913,14 +901,14 @@ lbl_80054AF8:
 /* 80054B10 00045A90  4B FB F8 E5 */	bl GetInstance__8CVPadMgrFv
 /* 80054B14 00045A94  7F 04 C3 78 */	mr r4, r24
 /* 80054B18 00045A98  7F E5 FB 78 */	mr r5, r31
-/* 80054B1C 00045A9C  4B FD EC 61 */	bl func_8003377C
+/* 80054B1C 00045A9C  4B FD EC 61 */	bl SetDPDPower__8CVPadMgrFli
 /* 80054B20 00045AA0  3B 18 00 01 */	addi r24, r24, 0x1
 /* 80054B24 00045AA4  3B BD 00 04 */	addi r29, r29, 0x4
 /* 80054B28 00045AA8  2C 18 00 04 */	cmpwi r24, 0x4
 /* 80054B2C 00045AAC  41 80 FF CC */	blt lbl_80054AF8
 /* 80054B30 00045AB0  48 00 00 14 */	b func_80054B44
 lbl_80054B34:
-/* 80054B34 00045AB4  48 03 A3 5D */	bl func_8008EE90
+/* 80054B34 00045AB4  48 03 A3 5D */	bl OSReturnToMenu
 /* 80054B38 00045AB8  48 00 00 0C */	b func_80054B44
 lbl_80054B3C:
 /* 80054B3C 00045ABC  38 60 00 00 */	li r3, 0x0
@@ -929,7 +917,7 @@ lbl_80054B3C:
 .global func_80054B44
 func_80054B44:
 /* 80054B44 00045AC4  7F C3 F3 78 */	mr r3, r30
-/* 80054B48 00045AC8  4B FF F6 39 */	bl func_80054180
+/* 80054B48 00045AC8  4B FF F6 39 */	bl Release__12CVHomeButtonFv
 /* 80054B4C 00045ACC  38 00 00 00 */	li r0, 0x0
 /* 80054B50 00045AD0  90 1E 00 8C */	stw r0, 0x8c(r30)
 lbl_80054B54:
@@ -950,11 +938,11 @@ Render__12CVHomeButtonFv:
 /* 80054B80 00045B00  80 03 00 8C */	lwz r0, 0x8c(r3)
 /* 80054B84 00045B04  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80054B88 00045B08  41 82 00 18 */	beq lbl_80054BA0
-/* 80054B8C 00045B0C  48 07 F6 1D */	bl func_800D41A8
+/* 80054B8C 00045B0C  48 07 F6 1D */	bl SCGetAspectRatio
 /* 80054B90 00045B10  54 64 06 3E */	clrlwi r4, r3, 24
 /* 80054B94 00045B14  7F E3 FB 78 */	mr r3, r31
-/* 80054B98 00045B18  4B FF F6 51 */	bl func_800541E8
-/* 80054B9C 00045B1C  48 11 CF 21 */	bl func_80171ABC
+/* 80054B98 00045B18  4B FF F6 51 */	bl SetProjection__12CVHomeButtonFi
+/* 80054B9C 00045B1C  48 11 CF 21 */	bl HBMDraw
 lbl_80054BA0:
 /* 80054BA0 00045B20  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80054BA4 00045B24  83 E1 00 0C */	lwz r31, 0xc(r1)

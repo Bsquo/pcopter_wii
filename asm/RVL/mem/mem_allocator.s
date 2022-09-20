@@ -18,8 +18,8 @@ lbl_800CCBA0:
 lbl_800CCBA8:
 /* 800CCBA8 000BDB28  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 800CCBAC 000BDB2C  4B FB B8 44 */	b func_800883F0
-.global func_800CCBB0
-func_800CCBB0:
+.global MEMAllocFromAllocator
+MEMAllocFromAllocator:
 /* 800CCBB0 000BDB30  80 A3 00 00 */	lwz r5, 0x0(r3)
 /* 800CCBB4 000BDB34  81 85 00 00 */	lwz r12, 0x0(r5)
 /* 800CCBB8 000BDB38  7D 89 03 A6 */	mtctr r12

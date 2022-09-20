@@ -99,22 +99,22 @@ lbl_801CC4D8:
 	.4byte lbl_8060E320
 	.4byte 0
 	.4byte lbl_800552C4
-	.4byte lbl_8001E64C
-	.4byte lbl_80023154
-	.4byte lbl_8001E644
-	.4byte lbl_800230B8
-	.4byte func_80022304
-	.4byte lbl_800212F0
-	.4byte func_80021378
-	.4byte lbl_800217F0
-	.4byte func_80021F00
+	.4byte GetPos__7CVRigidFv
+	.4byte GetAxis__7CVRigidFv
+	.4byte GetScale__7CVRigidFv
+	.4byte GetMtx__7CVRigidFv
+	.4byte Move__7CVActorFf
+	.4byte BindModel__7CVActorF10CVFilePath
+	.4byte InitParam__7CVActorFv
+	.4byte InitAnimParam__7CVActorFP8CVScript
+	.4byte InitPos__7CVActorF8CVVector8CVVector
 	.4byte func_800573B4
 	.4byte func_800574D4
-	.4byte lbl_8002241C
-	.4byte lbl_8001DC3C
-	.4byte func_800225E0
-	.4byte lbl_800229C0
-	.4byte func_80022EC8
+	.4byte CheckColl__7CVActorFv
+	.4byte Destroyed__7CVActorF8CVVectorP6CVFlag
+	.4byte CalcCollEffect__7CVActorFffff
+	.4byte ExecAction__7CVActorFi
+	.4byte UpdateArea__7CVActorFv
 
 .global lbl_801CC524
 lbl_801CC524:

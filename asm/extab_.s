@@ -1309,7 +1309,7 @@ lbl_80006D30:
 	.4byte __dt__6CVListFv
 	.4byte 0x8680001E
 	.4byte 0
-	.4byte func_80021228
+	.4byte __dt__7CVActorFv
 
 .global lbl_80006D88
 lbl_80006D88:
@@ -2194,7 +2194,7 @@ lbl_80007254:
 	.4byte __dt__6CVListFv
 	.4byte 0x0780001E
 	.4byte 0x00000280
-	.4byte func_800211D0
+	.4byte __dt__18CVActorMtxCallbackFv
 	.4byte 0x0780001E
 	.4byte 0x00000268
 	.4byte __dt__6CVListFv
@@ -9020,7 +9020,7 @@ lbl_80009F84:
 	.4byte __dt__6CVFlagFv
 	.4byte 0x8680001E
 	.4byte 0
-	.4byte func_80021228
+	.4byte __dt__7CVActorFv
 
 .global lbl_80009FB4
 lbl_80009FB4:

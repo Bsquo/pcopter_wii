@@ -836,8 +836,8 @@ lbl_8002D4F4:
 /* 8002D528 0001E4A8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002D52C 0001E4AC  4E 80 00 20 */	blr
 
-.global func_8002D530
-func_8002D530:
+.global PauseSoundAll__10CVSoundMgrFii
+PauseSoundAll__10CVSoundMgrFii:
 /* 8002D530 0001E4B0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8002D534 0001E4B4  7C 08 02 A6 */	mflr r0
 /* 8002D538 0001E4B8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -868,8 +868,8 @@ lbl_8002D55C:
 /* 8002D598 0001E518  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002D59C 0001E51C  4E 80 00 20 */	blr
 
-.global func_8002D5A0
-func_8002D5A0:
+.global ClearEffectAll__10CVSoundMgrFi
+ClearEffectAll__10CVSoundMgrFi:
 /* 8002D5A0 0001E520  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002D5A4 0001E524  7C 08 02 A6 */	mflr r0
 /* 8002D5A8 0001E528  38 60 00 00 */	li r3, 0x0

@@ -359,8 +359,8 @@ func_80020EC4:
 /* 80020EC4 00011E44  B0 83 01 22 */	sth r4, 0x122(r3)
 /* 80020EC8 00011E48  4E 80 00 20 */	blr
 
-.global lbl_80020ECC
-lbl_80020ECC:
+.global ExecCallbackA__18CVActorMtxCallbackFPQ34nw4r3g3d12ChrAnmResultQ34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
+ExecCallbackA__18CVActorMtxCallbackFPQ34nw4r3g3d12ChrAnmResultQ34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld:
 /* 80020ECC 00011E4C  94 21 FF 40 */	stwu r1, -0xc0(r1)
 /* 80020ED0 00011E50  7C 08 02 A6 */	mflr r0
 /* 80020ED4 00011E54  90 01 00 C4 */	stw r0, 0xc4(r1)
@@ -521,12 +521,12 @@ func_80021064:
 /* 80021108 00012088  38 21 00 30 */	addi r1, r1, 0x30
 /* 8002110C 0001208C  4E 80 00 20 */	blr
 
-.global lbl_80021110
-lbl_80021110:
+.global ExecCallbackB__18CVActorMtxCallbackFPQ34nw4r3g3d13WorldMtxManipQ34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
+ExecCallbackB__18CVActorMtxCallbackFPQ34nw4r3g3d13WorldMtxManipQ34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld:
 /* 80021110 00012090  4E 80 00 20 */	blr
 
-.global lbl_80021114
-lbl_80021114:
+.global ExecCallbackC__18CVActorMtxCallbackFPQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
+ExecCallbackC__18CVActorMtxCallbackFPQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld:
 /* 80021114 00012094  4E 80 00 20 */	blr
 
 .global func_80021118
@@ -578,8 +578,8 @@ func_80021118:
 /* 800211C8 00012148  38 21 00 10 */	addi r1, r1, 0x10
 /* 800211CC 0001214C  4E 80 00 20 */	blr
 
-.global func_800211D0
-func_800211D0:
+.global __dt__18CVActorMtxCallbackFv
+__dt__18CVActorMtxCallbackFv:
 /* 800211D0 00012150  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800211D4 00012154  7C 08 02 A6 */	mflr r0
 /* 800211D8 00012158  2C 03 00 00 */	cmpwi r3, 0x0
@@ -604,8 +604,8 @@ lbl_8002120C:
 /* 80021220 000121A0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80021224 000121A4  4E 80 00 20 */	blr
 
-.global func_80021228
-func_80021228:
+.global __dt__7CVActorFv
+__dt__7CVActorFv:
 /* 80021228 000121A8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002122C 000121AC  7C 08 02 A6 */	mflr r0
 /* 80021230 000121B0  2C 03 00 00 */	cmpwi r3, 0x0
@@ -633,7 +633,7 @@ lbl_8002127C:
 /* 80021284 00012204  48 00 56 E9 */	bl __dt__6CVListFv
 /* 80021288 00012208  38 7E 02 80 */	addi r3, r30, 0x280
 /* 8002128C 0001220C  38 80 FF FF */	li r4, -0x1
-/* 80021290 00012210  4B FF FF 41 */	bl func_800211D0
+/* 80021290 00012210  4B FF FF 41 */	bl __dt__18CVActorMtxCallbackFv
 /* 80021294 00012214  38 7E 02 68 */	addi r3, r30, 0x268
 /* 80021298 00012218  38 80 FF FF */	li r4, -0x1
 /* 8002129C 0001221C  48 00 56 D1 */	bl __dt__6CVListFv
@@ -659,8 +659,8 @@ lbl_800212D4:
 /* 800212E8 00012268  38 21 00 10 */	addi r1, r1, 0x10
 /* 800212EC 0001226C  4E 80 00 20 */	blr
 
-.global lbl_800212F0
-lbl_800212F0:
+.global BindModel__7CVActorF10CVFilePath
+BindModel__7CVActorF10CVFilePath:
 /* 800212F0 00012270  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800212F4 00012274  7C 08 02 A6 */	mflr r0
 /* 800212F8 00012278  90 01 00 14 */	stw r0, 0x14(r1)
@@ -697,8 +697,8 @@ lbl_80021330:
 /* 80021370 000122F0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80021374 000122F4  4E 80 00 20 */	blr
 
-.global func_80021378
-func_80021378:
+.global InitParam__7CVActorFv
+InitParam__7CVActorFv:
 /* 80021378 000122F8  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 8002137C 000122FC  7C 08 02 A6 */	mflr r0
 /* 80021380 00012300  38 80 00 00 */	li r4, 0x0
@@ -1033,8 +1033,8 @@ lbl_800217D4:
 /* 800217E8 00012768  38 21 00 10 */	addi r1, r1, 0x10
 /* 800217EC 0001276C  4E 80 00 20 */	blr
 
-.global lbl_800217F0
-lbl_800217F0:
+.global InitAnimParam__7CVActorFP8CVScript
+InitAnimParam__7CVActorFP8CVScript:
 /* 800217F0 00012770  94 21 FE 70 */	stwu r1, -0x190(r1)
 /* 800217F4 00012774  7C 08 02 A6 */	mflr r0
 /* 800217F8 00012778  90 01 01 94 */	stw r0, 0x194(r1)
@@ -1548,8 +1548,8 @@ func_80021EF8:
 /* 80021EF8 00012E78  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 80021EFC 00012E7C  4E 80 00 20 */	blr
 
-.global func_80021F00
-func_80021F00:
+.global InitPos__7CVActorF8CVVector8CVVector
+InitPos__7CVActorF8CVVector8CVVector:
 /* 80021F00 00012E80  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 80021F04 00012E84  7C 08 02 A6 */	mflr r0
 /* 80021F08 00012E88  90 01 00 74 */	stw r0, 0x74(r1)
@@ -1786,8 +1786,8 @@ func_800221E4:
 /* 80022274 000131F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80022278 000131F8  4E 80 00 20 */	blr
 
-.global func_8002227C
-func_8002227C:
+.global Recovery__7CVActorFv
+Recovery__7CVActorFv:
 /* 8002227C 000131FC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80022280 00013200  7C 08 02 A6 */	mflr r0
 /* 80022284 00013204  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1827,8 +1827,8 @@ func_800222C0:
 /* 800222FC 0001327C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80022300 00013280  4E 80 00 20 */	blr
 
-.global func_80022304
-func_80022304:
+.global Move__7CVActorFf
+Move__7CVActorFf:
 /* 80022304 00013284  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80022308 00013288  7C 08 02 A6 */	mflr r0
 /* 8002230C 0001328C  38 80 00 00 */	li r4, 0x0
@@ -1859,8 +1859,8 @@ lbl_80022354:
 /* 8002236C 000132EC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80022370 000132F0  4E 80 00 20 */	blr
 
-.global func_80022374
-func_80022374:
+.global Animate__7CVActorFv
+Animate__7CVActorFv:
 /* 80022374 000132F4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80022378 000132F8  7C 08 02 A6 */	mflr r0
 /* 8002237C 000132FC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1912,8 +1912,8 @@ func_80022400:
 /* 80022414 00013394  38 21 00 20 */	addi r1, r1, 0x20
 /* 80022418 00013398  4E 80 00 20 */	blr
 
-.global lbl_8002241C
-lbl_8002241C:
+.global CheckColl__7CVActorFv
+CheckColl__7CVActorFv:
 /* 8002241C 0001339C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80022420 000133A0  7C 08 02 A6 */	mflr r0
 /* 80022424 000133A4  38 80 00 00 */	li r4, 0x0
@@ -2051,8 +2051,8 @@ func_800225C0:
 /* 800225D8 00013558  38 21 00 30 */	addi r1, r1, 0x30
 /* 800225DC 0001355C  4E 80 00 20 */	blr
 
-.global func_800225E0
-func_800225E0:
+.global CalcCollEffect__7CVActorFffff
+CalcCollEffect__7CVActorFffff:
 /* 800225E0 00013560  94 21 FE 70 */	stwu r1, -0x190(r1)
 /* 800225E4 00013564  7C 08 02 A6 */	mflr r0
 /* 800225E8 00013568  90 01 01 94 */	stw r0, 0x194(r1)
@@ -2316,8 +2316,8 @@ func_8002298C:
 /* 800229B8 00013938  D0 03 00 08 */	stfs f0, 0x8(r3)
 /* 800229BC 0001393C  4E 80 00 20 */	blr
 
-.global lbl_800229C0
-lbl_800229C0:
+.global ExecAction__7CVActorFi
+ExecAction__7CVActorFi:
 /* 800229C0 00013940  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800229C4 00013944  7C 08 02 A6 */	mflr r0
 /* 800229C8 00013948  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2699,8 +2699,8 @@ func_80022EA0:
 /* 80022EC0 00013E40  38 21 00 20 */	addi r1, r1, 0x20
 /* 80022EC4 00013E44  4E 80 00 20 */	blr
 
-.global func_80022EC8
-func_80022EC8:
+.global UpdateArea__7CVActorFv
+UpdateArea__7CVActorFv:
 /* 80022EC8 00013E48  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 80022ECC 00013E4C  7C 08 02 A6 */	mflr r0
 /* 80022ED0 00013E50  90 01 00 54 */	stw r0, 0x54(r1)
@@ -2865,8 +2865,8 @@ func_800230B0:
 /* 800230B0 00014030  D0 43 00 14 */	stfs f2, 0x14(r3)
 /* 800230B4 00014034  4E 80 00 20 */	blr
 
-.global lbl_800230B8
-lbl_800230B8:
+.global GetMtx__7CVRigidFv
+GetMtx__7CVRigidFv:
 /* 800230B8 00014038  38 84 00 50 */	addi r4, r4, 0x50
 /* 800230BC 0001403C  48 00 00 04 */	b func_800230C0
 
@@ -2910,8 +2910,8 @@ func_800230C0:
 /* 8002314C 000140CC  38 21 00 30 */	addi r1, r1, 0x30
 /* 80023150 000140D0  4E 80 00 20 */	blr
 
-.global lbl_80023154
-lbl_80023154:
+.global GetAxis__7CVRigidFv
+GetAxis__7CVRigidFv:
 /* 80023154 000140D4  38 84 00 20 */	addi r4, r4, 0x20
 /* 80023158 000140D8  4B FF A0 88 */	b func_8001D1E0
 
@@ -2936,23 +2936,23 @@ __vt__7CVActor:
 	# ROM: 0x1C7780
 	.4byte __RTTI__7CVActor
 	.4byte 0
-	.4byte func_80021228
-	.4byte lbl_8001E64C
-	.4byte lbl_80023154
-	.4byte lbl_8001E644
-	.4byte lbl_800230B8
-	.4byte func_80022304
-	.4byte lbl_800212F0
-	.4byte func_80021378
-	.4byte lbl_800217F0
-	.4byte func_80021F00
-	.4byte func_8002227C
-	.4byte func_80022374
-	.4byte lbl_8002241C
-	.4byte lbl_8001DC3C
-	.4byte func_800225E0
-	.4byte lbl_800229C0
-	.4byte func_80022EC8
+	.4byte __dt__7CVActorFv
+	.4byte GetPos__7CVRigidFv
+	.4byte GetAxis__7CVRigidFv
+	.4byte GetScale__7CVRigidFv
+	.4byte GetMtx__7CVRigidFv
+	.4byte Move__7CVActorFf
+	.4byte BindModel__7CVActorF10CVFilePath
+	.4byte InitParam__7CVActorFv
+	.4byte InitAnimParam__7CVActorFP8CVScript
+	.4byte InitPos__7CVActorF8CVVector8CVVector
+	.4byte Recovery__7CVActorFv
+	.4byte Animate__7CVActorFv
+	.4byte CheckColl__7CVActorFv
+	.4byte Destroyed__7CVActorF8CVVectorP6CVFlag
+	.4byte CalcCollEffect__7CVActorFffff
+	.4byte ExecAction__7CVActorFi
+	.4byte UpdateArea__7CVActorFv
 	.4byte 0
 
 .global __vt__18CVActorMtxCallback
@@ -2961,10 +2961,10 @@ __vt__18CVActorMtxCallback:
 	# ROM: 0x1C77D0
 	.4byte __RTTI__18CVActorMtxCallback
 	.4byte 0
-	.4byte func_800211D0
-	.4byte lbl_80020ECC
-	.4byte lbl_80021110
-	.4byte lbl_80021114
+	.4byte __dt__18CVActorMtxCallbackFv
+	.4byte ExecCallbackA__18CVActorMtxCallbackFPQ34nw4r3g3d12ChrAnmResultQ34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
+	.4byte ExecCallbackB__18CVActorMtxCallbackFPQ34nw4r3g3d13WorldMtxManipQ34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
+	.4byte ExecCallbackC__18CVActorMtxCallbackFPQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld
 
 .global _47706
 _47706:

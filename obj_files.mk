@@ -75,6 +75,7 @@ GAME_O_FILES :=                                                    \
 	$(BUILD_DIR)/src/game/scene/Menu/Logo/SceneMenuLogo.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Logo/SceneMenuLogo.o             \
 	$(BUILD_DIR)/asm/game/scenary/Scenary.o             \
+	$(BUILD_DIR)/src/game/hbm/VHomeButton.o             \
 	$(BUILD_DIR)/asm/game/hbm/VHomeButton.o             \
 	$(BUILD_DIR)/asm/game/actor/ActScn/ActHeliPad.o             \
 	$(BUILD_DIR)/asm/game/actor/ActScn/ActRing.o             \

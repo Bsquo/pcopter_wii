@@ -1,7 +1,7 @@
 .include "macros.s"
 .section .text, "ax"
-.global func_801682D8
-func_801682D8:
+.global __ct__Q34nw4r3lyt8DrawInfoFv
+__ct__Q34nw4r3lyt8DrawInfoFv:
 /* 801682D8 00159258  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801682DC 0015925C  7C 08 02 A6 */	mflr r0
 /* 801682E0 00159260  3C 80 80 1F */	lis r4, lbl_801EE470@ha
@@ -32,8 +32,8 @@ func_801682D8:
 /* 80168344 001592C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80168348 001592C8  4E 80 00 20 */	blr
 
-.global func_8016834C
-func_8016834C:
+.global __dt__Q34nw4r3lyt8DrawInfoFv
+__dt__Q34nw4r3lyt8DrawInfoFv:
 /* 8016834C 001592CC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80168350 001592D0  7C 08 02 A6 */	mflr r0
 /* 80168354 001592D4  2C 03 00 00 */	cmpwi r3, 0x0

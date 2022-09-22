@@ -30392,7 +30392,7 @@ lbl_801EE470:
 	# ROM: 0x1EA570
 	.4byte 0
 	.4byte 0
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 	.4byte 0
 
 .global lbl_801EE480

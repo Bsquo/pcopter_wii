@@ -1544,8 +1544,8 @@ func_8003370C:
 /* 80033724 000246A4  38 21 00 30 */	addi r1, r1, 0x30
 /* 80033728 000246A8  4E 80 00 20 */	blr
 
-.global func_8003372C
-func_8003372C:
+.global GetPos__8CVPadMgrFl
+GetPos__8CVPadMgrFl:
 /* 8003372C 000246AC  1C 04 01 0C */	mulli r0, r4, 0x10c
 /* 80033730 000246B0  7C 63 02 14 */	add r3, r3, r0
 /* 80033734 000246B4  4B FF F1 A8 */	b func_800328DC

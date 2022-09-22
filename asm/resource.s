@@ -166,7 +166,7 @@ func_80119694:
 /* 801196E4 0010A664  40 82 00 08 */	bne lbl_801196EC
 /* 801196E8 0010A668  3B 60 00 00 */	li r27, 0x0
 lbl_801196EC:
-/* 801196EC 0010A66C  48 00 01 9D */	bl func_80119888
+/* 801196EC 0010A66C  48 00 01 9D */	bl UnloadResources__4demoFv
 /* 801196F0 0010A670  38 7F 00 0C */	addi r3, r31, 0xc
 /* 801196F4 0010A674  4B F1 3B E1 */	bl func_8002D2D4
 /* 801196F8 0010A678  3B A0 00 00 */	li r29, 0x0
@@ -280,8 +280,8 @@ func_8011983C:
 /* 8011987C 0010A7FC  7C 08 03 A6 */	mtlr r0
 /* 80119880 0010A800  38 21 00 10 */	addi r1, r1, 0x10
 /* 80119884 0010A804  4E 80 00 20 */	blr
-.global func_80119888
-func_80119888:
+.global UnloadResources__4demoFv
+UnloadResources__4demoFv:
 /* 80119888 0010A808  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8011988C 0010A80C  7C 08 02 A6 */	mflr r0
 /* 80119890 0010A810  90 01 00 34 */	stw r0, 0x34(r1)

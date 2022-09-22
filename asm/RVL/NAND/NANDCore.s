@@ -674,8 +674,8 @@ lbl_800D1E94:
 /* 800D1E94 000C2E14  38 00 00 01 */	li r0, 0x1
 /* 800D1E98 000C2E18  90 04 00 00 */	stw r0, 0x0(r4)
 /* 800D1E9C 000C2E1C  4E 80 00 20 */	blr
-.global func_800D1EA0
-func_800D1EA0:
+.global NANDGetCurrentDir
+NANDGetCurrentDir:
 /* 800D1EA0 000C2E20  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D1EA4 000C2E24  7C 08 02 A6 */	mflr r0
 /* 800D1EA8 000C2E28  90 01 00 14 */	stw r0, 0x14(r1)

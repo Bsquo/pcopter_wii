@@ -189,7 +189,7 @@ INCLUDES := -i . -I- -i include
 
 ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -fp fmadd -nodefaults
-CFLAGS  := -Cpp_exceptions off -proc gekko -fp fmadd -O4 -nodefaults -enum int -use_lmw_stmw on -rostr -str pool -msgstyle gcc $(INCLUDES)
+CFLAGS  := -Cpp_exceptions off -proc gekko -fp fmadd -O4 -nodefaults -enum int -sdata2 8 -use_lmw_stmw on -rostr -str pool -msgstyle gcc $(INCLUDES)
 
 # elf2dol needs to know these in order to calculate sbss correctly.
 SDATA_PDHR := 9

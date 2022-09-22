@@ -1035,9 +1035,9 @@ __ct__15CSceneMenuLogo2Fv:
 /* 8001221C 0000319C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80012220 000031A0  7C 7F 1B 78 */	mr r31, r3
 /* 80012224 000031A4  48 04 0B 3D */	bl __ct__14CSceneMenuLogoFv
-/* 80012228 000031A8  3C 80 80 1D */	lis r4, lbl_801CC2E0@ha
+/* 80012228 000031A8  3C 80 80 1D */	lis r4, __vt__15CSceneMenuLogo2@ha
 /* 8001222C 000031AC  7F E3 FB 78 */	mr r3, r31
-/* 80012230 000031B0  38 84 C2 E0 */	addi r4, r4, lbl_801CC2E0@l
+/* 80012230 000031B0  38 84 C2 E0 */	addi r4, r4, __vt__15CSceneMenuLogo2@l
 /* 80012234 000031B4  90 9F 00 28 */	stw r4, 0x28(r31)
 /* 80012238 000031B8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8001223C 000031BC  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1045,8 +1045,8 @@ __ct__15CSceneMenuLogo2Fv:
 /* 80012244 000031C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80012248 000031C8  4E 80 00 20 */	blr
 
-.global func_8001224C
-func_8001224C:
+.global __dt__15CSceneMenuLogo2Fv
+__dt__15CSceneMenuLogo2Fv:
 /* 8001224C 000031CC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80012250 000031D0  7C 08 02 A6 */	mflr r0
 /* 80012254 000031D4  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1235,9 +1235,9 @@ __ct__26CSceneMenuControllerManualFv:
 /* 800124C0 00003440  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800124C4 00003444  7C 7F 1B 78 */	mr r31, r3
 /* 800124C8 00003448  48 04 08 99 */	bl __ct__14CSceneMenuLogoFv
-/* 800124CC 0000344C  3C 80 80 1D */	lis r4, lbl_801CC298@ha
+/* 800124CC 0000344C  3C 80 80 1D */	lis r4, __vt__26CSceneMenuControllerManual@ha
 /* 800124D0 00003450  7F E3 FB 78 */	mr r3, r31
-/* 800124D4 00003454  38 84 C2 98 */	addi r4, r4, lbl_801CC298@l
+/* 800124D4 00003454  38 84 C2 98 */	addi r4, r4, __vt__26CSceneMenuControllerManual@l
 /* 800124D8 00003458  90 9F 00 28 */	stw r4, 0x28(r31)
 /* 800124DC 0000345C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800124E0 00003460  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1245,8 +1245,8 @@ __ct__26CSceneMenuControllerManualFv:
 /* 800124E8 00003468  38 21 00 10 */	addi r1, r1, 0x10
 /* 800124EC 0000346C  4E 80 00 20 */	blr
 
-.global func_800124F0
-func_800124F0:
+.global __dt__26CSceneMenuControllerManualFv
+__dt__26CSceneMenuControllerManualFv:
 /* 800124F0 00003470  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800124F4 00003474  7C 08 02 A6 */	mflr r0
 /* 800124F8 00003478  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1285,7 +1285,7 @@ __dt__4CAppFv:
 /* 8001256C 000034EC  3C 63 00 01 */	addis r3, r3, 0x1
 /* 80012570 000034F0  38 80 FF FF */	li r4, -0x1
 /* 80012574 000034F4  38 63 4C 5C */	addi r3, r3, 0x4c5c
-/* 80012578 000034F8  4B FF FF 79 */	bl func_800124F0
+/* 80012578 000034F8  4B FF FF 79 */	bl __dt__26CSceneMenuControllerManualFv
 /* 8001257C 000034FC  3C 7E 00 01 */	addis r3, r30, 0x1
 /* 80012580 00003500  38 80 FF FF */	li r4, -0x1
 /* 80012584 00003504  38 63 4B BC */	addi r3, r3, 0x4bbc
@@ -1325,7 +1325,7 @@ __dt__4CAppFv:
 /* 8001260C 0000358C  3C 7E 00 01 */	addis r3, r30, 0x1
 /* 80012610 00003590  38 80 FF FF */	li r4, -0x1
 /* 80012614 00003594  38 63 CF 98 */	addi r3, r3, -0x3068
-/* 80012618 00003598  4B FF FC 35 */	bl func_8001224C
+/* 80012618 00003598  4B FF FC 35 */	bl __dt__15CSceneMenuLogo2Fv
 /* 8001261C 0000359C  3C 7E 00 01 */	addis r3, r30, 0x1
 /* 80012620 000035A0  38 80 FF FF */	li r4, -0x1
 /* 80012624 000035A4  38 63 CE F4 */	addi r3, r3, -0x310c
@@ -1642,7 +1642,7 @@ __dt__11CVLayoutMgrFv:
 /* 80012A78 000039F8  48 01 3E F5 */	bl __dt__6CVListFv
 /* 80012A7C 000039FC  7F C3 F3 78 */	mr r3, r30
 /* 80012A80 00003A00  38 80 FF FF */	li r4, -0x1
-/* 80012A84 00003A04  48 15 58 C9 */	bl func_8016834C
+/* 80012A84 00003A04  48 15 58 C9 */	bl __dt__Q34nw4r3lyt8DrawInfoFv
 /* 80012A88 00003A08  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80012A8C 00003A0C  40 81 00 0C */	ble lbl_80012A98
 /* 80012A90 00003A10  7F C3 F3 78 */	mr r3, r30

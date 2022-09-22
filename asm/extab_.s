@@ -119,7 +119,7 @@ lbl_800064F0:
 	.4byte func_800122A4
 	.4byte 0x0780001F
 	.4byte 0x0000CF98
-	.4byte func_8001224C
+	.4byte __dt__15CSceneMenuLogo2Fv
 	.4byte 0x0780001F
 	.4byte 0x0000CEF4
 	.4byte __dt__14CSceneMenuLogoFv
@@ -4623,7 +4623,7 @@ lbl_80008000:
 	.4byte __dt__6CVListFv
 	.4byte 0x8780001F
 	.4byte 0
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80008030
 lbl_80008030:
@@ -5740,19 +5740,19 @@ lbl_80008828:
 	.4byte 0x02000014
 	.4byte __dt__Q34nw4r2ut5ColorFv
 	.4byte 0x820000D0
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 	.4byte 0x02000010
 	.4byte __dt__Q34nw4r2ut5ColorFv
 	.4byte 0x820000D0
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 	.4byte 0x0200000C
 	.4byte __dt__Q34nw4r2ut5ColorFv
 	.4byte 0x820000D0
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 	.4byte 0x02000008
 	.4byte __dt__Q34nw4r2ut5ColorFv
 	.4byte 0x820000D0
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 	.4byte 0x02000028
 	.4byte __dt__8CVScriptFv
 	.4byte 0x02000018
@@ -5760,7 +5760,7 @@ lbl_80008828:
 	.4byte 0x0200003C
 	.4byte __dt__8CVScriptFv
 	.4byte 0x820000D0
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80008920
 lbl_80008920:
@@ -5778,7 +5778,7 @@ lbl_80008928:
 	.4byte 0x00310010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80008940
 lbl_80008940:
@@ -6199,7 +6199,7 @@ lbl_80008B48:
 	.4byte 0x000C0010
 	.4byte 0
 	.4byte 0x82000008
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80008B60
 lbl_80008B60:
@@ -6246,7 +6246,7 @@ lbl_80008BA0:
 	.4byte 0x00120010
 	.4byte 0
 	.4byte 0x82000008
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80008BB8
 lbl_80008BB8:
@@ -6372,7 +6372,7 @@ lbl_80008C80:
 	.4byte 0x001F0010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80008C98
 lbl_80008C98:
@@ -6431,7 +6431,7 @@ lbl_80008CBC:
 	.4byte 0x82000070
 	.4byte __dt__8CVScriptFv
 	.4byte 0x02000108
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 	.4byte 0x82000070
 	.4byte __dt__8CVScriptFv
 
@@ -6465,7 +6465,7 @@ lbl_80008D68:
 	.4byte 0x00250010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80008D80
 lbl_80008D80:
@@ -6575,7 +6575,7 @@ lbl_80008E08:
 	.4byte 0x002A0010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80008E20
 lbl_80008E20:
@@ -6656,7 +6656,7 @@ lbl_80008EE8:
 	.4byte 0x00270010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80008F00
 lbl_80008F00:
@@ -6735,7 +6735,7 @@ lbl_80008F70:
 	.4byte 0x002A0010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80008F88
 lbl_80008F88:
@@ -6789,7 +6789,7 @@ lbl_80008FD0:
 	.4byte 0x00250010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80008FE8
 lbl_80008FE8:
@@ -6848,7 +6848,7 @@ lbl_80009024:
 	.4byte 0x8A80001C
 	.4byte __dl__FPv
 	.4byte 0x82000008
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_8000905C
 lbl_8000905C:
@@ -6866,7 +6866,7 @@ lbl_80009064:
 	.4byte 0x002D0010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_8000907C
 lbl_8000907C:
@@ -6976,7 +6976,7 @@ lbl_80009104:
 	.4byte 0x00400010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_8000911C
 lbl_8000911C:
@@ -8046,7 +8046,7 @@ lbl_800098DC:
 	.4byte 0x8A80001E
 	.4byte __dl__FPv
 	.4byte 0x82000008
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80009914
 lbl_80009914:
@@ -8064,7 +8064,7 @@ lbl_8000991C:
 	.4byte 0x002C0010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80009934
 lbl_80009934:
@@ -8347,7 +8347,7 @@ lbl_80009B08:
 	.4byte 0x00390010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80009B20
 lbl_80009B20:
@@ -8464,9 +8464,9 @@ lbl_80009BF8:
 	.4byte 0x001C0020
 	.4byte 0
 	.4byte 0x8200006C
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 	.4byte 0x82000018
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80009C20
 lbl_80009C20:
@@ -8585,7 +8585,7 @@ lbl_80009CE0:
 	.4byte 0x00280010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_80009CF8
 lbl_80009CF8:
@@ -9389,7 +9389,7 @@ lbl_8000A2CC:
 	.4byte 0x00250010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_8000A2E4
 lbl_8000A2E4:
@@ -9457,7 +9457,7 @@ lbl_8000A33C:
 	.4byte 0x00280010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_8000A354
 lbl_8000A354:
@@ -10629,7 +10629,7 @@ lbl_8000AD30:
 	.4byte 0x00270010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_8000AD48
 lbl_8000AD48:
@@ -10729,9 +10729,9 @@ lbl_8000ADC0:
 	.4byte 0x00000028
 	.4byte 0
 	.4byte 0x02000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 	.4byte 0x82000064
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_8000ADF0
 lbl_8000ADF0:
@@ -11730,7 +11730,7 @@ lbl_8000B6F8:
 	.4byte 0x002A0010
 	.4byte 0
 	.4byte 0x82000018
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_8000B710
 lbl_8000B710:
@@ -11812,7 +11812,7 @@ lbl_8000B778:
 	.4byte 0x00200010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_8000B790
 lbl_8000B790:
@@ -11887,7 +11887,7 @@ lbl_8000B7F0:
 	.4byte 0x00250010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_8000B808
 lbl_8000B808:
@@ -13003,7 +13003,7 @@ lbl_8000C26C:
 	.4byte 0x00280010
 	.4byte 0
 	.4byte 0x82000010
-	.4byte func_8016834C
+	.4byte __dt__Q34nw4r3lyt8DrawInfoFv
 
 .global lbl_8000C284
 lbl_8000C284:

@@ -102,7 +102,7 @@ lbl_8000CB00:
 	.4byte __ct__15CSceneMenuLogo2Fv
 	.4byte 0x0000003C
 	.4byte lbl_800068A0
-	.4byte func_8001224C
+	.4byte __dt__15CSceneMenuLogo2Fv
 	.4byte 0x00000058
 	.4byte lbl_800068A8
 	.4byte func_800122A4
@@ -126,7 +126,7 @@ lbl_8000CB00:
 	.4byte __ct__26CSceneMenuControllerManualFv
 	.4byte 0x0000003C
 	.4byte lbl_800068E0
-	.4byte func_800124F0
+	.4byte __dt__26CSceneMenuControllerManualFv
 	.4byte 0x00000058
 	.4byte lbl_800068E8
 	.4byte __dt__4CAppFv
@@ -2001,13 +2001,13 @@ lbl_8000CB00:
 	.4byte func_80033604
 	.4byte 0x00000128
 	.4byte lbl_80008770
-	.4byte func_80033880
+	.4byte verify__FPCcUl
 	.4byte 0x000000D8
 	.4byte lbl_80008778
-	.4byte func_80033958
+	.4byte getFileSize__FPCcPUl
 	.4byte 0x00000070
 	.4byte lbl_80008780
-	.4byte func_800339C8
+	.4byte moveToHome__FPCc
 	.4byte 0x00000088
 	.4byte lbl_80008788
 	.4byte func_80033A70
@@ -2178,7 +2178,7 @@ lbl_8000CB00:
 	.4byte func_80037108
 	.4byte 0x00000038
 	.4byte lbl_80008A48
-	.4byte func_80037158
+	.4byte TestHit__14CSceneMenuBaseFRCQ34nw4r4math4VEC2PQ34nw4r3lyt6LayoutRCQ34nw4r3lyt8DrawInfo
 	.4byte 0x00000060
 	.4byte lbl_80008A50
 	.4byte func_800371B8
@@ -2223,7 +2223,7 @@ lbl_8000CB00:
 	.4byte func_80038C48
 	.4byte 0x00000220
 	.4byte lbl_80008AD8
-	.4byte func_80038E68
+	.4byte SetupCamera__14CSceneMenuBaseFPQ34nw4r3lyt8DrawInfoRCQ34nw4r3lyt6Layout
 	.4byte 0x000000DC
 	.4byte lbl_80008AE0
 	.4byte ReadDvdFile__14CSceneMenuBaseFPCcPPvQ24demo6Memory
@@ -2238,7 +2238,7 @@ lbl_8000CB00:
 	.4byte func_80039198
 	.4byte 0x000001C4
 	.4byte lbl_80008B10
-	.4byte func_8003935C
+	.4byte ReleaseFade__14CSceneMenuBaseFv
 	.4byte 0x00000088
 	.4byte lbl_80008B38
 	.4byte func_800393E4
@@ -2280,7 +2280,7 @@ lbl_8000CB00:
 	.4byte func_8003A318
 	.4byte 0x000000BC
 	.4byte lbl_80008C20
-	.4byte func_8003A3D4
+	.4byte DebugRender__14CSceneMenuBaseFv
 	.4byte 0x000000AC
 	.4byte lbl_80008C28
 	.4byte GetMenuDataPath__14CSceneMenuBaseFPc
@@ -4484,7 +4484,7 @@ lbl_80010138:
 	.4byte func_8011983C
 	.4byte 0x0000004C
 	.4byte lbl_8000C798
-	.4byte func_80119888
+	.4byte UnloadResources__4demoFv
 	.4byte 0x000000E0
 	.4byte lbl_8000C7DC
 	.4byte func_80119968

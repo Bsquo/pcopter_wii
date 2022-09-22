@@ -407,15 +407,15 @@ lbl_8060E2E0:
 	.4byte lbl_801BD8B0
 	.4byte lbl_801CC1A8
 
-.global lbl_8060E2E8
-lbl_8060E2E8:
+.global __RTTI__26CSceneMenuControllerManual
+__RTTI__26CSceneMenuControllerManual:
 
 	# ROM: 0x1EE4E8
 	.4byte lbl_801BDDB8
 	.4byte lbl_801CC2C0
 
-.global lbl_8060E2F0
-lbl_8060E2F0:
+.global __RTTI__15CSceneMenuLogo2
+__RTTI__15CSceneMenuLogo2:
 
 	# ROM: 0x1EE4F0
 	.4byte lbl_801BDDD8

@@ -676,8 +676,8 @@ func_800D0C80:
 /* 800D0C94 000C1C14  7C 08 03 A6 */	mtlr r0
 /* 800D0C98 000C1C18  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 800D0C9C 000C1C1C  4E 80 00 20 */	blr
-.global func_800D0CA0
-func_800D0CA0:
+.global NANDMove
+NANDMove:
 /* 800D0CA0 000C1C20  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D0CA4 000C1C24  7C 08 02 A6 */	mflr r0
 /* 800D0CA8 000C1C28  90 01 00 14 */	stw r0, 0x14(r1)

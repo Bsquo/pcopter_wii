@@ -3128,3 +3128,196 @@ lbl_801CBAD0:
 	.4byte CalcLocalSystem__14CSceneMenuBaseFv
 	.4byte EndLocal__22CSceneMenuCopterSelectFv
 	.4byte func_80011DA4
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E0A8
+lbl_8060E0A8:
+
+	# ROM: 0x1EE2A8
+	.4byte 0xFFFFFFFF
+	.4byte 0
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FC58
+lbl_8060FC58:
+
+	# ROM: 0x1EF318
+	.4byte 0
+
+.global lbl_8060FC5C
+lbl_8060FC5C:
+
+	# ROM: 0x1EF31C
+	.4byte 0x41F00000
+
+.global lbl_8060FC60
+lbl_8060FC60:
+
+	# ROM: 0x1EF320
+	.4byte 0xC1700000
+
+.global lbl_8060FC64
+lbl_8060FC64:
+
+	# ROM: 0x1EF324
+	.4byte 0x41400000
+
+.global lbl_8060FC68
+lbl_8060FC68:
+
+	# ROM: 0x1EF328
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_8060FC70
+lbl_8060FC70:
+
+	# ROM: 0x1EF330
+	.asciz "P_Back"
+	.balign 4
+
+.global lbl_8060FC78
+lbl_8060FC78:
+
+	# ROM: 0x1EF338
+	.asciz "P_Left"
+	.balign 4
+
+.global lbl_8060FC80
+lbl_8060FC80:
+
+	# ROM: 0x1EF340
+	.asciz "P_Right"
+
+.global lbl_8060FC88
+lbl_8060FC88:
+
+	# ROM: 0x1EF348
+	.asciz "P_Ok"
+	.balign 4
+
+.global lbl_8060FC90
+lbl_8060FC90:
+
+	# ROM: 0x1EF350
+	.asciz "Back"
+	.balign 4
+
+.global lbl_8060FC98
+lbl_8060FC98:
+
+	# ROM: 0x1EF358
+	.asciz "Left"
+	.balign 4
+
+.global lbl_8060FCA0
+lbl_8060FCA0:
+
+	# ROM: 0x1EF360
+	.asciz "RIGHT"
+	.balign 4
+
+.global lbl_8060FCA8
+lbl_8060FCA8:
+
+	# ROM: 0x1EF368
+	.4byte 0x4F6B0000
+
+.global lbl_8060FCAC
+lbl_8060FCAC:
+
+	# ROM: 0x1EF36C
+	.4byte 0x3F800000
+
+.global lbl_8060FCB0
+lbl_8060FCB0:
+
+	# ROM: 0x1EF370
+	.4byte 0x41900000
+
+.global lbl_8060FCB4
+lbl_8060FCB4:
+
+	# ROM: 0x1EF374
+	.4byte 0x41200000
+
+.global lbl_8060FCB8
+lbl_8060FCB8:
+
+	# ROM: 0x1EF378
+	.4byte 0x42C80000
+
+.global lbl_8060FCBC
+lbl_8060FCBC:
+
+	# ROM: 0x1EF37C
+	.4byte 0x437F0000
+
+.global lbl_8060FCC0
+lbl_8060FCC0:
+
+	# ROM: 0x1EF380
+	.4byte 0x432C0000
+
+.global lbl_8060FCC4
+lbl_8060FCC4:
+
+	# ROM: 0x1EF384
+	.4byte 0x41000000
+
+.global lbl_8060FCC8
+lbl_8060FCC8:
+
+	# ROM: 0x1EF388
+	.asciz "P_B44"
+	.balign 4
+
+.global lbl_8060FCD0
+lbl_8060FCD0:
+
+	# ROM: 0x1EF390
+	.asciz "P_RC135"
+
+.global lbl_8060FCD8
+lbl_8060FCD8:
+
+	# ROM: 0x1EF398
+	.asciz "P_MV107"
+
+.global lbl_8060FCE0
+lbl_8060FCE0:
+
+	# ROM: 0x1EF3A0
+	.asciz "P_HH53E"
+
+.global lbl_8060FCE8
+lbl_8060FCE8:
+
+	# ROM: 0x1EF3A8
+	.asciz "P_Sa-53"
+
+.global lbl_8060FCF0
+lbl_8060FCF0:
+
+	# ROM: 0x1EF3B0
+	.asciz "P_GH-66"
+
+.global lbl_8060FCF8
+lbl_8060FCF8:
+
+	# ROM: 0x1EF3B8
+	.asciz "P_RC155"
+
+.global lbl_8060FD00
+lbl_8060FD00:
+
+	# ROM: 0x1EF3C0
+	.asciz "P_GH-64"
+
+.global lbl_8060FD08
+lbl_8060FD08:
+
+	# ROM: 0x1EF3C8
+	.asciz "P_Gyro_"

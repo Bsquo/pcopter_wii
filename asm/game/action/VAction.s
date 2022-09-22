@@ -915,3 +915,33 @@ lbl_801CBF74:
 	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E2B0
+lbl_8060E2B0:
+
+	# ROM: 0x1EE4B0
+	.4byte lbl_801BD3B0
+	.4byte lbl_801CBF5C
+
+.global lbl_8060E2B8
+lbl_8060E2B8:
+
+	# ROM: 0x1EE4B8
+	.4byte lbl_801BD3BC
+	.4byte lbl_801CBF74
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610098
+lbl_80610098:
+
+	# ROM: 0x1EF758
+	.4byte 0x3F800000
+
+.global lbl_8061009C
+lbl_8061009C:
+
+	# ROM: 0x1EF75C
+	.4byte 0

@@ -1,5 +1,5 @@
-#ifndef NW4R_LYT_LYT_PANE_H
-#define NW4R_LYT_LYT_PANE_H
+#ifndef NW4R_LYT_PANE_H
+#define NW4R_LYT_PANE_H
 
 namespace nw4r {
     namespace lyt {
@@ -7,4 +7,4 @@ namespace nw4r {
     }
 }
 
-#endif // NW4R_LYT_LYT_PANE_H
+#endif // NW4R_LYT_PANE_H

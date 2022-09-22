@@ -3748,3 +3748,212 @@ lbl_801CC1BC:
 	.4byte 0x00640000
 	.4byte 0x00250033
 	.4byte 0x00640000
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E2D8
+lbl_8060E2D8:
+
+	# ROM: 0x1EE4D8
+	.4byte 0xFFFFFFFF
+	.4byte 0
+
+.global lbl_8060E2E0
+lbl_8060E2E0:
+
+	# ROM: 0x1EE4E0
+	.4byte lbl_801BD8B0
+	.4byte lbl_801CC1A8
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610110
+lbl_80610110:
+
+	# ROM: 0x1EF7D0
+	.4byte 0x74000000
+
+.global lbl_80610114
+lbl_80610114:
+
+	# ROM: 0x1EF7D4
+	.4byte 0x65000000
+
+.global lbl_80610118
+lbl_80610118:
+
+	# ROM: 0x1EF7D8
+	.4byte 0x73000000
+
+.global lbl_8061011C
+lbl_8061011C:
+
+	# ROM: 0x1EF7DC
+	.4byte 0x74000000
+
+.global lbl_80610120
+lbl_80610120:
+
+	# ROM: 0x1EF7E0
+	.asciz "P_Back"
+	.balign 4
+
+.global lbl_80610128
+lbl_80610128:
+
+	# ROM: 0x1EF7E8
+	.asciz "P_Left"
+	.balign 4
+
+.global lbl_80610130
+lbl_80610130:
+
+	# ROM: 0x1EF7F0
+	.asciz "P_Right"
+
+.global lbl_80610138
+lbl_80610138:
+
+	# ROM: 0x1EF7F8
+	.asciz "P_Ok"
+	.balign 4
+
+.global lbl_80610140
+lbl_80610140:
+
+	# ROM: 0x1EF800
+	.4byte 0x59657300
+
+.global lbl_80610144
+lbl_80610144:
+
+	# ROM: 0x1EF804
+	.4byte 0x4E6F0000
+
+.global lbl_80610148
+lbl_80610148:
+
+	# ROM: 0x1EF808
+	.4byte lbl_80610140
+	.4byte lbl_80610144
+
+.global lbl_80610150
+lbl_80610150:
+
+	# ROM: 0x1EF810
+	.4byte 0x59657300
+
+.global lbl_80610154
+lbl_80610154:
+
+	# ROM: 0x1EF814
+	.4byte 0x4E6F0000
+
+.global lbl_80610158
+lbl_80610158:
+
+	# ROM: 0x1EF818
+	.4byte lbl_80610150
+	.4byte lbl_80610154
+
+.global lbl_80610160
+lbl_80610160:
+
+	# ROM: 0x1EF820
+	.4byte 0x3F800000
+
+.global lbl_80610164
+lbl_80610164:
+
+	# ROM: 0x1EF824
+	.4byte 0x41900000
+
+.global lbl_80610168
+lbl_80610168:
+
+	# ROM: 0x1EF828
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_80610170
+lbl_80610170:
+
+	# ROM: 0x1EF830
+	.4byte 0x43A00000
+
+.global lbl_80610174
+lbl_80610174:
+
+	# ROM: 0x1EF834
+	.4byte 0x43700000
+
+.global lbl_80610178
+lbl_80610178:
+
+	# ROM: 0x1EF838
+	.asciz "Slot_00"
+
+.global lbl_80610180
+lbl_80610180:
+
+	# ROM: 0x1EF840
+	.asciz "Slot_01"
+
+.global lbl_80610188
+lbl_80610188:
+
+	# ROM: 0x1EF848
+	.asciz "Slot_02"
+
+.global lbl_80610190
+lbl_80610190:
+
+	# ROM: 0x1EF850
+	.asciz "Slot_03"
+
+.global lbl_80610198
+lbl_80610198:
+
+	# ROM: 0x1EF858
+	.4byte 0x59657300
+
+.global lbl_8061019C
+lbl_8061019C:
+
+	# ROM: 0x1EF85C
+	.4byte 0x4E6F0000
+
+.global lbl_806101A0
+lbl_806101A0:
+
+	# ROM: 0x1EF860
+	.4byte lbl_80610198
+	.4byte lbl_8061019C
+
+.global lbl_806101A8
+lbl_806101A8:
+
+	# ROM: 0x1EF868
+	.asciz "P_Yes"
+	.balign 4
+
+.global lbl_806101B0
+lbl_806101B0:
+
+	# ROM: 0x1EF870
+	.asciz "P_No"
+	.balign 4
+
+.global lbl_806101B8
+lbl_806101B8:
+
+	# ROM: 0x1EF878
+	.4byte lbl_806101A8
+	.4byte lbl_806101B0
+
+.global lbl_806101C0
+lbl_806101C0:
+
+	# ROM: 0x1EF880
+	.4byte 0x3E4CCCCD
+	.4byte 0

@@ -803,3 +803,142 @@ lbl_801CBF20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E2A0
+lbl_8060E2A0:
+
+	# ROM: 0x1EE4A0
+	.4byte lbl_801BD28C
+	.4byte lbl_801CBF20
+	
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610008
+lbl_80610008:
+
+	# ROM: 0x1EF6C8
+	.4byte 0x55700000
+
+.global lbl_8061000C
+lbl_8061000C:
+
+	# ROM: 0x1EF6CC
+	.asciz "Down"
+	.balign 4
+
+.global lbl_80610014
+lbl_80610014:
+
+	# ROM: 0x1EF6D4
+	.asciz "Back"
+	.balign 4
+
+.global lbl_8061001C
+lbl_8061001C:
+
+	# ROM: 0x1EF6DC
+	.4byte 0x43A00000
+
+.global lbl_80610020
+lbl_80610020:
+
+	# ROM: 0x1EF6E0
+	.4byte 0x43700000
+
+.global lbl_80610024
+lbl_80610024:
+
+	# ROM: 0x1EF6E4
+	.asciz "ROTOR"
+	.balign 4
+
+.global lbl_8061002C
+lbl_8061002C:
+
+	# ROM: 0x1EF6EC
+	.asciz "MOTOR"
+	.balign 4
+
+.global lbl_80610034
+lbl_80610034:
+
+	# ROM: 0x1EF6F4
+	.asciz "GYRO"
+	.balign 4
+	.4byte 0
+
+.global lbl_80610040
+lbl_80610040:
+
+	# ROM: 0x1EF700
+	.asciz "BATTERY"
+
+.global lbl_80610048
+lbl_80610048:
+
+	# ROM: 0x1EF708
+	.asciz "OPTION"
+	.balign 4
+
+.global lbl_80610050
+lbl_80610050:
+
+	# ROM: 0x1EF710
+	.asciz "CANNON"
+	.balign 4
+
+.global lbl_80610058
+lbl_80610058:
+
+	# ROM: 0x1EF718
+	.4byte 0x43555000
+
+.global lbl_8061005C
+lbl_8061005C:
+
+	# ROM: 0x1EF71C
+	.4byte 0x52454400
+
+.global lbl_80610060
+lbl_80610060:
+
+	# ROM: 0x1EF720
+	.asciz "BLUE"
+	.balign 4
+
+.global lbl_80610068
+lbl_80610068:
+
+	# ROM: 0x1EF728
+	.asciz "YELLOW"
+	.balign 4
+
+.global lbl_80610070
+lbl_80610070:
+
+	# ROM: 0x1EF730
+	.asciz "GREEN"
+	.balign 4
+
+.global lbl_80610078
+lbl_80610078:
+
+	# ROM: 0x1EF738
+	.asciz "WHITE"
+	.balign 4
+
+.global lbl_80610080
+lbl_80610080:
+
+	# ROM: 0x1EF740
+	.asciz "BLACK"
+	.balign 4
+
+.global lbl_80610088
+lbl_80610088:
+
+	# ROM: 0x1EF748
+	.asciz "RARE"
+	.balign 4

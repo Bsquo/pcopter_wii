@@ -269,3 +269,69 @@ lbl_801CC448:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E308
+lbl_8060E308:
+
+	# ROM: 0x1EE508
+	.4byte lbl_801BE210
+	.4byte lbl_801CC424
+
+.global lbl_8060E310
+lbl_8060E310:
+
+	# ROM: 0x1EE510
+	.4byte lbl_801BE21C
+	.4byte lbl_801CC448
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610238
+lbl_80610238:
+
+	# ROM: 0x1EF8F8
+	.4byte 0x3E19999A
+
+.global lbl_8061023C
+lbl_8061023C:
+
+	# ROM: 0x1EF8FC
+	.4byte 0x3F800000
+
+.global lbl_80610240
+lbl_80610240:
+
+	# ROM: 0x1EF900
+	.4byte 0
+
+.global lbl_80610244
+lbl_80610244:
+
+	# ROM: 0x1EF904
+	.4byte 0x3DCCCCCD
+
+.global lbl_80610248
+lbl_80610248:
+
+	# ROM: 0x1EF908
+	.4byte 0x3E99999A
+
+.global lbl_8061024C
+lbl_8061024C:
+
+	# ROM: 0x1EF90C
+	.4byte 0x3F400000
+
+.global lbl_80610250
+lbl_80610250:
+
+	# ROM: 0x1EF910
+	.4byte 0x3F000000
+
+.global lbl_80610254
+lbl_80610254:
+
+	# ROM: 0x1EF914
+	.4byte 0x3F19999A

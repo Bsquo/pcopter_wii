@@ -2118,6 +2118,15 @@ lbl_801CB90C:
 	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
+	
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E030
+lbl_8060E030:
+
+	# ROM: 0x1EE230
+	.4byte lbl_801BA300
+	.4byte lbl_801CB90C
 
 .section .sdata2, "wa", @progbits
 

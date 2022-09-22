@@ -3145,3 +3145,188 @@ _52013:
 .global lbl_8060ED90
 lbl_8060ED90:
 	.skip 0x8
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E240
+lbl_8060E240:
+
+	# ROM: 0x1EE440
+	.4byte 0xFFFFFFFF
+
+.global lbl_8060E244
+lbl_8060E244:
+
+	# ROM: 0x1EE444
+	.4byte 0xFFFFFFFF
+
+.global __RTTI__15CSceneMenuTitle
+__RTTI__15CSceneMenuTitle:
+
+	# ROM: 0x1EE448
+	.4byte _52012
+	.4byte _52013
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FE70
+lbl_8060FE70:
+
+	# ROM: 0x1EF530
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_8060FE78
+lbl_8060FE78:
+
+	# ROM: 0x1EF538
+	.4byte 0x4E657700
+
+.global lbl_8060FE7C
+lbl_8060FE7C:
+
+	# ROM: 0x1EF53C
+	.asciz "Load"
+	.balign 4
+	.4byte 0
+
+.global lbl_8060FE88
+lbl_8060FE88:
+
+	# ROM: 0x1EF548
+	.4byte lbl_8060FE78
+	.4byte lbl_8060FE7C
+
+.global lbl_8060FE90
+lbl_8060FE90:
+
+	# ROM: 0x1EF550
+	.asciz "Start"
+	.balign 4
+
+.global lbl_8060FE98
+lbl_8060FE98:
+
+	# ROM: 0x1EF558
+	.4byte 0x32500000
+
+.global lbl_8060FE9C
+lbl_8060FE9C:
+
+	# ROM: 0x1EF55C
+	.asciz "Option"
+	.balign 4
+	.4byte 0
+
+.global lbl_8060FEA8
+lbl_8060FEA8:
+
+	# ROM: 0x1EF568
+	.4byte 0x40240000
+	.4byte 0
+
+.global lbl_8060FEB0
+lbl_8060FEB0:
+
+	# ROM: 0x1EF570
+	.4byte 0x44000000
+
+.global lbl_8060FEB4
+lbl_8060FEB4:
+
+	# ROM: 0x1EF574
+	.4byte 0x437F0000
+
+.global lbl_8060FEB8
+lbl_8060FEB8:
+
+	# ROM: 0x1EF578
+	.4byte 0x40000000
+
+.global lbl_8060FEBC
+lbl_8060FEBC:
+
+	# ROM: 0x1EF57C
+	.4byte 0x3F000000
+
+.global lbl_8060FEC0
+lbl_8060FEC0:
+
+	# ROM: 0x1EF580
+	.4byte 0x3F800000
+	.4byte 0
+
+.global lbl_8060FEC8
+lbl_8060FEC8:
+
+	# ROM: 0x1EF588
+	.4byte 0x43300000
+	.4byte 0
+
+.global lbl_8060FED0
+lbl_8060FED0:
+
+	# ROM: 0x1EF590
+	.4byte lbl_801BC5F4
+	.4byte lbl_801BC604
+
+.global lbl_8060FED8
+lbl_8060FED8:
+
+	# ROM: 0x1EF598
+	.asciz "P_Yes"
+	.balign 4
+
+.global lbl_8060FEE0
+lbl_8060FEE0:
+
+	# ROM: 0x1EF5A0
+	.asciz "P_No"
+	.balign 4
+
+.global lbl_8060FEE8
+lbl_8060FEE8:
+
+	# ROM: 0x1EF5A8
+	.4byte lbl_8060FED8
+	.4byte lbl_8060FEE0
+
+.global lbl_8060FEF0
+lbl_8060FEF0:
+
+	# ROM: 0x1EF5B0
+	.4byte 0x3E4CCCCD
+
+.global lbl_8060FEF4
+lbl_8060FEF4:
+
+	# ROM: 0x1EF5B4
+	.4byte 0x41900000
+
+.global lbl_8060FEF8
+lbl_8060FEF8:
+
+	# ROM: 0x1EF5B8
+	.4byte lbl_801BC610
+	.4byte lbl_801BC61C
+
+.global lbl_8060FF00
+lbl_8060FF00:
+
+	# ROM: 0x1EF5C0
+	.asciz "P_Ok"
+	.balign 4
+
+.global lbl_8060FF08
+lbl_8060FF08:
+
+	# ROM: 0x1EF5C8
+	.asciz "P_No"
+	.balign 4
+
+.global lbl_8060FF10
+lbl_8060FF10:
+
+	# ROM: 0x1EF5D0
+	.4byte lbl_8060FF00
+	.4byte lbl_8060FF08

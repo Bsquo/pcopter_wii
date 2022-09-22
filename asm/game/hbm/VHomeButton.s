@@ -972,3 +972,89 @@ lbl_801CC3B8:
 	.4byte lbl_80054334
 	.4byte lbl_8005434C
 	.4byte 0
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610200
+lbl_80610200:
+
+	# ROM: 0x1EF8C0
+	.4byte 0x43640000
+
+.global lbl_80610204
+lbl_80610204:
+
+	# ROM: 0x1EF8C4
+	.4byte 0xC3640000
+
+.global lbl_80610208
+lbl_80610208:
+
+	# ROM: 0x1EF8C8
+	.4byte 0xC3980000
+
+.global lbl_8061020C
+lbl_8061020C:
+
+	# ROM: 0x1EF8CC
+	.4byte 0x43980000
+
+.global lbl_80610210
+lbl_80610210:
+
+	# ROM: 0x1EF8D0
+	.4byte 0
+
+.global lbl_80610214
+lbl_80610214:
+
+	# ROM: 0x1EF8D4
+	.4byte 0x43FA0000
+
+.global lbl_80610218
+lbl_80610218:
+
+	# ROM: 0x1EF8D8
+	.4byte 0xC3D00000
+
+.global lbl_8061021C
+lbl_8061021C:
+
+	# ROM: 0x1EF8DC
+	.4byte 0x43D00000
+
+.global lbl_80610220
+lbl_80610220:
+
+	# ROM: 0x1EF8E0
+	.4byte 0x3FAF286C
+
+.global lbl_80610224
+lbl_80610224:
+
+	# ROM: 0x1EF8E4
+	.4byte 0x3F800000
+
+.global lbl_80610228
+lbl_80610228:
+
+	# ROM: 0x1EF8E8
+	.4byte 0x41E38E39
+
+.global lbl_8061022C
+lbl_8061022C:
+
+	# ROM: 0x1EF8EC
+	.4byte 0x3D100000
+
+.global lbl_80610230
+lbl_80610230:
+
+	# ROM: 0x1EF8F0
+	.4byte 0x3CCBA511
+
+.global lbl_80610234
+lbl_80610234:
+
+	# ROM: 0x1EF8F4
+	.4byte 0x3F99999A

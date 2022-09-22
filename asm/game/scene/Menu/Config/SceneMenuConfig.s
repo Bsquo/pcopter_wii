@@ -1021,3 +1021,132 @@ lbl_801CBA98:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E098
+lbl_8060E098:
+
+	# ROM: 0x1EE298
+	.4byte 0xFFFFFFFF
+	.4byte 0
+
+.global lbl_8060E0A0
+lbl_8060E0A0:
+
+	# ROM: 0x1EE2A0
+	.4byte lbl_801BB4A0
+	.4byte lbl_801CBA98
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FBD8
+lbl_8060FBD8:
+
+	# ROM: 0x1EF298
+	.asciz "P_Load"
+	.balign 4
+
+.global lbl_8060FBE0
+lbl_8060FBE0:
+
+	# ROM: 0x1EF2A0
+	.asciz "P_Save"
+	.balign 4
+
+.global lbl_8060FBE8
+lbl_8060FBE8:
+
+	# ROM: 0x1EF2A8
+	.asciz "P_Input"
+
+.global lbl_8060FBF0
+lbl_8060FBF0:
+
+	# ROM: 0x1EF2B0
+	.asciz "P_Sound"
+
+.global lbl_8060FBF8
+lbl_8060FBF8:
+
+	# ROM: 0x1EF2B8
+	.asciz "P_Back"
+	.balign 4
+
+.global lbl_8060FC00
+lbl_8060FC00:
+
+	# ROM: 0x1EF2C0
+	.asciz "P_LoadS"
+
+.global lbl_8060FC08
+lbl_8060FC08:
+
+	# ROM: 0x1EF2C8
+	.asciz "P_SaveS"
+
+.global lbl_8060FC10
+lbl_8060FC10:
+
+	# ROM: 0x1EF2D0
+	.asciz "Load"
+	.balign 4
+
+.global lbl_8060FC18
+lbl_8060FC18:
+
+	# ROM: 0x1EF2D8
+	.asciz "Save"
+	.balign 4
+
+.global lbl_8060FC20
+lbl_8060FC20:
+
+	# ROM: 0x1EF2E0
+	.asciz "Input"
+	.balign 4
+
+.global lbl_8060FC28
+lbl_8060FC28:
+
+	# ROM: 0x1EF2E8
+	.asciz "Sound"
+	.balign 4
+
+.global lbl_8060FC30
+lbl_8060FC30:
+
+	# ROM: 0x1EF2F0
+	.asciz "Back"
+	.balign 4
+
+.global lbl_8060FC38
+lbl_8060FC38:
+
+	# ROM: 0x1EF2F8
+	.asciz "P_LoadM"
+
+.global lbl_8060FC40
+lbl_8060FC40:
+
+	# ROM: 0x1EF300
+	.asciz "P_SaveM"
+
+.global lbl_8060FC48
+lbl_8060FC48:
+
+	# ROM: 0x1EF308
+	.4byte 0x3F800000
+
+.global lbl_8060FC4C
+lbl_8060FC4C:
+
+	# ROM: 0x1EF30C
+	.4byte 0x41900000
+
+.global lbl_8060FC50
+lbl_8060FC50:
+
+	# ROM: 0x1EF310
+	.4byte 0x43300000
+	.4byte 0x80000000

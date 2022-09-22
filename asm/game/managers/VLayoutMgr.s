@@ -2270,6 +2270,29 @@ lbl_801CB8F4:
 	.4byte 0
 	.4byte 0
 	
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E018
+lbl_8060E018:
+
+	# ROM: 0x1EE218
+	.4byte lbl_801BA200
+	.4byte lbl_801CB8C4
+
+.global lbl_8060E020
+lbl_8060E020:
+
+	# ROM: 0x1EE220
+	.4byte lbl_801BA20C
+	.4byte lbl_801CB8DC
+
+.global lbl_8060E028
+lbl_8060E028:
+
+	# ROM: 0x1EE228
+	.4byte lbl_801BA21C
+	.4byte lbl_801CB8F4
+	
 .section .sdata2, "wa", @progbits
 
 .global lbl_8060FA38

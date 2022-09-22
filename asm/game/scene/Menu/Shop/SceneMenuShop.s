@@ -1379,3 +1379,162 @@ _51685:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E1F0
+lbl_8060E1F0:
+
+	# ROM: 0x1EE3F0
+	.4byte 0xFFFFFFFF
+	.4byte 0
+
+.global lbl_8060E1F8
+lbl_8060E1F8:
+
+	# ROM: 0x1EE3F8
+	.4byte lbl_801BC428
+	.4byte _51685
+
+.global lbl_8060E200
+lbl_8060E200:
+
+	# ROM: 0x1EE400
+	.4byte 0x00250064
+	.4byte 0x00000025
+	.4byte 0x00640000
+	.4byte 0x00250033
+	.4byte 0x0064002C
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0x00000025
+	.4byte 0x00330064
+	.4byte 0x002C0025
+	.4byte 0x00300033
+	.4byte 0x0064002C
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0
+	.4byte 0
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FDE8
+lbl_8060FDE8:
+
+	# ROM: 0x1EF4A8
+	.asciz "P_Buy"
+	.balign 4
+
+.global lbl_8060FDF0
+lbl_8060FDF0:
+
+	# ROM: 0x1EF4B0
+	.asciz "P_Sell"
+	.balign 4
+
+.global lbl_8060FDF8
+lbl_8060FDF8:
+
+	# ROM: 0x1EF4B8
+	.asciz "P_Back"
+	.balign 4
+
+.global lbl_8060FE00
+lbl_8060FE00:
+
+	# ROM: 0x1EF4C0
+	.asciz "P_BuyS"
+	.balign 4
+
+.global lbl_8060FE08
+lbl_8060FE08:
+
+	# ROM: 0x1EF4C8
+	.asciz "P_SellS"
+
+.global lbl_8060FE10
+lbl_8060FE10:
+
+	# ROM: 0x1EF4D0
+	.4byte 0x42757900
+
+.global lbl_8060FE14
+lbl_8060FE14:
+
+	# ROM: 0x1EF4D4
+	.asciz "Sell"
+	.balign 4
+	.4byte 0
+
+.global lbl_8060FE20
+lbl_8060FE20:
+
+	# ROM: 0x1EF4E0
+	.asciz "Setting"
+
+.global lbl_8060FE28
+lbl_8060FE28:
+
+	# ROM: 0x1EF4E8
+	.asciz "Back"
+	.balign 4
+
+.global lbl_8060FE30
+lbl_8060FE30:
+
+	# ROM: 0x1EF4F0
+	.asciz "P_BuyM"
+	.balign 4
+
+.global lbl_8060FE38
+lbl_8060FE38:
+
+	# ROM: 0x1EF4F8
+	.asciz "P_SellM"
+
+.global lbl_8060FE40
+lbl_8060FE40:
+
+	# ROM: 0x1EF500
+	.asciz "P_BuyMS"
+
+.global lbl_8060FE48
+lbl_8060FE48:
+
+	# ROM: 0x1EF508
+	.4byte 0x3F800000
+
+.global lbl_8060FE4C
+lbl_8060FE4C:
+
+	# ROM: 0x1EF50C
+	.4byte 0x41900000
+
+.global lbl_8060FE50
+lbl_8060FE50:
+
+	# ROM: 0x1EF510
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_8060FE58
+lbl_8060FE58:
+
+	# ROM: 0x1EF518
+	.4byte lbl_801BC3F4
+	.4byte lbl_801BC400
+
+.global lbl_8060FE60
+lbl_8060FE60:
+
+	# ROM: 0x1EF520
+	.4byte lbl_801BC40C
+	.4byte lbl_801BC41C
+
+.global lbl_8060FE68
+lbl_8060FE68:
+
+	# ROM: 0x1EF528
+	.4byte 0x3E4CCCCD
+	.4byte 0

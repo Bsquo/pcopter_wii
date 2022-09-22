@@ -959,3 +959,33 @@ lbl_801CBDAC:
 	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E290
+lbl_8060E290:
+
+	# ROM: 0x1EE490
+	.4byte lbl_801BD1C8
+	.4byte lbl_801CBDAC
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FFB8
+lbl_8060FFB8:
+
+	# ROM: 0x1EF678
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_8060FFC0
+lbl_8060FFC0:
+
+	# ROM: 0x1EF680
+	.4byte 0
+
+.global lbl_8060FFC4
+lbl_8060FFC4:
+
+	# ROM: 0x1EF684
+	.4byte 0x40400000

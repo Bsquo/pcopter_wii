@@ -179,3 +179,55 @@ func_80049770:
 /* 80049830 0003A7B0  7C 08 03 A6 */	mtlr r0
 /* 80049834 0003A7B4  38 21 00 E0 */	addi r1, r1, 0xe0
 /* 80049838 0003A7B8  4E 80 00 20 */	blr
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FF90
+lbl_8060FF90:
+
+	# ROM: 0x1EF650
+	.4byte 0
+
+.global lbl_8060FF94
+lbl_8060FF94:
+
+	# ROM: 0x1EF654
+	.4byte 0x3DCCCCCD
+
+.global lbl_8060FF98
+lbl_8060FF98:
+
+	# ROM: 0x1EF658
+	.4byte 0x41F00000
+
+.global lbl_8060FF9C
+lbl_8060FF9C:
+
+	# ROM: 0x1EF65C
+	.4byte 0x3F800000
+
+.global lbl_8060FFA0
+lbl_8060FFA0:
+
+	# ROM: 0x1EF660
+	.4byte 0x3C23D70A
+
+.global lbl_8060FFA4
+lbl_8060FFA4:
+
+	# ROM: 0x1EF664
+	.4byte 0x41200000
+
+.global lbl_8060FFA8
+lbl_8060FFA8:
+
+	# ROM: 0x1EF668
+	.4byte 0x42C80000
+	.4byte 0
+
+.global lbl_8060FFB0
+lbl_8060FFB0:
+
+	# ROM: 0x1EF670
+	.4byte 0x43300000
+	.4byte 0

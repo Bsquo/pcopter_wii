@@ -546,3 +546,126 @@ func_8004C24C:
 .global func_8004C25C
 func_8004C25C:
 /* 8004C25C 0003D1DC  4E 80 00 20 */	blr
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FFD8
+lbl_8060FFD8:
+
+	# ROM: 0x1EF698
+	.2byte 0xFFA6
+
+.global lbl_8060FFDA
+lbl_8060FFDA:
+
+	# ROM: 0x1EF69A
+	.2byte 0x0000
+
+.global lbl_8060FFDC
+lbl_8060FFDC:
+
+	# ROM: 0x1EF69C
+	.2byte 0xFF8E
+
+.global lbl_8060FFDE
+lbl_8060FFDE:
+
+	# ROM: 0x1EF69E
+	.2byte 0x0087
+
+.global lbl_8060FFE0
+lbl_8060FFE0:
+
+	# ROM: 0x1EF6A0
+	.byte 0x00
+
+.global lbl_8060FFE1
+lbl_8060FFE1:
+
+	# ROM: 0x1EF6A1
+	.byte 0x00
+
+.global lbl_8060FFE2
+lbl_8060FFE2:
+
+	# ROM: 0x1EF6A2
+	.byte 0xE2
+
+.global lbl_8060FFE3
+lbl_8060FFE3:
+
+	# ROM: 0x1EF6A3
+	.byte 0x58
+
+.global lbl_8060FFE4
+lbl_8060FFE4:
+
+	# ROM: 0x1EF6A4
+	.byte 0xB3
+
+.global lbl_8060FFE5
+lbl_8060FFE5:
+
+	# ROM: 0x1EF6A5
+	.byte 0x00
+
+.global lbl_8060FFE6
+lbl_8060FFE6:
+
+	# ROM: 0x1EF6A6
+	.byte 0x00
+
+.global lbl_8060FFE7
+lbl_8060FFE7:
+
+	# ROM: 0x1EF6A7
+	.byte 0xB6
+
+.global lbl_8060FFE8
+lbl_8060FFE8:
+
+	# ROM: 0x1EF6A8
+	.byte 0xFF
+
+.global lbl_8060FFE9
+lbl_8060FFE9:
+
+	# ROM: 0x1EF6A9
+	.byte 0x00
+
+.global lbl_8060FFEA
+lbl_8060FFEA:
+
+	# ROM: 0x1EF6AA
+	.byte 0xFF
+
+.global lbl_8060FFEB
+lbl_8060FFEB:
+
+	# ROM: 0x1EF6AB
+	.byte 0x80
+
+.global lbl_8060FFEC
+lbl_8060FFEC:
+
+	# ROM: 0x1EF6AC
+	.4byte 0
+
+.global lbl_8060FFF0
+lbl_8060FFF0:
+
+	# ROM: 0x1EF6B0
+	.4byte 0xBF800000
+
+.global lbl_8060FFF4
+lbl_8060FFF4:
+
+	# ROM: 0x1EF6B4
+	.4byte 0x3F800000
+
+.global lbl_8060FFF8
+lbl_8060FFF8:
+
+	# ROM: 0x1EF6B8
+	.4byte 0x43300000
+	.4byte 0x80000000

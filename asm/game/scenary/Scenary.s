@@ -641,3 +641,38 @@ lbl_801CC368:
 	.4byte lbl_80053D40
 	.4byte lbl_80053DF0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E300
+lbl_8060E300:
+
+	# ROM: 0x1EE500
+	.4byte lbl_801BE0A8
+	.4byte 0
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_806101F0
+lbl_806101F0:
+
+	# ROM: 0x1EF8B0
+	.4byte 0
+
+.global lbl_806101F4
+lbl_806101F4:
+
+	# ROM: 0x1EF8B4
+	.4byte 0x3F000000
+
+.global lbl_806101F8
+lbl_806101F8:
+
+	# ROM: 0x1EF8B8
+	.4byte 0x3E800000
+
+.global lbl_806101FC
+lbl_806101FC:
+
+	# ROM: 0x1EF8BC
+	.4byte 0x40000000

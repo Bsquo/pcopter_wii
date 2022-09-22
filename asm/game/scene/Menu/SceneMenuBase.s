@@ -4970,6 +4970,199 @@ lbl_801CBA64:
 	# ROM: 0x1C7B64
 	.asciz "LinkList.h"
 	.balign 4
+	
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E090
+lbl_8060E090:
+
+	# ROM: 0x1EE290
+	.4byte 0x00000001
+	.4byte 0
+	
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FB20
+lbl_8060FB20:
+
+	# ROM: 0x1EF1E0
+	.4byte 0
+
+.global lbl_8060FB24
+lbl_8060FB24:
+
+	# ROM: 0x1EF1E4
+	.asciz "ROTOR"
+	.balign 4
+
+.global lbl_8060FB2C
+lbl_8060FB2C:
+
+	# ROM: 0x1EF1EC
+	.asciz "MOTOR"
+	.balign 4
+
+.global lbl_8060FB34
+lbl_8060FB34:
+
+	# ROM: 0x1EF1F4
+	.asciz "GYRO"
+	.balign 4
+	.4byte 0
+
+.global lbl_8060FB40
+lbl_8060FB40:
+
+	# ROM: 0x1EF200
+	.asciz "BATTERY"
+
+.global lbl_8060FB48
+lbl_8060FB48:
+
+	# ROM: 0x1EF208
+	.asciz "CANNON"
+	.balign 4
+
+.global lbl_8060FB50
+lbl_8060FB50:
+
+	# ROM: 0x1EF210
+	.4byte 0x43555000
+
+.global lbl_8060FB54
+lbl_8060FB54:
+
+	# ROM: 0x1EF214
+	.4byte 0x42C80000
+
+.global lbl_8060FB58
+lbl_8060FB58:
+
+	# ROM: 0x1EF218
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_8060FB60
+lbl_8060FB60:
+
+	# ROM: 0x1EF220
+	.4byte 0x43FA0000
+
+.global lbl_8060FB64
+lbl_8060FB64:
+
+	# ROM: 0x1EF224
+	.4byte 0x3F400000
+
+.global lbl_8060FB68
+lbl_8060FB68:
+
+	# ROM: 0x1EF228
+	.4byte 0x3F800000
+
+.global lbl_8060FB6C
+lbl_8060FB6C:
+
+	# ROM: 0x1EF22C
+	.asciz "Cursor"
+	.balign 4
+	.4byte 0
+
+.global lbl_8060FB78
+lbl_8060FB78:
+
+	# ROM: 0x1EF238
+	.asciz "Cursor2"
+
+.global lbl_8060FB80
+lbl_8060FB80:
+
+	# ROM: 0x1EF240
+	.4byte lbl_8060FB6C
+	.4byte lbl_8060FB78
+
+.global lbl_8060FB88
+lbl_8060FB88:
+
+	# ROM: 0x1EF248
+	.4byte 0x43A00000
+
+.global lbl_8060FB8C
+lbl_8060FB8C:
+
+	# ROM: 0x1EF24C
+	.4byte 0x43700000
+
+.global lbl_8060FB90
+lbl_8060FB90:
+
+	# ROM: 0x1EF250
+	.4byte 0x4019999A
+
+.global lbl_8060FB94
+lbl_8060FB94:
+
+	# ROM: 0x1EF254
+	.4byte 0x404CCCCD
+
+.global lbl_8060FB98
+lbl_8060FB98:
+
+	# ROM: 0x1EF258
+	.4byte 0x40800000
+
+.global lbl_8060FB9C
+lbl_8060FB9C:
+
+	# ROM: 0x1EF25C
+	.4byte 0xC3A00000
+
+.global lbl_8060FBA0
+lbl_8060FBA0:
+
+	# ROM: 0x1EF260
+	.4byte 0xC3700000
+
+.global lbl_8060FBA4
+lbl_8060FBA4:
+
+	# ROM: 0x1EF264
+	.asciz "Cursor"
+	.balign 4
+	.4byte 0
+
+.global lbl_8060FBB0
+lbl_8060FBB0:
+
+	# ROM: 0x1EF270
+	.asciz "Cursor2"
+
+.global lbl_8060FBB8
+lbl_8060FBB8:
+
+	# ROM: 0x1EF278
+	.4byte lbl_8060FBA4
+	.4byte lbl_8060FBB0
+
+.global lbl_8060FBC0
+lbl_8060FBC0:
+
+	# ROM: 0x1EF280
+	.asciz "Cursor"
+	.balign 4
+
+.global lbl_8060FBC8
+lbl_8060FBC8:
+
+	# ROM: 0x1EF288
+	.asciz "Cursor2"
+
+.global lbl_8060FBD0
+lbl_8060FBD0:
+
+	# ROM: 0x1EF290
+	.4byte lbl_8060FBC0
+	.4byte lbl_8060FBC8
 
 .section .sbss, "wa", @nobits
 

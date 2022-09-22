@@ -1728,3 +1728,19 @@ lbl_8060EDA8:
 .global lbl_8060EDAC
 lbl_8060EDAC:
 	.skip 0x4
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FFC8
+lbl_8060FFC8:
+
+	# ROM: 0x1EF688
+	.4byte 0x42FE0000
+	.4byte 0
+
+.global lbl_8060FFD0
+lbl_8060FFD0:
+
+	# ROM: 0x1EF690
+	.4byte 0x43300000
+	.4byte 0x80000000

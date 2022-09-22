@@ -495,3 +495,24 @@ lbl_8004EE9C:
 /* 8004EEA0 0003FE20  7C 08 03 A6 */	mtlr r0
 /* 8004EEA4 0003FE24  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004EEA8 0003FE28  4E 80 00 20 */	blr
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_806100B8
+lbl_806100B8:
+
+	# ROM: 0x1EF778
+	.4byte 0x3F000000
+
+.global lbl_806100BC
+lbl_806100BC:
+
+	# ROM: 0x1EF77C
+	.4byte 0
+
+.global lbl_806100C0
+lbl_806100C0:
+
+	# ROM: 0x1EF780
+	.4byte 0x3E800000
+	.4byte 0

@@ -2411,3 +2411,175 @@ lbl_801CBB60:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E0C0
+lbl_8060E0C0:
+
+	# ROM: 0x1EE2C0
+	.4byte 0xFFFFFFFF
+	.4byte 0
+
+.global lbl_8060E0C8
+lbl_8060E0C8:
+
+	# ROM: 0x1EE2C8
+	.4byte lbl_801BBE20
+	.4byte lbl_801CBB60
+
+.global lbl_8060E0D0
+lbl_8060E0D0:
+
+	# ROM: 0x1EE2D0
+	.4byte 0x00250064
+	.4byte 0x00000025
+	.4byte 0x00640000
+	.4byte 0x00250033
+	.4byte 0x0064002C
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0x00000025
+	.4byte 0x00330064
+	.4byte 0x002C0025
+	.4byte 0x00300033
+	.4byte 0x0064002C
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0x00000025
+	.4byte 0x00640000
+	.4byte 0x00250033
+	.4byte 0x0064002C
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0x00000025
+	.4byte 0x00330064
+	.4byte 0x002C0025
+	.4byte 0x00300033
+	.4byte 0x0064002C
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0x00000025
+	.4byte 0x00640000
+	.4byte 0x00250033
+	.4byte 0x0064002C
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0x00000025
+	.4byte 0x00330064
+	.4byte 0x002C0025
+	.4byte 0x00300033
+	.4byte 0x0064002C
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0x00000025
+	.4byte 0x00640000
+	.4byte 0x00250033
+	.4byte 0x0064002C
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0x00000025
+	.4byte 0x00330064
+	.4byte 0x002C0025
+	.4byte 0x00300033
+	.4byte 0x0064002C
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0x00000025
+	.4byte 0x00640000
+	.4byte 0x00250033
+	.4byte 0x0064002C
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0x00000025
+	.4byte 0x00330064
+	.4byte 0x002C0025
+	.4byte 0x00300033
+	.4byte 0x0064002C
+	.4byte 0x00250030
+	.4byte 0x00330064
+	.4byte 0
+	.4byte 0
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FD60
+lbl_8060FD60:
+
+	# ROM: 0x1EF420
+	.4byte 0
+	.4byte 0
+
+.global lbl_8060FD68
+lbl_8060FD68:
+
+	# ROM: 0x1EF428
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_8060FD70
+lbl_8060FD70:
+
+	# ROM: 0x1EF430
+	.asciz "P_Back"
+	.balign 4
+
+.global lbl_8060FD78
+lbl_8060FD78:
+
+	# ROM: 0x1EF438
+	.asciz "P_Left"
+	.balign 4
+
+.global lbl_8060FD80
+lbl_8060FD80:
+
+	# ROM: 0x1EF440
+	.asciz "P_Right"
+
+.global lbl_8060FD88
+lbl_8060FD88:
+
+	# ROM: 0x1EF448
+	.asciz "P_Ok"
+	.balign 4
+
+.global lbl_8060FD90
+lbl_8060FD90:
+
+	# ROM: 0x1EF450
+	.asciz "Back"
+	.balign 4
+
+.global lbl_8060FD98
+lbl_8060FD98:
+
+	# ROM: 0x1EF458
+	.asciz "Left"
+	.balign 4
+
+.global lbl_8060FDA0
+lbl_8060FDA0:
+
+	# ROM: 0x1EF460
+	.asciz "RIGHT"
+	.balign 4
+
+.global lbl_8060FDA8
+lbl_8060FDA8:
+
+	# ROM: 0x1EF468
+	.4byte 0x4F6B0000
+
+.global lbl_8060FDAC
+lbl_8060FDAC:
+
+	# ROM: 0x1EF46C
+	.4byte 0x3F800000
+
+.global lbl_8060FDB0
+lbl_8060FDB0:
+
+	# ROM: 0x1EF470
+	.4byte 0x41900000
+	.4byte 0

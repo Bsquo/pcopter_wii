@@ -697,3 +697,99 @@ lbl_801CBB20:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E0B0
+lbl_8060E0B0:
+
+	# ROM: 0x1EE2B0
+	.4byte 0xFFFFFFFF
+	.4byte 0
+
+.global lbl_8060E0B8
+lbl_8060E0B8:
+
+	# ROM: 0x1EE2B8
+	.4byte lbl_801BBC98
+	.4byte lbl_801CBB20
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FD10
+lbl_8060FD10:
+
+	# ROM: 0x1EF3D0
+	.asciz "Mission"
+
+.global lbl_8060FD18
+lbl_8060FD18:
+
+	# ROM: 0x1EF3D8
+	.asciz "Back"
+	.balign 4
+
+.global lbl_8060FD20
+lbl_8060FD20:
+
+	# ROM: 0x1EF3E0
+	.4byte 0
+	.4byte 0
+
+.global lbl_8060FD28
+lbl_8060FD28:
+
+	# ROM: 0x1EF3E8
+	.asciz "Mission"
+
+.global lbl_8060FD30
+lbl_8060FD30:
+
+	# ROM: 0x1EF3F0
+	.asciz "Back"
+	.balign 4
+
+.global lbl_8060FD38
+lbl_8060FD38:
+
+	# ROM: 0x1EF3F8
+	.4byte 0x43A00000
+
+.global lbl_8060FD3C
+lbl_8060FD3C:
+
+	# ROM: 0x1EF3FC
+	.4byte 0x43700000
+
+.global lbl_8060FD40
+lbl_8060FD40:
+
+	# ROM: 0x1EF400
+	.4byte 0xC3A00000
+
+.global lbl_8060FD44
+lbl_8060FD44:
+
+	# ROM: 0x1EF404
+	.4byte 0xC3700000
+
+.global lbl_8060FD48
+lbl_8060FD48:
+
+	# ROM: 0x1EF408
+	.4byte 0x3F800000
+	.4byte 0
+
+.global lbl_8060FD50
+lbl_8060FD50:
+
+	# ROM: 0x1EF410
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_8060FD58
+lbl_8060FD58:
+
+	# ROM: 0x1EF418
+	.4byte 0x43300000
+	.4byte 0

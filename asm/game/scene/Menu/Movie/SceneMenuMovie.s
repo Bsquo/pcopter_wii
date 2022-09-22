@@ -385,3 +385,21 @@ lbl_801CBEE0:
 .global lbl_8060EDB0
 lbl_8060EDB0:
 	.skip 0x8
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E298
+lbl_8060E298:
+
+	# ROM: 0x1EE498
+	.4byte lbl_801BD1E0
+	.4byte lbl_801CBEE0
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610000
+lbl_80610000:
+
+	# ROM: 0x1EF6C0
+	.4byte 0x42FE0000
+	.4byte 0

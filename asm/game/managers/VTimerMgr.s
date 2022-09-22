@@ -240,3 +240,20 @@ lbl_801CBF44:
 	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E2A8
+lbl_8060E2A8:
+
+	# ROM: 0x1EE4A8
+	.4byte lbl_80610090
+	.4byte lbl_801CBF44
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610090
+lbl_80610090:
+
+	# ROM: 0x1EF750
+	.asciz "CVTimer"

@@ -840,3 +840,73 @@ _51467:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global __RTTI__26CSceneMenuControllerManual
+__RTTI__26CSceneMenuControllerManual:
+
+	# ROM: 0x1EE4E8
+	.4byte lbl_801BDDB8
+	.4byte lbl_801CC2C0
+
+.global __RTTI__15CSceneMenuLogo2
+__RTTI__15CSceneMenuLogo2:
+
+	# ROM: 0x1EE4F0
+	.4byte lbl_801BDDD8
+	.4byte lbl_801CC308
+
+.global __RTTI__14CSceneMenuLogo
+__RTTI__14CSceneMenuLogo:
+
+	# ROM: 0x1EE4F8
+	.4byte _51466
+	.4byte _51467
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_806101C8
+lbl_806101C8:
+
+	# ROM: 0x1EF888
+	.4byte 0
+
+.global lbl_806101CC
+lbl_806101CC:
+
+	# ROM: 0x1EF88C
+	.4byte 0x43340000
+
+.global lbl_806101D0
+lbl_806101D0:
+
+	# ROM: 0x1EF890
+	.4byte 0x43D20000
+	.4byte 0
+
+.global lbl_806101D8
+lbl_806101D8:
+
+	# ROM: 0x1EF898
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_806101E0
+lbl_806101E0:
+
+	# ROM: 0x1EF8A0
+	.4byte 0x43300000
+	.4byte 0
+
+.global lbl_806101E8
+lbl_806101E8:
+
+	# ROM: 0x1EF8A8
+	.4byte 0x43A00000
+
+.global lbl_806101EC
+lbl_806101EC:
+
+	# ROM: 0x1EF8AC
+	.4byte 0x43700000

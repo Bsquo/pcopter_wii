@@ -683,3 +683,50 @@ lbl_801CBF8C:
 	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global __RTTI__10CAirBullet
+__RTTI__10CAirBullet:
+
+	# ROM: 0x1EE4C0
+	.4byte lbl_801BD498
+	.4byte lbl_801CBF8C
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_806100A0
+lbl_806100A0:
+
+	# ROM: 0x1EF760
+	.4byte 0x3C88893B
+
+.global lbl_806100A4
+lbl_806100A4:
+
+	# ROM: 0x1EF764
+	.4byte 0x40A00000
+
+.global lbl_806100A8
+lbl_806100A8:
+
+	# ROM: 0x1EF768
+	.4byte 0x3F800000
+
+.global lbl_806100AC
+lbl_806100AC:
+
+	# ROM: 0x1EF76C
+	.4byte 0x42700000
+
+.global lbl_806100B0
+lbl_806100B0:
+
+	# ROM: 0x1EF770
+	.4byte 0
+
+.global lbl_806100B4
+lbl_806100B4:
+
+	# ROM: 0x1EF774
+	.4byte 0x3DCCCCCD

@@ -5366,3 +5366,85 @@ lbl_801CBD48:
 	.4byte 0x00000025
 	.4byte 0x00300036
 	.4byte 0x00640000
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E260
+lbl_8060E260:
+
+	# ROM: 0x1EE460
+	.4byte lbl_801BCB30
+	.4byte lbl_801CBCF4
+
+.global lbl_8060E268
+lbl_8060E268:
+
+	# ROM: 0x1EE468
+	.4byte lbl_801BCB40
+	.4byte lbl_801CBD0C
+
+.global lbl_8060E270
+lbl_8060E270:
+
+	# ROM: 0x1EE470
+	.4byte lbl_801BCB50
+	.4byte lbl_801CBD24
+
+.global lbl_8060E278
+lbl_8060E278:
+
+	# ROM: 0x1EE478
+	.4byte lbl_801BCB60
+	.4byte lbl_801CBD3C
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FF68
+lbl_8060FF68:
+
+	# ROM: 0x1EF628
+	.4byte 0
+
+.global lbl_8060FF6C
+lbl_8060FF6C:
+
+	# ROM: 0x1EF62C
+	.4byte 0x3F800000
+
+.global lbl_8060FF70
+lbl_8060FF70:
+
+	# ROM: 0x1EF630
+	.4byte 0x42700000
+
+.global lbl_8060FF74
+lbl_8060FF74:
+
+	# ROM: 0x1EF634
+	.4byte 0x3FC00000
+
+.global lbl_8060FF78
+lbl_8060FF78:
+
+	# ROM: 0x1EF638
+	.4byte 0x3DCCCCCD
+
+.global lbl_8060FF7C
+lbl_8060FF7C:
+
+	# ROM: 0x1EF63C
+	.4byte 0x3F000000
+
+.global lbl_8060FF80
+lbl_8060FF80:
+
+	# ROM: 0x1EF640
+	.4byte 0x3E800000
+	.4byte 0
+
+.global lbl_8060FF88
+lbl_8060FF88:
+
+	# ROM: 0x1EF648
+	.4byte 0x43300000
+	.4byte 0

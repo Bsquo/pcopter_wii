@@ -792,7 +792,7 @@ lbl_8000CB00:
 	.4byte func_80021064
 	.4byte 0x000000AC
 	.4byte lbl_8000724C
-	.4byte func_80021118
+	.4byte __ct__7CVActorFv
 	.4byte 0x000000B8
 	.4byte lbl_80007254
 	.4byte __dt__18CVActorMtxCallbackFv
@@ -1605,7 +1605,7 @@ lbl_8000CB00:
 	.4byte func_8002D634
 	.4byte 0x00000048
 	.4byte lbl_80007E14
-	.4byte func_8002D67C
+	.4byte AddActor__10CVActorMgrFP7CVActor10CVFilePathi
 	.4byte 0x0000008C
 	.4byte lbl_80007E1C
 	.4byte func_8002D708
@@ -3066,7 +3066,7 @@ lbl_8000CB00:
 	.4byte Render__12CVHomeButtonFv
 	.4byte 0x00000048
 	.4byte lbl_80009DD8
-	.4byte func_80054BC8
+	.4byte __ct__11CActHeliPadFv
 	.4byte 0x00000054
 	.4byte lbl_80009DE0
 	.4byte lbl_80054C1C
@@ -3081,7 +3081,7 @@ lbl_8000CB00:
 	.4byte func_80054DEC
 	.4byte 0x000000C4
 	.4byte lbl_80009E00
-	.4byte func_80054EB0
+	.4byte __ct__8CActRingFv
 	.4byte 0x0000004C
 	.4byte lbl_80009E08
 	.4byte lbl_80054EFC
@@ -3099,7 +3099,7 @@ lbl_8000CB00:
 	.4byte func_800551BC
 	.4byte 0x000000BC
 	.4byte lbl_80009E30
-	.4byte func_80055278
+	.4byte __ct__8CActCoinFv
 	.4byte 0x0000004C
 	.4byte lbl_80009E38
 	.4byte lbl_800552C4
@@ -3108,7 +3108,7 @@ lbl_8000CB00:
 	.4byte func_8005531C
 	.4byte 0x00000084
 	.4byte lbl_80009E48
-	.4byte func_800553A0
+	.4byte AddActor__13CActorFactoryF10CVFilePathii
 	.4byte 0x00000198
 	.4byte lbl_80009E50
 	.4byte __ct__15CSceneMenuMain2Fv
@@ -3135,7 +3135,7 @@ lbl_8000CB00:
 	.4byte lbl_800569A8
 	.4byte 0x000005D0
 	.4byte lbl_80009F20
-	.4byte func_80056F88
+	.4byte __ct__11CActMovableFv
 	.4byte 0x00000068
 	.4byte lbl_80009F28
 	.4byte func_80056FF0
@@ -3156,7 +3156,7 @@ lbl_8000CB00:
 	.4byte lbl_800571D4
 	.4byte 0x000000F4
 	.4byte lbl_80009F7C
-	.4byte func_800572C8
+	.4byte __ct__11CActScnBaseFv
 	.4byte 0x0000006C
 	.4byte lbl_80009F84
 	.4byte func_80057334
@@ -3216,7 +3216,7 @@ lbl_8000CB00:
 	.4byte lbl_80059D94
 	.4byte 0x000001D8
 	.4byte lbl_8000A1E0
-	.4byte func_80059F6C
+	.4byte __ct__10CActTargetFv
 	.4byte 0x00000058
 	.4byte lbl_8000A1E8
 	.4byte lbl_80059FC4
@@ -3228,7 +3228,7 @@ lbl_8000CB00:
 	.4byte lbl_8005A13C
 	.4byte 0x000000B8
 	.4byte lbl_8000A228
-	.4byte func_8005A1F4
+	.4byte __ct__11CActBalloonFv
 	.4byte 0x00000074
 	.4byte lbl_8000A230
 	.4byte lbl_8005A268

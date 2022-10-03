@@ -1844,11 +1844,11 @@ func_80046148:
 /* 80046178 000370F8  38 61 01 18 */	addi r3, r1, 0x118
 /* 8004617C 000370FC  4B FE 02 2D */	bl __ct__10CVFilePathFPc
 /* 80046180 00037100  7C 7E 1B 78 */	mr r30, r3
-/* 80046184 00037104  48 00 00 F5 */	bl func_80046278
+/* 80046184 00037104  48 00 00 F5 */	bl GetInstance__13CActorFactoryFv
 /* 80046188 00037108  7F C4 F3 78 */	mr r4, r30
 /* 8004618C 0003710C  7F 45 D3 78 */	mr r5, r26
 /* 80046190 00037110  7E C6 B3 78 */	mr r6, r22
-/* 80046194 00037114  48 00 F2 0D */	bl func_800553A0
+/* 80046194 00037114  48 00 F2 0D */	bl AddActor__13CActorFactoryF10CVFilePathii
 /* 80046198 00037118  7C 7E 1B 78 */	mr r30, r3
 /* 8004619C 0003711C  38 80 00 02 */	li r4, 0x2
 /* 800461A0 00037120  38 A0 00 01 */	li r5, 0x1
@@ -1912,8 +1912,8 @@ func_80046258:
 /* 80046270 000371F0  38 21 04 60 */	addi r1, r1, 0x460
 /* 80046274 000371F4  4E 80 00 20 */	blr
 
-.global func_80046278
-func_80046278:
+.global GetInstance__13CActorFactoryFv
+GetInstance__13CActorFactoryFv:
 /* 80046278 000371F8  38 6D 8E E8 */	addi r3, r13, "@LOCAL@GetInstance__13CActorFactoryFv@m_instance"@sda21
 /* 8004627C 000371FC  4E 80 00 20 */	blr
 

@@ -2,15 +2,15 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_800572C8
-func_800572C8:
+.global __ct__11CActScnBaseFv
+__ct__11CActScnBaseFv:
 /* 800572C8 00048248  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800572CC 0004824C  7C 08 02 A6 */	mflr r0
 /* 800572D0 00048250  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800572D4 00048254  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800572D8 00048258  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 800572DC 0004825C  7C 7E 1B 78 */	mr r30, r3
-/* 800572E0 00048260  4B FC 9E 39 */	bl func_80021118
+/* 800572E0 00048260  4B FC 9E 39 */	bl __ct__7CVActorFv
 /* 800572E4 00048264  3C 80 80 1D */	lis r4, lbl_801CC690@ha
 /* 800572E8 00048268  3B E0 00 00 */	li r31, 0x0
 /* 800572EC 0004826C  38 84 C6 90 */	addi r4, r4, lbl_801CC690@l

@@ -33,8 +33,8 @@ func_8002D634:
 /* 8002D674 0001E5F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002D678 0001E5F8  4E 80 00 20 */	blr
 
-.global func_8002D67C
-func_8002D67C:
+.global AddActor__10CVActorMgrFP7CVActor10CVFilePathi
+AddActor__10CVActorMgrFP7CVActor10CVFilePathi:
 /* 8002D67C 0001E5FC  94 21 FE E0 */	stwu r1, -0x120(r1)
 /* 8002D680 0001E600  7C 08 02 A6 */	mflr r0
 /* 8002D684 0001E604  2C 04 00 00 */	cmpwi r4, 0x0

@@ -2,14 +2,14 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8005A1F4
-func_8005A1F4:
+.global __ct__11CActBalloonFv
+__ct__11CActBalloonFv:
 /* 8005A1F4 0004B174  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005A1F8 0004B178  7C 08 02 A6 */	mflr r0
 /* 8005A1FC 0004B17C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8005A200 0004B180  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8005A204 0004B184  7C 7F 1B 78 */	mr r31, r3
-/* 8005A208 0004B188  4B FF CD 81 */	bl func_80056F88
+/* 8005A208 0004B188  4B FF CD 81 */	bl __ct__11CActMovableFv
 /* 8005A20C 0004B18C  3C 80 80 1D */	lis r4, lbl_801CC760@ha
 /* 8005A210 0004B190  38 7F 03 E8 */	addi r3, r31, 0x3e8
 /* 8005A214 0004B194  38 84 C7 60 */	addi r4, r4, lbl_801CC760@l

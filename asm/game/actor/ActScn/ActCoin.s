@@ -2,14 +2,14 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80055278
-func_80055278:
+.global __ct__8CActCoinFv
+__ct__8CActCoinFv:
 /* 80055278 000461F8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005527C 000461FC  7C 08 02 A6 */	mflr r0
 /* 80055280 00046200  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80055284 00046204  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80055288 00046208  7C 7F 1B 78 */	mr r31, r3
-/* 8005528C 0004620C  48 00 20 3D */	bl func_800572C8
+/* 8005528C 0004620C  48 00 20 3D */	bl __ct__11CActScnBaseFv
 /* 80055290 00046210  C0 22 8A 60 */	lfs f1, lbl_80610280@sda21(r2)
 /* 80055294 00046214  3C 60 80 1D */	lis r3, lbl_801CC4D8@ha
 /* 80055298 00046218  C0 02 8A 64 */	lfs f0, lbl_80610284@sda21(r2)

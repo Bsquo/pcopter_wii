@@ -54,7 +54,11 @@ class CActCopter: public CVActor {
         f32 field_0x508;
         f32 field_0x50C;
         f32 field_0x510;
-        UNK32 field_0x514[472];
+        UNK8 field_0x514[476];
+
+    public:
+        CActCopter();
+        virtual ~CActCopter();
 };  // Size = 0x6EC
 
 #endif // ACTCOPTER_H

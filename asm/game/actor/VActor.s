@@ -529,8 +529,8 @@ ExecCallbackB__18CVActorMtxCallbackFPQ34nw4r3g3d13WorldMtxManipQ34nw4r3g3d6ResMd
 ExecCallbackC__18CVActorMtxCallbackFPQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlPQ34nw4r3g3d16FuncObjCalcWorld:
 /* 80021114 00012094  4E 80 00 20 */	blr
 
-.global func_80021118
-func_80021118:
+.global __ct__7CVActorFv
+__ct__7CVActorFv:
 /* 80021118 00012098  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002111C 0001209C  7C 08 02 A6 */	mflr r0
 /* 80021120 000120A0  90 01 00 14 */	stw r0, 0x14(r1)

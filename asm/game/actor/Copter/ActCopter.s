@@ -172,7 +172,7 @@ __ct__10CActCopterFv:
 /* 8001A414 0000B394  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8001A418 0000B398  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8001A41C 0000B39C  7C 7E 1B 78 */	mr r30, r3
-/* 8001A420 0000B3A0  48 00 6C F9 */	bl func_80021118
+/* 8001A420 0000B3A0  48 00 6C F9 */	bl __ct__7CVActorFv
 /* 8001A424 0000B3A4  3C 80 80 1D */	lis r4, __vt__10CActCopter@ha
 /* 8001A428 0000B3A8  38 7E 03 B4 */	addi r3, r30, 0x3b4
 /* 8001A42C 0000B3AC  38 84 B5 D0 */	addi r4, r4, __vt__10CActCopter@l

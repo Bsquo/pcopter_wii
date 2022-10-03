@@ -2,6 +2,8 @@
 #define VACTOR_MGR_H
 
 #include "include/game/utils/VList.h"
+#include "include/game/actor/VActor.h"
+#include "include/game/utils/VFilePath.h"
 #include "types.h"
 
 class CVActorMgr {
@@ -9,7 +11,7 @@ class CVActorMgr {
         CVActorMgr();
 
     public:
-        CVList mActorList;
+        CVList mActorGroup;
         s32 COLL;               // The "COLL" parameter seen when the debug info display is enabled in multiplayer.
         UNK32 field_0x14;
 
@@ -17,6 +19,7 @@ class CVActorMgr {
         virtual ~CVActorMgr();
         const CVListBase* GetStart(int);
         const CVListBase* GetNext(int);
+        void AddActor(CVActor*, CVFilePath, int);
 };
 
 #endif // VACTOR_MGR_H

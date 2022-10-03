@@ -34,8 +34,8 @@ void Free__4demoFPv(void*);
 namespace demo {
 
     enum Memory {
-        USER1_MEM,
-        USER2_MEM
+        MEM1,		// System
+        MEM2		// User
     };
 
     void* Alloc(size_t size, int align, demo::Memory heap);

@@ -72,3 +72,62 @@ CVFilePath CVFilePath::GetDirectory() {
     }
     return temp;
 }
+
+CVFilePath CVFilePath::GetNameOnly() {
+    CVFilePath temp;
+    char* currentChar = std::strchr(mFilePath, '\0');
+    char* endOfString;
+    
+    if (currentChar != 0) {
+        endOfString = currentChar;
+        while ((currentChar[0] != '\\') && (currentChar[0] != '/') && (currentChar >= mFilePath)) {
+            currentChar--;
+        }
+        currentChar++;
+        char* fullPath = temp.GetFullPath();
+        while ((currentChar < endOfString) && (currentChar[0] != '.')) {
+            fullPath[0] = currentChar[0];
+            currentChar++;
+            fullPath++;
+        }
+        fullPath[0] = '\0';
+    }
+    return temp;
+}
+
+char* CVFilePath::GetFullPath() {}
+
+CVFilePath CVFilePath::CalcFullPath(CVFilePath* param) {
+    CVFilePath temp;
+    char fullPath [256];
+    char* curCharInPath;
+    char* paramPath;
+    s32 curParamPathChar;
+    s32 numberOfSlashes;
+    
+    strcpy(fullPath, *param);
+    curCharInPath = std::strchr(fullPath, 0);
+    paramPath = GetFullPath();
+    
+    for (curParamPathChar = 0; paramPath[0] == '.'; curParamPathChar++) {
+        paramPath++;
+    }
+    if (curParamPathChar != 0) {
+        for (numberOfSlashes = 0; (numberOfSlashes < curParamPathChar) && (curCharInPath > fullPath); ) {
+            if ((curCharInPath[0] == '\\') || (curCharInPath[0] == '/')) {
+                numberOfSlashes++;
+            }
+            curCharInPath--;
+        }
+    }
+    else {
+        for (curParamPathChar = 0; ((curCharInPath[0] != '\\') && (curCharInPath[0] != '/') && (curCharInPath > fullPath)); curParamPathChar++) {
+            curCharInPath--;
+        }
+    }
+    
+    strcpy(++curCharInPath, paramPath);
+    temp = fullPath;
+    return temp;
+}
+

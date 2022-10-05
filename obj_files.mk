@@ -23,7 +23,6 @@ GAME_O_FILES :=                                                    \
     $(BUILD_DIR)/asm/game/collision/VColl.o                    \
 	$(BUILD_DIR)/src/game/gfx/VColor.o                         \
     $(BUILD_DIR)/src/game/utils/VFile.o                        \
-	$(BUILD_DIR)/asm/game/utils/VFile.o                        \
     $(BUILD_DIR)/src/game/utils/VFlag.o                        \
     $(BUILD_DIR)/src/game/utils/VList.o                        \
 	$(BUILD_DIR)/src/game/math/VMath.o                         \

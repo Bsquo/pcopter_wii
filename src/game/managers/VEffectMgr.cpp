@@ -1,8 +1,9 @@
 #include "include/game/utils/VFlag.h"
 
-void CVFlag::operator=(const CVFlag& flag) {
+const CVFlag& CVFlag::operator=(const CVFlag& flag) {
 	if (this == &flag) {
-		return;
+		return *this;
 	}
 	mFlag = flag.mFlag;
+	return *this;
 }

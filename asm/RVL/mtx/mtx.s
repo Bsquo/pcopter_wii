@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80092EDC
-func_80092EDC:
+.global PSMTXIdentity
+PSMTXIdentity:
 /* 80092EDC 00083E5C  C0 02 92 C4 */	lfs f0, lbl_80610AE4@sda21(r2)
 /* 80092EE0 00083E60  C0 22 92 C0 */	lfs f1, lbl_80610AE0@sda21(r2)
 /* 80092EE4 00083E64  F0 03 00 08 */	psq_st f0, 0x8(r3), 0, qr0

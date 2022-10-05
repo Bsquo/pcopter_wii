@@ -11,7 +11,7 @@ class CVColor {
         CVColor();
         CVColor(f32, f32, f32, f32);
 
-	    void operator=(const CVColor&);
+	    const CVColor& operator=(const CVColor&);
 	    CVColor operator+(const CVColor&);
 	    CVColor operator*(f32);
 	    CVColor operator-(const CVColor&);

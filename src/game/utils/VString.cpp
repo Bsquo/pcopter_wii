@@ -55,7 +55,7 @@ CVString::~CVString() {
     Release();
 }
 
-CVString* CVString::operator=(const CVString& operand) {
+const CVString& CVString::operator=(const CVString& operand) {
     size_t operand_length;
     char* temp_string;
 
@@ -67,10 +67,10 @@ CVString* CVString::operator=(const CVString& operand) {
         pString = temp_string;
         strcpy(temp_string, operand.pString);
     }
-    return this;
+    return *this;
 }
 
-CVString* CVString::operator=(const char* operand) {
+const CVString& CVString::operator=(const char* operand) {
     size_t operand_length;
     char* temp_string;
 
@@ -82,10 +82,10 @@ CVString* CVString::operator=(const char* operand) {
         pString = temp_string;
         strcpy(temp_string, operand);
     }
-    return this;
+    return *this;
 }
 
-CVString* CVString::operator+=(const char* operand) {
+const CVString& CVString::operator+=(const char* operand) {
     size_t pString_length;
     size_t operand_length;
     char* temp_string;
@@ -99,7 +99,7 @@ CVString* CVString::operator+=(const char* operand) {
         Release();
         pString = temp_string;
     }
-    return this;
+    return *this;
 }
 
 bool CVString::operator==(const char* operand) {

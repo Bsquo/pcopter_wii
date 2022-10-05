@@ -1,9 +1,10 @@
 #include "include/game/math/VVector.h"
 
-void CVVector::operator+=(const CVVector& vector) {
+const CVVector& CVVector::operator+=(const CVVector& vector) {
     x += vector.x;
     y += vector.y;
     z += vector.z;
+    return *this;
 }
 
 CVVector CVVector::operator-(const CVVector& vector)  {

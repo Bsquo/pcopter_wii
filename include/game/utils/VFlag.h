@@ -19,7 +19,7 @@ class CVFlag {
         // Check__6CVFlagFUs (0x800267f4)
         u32 Check(u16);
         // __as__6CVFlagFRC6CVFlag (0x8002f994)
-        void operator=(const CVFlag&);
+        const CVFlag& operator=(const CVFlag&);
         // vtable (__vt__6CVFlag): 0x801cb7a8
         // __dt__6CVFlagFv (0x80026778)
         virtual ~CVFlag();

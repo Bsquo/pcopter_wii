@@ -20,7 +20,7 @@ class CVFilePath {
         CVFilePath GetDirectory();
         char* GetFullPath();
         CVFilePath GetNameOnly();
-        void CalcFullPath(CVFilePath*);
+        CVFilePath CalcFullPath(CVFilePath*);
 };
 
 #endif // VFILEPATH_H

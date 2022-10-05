@@ -1,13 +1,14 @@
 #include "include/game/gfx/VColor.h"
 
-void CVColor::operator=(const CVColor& color) {
+const CVColor& CVColor::operator=(const CVColor& color) {
 	if (this == &color) {
-		return;
+		return *this;
 	}
 	mRed = color.mRed;
 	mGreen = color.mGreen;
 	mBlue = color.mBlue;
 	mAlpha = color.mAlpha;
+    return *this;
 }
 
 CVColor CVColor::operator+(const CVColor& color) {

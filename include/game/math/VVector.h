@@ -18,8 +18,8 @@ class CVVector {
 		CVVector Normalize();
 		f32 GetRoll();
 		
-		void operator=(const CVVector&);
-		void operator+=(const CVVector&);
+		const CVVector& operator=(const CVVector&);
+		const CVVector& operator+=(const CVVector&);
 		CVVector operator-(const CVVector&);
 		CVVector operator*(f32);
 		CVVector operator*=(f32);

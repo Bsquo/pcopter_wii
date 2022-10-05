@@ -14,11 +14,11 @@ class CVString {
         // __ct__8CVStringFPc (0x800205cc)
         CVString(char*);
         // __as__8CVStringFRC8CVString (0x800206e8)
-        CVString* operator=(const CVString&);
+        const CVString& operator=(const CVString&);
         // __as__8CVStringFPCc (0x8002075c)
-        CVString* operator=(const char*);
+        const CVString& operator=(const char*);
         // __apl__8CVStringFPCc (0x800207c4)
-        CVString* operator+=(const char*);
+        const CVString& operator+=(const char*);
         // __eq__8CVStringFPCc (0x80020850)
         bool operator==(const char*);
         // __opPCc__8CVStringFv (0x8002087c)

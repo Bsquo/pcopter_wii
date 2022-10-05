@@ -29,13 +29,14 @@ f32 std::sqrt(f32 param) {
     return sqrtf(param);
 }
 
-void CVVector::operator=(const CVVector& vector) {
+const CVVector& CVVector::operator=(const CVVector& vector) {
 	if (this == &vector) {
-		return;
+		return *this;
 	}
 	x = vector.x;
 	y = vector.y;
 	z = vector.z;
+    return *this;
 }
 
 void CPosLog::GetLog(u32 logIndex, CVVector* prevPos, CVVector* prevYaw) {

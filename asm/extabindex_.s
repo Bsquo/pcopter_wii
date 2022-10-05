@@ -579,7 +579,7 @@ lbl_8000CB00:
 	.4byte __dt__6CRotorFv
 	.4byte 0x00000068
 	.4byte lbl_80006FA4
-	.4byte func_8001E6BC
+	.4byte MTX34Identity__Q24nw4r4mathFPQ34nw4r4math5MTX34
 	.4byte 0x00000034
 	.4byte lbl_80006FAC
 	.4byte func_8001E70C

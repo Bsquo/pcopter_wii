@@ -90,8 +90,8 @@ func_800B3070:
 func_800B3084:
 /* 800B3084 000A4004  91 CB FF B8 */	stw r14, -0x48(r11)
 
-.global func_800B3088
-func_800B3088:
+.global _savegpr_15
+_savegpr_15:
 /* 800B3088 000A4008  91 EB FF BC */	stw r15, -0x44(r11)
 
 .global func_800B308C
@@ -151,8 +151,8 @@ _savegpr_27:
 func_800B30D0:
 /* 800B30D0 000A4050  81 CB FF B8 */	lwz r14, -0x48(r11)
 
-.global func_800B30D4
-func_800B30D4:
+.global _restgpr_15
+_restgpr_15:
 /* 800B30D4 000A4054  81 EB FF BC */	lwz r15, -0x44(r11)
 
 .global func_800B30D8

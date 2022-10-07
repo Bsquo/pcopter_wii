@@ -41,8 +41,8 @@ lbl_801BA188:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8002BF34
-func_8002BF34:
+.global __ct__13CVScriptParamFv
+__ct__13CVScriptParamFv:
 /* 8002BF34 0001CEB4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002BF38 0001CEB8  7C 08 02 A6 */	mflr r0
 /* 8002BF3C 0001CEBC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -50,8 +50,8 @@ func_8002BF34:
 /* 8002BF44 0001CEC4  7C 7F 1B 78 */	mr r31, r3
 /* 8002BF48 0001CEC8  4B FF A8 CD */	bl __ct__10CVListBaseFv
 /* 8002BF4C 0001CECC  C0 02 81 F0 */	lfs f0, lbl_8060FA10@sda21(r2)
-/* 8002BF50 0001CED0  3C 80 80 1D */	lis r4, lbl_801CB88C@ha
-/* 8002BF54 0001CED4  38 84 B8 8C */	addi r4, r4, lbl_801CB88C@l
+/* 8002BF50 0001CED0  3C 80 80 1D */	lis r4, __vt__13CVScriptParam@ha
+/* 8002BF54 0001CED4  38 84 B8 8C */	addi r4, r4, __vt__13CVScriptParam@l
 /* 8002BF58 0001CED8  7F E3 FB 78 */	mr r3, r31
 /* 8002BF5C 0001CEDC  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 8002BF60 0001CEE0  D0 1F 00 14 */	stfs f0, 0x14(r31)
@@ -61,8 +61,8 @@ func_8002BF34:
 /* 8002BF70 0001CEF0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002BF74 0001CEF4  4E 80 00 20 */	blr
 
-.global lbl_8002BF78
-lbl_8002BF78:
+.global __dt__13CVScriptParamFv
+__dt__13CVScriptParamFv:
 /* 8002BF78 0001CEF8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002BF7C 0001CEFC  7C 08 02 A6 */	mflr r0
 /* 8002BF80 0001CF00  2C 03 00 00 */	cmpwi r3, 0x0
@@ -87,17 +87,17 @@ lbl_8002BFB4:
 /* 8002BFC8 0001CF48  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002BFCC 0001CF4C  4E 80 00 20 */	blr
 
-.global func_8002BFD0
-func_8002BFD0:
+.global __ct__14CVScriptStringFv
+__ct__14CVScriptStringFv:
 /* 8002BFD0 0001CF50  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002BFD4 0001CF54  7C 08 02 A6 */	mflr r0
 /* 8002BFD8 0001CF58  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8002BFDC 0001CF5C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8002BFE0 0001CF60  7C 7F 1B 78 */	mr r31, r3
 /* 8002BFE4 0001CF64  4B FF A8 31 */	bl __ct__10CVListBaseFv
-/* 8002BFE8 0001CF68  3C 80 80 1D */	lis r4, lbl_801CB874@ha
+/* 8002BFE8 0001CF68  3C 80 80 1D */	lis r4, __vt__14CVScriptString@ha
 /* 8002BFEC 0001CF6C  38 7F 00 14 */	addi r3, r31, 0x14
-/* 8002BFF0 0001CF70  38 84 B8 74 */	addi r4, r4, lbl_801CB874@l
+/* 8002BFF0 0001CF70  38 84 B8 74 */	addi r4, r4, __vt__14CVScriptString@l
 /* 8002BFF4 0001CF74  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 8002BFF8 0001CF78  4B FF 45 BD */	bl __ct__8CVStringFv
 /* 8002BFFC 0001CF7C  38 7F 00 14 */	addi r3, r31, 0x14
@@ -109,8 +109,8 @@ func_8002BFD0:
 /* 8002C014 0001CF94  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002C018 0001CF98  4E 80 00 20 */	blr
 
-.global lbl_8002C01C
-lbl_8002C01C:
+.global __dt__14CVScriptStringFv
+__dt__14CVScriptStringFv:
 /* 8002C01C 0001CF9C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002C020 0001CFA0  7C 08 02 A6 */	mflr r0
 /* 8002C024 0001CFA4  2C 03 00 00 */	cmpwi r3, 0x0
@@ -139,17 +139,17 @@ lbl_8002C068:
 /* 8002C07C 0001CFFC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002C080 0001D000  4E 80 00 20 */	blr
 
-.global func_8002C084
-func_8002C084:
+.global __ct__15CVScriptElementFv
+__ct__15CVScriptElementFv:
 /* 8002C084 0001D004  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002C088 0001D008  7C 08 02 A6 */	mflr r0
 /* 8002C08C 0001D00C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8002C090 0001D010  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8002C094 0001D014  7C 7F 1B 78 */	mr r31, r3
 /* 8002C098 0001D018  4B FF A7 7D */	bl __ct__10CVListBaseFv
-/* 8002C09C 0001D01C  3C 80 80 1D */	lis r4, lbl_801CB85C@ha
+/* 8002C09C 0001D01C  3C 80 80 1D */	lis r4, __vt__15CVScriptElement@ha
 /* 8002C0A0 0001D020  38 7F 00 14 */	addi r3, r31, 0x14
-/* 8002C0A4 0001D024  38 84 B8 5C */	addi r4, r4, lbl_801CB85C@l
+/* 8002C0A4 0001D024  38 84 B8 5C */	addi r4, r4, __vt__15CVScriptElement@l
 /* 8002C0A8 0001D028  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 8002C0AC 0001D02C  4B FF 45 09 */	bl __ct__8CVStringFv
 /* 8002C0B0 0001D030  38 7F 00 1C */	addi r3, r31, 0x1c
@@ -169,8 +169,8 @@ func_8002C084:
 /* 8002C0E8 0001D068  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002C0EC 0001D06C  4E 80 00 20 */	blr
 
-.global lbl_8002C0F0
-lbl_8002C0F0:
+.global __dt__15CVScriptElementFv
+__dt__15CVScriptElementFv:
 /* 8002C0F0 0001D070  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002C0F4 0001D074  7C 08 02 A6 */	mflr r0
 /* 8002C0F8 0001D078  2C 03 00 00 */	cmpwi r3, 0x0
@@ -205,8 +205,8 @@ lbl_8002C154:
 /* 8002C168 0001D0E8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002C16C 0001D0EC  4E 80 00 20 */	blr
 
-.global func_8002C170
-func_8002C170:
+.global GetSize__15CVScriptElementFv
+GetSize__15CVScriptElementFv:
 /* 8002C170 0001D0F0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002C174 0001D0F4  7C 08 02 A6 */	mflr r0
 /* 8002C178 0001D0F8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -226,13 +226,13 @@ func_8002C170:
 /* 8002C1B0 0001D130  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002C1B4 0001D134  4E 80 00 20 */	blr
 
-.global func_8002C1B8
-func_8002C1B8:
+.global SetLabel__15CVScriptElementFPc
+SetLabel__15CVScriptElementFPc:
 /* 8002C1B8 0001D138  38 63 00 14 */	addi r3, r3, 0x14
 /* 8002C1BC 0001D13C  4B FF 45 A0 */	b __as__8CVStringFPCc
 
-.global func_8002C1C0
-func_8002C1C0:
+.global AddParam__15CVScriptElementFf
+AddParam__15CVScriptElementFf:
 /* 8002C1C0 0001D140  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8002C1C4 0001D144  7C 08 02 A6 */	mflr r0
 /* 8002C1C8 0001D148  90 01 00 24 */	stw r0, 0x24(r1)
@@ -246,7 +246,7 @@ func_8002C1C0:
 /* 8002C1E8 0001D168  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8002C1EC 0001D16C  7C 7F 1B 78 */	mr r31, r3
 /* 8002C1F0 0001D170  41 82 00 08 */	beq lbl_8002C1F8
-/* 8002C1F4 0001D174  4B FF FD 41 */	bl func_8002BF34
+/* 8002C1F4 0001D174  4B FF FD 41 */	bl __ct__13CVScriptParamFv
 lbl_8002C1F8:
 /* 8002C1F8 0001D178  D3 FF 00 14 */	stfs f31, 0x14(r31)
 /* 8002C1FC 0001D17C  7F E4 FB 78 */	mr r4, r31
@@ -260,8 +260,8 @@ lbl_8002C1F8:
 /* 8002C21C 0001D19C  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002C220 0001D1A0  4E 80 00 20 */	blr
 
-.global func_8002C224
-func_8002C224:
+.global GetParam__15CVScriptElementFi
+GetParam__15CVScriptElementFi:
 /* 8002C224 0001D1A4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002C228 0001D1A8  7C 08 02 A6 */	mflr r0
 /* 8002C22C 0001D1AC  38 63 00 1C */	addi r3, r3, 0x1c
@@ -281,8 +281,8 @@ func_8002C24C:
 /* 8002C254 0001D1D4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002C258 0001D1D8  4E 80 00 20 */	blr
 
-.global func_8002C25C
-func_8002C25C:
+.global AddString__15CVScriptElementFPc
+AddString__15CVScriptElementFPc:
 /* 8002C25C 0001D1DC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8002C260 0001D1E0  7C 08 02 A6 */	mflr r0
 /* 8002C264 0001D1E4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -296,7 +296,7 @@ func_8002C25C:
 /* 8002C284 0001D204  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8002C288 0001D208  7C 7F 1B 78 */	mr r31, r3
 /* 8002C28C 0001D20C  41 82 00 08 */	beq lbl_8002C294
-/* 8002C290 0001D210  4B FF FD 41 */	bl func_8002BFD0
+/* 8002C290 0001D210  4B FF FD 41 */	bl __ct__14CVScriptStringFv
 lbl_8002C294:
 /* 8002C294 0001D214  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8002C298 0001D218  41 82 00 1C */	beq lbl_8002C2B4
@@ -315,8 +315,8 @@ lbl_8002C2B4:
 /* 8002C2C8 0001D248  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002C2CC 0001D24C  4E 80 00 20 */	blr
 
-.global func_8002C2D0
-func_8002C2D0:
+.global GetString__15CVScriptElementFi
+GetString__15CVScriptElementFi:
 /* 8002C2D0 0001D250  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002C2D4 0001D254  7C 08 02 A6 */	mflr r0
 /* 8002C2D8 0001D258  38 63 00 2C */	addi r3, r3, 0x2c
@@ -340,9 +340,9 @@ func_8002C2F8:
 __ct__8CVScriptFv:
 /* 8002C308 0001D288  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002C30C 0001D28C  7C 08 02 A6 */	mflr r0
-/* 8002C310 0001D290  3C 80 80 1D */	lis r4, lbl_801CB850@ha
+/* 8002C310 0001D290  3C 80 80 1D */	lis r4, __vt__8CVScript@ha
 /* 8002C314 0001D294  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8002C318 0001D298  38 84 B8 50 */	addi r4, r4, lbl_801CB850@l
+/* 8002C318 0001D298  38 84 B8 50 */	addi r4, r4, __vt__8CVScript@l
 /* 8002C31C 0001D29C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8002C320 0001D2A0  7C 7F 1B 78 */	mr r31, r3
 /* 8002C324 0001D2A4  90 83 00 10 */	stw r4, 0x10(r3)
@@ -367,10 +367,10 @@ __dt__8CVScriptFv:
 /* 8002C364 0001D2E4  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 8002C368 0001D2E8  7C 7E 1B 78 */	mr r30, r3
 /* 8002C36C 0001D2EC  41 82 00 30 */	beq lbl_8002C39C
-/* 8002C370 0001D2F0  3C 80 80 1D */	lis r4, lbl_801CB850@ha
-/* 8002C374 0001D2F4  38 84 B8 50 */	addi r4, r4, lbl_801CB850@l
+/* 8002C370 0001D2F0  3C 80 80 1D */	lis r4, __vt__8CVScript@ha
+/* 8002C374 0001D2F4  38 84 B8 50 */	addi r4, r4, __vt__8CVScript@l
 /* 8002C378 0001D2F8  90 83 00 10 */	stw r4, 0x10(r3)
-/* 8002C37C 0001D2FC  48 00 06 51 */	bl func_8002C9CC
+/* 8002C37C 0001D2FC  48 00 06 51 */	bl Release__8CVScriptFv
 /* 8002C380 0001D300  7F C3 F3 78 */	mr r3, r30
 /* 8002C384 0001D304  38 80 FF FF */	li r4, -0x1
 /* 8002C388 0001D308  4B FF A5 E5 */	bl __dt__6CVListFv
@@ -387,8 +387,8 @@ lbl_8002C39C:
 /* 8002C3B0 0001D330  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002C3B4 0001D334  4E 80 00 20 */	blr
 
-.global func_8002C3B8
-func_8002C3B8:
+.global GetElement__8CVScriptFPc
+GetElement__8CVScriptFPc:
 /* 8002C3B8 0001D338  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002C3BC 0001D33C  7C 08 02 A6 */	mflr r0
 /* 8002C3C0 0001D340  90 01 00 14 */	stw r0, 0x14(r1)
@@ -425,8 +425,8 @@ func_8002C40C:
 /* 8002C41C 0001D39C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002C420 0001D3A0  4E 80 00 20 */	blr
 
-.global func_8002C424
-func_8002C424:
+.global AddElement__8CVScriptFP15CVScriptElement
+AddElement__8CVScriptFP15CVScriptElement:
 /* 8002C424 0001D3A4  4B FF A6 F4 */	b InsertEnd__6CVListFP10CVListBase
 
 .global GetParam__8CVScriptFPci
@@ -451,7 +451,7 @@ lbl_8002C454:
 /* 8002C468 0001D3E8  40 82 00 14 */	bne lbl_8002C47C
 /* 8002C46C 0001D3EC  7F E3 FB 78 */	mr r3, r31
 /* 8002C470 0001D3F0  7F C4 F3 78 */	mr r4, r30
-/* 8002C474 0001D3F4  4B FF FD B1 */	bl func_8002C224
+/* 8002C474 0001D3F4  4B FF FD B1 */	bl GetParam__15CVScriptElementFi
 /* 8002C478 0001D3F8  48 00 00 14 */	b func_8002C48C
 lbl_8002C47C:
 /* 8002C47C 0001D3FC  83 FF 00 0C */	lwz r31, 0xc(r31)
@@ -472,8 +472,8 @@ func_8002C48C:
 /* 8002C4A0 0001D420  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002C4A4 0001D424  4E 80 00 20 */	blr
 
-.global func_8002C4A8
-func_8002C4A8:
+.global GetString__8CVScriptFPci
+GetString__8CVScriptFPci:
 /* 8002C4A8 0001D428  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8002C4AC 0001D42C  7C 08 02 A6 */	mflr r0
 /* 8002C4B0 0001D430  90 01 00 24 */	stw r0, 0x24(r1)
@@ -494,7 +494,7 @@ lbl_8002C4D4:
 /* 8002C4E8 0001D468  40 82 00 14 */	bne lbl_8002C4FC
 /* 8002C4EC 0001D46C  7F E3 FB 78 */	mr r3, r31
 /* 8002C4F0 0001D470  7F C4 F3 78 */	mr r4, r30
-/* 8002C4F4 0001D474  4B FF FD DD */	bl func_8002C2D0
+/* 8002C4F4 0001D474  4B FF FD DD */	bl GetString__15CVScriptElementFi
 /* 8002C4F8 0001D478  48 00 00 14 */	b func_8002C50C
 lbl_8002C4FC:
 /* 8002C4FC 0001D47C  83 FF 00 0C */	lwz r31, 0xc(r31)
@@ -515,13 +515,13 @@ func_8002C50C:
 /* 8002C520 0001D4A0  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002C524 0001D4A4  4E 80 00 20 */	blr
 
-.global func_8002C528
-func_8002C528:
+.global AddElementFromString__8CVScriptFPc
+AddElementFromString__8CVScriptFPc:
 /* 8002C528 0001D4A8  94 21 F9 B0 */	stwu r1, -0x650(r1)
 /* 8002C52C 0001D4AC  7C 08 02 A6 */	mflr r0
 /* 8002C530 0001D4B0  90 01 06 54 */	stw r0, 0x654(r1)
 /* 8002C534 0001D4B4  39 61 06 50 */	addi r11, r1, 0x650
-/* 8002C538 0001D4B8  48 08 6B 51 */	bl func_800B3088
+/* 8002C538 0001D4B8  48 08 6B 51 */	bl _savegpr_15
 /* 8002C53C 0001D4BC  3F 80 80 1C */	lis r28, lbl_801BA188@ha
 /* 8002C540 0001D4C0  7C 96 23 78 */	mr r22, r4
 /* 8002C544 0001D4C4  7C 6F 1B 78 */	mr r15, r3
@@ -660,7 +660,7 @@ lbl_8002C6DC:
 /* 8002C708 0001D688  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8002C70C 0001D68C  7C 70 1B 78 */	mr r16, r3
 /* 8002C710 0001D690  41 82 00 08 */	beq lbl_8002C718
-/* 8002C714 0001D694  4B FF F9 71 */	bl func_8002C084
+/* 8002C714 0001D694  4B FF F9 71 */	bl __ct__15CVScriptElementFv
 lbl_8002C718:
 /* 8002C718 0001D698  7E 11 83 78 */	mr r17, r16
 /* 8002C71C 0001D69C  38 61 01 08 */	addi r3, r1, 0x108
@@ -688,7 +688,7 @@ func_8002C75C:
 /* 8002C760 0001D6E0  40 81 FF D4 */	ble lbl_8002C734
 /* 8002C764 0001D6E4  7E 03 83 78 */	mr r3, r16
 /* 8002C768 0001D6E8  38 81 01 08 */	addi r4, r1, 0x108
-/* 8002C76C 0001D6EC  4B FF FA 4D */	bl func_8002C1B8
+/* 8002C76C 0001D6EC  4B FF FA 4D */	bl SetLabel__15CVScriptElementFPc
 /* 8002C770 0001D6F0  48 00 01 50 */	b func_8002C8C0
 lbl_8002C774:
 /* 8002C774 0001D6F4  56 A0 38 30 */	slwi r0, r21, 7
@@ -756,14 +756,14 @@ lbl_8002C844:
 /* 8002C844 0001D7C4  7F 5F B9 AE */	stbx r26, r31, r23
 /* 8002C848 0001D7C8  7E 23 8B 78 */	mr r3, r17
 /* 8002C84C 0001D7CC  7F E4 FB 78 */	mr r4, r31
-/* 8002C850 0001D7D0  4B FF FA 0D */	bl func_8002C25C
+/* 8002C850 0001D7D0  4B FF FA 0D */	bl AddString__15CVScriptElementFPc
 /* 8002C854 0001D7D4  48 00 00 18 */	b func_8002C86C
 lbl_8002C858:
 /* 8002C858 0001D7D8  7F C3 F3 78 */	mr r3, r30
-/* 8002C85C 0001D7DC  48 08 F2 35 */	bl func_800BBA90
+/* 8002C85C 0001D7DC  48 08 F2 35 */	bl atof
 /* 8002C860 0001D7E0  FC 20 08 18 */	frsp f1, f1
 /* 8002C864 0001D7E4  7E 23 8B 78 */	mr r3, r17
-/* 8002C868 0001D7E8  4B FF F9 59 */	bl func_8002C1C0
+/* 8002C868 0001D7E8  4B FF F9 59 */	bl AddParam__15CVScriptElementFf
 
 .global func_8002C86C
 func_8002C86C:
@@ -779,7 +779,7 @@ lbl_8002C880:
 lbl_8002C88C:
 /* 8002C88C 0001D80C  7D E3 7B 78 */	mr r3, r15
 /* 8002C890 0001D810  7E 24 8B 78 */	mr r4, r17
-/* 8002C894 0001D814  4B FF FB 91 */	bl func_8002C424
+/* 8002C894 0001D814  4B FF FB 91 */	bl AddElement__8CVScriptFP15CVScriptElement
 lbl_8002C898:
 /* 8002C898 0001D818  38 61 00 08 */	addi r3, r1, 0x8
 /* 8002C89C 0001D81C  38 9D 00 05 */	addi r4, r29, 0x5
@@ -806,7 +806,7 @@ func_8002C8D0:
 /* 8002C8D4 0001D854  40 82 FC A0 */	bne lbl_8002C574
 /* 8002C8D8 0001D858  39 61 06 50 */	addi r11, r1, 0x650
 /* 8002C8DC 0001D85C  38 60 00 01 */	li r3, 0x1
-/* 8002C8E0 0001D860  48 08 67 F5 */	bl func_800B30D4
+/* 8002C8E0 0001D860  48 08 67 F5 */	bl _restgpr_15
 /* 8002C8E4 0001D864  80 01 06 54 */	lwz r0, 0x654(r1)
 /* 8002C8E8 0001D868  7C 08 03 A6 */	mtlr r0
 /* 8002C8EC 0001D86C  38 21 06 50 */	addi r1, r1, 0x650
@@ -833,7 +833,7 @@ lbl_8002C92C:
 /* 8002C930 0001D8B0  4B FF A0 B1 */	bl Release__6CVListFv
 /* 8002C934 0001D8B4  80 61 00 3C */	lwz r3, 0x3c(r1)
 /* 8002C938 0001D8B8  38 80 00 20 */	li r4, 0x20
-/* 8002C93C 0001D8BC  48 00 00 79 */	bl func_8002C9B4
+/* 8002C93C 0001D8BC  48 00 00 79 */	bl "RoundUp<Ul>__Q34nw4r2ut21@unnamed@VScript_cpp@FUlUi_Ul"
 /* 8002C940 0001D8C0  7C 7F 1B 78 */	mr r31, r3
 /* 8002C944 0001D8C4  38 80 00 20 */	li r4, 0x20
 /* 8002C948 0001D8C8  38 A0 00 00 */	li r5, 0x0
@@ -850,7 +850,7 @@ lbl_8002C92C:
 /* 8002C974 0001D8F4  48 06 7E 71 */	bl DVDReadPrio
 /* 8002C978 0001D8F8  7F A3 EB 78 */	mr r3, r29
 /* 8002C97C 0001D8FC  7F C4 F3 78 */	mr r4, r30
-/* 8002C980 0001D900  4B FF FB A9 */	bl func_8002C528
+/* 8002C980 0001D900  4B FF FB A9 */	bl AddElementFromString__8CVScriptFPc
 /* 8002C984 0001D904  7F C3 F3 78 */	mr r3, r30
 /* 8002C988 0001D908  48 0E F9 0D */	bl Free__4demoFPv
 /* 8002C98C 0001D90C  38 61 00 08 */	addi r3, r1, 0x8
@@ -867,8 +867,8 @@ func_8002C998:
 /* 8002C9AC 0001D92C  38 21 00 60 */	addi r1, r1, 0x60
 /* 8002C9B0 0001D930  4E 80 00 20 */	blr
 
-.global func_8002C9B4
-func_8002C9B4:
+.global "RoundUp<Ul>__Q34nw4r2ut21@unnamed@VScript_cpp@FUlUi_Ul"
+"RoundUp<Ul>__Q34nw4r2ut21@unnamed@VScript_cpp@FUlUi_Ul":
 /* 8002C9B4 0001D934  38 04 FF FF */	addi r0, r4, -0x1
 /* 8002C9B8 0001D938  7C 64 1A 14 */	add r3, r4, r3
 /* 8002C9BC 0001D93C  7C 04 00 F8 */	nor r4, r0, r0
@@ -876,27 +876,27 @@ func_8002C9B4:
 /* 8002C9C4 0001D944  7C 83 00 38 */	and r3, r4, r0
 /* 8002C9C8 0001D948  4E 80 00 20 */	blr
 
-.global func_8002C9CC
-func_8002C9CC:
+.global Release__8CVScriptFv
+Release__8CVScriptFv:
 /* 8002C9CC 0001D94C  4B FF A0 14 */	b Release__6CVListFv
 
 .section .data, "wa", @progbits
 
-.global lbl_801CB850
-lbl_801CB850:
+.global __vt__8CVScript
+__vt__8CVScript:
 
 	# ROM: 0x1C7950
-	.4byte lbl_8060DFF0
+	.4byte __RTTI__8CVScript
 	.4byte 0
 	.4byte __dt__8CVScriptFv
 
-.global lbl_801CB85C
-lbl_801CB85C:
+.global __vt__15CVScriptElement
+__vt__15CVScriptElement:
 
 	# ROM: 0x1C795C
-	.4byte lbl_8060DFF8
+	.4byte __RTTI__15CVScriptElement
 	.4byte 0
-	.4byte lbl_8002C0F0
+	.4byte __dt__15CVScriptElementFv
 
 .global lbl_801CB868
 lbl_801CB868:
@@ -906,13 +906,13 @@ lbl_801CB868:
 	.4byte 0
 	.4byte 0
 
-.global lbl_801CB874
-lbl_801CB874:
+.global __vt__14CVScriptString
+__vt__14CVScriptString:
 
 	# ROM: 0x1C7974
-	.4byte lbl_8060E000
+	.4byte __RTTI__14CVScriptString
 	.4byte 0
-	.4byte lbl_8002C01C
+	.4byte __dt__14CVScriptStringFv
 
 .global lbl_801CB880
 lbl_801CB880:
@@ -922,13 +922,13 @@ lbl_801CB880:
 	.4byte 0
 	.4byte 0
 
-.global lbl_801CB88C
-lbl_801CB88C:
+.global __vt__13CVScriptParam
+__vt__13CVScriptParam:
 
 	# ROM: 0x1C798C
-	.4byte lbl_8060E008
+	.4byte __RTTI__13CVScriptParam
 	.4byte 0
-	.4byte lbl_8002BF78
+	.4byte __dt__13CVScriptParamFv
 
 .global lbl_801CB898
 lbl_801CB898:
@@ -941,29 +941,29 @@ lbl_801CB898:
 
 .section .sdata, "wa", @progbits
 
-.global lbl_8060DFF0
-lbl_8060DFF0:
+.global __RTTI__8CVScript
+__RTTI__8CVScript:
 
 	# ROM: 0x1EE1F0
 	.4byte lbl_801BA148
 	.4byte 0
 
-.global lbl_8060DFF8
-lbl_8060DFF8:
+.global __RTTI__15CVScriptElement
+__RTTI__15CVScriptElement:
 
 	# ROM: 0x1EE1F8
 	.4byte lbl_801BA158
 	.4byte lbl_801CB868
 
-.global lbl_8060E000
-lbl_8060E000:
+.global __RTTI__14CVScriptString
+__RTTI__14CVScriptString:
 
 	# ROM: 0x1EE200
 	.4byte lbl_801BA168
 	.4byte lbl_801CB880
 
-.global lbl_8060E008
-lbl_8060E008:
+.global __RTTI__13CVScriptParam
+__RTTI__13CVScriptParam:
 
 	# ROM: 0x1EE208
 	.4byte lbl_801BA178

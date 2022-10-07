@@ -2,6 +2,7 @@
 #define VSCRIPT_H
 
 #include "include/game/utils/VList.h"
+#include "include/game/utils/VScriptElement.h"
 #include "types.h"
 
 class CVScript {
@@ -10,9 +11,12 @@ class CVScript {
 
     public:
         CVScript();
+        virtual ~CVScript();
         bool LoadFromFile(char*);
         f32 GetParam(char*, int);
-        virtual ~CVScript();
+        void Release();
+        CVScriptElement* GetElement(char*);
+        void AddElement(CVScriptElement*);
 };
 
 #endif // VSCRIPT_H

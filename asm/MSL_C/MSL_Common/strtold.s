@@ -1574,8 +1574,8 @@ func_800BBA78:
 /* 800BBA88 000ACA08  38 21 00 E0 */	addi r1, r1, 0xe0
 /* 800BBA8C 000ACA0C  4E 80 00 20 */	blr
 
-.global func_800BBA90
-func_800BBA90:
+.global atof
+atof:
 /* 800BBA90 000ACA10  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800BBA94 000ACA14  7C 08 02 A6 */	mflr r0
 /* 800BBA98 000ACA18  3C 80 80 0C */	lis r4, lbl_800BA254@ha

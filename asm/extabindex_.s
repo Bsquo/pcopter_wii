@@ -1464,37 +1464,37 @@ lbl_8000CB00:
 	.4byte Render__7CVSceneFv
 	.4byte 0x00000070
 	.4byte lbl_80007BC0
-	.4byte func_8002BF34
+	.4byte __ct__13CVScriptParamFv
 	.4byte 0x00000044
 	.4byte lbl_80007BC8
-	.4byte lbl_8002BF78
+	.4byte __dt__13CVScriptParamFv
 	.4byte 0x00000058
 	.4byte lbl_80007BD0
-	.4byte func_8002BFD0
+	.4byte __ct__14CVScriptStringFv
 	.4byte 0x0000004C
 	.4byte lbl_80007BD8
-	.4byte lbl_8002C01C
+	.4byte __dt__14CVScriptStringFv
 	.4byte 0x00000068
 	.4byte lbl_80007C08
-	.4byte func_8002C084
+	.4byte __ct__15CVScriptElementFv
 	.4byte 0x0000006C
 	.4byte lbl_80007C10
-	.4byte lbl_8002C0F0
+	.4byte __dt__15CVScriptElementFv
 	.4byte 0x00000080
 	.4byte lbl_80007C68
-	.4byte func_8002C170
+	.4byte GetSize__15CVScriptElementFv
 	.4byte 0x00000048
 	.4byte lbl_80007C70
-	.4byte func_8002C1C0
+	.4byte AddParam__15CVScriptElementFf
 	.4byte 0x00000064
 	.4byte lbl_80007C78
-	.4byte func_8002C224
+	.4byte GetParam__15CVScriptElementFi
 	.4byte 0x00000038
 	.4byte lbl_80007C90
-	.4byte func_8002C25C
+	.4byte AddString__15CVScriptElementFPc
 	.4byte 0x00000074
 	.4byte lbl_80007C98
-	.4byte func_8002C2D0
+	.4byte GetString__15CVScriptElementFi
 	.4byte 0x00000038
 	.4byte lbl_80007CB0
 	.4byte __ct__8CVScriptFv
@@ -1503,16 +1503,16 @@ lbl_8000CB00:
 	.4byte __dt__8CVScriptFv
 	.4byte 0x0000006C
 	.4byte lbl_80007CD4
-	.4byte func_8002C3B8
+	.4byte GetElement__8CVScriptFPc
 	.4byte 0x0000006C
 	.4byte lbl_80007CDC
 	.4byte GetParam__8CVScriptFPci
 	.4byte 0x00000080
 	.4byte lbl_80007CE4
-	.4byte func_8002C4A8
+	.4byte GetString__8CVScriptFPci
 	.4byte 0x00000080
 	.4byte lbl_80007CEC
-	.4byte func_8002C528
+	.4byte AddElementFromString__8CVScriptFPc
 	.4byte 0x000003CC
 	.4byte lbl_80007CF4
 	.4byte LoadFromFile__8CVScriptFPc
@@ -4394,7 +4394,7 @@ lbl_80010138:
 	.4byte func_800BA69C
 	.4byte 0x000013F4
 	.4byte lbl_8000C4C8
-	.4byte func_800BBA90
+	.4byte atof
 	.4byte 0x00000084
 	.4byte lbl_8000C4D0
 	.4byte func_800BBB44

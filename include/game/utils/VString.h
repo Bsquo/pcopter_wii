@@ -5,10 +5,9 @@
 #include "types.h"
 
 class CVString {
-    private:
-        char* pString;
-
     public:
+        char* pString;
+        
         // __ct__8CVStringFv (0x800205b4)
         CVString();
         // __ct__8CVStringFPc (0x800205cc)

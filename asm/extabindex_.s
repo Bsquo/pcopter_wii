@@ -399,7 +399,7 @@ lbl_8000CB00:
 	.4byte lbl_800195BC
 	.4byte 0x00000058
 	.4byte lbl_80006C80
-	.4byte func_80019614
+	.4byte __ct__Q34nw4r3g3d6CameraFRCQ34nw4r3g3d6Camera
 	.4byte 0x00000030
 	.4byte lbl_80006C88
 	.4byte lbl_80019650
@@ -831,7 +831,7 @@ lbl_8000CB00:
 	.4byte __ml__8CVMatrixFRC6CVAxis
 	.4byte 0x00000098
 	.4byte lbl_80007380
-	.4byte func_800220F0
+	.4byte __ml__8CVMatrixFRC8CVVector
 	.4byte 0x000000F4
 	.4byte lbl_80007388
 	.4byte func_800221E4
@@ -1242,7 +1242,7 @@ lbl_8000CB00:
 	.4byte func_8002993C
 	.4byte 0x000000B4
 	.4byte lbl_80007928
-	.4byte func_800299F0
+	.4byte __as__Q34nw4r4math4VEC3FRCQ34nw4r4math4VEC3
 	.4byte 0x00000030
 	.4byte lbl_80007930
 	.4byte func_80029A3C
@@ -1911,43 +1911,43 @@ lbl_8000CB00:
 	.4byte Init__8CVCameraFffffP7CVActor8CVVector6CVFlagi
 	.4byte 0x00000160
 	.4byte lbl_800085B8
-	.4byte func_800319E8
+	.4byte Init__8CVCameraF8CVVectorP7CVActor8CVVector6CVFlagi
 	.4byte 0x00000088
 	.4byte lbl_800085C0
-	.4byte func_80031A70
+	.4byte Init__8CVCameraFi
 	.4byte 0x0000008C
 	.4byte lbl_800085C8
-	.4byte func_80031AFC
+	.4byte CalcTargetPos__8CVCameraFv
 	.4byte 0x00000104
 	.4byte lbl_800085E0
-	.4byte func_80031C00
+	.4byte Update__8CVCameraFi
 	.4byte 0x000002D4
 	.4byte lbl_800085E8
-	.4byte func_80031ED4
+	.4byte Set__8CVCameraFPQ34nw4r3g3d7ScnRooti
 	.4byte 0x0000011C
 	.4byte lbl_80008600
 	.4byte __opCQ34nw4r4math4VEC3__8CVVectorFv
 	.4byte 0x00000050
 	.4byte lbl_80008608
-	.4byte func_80032040
+	.4byte __ct__Q44nw4r3g3d6Camera11PostureInfoFv
 	.4byte 0x00000044
 	.4byte lbl_80008610
 	.4byte func_80032084
 	.4byte 0x000000EC
 	.4byte lbl_80008618
-	.4byte func_80032170
+	.4byte AddCamera__11CVCameraMgrFffffP7CVActor8CVVector6CVFlag
 	.4byte 0x000000DC
 	.4byte lbl_80008640
-	.4byte func_8003224C
+	.4byte AddCamera__11CVCameraMgrF8CVVectorP7CVActor8CVVector6CVFlag
 	.4byte 0x000000CC
 	.4byte lbl_80008668
-	.4byte func_80032320
+	.4byte Update__11CVCameraMgrFi
 	.4byte 0x00000088
 	.4byte lbl_80008690
-	.4byte func_800323A8
+	.4byte Set__11CVCameraMgrFPQ34nw4r3g3d7ScnRootii
 	.4byte 0x00000050
 	.4byte lbl_80008698
-	.4byte lbl_800323F8
+	.4byte __dt__8CVCameraFv
 	.4byte 0x00000068
 	.4byte lbl_800086A0
 	.4byte func_80032460

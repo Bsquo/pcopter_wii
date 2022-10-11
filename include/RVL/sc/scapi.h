@@ -8,6 +8,7 @@ extern "C" {
 #endif
 
 u8 SCGetSoundMode();
+u8 SCGetAspectRatio();
 
 #ifdef __cplusplus
 }

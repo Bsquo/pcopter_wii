@@ -53,7 +53,7 @@ Init__8CVCameraFffffP7CVActor8CVVector6CVFlagi:
 /* 80031940 000228C0  38 61 00 20 */	addi r3, r1, 0x20
 /* 80031944 000228C4  38 81 00 38 */	addi r4, r1, 0x38
 /* 80031948 000228C8  38 BB 00 28 */	addi r5, r27, 0x28
-/* 8003194C 000228CC  4B FF 07 A5 */	bl func_800220F0
+/* 8003194C 000228CC  4B FF 07 A5 */	bl __ml__8CVMatrixFRC8CVVector
 /* 80031950 000228D0  38 7B 00 28 */	addi r3, r27, 0x28
 /* 80031954 000228D4  38 81 00 20 */	addi r4, r1, 0x20
 /* 80031958 000228D8  4B FE 88 C1 */	bl __as__8CVVectorFRC8CVVector
@@ -63,13 +63,13 @@ Init__8CVCameraFffffP7CVActor8CVVector6CVFlagi:
 /* 80031968 000228E8  38 61 00 14 */	addi r3, r1, 0x14
 /* 8003196C 000228EC  38 81 00 38 */	addi r4, r1, 0x38
 /* 80031970 000228F0  38 BB 00 28 */	addi r5, r27, 0x28
-/* 80031974 000228F4  4B FF 07 7D */	bl func_800220F0
+/* 80031974 000228F4  4B FF 07 7D */	bl __ml__8CVMatrixFRC8CVVector
 /* 80031978 000228F8  38 7B 00 28 */	addi r3, r27, 0x28
 /* 8003197C 000228FC  38 81 00 14 */	addi r4, r1, 0x14
 /* 80031980 00022900  4B FE 88 99 */	bl __as__8CVVectorFRC8CVVector
 /* 80031984 00022904  7F 64 DB 78 */	mr r4, r27
 /* 80031988 00022908  38 61 00 08 */	addi r3, r1, 0x8
-/* 8003198C 0002290C  48 00 01 71 */	bl func_80031AFC
+/* 8003198C 0002290C  48 00 01 71 */	bl CalcTargetPos__8CVCameraFv
 /* 80031990 00022910  38 7B 00 34 */	addi r3, r27, 0x34
 /* 80031994 00022914  38 81 00 08 */	addi r4, r1, 0x8
 /* 80031998 00022918  4B FE 88 81 */	bl __as__8CVVectorFRC8CVVector
@@ -94,8 +94,8 @@ lbl_800319B0:
 /* 800319E0 00022960  38 21 00 D0 */	addi r1, r1, 0xd0
 /* 800319E4 00022964  4E 80 00 20 */	blr
 
-.global func_800319E8
-func_800319E8:
+.global Init__8CVCameraF8CVVectorP7CVActor8CVVector6CVFlagi
+Init__8CVCameraF8CVVectorP7CVActor8CVVector6CVFlagi:
 /* 800319E8 00022968  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800319EC 0002296C  7C 08 02 A6 */	mflr r0
 /* 800319F0 00022970  90 01 00 34 */	stw r0, 0x34(r1)
@@ -116,7 +116,7 @@ func_800319E8:
 /* 80031A2C 000229AC  4B FF DF 69 */	bl __as__6CVFlagFRC6CVFlag
 /* 80031A30 000229B0  7F 64 DB 78 */	mr r4, r27
 /* 80031A34 000229B4  38 61 00 08 */	addi r3, r1, 0x8
-/* 80031A38 000229B8  48 00 00 C5 */	bl func_80031AFC
+/* 80031A38 000229B8  48 00 00 C5 */	bl CalcTargetPos__8CVCameraFv
 /* 80031A3C 000229BC  38 7B 00 34 */	addi r3, r27, 0x34
 /* 80031A40 000229C0  38 81 00 08 */	addi r4, r1, 0x8
 /* 80031A44 000229C4  4B FE 87 D5 */	bl __as__8CVVectorFRC8CVVector
@@ -132,8 +132,8 @@ lbl_80031A5C:
 /* 80031A68 000229E8  38 21 00 30 */	addi r1, r1, 0x30
 /* 80031A6C 000229EC  4E 80 00 20 */	blr
 
-.global func_80031A70
-func_80031A70:
+.global Init__8CVCameraFi
+Init__8CVCameraFi:
 /* 80031A70 000229F0  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80031A74 000229F4  7C 08 02 A6 */	mflr r0
 /* 80031A78 000229F8  90 01 00 34 */	stw r0, 0x34(r1)
@@ -170,8 +170,8 @@ func_80031A70:
 /* 80031AF4 00022A74  38 21 00 30 */	addi r1, r1, 0x30
 /* 80031AF8 00022A78  4E 80 00 20 */	blr
 
-.global func_80031AFC
-func_80031AFC:
+.global CalcTargetPos__8CVCameraFv
+CalcTargetPos__8CVCameraFv:
 /* 80031AFC 00022A7C  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 80031B00 00022A80  7C 08 02 A6 */	mflr r0
 /* 80031B04 00022A84  90 01 00 74 */	stw r0, 0x74(r1)
@@ -201,7 +201,7 @@ func_80031AFC:
 /* 80031B64 00022AE4  38 61 00 14 */	addi r3, r1, 0x14
 /* 80031B68 00022AE8  38 81 00 20 */	addi r4, r1, 0x20
 /* 80031B6C 00022AEC  38 BF 00 28 */	addi r5, r31, 0x28
-/* 80031B70 00022AF0  4B FF 05 81 */	bl func_800220F0
+/* 80031B70 00022AF0  4B FF 05 81 */	bl __ml__8CVMatrixFRC8CVVector
 /* 80031B74 00022AF4  38 7F 00 34 */	addi r3, r31, 0x34
 /* 80031B78 00022AF8  38 81 00 14 */	addi r4, r1, 0x14
 /* 80031B7C 00022AFC  4B FE 86 9D */	bl __as__8CVVectorFRC8CVVector
@@ -243,8 +243,8 @@ func_80031BDC:
 /* 80031BF8 00022B78  38 21 00 70 */	addi r1, r1, 0x70
 /* 80031BFC 00022B7C  4E 80 00 20 */	blr
 
-.global func_80031C00
-func_80031C00:
+.global Update__8CVCameraFi
+Update__8CVCameraFi:
 /* 80031C00 00022B80  94 21 FE E0 */	stwu r1, -0x120(r1)
 /* 80031C04 00022B84  7C 08 02 A6 */	mflr r0
 /* 80031C08 00022B88  90 01 01 24 */	stw r0, 0x124(r1)
@@ -265,7 +265,7 @@ func_80031C00:
 /* 80031C44 00022BC4  41 82 02 64 */	beq func_80031EA8
 /* 80031C48 00022BC8  7F E4 FB 78 */	mr r4, r31
 /* 80031C4C 00022BCC  38 61 00 B0 */	addi r3, r1, 0xb0
-/* 80031C50 00022BD0  4B FF FE AD */	bl func_80031AFC
+/* 80031C50 00022BD0  4B FF FE AD */	bl CalcTargetPos__8CVCameraFv
 /* 80031C54 00022BD4  38 7F 00 14 */	addi r3, r31, 0x14
 /* 80031C58 00022BD8  38 80 00 02 */	li r4, 0x2
 /* 80031C5C 00022BDC  4B FF 4B 99 */	bl Check__6CVFlagFUs
@@ -445,8 +445,8 @@ func_80031EA8:
 /* 80031ECC 00022E4C  38 21 01 20 */	addi r1, r1, 0x120
 /* 80031ED0 00022E50  4E 80 00 20 */	blr
 
-.global func_80031ED4
-func_80031ED4:
+.global Set__8CVCameraFPQ34nw4r3g3d7ScnRooti
+Set__8CVCameraFPQ34nw4r3g3d7ScnRooti:
 /* 80031ED4 00022E54  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 80031ED8 00022E58  7C 08 02 A6 */	mflr r0
 /* 80031EDC 00022E5C  90 01 00 74 */	stw r0, 0x74(r1)
@@ -457,14 +457,14 @@ func_80031ED4:
 /* 80031EF0 00022E70  93 A1 00 64 */	stw r29, 0x64(r1)
 /* 80031EF4 00022E74  7C 7D 1B 78 */	mr r29, r3
 /* 80031EF8 00022E78  38 61 00 28 */	addi r3, r1, 0x28
-/* 80031EFC 00022E7C  48 00 01 45 */	bl func_80032040
+/* 80031EFC 00022E7C  48 00 01 45 */	bl __ct__Q44nw4r3g3d6Camera11PostureInfoFv
 /* 80031F00 00022E80  7F C3 F3 78 */	mr r3, r30
 /* 80031F04 00022E84  7F E4 FB 78 */	mr r4, r31
-/* 80031F08 00022E88  48 17 D0 E1 */	bl func_801AEFE8
+/* 80031F08 00022E88  48 17 D0 E1 */	bl GetCamera__Q34nw4r3g3d7ScnRootFi
 /* 80031F0C 00022E8C  90 61 00 08 */	stw r3, 0x8(r1)
 /* 80031F10 00022E90  38 61 00 0C */	addi r3, r1, 0xc
 /* 80031F14 00022E94  38 81 00 08 */	addi r4, r1, 0x8
-/* 80031F18 00022E98  4B FE 76 FD */	bl func_80019614
+/* 80031F18 00022E98  4B FE 76 FD */	bl __ct__Q34nw4r3g3d6CameraFRCQ34nw4r3g3d6Camera
 /* 80031F1C 00022E9C  38 00 00 02 */	li r0, 0x2
 /* 80031F20 00022EA0  90 01 00 28 */	stw r0, 0x28(r1)
 /* 80031F24 00022EA4  80 9D 00 40 */	lwz r4, 0x40(r29)
@@ -485,17 +485,17 @@ func_80031F4C:
 /* 80031F50 00022ED0  48 00 00 A1 */	bl __opCQ34nw4r4math4VEC3__8CVVectorFv
 /* 80031F54 00022ED4  38 61 00 38 */	addi r3, r1, 0x38
 /* 80031F58 00022ED8  38 81 00 1C */	addi r4, r1, 0x1c
-/* 80031F5C 00022EDC  4B FF 7A 95 */	bl func_800299F0
+/* 80031F5C 00022EDC  4B FF 7A 95 */	bl __as__Q34nw4r4math4VEC3FRCQ34nw4r4math4VEC3
 /* 80031F60 00022EE0  C0 02 82 30 */	lfs f0, lbl_8060FA50@sda21(r2)
 /* 80031F64 00022EE4  38 61 00 0C */	addi r3, r1, 0xc
 /* 80031F68 00022EE8  D0 01 00 50 */	stfs f0, 0x50(r1)
 /* 80031F6C 00022EEC  C0 3D 00 1C */	lfs f1, 0x1c(r29)
 /* 80031F70 00022EF0  C0 5D 00 20 */	lfs f2, 0x20(r29)
 /* 80031F74 00022EF4  C0 7D 00 24 */	lfs f3, 0x24(r29)
-/* 80031F78 00022EF8  48 17 84 19 */	bl func_801AA390
+/* 80031F78 00022EF8  48 17 84 19 */	bl SetPosition__Q34nw4r3g3d6CameraFfff
 /* 80031F7C 00022EFC  38 61 00 0C */	addi r3, r1, 0xc
 /* 80031F80 00022F00  38 81 00 28 */	addi r4, r1, 0x28
-/* 80031F84 00022F04  48 17 84 99 */	bl func_801AA41C
+/* 80031F84 00022F04  48 17 84 99 */	bl SetPosture__Q34nw4r3g3d6CameraFRCQ44nw4r3g3d6Camera11PostureInfo
 /* 80031F88 00022F08  38 7D 00 14 */	addi r3, r29, 0x14
 /* 80031F8C 00022F0C  38 80 00 03 */	li r4, 0x3
 /* 80031F90 00022F10  4B FF 48 65 */	bl Check__6CVFlagFUs
@@ -506,16 +506,16 @@ func_80031F4C:
 /* 80031FA4 00022F24  C0 5D 00 60 */	lfs f2, 0x60(r29)
 /* 80031FA8 00022F28  C0 62 82 48 */	lfs f3, lbl_8060FA68@sda21(r2)
 /* 80031FAC 00022F2C  C0 82 82 4C */	lfs f4, lbl_8060FA6C@sda21(r2)
-/* 80031FB0 00022F30  48 17 86 8D */	bl func_801AA63C
+/* 80031FB0 00022F30  48 17 86 8D */	bl SetPerspective__Q34nw4r3g3d6CameraFffff
 lbl_80031FB4:
 /* 80031FB4 00022F34  38 61 00 0C */	addi r3, r1, 0xc
-/* 80031FB8 00022F38  48 17 8A E1 */	bl func_801AAA98
+/* 80031FB8 00022F38  48 17 8A E1 */	bl GXSetViewport__Q34nw4r3g3d6CameraCFv
 /* 80031FBC 00022F3C  38 61 00 0C */	addi r3, r1, 0xc
-/* 80031FC0 00022F40  48 17 8B 5D */	bl func_801AAB1C
+/* 80031FC0 00022F40  48 17 8B 5D */	bl GXSetProjection__Q34nw4r3g3d6CameraCFv
 /* 80031FC4 00022F44  38 61 00 0C */	addi r3, r1, 0xc
-/* 80031FC8 00022F48  48 17 8C 1D */	bl func_801AABE4
+/* 80031FC8 00022F48  48 17 8C 1D */	bl GXSetScissor__Q34nw4r3g3d6CameraCFv
 /* 80031FCC 00022F4C  38 61 00 0C */	addi r3, r1, 0xc
-/* 80031FD0 00022F50  48 17 8C 39 */	bl func_801AAC08
+/* 80031FD0 00022F50  48 17 8C 39 */	bl GXSetScissorBoxOffset__Q34nw4r3g3d6CameraCFv
 /* 80031FD4 00022F54  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 80031FD8 00022F58  83 E1 00 6C */	lwz r31, 0x6c(r1)
 /* 80031FDC 00022F5C  83 C1 00 68 */	lwz r30, 0x68(r1)
@@ -533,7 +533,7 @@ __opCQ34nw4r4math4VEC3__8CVVectorFv:
 /* 80032000 00022F80  7C 9F 23 78 */	mr r31, r4
 /* 80032004 00022F84  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80032008 00022F88  7C 7E 1B 78 */	mr r30, r3
-/* 8003200C 00022F8C  4B FE C7 6D */	bl func_8001E778
+/* 8003200C 00022F8C  4B FE C7 6D */	bl __ct__Q34nw4r4math4VEC3Fv
 /* 80032010 00022F90  C0 1F 00 00 */	lfs f0, 0x0(r31)
 /* 80032014 00022F94  D0 1E 00 00 */	stfs f0, 0x0(r30)
 /* 80032018 00022F98  C0 1F 00 04 */	lfs f0, 0x4(r31)
@@ -547,19 +547,19 @@ __opCQ34nw4r4math4VEC3__8CVVectorFv:
 /* 80032038 00022FB8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8003203C 00022FBC  4E 80 00 20 */	blr
 
-.global func_80032040
-func_80032040:
+.global __ct__Q44nw4r3g3d6Camera11PostureInfoFv
+__ct__Q44nw4r3g3d6Camera11PostureInfoFv:
 /* 80032040 00022FC0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80032044 00022FC4  7C 08 02 A6 */	mflr r0
 /* 80032048 00022FC8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8003204C 00022FCC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80032050 00022FD0  7C 7F 1B 78 */	mr r31, r3
 /* 80032054 00022FD4  38 63 00 04 */	addi r3, r3, 0x4
-/* 80032058 00022FD8  4B FE C7 21 */	bl func_8001E778
+/* 80032058 00022FD8  4B FE C7 21 */	bl __ct__Q34nw4r4math4VEC3Fv
 /* 8003205C 00022FDC  38 7F 00 10 */	addi r3, r31, 0x10
-/* 80032060 00022FE0  4B FE C7 19 */	bl func_8001E778
+/* 80032060 00022FE0  4B FE C7 19 */	bl __ct__Q34nw4r4math4VEC3Fv
 /* 80032064 00022FE4  38 7F 00 1C */	addi r3, r31, 0x1c
-/* 80032068 00022FE8  4B FE C7 11 */	bl func_8001E778
+/* 80032068 00022FE8  4B FE C7 11 */	bl __ct__Q34nw4r4math4VEC3Fv
 /* 8003206C 00022FEC  7F E3 FB 78 */	mr r3, r31
 /* 80032070 00022FF0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80032074 00022FF4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -573,7 +573,7 @@ func_80032084:
 /* 80032088 00023008  7C 08 02 A6 */	mflr r0
 /* 8003208C 0002300C  90 01 00 74 */	stw r0, 0x74(r1)
 /* 80032090 00023010  39 61 00 70 */	addi r11, r1, 0x70
-/* 80032094 00023014  48 08 0F 89 */	bl func_800B301C
+/* 80032094 00023014  48 08 0F 89 */	bl _savefpr_26
 /* 80032098 00023018  BF 61 00 2C */	stmw r27, 0x2c(r1)
 /* 8003209C 0002301C  FF 40 08 90 */	fmr f26, f1
 /* 800320A0 00023020  7C 7B 1B 78 */	mr r27, r3
@@ -631,13 +631,13 @@ lbl_80032150:
 /* 80032168 000230E8  38 21 00 70 */	addi r1, r1, 0x70
 /* 8003216C 000230EC  4E 80 00 20 */	blr
 
-.global func_80032170
-func_80032170:
+.global AddCamera__11CVCameraMgrFffffP7CVActor8CVVector6CVFlag
+AddCamera__11CVCameraMgrFffffP7CVActor8CVVector6CVFlag:
 /* 80032170 000230F0  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80032174 000230F4  7C 08 02 A6 */	mflr r0
 /* 80032178 000230F8  90 01 00 64 */	stw r0, 0x64(r1)
 /* 8003217C 000230FC  39 61 00 60 */	addi r11, r1, 0x60
-/* 80032180 00023100  48 08 0E A5 */	bl func_800B3024
+/* 80032180 00023100  48 08 0E A5 */	bl _savefpr_28
 /* 80032184 00023104  BF 61 00 2C */	stmw r27, 0x2c(r1)
 /* 80032188 00023108  FF 80 08 90 */	fmr f28, f1
 /* 8003218C 0002310C  7C 7B 1B 78 */	mr r27, r3
@@ -684,15 +684,15 @@ lbl_800321C0:
 lbl_8003222C:
 /* 8003222C 000231AC  39 61 00 60 */	addi r11, r1, 0x60
 /* 80032230 000231B0  7F E3 FB 78 */	mr r3, r31
-/* 80032234 000231B4  48 08 0E 3D */	bl func_800B3070
+/* 80032234 000231B4  48 08 0E 3D */	bl _restfpr_28
 /* 80032238 000231B8  BB 61 00 2C */	lmw r27, 0x2c(r1)
 /* 8003223C 000231BC  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80032240 000231C0  7C 08 03 A6 */	mtlr r0
 /* 80032244 000231C4  38 21 00 60 */	addi r1, r1, 0x60
 /* 80032248 000231C8  4E 80 00 20 */	blr
 
-.global func_8003224C
-func_8003224C:
+.global AddCamera__11CVCameraMgrF8CVVectorP7CVActor8CVVector6CVFlag
+AddCamera__11CVCameraMgrF8CVVectorP7CVActor8CVVector6CVFlag:
 /* 8003224C 000231CC  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80032250 000231D0  7C 08 02 A6 */	mflr r0
 /* 80032254 000231D4  90 01 00 44 */	stw r0, 0x44(r1)
@@ -732,7 +732,7 @@ lbl_80032288:
 /* 800322D8 00023258  91 41 00 1C */	stw r10, 0x1c(r1)
 /* 800322DC 0002325C  91 21 00 20 */	stw r9, 0x20(r1)
 /* 800322E0 00023260  90 01 00 24 */	stw r0, 0x24(r1)
-/* 800322E4 00023264  4B FF F7 05 */	bl func_800319E8
+/* 800322E4 00023264  4B FF F7 05 */	bl Init__8CVCameraF8CVVectorP7CVActor8CVVector6CVFlagi
 /* 800322E8 00023268  38 61 00 08 */	addi r3, r1, 0x8
 /* 800322EC 0002326C  38 80 FF FF */	li r4, -0x1
 /* 800322F0 00023270  4B FF 44 89 */	bl __dt__6CVFlagFv
@@ -747,16 +747,16 @@ lbl_80032300:
 /* 80032310 00023290  38 21 00 40 */	addi r1, r1, 0x40
 /* 80032314 00023294  4E 80 00 20 */	blr
 
-.global func_80032318
-func_80032318:
+.global GetCamera__11CVCameraMgrFi
+GetCamera__11CVCameraMgrFi:
 /* 80032318 00023298  4B FF 47 60 */	b GetElement__6CVListFi
 
-.global func_8003231C
-func_8003231C:
+.global GetStart__11CVCameraMgrFv
+GetStart__11CVCameraMgrFv:
 /* 8003231C 0002329C  4B FF 47 4C */	b GetStart__6CVListFv
 
-.global func_80032320
-func_80032320:
+.global Update__11CVCameraMgrFi
+Update__11CVCameraMgrFi:
 /* 80032320 000232A0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80032324 000232A4  7C 08 02 A6 */	mflr r0
 /* 80032328 000232A8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -767,7 +767,7 @@ func_80032320:
 /* 8003233C 000232BC  7C 9D 23 78 */	mr r29, r4
 /* 80032340 000232C0  93 81 00 10 */	stw r28, 0x10(r1)
 /* 80032344 000232C4  7C 7C 1B 78 */	mr r28, r3
-/* 80032348 000232C8  4B FF FF D5 */	bl func_8003231C
+/* 80032348 000232C8  4B FF FF D5 */	bl GetStart__11CVCameraMgrFv
 /* 8003234C 000232CC  7C 7E 1B 78 */	mr r30, r3
 /* 80032350 000232D0  48 00 00 30 */	b func_80032380
 lbl_80032354:
@@ -780,7 +780,7 @@ lbl_80032354:
 /* 8003236C 000232EC  41 82 00 08 */	beq lbl_80032374
 /* 80032370 000232F0  38 80 00 01 */	li r4, 0x1
 lbl_80032374:
-/* 80032374 000232F4  4B FF F8 8D */	bl func_80031C00
+/* 80032374 000232F4  4B FF F8 8D */	bl Update__8CVCameraFi
 /* 80032378 000232F8  83 DE 00 0C */	lwz r30, 0xc(r30)
 /* 8003237C 000232FC  3B FF 00 01 */	addi r31, r31, 0x1
 
@@ -797,8 +797,8 @@ func_80032380:
 /* 800323A0 00023320  38 21 00 20 */	addi r1, r1, 0x20
 /* 800323A4 00023324  4E 80 00 20 */	blr
 
-.global func_800323A8
-func_800323A8:
+.global Set__11CVCameraMgrFPQ34nw4r3g3d7ScnRootii
+Set__11CVCameraMgrFPQ34nw4r3g3d7ScnRootii:
 /* 800323A8 00023328  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800323AC 0002332C  7C 08 02 A6 */	mflr r0
 /* 800323B0 00023330  90 01 00 14 */	stw r0, 0x14(r1)
@@ -807,12 +807,12 @@ func_800323A8:
 /* 800323BC 0002333C  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 800323C0 00023340  7C 9E 23 78 */	mr r30, r4
 /* 800323C4 00023344  7C C4 33 78 */	mr r4, r6
-/* 800323C8 00023348  4B FF FF 51 */	bl func_80032318
+/* 800323C8 00023348  4B FF FF 51 */	bl GetCamera__11CVCameraMgrFi
 /* 800323CC 0002334C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800323D0 00023350  41 82 00 10 */	beq lbl_800323E0
 /* 800323D4 00023354  7F C4 F3 78 */	mr r4, r30
 /* 800323D8 00023358  7F E5 FB 78 */	mr r5, r31
-/* 800323DC 0002335C  4B FF FA F9 */	bl func_80031ED4
+/* 800323DC 0002335C  4B FF FA F9 */	bl Set__8CVCameraFPQ34nw4r3g3d7ScnRooti
 lbl_800323E0:
 /* 800323E0 00023360  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800323E4 00023364  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -821,8 +821,8 @@ lbl_800323E0:
 /* 800323F0 00023370  38 21 00 10 */	addi r1, r1, 0x10
 /* 800323F4 00023374  4E 80 00 20 */	blr
 
-.global lbl_800323F8
-lbl_800323F8:
+.global __dt__8CVCameraFv
+__dt__8CVCameraFv:
 /* 800323F8 00023378  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800323FC 0002337C  7C 08 02 A6 */	mflr r0
 /* 80032400 00023380  2C 03 00 00 */	cmpwi r3, 0x0
@@ -857,9 +857,9 @@ lbl_80032444:
 __vt__8CVCamera:
 
 	# ROM: 0x1C7A18
-	.4byte lbl_8060E038
+	.4byte __RTTI__8CVCamera
 	.4byte 0
-	.4byte lbl_800323F8
+	.4byte __dt__8CVCameraFv
 
 .global lbl_801CB924
 lbl_801CB924:
@@ -871,9 +871,59 @@ lbl_801CB924:
 
 .section .sdata, "wa", @progbits
 
-.global lbl_8060E038
-lbl_8060E038:
+.global __RTTI__8CVCamera
+__RTTI__8CVCamera:
 
 	# ROM: 0x1EE238
 	.4byte lbl_801BA448
 	.4byte lbl_801CB924
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_8060FA50
+lbl_8060FA50:
+
+	# ROM: 0x1EF110
+	.4byte 0
+
+.global lbl_8060FA54
+lbl_8060FA54:
+
+	# ROM: 0x1EF114
+	.4byte 0x3F800000
+
+.global lbl_8060FA58
+lbl_8060FA58:
+
+	# ROM: 0x1EF118
+	.4byte 0x3FB6DB6E
+
+.global lbl_8060FA5C
+lbl_8060FA5C:
+
+	# ROM: 0x1EF11C
+	.4byte 0x42700000
+
+.global lbl_8060FA60
+lbl_8060FA60:
+
+	# ROM: 0x1EF120
+	.4byte 0x3FAAAAAB
+
+.global lbl_8060FA64
+lbl_8060FA64:
+
+	# ROM: 0x1EF124
+	.4byte 0x3DCCCCCD
+
+.global lbl_8060FA68
+lbl_8060FA68:
+
+	# ROM: 0x1EF128
+	.4byte 0x3C23D70A
+
+.global lbl_8060FA6C
+lbl_8060FA6C:
+
+	# ROM: 0x1EF12C
+	.4byte 0x42C80000

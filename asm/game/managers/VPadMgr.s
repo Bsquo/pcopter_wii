@@ -1585,54 +1585,6 @@ lbl_8003378C:
 
 .section .sdata2, "wa", @progbits
 
-.global lbl_8060FA50
-lbl_8060FA50:
-
-	# ROM: 0x1EF110
-	.4byte 0
-
-.global lbl_8060FA54
-lbl_8060FA54:
-
-	# ROM: 0x1EF114
-	.4byte 0x3F800000
-
-.global lbl_8060FA58
-lbl_8060FA58:
-
-	# ROM: 0x1EF118
-	.4byte 0x3FB6DB6E
-
-.global lbl_8060FA5C
-lbl_8060FA5C:
-
-	# ROM: 0x1EF11C
-	.4byte 0x42700000
-
-.global lbl_8060FA60
-lbl_8060FA60:
-
-	# ROM: 0x1EF120
-	.4byte 0x3FAAAAAB
-
-.global lbl_8060FA64
-lbl_8060FA64:
-
-	# ROM: 0x1EF124
-	.4byte 0x3DCCCCCD
-
-.global lbl_8060FA68
-lbl_8060FA68:
-
-	# ROM: 0x1EF128
-	.4byte 0x3C23D70A
-
-.global lbl_8060FA6C
-lbl_8060FA6C:
-
-	# ROM: 0x1EF12C
-	.4byte 0x42C80000
-
 .global lbl_8060FA70
 lbl_8060FA70:
 

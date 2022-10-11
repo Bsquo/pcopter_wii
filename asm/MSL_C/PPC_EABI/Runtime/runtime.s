@@ -45,13 +45,13 @@ func_800B3010:
 /* 800B3014 000A3F94  DB 0B FF C0 */	stfd f24, -0x40(r11)
 /* 800B3018 000A3F98  DB 2B FF C8 */	stfd f25, -0x38(r11)
 
-.global func_800B301C
-func_800B301C:
+.global _savefpr_26
+_savefpr_26:
 /* 800B301C 000A3F9C  DB 4B FF D0 */	stfd f26, -0x30(r11)
 /* 800B3020 000A3FA0  DB 6B FF D8 */	stfd f27, -0x28(r11)
 
-.global func_800B3024
-func_800B3024:
+.global _savefpr_28
+_savefpr_28:
 /* 800B3024 000A3FA4  DB 8B FF E0 */	stfd f28, -0x20(r11)
 /* 800B3028 000A3FA8  DB AB FF E8 */	stfd f29, -0x18(r11)
 /* 800B302C 000A3FAC  DB CB FF F0 */	stfd f30, -0x10(r11)
@@ -78,8 +78,8 @@ func_800B3068:
 /* 800B3068 000A3FE8  CB 4B FF D0 */	lfd f26, -0x30(r11)
 /* 800B306C 000A3FEC  CB 6B FF D8 */	lfd f27, -0x28(r11)
 
-.global func_800B3070
-func_800B3070:
+.global _restfpr_28
+_restfpr_28:
 /* 800B3070 000A3FF0  CB 8B FF E0 */	lfd f28, -0x20(r11)
 /* 800B3074 000A3FF4  CB AB FF E8 */	lfd f29, -0x18(r11)
 /* 800B3078 000A3FF8  CB CB FF F0 */	lfd f30, -0x10(r11)

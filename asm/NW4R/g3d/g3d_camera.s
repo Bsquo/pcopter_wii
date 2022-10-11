@@ -100,8 +100,8 @@ func_801AA274:
 lbl_801AA388:
 /* 801AA388 0019B308  38 21 00 20 */	addi r1, r1, 0x20
 /* 801AA38C 0019B30C  4E 80 00 20 */	blr
-.global func_801AA390
-func_801AA390:
+.global SetPosition__Q34nw4r3g3d6CameraFfff
+SetPosition__Q34nw4r3g3d6CameraFfff:
 /* 801AA390 0019B310  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 801AA394 0019B314  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801AA398 0019B318  4D 82 00 20 */	beqlr
@@ -141,8 +141,8 @@ func_801AA3EC:
 /* 801AA410 0019B390  C0 03 00 7C */	lfs f0, 0x7c(r3)
 /* 801AA414 0019B394  D0 04 00 08 */	stfs f0, 0x8(r4)
 /* 801AA418 0019B398  4E 80 00 20 */	blr
-.global func_801AA41C
-func_801AA41C:
+.global SetPosture__Q34nw4r3g3d6CameraFRCQ44nw4r3g3d6Camera11PostureInfo
+SetPosture__Q34nw4r3g3d6CameraFRCQ44nw4r3g3d6Camera11PostureInfo:
 /* 801AA41C 0019B39C  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 801AA420 0019B3A0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801AA424 0019B3A4  4D 82 00 20 */	beqlr
@@ -295,8 +295,8 @@ lbl_801AA600:
 /* 801AA630 0019B5B0  D0 03 00 A4 */	stfs f0, 0xa4(r3)
 /* 801AA634 0019B5B4  90 03 00 70 */	stw r0, 0x70(r3)
 /* 801AA638 0019B5B8  4E 80 00 20 */	blr
-.global func_801AA63C
-func_801AA63C:
+.global SetPerspective__Q34nw4r3g3d6CameraFffff
+SetPerspective__Q34nw4r3g3d6CameraFffff:
 /* 801AA63C 0019B5BC  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 801AA640 0019B5C0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801AA644 0019B5C4  4D 82 00 20 */	beqlr
@@ -614,8 +614,8 @@ lbl_801AAA80:
 /* 801AAA8C 0019BA0C  7C 08 03 A6 */	mtlr r0
 /* 801AAA90 0019BA10  38 21 00 10 */	addi r1, r1, 0x10
 /* 801AAA94 0019BA14  4E 80 00 20 */	blr
-.global func_801AAA98
-func_801AAA98:
+.global GXSetViewport__Q34nw4r3g3d6CameraCFv
+GXSetViewport__Q34nw4r3g3d6CameraCFv:
 /* 801AAA98 0019BA18  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801AAA9C 0019BA1C  7C 08 02 A6 */	mflr r0
 /* 801AAAA0 0019BA20  90 01 00 14 */	stw r0, 0x14(r1)
@@ -652,8 +652,8 @@ func_801AAB08:
 /* 801AAB10 0019BA90  7C 08 03 A6 */	mtlr r0
 /* 801AAB14 0019BA94  38 21 00 10 */	addi r1, r1, 0x10
 /* 801AAB18 0019BA98  4E 80 00 20 */	blr
-.global func_801AAB1C
-func_801AAB1C:
+.global GXSetProjection__Q34nw4r3g3d6CameraCFv
+GXSetProjection__Q34nw4r3g3d6CameraCFv:
 /* 801AAB1C 0019BA9C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801AAB20 0019BAA0  7C 08 02 A6 */	mflr r0
 /* 801AAB24 0019BAA4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -710,8 +710,8 @@ lbl_801AABD0:
 /* 801AABD8 0019BB58  7C 08 03 A6 */	mtlr r0
 /* 801AABDC 0019BB5C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801AABE0 0019BB60  4E 80 00 20 */	blr
-.global func_801AABE4
-func_801AABE4:
+.global GXSetScissor__Q34nw4r3g3d6CameraCFv
+GXSetScissor__Q34nw4r3g3d6CameraCFv:
 /* 801AABE4 0019BB64  80 C3 00 00 */	lwz r6, 0x0(r3)
 /* 801AABE8 0019BB68  2C 06 00 00 */	cmpwi r6, 0x0
 /* 801AABEC 0019BB6C  4D 82 00 20 */	beqlr
@@ -721,8 +721,8 @@ func_801AABE4:
 /* 801AABFC 0019BB7C  80 C6 01 00 */	lwz r6, 0x100(r6)
 /* 801AAC00 0019BB80  4B F0 72 40 */	b func_800B1E40
 /* 801AAC04 0019BB84  4E 80 00 20 */	blr
-.global func_801AAC08
-func_801AAC08:
+.global GXSetScissorBoxOffset__Q34nw4r3g3d6CameraCFv
+GXSetScissorBoxOffset__Q34nw4r3g3d6CameraCFv:
 /* 801AAC08 0019BB88  80 83 00 00 */	lwz r4, 0x0(r3)
 /* 801AAC0C 0019BB8C  2C 04 00 00 */	cmpwi r4, 0x0
 /* 801AAC10 0019BB90  4D 82 00 20 */	beqlr

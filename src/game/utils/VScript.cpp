@@ -104,16 +104,29 @@ void CVScript::AddElement(CVScriptElement* scriptElement) {
 }
 
 f32 CVScript::GetParam(char* label, int index) {
-    f32 param;
     CVScriptElement* scriptElement = reinterpret_cast<CVScriptElement*>(mList.GetStart());
     
     while (scriptElement != nullptr) {
         if (strcmp(scriptElement->mLabel, label) == false) {
-            return param = scriptElement->GetParam(index);
+            return scriptElement->GetParam(index);
         }
         else {
             scriptElement = reinterpret_cast<CVScriptElement*>(scriptElement->pNext);
         }
     }
     return 0.0f;
+}
+
+char* CVScript::GetString(char* label, int index) {
+    CVScriptElement* scriptElement = reinterpret_cast<CVScriptElement*>(mList.GetStart());
+    
+    while (scriptElement != nullptr) {
+        if (strcmp(scriptElement->mLabel, label) == false) {
+            return scriptElement->GetString(index);
+        }
+        else {
+            scriptElement = reinterpret_cast<CVScriptElement*>(scriptElement->pNext);
+        }
+    }
+    return nullptr;
 }

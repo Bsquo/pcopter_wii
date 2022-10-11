@@ -17,6 +17,7 @@ class CVScript {
         void Release();
         CVScriptElement* GetElement(char*);
         void AddElement(CVScriptElement*);
+        char* GetString(char*, int);
 };
 
 #endif // VSCRIPT_H

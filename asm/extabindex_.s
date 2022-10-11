@@ -1902,13 +1902,13 @@ lbl_8000CB00:
 	.4byte func_80031604
 	.4byte 0x00000074
 	.4byte lbl_80008568
-	.4byte func_80031678
+	.4byte __ct__8CVCameraFv
 	.4byte 0x000000B4
 	.4byte lbl_80008570
-	.4byte func_8003172C
+	.4byte Init__8CVCameraFffffffP7CVActor8CVVector6CVFlagi
 	.4byte 0x00000144
 	.4byte lbl_800085A0
-	.4byte func_80031888
+	.4byte Init__8CVCameraFffffP7CVActor8CVVector6CVFlagi
 	.4byte 0x00000160
 	.4byte lbl_800085B8
 	.4byte func_800319E8

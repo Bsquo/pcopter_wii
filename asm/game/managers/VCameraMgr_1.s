@@ -12,17 +12,17 @@ lbl_801BA448:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80031678
-func_80031678:
+.global __ct__8CVCameraFv
+__ct__8CVCameraFv:
 /* 80031678 000225F8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8003167C 000225FC  7C 08 02 A6 */	mflr r0
 /* 80031680 00022600  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80031684 00022604  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80031688 00022608  7C 7F 1B 78 */	mr r31, r3
 /* 8003168C 0002260C  4B FF 51 89 */	bl __ct__10CVListBaseFv
-/* 80031690 00022610  3C 80 80 1D */	lis r4, lbl_801CB918@ha
+/* 80031690 00022610  3C 80 80 1D */	lis r4, __vt__8CVCamera@ha
 /* 80031694 00022614  38 7F 00 14 */	addi r3, r31, 0x14
-/* 80031698 00022618  38 84 B9 18 */	addi r4, r4, lbl_801CB918@l
+/* 80031698 00022618  38 84 B9 18 */	addi r4, r4, __vt__8CVCamera@l
 /* 8003169C 0002261C  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 800316A0 00022620  4B FF 50 C1 */	bl __ct__6CVFlagFv
 /* 800316A4 00022624  38 7F 00 1C */	addi r3, r31, 0x1c
@@ -61,8 +61,8 @@ lbl_80031714:
 /* 80031724 000226A4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80031728 000226A8  4E 80 00 20 */	blr
 
-.global func_8003172C
-func_8003172C:
+.global Init__8CVCameraFffffffP7CVActor8CVVector6CVFlagi
+Init__8CVCameraFffffffP7CVActor8CVVector6CVFlagi:
 /* 8003172C 000226AC  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 80031730 000226B0  7C 08 02 A6 */	mflr r0
 /* 80031734 000226B4  90 01 00 94 */	stw r0, 0x94(r1)
@@ -110,7 +110,7 @@ func_8003172C:
 /* 800317DC 0002275C  38 A1 00 10 */	addi r5, r1, 0x10
 /* 800317E0 00022760  90 01 00 18 */	stw r0, 0x18(r1)
 /* 800317E4 00022764  38 C1 00 08 */	addi r6, r1, 0x8
-/* 800317E8 00022768  48 00 00 A1 */	bl func_80031888
+/* 800317E8 00022768  48 00 00 A1 */	bl Init__8CVCameraFffffP7CVActor8CVVector6CVFlagi
 /* 800317EC 0002276C  38 61 00 08 */	addi r3, r1, 0x8
 /* 800317F0 00022770  38 80 FF FF */	li r4, -0x1
 /* 800317F4 00022774  4B FF 4F 85 */	bl __dt__6CVFlagFv

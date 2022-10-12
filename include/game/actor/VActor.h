@@ -22,6 +22,11 @@ enum actor_type {
     BALLOON = 14
 };
 
+enum eActorFlags {
+    NOT_LIFTED = 1,     // Not lifted by Suction Cup
+    IS_LIFTED = 3       // Lifted by Suction Cup
+};
+
 class CVActor: public CVRigid {
     private:
         CVFlag mFlags;

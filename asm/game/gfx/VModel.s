@@ -1800,8 +1800,8 @@ func_80029638:
 func_8002963C:
 /* 8002963C 0001A5BC  4B FF FE CC */	b func_80029508
 
-.global func_80029640
-func_80029640:
+.global AddChild__7CVModelFP7CVSceneP7CVModelPc
+AddChild__7CVModelFP7CVSceneP7CVModelPc:
 /* 80029640 0001A5C0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80029644 0001A5C4  7C 08 02 A6 */	mflr r0
 /* 80029648 0001A5C8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2020,8 +2020,8 @@ lbl_80029920:
 /* 80029934 0001A8B4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80029938 0001A8B8  4E 80 00 20 */	blr
 
-.global func_8002993C
-func_8002993C:
+.global GetResNodePos__7CVModelFPcP8CVVector
+GetResNodePos__7CVModelFPcP8CVVector:
 /* 8002993C 0001A8BC  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80029940 0001A8C0  7C 08 02 A6 */	mflr r0
 /* 80029944 0001A8C4  90 01 00 34 */	stw r0, 0x34(r1)

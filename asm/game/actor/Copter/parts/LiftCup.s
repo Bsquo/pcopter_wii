@@ -7,18 +7,17 @@ lbl_801BD550:
 
 	# ROM: 0x1B9650
 	.asciz "LiftCup/lift_dist"
-	.byte 0x6C, 0x69
-	.4byte 0x6674006C
-	.4byte 0x69667400
-	.4byte 0x43757000
-	.4byte 0x43757000
+	.asciz "lift"
+	.asciz "lift"
+	.asciz "Cup"
+	.asciz "Cup"
 	.asciz "SE_NG_2"
 	.4byte 0
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8004E7FC
-func_8004E7FC:
+.global __ct__8CLiftCupFv
+__ct__8CLiftCupFv:
 /* 8004E7FC 0003F77C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004E800 0003F780  7C 08 02 A6 */	mflr r0
 /* 8004E804 0003F784  90 01 00 14 */	stw r0, 0x14(r1)
@@ -42,8 +41,8 @@ func_8004E7FC:
 /* 8004E84C 0003F7CC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004E850 0003F7D0  4E 80 00 20 */	blr
 
-.global func_8004E854
-func_8004E854:
+.global Init__8CLiftCupF10CVFilePathP7CVActor
+Init__8CLiftCupF10CVFilePathP7CVActor:
 /* 8004E854 0003F7D4  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8004E858 0003F7D8  7C 08 02 A6 */	mflr r0
 /* 8004E85C 0003F7DC  90 01 00 44 */	stw r0, 0x44(r1)
@@ -92,7 +91,7 @@ lbl_8004E8D0:
 /* 8004E904 0003F884  38 84 D5 50 */	addi r4, r4, lbl_801BD550@l
 /* 8004E908 0003F888  38 BD 00 10 */	addi r5, r29, 0x10
 /* 8004E90C 0003F88C  38 84 00 12 */	addi r4, r4, 0x12
-/* 8004E910 0003F890  4B FD B0 2D */	bl func_8002993C
+/* 8004E910 0003F890  4B FD B0 2D */	bl GetResNodePos__7CVModelFPcP8CVVector
 lbl_8004E914:
 /* 8004E914 0003F894  80 1D 00 04 */	lwz r0, 0x4(r29)
 /* 8004E918 0003F898  2C 00 00 00 */	cmpwi r0, 0x0
@@ -108,7 +107,7 @@ lbl_8004E914:
 /* 8004E940 0003F8C0  80 65 02 54 */	lwz r3, 0x254(r5)
 /* 8004E944 0003F8C4  7F E5 FB 78 */	mr r5, r31
 /* 8004E948 0003F8C8  38 C6 00 17 */	addi r6, r6, 0x17
-/* 8004E94C 0003F8CC  4B FD AC F5 */	bl func_80029640
+/* 8004E94C 0003F8CC  4B FD AC F5 */	bl AddChild__7CVModelFP7CVSceneP7CVModelPc
 lbl_8004E950:
 /* 8004E950 0003F8D0  38 61 00 14 */	addi r3, r1, 0x14
 /* 8004E954 0003F8D4  38 80 FF FF */	li r4, -0x1
@@ -122,8 +121,8 @@ lbl_8004E950:
 /* 8004E974 0003F8F4  38 21 00 40 */	addi r1, r1, 0x40
 /* 8004E978 0003F8F8  4E 80 00 20 */	blr
 
-.global func_8004E97C
-func_8004E97C:
+.global Calc__8CLiftCupFv
+Calc__8CLiftCupFv:
 /* 8004E97C 0003F8FC  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8004E980 0003F900  7C 08 02 A6 */	mflr r0
 /* 8004E984 0003F904  90 01 00 34 */	stw r0, 0x34(r1)
@@ -169,7 +168,7 @@ lbl_8004E9B0:
 /* 8004EA20 0003F9A0  41 82 00 78 */	beq func_8004EA98
 /* 8004EA24 0003F9A4  4B FC 6E ED */	bl GetInstance__11CScenaryMgrFv
 /* 8004EA28 0003F9A8  7F C4 F3 78 */	mr r4, r30
-/* 8004EA2C 0003F9AC  4B FF A1 A5 */	bl func_80048BD0
+/* 8004EA2C 0003F9AC  4B FF A1 A5 */	bl ForcePut__11CScenaryMgrFP11CActMovable
 /* 8004EA30 0003F9B0  80 7F 00 0C */	lwz r3, 0xc(r31)
 /* 8004EA34 0003F9B4  38 80 00 01 */	li r4, 0x1
 /* 8004EA38 0003F9B8  38 A0 00 01 */	li r5, 0x1
@@ -195,7 +194,7 @@ lbl_8004E9B0:
 /* 8004EA88 0003FA08  90 01 00 18 */	stw r0, 0x18(r1)
 /* 8004EA8C 0003FA0C  80 08 00 1C */	lwz r0, 0x1c(r8)
 /* 8004EA90 0003FA10  90 01 00 1C */	stw r0, 0x1c(r1)
-/* 8004EA94 0003FA14  48 00 03 19 */	bl func_8004EDAC
+/* 8004EA94 0003FA14  48 00 03 19 */	bl PutActor__8CLiftCupF8CVVector8CVVectori
 
 .global func_8004EA98
 func_8004EA98:
@@ -206,8 +205,8 @@ func_8004EA98:
 /* 8004EAA8 0003FA28  38 21 00 30 */	addi r1, r1, 0x30
 /* 8004EAAC 0003FA2C  4E 80 00 20 */	blr
 
-.global func_8004EAB0
-func_8004EAB0:
+.global SearchActor__8CLiftCupFi
+SearchActor__8CLiftCupFi:
 /* 8004EAB0 0003FA30  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 8004EAB4 0003FA34  7C 08 02 A6 */	mflr r0
 /* 8004EAB8 0003FA38  90 01 00 84 */	stw r0, 0x84(r1)
@@ -337,8 +336,8 @@ func_8004EC48:
 /* 8004EC80 0003FC00  38 21 00 80 */	addi r1, r1, 0x80
 /* 8004EC84 0003FC04  4E 80 00 20 */	blr
 
-.global func_8004EC88
-func_8004EC88:
+.global LiftActor__8CLiftCupFP7CVActor
+LiftActor__8CLiftCupFP7CVActor:
 /* 8004EC88 0003FC08  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8004EC8C 0003FC0C  7C 08 02 A6 */	mflr r0
 /* 8004EC90 0003FC10  2C 04 00 00 */	cmpwi r4, 0x0
@@ -383,7 +382,7 @@ lbl_8004ED1C:
 /* 8004ED1C 0003FC9C  93 FE 00 0C */	stw r31, 0xc(r30)
 /* 8004ED20 0003FCA0  7F E3 FB 78 */	mr r3, r31
 /* 8004ED24 0003FCA4  80 9E 00 04 */	lwz r4, 0x4(r30)
-/* 8004ED28 0003FCA8  48 00 83 DD */	bl func_80057104
+/* 8004ED28 0003FCA8  48 00 83 DD */	bl LiftUp__11CActMovableFP7CVActor
 /* 8004ED2C 0003FCAC  38 00 00 00 */	li r0, 0x0
 /* 8004ED30 0003FCB0  38 61 00 08 */	addi r3, r1, 0x8
 /* 8004ED34 0003FCB4  90 1E 00 20 */	stw r0, 0x20(r30)
@@ -420,8 +419,8 @@ func_8004ED94:
 /* 8004EDA4 0003FD24  38 21 00 20 */	addi r1, r1, 0x20
 /* 8004EDA8 0003FD28  4E 80 00 20 */	blr
 
-.global func_8004EDAC
-func_8004EDAC:
+.global PutActor__8CLiftCupF8CVVector8CVVectori
+PutActor__8CLiftCupF8CVVector8CVVectori:
 /* 8004EDAC 0003FD2C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8004EDB0 0003FD30  7C 08 02 A6 */	mflr r0
 /* 8004EDB4 0003FD34  2C 06 00 00 */	cmpwi r6, 0x0
@@ -453,7 +452,7 @@ lbl_8004EDDC:
 /* 8004EE18 0003FD98  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 8004EE1C 0003FD9C  90 01 00 1C */	stw r0, 0x1c(r1)
 /* 8004EE20 0003FDA0  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 8004EE24 0003FDA4  48 00 82 F5 */	bl func_80057118
+/* 8004EE24 0003FDA4  48 00 82 F5 */	bl PutOff__11CActMovableF8CVVector8CVVector
 /* 8004EE28 0003FDA8  38 00 00 00 */	li r0, 0x0
 /* 8004EE2C 0003FDAC  38 60 00 01 */	li r3, 0x1
 /* 8004EE30 0003FDB0  90 1F 00 0C */	stw r0, 0xc(r31)
@@ -469,8 +468,8 @@ func_8004EE3C:
 /* 8004EE48 0003FDC8  38 21 00 30 */	addi r1, r1, 0x30
 /* 8004EE4C 0003FDCC  4E 80 00 20 */	blr
 
-.global func_8004EE50
-func_8004EE50:
+.global ForcePut__8CLiftCupFv
+ForcePut__8CLiftCupFv:
 /* 8004EE50 0003FDD0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004EE54 0003FDD4  7C 08 02 A6 */	mflr r0
 /* 8004EE58 0003FDD8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -489,7 +488,7 @@ func_8004EE50:
 /* 8004EE8C 0003FE0C  38 C0 FF FF */	li r6, -0x1
 /* 8004EE90 0003FE10  38 84 00 24 */	addi r4, r4, 0x24
 /* 8004EE94 0003FE14  38 E0 00 00 */	li r7, 0x0
-/* 8004EE98 0003FE18  4B FD E5 0D */	bl func_8002D3A4
+/* 8004EE98 0003FE18  4B FD E5 0D */	bl StartSound__10CVSoundMgrFPciii
 lbl_8004EE9C:
 /* 8004EE9C 0003FE1C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8004EEA0 0003FE20  7C 08 03 A6 */	mtlr r0

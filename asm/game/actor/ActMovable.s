@@ -112,16 +112,16 @@ lbl_800570F0:
 /* 800570FC 0004807C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80057100 00048080  4E 80 00 20 */	blr
 
-.global func_80057104
-func_80057104:
+.global LiftUp__11CActMovableFP7CVActor
+LiftUp__11CActMovableFP7CVActor:
 /* 80057104 00048084  90 83 03 E0 */	stw r4, 0x3e0(r3)
 /* 80057108 00048088  38 80 00 03 */	li r4, 0x3
 /* 8005710C 0004808C  38 A0 00 01 */	li r5, 0x1
 /* 80057110 00048090  38 63 02 48 */	addi r3, r3, 0x248
 /* 80057114 00048094  4B FC F6 B0 */	b Set__6CVFlagFUsi
 
-.global func_80057118
-func_80057118:
+.global PutOff__11CActMovableF8CVVector8CVVector
+PutOff__11CActMovableF8CVVector8CVVector:
 /* 80057118 00048098  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8005711C 0004809C  7C 08 02 A6 */	mflr r0
 /* 80057120 000480A0  81 45 00 00 */	lwz r10, 0x0(r5)

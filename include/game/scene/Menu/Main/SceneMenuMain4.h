@@ -5,7 +5,7 @@
 
 // Each cheat corresponds to each option in this menu,
 // as well as in the "Cheat" category in "/PCopter/Config.txt"
-enum eFlags {
+enum eMenuMain4Flags {
 	HIDE_INFO,
 	RESET_CAM,
 	COLL_DRAW,

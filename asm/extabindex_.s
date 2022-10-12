@@ -1230,7 +1230,7 @@ lbl_8000CB00:
 	.4byte func_800295FC
 	.4byte 0x00000030
 	.4byte lbl_80007908
-	.4byte func_80029640
+	.4byte AddChild__7CVModelFP7CVSceneP7CVModelPc
 	.4byte 0x00000220
 	.4byte lbl_80007910
 	.4byte func_80029860
@@ -1239,7 +1239,7 @@ lbl_8000CB00:
 	.4byte func_800298A8
 	.4byte 0x00000094
 	.4byte lbl_80007920
-	.4byte func_8002993C
+	.4byte GetResNodePos__7CVModelFPcP8CVVector
 	.4byte 0x000000B4
 	.4byte lbl_80007928
 	.4byte __as__Q34nw4r4math4VEC3FRCQ34nw4r4math4VEC3
@@ -2895,25 +2895,25 @@ lbl_8000CB00:
 	.4byte __dt__10CAirBulletFv
 	.4byte 0x00000058
 	.4byte lbl_80009A84
-	.4byte func_8004E7FC
+	.4byte __ct__8CLiftCupFv
 	.4byte 0x00000058
 	.4byte lbl_80009A8C
-	.4byte func_8004E854
+	.4byte Init__8CLiftCupF10CVFilePathP7CVActor
 	.4byte 0x00000128
 	.4byte lbl_80009A94
-	.4byte func_8004E97C
+	.4byte Calc__8CLiftCupFv
 	.4byte 0x00000134
 	.4byte lbl_80009AAC
-	.4byte func_8004EAB0
+	.4byte SearchActor__8CLiftCupFi
 	.4byte 0x000001D8
 	.4byte lbl_80009AB4
-	.4byte func_8004EC88
+	.4byte LiftActor__8CLiftCupFP7CVActor
 	.4byte 0x00000124
 	.4byte lbl_80009ABC
-	.4byte func_8004EDAC
+	.4byte PutActor__8CLiftCupF8CVVector8CVVectori
 	.4byte 0x000000A4
 	.4byte lbl_80009AC4
-	.4byte func_8004EE50
+	.4byte ForcePut__8CLiftCupFv
 	.4byte 0x0000005C
 	.4byte lbl_80009ACC
 	.4byte __ct__20CSceneMenuSDataCheakFv
@@ -3147,7 +3147,7 @@ lbl_8000CB00:
 	.4byte lbl_800570C0
 	.4byte 0x00000044
 	.4byte lbl_80009F64
-	.4byte func_80057118
+	.4byte PutOff__11CActMovableF8CVVector8CVVector
 	.4byte 0x00000088
 	.4byte lbl_80009F6C
 	.4byte lbl_800571A0

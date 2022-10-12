@@ -700,8 +700,8 @@ func_8002D38C:
 /* 8002D39C 0001E31C  38 68 02 98 */	addi r3, r8, 0x298
 /* 8002D3A0 0001E320  4B FF F8 6C */	b func_8002CC0C
 
-.global func_8002D3A4
-func_8002D3A4:
+.global StartSound__10CVSoundMgrFPciii
+StartSound__10CVSoundMgrFPciii:
 /* 8002D3A4 0001E324  1C 05 00 28 */	mulli r0, r5, 0x28
 /* 8002D3A8 0001E328  7C 85 23 78 */	mr r5, r4
 /* 8002D3AC 0001E32C  38 83 01 8C */	addi r4, r3, 0x18c

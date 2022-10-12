@@ -5,7 +5,6 @@
 #include "include/game/actor/VActor.h"
 #include "types.h"
 
-// TODO: Fill this class properly
 class CLiftCup {
     public:
         UNK32 field_0x00;

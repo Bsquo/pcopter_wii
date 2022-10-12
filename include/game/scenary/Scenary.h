@@ -42,7 +42,6 @@ class CScenary {
         virtual bool InitTreasure();
         virtual void CalcExit(int);
         bool Release();
-        bool InitTreasure();
         void PopStar(int, CVVector, u32);
 };
 

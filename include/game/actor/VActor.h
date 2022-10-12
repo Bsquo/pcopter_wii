@@ -7,6 +7,7 @@
 #include "include/game/utils/VFilePath.h"
 #include "include/game/collision/VRigid.h"
 #include "include/game/actor/VActorNode.h"
+#include "include/game/gfx/VModel.h"
 #include "types.h"
 
 extern const f32 _53061; // 1.0
@@ -28,10 +29,10 @@ enum eActorFlags {
 };
 
 class CVActor: public CVRigid {
-    private:
+    public:
         CVFlag mFlags;
         int mActorType;
-        UNK_PTR mModel;                      // CVModel*
+        CVModel* pModel;
         CVList field_0x258;
         CVList field_0x268;
         CVActorNode* pActorNodes;            // ResNode objects (the bones an actor 3D model has)
@@ -42,7 +43,6 @@ class CVActor: public CVRigid {
         CVArea field_0x398;
         float R;                             // Gotten from CVArea::GetR()
 
-    public:
         CVActor();
         virtual ~CVActor();
 };

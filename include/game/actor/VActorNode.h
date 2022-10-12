@@ -8,7 +8,7 @@ extern const f32 _48066; // 0.0f
 extern const f32 _48067; // 1.0f
 
 class CVActorNode {
-    private:
+    public:
         CVFlag mFlags;
         u16 anim_state[4];
         u16 max_state;              // The maximum number a state can be equal to + 1
@@ -20,7 +20,6 @@ class CVActorNode {
         f32 anim_rate[4];
         f32 field_0x30;
         
-    public:
         CVActorNode();
         virtual ~CVActorNode();
         bool CheckAnimate();

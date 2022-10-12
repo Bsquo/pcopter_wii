@@ -10,7 +10,7 @@ class CActScnBase: public CVActor {
     public:
         CScenaryPos* field_0x3B4;
         CScenaryPos* field_0x3B8;
-        CVFlag mFlags;
+        CVFlag mActScnBaseFlags;
         s32 field_0x3C4;
         u32 field_0x3C8;
         CVVector field_0x3CC;

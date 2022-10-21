@@ -1398,7 +1398,7 @@ lbl_8000CB00:
 	.4byte func_8002AE8C
 	.4byte 0x00000128
 	.4byte lbl_80007AFC
-	.4byte func_8002AFB4
+	.4byte __dt__7CVRigidFv
 	.4byte 0x00000058
 	.4byte lbl_80007B18
 	.4byte func_8002B00C
@@ -1422,7 +1422,7 @@ lbl_8000CB00:
 	.4byte func_8002B5F8
 	.4byte 0x00000104
 	.4byte lbl_80007B50
-	.4byte func_8002B6FC
+	.4byte Move__7CVRigidFf
 	.4byte 0x000002B4
 	.4byte lbl_80007B58
 	.4byte func_8002B9B0
@@ -3084,7 +3084,7 @@ lbl_8000CB00:
 	.4byte __ct__8CActRingFv
 	.4byte 0x0000004C
 	.4byte lbl_80009E08
-	.4byte lbl_80054EFC
+	.4byte __dt__8CActRingFv
 	.4byte 0x00000058
 	.4byte lbl_80009E10
 	.4byte lbl_80054F54
@@ -3093,7 +3093,7 @@ lbl_8000CB00:
 	.4byte CheckPass__8CActRingFP7CVActor
 	.4byte 0x00000124
 	.4byte lbl_80009E20
-	.4byte lbl_800550B8
+	.4byte Move__8CActRingFf
 	.4byte 0x00000104
 	.4byte lbl_80009E28
 	.4byte GetScore__8CActRingF8CVVector
@@ -3159,16 +3159,16 @@ lbl_8000CB00:
 	.4byte __ct__11CActScnBaseFv
 	.4byte 0x0000006C
 	.4byte lbl_80009F84
-	.4byte func_80057334
+	.4byte __dt__11CActScnBaseFv
 	.4byte 0x00000068
 	.4byte lbl_80009FB4
-	.4byte func_800573B4
+	.4byte Recovery__11CActScnBaseFv
 	.4byte 0x0000009C
 	.4byte lbl_80009FBC
 	.4byte func_80057450
 	.4byte 0x00000084
 	.4byte lbl_80009FC4
-	.4byte func_800574D4
+	.4byte Animate__11CActScnBaseFv
 	.4byte 0x00000268
 	.4byte lbl_80009FCC
 	.4byte __ct__10CSceneGameFv

@@ -10,9 +10,9 @@
 
 class CScenary {
     public:
-        CVScript* field_0x00;
-        UNK32 field_0x04;
-        u32 mMissionHasEnded;
+        CVScript* pScript;        // Script for the current mission scenario
+        u32 mObjectiveFulfilled;
+        u32 mMissionCompleted;
         u32 mCoinHitCheck;
         UNK32 field_0x10;
         UNK32 field_0x14;
@@ -26,9 +26,9 @@ class CScenary {
         CScenary();
         virtual ~CScenary();
         virtual bool Init(CVScript*);
-        virtual bool Start();
+        virtual void Start();
         virtual bool ExecCmd(void*);
-        virtual bool Calc();
+        virtual void Calc();
         virtual bool CalcEnding();
         virtual bool Render();
         virtual bool LiftActor(int);

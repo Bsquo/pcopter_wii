@@ -10,9 +10,9 @@ func_8002AE8C:
 /* 8002AE98 0001BE18  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8002AE9C 0001BE1C  7C 7F 1B 78 */	mr r31, r3
 /* 8002AEA0 0001BE20  4B FF B9 75 */	bl __ct__10CVListBaseFv
-/* 8002AEA4 0001BE24  3C 80 80 1D */	lis r4, lbl_801CB808@ha
+/* 8002AEA4 0001BE24  3C 80 80 1D */	lis r4, __vt__7CVRigid@ha
 /* 8002AEA8 0001BE28  38 7F 00 14 */	addi r3, r31, 0x14
-/* 8002AEAC 0001BE2C  38 84 B8 08 */	addi r4, r4, lbl_801CB808@l
+/* 8002AEAC 0001BE2C  38 84 B8 08 */	addi r4, r4, __vt__7CVRigid@l
 /* 8002AEB0 0001BE30  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 8002AEB4 0001BE34  4B FF C2 6D */	bl __ct__8CVVectorFv
 /* 8002AEB8 0001BE38  38 7F 00 20 */	addi r3, r31, 0x20
@@ -79,8 +79,8 @@ func_8002AE8C:
 /* 8002AFAC 0001BF2C  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002AFB0 0001BF30  4E 80 00 20 */	blr
 
-.global func_8002AFB4
-func_8002AFB4:
+.global __dt__7CVRigidFv
+__dt__7CVRigidFv:
 /* 8002AFB4 0001BF34  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002AFB8 0001BF38  7C 08 02 A6 */	mflr r0
 /* 8002AFBC 0001BF3C  2C 03 00 00 */	cmpwi r3, 0x0
@@ -579,8 +579,8 @@ lbl_8002B6E0:
 /* 8002B6F4 0001C674  38 21 00 50 */	addi r1, r1, 0x50
 /* 8002B6F8 0001C678  4E 80 00 20 */	blr
 
-.global func_8002B6FC
-func_8002B6FC:
+.global Move__7CVRigidFf
+Move__7CVRigidFf:
 /* 8002B6FC 0001C67C  94 21 FE F0 */	stwu r1, -0x110(r1)
 /* 8002B700 0001C680  7C 08 02 A6 */	mflr r0
 /* 8002B704 0001C684  90 01 01 14 */	stw r0, 0x114(r1)
@@ -799,18 +799,18 @@ func_8002B9B0:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CB808
-lbl_801CB808:
+.global __vt__7CVRigid
+__vt__7CVRigid:
 
 	# ROM: 0x1C7908
 	.4byte __RTTI__7CVRigid
 	.4byte 0
-	.4byte func_8002AFB4
+	.4byte __dt__7CVRigidFv
 	.4byte GetPos__7CVRigidFv
 	.4byte GetAxis__7CVRigidFv
 	.4byte GetScale__7CVRigidFv
 	.4byte GetMtx__7CVRigidFv
-	.4byte func_8002B6FC
+	.4byte Move__7CVRigidFf
 
 .section .sdata2, "wa", @progbits
 

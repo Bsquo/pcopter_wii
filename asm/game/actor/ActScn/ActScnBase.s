@@ -11,9 +11,9 @@ __ct__11CActScnBaseFv:
 /* 800572D8 00048258  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 800572DC 0004825C  7C 7E 1B 78 */	mr r30, r3
 /* 800572E0 00048260  4B FC 9E 39 */	bl __ct__7CVActorFv
-/* 800572E4 00048264  3C 80 80 1D */	lis r4, lbl_801CC690@ha
+/* 800572E4 00048264  3C 80 80 1D */	lis r4, __vt__11CActScnBase@ha
 /* 800572E8 00048268  3B E0 00 00 */	li r31, 0x0
-/* 800572EC 0004826C  38 84 C6 90 */	addi r4, r4, lbl_801CC690@l
+/* 800572EC 0004826C  38 84 C6 90 */	addi r4, r4, __vt__11CActScnBase@l
 /* 800572F0 00048270  93 FE 03 B4 */	stw r31, 0x3b4(r30)
 /* 800572F4 00048274  38 7E 03 BC */	addi r3, r30, 0x3bc
 /* 800572F8 00048278  90 9E 00 10 */	stw r4, 0x10(r30)
@@ -32,8 +32,8 @@ __ct__11CActScnBaseFv:
 /* 8005732C 000482AC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80057330 000482B0  4E 80 00 20 */	blr
 
-.global func_80057334
-func_80057334:
+.global __dt__11CActScnBaseFv
+__dt__11CActScnBaseFv:
 /* 80057334 000482B4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80057338 000482B8  7C 08 02 A6 */	mflr r0
 /* 8005733C 000482BC  2C 03 00 00 */	cmpwi r3, 0x0
@@ -71,8 +71,8 @@ func_8005739C:
 /* 800573AC 0004832C  38 85 02 48 */	addi r4, r5, 0x248
 /* 800573B0 00048330  4B FD 85 E4 */	b __as__6CVFlagFRC6CVFlag
 
-.global func_800573B4
-func_800573B4:
+.global Recovery__11CActScnBaseFv
+Recovery__11CActScnBaseFv:
 /* 800573B4 00048334  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800573B8 00048338  7C 08 02 A6 */	mflr r0
 /* 800573BC 0004833C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -154,8 +154,8 @@ func_800574BC:
 /* 800574CC 0004844C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800574D0 00048450  4E 80 00 20 */	blr
 
-.global func_800574D4
-func_800574D4:
+.global Animate__11CActScnBaseFv
+Animate__11CActScnBaseFv:
 /* 800574D4 00048454  94 21 FF 40 */	stwu r1, -0xc0(r1)
 /* 800574D8 00048458  7C 08 02 A6 */	mflr r0
 /* 800574DC 0004845C  90 01 00 C4 */	stw r0, 0xc4(r1)
@@ -327,13 +327,13 @@ lbl_80057724:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CC690
-lbl_801CC690:
+.global __vt__11CActScnBase
+__vt__11CActScnBase:
 
 	# ROM: 0x1C8790
-	.4byte lbl_8060E310
+	.4byte __RTTI__11CActScnBase
 	.4byte 0
-	.4byte func_80057334
+	.4byte __dt__11CActScnBaseFv
 	.4byte GetPos__7CVRigidFv
 	.4byte GetAxis__7CVRigidFv
 	.4byte GetScale__7CVRigidFv
@@ -343,8 +343,8 @@ lbl_801CC690:
 	.4byte InitParam__7CVActorFv
 	.4byte InitAnimParam__7CVActorFP8CVScript
 	.4byte InitPos__7CVActorF8CVVector8CVVector
-	.4byte func_800573B4
-	.4byte func_800574D4
+	.4byte Recovery__11CActScnBaseFv
+	.4byte Animate__11CActScnBaseFv
 	.4byte CheckColl__7CVActorFv
 	.4byte Destroyed__7CVActorF8CVVectorP6CVFlag
 	.4byte CalcCollEffect__7CVActorFffff

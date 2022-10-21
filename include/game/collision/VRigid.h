@@ -34,6 +34,14 @@ class CVRigid: public CVListBase {
         CVVector field_0x230;
         s32 field_0x23C;
         f32 mDrag[2];
+
+        CVRigid();
+        virtual ~CVRigid();
+        virtual const CVVector& GetPos();
+        virtual const CVAxis& GetAxis();
+        virtual const CVVector& GetScale();
+        virtual const CVMatrix& GetMtx();
+        virtual bool Move(f32);
 };
 
 #endif // VRIGID_H

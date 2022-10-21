@@ -2206,7 +2206,7 @@ lbl_80007254:
 	.4byte __dt__6CVFlagFv
 	.4byte 0x8680001E
 	.4byte 0
-	.4byte func_8002AFB4
+	.4byte __dt__7CVRigidFv
 
 .global lbl_800072CC
 lbl_800072CC:
@@ -8957,7 +8957,7 @@ lbl_80009F28:
 	.4byte 0
 	.4byte 0x8680001F
 	.4byte 0
-	.4byte func_80057334
+	.4byte __dt__11CActScnBaseFv
 
 .global lbl_80009F44
 lbl_80009F44:
@@ -9278,7 +9278,7 @@ lbl_8000A1E8:
 	.4byte __dt__8CVStringFv
 	.4byte 0x8680001F
 	.4byte 0
-	.4byte func_80057334
+	.4byte __dt__11CActScnBaseFv
 
 .global lbl_8000A218
 lbl_8000A218:

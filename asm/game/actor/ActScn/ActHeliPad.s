@@ -52,7 +52,7 @@ lbl_80054C1C:
 /* 80054C38 00045BB8  7C 7E 1B 78 */	mr r30, r3
 /* 80054C3C 00045BBC  41 82 00 1C */	beq lbl_80054C58
 /* 80054C40 00045BC0  38 80 00 00 */	li r4, 0x0
-/* 80054C44 00045BC4  48 00 26 F1 */	bl func_80057334
+/* 80054C44 00045BC4  48 00 26 F1 */	bl __dt__11CActScnBaseFv
 /* 80054C48 00045BC8  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80054C4C 00045BCC  40 81 00 0C */	ble lbl_80054C58
 /* 80054C50 00045BD0  7F C3 F3 78 */	mr r3, r30
@@ -249,8 +249,8 @@ lbl_801CC3D8:
 	.4byte InitParam__7CVActorFv
 	.4byte InitAnimParam__7CVActorFP8CVScript
 	.4byte InitPos__7CVActorF8CVVector8CVVector
-	.4byte func_800573B4
-	.4byte func_800574D4
+	.4byte Recovery__11CActScnBaseFv
+	.4byte Animate__11CActScnBaseFv
 	.4byte CheckColl__7CVActorFv
 	.4byte Destroyed__7CVActorF8CVVectorP6CVFlag
 	.4byte CalcCollEffect__7CVActorFffff
@@ -267,7 +267,7 @@ lbl_801CC424:
 	.4byte 0
 	.4byte __RTTI__7CVActor
 	.4byte 0
-	.4byte lbl_8060E310
+	.4byte __RTTI__11CActScnBase
 	.4byte 0
 	.4byte 0
 
@@ -293,8 +293,8 @@ lbl_8060E308:
 	.4byte lbl_801BE210
 	.4byte lbl_801CC424
 
-.global lbl_8060E310
-lbl_8060E310:
+.global __RTTI__11CActScnBase
+__RTTI__11CActScnBase:
 
 	# ROM: 0x1EE510
 	.4byte lbl_801BE21C

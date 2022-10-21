@@ -21,9 +21,9 @@ __ct__8CActRingFv:
 /* 80054EC0 00045E40  7C 7F 1B 78 */	mr r31, r3
 /* 80054EC4 00045E44  48 00 24 05 */	bl __ct__11CActScnBaseFv
 /* 80054EC8 00045E48  C0 22 8A 38 */	lfs f1, lbl_80610258@sda21(r2)
-/* 80054ECC 00045E4C  3C 60 80 1D */	lis r3, lbl_801CC468@ha
+/* 80054ECC 00045E4C  3C 60 80 1D */	lis r3, __vt__8CActRing@ha
 /* 80054ED0 00045E50  C0 02 8A 3C */	lfs f0, lbl_8061025C@sda21(r2)
-/* 80054ED4 00045E54  38 63 C4 68 */	addi r3, r3, lbl_801CC468@l
+/* 80054ED4 00045E54  38 63 C4 68 */	addi r3, r3, __vt__8CActRing@l
 /* 80054ED8 00045E58  90 7F 00 10 */	stw r3, 0x10(r31)
 /* 80054EDC 00045E5C  7F E3 FB 78 */	mr r3, r31
 /* 80054EE0 00045E60  D0 3F 03 E0 */	stfs f1, 0x3e0(r31)
@@ -34,8 +34,8 @@ __ct__8CActRingFv:
 /* 80054EF4 00045E74  38 21 00 10 */	addi r1, r1, 0x10
 /* 80054EF8 00045E78  4E 80 00 20 */	blr
 
-.global lbl_80054EFC
-lbl_80054EFC:
+.global __dt__8CActRingFv
+__dt__8CActRingFv:
 /* 80054EFC 00045E7C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80054F00 00045E80  7C 08 02 A6 */	mflr r0
 /* 80054F04 00045E84  2C 03 00 00 */	cmpwi r3, 0x0
@@ -46,7 +46,7 @@ lbl_80054EFC:
 /* 80054F18 00045E98  7C 7E 1B 78 */	mr r30, r3
 /* 80054F1C 00045E9C  41 82 00 1C */	beq lbl_80054F38
 /* 80054F20 00045EA0  38 80 00 00 */	li r4, 0x0
-/* 80054F24 00045EA4  48 00 24 11 */	bl func_80057334
+/* 80054F24 00045EA4  48 00 24 11 */	bl __dt__11CActScnBaseFv
 /* 80054F28 00045EA8  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80054F2C 00045EAC  40 81 00 0C */	ble lbl_80054F38
 /* 80054F30 00045EB0  7F C3 F3 78 */	mr r3, r30
@@ -67,7 +67,7 @@ lbl_80054F54:
 /* 80054F5C 00045EDC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80054F60 00045EE0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80054F64 00045EE4  7C 7F 1B 78 */	mr r31, r3
-/* 80054F68 00045EE8  48 00 24 4D */	bl func_800573B4
+/* 80054F68 00045EE8  48 00 24 4D */	bl Recovery__11CActScnBaseFv
 /* 80054F6C 00045EEC  80 7F 03 B4 */	lwz r3, 0x3b4(r31)
 /* 80054F70 00045EF0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80054F74 00045EF4  41 82 00 0C */	beq lbl_80054F80
@@ -161,8 +161,8 @@ func_80055098:
 /* 800550B0 00046030  38 21 00 80 */	addi r1, r1, 0x80
 /* 800550B4 00046034  4E 80 00 20 */	blr
 
-.global lbl_800550B8
-lbl_800550B8:
+.global Move__8CActRingFf
+Move__8CActRingFf:
 /* 800550B8 00046038  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 800550BC 0004603C  7C 08 02 A6 */	mflr r0
 /* 800550C0 00046040  90 01 00 54 */	stw r0, 0x54(r1)
@@ -293,24 +293,24 @@ func_80055260:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CC468
-lbl_801CC468:
+.global __vt__8CActRing
+__vt__8CActRing:
 
 	# ROM: 0x1C8568
-	.4byte lbl_8060E318
+	.4byte __RTTI__8CActRing
 	.4byte 0
-	.4byte lbl_80054EFC
+	.4byte __dt__8CActRingFv
 	.4byte GetPos__7CVRigidFv
 	.4byte GetAxis__7CVRigidFv
 	.4byte GetScale__7CVRigidFv
 	.4byte GetMtx__7CVRigidFv
-	.4byte lbl_800550B8
+	.4byte Move__8CActRingFf
 	.4byte BindModel__7CVActorF10CVFilePath
 	.4byte InitParam__7CVActorFv
 	.4byte InitAnimParam__7CVActorFP8CVScript
 	.4byte InitPos__7CVActorF8CVVector8CVVector
 	.4byte lbl_80054F54
-	.4byte func_800574D4
+	.4byte Animate__11CActScnBaseFv
 	.4byte CheckColl__7CVActorFv
 	.4byte Destroyed__7CVActorF8CVVectorP6CVFlag
 	.4byte CalcCollEffect__7CVActorFffff
@@ -327,14 +327,14 @@ lbl_801CC4B4:
 	.4byte 0
 	.4byte __RTTI__7CVActor
 	.4byte 0
-	.4byte lbl_8060E310
+	.4byte __RTTI__11CActScnBase
 	.4byte 0
 	.4byte 0
 
 .section .sdata, "wa", @progbits
 
-.global lbl_8060E318
-lbl_8060E318:
+.global __RTTI__8CActRing
+__RTTI__8CActRing:
 
 	# ROM: 0x1EE518
 	.4byte lbl_801BE228

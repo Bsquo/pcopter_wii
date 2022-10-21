@@ -10,8 +10,9 @@ struct CScenaryRing: public CScenary {
 
         CScenaryRing();
         ~CScenaryRing();
-        bool Start();
-        bool Calc();
+        void Start();
+        void Calc();
+        u32 GetAchieveRatio(int*, int*);
 };
 
 #endif // SCENARY_RING_H

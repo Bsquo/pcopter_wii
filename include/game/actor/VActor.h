@@ -8,6 +8,7 @@
 #include "include/game/collision/VRigid.h"
 #include "include/game/actor/VActorNode.h"
 #include "include/game/gfx/VModel.h"
+#include "include/game/utils/VScript.h"
 #include "types.h"
 
 extern const f32 _53061; // 1.0
@@ -45,6 +46,18 @@ class CVActor: public CVRigid {
 
         CVActor();
         virtual ~CVActor();
+        virtual bool Move(f32);
+        virtual void BindModel(CVFilePath);
+        virtual void InitParam();
+        virtual void InitAnimParam(CVScript*);
+        virtual void InitPos(CVVector, CVVector);
+        virtual void Recovery();
+        virtual void Animate();
+        virtual bool CheckColl();
+        virtual void Destroyed(CVVector, CVFlag*); 
+        virtual void CalcCollEffect(f32, f32, f32, f32);
+        virtual void ExecAction(int);
+        virtual void UpdateArea();
 };
 
 #endif // VACTOR_H

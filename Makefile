@@ -26,6 +26,8 @@ SRC_DIRS := src                      	\
 			src/game/math            	\
 			src/game/managers        	\
 			src/game/save           	\
+			src/game/scenary   			\
+			src/game/scenary/common   	\
 			src/game/scenary/Japan   	\
 			src/game/scene           	\
 			src/game/scene/Game      	\

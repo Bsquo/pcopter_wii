@@ -56,7 +56,7 @@ lbl_80059FC4:
 /* 80059FFC 0004AF7C  4B FC 66 8D */	bl __dt__8CVStringFv
 /* 8005A000 0004AF80  7F C3 F3 78 */	mr r3, r30
 /* 8005A004 0004AF84  38 80 00 00 */	li r4, 0x0
-/* 8005A008 0004AF88  4B FF D3 2D */	bl func_80057334
+/* 8005A008 0004AF88  4B FF D3 2D */	bl __dt__11CActScnBaseFv
 /* 8005A00C 0004AF8C  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8005A010 0004AF90  40 81 00 0C */	ble lbl_8005A01C
 /* 8005A014 0004AF94  7F C3 F3 78 */	mr r3, r30
@@ -211,7 +211,7 @@ lbl_801CC6F0:
 	.4byte InitParam__7CVActorFv
 	.4byte InitAnimParam__7CVActorFP8CVScript
 	.4byte InitPos__7CVActorF8CVVector8CVVector
-	.4byte func_800573B4
+	.4byte Recovery__11CActScnBaseFv
 	.4byte lbl_8005A13C
 	.4byte CheckColl__7CVActorFv
 	.4byte Destroyed__7CVActorF8CVVectorP6CVFlag
@@ -229,7 +229,7 @@ lbl_801CC73C:
 	.4byte 0
 	.4byte __RTTI__7CVActor
 	.4byte 0
-	.4byte lbl_8060E310
+	.4byte __RTTI__11CActScnBase
 	.4byte 0
 	.4byte 0
 

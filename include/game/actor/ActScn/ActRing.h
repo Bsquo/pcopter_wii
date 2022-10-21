@@ -16,8 +16,9 @@ class CActRing: public CActScnBase {
         f32 mYaw;               // Yaw rotation
 
         CActRing();
-        ~CActRing();
-        void Recovery();
+        virtual ~CActRing();
+        virtual bool Move(f32);
+        virtual void Recovery();
 };
 
 #endif // ACT_RING_H

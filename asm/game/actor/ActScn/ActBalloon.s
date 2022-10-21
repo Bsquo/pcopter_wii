@@ -547,7 +547,7 @@ lbl_801CC7AC:
 	.4byte 0
 	.4byte __RTTI__7CVActor
 	.4byte 0
-	.4byte lbl_8060E310
+	.4byte __RTTI__11CActScnBase
 	.4byte 0
 	.4byte lbl_8060E338
 	.4byte 0

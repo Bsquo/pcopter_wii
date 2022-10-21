@@ -17,8 +17,8 @@ class CVActorMgr {
 
         static CVActorMgr* GetInstance();
         virtual ~CVActorMgr();
-        const CVListBase* GetStart(int);
-        const CVListBase* GetNext(int);
+        CVActor* GetStart(int);
+        CVActor* GetNext(CVActor*, int);
         void AddActor(CVActor*, CVFilePath, int);
 };
 

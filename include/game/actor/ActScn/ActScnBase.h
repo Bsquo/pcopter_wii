@@ -19,6 +19,8 @@ class CActScnBase: public CVActor {
 
         CActScnBase();
         virtual ~CActScnBase();
+        virtual void Recovery();
+        virtual void Animate();
 };
 
 #endif // ACT_SCN_BASE_H

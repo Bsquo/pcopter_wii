@@ -1,5 +1,45 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801C00C8
+lbl_801C00C8:
+
+	# ROM: 0x1BC1C8
+	.asciz "CScenaryPark06"
+	.balign 4
+
+.global lbl_801C00D8
+lbl_801C00D8:
+
+	# ROM: 0x1BC1D8
+	.asciz "goal"
+	.byte 0x41, 0x72, 0x72
+	.asciz "owMarker"
+	.byte 0x41, 0x72, 0x72
+	.asciz "owMarker"
+	.byte 0x41, 0x72, 0x72
+	.asciz "owMarker"
+	.byte 0x41, 0x72, 0x72
+	.asciz "owMarker"
+	.byte 0x50, 0x4F, 0x50
+	.asciz "_STAR"
+	.byte 0x53, 0x45
+	.asciz "T_LIGHT_FLG"
+	.4byte 0x5363656E
+
+.global lbl_801C0128
+lbl_801C0128:
+
+	# ROM: 0x1BC228
+	.4byte 0x61727900
+	.asciz "SE_Fanfare"
+	.byte 0x53
+	.asciz "cenary"
+	.byte 0x43
+	.asciz "ount"
+	.balign 4
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global lbl_80061FA4
@@ -34,7 +74,7 @@ lbl_80061FA4:
 /* 80062010 00052F90  38 61 00 30 */	addi r3, r1, 0x30
 /* 80062014 00052F94  90 1E 00 3C */	stw r0, 0x3c(r30)
 /* 80062018 00052F98  4B FC 47 49 */	bl __ct__6CVFlagFv
-/* 8006201C 00052F9C  4B FB 75 0D */	bl func_80019528
+/* 8006201C 00052F9C  4B FB 75 0D */	bl GetInstance__10CMarkerMgrFv
 /* 80062020 00052FA0  4B FF B0 D9 */	bl Release__10CMarkerMgrFv
 /* 80062024 00052FA4  38 61 00 30 */	addi r3, r1, 0x30
 /* 80062028 00052FA8  38 80 00 00 */	li r4, 0x0
@@ -66,7 +106,7 @@ lbl_80061FA4:
 /* 80062090 00053010  90 01 00 B0 */	stw r0, 0xb0(r1)
 /* 80062094 00053014  80 03 00 08 */	lwz r0, 0x8(r3)
 /* 80062098 00053018  90 01 00 B4 */	stw r0, 0xb4(r1)
-/* 8006209C 0005301C  4B FB 74 8D */	bl func_80019528
+/* 8006209C 0005301C  4B FB 74 8D */	bl GetInstance__10CMarkerMgrFv
 /* 800620A0 00053020  3F A0 80 1C */	lis r29, lbl_801C00D8@ha
 /* 800620A4 00053024  38 E1 00 28 */	addi r7, r1, 0x28
 /* 800620A8 00053028  38 DD 00 D8 */	addi r6, r29, lbl_801C00D8@l
@@ -107,7 +147,7 @@ lbl_80061FA4:
 /* 80062134 000530B4  90 01 00 98 */	stw r0, 0x98(r1)
 /* 80062138 000530B8  80 03 00 08 */	lwz r0, 0x8(r3)
 /* 8006213C 000530BC  90 01 00 9C */	stw r0, 0x9c(r1)
-/* 80062140 000530C0  4B FB 73 E9 */	bl func_80019528
+/* 80062140 000530C0  4B FB 73 E9 */	bl GetInstance__10CMarkerMgrFv
 /* 80062144 000530C4  3B BD 00 D8 */	addi r29, r29, 0xd8
 /* 80062148 000530C8  38 E1 00 20 */	addi r7, r1, 0x20
 /* 8006214C 000530CC  38 DD 00 05 */	addi r6, r29, 0x5
@@ -132,7 +172,7 @@ lbl_80061FA4:
 /* 80062198 00053118  90 01 00 80 */	stw r0, 0x80(r1)
 /* 8006219C 0005311C  80 03 00 08 */	lwz r0, 0x8(r3)
 /* 800621A0 00053120  90 01 00 84 */	stw r0, 0x84(r1)
-/* 800621A4 00053124  4B FB 73 85 */	bl func_80019528
+/* 800621A4 00053124  4B FB 73 85 */	bl GetInstance__10CMarkerMgrFv
 /* 800621A8 00053128  38 DD 00 11 */	addi r6, r29, 0x11
 /* 800621AC 0005312C  38 E1 00 18 */	addi r7, r1, 0x18
 /* 800621B0 00053130  39 01 00 7C */	addi r8, r1, 0x7c
@@ -168,7 +208,7 @@ lbl_80061FA4:
 /* 80062228 000531A8  90 01 00 68 */	stw r0, 0x68(r1)
 /* 8006222C 000531AC  80 03 00 08 */	lwz r0, 0x8(r3)
 /* 80062230 000531B0  90 01 00 6C */	stw r0, 0x6c(r1)
-/* 80062234 000531B4  4B FB 72 F5 */	bl func_80019528
+/* 80062234 000531B4  4B FB 72 F5 */	bl GetInstance__10CMarkerMgrFv
 /* 80062238 000531B8  38 DD 00 1D */	addi r6, r29, 0x1d
 /* 8006223C 000531BC  38 E1 00 10 */	addi r7, r1, 0x10
 /* 80062240 000531C0  39 01 00 64 */	addi r8, r1, 0x64
@@ -192,7 +232,7 @@ lbl_80061FA4:
 /* 80062288 00053208  90 01 00 50 */	stw r0, 0x50(r1)
 /* 8006228C 0005320C  80 03 00 08 */	lwz r0, 0x8(r3)
 /* 80062290 00053210  90 01 00 54 */	stw r0, 0x54(r1)
-/* 80062294 00053214  4B FB 72 95 */	bl func_80019528
+/* 80062294 00053214  4B FB 72 95 */	bl GetInstance__10CMarkerMgrFv
 /* 80062298 00053218  38 DD 00 29 */	addi r6, r29, 0x29
 /* 8006229C 0005321C  38 E1 00 08 */	addi r7, r1, 0x8
 /* 800622A0 00053220  39 01 00 4C */	addi r8, r1, 0x4c
@@ -262,7 +302,7 @@ lbl_80062354:
 /* 8006238C 0005330C  80 03 00 08 */	lwz r0, 0x8(r3)
 /* 80062390 00053310  90 01 00 1C */	stw r0, 0x1c(r1)
 /* 80062394 00053314  C0 3D 00 2C */	lfs f1, 0x2c(r29)
-/* 80062398 00053318  48 05 0B F9 */	bl func_800B2F90
+/* 80062398 00053318  48 05 0B F9 */	bl __cvt_fp2unsigned
 /* 8006239C 0005331C  C0 1D 00 1C */	lfs f0, 0x1c(r29)
 /* 800623A0 00053320  7C 66 1B 78 */	mr r6, r3
 /* 800623A4 00053324  7F 83 E3 78 */	mr r3, r28
@@ -297,10 +337,10 @@ lbl_800623C0:
 /* 80062414 00053394  80 1C 00 50 */	lwz r0, 0x50(r28)
 /* 80062418 00053398  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8006241C 0005339C  40 82 00 1C */	bne func_80062438
-/* 80062420 000533A0  4B FB 44 05 */	bl func_80016824
+/* 80062420 000533A0  4B FB 44 05 */	bl GetInstance__10CVTimerMgrFv
 /* 80062424 000533A4  38 80 00 65 */	li r4, 0x65
 /* 80062428 000533A8  38 A0 01 68 */	li r5, 0x168
-/* 8006242C 000533AC  4B FE AC E9 */	bl func_8004D114
+/* 8006242C 000533AC  4B FE AC E9 */	bl AddTimer__10CVTimerMgrFUlUl
 /* 80062430 000533B0  93 FC 00 04 */	stw r31, 0x4(r28)
 /* 80062434 000533B4  93 FC 00 50 */	stw r31, 0x50(r28)
 
@@ -461,9 +501,9 @@ lbl_80062640:
 /* 80062654 000535D4  40 80 00 08 */	bge lbl_8006265C
 /* 80062658 000535D8  48 00 03 98 */	b func_800629F0
 lbl_8006265C:
-/* 8006265C 000535DC  4B FB 41 C9 */	bl func_80016824
+/* 8006265C 000535DC  4B FB 41 C9 */	bl GetInstance__10CVTimerMgrFv
 /* 80062660 000535E0  38 80 00 64 */	li r4, 0x64
-/* 80062664 000535E4  4B FE AB 91 */	bl func_8004D1F4
+/* 80062664 000535E4  4B FE AB 91 */	bl GetTime__10CVTimerMgrFUl
 /* 80062668 000535E8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8006266C 000535EC  41 82 00 0C */	beq lbl_80062678
 /* 80062670 000535F0  3B 80 00 01 */	li r28, 0x1
@@ -492,12 +532,12 @@ lbl_800626AC:
 /* 800626B8 00053638  40 82 00 08 */	bne lbl_800626C0
 /* 800626BC 0005363C  3B 80 00 03 */	li r28, 0x3
 lbl_800626C0:
-/* 800626C0 00053640  4B FB 31 ED */	bl func_800158AC
+/* 800626C0 00053640  4B FB 31 ED */	bl GetInstance__11CVLayoutMgrFv
 /* 800626C4 00053644  3F A0 80 1C */	lis r29, lbl_801C00D8@ha
 /* 800626C8 00053648  7F 85 E3 78 */	mr r5, r28
 /* 800626CC 0005364C  3B BD 00 D8 */	addi r29, r29, lbl_801C00D8@l
 /* 800626D0 00053650  38 9D 00 4C */	addi r4, r29, 0x4c
-/* 800626D4 00053654  4B FC CC 75 */	bl func_8002F348
+/* 800626D4 00053654  4B FC CC 75 */	bl SetState__11CVLayoutMgrFPci
 /* 800626D8 00053658  81 9E 00 30 */	lwz r12, 0x30(r30)
 /* 800626DC 0005365C  7F C3 F3 78 */	mr r3, r30
 /* 800626E0 00053660  38 80 00 00 */	li r4, 0x0
@@ -519,10 +559,10 @@ lbl_800626C0:
 /* 80062720 000536A0  38 E0 00 00 */	li r7, 0x0
 /* 80062724 000536A4  4B FC AC 81 */	bl StartSound__10CVSoundMgrFPciii
 lbl_80062728:
-/* 80062728 000536A8  4B FB 40 FD */	bl func_80016824
+/* 80062728 000536A8  4B FB 40 FD */	bl GetInstance__10CVTimerMgrFv
 /* 8006272C 000536AC  38 80 00 64 */	li r4, 0x64
 /* 80062730 000536B0  38 A0 01 68 */	li r5, 0x168
-/* 80062734 000536B4  4B FE A9 E1 */	bl func_8004D114
+/* 80062734 000536B4  4B FE A9 E1 */	bl AddTimer__10CVTimerMgrFUlUl
 /* 80062738 000536B8  80 DE 00 38 */	lwz r6, 0x38(r30)
 /* 8006273C 000536BC  38 61 00 68 */	addi r3, r1, 0x68
 /* 80062740 000536C0  80 1E 00 34 */	lwz r0, 0x34(r30)
@@ -530,14 +570,14 @@ lbl_80062728:
 /* 80062748 000536C8  38 AD 86 00 */	addi r5, r13, lbl_8060E400@sda21
 /* 8006274C 000536CC  7C C6 00 50 */	subf r6, r6, r0
 /* 80062750 000536D0  4C C6 31 82 */	crclr 6
-/* 80062754 000536D4  48 05 B4 D1 */	bl func_800BDC24
-/* 80062758 000536D8  4B FB 31 55 */	bl func_800158AC
+/* 80062754 000536D4  48 05 B4 D1 */	bl swprintf
+/* 80062758 000536D8  4B FB 31 55 */	bl GetInstance__11CVLayoutMgrFv
 /* 8006275C 000536DC  3C A0 80 1C */	lis r5, lbl_801C00D8@ha
 /* 80062760 000536E0  38 C1 00 68 */	addi r6, r1, 0x68
 /* 80062764 000536E4  38 A5 00 D8 */	addi r5, r5, lbl_801C00D8@l
 /* 80062768 000536E8  38 85 00 5F */	addi r4, r5, 0x5f
 /* 8006276C 000536EC  38 A5 00 67 */	addi r5, r5, 0x67
-/* 80062770 000536F0  4B FC CC 51 */	bl func_8002F3C0
+/* 80062770 000536F0  4B FC CC 51 */	bl SetText__11CVLayoutMgrFPcPcPUs
 lbl_80062774:
 /* 80062774 000536F4  4B FA EF 0D */	bl GetInstance__4CAppFv
 /* 80062778 000536F8  4B FB A8 99 */	bl GetSceneGame__4CAppFv
@@ -616,14 +656,14 @@ lbl_80062808:
 
 .global func_80062898
 func_80062898:
-/* 80062898 00053818  4B FB 6C 91 */	bl func_80019528
+/* 80062898 00053818  4B FB 6C 91 */	bl GetInstance__10CMarkerMgrFv
 /* 8006289C 0005381C  38 80 00 00 */	li r4, 0x0
 /* 800628A0 00053820  38 A0 00 01 */	li r5, 0x1
 /* 800628A4 00053824  4B FF AB 8D */	bl SetVisible__10CMarkerMgrFii
 /* 800628A8 00053828  7F DD F3 78 */	mr r29, r30
 /* 800628AC 0005382C  3B 80 00 00 */	li r28, 0x0
 lbl_800628B0:
-/* 800628B0 00053830  4B FB 6C 79 */	bl func_80019528
+/* 800628B0 00053830  4B FB 6C 79 */	bl GetInstance__10CMarkerMgrFv
 /* 800628B4 00053834  80 DD 00 0C */	lwz r6, 0xc(r29)
 /* 800628B8 00053838  7F 85 E3 78 */	mr r5, r28
 /* 800628BC 0005383C  38 80 00 00 */	li r4, 0x0
@@ -632,13 +672,13 @@ lbl_800628B0:
 /* 800628C8 00053848  3B BD 00 04 */	addi r29, r29, 0x4
 /* 800628CC 0005384C  2C 1C 00 04 */	cmpwi r28, 0x4
 /* 800628D0 00053850  41 80 FF E0 */	blt lbl_800628B0
-/* 800628D4 00053854  4B FB 6C 55 */	bl func_80019528
+/* 800628D4 00053854  4B FB 6C 55 */	bl GetInstance__10CMarkerMgrFv
 /* 800628D8 00053858  80 1F 04 AC */	lwz r0, 0x4ac(r31)
 /* 800628DC 0005385C  38 80 00 01 */	li r4, 0x1
 /* 800628E0 00053860  7C 00 00 34 */	cntlzw r0, r0
 /* 800628E4 00053864  54 05 D9 7E */	srwi r5, r0, 5
 /* 800628E8 00053868  4B FF AB 49 */	bl SetVisible__10CMarkerMgrFii
-/* 800628EC 0005386C  4B FB 6C 3D */	bl func_80019528
+/* 800628EC 0005386C  4B FB 6C 3D */	bl GetInstance__10CMarkerMgrFv
 /* 800628F0 00053870  80 BF 04 AC */	lwz r5, 0x4ac(r31)
 /* 800628F4 00053874  38 80 00 02 */	li r4, 0x2
 /* 800628F8 00053878  7C 05 00 D0 */	neg r0, r5
@@ -653,9 +693,9 @@ lbl_800628B0:
 /* 8006291C 0005389C  4E 80 04 21 */	bctrl
 /* 80062920 000538A0  48 00 00 D0 */	b func_800629F0
 lbl_80062924:
-/* 80062924 000538A4  4B FB 3F 01 */	bl func_80016824
+/* 80062924 000538A4  4B FB 3F 01 */	bl GetInstance__10CVTimerMgrFv
 /* 80062928 000538A8  38 80 00 65 */	li r4, 0x65
-/* 8006292C 000538AC  4B FE A8 C9 */	bl func_8004D1F4
+/* 8006292C 000538AC  4B FE A8 C9 */	bl GetTime__10CVTimerMgrFUl
 /* 80062930 000538B0  28 03 00 F0 */	cmplwi r3, 0xf0
 /* 80062934 000538B4  40 82 00 48 */	bne lbl_8006297C
 /* 80062938 000538B8  C0 22 8C 38 */	lfs f1, lbl_80610458@sda21(r2)
@@ -676,9 +716,9 @@ lbl_80062924:
 /* 80062974 000538F4  4B FF 11 59 */	bl func_80053ACC
 /* 80062978 000538F8  48 00 00 78 */	b func_800629F0
 lbl_8006297C:
-/* 8006297C 000538FC  4B FB 3E A9 */	bl func_80016824
+/* 8006297C 000538FC  4B FB 3E A9 */	bl GetInstance__10CVTimerMgrFv
 /* 80062980 00053900  38 80 00 65 */	li r4, 0x65
-/* 80062984 00053904  4B FE A8 71 */	bl func_8004D1F4
+/* 80062984 00053904  4B FE A8 71 */	bl GetTime__10CVTimerMgrFUl
 /* 80062988 00053908  28 03 00 78 */	cmplwi r3, 0x78
 /* 8006298C 0005390C  40 82 00 48 */	bne lbl_800629D4
 /* 80062990 00053910  C0 22 8C 38 */	lfs f1, lbl_80610458@sda21(r2)
@@ -699,9 +739,9 @@ lbl_8006297C:
 /* 800629CC 0005394C  4B FF 11 01 */	bl func_80053ACC
 /* 800629D0 00053950  48 00 00 20 */	b func_800629F0
 lbl_800629D4:
-/* 800629D4 00053954  4B FB 3E 51 */	bl func_80016824
+/* 800629D4 00053954  4B FB 3E 51 */	bl GetInstance__10CVTimerMgrFv
 /* 800629D8 00053958  38 80 00 65 */	li r4, 0x65
-/* 800629DC 0005395C  4B FE A8 19 */	bl func_8004D1F4
+/* 800629DC 0005395C  4B FE A8 19 */	bl GetTime__10CVTimerMgrFUl
 /* 800629E0 00053960  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800629E4 00053964  40 82 00 0C */	bne func_800629F0
 /* 800629E8 00053968  38 00 00 00 */	li r0, 0x0
@@ -746,7 +786,7 @@ lbl_80062A40:
 /* 80062A5C 000539DC  7C 7E 1B 78 */	mr r30, r3
 /* 80062A60 000539E0  41 82 00 1C */	beq lbl_80062A7C
 /* 80062A64 000539E4  38 80 00 00 */	li r4, 0x0
-/* 80062A68 000539E8  4B FE 22 A5 */	bl func_80044D0C
+/* 80062A68 000539E8  4B FE 22 A5 */	bl __dt__8CScenaryFv
 /* 80062A6C 000539EC  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 80062A70 000539F0  40 81 00 0C */	ble lbl_80062A7C
 /* 80062A74 000539F4  7F C3 F3 78 */	mr r3, r30
@@ -759,3 +799,93 @@ lbl_80062A7C:
 /* 80062A8C 00053A0C  7C 08 03 A6 */	mtlr r0
 /* 80062A90 00053A10  38 21 00 10 */	addi r1, r1, 0x10
 /* 80062A94 00053A14  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CCBC8
+lbl_801CCBC8:
+
+	# ROM: 0x1C8CC8
+	.4byte lbl_8060E3F8
+	.4byte 0
+	.4byte lbl_80062A40
+	.4byte lbl_80053770
+	.4byte lbl_80061FA4
+	.4byte lbl_80062308
+	.4byte lbl_800625F0
+	.4byte lbl_800485C0
+	.4byte lbl_80048664
+	.4byte lbl_800537A4
+	.4byte lbl_80062468
+	.4byte func_80053978
+	.4byte lbl_80048C04
+	.4byte lbl_80062A10
+	.4byte lbl_80048A50
+	.4byte lbl_80048BCC
+	.4byte lbl_80053BDC
+	.4byte lbl_80053D40
+	.4byte lbl_80053DF0
+
+.global lbl_801CCC14
+lbl_801CCC14:
+
+	# ROM: 0x1C8D14
+	.4byte lbl_8060E300
+	.4byte 0
+	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E3F8
+lbl_8060E3F8:
+
+	# ROM: 0x1EE5F8
+	.4byte lbl_801C00C8
+	.4byte lbl_801CCC14
+
+.global lbl_8060E400
+lbl_8060E400:
+
+	# ROM: 0x1EE600
+	.4byte 0x00250064
+	.4byte 0
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610458
+lbl_80610458:
+
+	# ROM: 0x1EFB18
+	.4byte 0
+
+.global lbl_8061045C
+lbl_8061045C:
+
+	# ROM: 0x1EFB1C
+	.4byte 0x3F800000
+
+.global lbl_80610460
+lbl_80610460:
+
+	# ROM: 0x1EFB20
+	.4byte 0x3D4CCCCD
+
+.global lbl_80610464
+lbl_80610464:
+
+	# ROM: 0x1EFB24
+	.4byte 0x3E19999A
+
+.global lbl_80610468
+lbl_80610468:
+
+	# ROM: 0x1EFB28
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_80610470
+lbl_80610470:
+
+	# ROM: 0x1EFB30
+	.4byte 0x3F000000
+	.4byte 0

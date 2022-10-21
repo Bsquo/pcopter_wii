@@ -1,5 +1,19 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BE210
+lbl_801BE210:
+
+	# ROM: 0x1BA310
+	.asciz "CActHeliPad"
+
+.global lbl_801BE21C
+lbl_801BE21C:
+
+	# ROM: 0x1BA31C
+	.asciz "CActScnBase"
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__11CActHeliPadFv

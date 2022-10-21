@@ -1,5 +1,262 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BF560
+lbl_801BF560:
+
+	# ROM: 0x1BB660
+	.asciz "P_Left_Sound"
+	.balign 4
+
+.global lbl_801BF570
+lbl_801BF570:
+
+	# ROM: 0x1BB670
+	.asciz "P_Right_Sound"
+	.balign 4
+
+.global lbl_801BF580
+lbl_801BF580:
+
+	# ROM: 0x1BB680
+	.asciz "P_Left_Bgm"
+	.balign 4
+
+.global lbl_801BF58C
+lbl_801BF58C:
+
+	# ROM: 0x1BB68C
+	.asciz "P_Right_Bgm"
+
+.global lbl_801BF598
+lbl_801BF598:
+
+	# ROM: 0x1BB698
+	.asciz "P_Left_Env"
+	.balign 4
+
+.global lbl_801BF5A4
+lbl_801BF5A4:
+
+	# ROM: 0x1BB6A4
+	.asciz "P_Right_Env"
+
+.global lbl_801BF5B0
+lbl_801BF5B0:
+
+	# ROM: 0x1BB6B0
+	.asciz "P_Left_Se"
+	.balign 4
+
+.global lbl_801BF5BC
+lbl_801BF5BC:
+
+	# ROM: 0x1BB6BC
+	.asciz "P_Right_Se"
+	.balign 4
+	.4byte lbl_801BF560
+	.4byte lbl_801BF570
+	.4byte lbl_801BF580
+	.4byte lbl_801BF58C
+	.4byte lbl_801BF598
+	.4byte lbl_801BF5A4
+	.4byte lbl_801BF5B0
+	.4byte lbl_801BF5BC
+	.4byte lbl_80610320
+	.4byte lbl_80610328
+	.4byte 0x3ECCCCCD
+	.4byte 0x3ECCCCCD
+	.4byte 0x3ECCCCCD
+	.4byte 0x3ECCCCCD
+	.4byte 0x3ECCCCCD
+	.4byte 0x3ECCCCCD
+	.4byte 0x3ECCCCCD
+	.4byte 0x3ECCCCCD
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E4CCCCD
+
+.global lbl_801BF618
+lbl_801BF618:
+
+	# ROM: 0x1BB718
+	.asciz "Left_Sound"
+	.balign 4
+
+.global lbl_801BF624
+lbl_801BF624:
+
+	# ROM: 0x1BB724
+	.asciz "Right_Sound"
+
+.global lbl_801BF630
+lbl_801BF630:
+
+	# ROM: 0x1BB730
+	.asciz "Left_Bgm"
+	.balign 4
+
+.global lbl_801BF63C
+lbl_801BF63C:
+
+	# ROM: 0x1BB73C
+	.asciz "Right_Bgm"
+	.balign 4
+
+.global lbl_801BF648
+lbl_801BF648:
+
+	# ROM: 0x1BB748
+	.asciz "Left_Env"
+	.balign 4
+
+.global lbl_801BF654
+lbl_801BF654:
+
+	# ROM: 0x1BB754
+	.asciz "Right_Env"
+	.balign 4
+
+.global lbl_801BF660
+lbl_801BF660:
+
+	# ROM: 0x1BB760
+	.asciz "Right_Se"
+	.balign 4
+	.4byte 0
+	.4byte lbl_801BF618
+	.4byte lbl_801BF624
+	.4byte lbl_801BF630
+	.4byte lbl_801BF63C
+	.4byte lbl_801BF648
+	.4byte lbl_801BF654
+	.4byte lbl_80610330
+	.4byte lbl_801BF660
+	.4byte lbl_80610338
+	.4byte lbl_80610340
+	.4byte lbl_80610344
+	.4byte lbl_8061034C
+	.4byte lbl_80610350
+	.4byte lbl_80610354
+
+.global lbl_801BF6A8
+lbl_801BF6A8:
+
+	# ROM: 0x1BB7A8
+	.asciz "P_MesSound"
+	.balign 4
+
+.global lbl_801BF6B4
+lbl_801BF6B4:
+
+	# ROM: 0x1BB7B4
+	.asciz "P_MesBgm"
+	.balign 4
+
+.global lbl_801BF6C0
+lbl_801BF6C0:
+
+	# ROM: 0x1BB7C0
+	.asciz "P_MesEnv"
+	.balign 4
+	.4byte 0
+	.4byte lbl_801BF6A8
+	.4byte lbl_801BF6B4
+	.4byte lbl_801BF6C0
+	.4byte lbl_80610358
+
+.global lbl_801BF6E0
+lbl_801BF6E0:
+
+	# ROM: 0x1BB7E0
+	.asciz "P_BgmVol_0"
+	.balign 4
+
+.global lbl_801BF6EC
+lbl_801BF6EC:
+
+	# ROM: 0x1BB7EC
+	.asciz "P_EnvVol_0"
+	.balign 4
+
+.global lbl_801BF6F8
+lbl_801BF6F8:
+
+	# ROM: 0x1BB7F8
+	.asciz "P_SeVol_0"
+	.balign 4
+
+.global lbl_801BF704
+lbl_801BF704:
+
+	# ROM: 0x1BB804
+	.4byte lbl_801BF6E0
+	.4byte lbl_801BF6EC
+	.4byte lbl_801BF6F8
+	.asciz "CSceneMenuFreeFlight"
+	.balign 4
+	.asciz "CSceneMenuCopterSelect"
+	.balign 4
+
+.global lbl_801BF740
+lbl_801BF740:
+
+	# ROM: 0x1BB840
+	.asciz "CSceneMenuSoundSetting"
+	.balign 4
+	.asciz "CSceneMenuBase"
+	.balign 4
+	.asciz "CVSoundMgr"
+	.balign 4
+
+.global lbl_801BF774
+lbl_801BF774:
+
+	# ROM: 0x1BB874
+	.4byte 0x2F00536F
+	.asciz "undSetting"
+	.byte 0x2E
+	.4byte 0x61726300
+	.asciz "SceneMenuSoundSetting.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer must not be NULL (archiveBuf)"
+	.byte 0x53, 0x6F, 0x75
+	.asciz "ndSetting"
+	.byte 0x53, 0x6F
+	.asciz "undSetting.brlyt"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuSoundSetting.cpp"
+	.byte 0x4E
+	.asciz "W4R:Pointer must not be NULL (lytRes)"
+	.byte 0x50, 0x5F
+	.asciz "IMes_P"
+	.byte 0x50
+	.asciz "_IMes_M"
+	.asciz "P_IMes_C"
+	.byte 0x42, 0x47, 0x4D
+	.asciz "03_Home"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Decide_A"
+	.asciz "%s%d"
+	.byte 0x45, 0x4E, 0x56
+	.asciz "_Park"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x45, 0x4E
+	.asciz "V_Park"
+	.byte 0x53
+	.asciz "E_Cursor_A"
+	.byte 0x53
+	.asciz "E_Decide_A"
+	.byte 0x50
+	.asciz "_Sound_Ste"
+	.byte 0x50
+	.asciz "_Sound_Mono"
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__22CSceneMenuSoundSettingFv
@@ -1461,3 +1718,104 @@ lbl_801CC828:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E350
+lbl_8060E350:
+
+	# ROM: 0x1EE550
+	.4byte 0xFFFFFFFF
+	.4byte 0
+
+.global lbl_8060E358
+lbl_8060E358:
+
+	# ROM: 0x1EE558
+	.4byte lbl_801BF740
+	.4byte lbl_801CC828
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610320
+lbl_80610320:
+
+	# ROM: 0x1EF9E0
+	.asciz "P_Back"
+	.balign 4
+
+.global lbl_80610328
+lbl_80610328:
+
+	# ROM: 0x1EF9E8
+	.asciz "P_Ok"
+	.balign 4
+
+.global lbl_80610330
+lbl_80610330:
+
+	# ROM: 0x1EF9F0
+	.asciz "Left_Se"
+
+.global lbl_80610338
+lbl_80610338:
+
+	# ROM: 0x1EF9F8
+	.asciz "Back"
+	.balign 4
+
+.global lbl_80610340
+lbl_80610340:
+
+	# ROM: 0x1EFA00
+	.4byte 0x4F6B0000
+
+.global lbl_80610344
+lbl_80610344:
+
+	# ROM: 0x1EFA04
+	.asciz "Sound"
+	.balign 4
+
+.global lbl_8061034C
+lbl_8061034C:
+
+	# ROM: 0x1EFA0C
+	.4byte 0x42676D00
+
+.global lbl_80610350
+lbl_80610350:
+
+	# ROM: 0x1EFA10
+	.4byte 0x456E7600
+
+.global lbl_80610354
+lbl_80610354:
+
+	# ROM: 0x1EFA14
+	.4byte 0x53650000
+
+.global lbl_80610358
+lbl_80610358:
+
+	# ROM: 0x1EFA18
+	.asciz "P_MesSe"
+
+.global lbl_80610360
+lbl_80610360:
+
+	# ROM: 0x1EFA20
+	.4byte 0x3F800000
+
+.global lbl_80610364
+lbl_80610364:
+
+	# ROM: 0x1EFA24
+	.4byte 0x41900000
+
+.global lbl_80610368
+lbl_80610368:
+
+	# ROM: 0x1EFA28
+	.4byte 0x43300000
+	.4byte 0x80000000

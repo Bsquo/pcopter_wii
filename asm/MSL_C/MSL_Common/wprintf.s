@@ -2628,8 +2628,8 @@ lbl_800BDBEC:
 /* 800BDC1C 000AEB9C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800BDC20 000AEBA0  4E 80 00 20 */	blr
 
-.global func_800BDC24
-func_800BDC24:
+.global swprintf
+swprintf:
 /* 800BDC24 000AEBA4  94 21 FF 60 */	stwu r1, -0xa0(r1)
 /* 800BDC28 000AEBA8  7C 08 02 A6 */	mflr r0
 /* 800BDC2C 000AEBAC  90 01 00 A4 */	stw r0, 0xa4(r1)

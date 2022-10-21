@@ -1,5 +1,49 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BF8F0
+lbl_801BF8F0:
+
+	# ROM: 0x1BB9F0
+	.asciz "CSceneMenuStrap"
+
+.global lbl_801BF900
+lbl_801BF900:
+
+	# ROM: 0x1BBA00
+	.asciz "/PCopter/Strap"
+	.byte 0x2F
+	.4byte 0x00537472
+	.asciz "ap_English"
+	.byte 0x53
+	.asciz "trap_German"
+	.asciz "Strap_French"
+	.byte 0x53, 0x74, 0x72
+	.asciz "ap_Spanish_EU"
+	.byte 0x53, 0x74
+	.asciz "rap_Italian"
+	.asciz "Strap_Dutch"
+	.asciz "Strap"
+	.byte 0x2E, 0x61
+	.4byte 0x72630053
+	.asciz "ceneMenuStrap.cpp"
+	.byte 0x4E, 0x57
+	.asciz "4R:Pointer must not be NULL (archiveBuf)"
+	.byte 0x25, 0x73, 0x2E
+	.asciz "brlyt"
+	.byte 0x53, 0x63
+	.asciz "eneMenuStrap.cpp"
+	.byte 0x4E, 0x57, 0x34
+	.asciz "R:Pointer must not be NULL (lytRes)"
+	.asciz "%s.brlan"
+	.byte 0x53, 0x63, 0x65
+	.asciz "neMenuStrap.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lpaRes)"
+	.byte 0x50
+	.asciz "icture_00"
+	.balign 4
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__15CSceneMenuStrapFv
@@ -706,3 +750,69 @@ lbl_801CC888:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E360
+lbl_8060E360:
+
+	# ROM: 0x1EE560
+	.4byte lbl_801BF8F0
+	.4byte lbl_801CC888
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610370
+lbl_80610370:
+
+	# ROM: 0x1EFA30
+	.4byte 0
+
+.global lbl_80610374
+lbl_80610374:
+
+	# ROM: 0x1EFA34
+	.4byte 0x41E80000
+
+.global lbl_80610378
+lbl_80610378:
+
+	# ROM: 0x1EFA38
+	.4byte 0x42B40000
+
+.global lbl_8061037C
+lbl_8061037C:
+
+	# ROM: 0x1EFA3C
+	.4byte 0x3F800000
+
+.global lbl_80610380
+lbl_80610380:
+
+	# ROM: 0x1EFA40
+	.4byte 0x449D8000
+
+.global lbl_80610384
+lbl_80610384:
+
+	# ROM: 0x1EFA44
+	.4byte 0x44960000
+
+.global lbl_80610388
+lbl_80610388:
+
+	# ROM: 0x1EFA48
+	.4byte 0x43300000
+	.4byte 0
+
+.global lbl_80610390
+lbl_80610390:
+
+	# ROM: 0x1EFA50
+	.4byte 0x43A00000
+
+.global lbl_80610394
+lbl_80610394:
+
+	# ROM: 0x1EFA54
+	.4byte 0x43700000

@@ -1,5 +1,60 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BFA60
+lbl_801BFA60:
+
+	# ROM: 0x1BBB60
+	.asciz "CSceneMenuMain4"
+
+.global lbl_801BFA70
+lbl_801BFA70:
+
+	# ROM: 0x1BBB70
+	.asciz "GROUP_SHARE"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Decide_A"
+	.asciz "BGM12_Shop"
+	.byte 0x43
+	.asciz "heat Setting"
+	.byte 0x4F, 0x4E, 0x00
+	.4byte 0x4F464600
+	.asciz "HideInfo       %s"
+	.byte 0x4F, 0x4E
+	.4byte 0x004F4646
+	.4byte 0x004D6F76
+	.asciz "eCam        %s"
+	.byte 0x4F
+	.4byte 0x4E004F46
+	.4byte 0x4600436F
+	.asciz "llDraw       %s"
+	.4byte 0x4F4E004F
+	.4byte 0x46460043
+	.asciz "ollDisable    %s"
+	.byte 0x4F, 0x4E, 0x00
+	.4byte 0x4F464600
+	.asciz "InfiniteBatt   %s"
+	.byte 0x4F, 0x4E
+	.4byte 0x004F4646
+	.4byte 0x00496E66
+	.asciz "initeLife   %s"
+	.byte 0x4F
+	.4byte 0x4E004F46
+	.4byte 0x46004465
+	.asciz "bugInfo      %s"
+	.asciz "Return"
+	.byte 0x2A
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__15CSceneMenuMain4Fv
@@ -621,3 +676,12 @@ lbl_801CC918:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E378
+lbl_8060E378:
+
+	# ROM: 0x1EE578
+	.4byte lbl_801BFA60
+	.4byte lbl_801CC918

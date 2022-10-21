@@ -1,5 +1,21 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BFA40
+lbl_801BFA40:
+
+	# ROM: 0x1BBB40
+	.asciz "CMarkerGroup"
+	.balign 4
+
+.global lbl_801BFA50
+lbl_801BFA50:
+
+	# ROM: 0x1BBB50
+	.asciz "Marker_%d_%d"
+	.balign 4
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __dt__7CMarkerFv
@@ -1245,3 +1261,46 @@ lbl_801CC8C4:
 	.4byte __RTTI__10CVListBase
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global __RTTI__12CMarkerGroup
+__RTTI__12CMarkerGroup:
+
+	# ROM: 0x1EE568
+	.4byte lbl_801BFA40
+	.4byte lbl_801CC8AC
+
+.global __RTTI__7CMarker
+__RTTI__7CMarker:
+
+	# ROM: 0x1EE570
+	.4byte lbl_806103A8
+	.4byte lbl_801CC8C4
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610398
+lbl_80610398:
+
+	# ROM: 0x1EFA58
+	.4byte 0x3F800000
+
+.global lbl_8061039C
+lbl_8061039C:
+
+	# ROM: 0x1EFA5C
+	.4byte 0x40400000
+
+.global lbl_806103A0
+lbl_806103A0:
+
+	# ROM: 0x1EFA60
+	.4byte 0x42C80000
+	.4byte 0
+
+.global lbl_806103A8
+lbl_806103A8:
+
+	# ROM: 0x1EFA68
+	.asciz "CMarker"

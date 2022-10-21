@@ -1,5 +1,14 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BF550
+lbl_801BF550:
+
+	# ROM: 0x1BB650
+	.asciz "CActBalloon"
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__11CActBalloonFv
@@ -542,4 +551,101 @@ lbl_801CC7AC:
 	.4byte 0
 	.4byte lbl_8060E338
 	.4byte 0
+	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E348
+lbl_8060E348:
+
+	# ROM: 0x1EE548
+	.4byte lbl_801BF550
+	.4byte lbl_801CC7AC
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_806102E0
+lbl_806102E0:
+
+	# ROM: 0x1EF9A0
+	.4byte 0x3F000000
+
+.global lbl_806102E4
+lbl_806102E4:
+
+	# ROM: 0x1EF9A4
+	.4byte 0
+
+.global lbl_806102E8
+lbl_806102E8:
+
+	# ROM: 0x1EF9A8
+	.4byte 0x3FC00000
+
+.global lbl_806102EC
+lbl_806102EC:
+
+	# ROM: 0x1EF9AC
+	.4byte 0x3F19999A
+
+.global lbl_806102F0
+lbl_806102F0:
+
+	# ROM: 0x1EF9B0
+	.4byte 0x3E99999A
+
+.global lbl_806102F4
+lbl_806102F4:
+
+	# ROM: 0x1EF9B4
+	.4byte 0x447A0000
+
+.global lbl_806102F8
+lbl_806102F8:
+
+	# ROM: 0x1EF9B8
+	.4byte 0x41200000
+
+.global lbl_806102FC
+lbl_806102FC:
+
+	# ROM: 0x1EF9BC
+	.4byte 0x3A83126F
+
+.global lbl_80610300
+lbl_80610300:
+
+	# ROM: 0x1EF9C0
+	.4byte 0x3E4CCCCD
+
+.global lbl_80610304
+lbl_80610304:
+
+	# ROM: 0x1EF9C4
+	.4byte 0x3F800000
+
+.global lbl_80610308
+lbl_80610308:
+
+	# ROM: 0x1EF9C8
+	.4byte 0x3F666666
+
+.global lbl_8061030C
+lbl_8061030C:
+
+	# ROM: 0x1EF9CC
+	.4byte 0x3C88893B
+
+.global lbl_80610310
+lbl_80610310:
+
+	# ROM: 0x1EF9D0
+	.4byte 0x43300000
+	.4byte 0x80000000
+
+.global lbl_80610318
+lbl_80610318:
+
+	# ROM: 0x1EF9D8
+	.4byte 0x43300000
 	.4byte 0

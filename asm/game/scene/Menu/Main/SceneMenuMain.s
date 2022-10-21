@@ -1,5 +1,137 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BE780
+lbl_801BE780:
+
+	# ROM: 0x1BA880
+	.asciz "Motion"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Pointing"
+	.balign 4
+	.4byte 0
+	.asciz "Classic1"
+	.balign 4
+	.4byte 0
+	.asciz "Classic2"
+	.balign 4
+	.4byte 0
+	.asciz "KidsRoom"
+	.balign 4
+	.4byte 0
+	.asciz "Hospital"
+	.balign 4
+	.4byte 0
+	.asciz "Park"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Hotel"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Company"
+	.4byte 0
+	.4byte 0
+	.asciz "BGShop"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Japan"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "JapanOld"
+	.balign 4
+	.4byte 0
+	.asciz "FreeFlight"
+	.balign 4
+	.4byte 0
+	.asciz "Mission_1"
+	.balign 4
+	.4byte 0
+	.asciz "Mission_2"
+	.balign 4
+	.4byte 0
+	.asciz "Mission_3"
+	.balign 4
+	.4byte 0
+	.asciz "Mission_4"
+	.balign 4
+	.4byte 0
+	.asciz "Mission_5"
+	.balign 4
+	.4byte 0
+	.asciz "Treasure"
+	.balign 4
+	.4byte 0
+	.asciz "CSceneMenuFreeFlight"
+	.balign 4
+	.asciz "CSceneMenuCopterSelect"
+	.balign 4
+	.asciz "CSceneMenuBase"
+	.balign 4
+	.asciz "CVPadMgr"
+	.balign 4
+
+.global lbl_801BE8FC
+lbl_801BE8FC:
+
+	# ROM: 0x1BA9FC
+	.asciz "CSceneMenuMain"
+	.balign 4
+	.asciz "CVSoundMgr"
+	.balign 4
+
+.global lbl_801BE918
+lbl_801BE918:
+
+	# ROM: 0x1BAA18
+	.asciz "GROUP_SHARE"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Decide_A"
+	.asciz "SE_Decide_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Decide_A"
+	.asciz "BGM02_Map"
+	.asciz "PetitCopter Wii Simple Menu"
+	.byte 0x47, 0x6F
+	.asciz " Flight"
+	.asciz "Parts Select"
+	.byte 0x20, 0x00, 0x3E
+	.4byte 0x00526F6F
+	.asciz "m           %s[%s]%s"
+	.byte 0x20, 0x00, 0x3C
+	.4byte 0x0020003E
+	.4byte 0x00536365
+	.asciz "nary        %s[%s]%s"
+	.byte 0x20, 0x00, 0x3C
+	.4byte 0x0020003E
+	.4byte 0x0020003C
+	.4byte 0x00436F6E
+	.asciz "trol        %s[%s]%s"
+	.byte 0x53, 0x6F, 0x75
+	.asciz "nd Setting"
+	.byte 0x43
+	.asciz "heat Setting"
+	.byte 0x4D, 0x75, 0x6C
+	.asciz "tiPlay"
+	.byte 0x54
+	.asciz "itle"
+	.byte 0x2A, 0x00, 0x53
+	.asciz "ystem (64MB) = %d bytes (%d%%) free"
+	.asciz "User   (18MB) = %d bytes (%d%%) free"
+	.balign 4
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__14CSceneMenuMainFv
@@ -816,3 +948,12 @@ lbl_801CC610:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E330
+lbl_8060E330:
+
+	# ROM: 0x1EE530
+	.4byte lbl_801BE8FC
+	.4byte lbl_801CC610

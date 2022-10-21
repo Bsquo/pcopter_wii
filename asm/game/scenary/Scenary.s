@@ -566,7 +566,7 @@ lbl_80053E5C:
 /* 80053EE4 00044E64  4B FB D7 9D */	bl GetInstance__4CAppFv
 /* 80053EE8 00044E68  4B FC 91 29 */	bl GetSceneGame__4CAppFv
 /* 80053EEC 00044E6C  38 80 00 0D */	li r4, 0xd
-/* 80053EF0 00044E70  4B FC 1C 1D */	bl func_80015B0C
+/* 80053EF0 00044E70  4B FC 1C 1D */	bl SetState__10CSceneGameFi
 /* 80053EF4 00044E74  93 DA 00 1C */	stw r30, 0x1c(r26)
 /* 80053EF8 00044E78  4B FC 09 F5 */	bl GetInstance__10CVSoundMgrFv
 /* 80053EFC 00044E7C  38 9F 00 34 */	addi r4, r31, 0x34
@@ -623,7 +623,7 @@ lbl_801CC368:
 	# ROM: 0x1C8468
 	.4byte lbl_8060E300
 	.4byte 0
-	.4byte func_80044D0C
+	.4byte __dt__8CScenaryFv
 	.4byte lbl_80053770
 	.4byte lbl_8004799C
 	.4byte lbl_8004800C

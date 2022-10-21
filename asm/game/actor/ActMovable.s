@@ -1,5 +1,21 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BEAC0
+lbl_801BEAC0:
+
+	# ROM: 0x1BABC0
+	.asciz "CActMovable"
+
+.global lbl_801BEACC
+lbl_801BEACC:
+
+	# ROM: 0x1BABCC
+	.asciz "LiftUp/height"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__11CActMovableFv
@@ -282,5 +298,23 @@ lbl_801CC66C:
 	.4byte __RTTI__7CVActor
 	.4byte 0
 	.4byte lbl_8060E310
+	.4byte 0
+	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E338
+lbl_8060E338:
+
+	# ROM: 0x1EE538
+	.4byte lbl_801BEAC0
+	.4byte lbl_801CC66C
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610288
+lbl_80610288:
+
+	# ROM: 0x1EF948
 	.4byte 0
 	.4byte 0

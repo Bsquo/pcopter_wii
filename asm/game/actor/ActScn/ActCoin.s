@@ -1,5 +1,15 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BE238
+lbl_801BE238:
+
+	# ROM: 0x1BA338
+	.asciz "CActCoin"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__8CActCoinFv
@@ -129,3 +139,26 @@ lbl_801CC524:
 	.4byte lbl_8060E310
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E320
+lbl_8060E320:
+
+	# ROM: 0x1EE520
+	.4byte lbl_801BE238
+	.4byte lbl_801CC524
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610280
+lbl_80610280:
+
+	# ROM: 0x1EF940
+	.4byte 0x3DCCCCCD
+
+.global lbl_80610284
+lbl_80610284:
+
+	# ROM: 0x1EF944
+	.4byte 0x3F800000

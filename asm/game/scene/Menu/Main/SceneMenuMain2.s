@@ -1,5 +1,230 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BE248
+lbl_801BE248:
+
+	# ROM: 0x1BA348
+	.asciz "Normal"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Power"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "PowerDX"
+	.4byte 0
+	.4byte 0
+	.asciz "GigaSilver"
+	.balign 4
+	.4byte 0
+	.asciz "GigaGold"
+	.balign 4
+	.4byte 0
+	.asciz "GigaPlatinum"
+	.balign 4
+	.asciz "Custom22"
+	.balign 4
+	.4byte 0
+	.asciz "Zeek1"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Zeek2"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Zeek3"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Griffin"
+	.4byte 0
+	.4byte 0
+	.asciz "S_Evolution"
+	.4byte 0
+	.asciz "Normal"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Mini"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Micro"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Quick"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Dream"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Normal"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "PowerMAX"
+	.balign 4
+	.4byte 0
+	.asciz "PowerMAX2"
+	.balign 4
+	.4byte 0
+	.asciz "MachPow"
+	.4byte 0
+	.4byte 0
+	.asciz "ThunderPow"
+	.balign 4
+	.4byte 0
+	.asciz "Dynamics_E"
+	.balign 4
+	.4byte 0
+	.asciz "Poseidon"
+	.balign 4
+	.4byte 0
+	.asciz "ReserveBatt"
+	.4byte 0
+	.asciz "Treasure_RD"
+	.4byte 0
+	.asciz "Attack_RD"
+	.balign 4
+	.4byte 0
+	.asciz "Sonic_RD"
+	.balign 4
+	.4byte 0
+	.asciz "LightSet"
+	.balign 4
+	.4byte 0
+	.asciz "SoundKit"
+	.balign 4
+	.4byte 0
+	.asciz "CSceneMenuFreeFlight"
+	.balign 4
+	.asciz "CSceneMenuCopterSelect"
+	.balign 4
+	.asciz "CSceneMenuBase"
+	.balign 4
+	.asciz "CVPadMgr"
+	.balign 4
+	.4byte 0
+
+.global lbl_801BE478
+lbl_801BE478:
+
+	# ROM: 0x1BA578
+	.asciz "CSceneMenuMain2"
+	.asciz "CVSoundMgr"
+	.balign 4
+
+.global lbl_801BE494
+lbl_801BE494:
+
+	# ROM: 0x1BA594
+	.asciz "GROUP_SHARE"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "Actor/Copter"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x41, 0x63, 0x74
+	.asciz "or/Rotor"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x53, 0x45, 0x5F
+	.asciz "Cursor_A"
+	.byte 0x41, 0x63, 0x74
+	.asciz "or/Cannon"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x53, 0x45
+	.asciz "_Cursor_A"
+	.byte 0x41, 0x63
+	.asciz "tor/LiftCup"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Decide_A"
+	.asciz "BGM12_Shop"
+	.byte 0x50
+	.asciz "arts Select"
+	.asciz "Actor/Copter"
+	.byte 0x20, 0x00, 0x3E
+	.4byte 0x00416374
+	.asciz "or/Copter"
+	.byte 0x20, 0x00
+	.4byte 0x3C00426F
+	.asciz "dy           %s[%s]%s"
+	.byte 0x20, 0x00
+	.4byte 0x3E002000
+	.4byte 0x3C00436F
+	.asciz "lor          %s[Color%d]%s"
+	.byte 0x41
+	.asciz "ctor/Rotor"
+	.byte 0x20
+	.4byte 0x003E0041
+	.asciz "ctor/Rotor"
+	.byte 0x20
+	.4byte 0x003C0052
+	.asciz "otor          %s[%s]%s"
+	.byte 0x20
+	.4byte 0x003E0020
+	.4byte 0x003C004D
+	.asciz "otor          %s[%s]%s"
+	.byte 0x20
+	.4byte 0x003E0020
+	.4byte 0x003C0047
+	.asciz "yro           %s[%s]%s"
+	.byte 0x20
+	.4byte 0x003E0020
+	.4byte 0x003C0042
+	.asciz "attery        %s[%s]%s"
+	.byte 0x41
+	.asciz "ctor/Cannon"
+	.4byte 0x20003E00
+	.asciz "Actor/Cannon"
+	.byte 0x20, 0x00, 0x3C
+	.4byte 0x0043616E
+	.asciz "non         %s[%s]%s"
+	.byte 0x41, 0x63, 0x74
+	.asciz "or/LiftCup"
+	.byte 0x20
+	.4byte 0x003E0041
+	.asciz "ctor/LiftCup"
+	.byte 0x20, 0x00, 0x3C
+	.4byte 0x004C6966
+	.asciz "tCup        %s[%s]%s"
+	.byte 0x20, 0x00, 0x3E
+	.4byte 0x0020003C
+	.4byte 0x00457463
+	.asciz "            %s[%s]%s"
+	.byte 0x52, 0x65, 0x74
+	.4byte 0x75726E00
+	.4byte 0x2A000000
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__15CSceneMenuMain2Fv
@@ -1110,3 +1335,12 @@ lbl_801CC5D8:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E328
+lbl_8060E328:
+
+	# ROM: 0x1EE528
+	.4byte lbl_801BE478
+	.4byte lbl_801CC5D8

@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_800B2F90
-func_800B2F90:
+.global __cvt_fp2unsigned
+__cvt_fp2unsigned:
 /* 800B2F90 000A3F10  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800B2F94 000A3F14  3C 80 80 1C */	lis r4, lbl_801C4A58@ha
 /* 800B2F98 000A3F18  38 84 4A 58 */	addi r4, r4, lbl_801C4A58@l

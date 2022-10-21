@@ -1,5 +1,72 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BFBC8
+lbl_801BFBC8:
+
+	# ROM: 0x1BBCC8
+	.asciz "Stereo"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Surround"
+	.balign 4
+	.4byte 0
+	.asciz "DPL_2"
+	.balign 4
+	.4byte 0
+	.4byte 0
+	.asciz "Mono"
+	.balign 4
+	.4byte 0
+	.4byte 0
+
+.global lbl_801BFC08
+lbl_801BFC08:
+
+	# ROM: 0x1BBD08
+	.asciz "CSceneMenuMain3"
+
+.global lbl_801BFC18
+lbl_801BFC18:
+
+	# ROM: 0x1BBD18
+	.asciz "GROUP_SHARE"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Decide_A"
+	.asciz "BGM12_Shop"
+	.byte 0x53
+	.asciz "ound Setting"
+	.byte 0x20, 0x00, 0x3E
+	.4byte 0x0020003C
+	.4byte 0x00536F75
+	.asciz "ndOutPut    %s[%s]%s"
+	.byte 0x20, 0x00, 0x3E
+	.4byte 0x0053455F
+	.asciz "Volume      %s[%3d]%s"
+	.byte 0x20, 0x00
+	.4byte 0x3C002000
+	.4byte 0x3E004247
+	.asciz "M_Volume     %s[%3d]%s"
+	.byte 0x20
+	.4byte 0x003C0020
+	.4byte 0x003E0045
+	.asciz "NV_Volume     %s[%3d]%s"
+	.4byte 0x20003C00
+	.asciz "Return"
+	.byte 0x2A
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__15CSceneMenuMain3Fv
@@ -883,3 +950,28 @@ lbl_801CC950:
 	.4byte 0
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E380
+lbl_8060E380:
+
+	# ROM: 0x1EE580
+	.4byte lbl_801BFC08
+	.4byte lbl_801CC950
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_806103B0
+lbl_806103B0:
+
+	# ROM: 0x1EFA70
+	.4byte 0x41200000
+	.4byte 0
+
+.global lbl_806103B8
+lbl_806103B8:
+
+	# ROM: 0x1EFA78
+	.4byte 0x43300000
+	.4byte 0x80000000

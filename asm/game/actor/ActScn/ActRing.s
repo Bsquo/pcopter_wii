@@ -1,5 +1,15 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BE228
+lbl_801BE228:
+
+	# ROM: 0x1BA328
+	.asciz "CActRing"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__8CActRingFv
@@ -70,8 +80,8 @@ lbl_80054F80:
 /* 80054F8C 00045F0C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80054F90 00045F10  4E 80 00 20 */	blr
 
-.global func_80054F94
-func_80054F94:
+.global CheckPass__8CActRingFP7CVActor
+CheckPass__8CActRingFP7CVActor:
 /* 80054F94 00045F14  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 80054F98 00045F18  7C 08 02 A6 */	mflr r0
 /* 80054F9C 00045F1C  90 01 00 84 */	stw r0, 0x84(r1)
@@ -224,8 +234,8 @@ lbl_80055194:
 /* 800551B4 00046134  38 21 00 50 */	addi r1, r1, 0x50
 /* 800551B8 00046138  4E 80 00 20 */	blr
 
-.global func_800551BC
-func_800551BC:
+.global GetScore__8CActRingF8CVVector
+GetScore__8CActRingF8CVVector:
 /* 800551BC 0004613C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800551C0 00046140  7C 08 02 A6 */	mflr r0
 /* 800551C4 00046144  90 01 00 34 */	stw r0, 0x34(r1)
@@ -320,3 +330,74 @@ lbl_801CC4B4:
 	.4byte lbl_8060E310
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E318
+lbl_8060E318:
+
+	# ROM: 0x1EE518
+	.4byte lbl_801BE228
+	.4byte lbl_801CC4B4
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610258
+lbl_80610258:
+
+	# ROM: 0x1EF918
+	.4byte 0x3ECCCCCD
+
+.global lbl_8061025C
+lbl_8061025C:
+
+	# ROM: 0x1EF91C
+	.4byte 0x3F800000
+
+.global lbl_80610260
+lbl_80610260:
+
+	# ROM: 0x1EF920
+	.4byte 0x3C88893B
+
+.global lbl_80610264
+lbl_80610264:
+
+	# ROM: 0x1EF924
+	.4byte 0
+
+.global lbl_80610268
+lbl_80610268:
+
+	# ROM: 0x1EF928
+	.4byte 0x40000000
+
+.global lbl_8061026C
+lbl_8061026C:
+
+	# ROM: 0x1EF92C
+	.4byte 0x43B40000
+
+.global lbl_80610270
+lbl_80610270:
+
+	# ROM: 0x1EF930
+	.4byte 0x3E99999A
+
+.global lbl_80610274
+lbl_80610274:
+
+	# ROM: 0x1EF934
+	.4byte 0x3F400000
+
+.global lbl_80610278
+lbl_80610278:
+
+	# ROM: 0x1EF938
+	.4byte 0x3F000000
+
+.global lbl_8061027C
+lbl_8061027C:
+
+	# ROM: 0x1EF93C
+	.4byte 0x3F19999A

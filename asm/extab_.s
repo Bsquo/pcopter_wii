@@ -7278,7 +7278,7 @@ lbl_80009324:
 	.4byte 0
 	.4byte 0x8680001F
 	.4byte 0
-	.4byte func_80044D0C
+	.4byte __dt__8CScenaryFv
 
 .global lbl_80009340
 lbl_80009340:
@@ -7311,7 +7311,7 @@ lbl_80009358:
 	.4byte 0
 	.4byte 0x8680001C
 	.4byte 0
-	.4byte func_80044D0C
+	.4byte __dt__8CScenaryFv
 
 .global lbl_80009374
 lbl_80009374:

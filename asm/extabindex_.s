@@ -333,7 +333,7 @@ lbl_8000CB00:
 	.4byte lbl_8001569C
 	.4byte 0x00000210
 	.4byte lbl_80006B9C
-	.4byte func_800158AC
+	.4byte GetInstance__11CVLayoutMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006BA4
 	.4byte GetInstance__11CScenaryMgrFv
@@ -351,7 +351,7 @@ lbl_8000CB00:
 	.4byte func_80015A94
 	.4byte 0x00000078
 	.4byte lbl_80006BCC
-	.4byte func_80015B0C
+	.4byte SetState__10CSceneGameFi
 	.4byte 0x0000010C
 	.4byte lbl_80006BE8
 	.4byte lbl_80015C18
@@ -366,10 +366,10 @@ lbl_8000CB00:
 	.4byte func_800167E0
 	.4byte 0x00000044
 	.4byte lbl_80006C08
-	.4byte func_80016824
+	.4byte GetInstance__10CVTimerMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006C10
-	.4byte func_80016888
+	.4byte func___ct__10CVTimerMgrFv
 	.4byte 0x0000003C
 	.4byte lbl_80006C18
 	.4byte __mi__8CVVectorFRC8CVVector
@@ -390,7 +390,7 @@ lbl_8000CB00:
 	.4byte func_800194D4
 	.4byte 0x00000054
 	.4byte lbl_80006C68
-	.4byte func_80019528
+	.4byte GetInstance__10CMarkerMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006C70
 	.4byte func_8001958C
@@ -1749,7 +1749,7 @@ lbl_8000CB00:
 	.4byte func_8002F1F0
 	.4byte 0x00000070
 	.4byte lbl_80008098
-	.4byte func_8002F268
+	.4byte SetVisible__11CVLayoutMgrFPci
 	.4byte 0x0000003C
 	.4byte lbl_800080A0
 	.4byte func_8002F2A4
@@ -1758,13 +1758,13 @@ lbl_8000CB00:
 	.4byte func_8002F2F0
 	.4byte 0x00000058
 	.4byte lbl_800080B0
-	.4byte func_8002F348
+	.4byte SetState__11CVLayoutMgrFPci
 	.4byte 0x0000003C
 	.4byte lbl_800080B8
 	.4byte func_8002F384
 	.4byte 0x0000003C
 	.4byte lbl_800080C0
-	.4byte func_8002F3C0
+	.4byte SetText__11CVLayoutMgrFPcPcPUs
 	.4byte 0x0000004C
 	.4byte lbl_800080C8
 	.4byte func_8002F40C
@@ -2502,7 +2502,7 @@ lbl_8000CB00:
 	.4byte func_80044C7C
 	.4byte 0x00000090
 	.4byte lbl_80009190
-	.4byte func_80044D0C
+	.4byte __dt__8CScenaryFv
 	.4byte 0x00000060
 	.4byte lbl_80009198
 	.4byte func_80044D6C
@@ -2841,13 +2841,13 @@ lbl_8000CB00:
 	.4byte func_8004D090
 	.4byte 0x0000005C
 	.4byte lbl_8000993C
-	.4byte func_8004D114
+	.4byte AddTimer__10CVTimerMgrFUlUl
 	.4byte 0x00000098
 	.4byte lbl_80009944
 	.4byte func_8004D1AC
 	.4byte 0x00000048
 	.4byte lbl_8000995C
-	.4byte func_8004D1F4
+	.4byte GetTime__10CVTimerMgrFUl
 	.4byte 0x00000034
 	.4byte lbl_80009964
 	.4byte func_8004D228
@@ -3090,13 +3090,13 @@ lbl_8000CB00:
 	.4byte lbl_80054F54
 	.4byte 0x00000040
 	.4byte lbl_80009E18
-	.4byte func_80054F94
+	.4byte CheckPass__8CActRingFP7CVActor
 	.4byte 0x00000124
 	.4byte lbl_80009E20
 	.4byte lbl_800550B8
 	.4byte 0x00000104
 	.4byte lbl_80009E28
-	.4byte func_800551BC
+	.4byte GetScore__8CActRingF8CVVector
 	.4byte 0x000000BC
 	.4byte lbl_80009E30
 	.4byte __ct__8CActCoinFv
@@ -3468,10 +3468,10 @@ lbl_8000CB00:
 	.4byte lbl_80062A40
 	.4byte 0x00000058
 	.4byte lbl_8000A9F4
-	.4byte lbl_80062A98
+	.4byte Start__12CScenaryRingFv
 	.4byte 0x00000188
 	.4byte lbl_8000A9FC
-	.4byte lbl_80062C20
+	.4byte Calc__12CScenaryRingFv
 	.4byte 0x000003B4
 	.4byte lbl_8000AA14
 	.4byte lbl_80062FF8
@@ -4415,7 +4415,7 @@ lbl_80010138:
 	.4byte lbl_800BDBB8
 	.4byte 0x0000006C
 	.4byte lbl_8000C500
-	.4byte func_800BDC24
+	.4byte swprintf
 	.4byte 0x000000DC
 	.4byte lbl_8000C508
 	.4byte lbl_800BDE8C

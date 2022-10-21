@@ -351,3 +351,19 @@ lbl_801CC690:
 	.4byte ExecAction__7CVActorFi
 	.4byte UpdateArea__7CVActorFv
 	.4byte 0
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610290
+lbl_80610290:
+
+	# ROM: 0x1EF950
+	.4byte 0
+	.4byte 0
+
+.global lbl_80610298
+lbl_80610298:
+
+	# ROM: 0x1EF958
+	.4byte 0x43300000
+	.4byte 0

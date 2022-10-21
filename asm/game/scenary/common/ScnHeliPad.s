@@ -1,5 +1,29 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801C0238
+lbl_801C0238:
+
+	# ROM: 0x1BC338
+	.asciz "CScenaryHeliPad"
+
+.global lbl_801C0248
+lbl_801C0248:
+
+	# ROM: 0x1BC348
+	.asciz "Scenary/pad_scale"
+	.byte 0x53, 0x63
+	.asciz "enary"
+	.byte 0x53, 0x45
+	.4byte 0x5F4F4B00
+	.asciz "Star"
+	.byte 0x53, 0x74, 0x61
+	.4byte 0x72005363
+	.asciz "enary"
+	.byte 0x43, 0x6F
+	.4byte 0x756E7400
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global lbl_800635A0
@@ -72,7 +96,7 @@ func_80063680:
 /* 8006368C 0005460C  38 61 00 08 */	addi r3, r1, 0x8
 /* 80063690 00054610  93 FD 00 38 */	stw r31, 0x38(r29)
 /* 80063694 00054614  4B FC 30 CD */	bl __ct__6CVFlagFv
-/* 80063698 00054618  4B FB 5E 91 */	bl func_80019528
+/* 80063698 00054618  4B FB 5E 91 */	bl GetInstance__10CMarkerMgrFv
 /* 8006369C 0005461C  4B FF 9A 5D */	bl Release__10CMarkerMgrFv
 /* 800636A0 00054620  38 61 00 08 */	addi r3, r1, 0x8
 /* 800636A4 00054624  38 80 FF FF */	li r4, -0x1
@@ -122,9 +146,9 @@ lbl_8006373C:
 /* 80063744 000546C4  41 82 00 08 */	beq lbl_8006374C
 /* 80063748 000546C8  48 00 02 08 */	b func_80063950
 lbl_8006374C:
-/* 8006374C 000546CC  4B FB 30 D9 */	bl func_80016824
+/* 8006374C 000546CC  4B FB 30 D9 */	bl GetInstance__10CVTimerMgrFv
 /* 80063750 000546D0  38 80 00 64 */	li r4, 0x64
-/* 80063754 000546D4  4B FE 9A A1 */	bl func_8004D1F4
+/* 80063754 000546D4  4B FE 9A A1 */	bl GetTime__10CVTimerMgrFUl
 /* 80063758 000546D8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8006375C 000546DC  41 82 00 0C */	beq lbl_80063768
 /* 80063760 000546E0  3B 40 00 01 */	li r26, 0x1
@@ -139,12 +163,12 @@ lbl_80063768:
 
 .global func_80063780
 func_80063780:
-/* 80063780 00054700  4B FB 21 2D */	bl func_800158AC
+/* 80063780 00054700  4B FB 21 2D */	bl GetInstance__11CVLayoutMgrFv
 /* 80063784 00054704  3C 80 80 1C */	lis r4, lbl_801C0248@ha
 /* 80063788 00054708  7F 45 D3 78 */	mr r5, r26
 /* 8006378C 0005470C  3B E4 02 48 */	addi r31, r4, lbl_801C0248@l
 /* 80063790 00054710  38 9F 00 12 */	addi r4, r31, 0x12
-/* 80063794 00054714  4B FC BB B5 */	bl func_8002F348
+/* 80063794 00054714  4B FC BB B5 */	bl SetState__11CVLayoutMgrFPci
 /* 80063798 00054718  4B FB 21 DD */	bl GetInstance__10CVActorMgrFv
 /* 8006379C 0005471C  38 80 00 0A */	li r4, 0xa
 /* 800637A0 00054720  4B FC A1 21 */	bl GetStart__10CVActorMgrFi
@@ -197,14 +221,14 @@ lbl_800637C0:
 /* 80063858 000547D8  4B FA DE 29 */	bl GetInstance__4CAppFv
 /* 8006385C 000547DC  4B FB 97 B5 */	bl GetSceneGame__4CAppFv
 /* 80063860 000547E0  38 80 00 01 */	li r4, 0x1
-/* 80063864 000547E4  4B FB 22 A9 */	bl func_80015B0C
+/* 80063864 000547E4  4B FB 22 A9 */	bl SetState__10CSceneGameFi
 /* 80063868 000547E8  93 5D 00 08 */	stw r26, 0x8(r29)
 /* 8006386C 000547EC  48 00 00 48 */	b func_800638B4
 lbl_80063870:
-/* 80063870 000547F0  4B FB 2F B5 */	bl func_80016824
+/* 80063870 000547F0  4B FB 2F B5 */	bl GetInstance__10CVTimerMgrFv
 /* 80063874 000547F4  38 80 00 64 */	li r4, 0x64
 /* 80063878 000547F8  38 A0 01 68 */	li r5, 0x168
-/* 8006387C 000547FC  4B FE 98 99 */	bl func_8004D114
+/* 8006387C 000547FC  4B FE 98 99 */	bl AddTimer__10CVTimerMgrFUlUl
 /* 80063880 00054800  80 DD 00 38 */	lwz r6, 0x38(r29)
 /* 80063884 00054804  38 61 00 18 */	addi r3, r1, 0x18
 /* 80063888 00054808  80 1D 00 34 */	lwz r0, 0x34(r29)
@@ -212,12 +236,12 @@ lbl_80063870:
 /* 80063890 00054810  38 AD 86 30 */	addi r5, r13, lbl_8060E430@sda21
 /* 80063894 00054814  7C C6 00 50 */	subf r6, r6, r0
 /* 80063898 00054818  4C C6 31 82 */	crclr 6
-/* 8006389C 0005481C  48 05 A3 89 */	bl func_800BDC24
-/* 800638A0 00054820  4B FB 20 0D */	bl func_800158AC
+/* 8006389C 0005481C  48 05 A3 89 */	bl swprintf
+/* 800638A0 00054820  4B FB 20 0D */	bl GetInstance__11CVLayoutMgrFv
 /* 800638A4 00054824  38 9F 00 2A */	addi r4, r31, 0x2a
 /* 800638A8 00054828  38 BF 00 32 */	addi r5, r31, 0x32
 /* 800638AC 0005482C  38 C1 00 18 */	addi r6, r1, 0x18
-/* 800638B0 00054830  4B FC BB 11 */	bl func_8002F3C0
+/* 800638B0 00054830  4B FC BB 11 */	bl SetText__11CVLayoutMgrFPcPcPUs
 
 .global func_800638B4
 func_800638B4:
@@ -247,7 +271,7 @@ func_800638B4:
 /* 80063910 00054890  C8 01 00 A0 */	lfd f0, 0xa0(r1)
 /* 80063914 00054894  EC 00 F8 28 */	fsubs f0, f0, f31
 /* 80063918 00054898  EC 21 00 24 */	fdivs f1, f1, f0
-/* 8006391C 0005489C  48 04 F6 75 */	bl func_800B2F90
+/* 8006391C 0005489C  48 04 F6 75 */	bl __cvt_fp2unsigned
 /* 80063920 000548A0  7C 7C 1B 78 */	mr r28, r3
 /* 80063924 000548A4  4B FB 1F ED */	bl GetInstance__11CScenaryMgrFv
 /* 80063928 000548A8  80 03 01 70 */	lwz r0, 0x170(r3)
@@ -307,7 +331,7 @@ lbl_800639AC:
 /* 800639C8 00054948  7C 7E 1B 78 */	mr r30, r3
 /* 800639CC 0005494C  41 82 00 1C */	beq lbl_800639E8
 /* 800639D0 00054950  38 80 00 00 */	li r4, 0x0
-/* 800639D4 00054954  4B FE 13 39 */	bl func_80044D0C
+/* 800639D4 00054954  4B FE 13 39 */	bl __dt__8CScenaryFv
 /* 800639D8 00054958  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 800639DC 0005495C  40 81 00 0C */	ble lbl_800639E8
 /* 800639E0 00054960  7F C3 F3 78 */	mr r3, r30
@@ -320,3 +344,81 @@ lbl_800639E8:
 /* 800639F8 00054978  7C 08 03 A6 */	mtlr r0
 /* 800639FC 0005497C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80063A00 00054980  4E 80 00 20 */	blr
+
+.section .data, "wa", @progbits
+
+.global lbl_801CCCD0
+lbl_801CCCD0:
+
+	# ROM: 0x1C8DD0
+	.4byte lbl_8060E428
+	.4byte 0
+	.4byte lbl_800639AC
+	.4byte lbl_80053770
+	.4byte lbl_800635A0
+	.4byte lbl_8004800C
+	.4byte lbl_800636E0
+	.4byte lbl_800485C0
+	.4byte lbl_80048664
+	.4byte lbl_800537A4
+	.4byte func_80053874
+	.4byte func_80053978
+	.4byte lbl_80048C04
+	.4byte lbl_80063988
+	.4byte lbl_80048A50
+	.4byte lbl_80048BCC
+	.4byte lbl_80053BDC
+	.4byte lbl_80053D40
+	.4byte lbl_80053DF0
+
+.global lbl_801CCD1C
+lbl_801CCD1C:
+
+	# ROM: 0x1C8E1C
+	.4byte lbl_8060E300
+	.4byte 0
+	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E428
+lbl_8060E428:
+
+	# ROM: 0x1EE628
+	.4byte lbl_801C0238
+	.4byte lbl_801CCD1C
+
+.global lbl_8060E430
+lbl_8060E430:
+
+	# ROM: 0x1EE630
+	.4byte 0x00250064
+	.4byte 0
+
+.section .sdata2, "wa", @progbits
+
+.global lbl_80610498
+lbl_80610498:
+
+	# ROM: 0x1EFB58
+	.4byte 0
+
+.global lbl_8061049C
+lbl_8061049C:
+
+	# ROM: 0x1EFB5C
+	.4byte 0x3DCCCCCD
+
+.global lbl_806104A0
+lbl_806104A0:
+
+	# ROM: 0x1EFB60
+	.4byte 0x43300000
+	.4byte 0
+
+.global lbl_806104A8
+lbl_806104A8:
+
+	# ROM: 0x1EFB68
+	.4byte 0x43300000
+	.4byte 0x80000000

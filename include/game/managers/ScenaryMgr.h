@@ -23,7 +23,7 @@ class CScenaryMgr {
         UNK32 field_0x15C;
         UNK32 field_0x160;
         UNK32 field_0x164;
-        u32 mTime;                          // The mission's current time in frames
+        u32 mTime;                          // The mission's current time in seconds
         u32 max_point;
         u32 score;                          // Current score
         u32 total_score;                    // Total score at the end of the mission

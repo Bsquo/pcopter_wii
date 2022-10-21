@@ -1,5 +1,15 @@
 .include "macros.s"
 
+.section .rodata, "a", @progbits
+
+.global lbl_801BF540
+lbl_801BF540:
+
+	# ROM: 0x1BB640
+	.asciz "CActTarget"
+	.balign 4
+	.4byte 0
+
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
 .global __ct__10CActTargetFv
@@ -117,10 +127,10 @@ lbl_8005A0AC:
 /* 8005A104 0004B084  C0 5D 00 18 */	lfs f2, 0x18(r29)
 /* 8005A108 0004B088  C0 7D 00 1C */	lfs f3, 0x1c(r29)
 /* 8005A10C 0004B08C  4B FD 74 11 */	bl SetPos__11CVEffectMgrFPcfff
-/* 8005A110 0004B090  4B FB C7 15 */	bl func_80016824
+/* 8005A110 0004B090  4B FB C7 15 */	bl GetInstance__10CVTimerMgrFv
 /* 8005A114 0004B094  7F C4 F3 78 */	mr r4, r30
 /* 8005A118 0004B098  38 A0 00 3C */	li r5, 0x3c
-/* 8005A11C 0004B09C  4B FF 2F F9 */	bl func_8004D114
+/* 8005A11C 0004B09C  4B FF 2F F9 */	bl AddTimer__10CVTimerMgrFUlUl
 lbl_8005A120:
 /* 8005A120 0004B0A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8005A124 0004B0A4  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -143,9 +153,9 @@ lbl_8005A13C:
 /* 8005A15C 0004B0DC  3B E3 03 E8 */	addi r31, r3, 0x3e8
 /* 8005A160 0004B0E0  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8005A164 0004B0E4  41 81 00 2C */	bgt lbl_8005A190
-/* 8005A168 0004B0E8  4B FB C6 BD */	bl func_80016824
+/* 8005A168 0004B0E8  4B FB C6 BD */	bl GetInstance__10CVTimerMgrFv
 /* 8005A16C 0004B0EC  7F E4 FB 78 */	mr r4, r31
-/* 8005A170 0004B0F0  4B FF 30 85 */	bl func_8004D1F4
+/* 8005A170 0004B0F0  4B FF 30 85 */	bl GetTime__10CVTimerMgrFUl
 /* 8005A174 0004B0F4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005A178 0004B0F8  40 82 00 18 */	bne lbl_8005A190
 /* 8005A17C 0004B0FC  38 7E 02 48 */	addi r3, r30, 0x248
@@ -154,9 +164,9 @@ lbl_8005A13C:
 /* 8005A188 0004B108  4B FC C6 3D */	bl Set__6CVFlagFUsi
 /* 8005A18C 0004B10C  48 00 00 48 */	b func_8005A1D4
 lbl_8005A190:
-/* 8005A190 0004B110  4B FB C6 95 */	bl func_80016824
+/* 8005A190 0004B110  4B FB C6 95 */	bl GetInstance__10CVTimerMgrFv
 /* 8005A194 0004B114  7F E4 FB 78 */	mr r4, r31
-/* 8005A198 0004B118  4B FF 30 5D */	bl func_8004D1F4
+/* 8005A198 0004B118  4B FF 30 5D */	bl GetTime__10CVTimerMgrFUl
 /* 8005A19C 0004B11C  3C 80 CC CD */	lis r4, 0xCCCCCCCD@ha
 /* 8005A1A0 0004B120  38 A0 00 05 */	li r5, 0x5
 /* 8005A1A4 0004B124  38 04 CC CD */	addi r0, r4, 0xCCCCCCCD@l
@@ -222,3 +232,12 @@ lbl_801CC73C:
 	.4byte lbl_8060E310
 	.4byte 0
 	.4byte 0
+
+.section .sdata, "wa", @progbits
+
+.global lbl_8060E340
+lbl_8060E340:
+
+	# ROM: 0x1EE540
+	.4byte lbl_801BF540
+	.4byte lbl_801CC73C

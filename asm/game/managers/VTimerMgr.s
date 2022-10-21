@@ -42,8 +42,8 @@ lbl_8004D100:
 /* 8004D10C 0003E08C  54 03 0F FE */	srwi r3, r0, 31
 /* 8004D110 0003E090  4E 80 00 20 */	blr
 
-.global func_8004D114
-func_8004D114:
+.global AddTimer__10CVTimerMgrFUlUl
+AddTimer__10CVTimerMgrFUlUl:
 /* 8004D114 0003E094  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8004D118 0003E098  7C 08 02 A6 */	mflr r0
 /* 8004D11C 0003E09C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -114,8 +114,8 @@ lbl_8004D1E0:
 /* 8004D1EC 0003E16C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004D1F0 0003E170  4E 80 00 20 */	blr
 
-.global func_8004D1F4
-func_8004D1F4:
+.global GetTime__10CVTimerMgrFUl
+GetTime__10CVTimerMgrFUl:
 /* 8004D1F4 0003E174  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004D1F8 0003E178  7C 08 02 A6 */	mflr r0
 /* 8004D1FC 0003E17C  90 01 00 14 */	stw r0, 0x14(r1)

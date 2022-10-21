@@ -401,8 +401,8 @@ func_80062FA4:
 /* 80062FCC 00053F4C  38 21 00 F0 */	addi r1, r1, 0xf0
 /* 80062FD0 00053F50  4E 80 00 20 */	blr
 
-.global lbl_80062FD4
-lbl_80062FD4:
+.global GetAchieveRatio__12CScenaryRingFPiPi
+GetAchieveRatio__12CScenaryRingFPiPi:
 /* 80062FD4 00053F54  2C 04 00 00 */	cmpwi r4, 0x0
 /* 80062FD8 00053F58  41 82 00 0C */	beq lbl_80062FE4
 /* 80062FDC 00053F5C  80 03 00 38 */	lwz r0, 0x38(r3)
@@ -414,8 +414,8 @@ lbl_80062FE4:
 /* 80062FF0 00053F70  90 05 00 00 */	stw r0, 0x0(r5)
 /* 80062FF4 00053F74  4E 80 00 20 */	blr
 
-.global lbl_80062FF8
-lbl_80062FF8:
+.global __dt__12CScenaryRingFv
+__dt__12CScenaryRingFv:
 /* 80062FF8 00053F78  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80062FFC 00053F7C  7C 08 02 A6 */	mflr r0
 /* 80063000 00053F80  2C 03 00 00 */	cmpwi r3, 0x0
@@ -442,42 +442,42 @@ lbl_80063034:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CCC20
-lbl_801CCC20:
+.global __vt__12CScenaryRing
+__vt__12CScenaryRing:
 
 	# ROM: 0x1C8D20
-	.4byte lbl_8060E408
+	.4byte __RTTI__12CScenaryRing
 	.4byte 0
-	.4byte lbl_80062FF8
-	.4byte lbl_80053770
+	.4byte __dt__12CScenaryRingFv
+	.4byte Init__8CScenaryFP8CVScript
 	.4byte Start__12CScenaryRingFv
-	.4byte lbl_8004800C
+	.4byte ExecCmd__8CScenaryFP8CVAction
 	.4byte Calc__12CScenaryRingFv
-	.4byte lbl_800485C0
-	.4byte lbl_80048664
-	.4byte lbl_800537A4
-	.4byte func_80053874
-	.4byte func_80053978
-	.4byte lbl_80048C04
-	.4byte lbl_80062FD4
-	.4byte lbl_80048A50
-	.4byte lbl_80048BCC
-	.4byte lbl_80053BDC
-	.4byte lbl_80053D40
-	.4byte lbl_80053DF0
+	.4byte CalcEnding__8CScenaryFv
+	.4byte Render__8CScenaryFv
+	.4byte LiftActor__8CScenaryFi
+	.4byte PutActor__8CScenaryFiff8CVVector
+	.4byte PutActorDirect__8CScenaryFiiff8CVVector
+	.4byte ForcePut__8CScenaryFP11CActMovable
+	.4byte GetAchieveRatio__12CScenaryRingFPiPi
+	.4byte GetPlayerScore__8CScenaryFPiPi
+	.4byte ActionTracking__8CScenaryFP11CActScnBaseUl8CVVector
+	.4byte CoinHitCheck__8CScenaryFPP8CActCoin
+	.4byte InitTreasure__8CScenaryFv
+	.4byte CalcExit__8CScenaryFi
 
 .global lbl_801CCC6C
 lbl_801CCC6C:
 
 	# ROM: 0x1C8D6C
-	.4byte lbl_8060E300
+	.4byte __RTTI__8CScenary
 	.4byte 0
 	.4byte 0
 
 .section .sdata, "wa", @progbits
 
-.global lbl_8060E408
-lbl_8060E408:
+.global __RTTI__12CScenaryRing
+__RTTI__12CScenaryRing:
 
 	# ROM: 0x1EE608
 	.4byte lbl_801C0148

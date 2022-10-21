@@ -379,7 +379,7 @@ PutActorDirect__15CScenaryJapan05Fiiff8CVVector:
 /* 8008019C 0007111C  90 C1 00 24 */	stw r6, 0x24(r1)
 /* 800801A0 00071120  38 C1 00 20 */	addi r6, r1, 0x20
 /* 800801A4 00071124  90 01 00 28 */	stw r0, 0x28(r1)
-/* 800801A8 00071128  4B FD 37 D1 */	bl func_80053978
+/* 800801A8 00071128  4B FD 37 D1 */	bl PutActorDirect__8CScenaryFiiff8CVVector
 /* 800801AC 0007112C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800801B0 00071130  41 82 00 08 */	beq lbl_800801B8
 /* 800801B4 00071134  3B E0 00 01 */	li r31, 0x1

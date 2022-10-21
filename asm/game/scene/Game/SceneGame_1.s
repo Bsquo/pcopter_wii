@@ -1791,7 +1791,7 @@ GetInstance__10CVTimerMgrFv:
 /* 8001683C 000077BC  40 82 00 30 */	bne lbl_8001686C
 /* 80016840 000077C0  3F E0 80 50 */	lis r31, lbl_805019C8@ha
 /* 80016844 000077C4  38 7F 19 C8 */	addi r3, r31, lbl_805019C8@l
-/* 80016848 000077C8  48 00 00 41 */	bl func___ct__10CVTimerMgrFv
+/* 80016848 000077C8  48 00 00 41 */	bl __ct__10CVTimerMgrFv
 /* 8001684C 000077CC  3C 80 80 01 */	lis r4, __dt__10CVTimerMgrFv@ha
 /* 80016850 000077D0  3C A0 80 52 */	lis r5, lbl_8051D618@ha
 /* 80016854 000077D4  38 7F 19 C8 */	addi r3, r31, lbl_805019C8@l
@@ -1809,8 +1809,8 @@ lbl_8001686C:
 /* 80016880 00007800  38 21 00 10 */	addi r1, r1, 0x10
 /* 80016884 00007804  4E 80 00 20 */	blr
 
-.global func___ct__10CVTimerMgrFv
-func___ct__10CVTimerMgrFv:
+.global __ct__10CVTimerMgrFv
+__ct__10CVTimerMgrFv:
 /* __ct__10CVTimerMgrFv 00007808  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8001688C 0000780C  7C 08 02 A6 */	mflr r0
 /* 80016890 00007810  3C 80 80 1D */	lis r4, __vt__10CVTimerMgr@ha

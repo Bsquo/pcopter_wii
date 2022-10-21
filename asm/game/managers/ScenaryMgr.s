@@ -1083,9 +1083,9 @@ func_80045748:
 /* 80045754 000366D4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80045758 000366D8  7C 7F 1B 78 */	mr r31, r3
 /* 8004575C 000366DC  48 00 08 05 */	bl func_80045F60
-/* 80045760 000366E0  3C 80 80 1D */	lis r4, lbl_801CCC20@ha
+/* 80045760 000366E0  3C 80 80 1D */	lis r4, __vt__12CScenaryRing@ha
 /* 80045764 000366E4  7F E3 FB 78 */	mr r3, r31
-/* 80045768 000366E8  38 84 CC 20 */	addi r4, r4, lbl_801CCC20@l
+/* 80045768 000366E8  38 84 CC 20 */	addi r4, r4, __vt__12CScenaryRing@l
 /* 8004576C 000366EC  90 9F 00 30 */	stw r4, 0x30(r31)
 /* 80045770 000366F0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80045774 000366F4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -4044,8 +4044,8 @@ func_80047FE4:
 /* 80048004 00038F84  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 80048008 00038F88  4E 80 00 20 */	blr
 
-.global lbl_8004800C
-lbl_8004800C:
+.global ExecCmd__8CScenaryFP8CVAction
+ExecCmd__8CScenaryFP8CVAction:
 /* 8004800C 00038F8C  38 60 00 01 */	li r3, 0x1
 /* 80048010 00038F90  4E 80 00 20 */	blr
 
@@ -4453,8 +4453,8 @@ func_8004859C:
 lbl_800485BC:
 /* 800485BC 0003953C  4E 80 00 20 */	blr
 
-.global lbl_800485C0
-lbl_800485C0:
+.global CalcEnding__8CScenaryFv
+CalcEnding__8CScenaryFv:
 /* 800485C0 00039540  4E 80 00 20 */	blr
 
 .global func_800485C4
@@ -4506,8 +4506,8 @@ func_8004864C:
 /* 8004865C 000395DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80048660 000395E0  4E 80 00 20 */	blr
 
-.global lbl_80048664
-lbl_80048664:
+.global Render__8CScenaryFv
+Render__8CScenaryFv:
 /* 80048664 000395E4  4E 80 00 20 */	blr
 
 .global func_80048668
@@ -4797,8 +4797,8 @@ lbl_80048A38:
 /* 80048A48 000399C8  4E 80 04 20 */	bctr
 /* 80048A4C 000399CC  4E 80 00 20 */	blr
 
-.global lbl_80048A50
-lbl_80048A50:
+.global GetPlayerScore__8CScenaryFPiPi
+GetPlayerScore__8CScenaryFPiPi:
 /* 80048A50 000399D0  4E 80 00 20 */	blr
 
 .global func_80048A54
@@ -4913,8 +4913,8 @@ func_80048BBC:
 /* 80048BC4 00039B44  38 21 00 20 */	addi r1, r1, 0x20
 /* 80048BC8 00039B48  4E 80 00 20 */	blr
 
-.global lbl_80048BCC
-lbl_80048BCC:
+.global ActionTracking__8CScenaryFP11CActScnBaseUl8CVVector
+ActionTracking__8CScenaryFP11CActScnBaseUl8CVVector:
 /* 80048BCC 00039B4C  4E 80 00 20 */	blr
 
 .global ForcePut__11CScenaryMgrFP11CActMovable
@@ -4934,8 +4934,8 @@ lbl_80048BEC:
 /* 80048BFC 00039B7C  4E 80 04 20 */	bctr
 /* 80048C00 00039B80  4E 80 00 20 */	blr
 
-.global lbl_80048C04
-lbl_80048C04:
+.global ForcePut__8CScenaryFP11CActMovable
+ForcePut__8CScenaryFP11CActMovable:
 /* 80048C04 00039B84  4E 80 00 20 */	blr
 
 .global func_80048C08

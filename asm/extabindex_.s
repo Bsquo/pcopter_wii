@@ -369,7 +369,7 @@ lbl_8000CB00:
 	.4byte GetInstance__10CVTimerMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006C10
-	.4byte func___ct__10CVTimerMgrFv
+	.4byte __ct__10CVTimerMgrFv
 	.4byte 0x0000003C
 	.4byte lbl_80006C18
 	.4byte __mi__8CVVectorFRC8CVVector
@@ -2838,7 +2838,7 @@ lbl_8000CB00:
 	.4byte lbl_8004CFDC
 	.4byte 0x000000B4
 	.4byte lbl_80009934
-	.4byte func_8004D090
+	.4byte __ct__7CVTimerFUlUl
 	.4byte 0x0000005C
 	.4byte lbl_8000993C
 	.4byte AddTimer__10CVTimerMgrFUlUl
@@ -3012,25 +3012,25 @@ lbl_8000CB00:
 	.4byte StartLocal__26CSceneMenuControllerManualFv
 	.4byte 0x000002DC
 	.4byte lbl_80009D28
-	.4byte lbl_800537A4
+	.4byte LiftActor__8CScenaryFi
 	.4byte 0x000000D0
 	.4byte lbl_80009D50
-	.4byte func_80053874
+	.4byte PutActor__8CScenaryFiff8CVVector
 	.4byte 0x00000104
 	.4byte lbl_80009D58
-	.4byte func_80053978
+	.4byte PutActorDirect__8CScenaryFiiff8CVVector
 	.4byte 0x00000154
 	.4byte lbl_80009D60
 	.4byte func_80053ACC
 	.4byte 0x00000110
 	.4byte lbl_80009D68
-	.4byte lbl_80053BDC
+	.4byte CoinHitCheck__8CScenaryFPP8CActCoin
 	.4byte 0x00000164
 	.4byte lbl_80009D70
-	.4byte lbl_80053D40
+	.4byte InitTreasure__8CScenaryFv
 	.4byte 0x000000B0
 	.4byte lbl_80009D78
-	.4byte lbl_80053DF0
+	.4byte CalcExit__8CScenaryFi
 	.4byte 0x000001B0
 	.4byte lbl_80009D80
 	.4byte SoundCallback__Fii
@@ -3474,7 +3474,7 @@ lbl_8000CB00:
 	.4byte Calc__12CScenaryRingFv
 	.4byte 0x000003B4
 	.4byte lbl_8000AA14
-	.4byte lbl_80062FF8
+	.4byte __dt__12CScenaryRingFv
 	.4byte 0x00000058
 
 .global lbl_80010138

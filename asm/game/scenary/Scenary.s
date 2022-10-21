@@ -29,8 +29,8 @@ lbl_801BE0B4:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global lbl_80053770
-lbl_80053770:
+.global Init__8CScenaryFP8CVScript
+Init__8CScenaryFP8CVScript:
 /* 80053770 000446F0  38 00 00 00 */	li r0, 0x0
 /* 80053774 000446F4  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80053778 000446F8  90 03 00 0C */	stw r0, 0xc(r3)
@@ -48,8 +48,8 @@ lbl_80053770:
 func_800537A0:
 /* 800537A0 00044720  4E 80 00 20 */	blr
 
-.global lbl_800537A4
-lbl_800537A4:
+.global LiftActor__8CScenaryFi
+LiftActor__8CScenaryFi:
 /* 800537A4 00044724  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800537A8 00044728  7C 08 02 A6 */	mflr r0
 /* 800537AC 0004472C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -107,8 +107,8 @@ func_8005385C:
 /* 8005386C 000447EC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80053870 000447F0  4E 80 00 20 */	blr
 
-.global func_80053874
-func_80053874:
+.global PutActor__8CScenaryFiff8CVVector
+PutActor__8CScenaryFiff8CVVector:
 /* 80053874 000447F4  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80053878 000447F8  7C 08 02 A6 */	mflr r0
 /* 8005387C 000447FC  90 01 00 64 */	stw r0, 0x64(r1)
@@ -179,8 +179,8 @@ func_80053954:
 /* 80053970 000448F0  38 21 00 60 */	addi r1, r1, 0x60
 /* 80053974 000448F4  4E 80 00 20 */	blr
 
-.global func_80053978
-func_80053978:
+.global PutActorDirect__8CScenaryFiiff8CVVector
+PutActorDirect__8CScenaryFiiff8CVVector:
 /* 80053978 000448F8  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 8005397C 000448FC  7C 08 02 A6 */	mflr r0
 /* 80053980 00044900  90 01 00 84 */	stw r0, 0x84(r1)
@@ -343,8 +343,8 @@ lbl_80053BC0:
 /* 80053BD4 00044B54  38 21 00 30 */	addi r1, r1, 0x30
 /* 80053BD8 00044B58  4E 80 00 20 */	blr
 
-.global lbl_80053BDC
-lbl_80053BDC:
+.global CoinHitCheck__8CScenaryFPP8CActCoin
+CoinHitCheck__8CScenaryFPP8CActCoin:
 /* 80053BDC 00044B5C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80053BE0 00044B60  7C 08 02 A6 */	mflr r0
 /* 80053BE4 00044B64  90 01 00 24 */	stw r0, 0x24(r1)
@@ -444,8 +444,8 @@ func_80053D20:
 /* 80053D38 00044CB8  38 21 00 20 */	addi r1, r1, 0x20
 /* 80053D3C 00044CBC  4E 80 00 20 */	blr
 
-.global lbl_80053D40
-lbl_80053D40:
+.global InitTreasure__8CScenaryFv
+InitTreasure__8CScenaryFv:
 /* 80053D40 00044CC0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80053D44 00044CC4  7C 08 02 A6 */	mflr r0
 /* 80053D48 00044CC8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -499,8 +499,8 @@ func_80053DC8:
 /* 80053DE8 00044D68  38 21 00 20 */	addi r1, r1, 0x20
 /* 80053DEC 00044D6C  4E 80 00 20 */	blr
 
-.global lbl_80053DF0
-lbl_80053DF0:
+.global CalcExit__8CScenaryFi
+CalcExit__8CScenaryFi:
 /* 80053DF0 00044D70  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 80053DF4 00044D74  7C 08 02 A6 */	mflr r0
 /* 80053DF8 00044D78  90 01 00 84 */	stw r0, 0x84(r1)
@@ -621,31 +621,31 @@ func_80053F68:
 lbl_801CC368:
 
 	# ROM: 0x1C8468
-	.4byte lbl_8060E300
+	.4byte __RTTI__8CScenary
 	.4byte 0
 	.4byte __dt__8CScenaryFv
-	.4byte lbl_80053770
+	.4byte Init__8CScenaryFP8CVScript
 	.4byte lbl_8004799C
-	.4byte lbl_8004800C
+	.4byte ExecCmd__8CScenaryFP8CVAction
 	.4byte lbl_800485BC
-	.4byte lbl_800485C0
-	.4byte lbl_80048664
-	.4byte lbl_800537A4
-	.4byte func_80053874
-	.4byte func_80053978
-	.4byte lbl_80048C04
+	.4byte CalcEnding__8CScenaryFv
+	.4byte Render__8CScenaryFv
+	.4byte LiftActor__8CScenaryFi
+	.4byte PutActor__8CScenaryFiff8CVVector
+	.4byte PutActorDirect__8CScenaryFiiff8CVVector
+	.4byte ForcePut__8CScenaryFP11CActMovable
 	.4byte lbl_80048A18
-	.4byte lbl_80048A50
-	.4byte lbl_80048BCC
-	.4byte lbl_80053BDC
-	.4byte lbl_80053D40
-	.4byte lbl_80053DF0
+	.4byte GetPlayerScore__8CScenaryFPiPi
+	.4byte ActionTracking__8CScenaryFP11CActScnBaseUl8CVVector
+	.4byte CoinHitCheck__8CScenaryFPP8CActCoin
+	.4byte InitTreasure__8CScenaryFv
+	.4byte CalcExit__8CScenaryFi
 	.4byte 0
 
 .section .sdata, "wa", @progbits
 
-.global lbl_8060E300
-lbl_8060E300:
+.global __RTTI__8CScenary
+__RTTI__8CScenary:
 
 	# ROM: 0x1EE500
 	.4byte lbl_801BE0A8

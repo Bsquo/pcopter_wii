@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8004D090
-func_8004D090:
+.global __ct__7CVTimerFUlUl
+__ct__7CVTimerFUlUl:
 /* 8004D090 0003E010  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8004D094 0003E014  7C 08 02 A6 */	mflr r0
 /* 8004D098 0003E018  90 01 00 24 */	stw r0, 0x24(r1)
@@ -65,7 +65,7 @@ AddTimer__10CVTimerMgrFUlUl:
 /* 8004D15C 0003E0DC  41 82 00 10 */	beq lbl_8004D16C
 /* 8004D160 0003E0E0  7F A4 EB 78 */	mr r4, r29
 /* 8004D164 0003E0E4  7F C5 F3 78 */	mr r5, r30
-/* 8004D168 0003E0E8  4B FF FF 29 */	bl func_8004D090
+/* 8004D168 0003E0E8  4B FF FF 29 */	bl __ct__7CVTimerFUlUl
 lbl_8004D16C:
 /* 8004D16C 0003E0EC  2C 1F 00 00 */	cmpwi r31, 0x0
 /* 8004D170 0003E0F0  41 82 00 18 */	beq func_8004D188

@@ -298,7 +298,7 @@ lbl_80061050:
 /* 8006111C 0005209C  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80061120 000520A0  80 1B 00 08 */	lwz r0, 0x8(r27)
 /* 80061124 000520A4  90 01 00 10 */	stw r0, 0x10(r1)
-/* 80061128 000520A8  4B FF 27 4D */	bl func_80053874
+/* 80061128 000520A8  4B FF 27 4D */	bl PutActor__8CScenaryFiff8CVVector
 /* 8006112C 000520AC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80061130 000520B0  41 82 01 20 */	beq lbl_80061250
 /* 80061134 000520B4  38 7C 02 48 */	addi r3, r28, 0x248
@@ -656,28 +656,28 @@ lbl_801CCAC0:
 	.4byte lbl_8060E3C8
 	.4byte 0
 	.4byte lbl_800615B0
-	.4byte lbl_80053770
+	.4byte Init__8CScenaryFP8CVScript
 	.4byte lbl_80060DDC
-	.4byte lbl_8004800C
+	.4byte ExecCmd__8CScenaryFP8CVAction
 	.4byte lbl_8006127C
-	.4byte lbl_800485C0
-	.4byte lbl_80048664
-	.4byte lbl_800537A4
+	.4byte CalcEnding__8CScenaryFv
+	.4byte Render__8CScenaryFv
+	.4byte LiftActor__8CScenaryFi
 	.4byte lbl_80061050
-	.4byte func_80053978
-	.4byte lbl_80048C04
+	.4byte PutActorDirect__8CScenaryFiiff8CVVector
+	.4byte ForcePut__8CScenaryFP11CActMovable
 	.4byte lbl_8006158C
-	.4byte lbl_80048A50
-	.4byte lbl_80048BCC
-	.4byte lbl_80053BDC
-	.4byte lbl_80053D40
-	.4byte lbl_80053DF0
+	.4byte GetPlayerScore__8CScenaryFPiPi
+	.4byte ActionTracking__8CScenaryFP11CActScnBaseUl8CVVector
+	.4byte CoinHitCheck__8CScenaryFPP8CActCoin
+	.4byte InitTreasure__8CScenaryFv
+	.4byte CalcExit__8CScenaryFi
 
 .global lbl_801CCB0C
 lbl_801CCB0C:
 
 	# ROM: 0x1C8C0C
-	.4byte lbl_8060E300
+	.4byte __RTTI__8CScenary
 	.4byte 0
 	.4byte 0
 

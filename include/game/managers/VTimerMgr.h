@@ -15,8 +15,8 @@ class CVTimerMgr {
         static CVTimerMgr* GetInstance();
         virtual ~CVTimerMgr();
         void Release();
-        void AddTimer(u32, u32);
-        const CVTimer& GetTimer(u32);
+        CVTimer& AddTimer(u32, u32);
+        CVTimer& GetTimer(u32);
         u32 GetTime(u32);
         void DeleteTimer(u32);
         void Update();

@@ -64,7 +64,6 @@ void CVList::Release() {
     Init();
 }
 
-
 u32 CVList::GetSize() {
     return mSize;
 }

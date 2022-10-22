@@ -4,15 +4,22 @@
 #include "include/game/scenary/Scenary.h"
 #include "types.h"
 
-struct CScenaryRing: public CScenary {
-        s32 mMaxScore;
-        s32 mCurrentScore;
+class CScenaryRing: public CScenary {
+    public:
+        enum EMessages{
+            NO_MESSAGE,
+            REMAINING_RINGS,
+            FLY_THROUGH_THE_RINGS,
+            LAND_ON_THE_HELIPORT
+        };
+        int mMaxScore;
+        int mCurrentScore;
 
         CScenaryRing();
         ~CScenaryRing();
         void Start();
         void Calc();
-        u32 GetAchieveRatio(int*, int*);
+        void GetAchieveRatio(int*, int*);
 };
 
 #endif // SCENARY_RING_H

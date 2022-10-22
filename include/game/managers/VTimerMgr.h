@@ -12,6 +12,8 @@ class CVTimerMgr {
         CVList mTimerGroup;
 
         static CVTimerMgr* GetInstance();
+        u32 GetTime(u32);
+        void AddTimer(u32, u32);
         virtual ~CVTimerMgr();
 };
 

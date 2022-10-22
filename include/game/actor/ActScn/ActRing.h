@@ -16,9 +16,10 @@ class CActRing: public CActScnBase {
         f32 mYaw;               // Yaw rotation
 
         CActRing();
-        virtual ~CActRing();
-        virtual bool Move(f32);
-        virtual void Recovery();
+        ~CActRing();
+        void Recovery();
+        bool CheckPass(CVActor*);
+        f32 GetScore(CVVector);
 };
 
 #endif // ACT_RING_H

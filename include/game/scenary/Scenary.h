@@ -35,7 +35,7 @@ class CScenary {
         virtual UNK32 PutActor(int, f32, f32, CVVector);
         virtual UNK32 PutActorDirect(int, int, f32, f32, CVVector);
         virtual void ForcePut(CActMovable*);
-        virtual u32 GetAchieveRatio(int*, int*);
+        virtual void GetAchieveRatio(int*, int*);
         virtual u32 GetPlayerScore(int*, int*);
         virtual void ActionTracking(CActScnBase*, u32, CVVector);
         virtual bool CoinHitCheck(CActCoin**);

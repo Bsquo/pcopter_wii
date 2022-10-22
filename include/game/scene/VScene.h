@@ -4,7 +4,7 @@
 #include "types.h"
 
 class CVScene {
-	private:
+	public:
 		u32 field_0x0;
 		void* field_0x04;	// std::vector<nw4r::g3d::G3dObj>*
 		UNK32 field_0x08;
@@ -16,7 +16,6 @@ class CVScene {
 		UNK32 field_0x20;
 		u32 mFrameTimer;
 
-    public:
 		// __ct__7CVSceneFv (0x8002ba48)
         CVScene();
 		// Start__7CVSceneFv (0x8002bc1c)

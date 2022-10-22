@@ -19,6 +19,9 @@ class CVLayoutMgr {
 
         static CVLayoutMgr* GetInstance();
         virtual ~CVLayoutMgr();
+        void SetState(char* layout_name, int state);
+        void SetVisible(char* layout_name, int visible);
+        void SetText(char*, char*, u16*);
 };
 
 #endif // VLAYOUTMGR_H

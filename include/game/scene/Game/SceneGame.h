@@ -33,7 +33,7 @@ enum eGameplayState {
 
 // Single player gameplay scene
 class CSceneGame: public CVScene {
-	private:
+	public:
 		CActCopter* pHelicopter;
 		UNK32 field_0x30;
 		UNK32 field_0x34;
@@ -68,8 +68,8 @@ class CSceneGame: public CVScene {
 		UNK32 field_0xC0;
 		UNK32 field_0xC4;
 
-    public:
 		CSceneGame();
+        void SetState(int);
 		virtual bool StartLocal();
 		virtual bool CalcLocal();
 		virtual void RenderLocal();

@@ -89,6 +89,7 @@ class CApp: public CVApp {
         void EndLocal();
         bool SetSceneIndex(int);
         bool MenuSeenEndCheak();
+        CSceneGame* GetSceneGame();
         ~CApp();
 };
 

@@ -13,6 +13,8 @@ class CVSoundMgr {
         void InitArchive(char*);
         void SetOutPutMode(int);
         void Update();
+        s32 StartSound(char*, int, int, int);
+        void SetVolume(int, int, f32);
         virtual ~CVSoundMgr();
 };
 

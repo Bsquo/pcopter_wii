@@ -147,10 +147,9 @@ void CScenaryRing::GetAchieveRatio(int* current_score, int* max_score) {
     if (current_score != nullptr) {
         *current_score = mCurrentScore;
     }
-    if (max_score == nullptr) {
-        return;
+    if (max_score != nullptr) {
+        *max_score = mMaxScore;
     }
-    *max_score = mMaxScore;
 }
 
 CScenaryRing::~CScenaryRing() {}

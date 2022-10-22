@@ -28,8 +28,8 @@ __ct__7CVTimerFUlUl:
 /* 8004D0E4 0003E064  38 21 00 20 */	addi r1, r1, 0x20
 /* 8004D0E8 0003E068  4E 80 00 20 */	blr
 
-.global func_8004D0EC
-func_8004D0EC:
+.global Update__7CVTimerFv
+Update__7CVTimerFv:
 /* 8004D0EC 0003E06C  80 83 00 18 */	lwz r4, 0x18(r3)
 /* 8004D0F0 0003E070  2C 04 00 00 */	cmpwi r4, 0x0
 /* 8004D0F4 0003E074  41 82 00 0C */	beq lbl_8004D100
@@ -54,7 +54,7 @@ AddTimer__10CVTimerMgrFUlUl:
 /* 8004D130 0003E0B0  7C 9D 23 78 */	mr r29, r4
 /* 8004D134 0003E0B4  93 81 00 10 */	stw r28, 0x10(r1)
 /* 8004D138 0003E0B8  7C 7C 1B 78 */	mr r28, r3
-/* 8004D13C 0003E0BC  48 00 00 71 */	bl func_8004D1AC
+/* 8004D13C 0003E0BC  48 00 00 71 */	bl GetTimer__10CVTimerMgrFUl
 /* 8004D140 0003E0C0  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8004D144 0003E0C4  7C 7F 1B 78 */	mr r31, r3
 /* 8004D148 0003E0C8  40 82 00 3C */	bne lbl_8004D184
@@ -88,8 +88,8 @@ func_8004D188:
 /* 8004D1A4 0003E124  38 21 00 20 */	addi r1, r1, 0x20
 /* 8004D1A8 0003E128  4E 80 00 20 */	blr
 
-.global func_8004D1AC
-func_8004D1AC:
+.global GetTimer__10CVTimerMgrFUl
+GetTimer__10CVTimerMgrFUl:
 /* 8004D1AC 0003E12C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004D1B0 0003E130  7C 08 02 A6 */	mflr r0
 /* 8004D1B4 0003E134  90 01 00 14 */	stw r0, 0x14(r1)
@@ -119,7 +119,7 @@ GetTime__10CVTimerMgrFUl:
 /* 8004D1F4 0003E174  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004D1F8 0003E178  7C 08 02 A6 */	mflr r0
 /* 8004D1FC 0003E17C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8004D200 0003E180  4B FF FF AD */	bl func_8004D1AC
+/* 8004D200 0003E180  4B FF FF AD */	bl GetTimer__10CVTimerMgrFUl
 /* 8004D204 0003E184  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8004D208 0003E188  41 82 00 0C */	beq lbl_8004D214
 /* 8004D20C 0003E18C  80 63 00 18 */	lwz r3, 0x18(r3)
@@ -134,12 +134,12 @@ func_8004D218:
 /* 8004D220 0003E1A0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004D224 0003E1A4  4E 80 00 20 */	blr
 
-.global func_8004D228
-func_8004D228:
+.global DeleteTimer__10CVTimerMgrFUl
+DeleteTimer__10CVTimerMgrFUl:
 /* 8004D228 0003E1A8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004D22C 0003E1AC  7C 08 02 A6 */	mflr r0
 /* 8004D230 0003E1B0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8004D234 0003E1B4  4B FF FF 79 */	bl func_8004D1AC
+/* 8004D234 0003E1B4  4B FF FF 79 */	bl GetTimer__10CVTimerMgrFUl
 /* 8004D238 0003E1B8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8004D23C 0003E1BC  41 82 00 20 */	beq lbl_8004D25C
 /* 8004D240 0003E1C0  41 82 00 1C */	beq lbl_8004D25C
@@ -155,8 +155,8 @@ lbl_8004D25C:
 /* 8004D264 0003E1E4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004D268 0003E1E8  4E 80 00 20 */	blr
 
-.global lbl_8004D26C
-lbl_8004D26C:
+.global __dt__7CVTimerFv
+__dt__7CVTimerFv:
 /* 8004D26C 0003E1EC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004D270 0003E1F0  7C 08 02 A6 */	mflr r0
 /* 8004D274 0003E1F4  2C 03 00 00 */	cmpwi r3, 0x0
@@ -181,8 +181,8 @@ lbl_8004D2A8:
 /* 8004D2BC 0003E23C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004D2C0 0003E240  4E 80 00 20 */	blr
 
-.global func_8004D2C4
-func_8004D2C4:
+.global Update__10CVTimerMgrFv
+Update__10CVTimerMgrFv:
 /* 8004D2C4 0003E244  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004D2C8 0003E248  7C 08 02 A6 */	mflr r0
 /* 8004D2CC 0003E24C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -194,7 +194,7 @@ func_8004D2C4:
 lbl_8004D2E4:
 /* 8004D2E4 0003E264  83 DF 00 0C */	lwz r30, 0xc(r31)
 /* 8004D2E8 0003E268  7F E3 FB 78 */	mr r3, r31
-/* 8004D2EC 0003E26C  4B FF FE 01 */	bl func_8004D0EC
+/* 8004D2EC 0003E26C  4B FF FE 01 */	bl Update__7CVTimerFv
 /* 8004D2F0 0003E270  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8004D2F4 0003E274  40 82 00 30 */	bne lbl_8004D324
 /* 8004D2F8 0003E278  2C 1F 00 00 */	cmpwi r31, 0x0
@@ -229,9 +229,9 @@ func_8004D328:
 __vt__7CVTimer:
 
 	# ROM: 0x1C8038
-	.4byte lbl_8060E2A8
+	.4byte __RTTI__7CVTimer
 	.4byte 0
-	.4byte lbl_8004D26C
+	.4byte __dt__7CVTimerFv
 
 .global lbl_801CBF44
 lbl_801CBF44:
@@ -243,8 +243,8 @@ lbl_801CBF44:
 
 .section .sdata, "wa", @progbits
 
-.global lbl_8060E2A8
-lbl_8060E2A8:
+.global __RTTI__7CVTimer
+__RTTI__7CVTimer:
 
 	# ROM: 0x1EE4A8
 	.4byte lbl_80610090

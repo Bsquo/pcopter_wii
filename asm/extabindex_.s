@@ -2844,19 +2844,19 @@ lbl_8000CB00:
 	.4byte AddTimer__10CVTimerMgrFUlUl
 	.4byte 0x00000098
 	.4byte lbl_80009944
-	.4byte func_8004D1AC
+	.4byte GetTimer__10CVTimerMgrFUl
 	.4byte 0x00000048
 	.4byte lbl_8000995C
 	.4byte GetTime__10CVTimerMgrFUl
 	.4byte 0x00000034
 	.4byte lbl_80009964
-	.4byte func_8004D228
+	.4byte DeleteTimer__10CVTimerMgrFUl
 	.4byte 0x00000044
 	.4byte lbl_8000996C
-	.4byte lbl_8004D26C
+	.4byte __dt__7CVTimerFv
 	.4byte 0x00000058
 	.4byte lbl_80009974
-	.4byte func_8004D2C4
+	.4byte Update__10CVTimerMgrFv
 	.4byte 0x00000084
 	.4byte lbl_8000997C
 	.4byte func_8004D348

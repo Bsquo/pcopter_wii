@@ -884,6 +884,7 @@ lbl_8004DEF8:
 
 .section .data, "wa", @progbits
 
+
 .global lbl_801CBF50
 lbl_801CBF50:
 

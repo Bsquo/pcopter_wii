@@ -65,6 +65,7 @@ GAME_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/NW4R/THP/THPDraw.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Movie/SceneMenuMovie.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Setting/SceneMenuSetting2.o             \
+	$(BUILD_DIR)/src/game/managers/VTimerMgr.o             \
 	$(BUILD_DIR)/asm/game/managers/VTimerMgr.o             \
 	$(BUILD_DIR)/asm/game/action/VAction.o             \
 	$(BUILD_DIR)/asm/game/actor/Copter/parts/AirCannon.o              \

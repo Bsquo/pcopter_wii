@@ -9,7 +9,7 @@ bool CVTimer::Update() {
     }
     return mCurrentTime != 0;
 }
-
+/*
 CVTimer& CVTimerMgr::AddTimer(u32 index, u32 current_time) {
     CVTimer* timer = &GetTimer(index);
     
@@ -73,3 +73,4 @@ void CVTimerMgr::Update() {
         }
     }
 }
+*/

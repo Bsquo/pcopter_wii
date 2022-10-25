@@ -2,46 +2,6 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global __ct__7CVTimerFUlUl
-__ct__7CVTimerFUlUl:
-/* 8004D090 0003E010  94 21 FF E0 */	stwu r1, -0x20(r1)
-/* 8004D094 0003E014  7C 08 02 A6 */	mflr r0
-/* 8004D098 0003E018  90 01 00 24 */	stw r0, 0x24(r1)
-/* 8004D09C 0003E01C  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 8004D0A0 0003E020  7C BF 2B 78 */	mr r31, r5
-/* 8004D0A4 0003E024  93 C1 00 18 */	stw r30, 0x18(r1)
-/* 8004D0A8 0003E028  7C 9E 23 78 */	mr r30, r4
-/* 8004D0AC 0003E02C  93 A1 00 14 */	stw r29, 0x14(r1)
-/* 8004D0B0 0003E030  7C 7D 1B 78 */	mr r29, r3
-/* 8004D0B4 0003E034  4B FD 97 61 */	bl __ct__10CVListBaseFv
-/* 8004D0B8 0003E038  3C 80 80 1D */	lis r4, __vt__7CVTimer@ha
-/* 8004D0BC 0003E03C  93 DD 00 14 */	stw r30, 0x14(r29)
-/* 8004D0C0 0003E040  38 84 BF 38 */	addi r4, r4, __vt__7CVTimer@l
-/* 8004D0C4 0003E044  7F A3 EB 78 */	mr r3, r29
-/* 8004D0C8 0003E048  90 9D 00 10 */	stw r4, 0x10(r29)
-/* 8004D0CC 0003E04C  93 FD 00 18 */	stw r31, 0x18(r29)
-/* 8004D0D0 0003E050  83 E1 00 1C */	lwz r31, 0x1c(r1)
-/* 8004D0D4 0003E054  83 C1 00 18 */	lwz r30, 0x18(r1)
-/* 8004D0D8 0003E058  83 A1 00 14 */	lwz r29, 0x14(r1)
-/* 8004D0DC 0003E05C  80 01 00 24 */	lwz r0, 0x24(r1)
-/* 8004D0E0 0003E060  7C 08 03 A6 */	mtlr r0
-/* 8004D0E4 0003E064  38 21 00 20 */	addi r1, r1, 0x20
-/* 8004D0E8 0003E068  4E 80 00 20 */	blr
-
-.global Update__7CVTimerFv
-Update__7CVTimerFv:
-/* 8004D0EC 0003E06C  80 83 00 18 */	lwz r4, 0x18(r3)
-/* 8004D0F0 0003E070  2C 04 00 00 */	cmpwi r4, 0x0
-/* 8004D0F4 0003E074  41 82 00 0C */	beq lbl_8004D100
-/* 8004D0F8 0003E078  38 04 FF FF */	addi r0, r4, -0x1
-/* 8004D0FC 0003E07C  90 03 00 18 */	stw r0, 0x18(r3)
-lbl_8004D100:
-/* 8004D100 0003E080  80 63 00 18 */	lwz r3, 0x18(r3)
-/* 8004D104 0003E084  7C 03 00 D0 */	neg r0, r3
-/* 8004D108 0003E088  7C 00 1B 78 */	or r0, r0, r3
-/* 8004D10C 0003E08C  54 03 0F FE */	srwi r3, r0, 31
-/* 8004D110 0003E090  4E 80 00 20 */	blr
-
 .global AddTimer__10CVTimerMgrFUlUl
 AddTimer__10CVTimerMgrFUlUl:
 /* 8004D114 0003E094  94 21 FF E0 */	stwu r1, -0x20(r1)

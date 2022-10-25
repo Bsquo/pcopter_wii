@@ -193,6 +193,8 @@ ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -fp fmadd -nodefaults
 CFLAGS  := -Cpp_exceptions off -proc gekko -fp fmadd -O4 -nodefaults -enum int -sdata2 8 -use_lmw_stmw on -rostr -str pool -msgstyle gcc $(INCLUDES)
 
+#CFLAGS_CPP_EXCEPTIONS  := -Cpp_exceptions on -proc gekko -fp fmadd -O4 -nodefaults -enum int -sdata2 8 -use_lmw_stmw on -rostr -str pool -msgstyle gcc $(INCLUDES)
+
 # elf2dol needs to know these in order to calculate sbss correctly.
 SDATA_PDHR := 9
 SBSS_PDHR := 10
@@ -241,6 +243,46 @@ $(BUILD_DIR)/%.o: %.s
 	
 $(BUILD_DIR)/%.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/main.o: src/game/main.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
 
-$(BUILD_DIR)/%.o: %.cpp
+$(BUILD_DIR)/src/game/actor/%.o: src/game/actor/%.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/app/%.o: src/game/app/%.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/gfx/%.o: src/game/gfx/%.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/hbm/%.o: src/game/hbm/%.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/math/%.o: src/game/math/%.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/save/%.o: src/game/save/%.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/scenary/%.o: src/game/scenary/%.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/scene/%.o: src/game/scene/%.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/utils/%.o: src/game/utils/%.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/managers/MarkerMgr.o: src/game/managers/MarkerMgr.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/managers/VCameraMgr.o: src/game/managers/VCameraMgr.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/managers/VEffectMgr.o: src/game/managers/VEffectMgr.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+	
+$(BUILD_DIR)/src/game/managers/VTimerMgr.o: src/game/managers/VTimerMgr.cpp
+	#$(CC) $(CFLAGS_CPP_EXCEPTIONS) -c -o $@ $<
 	$(CC) $(CFLAGS) -c -o $@ $<

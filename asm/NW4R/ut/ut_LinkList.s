@@ -1,7 +1,7 @@
 .include "macros.s"
 .section .text, "ax"
-.global func_80189F38
-func_80189F38:
+.global __dt__Q44nw4r2ut6detail12LinkListImplFv
+__dt__Q44nw4r2ut6detail12LinkListImplFv:
 /* 80189F38 0017AEB8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80189F3C 0017AEBC  7C 08 02 A6 */	mflr r0
 /* 80189F40 0017AEC0  2C 03 00 00 */	cmpwi r3, 0x0

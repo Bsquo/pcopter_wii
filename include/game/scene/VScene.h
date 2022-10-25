@@ -5,8 +5,8 @@
 
 class CVScene {
 	public:
-		u32 field_0x0;
-		void* field_0x04;	// std::vector<nw4r::g3d::G3dObj>*
+		void* field_0x0;		// nw4r::g3d::ScnRoot*
+		void* field_0x04;		// std::vector<nw4r::g3d::G3dObj>*
 		UNK32 field_0x08;
 		UNK32 field_0x0C;
 		UNK32 field_0x10;

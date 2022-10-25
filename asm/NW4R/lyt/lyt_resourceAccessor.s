@@ -1,7 +1,7 @@
 .include "macros.s"
 .section .text, "ax"
-.global func_80169870
-func_80169870:
+.global __dt__Q34nw4r3lyt16ResourceAccessorFv
+__dt__Q34nw4r3lyt16ResourceAccessorFv:
 /* 80169870 0015A7F0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80169874 0015A7F4  7C 08 02 A6 */	mflr r0
 /* 80169878 0015A7F8  2C 03 00 00 */	cmpwi r3, 0x0

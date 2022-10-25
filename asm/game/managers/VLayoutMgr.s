@@ -738,7 +738,7 @@ func_8002E498:
 /* 8002E4A4 0001F424  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8002E4A8 0001F428  7C 9F 23 78 */	mr r31, r4
 /* 8002E4AC 0001F42C  80 63 00 38 */	lwz r3, 0x38(r3)
-/* 8002E4B0 0001F430  48 00 00 41 */	bl func_8002E4F0
+/* 8002E4B0 0001F430  48 00 00 41 */	bl GetRootPane__Q34nw4r3lyt6LayoutCFv
 /* 8002E4B4 0001F434  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8002E4B8 0001F438  41 82 00 20 */	beq lbl_8002E4D8
 /* 8002E4BC 0001F43C  81 83 00 00 */	lwz r12, 0x0(r3)
@@ -759,8 +759,8 @@ func_8002E4DC:
 /* 8002E4E8 0001F468  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002E4EC 0001F46C  4E 80 00 20 */	blr
 
-.global func_8002E4F0
-func_8002E4F0:
+.global GetRootPane__Q34nw4r3lyt6LayoutCFv
+GetRootPane__Q34nw4r3lyt6LayoutCFv:
 /* 8002E4F0 0001F470  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 8002E4F4 0001F474  4E 80 00 20 */	blr
 
@@ -782,7 +782,7 @@ func_8002E500:
 /* 8002E520 0001F4A0  7C 1F 00 D0 */	neg r0, r31
 /* 8002E524 0001F4A4  7C 00 FB 78 */	or r0, r0, r31
 /* 8002E528 0001F4A8  54 04 0F FE */	srwi r4, r0, 31
-/* 8002E52C 0001F4AC  48 00 00 19 */	bl func_8002E544
+/* 8002E52C 0001F4AC  48 00 00 19 */	bl SetVisible__Q34nw4r3lyt4PaneFb
 lbl_8002E530:
 /* 8002E530 0001F4B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8002E534 0001F4B4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -790,8 +790,8 @@ lbl_8002E530:
 /* 8002E53C 0001F4BC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002E540 0001F4C0  4E 80 00 20 */	blr
 
-.global func_8002E544
-func_8002E544:
+.global SetVisible__Q34nw4r3lyt4PaneFb
+SetVisible__Q34nw4r3lyt4PaneFb:
 /* 8002E544 0001F4C4  7C 85 23 78 */	mr r5, r4
 /* 8002E548 0001F4C8  38 80 00 00 */	li r4, 0x0
 /* 8002E54C 0001F4CC  38 63 00 BB */	addi r3, r3, 0xbb
@@ -1137,7 +1137,7 @@ func_8002E97C:
 /* 8002E9F8 0001F978  EC 1F 08 3A */	fmadds f0, f31, f0, f1
 /* 8002E9FC 0001F97C  D0 41 00 10 */	stfs f2, 0x10(r1)
 /* 8002EA00 0001F980  D0 01 00 14 */	stfs f0, 0x14(r1)
-/* 8002EA04 0001F984  48 00 00 71 */	bl func_8002EA74
+/* 8002EA04 0001F984  48 00 00 71 */	bl SetScale__Q34nw4r3lyt4PaneFRCQ34nw4r4math4VEC2
 lbl_8002EA08:
 /* 8002EA08 0001F988  E3 E1 00 28 */	psq_l f31, 0x28(r1), 0, qr0
 /* 8002EA0C 0001F98C  80 01 00 34 */	lwz r0, 0x34(r1)
@@ -1176,8 +1176,8 @@ func_8002EA6C:
 /* 8002EA6C 0001F9EC  38 63 00 44 */	addi r3, r3, 0x44
 /* 8002EA70 0001F9F0  4E 80 00 20 */	blr
 
-.global func_8002EA74
-func_8002EA74:
+.global SetScale__Q34nw4r3lyt4PaneFRCQ34nw4r4math4VEC2
+SetScale__Q34nw4r3lyt4PaneFRCQ34nw4r4math4VEC2:
 /* 8002EA74 0001F9F4  38 63 00 44 */	addi r3, r3, 0x44
 /* 8002EA78 0001F9F8  4B FF FF B0 */	b func_8002EA28
 

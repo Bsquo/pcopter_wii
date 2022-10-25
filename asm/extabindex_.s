@@ -381,7 +381,7 @@ lbl_8000CB00:
 	.4byte lbl_800169F0
 	.4byte 0x00002748
 	.4byte lbl_80006C30
-	.4byte func_80019138
+	.4byte __ct__Q34nw4r2ut5ColorFiiii
 	.4byte 0x00000030
 	.4byte lbl_80006C58
 	.4byte lbl_8001917C
@@ -2067,40 +2067,40 @@ lbl_8000CB00:
 	.4byte __ct__17CSceneMenuAreamapFv
 	.4byte 0x0000005C
 	.4byte lbl_80008820
-	.4byte lbl_80034988
+	.4byte StartLocal__17CSceneMenuAreamapFv
 	.4byte 0x000009E8
 	.4byte lbl_80008828
-	.4byte lbl_8003537C
+	.4byte CalcLocal__17CSceneMenuAreamapFv
 	.4byte 0x000005F8
 	.4byte lbl_80008920
-	.4byte lbl_8003597C
+	.4byte RenderLocal__17CSceneMenuAreamapFv
 	.4byte 0x00000128
 	.4byte lbl_80008928
-	.4byte lbl_80035AAC
+	.4byte EndLocal__17CSceneMenuAreamapFv
 	.4byte 0x000000A4
 	.4byte lbl_80008940
-	.4byte lbl_80035B50
+	.4byte __dt__Q34nw4r3lyt19ArcResourceAccessorFv
 	.4byte 0x00000068
 	.4byte lbl_80008948
-	.4byte func_80035BB8
+	.4byte "__dt__Q34nw4r2ut36LinkList<Q34nw4r3lyt11FontRefLink,0>Fv"
 	.4byte 0x00000058
 	.4byte lbl_80008950
-	.4byte func_80035C10
+	.4byte DialogCalcLocal__17CSceneMenuAreamapFv
 	.4byte 0x000001BC
 	.4byte lbl_80008958
-	.4byte func_80035DCC
+	.4byte MoveCursor__17CSceneMenuAreamapFi
 	.4byte 0x000000F0
 	.4byte lbl_80008960
-	.4byte func_80035EBC
+	.4byte SetMessage__17CSceneMenuAreamapFv
 	.4byte 0x000001EC
 	.4byte lbl_80008968
-	.4byte func_800360A8
+	.4byte OpenReturnDialog__17CSceneMenuAreamapFv
 	.4byte 0x000000E4
 	.4byte lbl_80008970
-	.4byte func_8003618C
+	.4byte CloseReturnDialog__17CSceneMenuAreamapFv
 	.4byte 0x000000D8
 	.4byte lbl_80008978
-	.4byte func_80036264
+	.4byte CalcReturnDialog__17CSceneMenuAreamapFv
 	.4byte 0x00000334
 	.4byte lbl_80008980
 	.4byte func_80036598
@@ -2202,7 +2202,7 @@ lbl_8000CB00:
 	.4byte func_80037DBC
 	.4byte 0x00000618
 	.4byte lbl_80008AA0
-	.4byte func_80038424
+	.4byte SetFullClearFlg__19CPossessionItemListFv
 	.4byte 0x0000032C
 	.4byte lbl_80008AA8
 	.4byte func_800387AC
@@ -2247,7 +2247,7 @@ lbl_8000CB00:
 	.4byte func_800394B4
 	.4byte 0x00000080
 	.4byte lbl_80008B48
-	.4byte func_80039534
+	.4byte CreateCursor__14CSceneMenuBaseFv
 	.4byte 0x0000014C
 	.4byte lbl_80008B60
 	.4byte func_80039680
@@ -2265,13 +2265,13 @@ lbl_8000CB00:
 	.4byte func_80039E50
 	.4byte 0x00000188
 	.4byte lbl_80008BB8
-	.4byte func_80039FE0
+	.4byte KeyCheck__14CSceneMenuBaseFlUlUl
 	.4byte 0x000001F8
 	.4byte lbl_80008C00
-	.4byte func_8003A1D8
+	.4byte GetInputPointerFlg__14CSceneMenuBaseFi
 	.4byte 0x00000044
 	.4byte lbl_80008C08
-	.4byte func_8003A21C
+	.4byte GetInputClassicFlg__14CSceneMenuBaseFi
 	.4byte 0x0000004C
 	.4byte lbl_80008C10
 	.4byte func_8003A274

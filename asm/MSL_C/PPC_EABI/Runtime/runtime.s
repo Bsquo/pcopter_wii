@@ -122,8 +122,8 @@ func_800B30A0:
 func_800B30A4:
 /* 800B30A4 000A4024  92 CB FF D8 */	stw r22, -0x28(r11)
 
-.global func_800B30A8
-func_800B30A8:
+.global _savegpr_23
+_savegpr_23:
 /* 800B30A8 000A4028  92 EB FF DC */	stw r23, -0x24(r11)
 
 .global _savegpr_24

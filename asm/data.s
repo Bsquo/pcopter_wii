@@ -30032,7 +30032,7 @@ lbl_801EE4A8:
 	# ROM: 0x1EA5A8
 	.4byte 0
 	.4byte 0
-	.4byte func_80169870
+	.4byte __dt__Q34nw4r3lyt16ResourceAccessorFv
 	.4byte 0
 	.4byte lbl_801698C0
 	.4byte 0
@@ -30053,7 +30053,7 @@ lbl_801EE4D4:
 	# ROM: 0x1EA5D4
 	.4byte 0
 	.4byte 0
-	.4byte lbl_80035B50
+	.4byte __dt__Q34nw4r3lyt19ArcResourceAccessorFv
 	.4byte lbl_80169BAC
 	.4byte lbl_80169C38
 

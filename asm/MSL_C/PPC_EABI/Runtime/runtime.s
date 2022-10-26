@@ -183,8 +183,8 @@ func_800B30EC:
 func_800B30F0:
 /* 800B30F0 000A4070  82 CB FF D8 */	lwz r22, -0x28(r11)
 
-.global func_800B30F4
-func_800B30F4:
+.global _restgpr_23
+_restgpr_23:
 /* 800B30F4 000A4074  82 EB FF DC */	lwz r23, -0x24(r11)
 
 .global _restgpr_24

@@ -42,7 +42,7 @@ class CSceneMenuAreamap: public CSceneMenuBase {
 		UNK32 field_0x8C;						// Button related
 		nw4r::lyt::ArcResourceAccessor* pArcResourceAccessor;
 		s32 mIsAreaUnlocked;
-		UNK_PTR field_0x98;
+		void* pAllocator;
 		nw4r::lyt::Layout* pLayout;
 		void* archiveBuf;						// Buffer for /PCopter/Menu*/areamap.arc
 		UNK32 mIsUnlockableAreaIconSelected[6];

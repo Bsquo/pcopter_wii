@@ -214,8 +214,8 @@ func_8004E178:
 /* 8004E198 0003F118  38 21 00 60 */	addi r1, r1, 0x60
 /* 8004E19C 0003F11C  4E 80 00 20 */	blr
 
-.global func_8004E1A0
-func_8004E1A0:
+.global __ct__10CAirCannonFv
+__ct__10CAirCannonFv:
 /* 8004E1A0 0003F120  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004E1A4 0003F124  7C 08 02 A6 */	mflr r0
 /* 8004E1A8 0003F128  90 01 00 14 */	stw r0, 0x14(r1)

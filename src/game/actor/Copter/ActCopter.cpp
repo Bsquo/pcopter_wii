@@ -69,3 +69,13 @@ void CPosLog::ShiftBack() {
         mPrevYaw[curIdx] = mPrevYaw[nextIdx];
     }
 }
+
+void CPosLog::FillList(CVActor* actor) {
+    if (actor != nullptr) {
+        for (s32 i = 0; i < 20; i++) {
+            mPrevPos[i] = actor->mPos; 
+            mPrevYaw[i] = actor->mAxis.mYaw;
+        }
+        mCount = 19;
+    }
+}

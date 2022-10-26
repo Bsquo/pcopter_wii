@@ -2880,7 +2880,7 @@ lbl_8000CB00:
 	.4byte Calc__10CAirBulletFv
 	.4byte 0x00000218
 	.4byte lbl_80009A3C
-	.4byte func_8004E1A0
+	.4byte __ct__10CAirCannonFv
 	.4byte 0x00000058
 	.4byte lbl_80009A44
 	.4byte func_8004E200

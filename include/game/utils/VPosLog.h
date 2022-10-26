@@ -16,6 +16,7 @@ class CPosLog {
         void GetLog(u32, CVVector*, CVVector*);
         void ShiftForward();
         void ShiftBack();
+        void FillList(CVActor*);
 };
 
 #endif // VPOSLOG_H

@@ -152,7 +152,7 @@ void CVApp::InitReset() {
 
 void CVApp::CalcReset() {
     if (reset_called && field_0x130) {
-        if (mHBMDirectory.field_0x00[0x23] == false) {
+        if (mHBMDirectory.isHBMOpen == false) {
             // Restart the game
             InitReset();
             OSRestart(0);

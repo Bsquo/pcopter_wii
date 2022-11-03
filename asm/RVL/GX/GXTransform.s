@@ -22,8 +22,8 @@ func_800B1A18:
 /* 800B1A54 000A29D4  90 04 80 00 */	stw r0, -0x8000(r4)
 /* 800B1A58 000A29D8  4E 80 00 20 */	blr
 
-.global func_800B1A5C
-func_800B1A5C:
+.global GXSetProjection
+GXSetProjection:
 /* 800B1A5C 000A29DC  80 A2 93 F0 */	lwz r5, lbl_80610C10@sda21(r2)
 /* 800B1A60 000A29E0  2C 04 00 01 */	cmpwi r4, 0x1
 /* 800B1A64 000A29E4  C0 23 00 00 */	lfs f1, 0x0(r3)

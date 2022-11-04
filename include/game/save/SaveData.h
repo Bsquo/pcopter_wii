@@ -7,7 +7,7 @@
 
 class CSaveData {
     private:
-        UNK32 mMagic;       // PCTW
+        UNK32 mMagic;                                   // PCTW
         UNK32 field_0x04;
         CUserConfig mUserConfig;
         UNK32 field_0x1C;

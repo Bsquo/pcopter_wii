@@ -65,14 +65,14 @@ class CSceneMenuAreamap: public CSceneMenuBase {
 
 	public:
 		CSceneMenuAreamap();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
         void SetCursor(int);
-		virtual ~CSceneMenuAreamap();
+		~CSceneMenuAreamap();
 };
 
 #endif // SCENE_MENU_AREAMAP_H

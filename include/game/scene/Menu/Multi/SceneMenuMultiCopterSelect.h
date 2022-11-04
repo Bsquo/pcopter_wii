@@ -11,13 +11,13 @@ class CSceneMenuMultiCopterSelect: public CSceneMenuBase {
 
 	public:
 		CSceneMenuMultiCopterSelect();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuMultiCopterSelect();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuMultiCopterSelect();
 };
 
 #endif // SCENE_MENU_MULTI_COPTER_SELECT_H

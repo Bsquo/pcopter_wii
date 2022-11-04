@@ -31,13 +31,13 @@ class CSceneMenuDataAccess: public CSceneMenuBase {
 
 	public:
 		CSceneMenuDataAccess();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuDataAccess();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuDataAccess();
 };
 
 #endif // SCENE_MENU_DATA_ACCESS_H

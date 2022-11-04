@@ -11,13 +11,13 @@ class CSceneMenuMultiModeSelect: public CSceneMenuBase {
 
 	public:
 		CSceneMenuMultiModeSelect();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuMultiModeSelect();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuMultiModeSelect();
 };
 
 #endif // SCENE_MENU_MULTI_MODE_SELECT_H

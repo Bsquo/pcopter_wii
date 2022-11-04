@@ -10,7 +10,7 @@ class CActCoin: public CActScnBase {
         f32 field_0x3E4;
 
         CActCoin();
-        virtual ~CActCoin();
+        ~CActCoin();
 };
 
 #endif // ACT_COIN_H

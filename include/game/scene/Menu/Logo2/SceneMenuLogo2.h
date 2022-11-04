@@ -8,8 +8,8 @@
 class CSceneMenuLogo2: public CSceneMenuLogo {
     public:
         CSceneMenuLogo2();
-        virtual bool StartLocal();
-        virtual ~CSceneMenuLogo2();
+        bool StartLocal();
+        ~CSceneMenuLogo2();
 };
 
 #endif // SCENE_MENU_LOGO2_H

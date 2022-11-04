@@ -56,17 +56,17 @@ class CActCopter: public CVActor {
 
     public:
         CActCopter();
-        virtual ~CActCopter();
-        virtual const CVAxis& GetAxis();
-        virtual const CVMatrix& GetMtx();
-        virtual bool Move(f32);
-        virtual void BindModel(CVFilePath);
-        virtual void InitParam();
-        virtual void InitPos(CVVector, CVVector);
-        virtual void Recovery();
-        virtual void Destroyed(CVVector, CVFlag*); 
-        virtual void CalcCollEffect(f32, f32, f32, f32);
-        virtual void UpdateArea();
+        ~CActCopter();
+        const CVAxis& GetAxis();
+        const CVMatrix& GetMtx();
+        bool Move(f32);
+        void BindModel(CVFilePath);
+        void InitParam();
+        void InitPos(CVVector, CVVector);
+        void Recovery();
+        void Destroyed(CVVector, CVFlag*); 
+        void CalcCollEffect(f32, f32, f32, f32);
+        void UpdateArea();
 };  // Size = 0x6EC
 
 #endif // ACTCOPTER_H

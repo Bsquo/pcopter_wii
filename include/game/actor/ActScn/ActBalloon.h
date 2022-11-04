@@ -17,7 +17,7 @@ class CActBalloon: public CActMovable {
         f32 balloon_r;                  // 風船の判定半径（m） (Balloon decision radius (m))
 
         CActBalloon();
-        virtual ~CActBalloon();
+        ~CActBalloon();
 };
 
 #endif // ACT_BALLOON_H

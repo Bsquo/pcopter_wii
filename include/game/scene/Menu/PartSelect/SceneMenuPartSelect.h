@@ -16,13 +16,13 @@ class CSceneMenuPartSelect: public CSceneMenuBase {
 	public:
 		CSceneMenuPartSelect();
         void SetSelectCopter(int);
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuPartSelect();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuPartSelect();
 };
 
 #endif // SCENE_MENU_PART_SELECT_H

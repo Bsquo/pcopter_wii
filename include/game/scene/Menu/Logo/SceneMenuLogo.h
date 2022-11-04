@@ -21,13 +21,13 @@ class CSceneMenuLogo: public CSceneMenuBase {
         s32 field_0xA0;
 
 		CSceneMenuLogo();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuLogo();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuLogo();
 };
 
 #endif // SCENE_MENU_LOGO_H

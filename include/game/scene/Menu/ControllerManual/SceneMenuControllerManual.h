@@ -8,13 +8,13 @@
 class CSceneMenuControllerManual: public CSceneMenuLogo {
     public:
         CSceneMenuControllerManual();
-        virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuControllerManual();
+        bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuControllerManual();
 };
 
 #endif // SCENE_MENU_CONTROLLER_MANUAL_H

@@ -14,13 +14,13 @@ class CSceneMenuSDataCheak: public CSceneMenuBase {
 
 	public:
 		CSceneMenuSDataCheak();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuSDataCheak();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuSDataCheak();
 };
 
 #endif // SCENE_MENU_SDATA_CHEAK_H

@@ -14,7 +14,7 @@ class CScenaryPos: public CVListBase {
         int field_0x50;        
 
         CScenaryPos();
-        virtual ~CScenaryPos();
+        ~CScenaryPos();
         bool Init(CVModel*, char*, int);
 };
 

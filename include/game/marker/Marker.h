@@ -10,7 +10,7 @@
 class CMarker: public CVListBase {
     public:
         CVFlag mFlags;
-        void* pActor;   // Actor the hand is pointing to
+        void* pActor;           // Actor the hand is pointing to
         CVVector mPos;
         CVString mEffectName;
 

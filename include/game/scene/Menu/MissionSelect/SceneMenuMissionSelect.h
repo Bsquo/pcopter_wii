@@ -37,13 +37,13 @@ class CSceneMenuMissionSelect: public CSceneMenuBase {
 
 	public:
 		CSceneMenuMissionSelect();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuMissionSelect();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuMissionSelect();
 };
 
 #endif // SCENE_MENU_MISSIONSELECT_H

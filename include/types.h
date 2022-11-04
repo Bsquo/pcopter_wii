@@ -40,5 +40,4 @@ typedef short               UNK16;
 typedef char                UNK8;
 typedef void*               UNK_PTR;
 
-
 void __dummy_str(const char* str);

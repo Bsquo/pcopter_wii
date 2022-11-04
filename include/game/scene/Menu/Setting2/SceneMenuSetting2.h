@@ -15,13 +15,13 @@ class CSceneMenuSetting2: public CSceneMenuBase {
 
 	public:
 		CSceneMenuSetting2();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuSetting2();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuSetting2();
 };
 
 #endif // SCENE_MENU_SETTING2_H

@@ -11,13 +11,13 @@ class CSceneMenuShop: public CSceneMenuBase {
 
 	public:
 		CSceneMenuShop();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuShop();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuShop();
 };
 
 #endif // SCENE_MENU_SHOP_H

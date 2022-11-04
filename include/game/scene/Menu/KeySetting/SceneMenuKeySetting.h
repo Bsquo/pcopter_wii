@@ -11,13 +11,13 @@ class CSceneMenuKeySetting: public CSceneMenuBase {
 
 	public:
 		CSceneMenuKeySetting();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuKeySetting();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuKeySetting();
 };
 
 #endif // SCENE_MENU_KEY_SETTING_H

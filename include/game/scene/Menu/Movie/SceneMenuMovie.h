@@ -19,13 +19,13 @@ class CSceneMenuMovie: public CSceneMenuBase {
 
 	public:
 		CSceneMenuMovie();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuMovie();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuMovie();
 };
 
 #endif // SCENE_MENU_MOVIE_H

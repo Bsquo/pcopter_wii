@@ -10,7 +10,7 @@ class CVTimer: public CVListBase {
         u32 mCurrentTime;       // In frames
 
         CVTimer(u32, u32);
-        virtual ~CVTimer();
+        ~CVTimer();
         bool Update();
 };
 

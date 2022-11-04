@@ -11,7 +11,7 @@ class CActHeliPad: public CActScnBase {
         f32 field_0x3E8;
 
         CActHeliPad();
-        virtual ~CActHeliPad();
+        ~CActHeliPad();
 };
 
 #endif // ACT_HELIPAD_H

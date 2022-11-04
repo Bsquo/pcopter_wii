@@ -11,13 +11,13 @@ class CSceneMenuMain5: public CVScene {
 
     public:
 		CSceneMenuMain5();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuMain5();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuMain5();
 };
 
 #endif // SCENE_MENU_MAIN_5_H

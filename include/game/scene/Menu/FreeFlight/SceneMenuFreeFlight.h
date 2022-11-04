@@ -8,13 +8,13 @@
 class CSceneMenuFreeFlight: public CSceneMenuCopterSelect {
 	public:
 		CSceneMenuFreeFlight();
-		virtual bool StartLocal();
-		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
-		virtual void EndLocal();
-		virtual ~CSceneMenuFreeFlight();
+		bool StartLocal();
+		bool CalcLocal();
+		void RenderLocal();
+		void CalcLocalPause();
+		void RenderLocalPause();
+		void EndLocal();
+		~CSceneMenuFreeFlight();
 };
 
 #endif // SCENE_MENU_FREEFLIGHT_H

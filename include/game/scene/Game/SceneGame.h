@@ -36,7 +36,7 @@ class CSceneGame: public CVScene {
 	public:
 		CActCopter* pHelicopter;
 		UNK32 field_0x30;
-		UNK32 field_0x34;
+		CVActor* field_0x34;
 		UNK32 field_0x38;
 		UNK32 field_0x3C;
 		nw4r::g3d::ScnGroup* pScnGroup;
@@ -69,7 +69,6 @@ class CSceneGame: public CVScene {
 		UNK32 field_0xC4;
 
 		CSceneGame();
-        void SetState(int);
 		virtual bool StartLocal();
 		virtual bool CalcLocal();
 		virtual void RenderLocal();
@@ -78,6 +77,25 @@ class CSceneGame: public CVScene {
 		virtual void CalcLocalSystem();
 		virtual void EndLocal();
 		virtual ~CSceneGame();
+		virtual void SetupScenary();
+		virtual void CreateActors();
+		virtual void SetupSound();
+		virtual void CreateCameras();
+		virtual void CreateEffects();
+		virtual void CreateLayout();
+		virtual void UpdateGameLayout();
+		virtual void CheckPadError();
+		virtual void CalcCursor();
+		virtual void Restart();
+		void SetState(int);
+		//void RenderEtcProc(nw4r::g3d::ScnProc*, bool);
+		void SetButtonAnim(char*, char*, int);
+		void PauseSound(int);
+		void SetNumberString(u16*, u32);
+		void CreateScnGroup();
+		void LoadResources();
+		void SetupRenderActor(int, int);
+		void UpdateRenderFrame(int, int);
 };
 
 #endif // SCENE_GAME_H

@@ -15,4 +15,6 @@ extern "C" {
     void OSSetPowerCallback(void*);
     OSTime OSGetTime();
     void OSReport(char*, ...);
+    void OSPanic(const char* filename, int line, const char* format, ...);
+    void OSInitFastCast();
 }

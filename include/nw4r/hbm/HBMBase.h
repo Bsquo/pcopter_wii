@@ -6,6 +6,9 @@ extern "C" {
 #endif
 
 void HBMStartBlackOut();
+void HBMDelete();
+void HBMDeleteSound();
+void HBMCreateSound(const void*, void*, u32);
 
 #ifdef __cplusplus
 }

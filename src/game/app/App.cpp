@@ -6,14 +6,14 @@
 #include "include/nw4r/db/db_DbgPrintBase.h"
 #include "include/game/system/demo.h"
 #include "include/game/system/BackThread.h"
-#include "include/game/managers/CVPadMgr.h"
+#include "include/game/managers/VPadMgr.h"
 #include "include/nw4r/ut/ut_Color.h"
-#include "include/game/managers/VResListMgr.h"
+#include "include/game/managers/ResListMgr.h"
 #include "include/RVL/sc/scapi.h"
-#include "include/game/managers/CVPadMgr.h"
+#include "include/game/managers/VPadMgr.h"
 #include "include/game/utils/VScript.h"
 #include "include/game/managers/VEffectMgr.h"
-#include "include/game/managers/CVSoundMgr.h"
+#include "include/game/managers/VSoundMgr.h"
 #include "include/game/utils/VFilePath.h"
 /*
 // The strings below are unused. They would have been used

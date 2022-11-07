@@ -8,6 +8,16 @@ extern "C" {
 void VISetBlack(bool);
 void VIFlush();
 void VIWaitForRetrace();
+u32 VIGetTvFormat();
+
+enum VI_TvFormat {
+    VI_NTSC,
+    VI_PAL,
+    VI_MPAL,
+    VI_DEBUG,
+    VI_DEBUG_PAL,
+    VI_EURGB60
+};
 
 #ifdef __cplusplus
 }

@@ -5,7 +5,7 @@
 #include "include/game/app/App.h"
 #include "include/game/managers/VTimerMgr.h"
 #include "include/game/managers/VLayoutMgr.h"
-#include "include/game/managers/CVSoundMgr.h"
+#include "include/game/managers/VSoundMgr.h"
 #include "include/game/managers/VEffectMgr.h"
 #include "include/game/managers/ScenaryMgr.h"
 #include "include/MSL_C/MSL_Common/string.h"

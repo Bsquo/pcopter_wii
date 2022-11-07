@@ -13,7 +13,7 @@ class CVHomeButton {
     public:
         void* field_0x00;                   // Pointer to an structure of 0x1D128 bytes. Allocated on MEM1.
         void* pHomeButtonSeArchive;
-        UNK32 field_0x08;
+        u32 is50Hz;
         HBMDataInfo mHBMDataInfo;
         HBMControllerData mHBMControllers[4];
         s32 isHBMOpen;

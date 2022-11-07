@@ -17,9 +17,16 @@ class CVActorMgr {
 
         static CVActorMgr* GetInstance();
         virtual ~CVActorMgr();
-        CVActor* GetStart(int);
-        CVActor* GetNext(CVActor*, int);
+        void Release();
         void AddActor(CVActor*, CVFilePath, int);
+        u32 GetActorNum(int);
+        s32 GetActorIndex(CVActor*, int);
+        const CVActor& GetActor(int, int);
+        const CVActor& GetStart(int);
+        const CVActor& GetNext(CVActor*, int);
+        void Move();
+        void UpdateCollVtx(int);
+        void UpdateArea();
 };
 
 #endif // VACTOR_MGR_H

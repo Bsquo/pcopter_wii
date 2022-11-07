@@ -5,6 +5,7 @@
 #include "include/game/utils/VScript.h"
 #include "include/game/scenary/Scenary.h"
 #include "include/game/utils/VFilePath.h"
+#include "include/game/action/VAction.h"
 #include "types.h"
 
 class CScenaryMgr {
@@ -14,9 +15,9 @@ class CScenaryMgr {
     public:
         CVFilePath mMissionScriptName;
         CScenary* mScenaryType;
-        CVScript field_0x104;
+        CVScript mScript;
         UNK_PTR field_0x118;
-        CVList field_0x11C;
+        CVList mAddPosGroup;                // Number of AddPos entries in Mission_X.txt
         CVList field_0x12C;
         CVList field_0x13C;
         CVList field_0x14C;
@@ -48,6 +49,30 @@ class CScenaryMgr {
 
         static CScenaryMgr* GetInstance();
         virtual ~CScenaryMgr();
+        void Release();
+        void Init(CVFilePath);
+        bool CreateActors();
+        bool CreatePosList();
+        bool CreateWindList();
+        bool CreateEnvSndList();
+        bool InitActorParam();
+        bool CreateLayout();
+        bool CreateEffect();
+        void SetupSound();
+        void Start();
+        void ExecCmd(CVAction*);
+        void Calc();
+        void Render();
+        void StartInterestMode(CActScnBase*, f32, f32, u32);
+        void StartInterestMode(CActScnBase*, CVVector, f32, f32, u32);
+        UNK32 GetPos(int, int);
+        const CVVector& SearchPos(CVVector, f32, f32, int);
+        void GetAchieveRatio(int*, int*);
+        void GetPlayerScore(int*, int*);
+        UNK32 GetVictoryPlayer();
+        void ActionTracking(CActScnBase*, u32, CVVector);
+        void ForcePut(CActMovable*);
+        void CalcEndParam();
 };
 
 #endif // SCENARYMGR_H

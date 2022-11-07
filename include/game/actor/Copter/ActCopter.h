@@ -4,7 +4,7 @@
 #include "include/game/actor/VActor.h"
 #include "include/game/actor/Copter/parts/AirCannon.h"
 #include "include/game/actor/Copter/parts/LiftCup.h"
-#include "include/game/utils/VPosLog.h"
+#include "include/game/actor/Copter/VPosLog.h"
 
 class CActCopter: public CVActor {
     private:

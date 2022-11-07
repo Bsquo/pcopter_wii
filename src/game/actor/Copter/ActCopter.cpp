@@ -1,5 +1,5 @@
 #include "include/game/actor/VActor.h"
-#include "include/game/utils/VPosLog.h"
+#include "include/game/actor/Copter/VPosLog.h"
 #include "include/game/math/VVector.h"
 #include "include/MSL_C/MSL_Common_Embedded/math_double.h"
 #include "include/std/math/mathf.h"

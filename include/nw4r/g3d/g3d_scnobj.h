@@ -9,5 +9,4 @@ namespace nw4r {
     }
 }
 
-
 #endif // NW4R_G3D_SCNOBJ_H

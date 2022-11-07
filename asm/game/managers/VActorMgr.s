@@ -295,7 +295,7 @@ func_8002D97C:
 /* 8002D998 0001E918  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8002D99C 0001E91C  40 82 00 C4 */	bne lbl_8002DA60
 /* 8002D9A0 0001E920  38 80 00 00 */	li r4, 0x0
-/* 8002D9A4 0001E924  48 00 01 19 */	bl func_8002DABC
+/* 8002D9A4 0001E924  48 00 01 19 */	bl UpdateCollVtx__10CVActorMgrFi
 /* 8002D9A8 0001E928  38 00 00 00 */	li r0, 0x0
 /* 8002D9AC 0001E92C  7F C3 F3 78 */	mr r3, r30
 /* 8002D9B0 0001E930  90 1E 00 10 */	stw r0, 0x10(r30)
@@ -379,8 +379,8 @@ func_8002DA9C:
 /* 8002DAB4 0001EA34  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002DAB8 0001EA38  4E 80 00 20 */	blr
 
-.global func_8002DABC
-func_8002DABC:
+.global UpdateCollVtx__10CVActorMgrFi
+UpdateCollVtx__10CVActorMgrFi:
 /* 8002DABC 0001EA3C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002DAC0 0001EA40  7C 08 02 A6 */	mflr r0
 /* 8002DAC4 0001EA44  90 01 00 14 */	stw r0, 0x14(r1)
@@ -408,8 +408,8 @@ func_8002DAF4:
 /* 8002DB0C 0001EA8C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002DB10 0001EA90  4E 80 00 20 */	blr
 
-.global func_8002DB14
-func_8002DB14:
+.global UpdateArea__10CVActorMgrFv
+UpdateArea__10CVActorMgrFv:
 /* 8002DB14 0001EA94  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002DB18 0001EA98  7C 08 02 A6 */	mflr r0
 /* 8002DB1C 0001EA9C  38 80 FF FF */	li r4, -0x1

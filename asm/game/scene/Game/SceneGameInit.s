@@ -349,8 +349,8 @@ lbl_80057798:
 /* 800577D0 00048750  38 21 00 20 */	addi r1, r1, 0x20
 /* 800577D4 00048754  4E 80 00 20 */	blr
 
-.global func_800577D8
-func_800577D8:
+.global CreateScnGroup__10CSceneGameFv
+CreateScnGroup__10CSceneGameFv:
 /* 800577D8 00048758  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800577DC 0004875C  7C 08 02 A6 */	mflr r0
 /* 800577E0 00048760  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1058,7 +1058,7 @@ lbl_8005807C:
 /* 800581A4 00049124  FC 00 08 1E */	fctiwz f0, f1
 /* 800581A8 00049128  D8 01 02 38 */	stfd f0, 0x238(r1)
 /* 800581AC 0004912C  83 C1 02 3C */	lwz r30, 0x23c(r1)
-/* 800581B0 00049130  4B FB D8 81 */	bl func_80015A30
+/* 800581B0 00049130  4B FB D8 81 */	bl GetInstance__9CVAreaMgrFv
 /* 800581B4 00049134  93 C3 00 30 */	stw r30, 0x30(r3)
 /* 800581B8 00049138  38 61 00 20 */	addi r3, r1, 0x20
 /* 800581BC 0004913C  38 9C 02 34 */	addi r4, r28, 0x234
@@ -1067,7 +1067,7 @@ lbl_8005807C:
 /* 800581C8 00049148  FC 00 08 1E */	fctiwz f0, f1
 /* 800581CC 0004914C  D8 01 02 40 */	stfd f0, 0x240(r1)
 /* 800581D0 00049150  83 C1 02 44 */	lwz r30, 0x244(r1)
-/* 800581D4 00049154  4B FB D8 5D */	bl func_80015A30
+/* 800581D4 00049154  4B FB D8 5D */	bl GetInstance__9CVAreaMgrFv
 /* 800581D8 00049158  93 C3 00 34 */	stw r30, 0x34(r3)
 /* 800581DC 0004915C  38 61 00 20 */	addi r3, r1, 0x20
 /* 800581E0 00049160  38 9C 02 41 */	addi r4, r28, 0x241
@@ -1076,7 +1076,7 @@ lbl_8005807C:
 /* 800581EC 0004916C  FC 00 08 1E */	fctiwz f0, f1
 /* 800581F0 00049170  D8 01 02 48 */	stfd f0, 0x248(r1)
 /* 800581F4 00049174  83 C1 02 4C */	lwz r30, 0x24c(r1)
-/* 800581F8 00049178  4B FB D8 39 */	bl func_80015A30
+/* 800581F8 00049178  4B FB D8 39 */	bl GetInstance__9CVAreaMgrFv
 /* 800581FC 0004917C  93 C3 00 38 */	stw r30, 0x38(r3)
 lbl_80058200:
 /* 80058200 00049180  4B FB D7 11 */	bl GetInstance__11CScenaryMgrFv
@@ -2417,8 +2417,8 @@ lbl_80059598:
 /* 800595D0 0004A550  38 21 00 20 */	addi r1, r1, 0x20
 /* 800595D4 0004A554  4E 80 00 20 */	blr
 
-.global func_800595D8
-func_800595D8:
+.global SetupRenderActor__10CSceneGameFii
+SetupRenderActor__10CSceneGameFii:
 /* 800595D8 0004A558  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800595DC 0004A55C  7C 08 02 A6 */	mflr r0
 /* 800595E0 0004A560  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2590,14 +2590,14 @@ func_80059810:
 func_80059814:
 /* 80059814 0004A794  4B FD 06 68 */	b func_80029E7C
 
-.global func_80059818
-func_80059818:
+.global UpdateRenderFrame__10CSceneGameFii
+UpdateRenderFrame__10CSceneGameFii:
 /* 80059818 0004A798  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005981C 0004A79C  7C 08 02 A6 */	mflr r0
 /* 80059820 0004A7A0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80059824 0004A7A4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80059828 0004A7A8  7C 7F 1B 78 */	mr r31, r3
-/* 8005982C 0004A7AC  4B FF FD AD */	bl func_800595D8
+/* 8005982C 0004A7AC  4B FF FD AD */	bl SetupRenderActor__10CSceneGameFii
 /* 80059830 0004A7B0  80 1F 00 18 */	lwz r0, 0x18(r31)
 /* 80059834 0004A7B4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80059838 0004A7B8  40 82 00 0C */	bne lbl_80059844

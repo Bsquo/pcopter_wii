@@ -3411,8 +3411,8 @@ func_800476EC:
 /* 800476FC 0003867C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80047700 00038680  4E 80 00 20 */	blr
 
-.global func_80047704
-func_80047704:
+.global Start__11CScenaryMgrFv
+Start__11CScenaryMgrFv:
 /* 80047704 00038684  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 80047708 00038688  7C 08 02 A6 */	mflr r0
 /* 8004770C 0003868C  90 01 00 54 */	stw r0, 0x54(r1)

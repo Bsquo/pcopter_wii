@@ -360,8 +360,8 @@ BackThreadEnd__Fv:
 /* 80086140 000770C0  90 0D 8F F0 */	stw r0, lbl_8060EDF0@sda21(r13)
 /* 80086144 000770C4  4E 80 00 20 */	blr
 
-.global func_80086148
-func_80086148:
+.global LoadingStart__Fv
+LoadingStart__Fv:
 /* 80086148 000770C8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8008614C 000770CC  7C 08 02 A6 */	mflr r0
 /* 80086150 000770D0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -470,8 +470,8 @@ func_80086254:
 /* 800862B0 00077230  38 21 00 10 */	addi r1, r1, 0x10
 /* 800862B4 00077234  4E 80 00 20 */	blr
 
-.global func_800862B8
-func_800862B8:
+.global LoadingEnd__Fv
+LoadingEnd__Fv:
 /* 800862B8 00077238  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800862BC 0007723C  7C 08 02 A6 */	mflr r0
 /* 800862C0 00077240  90 01 00 14 */	stw r0, 0x14(r1)
@@ -482,7 +482,7 @@ func_800862B8:
 /* 800862D4 00077254  93 ED 8F FC */	stw r31, lbl_8060EDFC@sda21(r13)
 /* 800862D8 00077258  4B F8 F5 D5 */	bl GetInstance__11CVLayoutMgrFv
 /* 800862DC 0007725C  38 80 00 00 */	li r4, 0x0
-/* 800862E0 00077260  4B FA 90 11 */	bl func_8002F2F0
+/* 800862E0 00077260  4B FA 90 11 */	bl SetVisibleAll__11CVLayoutMgrFi
 /* 800862E4 00077264  80 6D 90 00 */	lwz r3, lbl_8060EE00@sda21(r13)
 /* 800862E8 00077268  48 09 5F AD */	bl Free__4demoFPv
 /* 800862EC 0007726C  93 ED 90 00 */	stw r31, lbl_8060EE00@sda21(r13)
@@ -492,8 +492,8 @@ func_800862B8:
 /* 800862FC 0007727C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80086300 00077280  4E 80 00 20 */	blr
 
-.global func_80086304
-func_80086304:
+.global LoadingPause__Fv
+LoadingPause__Fv:
 /* 80086304 00077284  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80086308 00077288  7C 08 02 A6 */	mflr r0
 /* 8008630C 0007728C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -503,7 +503,7 @@ func_80086304:
 /* 8008631C 0007729C  90 0D 8F F4 */	stw r0, lbl_8060EDF4@sda21(r13)
 /* 80086320 000772A0  4B F8 F5 8D */	bl GetInstance__11CVLayoutMgrFv
 /* 80086324 000772A4  38 80 00 00 */	li r4, 0x0
-/* 80086328 000772A8  4B FA 8F C9 */	bl func_8002F2F0
+/* 80086328 000772A8  4B FA 8F C9 */	bl SetVisibleAll__11CVLayoutMgrFi
 /* 8008632C 000772AC  4B F8 F5 81 */	bl GetInstance__11CVLayoutMgrFv
 /* 80086330 000772B0  3C 80 80 1C */	lis r4, lbl_801C4390@ha
 /* 80086334 000772B4  38 A0 00 01 */	li r5, 0x1

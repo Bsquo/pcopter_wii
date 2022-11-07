@@ -787,8 +787,8 @@ func_8002D460:
 /* 8002D48C 0001E40C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002D490 0001E410  4E 80 00 20 */	blr
 
-.global func_8002D494
-func_8002D494:
+.global StopSound__10CVSoundMgrFiii
+StopSound__10CVSoundMgrFiii:
 /* 8002D494 0001E414  7C 80 23 78 */	mr r0, r4
 /* 8002D498 0001E418  7C A4 2B 78 */	mr r4, r5
 /* 8002D49C 0001E41C  1C 00 00 28 */	mulli r0, r0, 0x28

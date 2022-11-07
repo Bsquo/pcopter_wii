@@ -35,7 +35,7 @@ enum eGameplayState {
 class CSceneGame: public CVScene {
 	public:
 		CActCopter* pHelicopter;
-		UNK32 field_0x30;
+		CActCopter* pSecondHelicopter;
 		CVActor* field_0x34;
 		UNK32 field_0x38;
 		UNK32 field_0x3C;
@@ -51,13 +51,13 @@ class CSceneGame: public CVScene {
 		UNK32 field_0x7C;
 		UNK32 field_0x80;
 		UNK32 field_0x84;
-		UNK32 field_0x88;
+		u32 mMissionFinishingTime;
 		UNK32 field_0x8C;
 		eGameplayState mGameplayState;
 		UNK32 field_0x94;
 		s32 ground_smoke;
 		f32 limit_height;
-		UNK32 field_0xA0;
+		f32 field_0xA0;
 		UNK32 field_0xA4;
 		UNK32 field_0xA8;
 		UNK32 field_0xAC;

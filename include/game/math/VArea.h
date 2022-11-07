@@ -5,10 +5,9 @@
 #include "types.h"
 
 class CVArea {
-    private:
+    public:
         f32 mAreaVertex[3][2];      // A 2D triangle
 
-    public:
         CVArea();
         CVArea(f32, f32, f32, f32, f32, f32);
         void Init();

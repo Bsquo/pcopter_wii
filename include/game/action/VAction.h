@@ -20,6 +20,6 @@ class CVAction: public CVListBase {
 
         CVAction();
         ~CVAction();
-}
+};
 
 #endif // VACTION_H

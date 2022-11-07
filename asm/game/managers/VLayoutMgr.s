@@ -1536,8 +1536,8 @@ func_8002EEC4:
 /* 8002EF10 0001FE90  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002EF14 0001FE94  4E 80 00 20 */	blr
 
-.global func_8002EF18
-func_8002EF18:
+.global Init__11CVLayoutMgrFv
+Init__11CVLayoutMgrFv:
 /* 8002EF18 0001FE98  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002EF1C 0001FE9C  7C 08 02 A6 */	mflr r0
 /* 8002EF20 0001FEA0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1845,8 +1845,8 @@ lbl_8002F2D8:
 /* 8002F2E8 00020268  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002F2EC 0002026C  4E 80 00 20 */	blr
 
-.global func_8002F2F0
-func_8002F2F0:
+.global SetVisibleAll__11CVLayoutMgrFi
+SetVisibleAll__11CVLayoutMgrFi:
 /* 8002F2F0 00020270  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002F2F4 00020274  7C 08 02 A6 */	mflr r0
 /* 8002F2F8 00020278  38 63 00 68 */	addi r3, r3, 0x68

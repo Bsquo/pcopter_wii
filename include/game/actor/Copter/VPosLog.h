@@ -2,6 +2,7 @@
 #define VPOSLOG_H
 
 #include "include/game/math/VVector.h"
+#include "include/game/actor/VActor.h"
 #include "types.h"
 
 class CPosLog {

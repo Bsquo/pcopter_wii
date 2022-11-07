@@ -50,8 +50,8 @@ lbl_80049868:
 /* 800498B4 0003A834  38 21 00 30 */	addi r1, r1, 0x30
 /* 800498B8 0003A838  4E 80 00 20 */	blr
 
-.global func_800498BC
-func_800498BC:
+.global Init__9CVAreaMgrFv
+Init__9CVAreaMgrFv:
 /* 800498BC 0003A83C  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 800498C0 0003A840  7C 08 02 A6 */	mflr r0
 /* 800498C4 0003A844  90 01 00 44 */	stw r0, 0x44(r1)

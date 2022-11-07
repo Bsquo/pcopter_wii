@@ -1981,8 +1981,8 @@ func_8001FF50:
 /* 8001FF54 00010ED4  90 03 00 00 */	stw r0, 0x0(r3)
 /* 8001FF58 00010ED8  4E 80 00 20 */	blr
 
-.global func_8001FF5C
-func_8001FF5C:
+.global InitShadow__FP10CSceneGame
+InitShadow__FP10CSceneGame:
 /* 8001FF5C 00010EDC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8001FF60 00010EE0  7C 08 02 A6 */	mflr r0
 /* 8001FF64 00010EE4  90 01 00 24 */	stw r0, 0x24(r1)

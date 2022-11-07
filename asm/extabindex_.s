@@ -330,7 +330,7 @@ lbl_8000CB00:
 	.4byte SetSelectCopter__20CSceneMenuPartSelectFi
 	.4byte 0x00000038
 	.4byte lbl_80006B94
-	.4byte lbl_8001569C
+	.4byte StartLocal__10CSceneGameFv
 	.4byte 0x00000210
 	.4byte lbl_80006B9C
 	.4byte GetInstance__11CVLayoutMgrFv
@@ -345,7 +345,7 @@ lbl_8000CB00:
 	.4byte lbl_800159D8
 	.4byte 0x00000058
 	.4byte lbl_80006BBC
-	.4byte func_80015A30
+	.4byte GetInstance__9CVAreaMgrFv
 	.4byte 0x00000064
 	.4byte lbl_80006BC4
 	.4byte func_80015A94
@@ -705,7 +705,7 @@ lbl_8000CB00:
 	.4byte func_8001FF20
 	.4byte 0x00000030
 	.4byte lbl_80007114
-	.4byte func_8001FF5C
+	.4byte InitShadow__FP10CSceneGame
 	.4byte 0x00000214
 	.4byte lbl_8000711C
 	.4byte func_80020170
@@ -1623,10 +1623,10 @@ lbl_8000CB00:
 	.4byte func_8002D97C
 	.4byte 0x00000140
 	.4byte lbl_80007E44
-	.4byte func_8002DABC
+	.4byte UpdateCollVtx__10CVActorMgrFi
 	.4byte 0x00000058
 	.4byte lbl_80007E4C
-	.4byte func_8002DB14
+	.4byte UpdateArea__10CVActorMgrFv
 	.4byte 0x00000054
 	.4byte lbl_80007E54
 	.4byte func_8002DB68
@@ -1731,7 +1731,7 @@ lbl_8000CB00:
 	.4byte func_8002EEC4
 	.4byte 0x00000054
 	.4byte lbl_80008000
-	.4byte func_8002EF18
+	.4byte Init__11CVLayoutMgrFv
 	.4byte 0x00000060
 	.4byte lbl_80008030
 	.4byte func_8002EF80
@@ -1755,7 +1755,7 @@ lbl_8000CB00:
 	.4byte func_8002F2A4
 	.4byte 0x0000004C
 	.4byte lbl_800080A8
-	.4byte func_8002F2F0
+	.4byte SetVisibleAll__11CVLayoutMgrFi
 	.4byte 0x00000058
 	.4byte lbl_800080B0
 	.4byte SetState__11CVLayoutMgrFPci
@@ -2646,7 +2646,7 @@ lbl_8000CB00:
 	.4byte func_80047640
 	.4byte 0x000000C4
 	.4byte lbl_800095F8
-	.4byte func_80047704
+	.4byte Start__11CScenaryMgrFv
 	.4byte 0x00000298
 	.4byte lbl_80009600
 	.4byte func_800479A0
@@ -2727,7 +2727,7 @@ lbl_8000CB00:
 	.4byte func_8004983C
 	.4byte 0x00000080
 	.4byte lbl_800097A8
-	.4byte func_800498BC
+	.4byte Init__9CVAreaMgrFv
 	.4byte 0x000001C8
 	.4byte lbl_800097B0
 	.4byte func_80049A84
@@ -3174,7 +3174,7 @@ lbl_8000CB00:
 	.4byte __ct__10CSceneGameFv
 	.4byte 0x0000009C
 	.4byte lbl_80009FD4
-	.4byte func_800577D8
+	.4byte CreateScnGroup__10CSceneGameFv
 	.4byte 0x000005A0
 	.4byte lbl_8000A004
 	.4byte func_80057D8C
@@ -3204,10 +3204,10 @@ lbl_8000CB00:
 	.4byte lbl_80058F00
 	.4byte 0x000006D8
 	.4byte lbl_8000A148
-	.4byte func_800595D8
+	.4byte SetupRenderActor__10CSceneGameFii
 	.4byte 0x00000238
 	.4byte lbl_8000A150
-	.4byte func_80059818
+	.4byte UpdateRenderFrame__10CSceneGameFii
 	.4byte 0x00000050
 	.4byte lbl_8000A158
 	.4byte lbl_80059868
@@ -4235,13 +4235,13 @@ lbl_80010138:
 	.4byte lbl_80085DD0
 	.4byte 0x0000036C
 	.4byte lbl_8000C2C4
-	.4byte func_80086148
+	.4byte LoadingStart__Fv
 	.4byte 0x00000170
 	.4byte lbl_8000C2CC
-	.4byte func_800862B8
+	.4byte LoadingEnd__Fv
 	.4byte 0x0000004C
 	.4byte lbl_8000C2D4
-	.4byte func_80086304
+	.4byte LoadingPause__Fv
 	.4byte 0x00000050
 	.4byte lbl_8000C2DC
 	.4byte func_80086354

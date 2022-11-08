@@ -11,6 +11,7 @@ class CActCoin: public CActScnBase {
 
         CActCoin();
         ~CActCoin();
+        bool CheckGet(CVActor*);
 };
 
 #endif // ACT_COIN_H

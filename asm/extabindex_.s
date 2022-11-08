@@ -3102,10 +3102,10 @@ lbl_8000CB00:
 	.4byte __ct__8CActCoinFv
 	.4byte 0x0000004C
 	.4byte lbl_80009E38
-	.4byte lbl_800552C4
+	.4byte __dt__8CActCoinFv
 	.4byte 0x00000058
 	.4byte lbl_80009E40
-	.4byte func_8005531C
+	.4byte CheckGet__8CActCoinFP7CVActor
 	.4byte 0x00000084
 	.4byte lbl_80009E48
 	.4byte AddActor__13CActorFactoryF10CVFilePathii

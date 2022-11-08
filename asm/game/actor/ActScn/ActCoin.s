@@ -21,9 +21,9 @@ __ct__8CActCoinFv:
 /* 80055288 00046208  7C 7F 1B 78 */	mr r31, r3
 /* 8005528C 0004620C  48 00 20 3D */	bl __ct__11CActScnBaseFv
 /* 80055290 00046210  C0 22 8A 60 */	lfs f1, lbl_80610280@sda21(r2)
-/* 80055294 00046214  3C 60 80 1D */	lis r3, lbl_801CC4D8@ha
+/* 80055294 00046214  3C 60 80 1D */	lis r3, __vt__8CActCoin@ha
 /* 80055298 00046218  C0 02 8A 64 */	lfs f0, lbl_80610284@sda21(r2)
-/* 8005529C 0004621C  38 63 C4 D8 */	addi r3, r3, lbl_801CC4D8@l
+/* 8005529C 0004621C  38 63 C4 D8 */	addi r3, r3, __vt__8CActCoin@l
 /* 800552A0 00046220  90 7F 00 10 */	stw r3, 0x10(r31)
 /* 800552A4 00046224  7F E3 FB 78 */	mr r3, r31
 /* 800552A8 00046228  D0 3F 03 E0 */	stfs f1, 0x3e0(r31)
@@ -34,8 +34,8 @@ __ct__8CActCoinFv:
 /* 800552BC 0004623C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800552C0 00046240  4E 80 00 20 */	blr
 
-.global lbl_800552C4
-lbl_800552C4:
+.global __dt__8CActCoinFv
+__dt__8CActCoinFv:
 /* 800552C4 00046244  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800552C8 00046248  7C 08 02 A6 */	mflr r0
 /* 800552CC 0004624C  2C 03 00 00 */	cmpwi r3, 0x0
@@ -60,8 +60,8 @@ lbl_80055300:
 /* 80055314 00046294  38 21 00 10 */	addi r1, r1, 0x10
 /* 80055318 00046298  4E 80 00 20 */	blr
 
-.global func_8005531C
-func_8005531C:
+.global CheckGet__8CActCoinFP7CVActor
+CheckGet__8CActCoinFP7CVActor:
 /* 8005531C 0004629C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80055320 000462A0  7C 08 02 A6 */	mflr r0
 /* 80055324 000462A4  2C 04 00 00 */	cmpwi r4, 0x0
@@ -102,13 +102,13 @@ func_8005538C:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CC4D8
-lbl_801CC4D8:
+.global __vt__8CActCoin
+__vt__8CActCoin:
 
 	# ROM: 0x1C85D8
-	.4byte lbl_8060E320
+	.4byte __RTTI__8CActCoin
 	.4byte 0
-	.4byte lbl_800552C4
+	.4byte __dt__8CActCoinFv
 	.4byte GetPos__7CVRigidFv
 	.4byte GetAxis__7CVRigidFv
 	.4byte GetScale__7CVRigidFv
@@ -142,8 +142,8 @@ lbl_801CC524:
 
 .section .sdata, "wa", @progbits
 
-.global lbl_8060E320
-lbl_8060E320:
+.global __RTTI__8CActCoin
+__RTTI__8CActCoin:
 
 	# ROM: 0x1EE520
 	.4byte lbl_801BE238

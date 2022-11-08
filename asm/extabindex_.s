@@ -1020,7 +1020,7 @@ lbl_8000CB00:
 	.4byte func_80025B84
 	.4byte 0x00000280
 	.4byte lbl_80007688
-	.4byte func_80025E04
+	.4byte __dv__8CVVectorFf
 	.4byte 0x00000070
 	.4byte lbl_80007690
 	.4byte func_80025E74
@@ -1395,37 +1395,37 @@ lbl_8000CB00:
 	.4byte lbl_8002AE34
 	.4byte 0x00000058
 	.4byte lbl_80007AF4
-	.4byte func_8002AE8C
+	.4byte __ct__7CVRigidFv
 	.4byte 0x00000128
 	.4byte lbl_80007AFC
 	.4byte __dt__7CVRigidFv
 	.4byte 0x00000058
 	.4byte lbl_80007B18
-	.4byte func_8002B00C
+	.4byte UpdateMatrix__7CVRigidFv
 	.4byte 0x0000013C
 	.4byte lbl_80007B20
-	.4byte func_8002B1C4
+	.4byte ClearForce__7CVRigidFv
 	.4byte 0x000000A8
 	.4byte lbl_80007B28
-	.4byte func_8002B26C
+	.4byte ClearTmpForce__7CVRigidFv
 	.4byte 0x000000B0
 	.4byte lbl_80007B30
-	.4byte func_8002B31C
+	.4byte AddForceGlobal__7CVRigidF8CVVector8CVVector
 	.4byte 0x000000FC
 	.4byte lbl_80007B38
-	.4byte func_8002B418
+	.4byte AddForceLocal__7CVRigidF8CVVector8CVVector
 	.4byte 0x000000D8
 	.4byte lbl_80007B40
-	.4byte func_8002B4F0
+	.4byte AddTmpForceGlobal__7CVRigidF8CVVector8CVVector
 	.4byte 0x00000108
 	.4byte lbl_80007B48
-	.4byte func_8002B5F8
+	.4byte RealizeTmpForce__7CVRigidFv
 	.4byte 0x00000104
 	.4byte lbl_80007B50
 	.4byte Move__7CVRigidFf
 	.4byte 0x000002B4
 	.4byte lbl_80007B58
-	.4byte func_8002B9B0
+	.4byte GetLocalV__7CVRigidF8CVVector
 	.4byte 0x00000098
 	.4byte lbl_80007B60
 	.4byte __ct__7CVSceneFv

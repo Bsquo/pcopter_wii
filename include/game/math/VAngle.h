@@ -14,7 +14,7 @@ class CVAngle {
     public:
         CVAngle();
         CVAngle(f32, f32, f32);
-        void operator=(const CVAngle&);
+        const CVAngle& operator=(const CVAngle&);
         operator CVAxis() const;
 };
 

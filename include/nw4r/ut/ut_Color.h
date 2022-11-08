@@ -9,7 +9,7 @@ namespace nw4r {
             u32 color;
             
             Color(u32);
-            nw4r::ut::Color& operator=(u32);
+            const nw4r::ut::Color& operator=(u32);
             u32& ToU32ref();
             ~Color();
         };

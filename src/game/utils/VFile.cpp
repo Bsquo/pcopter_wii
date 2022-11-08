@@ -14,19 +14,19 @@ CVFilePath::CVFilePath(char* path) {
     strcpy(mFilePath, path); 
 }
 
-char* CVFilePath::operator=(const CVFilePath& path) {
+const char* CVFilePath::operator=(const CVFilePath& path) {
     if (this != &path) {
         strcpy(mFilePath, path.mFilePath);
     }
     return mFilePath;
 }
 
-char* CVFilePath::operator=(const char* path) {
+const char* CVFilePath::operator=(const char* path) {
     strcpy(mFilePath, path);
     return mFilePath;
 }
 
-char* CVFilePath::operator+=(const char* path) {
+const char* CVFilePath::operator+=(const char* path) {
     strcat(mFilePath, path);
     return mFilePath;
 }

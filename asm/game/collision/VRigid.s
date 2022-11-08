@@ -2,8 +2,8 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_8002AE8C
-func_8002AE8C:
+.global __ct__7CVRigidFv
+__ct__7CVRigidFv:
 /* 8002AE8C 0001BE0C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8002AE90 0001BE10  7C 08 02 A6 */	mflr r0
 /* 8002AE94 0001BE14  90 01 00 24 */	stw r0, 0x24(r1)
@@ -105,8 +105,8 @@ lbl_8002AFF0:
 /* 8002B004 0001BF84  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002B008 0001BF88  4E 80 00 20 */	blr
 
-.global func_8002B00C
-func_8002B00C:
+.global UpdateMatrix__7CVRigidFv
+UpdateMatrix__7CVRigidFv:
 /* 8002B00C 0001BF8C  94 21 FE 70 */	stwu r1, -0x190(r1)
 /* 8002B010 0001BF90  7C 08 02 A6 */	mflr r0
 /* 8002B014 0001BF94  90 01 01 94 */	stw r0, 0x194(r1)
@@ -187,8 +187,8 @@ func_8002B00C:
 /* 8002B140 0001C0C0  38 21 01 90 */	addi r1, r1, 0x190
 /* 8002B144 0001C0C4  4E 80 00 20 */	blr
 
-.global func_8002B148
-func_8002B148:
+.global SetInertiaMoment_Box__7CVRigidFffff
+SetInertiaMoment_Box__7CVRigidFffff:
 /* 8002B148 0001C0C8  ED 03 00 F2 */	fmuls f8, f3, f3
 /* 8002B14C 0001C0CC  C0 E2 81 D4 */	lfs f7, lbl_8060F9F4@sda21(r2)
 /* 8002B150 0001C0D0  EC C1 00 72 */	fmuls f6, f1, f1
@@ -223,8 +223,8 @@ lbl_8002B1AC:
 /* 8002B1BC 0001C13C  D0 03 01 9C */	stfs f0, 0x19c(r3)
 /* 8002B1C0 0001C140  4E 80 00 20 */	blr
 
-.global func_8002B1C4
-func_8002B1C4:
+.global ClearForce__7CVRigidFv
+ClearForce__7CVRigidFv:
 /* 8002B1C4 0001C144  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8002B1C8 0001C148  7C 08 02 A6 */	mflr r0
 /* 8002B1CC 0001C14C  C0 22 81 C8 */	lfs f1, lbl_8060F9E8@sda21(r2)
@@ -268,8 +268,8 @@ func_8002B1C4:
 /* 8002B264 0001C1E4  38 21 00 40 */	addi r1, r1, 0x40
 /* 8002B268 0001C1E8  4E 80 00 20 */	blr
 
-.global func_8002B26C
-func_8002B26C:
+.global ClearTmpForce__7CVRigidFv
+ClearTmpForce__7CVRigidFv:
 /* 8002B26C 0001C1EC  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8002B270 0001C1F0  7C 08 02 A6 */	mflr r0
 /* 8002B274 0001C1F4  C0 22 81 C8 */	lfs f1, lbl_8060F9E8@sda21(r2)
@@ -315,8 +315,8 @@ func_8002B26C:
 /* 8002B314 0001C294  38 21 00 40 */	addi r1, r1, 0x40
 /* 8002B318 0001C298  4E 80 00 20 */	blr
 
-.global func_8002B31C
-func_8002B31C:
+.global AddForceGlobal__7CVRigidF8CVVector8CVVector
+AddForceGlobal__7CVRigidF8CVVector8CVVector:
 /* 8002B31C 0001C29C  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 8002B320 0001C2A0  7C 08 02 A6 */	mflr r0
 /* 8002B324 0001C2A4  90 01 00 84 */	stw r0, 0x84(r1)
@@ -382,8 +382,8 @@ lbl_8002B3FC:
 /* 8002B410 0001C390  38 21 00 80 */	addi r1, r1, 0x80
 /* 8002B414 0001C394  4E 80 00 20 */	blr
 
-.global func_8002B418
-func_8002B418:
+.global AddForceLocal__7CVRigidF8CVVector8CVVector
+AddForceLocal__7CVRigidF8CVVector8CVVector:
 /* 8002B418 0001C398  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 8002B41C 0001C39C  7C 08 02 A6 */	mflr r0
 /* 8002B420 0001C3A0  90 01 00 64 */	stw r0, 0x64(r1)
@@ -440,8 +440,8 @@ lbl_8002B4D4:
 /* 8002B4E8 0001C468  38 21 00 60 */	addi r1, r1, 0x60
 /* 8002B4EC 0001C46C  4E 80 00 20 */	blr
 
-.global func_8002B4F0
-func_8002B4F0:
+.global AddTmpForceGlobal__7CVRigidF8CVVector8CVVector
+AddTmpForceGlobal__7CVRigidF8CVVector8CVVector:
 /* 8002B4F0 0001C470  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 8002B4F4 0001C474  7C 08 02 A6 */	mflr r0
 /* 8002B4F8 0001C478  90 01 00 84 */	stw r0, 0x84(r1)
@@ -510,8 +510,8 @@ lbl_8002B5DC:
 /* 8002B5F0 0001C570  38 21 00 80 */	addi r1, r1, 0x80
 /* 8002B5F4 0001C574  4E 80 00 20 */	blr
 
-.global func_8002B5F8
-func_8002B5F8:
+.global RealizeTmpForce__7CVRigidFv
+RealizeTmpForce__7CVRigidFv:
 /* 8002B5F8 0001C578  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 8002B5FC 0001C57C  7C 08 02 A6 */	mflr r0
 /* 8002B600 0001C580  90 01 00 54 */	stw r0, 0x54(r1)
@@ -530,7 +530,7 @@ func_8002B5F8:
 /* 8002B634 0001C5B4  38 9F 02 0C */	addi r4, r31, 0x20c
 /* 8002B638 0001C5B8  C8 01 00 38 */	lfd f0, 0x38(r1)
 /* 8002B63C 0001C5BC  EC 20 08 28 */	fsubs f1, f0, f1
-/* 8002B640 0001C5C0  4B FF A7 C5 */	bl func_80025E04
+/* 8002B640 0001C5C0  4B FF A7 C5 */	bl __dv__8CVVectorFf
 /* 8002B644 0001C5C4  38 7F 01 AC */	addi r3, r31, 0x1ac
 /* 8002B648 0001C5C8  38 81 00 2C */	addi r4, r1, 0x2c
 /* 8002B64C 0001C5CC  4B FE B2 79 */	bl __apl__8CVVectorFRC8CVVector
@@ -542,7 +542,7 @@ func_8002B5F8:
 /* 8002B664 0001C5E4  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8002B668 0001C5E8  C8 01 00 40 */	lfd f0, 0x40(r1)
 /* 8002B66C 0001C5EC  EC 20 08 28 */	fsubs f1, f0, f1
-/* 8002B670 0001C5F0  4B FF A7 95 */	bl func_80025E04
+/* 8002B670 0001C5F0  4B FF A7 95 */	bl __dv__8CVVectorFf
 /* 8002B674 0001C5F4  38 7F 01 E8 */	addi r3, r31, 0x1e8
 /* 8002B678 0001C5F8  38 81 00 20 */	addi r4, r1, 0x20
 /* 8002B67C 0001C5FC  4B FE B2 49 */	bl __apl__8CVVectorFRC8CVVector
@@ -554,7 +554,7 @@ func_8002B5F8:
 /* 8002B694 0001C614  90 01 00 3C */	stw r0, 0x3c(r1)
 /* 8002B698 0001C618  C8 01 00 38 */	lfd f0, 0x38(r1)
 /* 8002B69C 0001C61C  EC 20 08 28 */	fsubs f1, f0, f1
-/* 8002B6A0 0001C620  4B FF A7 65 */	bl func_80025E04
+/* 8002B6A0 0001C620  4B FF A7 65 */	bl __dv__8CVVectorFf
 /* 8002B6A4 0001C624  38 7F 01 D0 */	addi r3, r31, 0x1d0
 /* 8002B6A8 0001C628  38 81 00 14 */	addi r4, r1, 0x14
 /* 8002B6AC 0001C62C  4B FE B2 19 */	bl __apl__8CVVectorFRC8CVVector
@@ -566,13 +566,13 @@ func_8002B5F8:
 /* 8002B6C4 0001C644  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8002B6C8 0001C648  C8 01 00 40 */	lfd f0, 0x40(r1)
 /* 8002B6CC 0001C64C  EC 20 08 28 */	fsubs f1, f0, f1
-/* 8002B6D0 0001C650  4B FF A7 35 */	bl func_80025E04
+/* 8002B6D0 0001C650  4B FF A7 35 */	bl __dv__8CVVectorFf
 /* 8002B6D4 0001C654  38 7F 01 DC */	addi r3, r31, 0x1dc
 /* 8002B6D8 0001C658  38 81 00 08 */	addi r4, r1, 0x8
 /* 8002B6DC 0001C65C  4B FE B1 E9 */	bl __apl__8CVVectorFRC8CVVector
 lbl_8002B6E0:
 /* 8002B6E0 0001C660  7F E3 FB 78 */	mr r3, r31
-/* 8002B6E4 0001C664  4B FF FB 89 */	bl func_8002B26C
+/* 8002B6E4 0001C664  4B FF FB 89 */	bl ClearTmpForce__7CVRigidFv
 /* 8002B6E8 0001C668  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8002B6EC 0001C66C  83 E1 00 4C */	lwz r31, 0x4c(r1)
 /* 8002B6F0 0001C670  7C 08 03 A6 */	mtlr r0
@@ -594,7 +594,7 @@ Move__7CVRigidFf:
 /* 8002B724 0001C6A4  C0 3F 01 90 */	lfs f1, 0x190(r31)
 /* 8002B728 0001C6A8  38 61 00 D4 */	addi r3, r1, 0xd4
 /* 8002B72C 0001C6AC  38 9F 01 AC */	addi r4, r31, 0x1ac
-/* 8002B730 0001C6B0  4B FF A6 D5 */	bl func_80025E04
+/* 8002B730 0001C6B0  4B FF A6 D5 */	bl __dv__8CVVectorFf
 /* 8002B734 0001C6B4  38 7F 01 C4 */	addi r3, r31, 0x1c4
 /* 8002B738 0001C6B8  38 81 00 D4 */	addi r4, r1, 0xd4
 /* 8002B73C 0001C6BC  4B FE EA DD */	bl __as__8CVVectorFRC8CVVector
@@ -744,9 +744,9 @@ lbl_8002B860:
 /* 8002B978 0001C8F8  38 81 00 08 */	addi r4, r1, 0x8
 /* 8002B97C 0001C8FC  4B FE E8 9D */	bl __as__8CVVectorFRC8CVVector
 /* 8002B980 0001C900  7F E3 FB 78 */	mr r3, r31
-/* 8002B984 0001C904  4B FF F6 89 */	bl func_8002B00C
+/* 8002B984 0001C904  4B FF F6 89 */	bl UpdateMatrix__7CVRigidFv
 /* 8002B988 0001C908  7F E3 FB 78 */	mr r3, r31
-/* 8002B98C 0001C90C  4B FF F8 39 */	bl func_8002B1C4
+/* 8002B98C 0001C90C  4B FF F8 39 */	bl ClearForce__7CVRigidFv
 /* 8002B990 0001C910  38 60 00 01 */	li r3, 0x1
 /* 8002B994 0001C914  E3 E1 01 08 */	psq_l f31, 0x108(r1), 0, qr0
 /* 8002B998 0001C918  CB E1 01 00 */	lfd f31, 0x100(r1)
@@ -756,8 +756,8 @@ lbl_8002B860:
 /* 8002B9A8 0001C928  38 21 01 10 */	addi r1, r1, 0x110
 /* 8002B9AC 0001C92C  4E 80 00 20 */	blr
 
-.global func_8002B9B0
-func_8002B9B0:
+.global GetLocalV__7CVRigidF8CVVector
+GetLocalV__7CVRigidF8CVVector:
 /* 8002B9B0 0001C930  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8002B9B4 0001C934  7C 08 02 A6 */	mflr r0
 /* 8002B9B8 0001C938  90 01 00 44 */	stw r0, 0x44(r1)

@@ -5,7 +5,7 @@
 #include "include/game/math/VArea.h"
 #include "include/game/utils/VFlag.h"
 #include "include/game/utils/VFilePath.h"
-#include "include/game/collision/VRigid.h"
+#include "include/game/rigid/VRigid.h"
 #include "include/game/actor/VActorNode.h"
 #include "include/game/gfx/VModel.h"
 #include "include/game/utils/VScript.h"

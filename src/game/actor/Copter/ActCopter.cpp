@@ -15,7 +15,7 @@ void CPosLog::Update(CVActor* actor, int iVar1) {
     if (magnitude > _53062 || iVar1 != 0) {
         ShiftForward();
         mPrevPos[0] = actor->mPos;
-        mPrevYaw[0] = actor->mAxis.mYaw;
+        mPrevYaw[0] = actor->mAngle.mYaw;
         if (mCount < 19)
             mCount++;
     }
@@ -74,7 +74,7 @@ void CPosLog::FillList(CVActor* actor) {
     if (actor != nullptr) {
         for (s32 i = 0; i < 20; i++) {
             mPrevPos[i] = actor->mPos; 
-            mPrevYaw[i] = actor->mAxis.mYaw;
+            mPrevYaw[i] = actor->mAngle.mYaw;
         }
         mCount = 19;
     }

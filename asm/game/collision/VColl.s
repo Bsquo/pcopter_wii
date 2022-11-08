@@ -2830,7 +2830,7 @@ func_80025C4C:
 /* 80025C64 00016BE4  C0 22 81 7C */	lfs f1, lbl_8060F99C@sda21(r2)
 /* 80025C68 00016BE8  38 61 00 38 */	addi r3, r1, 0x38
 /* 80025C6C 00016BEC  38 81 00 2C */	addi r4, r1, 0x2c
-/* 80025C70 00016BF0  48 00 01 95 */	bl func_80025E04
+/* 80025C70 00016BF0  48 00 01 95 */	bl __dv__8CVVectorFf
 /* 80025C74 00016BF4  80 81 00 38 */	lwz r4, 0x38(r1)
 /* 80025C78 00016BF8  80 61 00 3C */	lwz r3, 0x3c(r1)
 /* 80025C7C 00016BFC  80 01 00 40 */	lwz r0, 0x40(r1)
@@ -2945,8 +2945,8 @@ func_80025DEC:
 /* 80025DFC 00016D7C  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 80025E00 00016D80  4E 80 00 20 */	blr
 
-.global func_80025E04
-func_80025E04:
+.global __dv__8CVVectorFf
+__dv__8CVVectorFf:
 /* 80025E04 00016D84  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80025E08 00016D88  7C 08 02 A6 */	mflr r0
 /* 80025E0C 00016D8C  90 01 00 24 */	stw r0, 0x24(r1)

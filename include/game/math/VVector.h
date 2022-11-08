@@ -22,15 +22,15 @@ class CVVector {
 		const CVVector& operator+=(const CVVector&);
 		CVVector operator-(const CVVector&);
 		CVVector operator*(f32);
-		CVVector operator*=(f32);
-		CVVector operator/=(f32);
+		const CVVector& operator*=(f32);
+		const CVVector& operator/=(f32);
 		CVVector operator+(const CVVector&);
 		f32 operator*(const CVVector&);
 		CVVector operator-();
-		CVVector operator-=(const CVVector&);
+		const CVVector& operator-=(const CVVector&);
 		CVVector operator/(f32);
 		CVVector operator^(const CVVector&);
-		CVVector operator=(const nw4r::math::VEC3&);
+		const CVVector& operator=(const nw4r::math::VEC3&);
 		operator nw4r::math::VEC3() const; // 0x80031ff0
 };
 

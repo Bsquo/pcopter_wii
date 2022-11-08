@@ -10,15 +10,15 @@
 class CVRigid: public CVListBase {
     public:
         CVVector mPos;
-        CVAxis mAxis;
-        CVVector field_0x44;
-        CVMatrix field_0x50;
+        CVAxis mAngle;
+        CVVector mScale;
+        CVMatrix mMatrix;
         CVMatrix field_0x90;
         CVMatrix field_0xD0;
         CVMatrix field_0x110;
         CVMatrix field_0x150;
         f32 mMass;
-        CVVector field_0x194;
+        CVVector mInertiaMomentBox;
         CVVector field_0x1A0;
         CVVector field_0x1AC;
         CVVector field_0x1B8;
@@ -42,6 +42,15 @@ class CVRigid: public CVListBase {
         virtual const CVVector& GetScale();
         virtual const CVMatrix& GetMtx();
         virtual bool Move(f32);
+        void UpdateMatrix();
+        void SetInertiaMoment_Box(f32, f32, f32, f32);
+        void ClearForce();
+        void ClearTmpForce();
+        void AddForceGlobal(CVVector, CVVector);
+        void AddForceLocal(CVVector, CVVector);
+        void AddTmpForceGlobal(CVVector, CVVector);
+        void RealizeTmpForce();
+        CVVector GetLocalV(CVVector);
 };
 
 #endif // VRIGID_H

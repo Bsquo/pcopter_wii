@@ -193,7 +193,7 @@ nw4r::ut::Color::Color(u32 color) {
     *this = color;
 }
 
-nw4r::ut::Color& nw4r::ut::Color::operator=(u32 new_color) {
+const nw4r::ut::Color& nw4r::ut::Color::operator=(u32 new_color) {
     ToU32ref() = new_color;
     return *this;
 }

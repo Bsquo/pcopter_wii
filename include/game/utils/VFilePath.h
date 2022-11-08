@@ -10,9 +10,9 @@ class CVFilePath {
     public:
         CVFilePath();
         CVFilePath(char*);
-        char* operator=(const CVFilePath&);
-        char* operator=(const char*);
-        char* operator+=(const char*);
+        const char* operator=(const CVFilePath&);
+        const char* operator=(const char*);
+        const char* operator+=(const char*);
         operator const char* ();
         operator char* ();
         void Init();

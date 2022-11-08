@@ -20,6 +20,7 @@ SRC_DIRS := src                      	\
 			src/game                 	\
 			src/game/actor           	\
 			src/game/actor/Copter    	\
+			src/game/actor/ActScn    	\
 			src/game/app           	    \
 			src/game/gfx             	\
 			src/game/hbm             	\

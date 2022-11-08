@@ -12,28 +12,6 @@ lbl_801BE238:
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global __ct__8CActCoinFv
-__ct__8CActCoinFv:
-/* 80055278 000461F8  94 21 FF F0 */	stwu r1, -0x10(r1)
-/* 8005527C 000461FC  7C 08 02 A6 */	mflr r0
-/* 80055280 00046200  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80055284 00046204  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80055288 00046208  7C 7F 1B 78 */	mr r31, r3
-/* 8005528C 0004620C  48 00 20 3D */	bl __ct__11CActScnBaseFv
-/* 80055290 00046210  C0 22 8A 60 */	lfs f1, lbl_80610280@sda21(r2)
-/* 80055294 00046214  3C 60 80 1D */	lis r3, __vt__8CActCoin@ha
-/* 80055298 00046218  C0 02 8A 64 */	lfs f0, lbl_80610284@sda21(r2)
-/* 8005529C 0004621C  38 63 C4 D8 */	addi r3, r3, __vt__8CActCoin@l
-/* 800552A0 00046220  90 7F 00 10 */	stw r3, 0x10(r31)
-/* 800552A4 00046224  7F E3 FB 78 */	mr r3, r31
-/* 800552A8 00046228  D0 3F 03 E0 */	stfs f1, 0x3e0(r31)
-/* 800552AC 0004622C  D0 1F 03 E4 */	stfs f0, 0x3e4(r31)
-/* 800552B0 00046230  83 E1 00 0C */	lwz r31, 0xc(r1)
-/* 800552B4 00046234  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800552B8 00046238  7C 08 03 A6 */	mtlr r0
-/* 800552BC 0004623C  38 21 00 10 */	addi r1, r1, 0x10
-/* 800552C0 00046240  4E 80 00 20 */	blr
-
 .global __dt__8CActCoinFv
 __dt__8CActCoinFv:
 /* 800552C4 00046244  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -148,17 +126,3 @@ __RTTI__8CActCoin:
 	# ROM: 0x1EE520
 	.4byte lbl_801BE238
 	.4byte lbl_801CC524
-
-.section .sdata2, "wa", @progbits
-
-.global lbl_80610280
-lbl_80610280:
-
-	# ROM: 0x1EF940
-	.4byte 0x3DCCCCCD
-
-.global lbl_80610284
-lbl_80610284:
-
-	# ROM: 0x1EF944
-	.4byte 0x3F800000

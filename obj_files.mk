@@ -79,6 +79,7 @@ GAME_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/game/hbm/VHomeButton.o             \
 	$(BUILD_DIR)/asm/game/actor/ActScn/ActHeliPad.o             \
 	$(BUILD_DIR)/asm/game/actor/ActScn/ActRing.o             \
+	$(BUILD_DIR)/src/game/actor/ActScn/ActCoin.o             \
 	$(BUILD_DIR)/asm/game/actor/ActScn/ActCoin.o             \
 	$(BUILD_DIR)/asm/game/actor/ActorFactory.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Main/SceneMenuMain2.o            \

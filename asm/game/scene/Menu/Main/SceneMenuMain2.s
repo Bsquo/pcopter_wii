@@ -2,6 +2,7 @@
 
 .section .rodata, "a", @progbits
 
+.balign 8
 .global lbl_801BE248
 lbl_801BE248:
 

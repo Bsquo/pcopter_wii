@@ -1578,10 +1578,10 @@ lbl_8000CB00:
 	.4byte InitArchive__10CVSoundMgrFPc
 	.4byte 0x00000170
 	.4byte lbl_80007DBC
-	.4byte func_8002D2D4
+	.4byte __ct__Q34demo6detail13UseSystemHeapFv
 	.4byte 0x00000030
 	.4byte lbl_80007DD4
-	.4byte func_8002D304
+	.4byte __dt__Q34demo6detail13UseSystemHeapFv
 	.4byte 0x00000054
 	.4byte lbl_80007DDC
 	.4byte func_8002D3DC
@@ -1635,7 +1635,7 @@ lbl_8000CB00:
 	.4byte lbl_8002DBB8
 	.4byte 0x00000078
 	.4byte lbl_80007E78
-	.4byte func_8002DC30
+	.4byte ReadDvdFile__9CVArchiveFPc
 	.4byte 0x000000F4
 	.4byte lbl_80007E80
 	.4byte func_8002DD3C

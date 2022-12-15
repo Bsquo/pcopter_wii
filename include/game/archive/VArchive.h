@@ -7,9 +7,9 @@
 
 class CVArchive: public CVListBase {
     public:
-        CVString mFilePath;
-        void* pFile;
-        nw4r::lyt::ArcResourceLink* mArcResourceLink;
+        CVString m_FilePath;
+        void* m_pBuf;                                        // File buffer. Actual symbol.
+        nw4r::lyt::ArcResourceLink* m_pArcResourceLink;
 
         CVArchive();
         ~CVArchive();

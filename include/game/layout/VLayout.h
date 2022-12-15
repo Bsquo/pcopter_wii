@@ -5,6 +5,8 @@
 #include "include/game/utils/VString.h"
 #include "include/game/math/VVector.h"
 #include "include/nw4r/lyt/lyt_pane.h"
+#include "include/nw4r/lyt/lyt_layout.h"
+#include "include/nw4r/lyt/lyt_animation.h"
 #include "include/nw4r/ut/ut_Color.h"
 #include "types.h"
 
@@ -12,11 +14,11 @@ class CVLayout: public CVListBase {
     public:
         int mIsVisible;
         CVString mName;
-        UNK32 field_0x20;
+        int mCurrentAnimFrame;
         u32 mState;
-        CVList field_0x28;
-        UNK32 field_0x38;
-        UNK32 field_0x3C;
+        CVList mLayoutStateGroup;
+        nw4r::lyt::Layout* pLayout;
+        nw4r::lyt::AnimTransform* pAnimTransform;
 
         CVLayout();
         ~CVLayout();

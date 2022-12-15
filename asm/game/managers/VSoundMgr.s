@@ -573,7 +573,7 @@ lbl_8002D188:
 /* 8002D22C 0001E1AC  57 A8 08 3C */	slwi r8, r29, 1
 /* 8002D230 0001E1B0  48 0F FD 71 */	bl func_8012CFA0
 /* 8002D234 0001E1B4  38 61 00 08 */	addi r3, r1, 0x8
-/* 8002D238 0001E1B8  48 00 00 9D */	bl func_8002D2D4
+/* 8002D238 0001E1B8  48 00 00 9D */	bl __ct__Q34demo6detail13UseSystemHeapFv
 /* 8002D23C 0001E1BC  3C 60 00 40 */	lis r3, 0x40
 /* 8002D240 0001E1C0  38 80 00 20 */	li r4, 0x20
 /* 8002D244 0001E1C4  38 A0 00 00 */	li r5, 0x0
@@ -596,7 +596,7 @@ lbl_8002D188:
 lbl_8002D288:
 /* 8002D288 0001E208  38 61 00 08 */	addi r3, r1, 0x8
 /* 8002D28C 0001E20C  38 80 FF FF */	li r4, -0x1
-/* 8002D290 0001E210  48 00 00 75 */	bl func_8002D304
+/* 8002D290 0001E210  48 00 00 75 */	bl __dt__Q34demo6detail13UseSystemHeapFv
 /* 8002D294 0001E214  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8002D298 0001E218  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8002D29C 0001E21C  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -626,8 +626,8 @@ func_8002D2CC:
 /* 8002D2CC 0001E24C  80 63 00 14 */	lwz r3, 0x14(r3)
 /* 8002D2D0 0001E250  4E 80 00 20 */	blr
 
-.global func_8002D2D4
-func_8002D2D4:
+.global __ct__Q34demo6detail13UseSystemHeapFv
+__ct__Q34demo6detail13UseSystemHeapFv:
 /* 8002D2D4 0001E254  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002D2D8 0001E258  7C 08 02 A6 */	mflr r0
 /* 8002D2DC 0001E25C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -641,8 +641,8 @@ func_8002D2D4:
 /* 8002D2FC 0001E27C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002D300 0001E280  4E 80 00 20 */	blr
 
-.global func_8002D304
-func_8002D304:
+.global __dt__Q34demo6detail13UseSystemHeapFv
+__dt__Q34demo6detail13UseSystemHeapFv:
 /* 8002D304 0001E284  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002D308 0001E288  7C 08 02 A6 */	mflr r0
 /* 8002D30C 0001E28C  2C 03 00 00 */	cmpwi r3, 0x0

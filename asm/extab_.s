@@ -4217,7 +4217,7 @@ lbl_80007DBC:
 	.4byte 0x000F0010
 	.4byte 0
 	.4byte 0x82000008
-	.4byte func_8002D304
+	.4byte __dt__Q34demo6detail13UseSystemHeapFv
 
 .global lbl_80007DD4
 lbl_80007DD4:
@@ -4368,7 +4368,7 @@ lbl_80007E80:
 	.4byte 0x001A0018
 	.4byte 0
 	.4byte 0x82000008
-	.4byte func_8002D304
+	.4byte __dt__Q34demo6detail13UseSystemHeapFv
 
 .global lbl_80007EA0
 lbl_80007EA0:
@@ -5469,7 +5469,7 @@ lbl_800086E8:
 	.4byte 0x00000010
 	.4byte 0
 	.4byte 0x82000008
-	.4byte func_8002D304
+	.4byte __dt__Q34demo6detail13UseSystemHeapFv
 
 .global lbl_80008700
 lbl_80008700:
@@ -6626,11 +6626,11 @@ lbl_80008E30:
 	.4byte 0x0A800014
 	.4byte __dl__FPv
 	.4byte 0x82000008
-	.4byte func_8002D304
+	.4byte __dt__Q34demo6detail13UseSystemHeapFv
 	.4byte 0x0A800014
 	.4byte __dl__FPv
 	.4byte 0x82000008
-	.4byte func_8002D304
+	.4byte __dt__Q34demo6detail13UseSystemHeapFv
 	.4byte 0x02000020
 	.4byte __dt__8CVScriptFv
 	.4byte 0x02000018
@@ -6638,7 +6638,7 @@ lbl_80008E30:
 	.4byte 0x02000034
 	.4byte __dt__8CVScriptFv
 	.4byte 0x82000008
-	.4byte func_8002D304
+	.4byte __dt__Q34demo6detail13UseSystemHeapFv
 
 .global lbl_80008EE0
 lbl_80008EE0:
@@ -6667,7 +6667,7 @@ lbl_80008F00:
 	.4byte 0x00300010
 	.4byte 0
 	.4byte 0x82000008
-	.4byte func_8002D304
+	.4byte __dt__Q34demo6detail13UseSystemHeapFv
 
 .global lbl_80008F18
 lbl_80008F18:
@@ -13653,7 +13653,7 @@ lbl_8000C628:
 	.4byte 0x02000024
 	.4byte __dt__Q34nw4r2ut5ColorFv
 	.4byte 0x82000018
-	.4byte func_8002D304
+	.4byte __dt__Q34demo6detail13UseSystemHeapFv
 
 .global lbl_8000C658
 lbl_8000C658:
@@ -13771,7 +13771,7 @@ lbl_8000C6D0:
 	.4byte 0x02000020
 	.4byte func_801197D0
 	.4byte 0x8200000C
-	.4byte func_8002D304
+	.4byte __dt__Q34demo6detail13UseSystemHeapFv
 
 .global lbl_8000C718
 lbl_8000C718:
@@ -14432,7 +14432,7 @@ lbl_8000CA4C:
 	.4byte 0x00090010
 	.4byte 0
 	.4byte 0x8200000C
-	.4byte func_8002D304
+	.4byte __dt__Q34demo6detail13UseSystemHeapFv
 
 .global lbl_8000CA64
 lbl_8000CA64:

@@ -17,8 +17,8 @@ class CVLayoutMgr {
         nw4r::lyt::DrawInfo mDrawInfo;
         UNK8 field_0x51[3];
         nw4r::lyt::MultiArcResourceAccessor* pMultiArcResourceAccessor;
-        CVList field_0x58;
-        CVList field_0x68;
+        CVList mArchiveGroup;
+        CVList mLayoutGroup;
 
         static CVLayoutMgr* GetInstance();
         virtual ~CVLayoutMgr();

@@ -455,7 +455,7 @@ InitDemoLib__4demoFPC16_GXRenderModeObj:
 /* 8011BF8C 0010CF0C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011BF90 0010CF10  90 61 00 08 */	stw r3, 0x8(r1)
 /* 8011BF94 0010CF14  38 61 00 0C */	addi r3, r1, 0xc
-/* 8011BF98 0010CF18  4B F1 13 3D */	bl func_8002D2D4
+/* 8011BF98 0010CF18  4B F1 13 3D */	bl __ct__Q34demo6detail13UseSystemHeapFv
 /* 8011BF9C 0010CF1C  4B FF F9 09 */	bl func_8011B8A4
 /* 8011BFA0 0010CF20  38 00 00 00 */	li r0, 0x0
 /* 8011BFA4 0010CF24  90 0D 97 4C */	stw r0, lbl_8060F54C@sda21(r13)
@@ -469,7 +469,7 @@ InitDemoLib__4demoFPC16_GXRenderModeObj:
 /* 8011BFC4 0010CF44  38 61 00 0C */	addi r3, r1, 0xc
 /* 8011BFC8 0010CF48  38 80 FF FF */	li r4, -0x1
 /* 8011BFCC 0010CF4C  7C 84 07 34 */	extsh r4, r4
-/* 8011BFD0 0010CF50  4B F1 13 35 */	bl func_8002D304
+/* 8011BFD0 0010CF50  4B F1 13 35 */	bl __dt__Q34demo6detail13UseSystemHeapFv
 /* 8011BFD4 0010CF54  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8011BFD8 0010CF58  7C 08 03 A6 */	mtlr r0
 /* 8011BFDC 0010CF5C  38 21 00 10 */	addi r1, r1, 0x10

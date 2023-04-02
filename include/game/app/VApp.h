@@ -18,8 +18,8 @@ class CVApp {
         CVScene* pCurrentScene;
         CVHomeButton mHomeMenu;
         BOOL bCanOpenHomeMenu;
-        BOOL bDVDNotInserted;
-        char* pDVDNotInsertedMessage;
+        BOOL bDVDError;
+        char* pDVDErrorMessage;
         s32 field_0x130;
 
     public:

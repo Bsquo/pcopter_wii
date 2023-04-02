@@ -13,7 +13,7 @@ class CVScene {
 		u32 mIsEnd;
 		u32 mSceneExited;
 		u32 mIsControllerDisconnected;
-		UNK32 field_0x20;
+		s32 mOption;			// Used by some menu scenes to hold the currently selected option
 		u32 mFrameTimer;
 
 		// __ct__7CVSceneFv (0x8002ba48)

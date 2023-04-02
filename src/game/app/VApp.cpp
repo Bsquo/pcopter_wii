@@ -22,8 +22,8 @@ void PowerCallback() {
 }
 
 CVApp::CVApp():
-field_0x24(0), field_0x28(false), pCurrentScene(nullptr), bDVDNotInserted(false),
-bCanOpenHomeMenu(true), pDVDNotInsertedMessage(nullptr), field_0x130(true) {}
+field_0x24(0), field_0x28(false), pCurrentScene(nullptr), bDVDError(false),
+bCanOpenHomeMenu(true), pDVDErrorMessage(nullptr), field_0x130(true) {}
 
 CVHomeButton::CVHomeButton() {}
 
@@ -45,7 +45,7 @@ bool CVApp::Start() {
         mSceneStartTime = OSTicksToMilliseconds(OSGetTime());
         field_0x28 = false;
         bCanOpenHomeMenu = true;
-        bDVDNotInserted = false;
+        bDVDError = false;
         return true;
     }
 }
@@ -82,7 +82,7 @@ bool CVApp::Loop() {
         mScenePreviousTime = current_time;
         if (pCurrentScene != nullptr) {
             for (s64 i = 0; i < running_time; i++) {
-                if (bDVDNotInserted == false) {
+                if (bDVDError == false) {
                     if (pCurrentScene->IsEnd()) {
                         break;
                     }
@@ -108,15 +108,15 @@ bool CVApp::Loop() {
                 demo::DoneRender(0, 0, 1);
             }
             else {
-                if (bDVDNotInserted) {
-                    if (pDVDNotInsertedMessage) {
-                        demo::Report(100, 200, pDVDNotInsertedMessage);
+                if (bDVDError) {
+                    if (pDVDErrorMessage) {
+                        demo::Report(100, 200, pDVDErrorMessage);
                     }
                 }
                 else {
                     pCurrentScene->Render();
                 }
-                demo::DoneRender(1, 0, bDVDNotInserted);
+                demo::DoneRender(1, 0, bDVDError);
             }
         }
         return field_0x28 == false; 

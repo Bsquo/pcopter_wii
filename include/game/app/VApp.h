@@ -16,10 +16,10 @@ class CVApp {
         s32 field_0x24;
         s32 field_0x28;
         CVScene* pCurrentScene;
-        CVHomeButton mHBMDirectory;
-        s32 field_0x124;
-        int field_0x128;
-        char* field_0x12C;
+        CVHomeButton mHomeMenu;
+        BOOL bCanOpenHomeMenu;
+        BOOL bDVDNotInserted;
+        char* pDVDNotInsertedMessage;
         s32 field_0x130;
 
     public:

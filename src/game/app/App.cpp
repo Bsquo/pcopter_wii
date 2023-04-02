@@ -160,7 +160,7 @@ bool CApp::StartLocal() {
     nw4r::db::DbgPrintBase<char>::GetInstance()->SetTextColor(0xFFFFFFFF);    // White
     
     BackThreadStart();
-    mHBMDirectory.Init("PCopter/System/");
+    mHomeMenu.Init("PCopter/System/");
     OSGetTime();
     // If the flag "simple_menu" is set in /PCopter/Config.txt, under the "Cheats" category
     // The game goes to the Debug Menu. Otherwise it goes to the Title Screen.

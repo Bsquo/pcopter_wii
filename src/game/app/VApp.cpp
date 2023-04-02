@@ -22,8 +22,8 @@ void PowerCallback() {
 }
 
 CVApp::CVApp():
-field_0x24(0), field_0x28(0), pCurrentScene(nullptr), field_0x128(0),
-field_0x124(1), field_0x12C(0), field_0x130(1) {}
+field_0x24(0), field_0x28(false), pCurrentScene(nullptr), bDVDNotInserted(false),
+bCanOpenHomeMenu(true), pDVDNotInsertedMessage(nullptr), field_0x130(true) {}
 
 CVHomeButton::CVHomeButton() {}
 
@@ -36,16 +36,16 @@ bool CVApp::Start() {
     OSSetPowerCallback(PowerCallback);
     reset_called = false;
     power_called = false;
-    field_0x130 = 1;
+    field_0x130 = true;
     
     if (!StartLocal()) {
         return false;
     }
     else {
         mSceneStartTime = OSTicksToMilliseconds(OSGetTime());
-        field_0x28 = 0;
-        field_0x124 = 1;
-        field_0x128 = 0;
+        field_0x28 = false;
+        bCanOpenHomeMenu = true;
+        bDVDNotInserted = false;
         return true;
     }
 }
@@ -82,7 +82,7 @@ bool CVApp::Loop() {
         mScenePreviousTime = current_time;
         if (pCurrentScene != nullptr) {
             for (s64 i = 0; i < running_time; i++) {
-                if (field_0x128 == 0) {
+                if (bDVDNotInserted == false) {
                     if (pCurrentScene->IsEnd()) {
                         break;
                     }
@@ -90,12 +90,12 @@ bool CVApp::Loop() {
                     for (s32 controller = 0; controller < 4; controller++) {
                         CVPadMgr::GetInstance()->Update(controller);
                     }
-                    if (!mHBMDirectory.IsOpen()) {
+                    if (!mHomeMenu.IsOpen()) {
                         pCurrentScene->Calc();
                     }
                     LoopLocal();
-                    if (field_0x124) {
-                        mHBMDirectory.Calc();
+                    if (bCanOpenHomeMenu) {
+                        mHomeMenu.Calc();
                     }
                 }
                 field_0x24++;
@@ -103,20 +103,20 @@ bool CVApp::Loop() {
             nw4r::g3d::G3dReset();
             demo::BeforeRender();
             GXSetMisc(1, 8);
-            if (mHBMDirectory.IsOpen()) {
-                mHBMDirectory.Render();
+            if (mHomeMenu.IsOpen()) {
+                mHomeMenu.Render();
                 demo::DoneRender(0, 0, 1);
             }
             else {
-                if (field_0x128) {
-                    if (field_0x12C) {
-                        demo::Report(100, 200, field_0x12C);
+                if (bDVDNotInserted) {
+                    if (pDVDNotInsertedMessage) {
+                        demo::Report(100, 200, pDVDNotInsertedMessage);
                     }
                 }
                 else {
                     pCurrentScene->Render();
                 }
-                demo::DoneRender(1, 0, field_0x128);
+                demo::DoneRender(1, 0, bDVDNotInserted);
             }
         }
         return field_0x28 == false; 
@@ -152,7 +152,7 @@ void CVApp::InitReset() {
 
 void CVApp::CalcReset() {
     if (reset_called && field_0x130) {
-        if (mHBMDirectory.isHBMOpen == false) {
+        if (mHomeMenu.bIsOpen == false) {
             // Restart the game
             InitReset();
             OSRestart(0);

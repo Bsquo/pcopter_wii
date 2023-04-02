@@ -16,7 +16,7 @@ class CVHomeButton {
         u32 is50Hz;
         HBMDataInfo mHBMDataInfo;
         HBMControllerData mHBMControllers[4];
-        s32 isHBMOpen;
+        BOOL bIsOpen;
         UNK32 field_0x90;
         WPADProbe_connectionResult mRemoteConnectionResult[4];
         WPADExtensionType mControllerType[4];

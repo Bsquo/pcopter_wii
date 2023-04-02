@@ -71,15 +71,15 @@ bool CVApp::Loop() {
     else {
         running_time = mSceneRunningTime;
         running_time_msec = (16.66667f * running_time);
-        mSceneStartTime = running_time_msec + mSceneStartTime;
+        mSceneStartTime += running_time_msec;
         if (running_time > 3) {
             running_time = 3;
         }
         current_time = OSTicksToMilliseconds(OSGetTime());
-        if (current_time != field_0x18) {
-            mFPS = 1000 / (current_time - field_0x18);
+        if (current_time != mScenePreviousTime) {
+            mFPS = 1000 / (current_time - mScenePreviousTime);
         }
-        field_0x18 = current_time;
+        mScenePreviousTime = current_time;
         if (pCurrentScene != nullptr) {
             for (s64 i = 0; i < running_time; i++) {
                 if (field_0x128 == 0) {

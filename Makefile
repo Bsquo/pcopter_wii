@@ -34,6 +34,7 @@ SRC_DIRS := src                      	\
 			src/game/scene/Game      	\
 			src/game/scene/Menu      	\
 			src/game/scene/Menu/Logo    \
+			src/game/system           	\
 			src/game/utils           	\
 			src/MSL_C                	\
 			src/MSL_C/PPC_EABI       	\
@@ -270,6 +271,9 @@ $(BUILD_DIR)/src/game/scenary/%.o: src/game/scenary/%.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
 	
 $(BUILD_DIR)/src/game/scene/%.o: src/game/scene/%.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+$(BUILD_DIR)/src/game/system/%.o: src/game/system/%.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
 	
 $(BUILD_DIR)/src/game/utils/%.o: src/game/utils/%.cpp

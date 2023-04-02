@@ -829,7 +829,7 @@ lbl_800948DC:
 .global func_800948E8
 func_800948E8:
 /* 800948E8 00085868  7F E3 FB 78 */	mr r3, r31
-/* 800948EC 0008586C  4B FF 8A B9 */	bl func_8008D3A4
+/* 800948EC 0008586C  4B FF 8A B9 */	bl OSRestoreInterrupts
 /* 800948F0 00085870  7F C3 F3 78 */	mr r3, r30
 
 .global func_800948F4

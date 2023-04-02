@@ -139,6 +139,7 @@ GAME_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/game/scenary/MultiPlayer/ScnRingMP.o            \
 	$(BUILD_DIR)/asm/game/scene/Menu/ClassicCheak/SceneMenuClassicCheak.o            \
 	$(BUILD_DIR)/asm/game/actor/Copter/parts/Rotor.o            \
+	$(BUILD_DIR)/src/game/system/BackThread.o					\
 	$(BUILD_DIR)/asm/game/system/BackThread.o
 	
 SDK_O_FILES :=                                               \

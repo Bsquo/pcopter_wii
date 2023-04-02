@@ -43,3 +43,7 @@ Contributions and pull requests are welcome!
 We recommend joining [our Discord server](https://discord.gg/AsBpasctyc) for discussing the game, as well as for getting help if needed.
 
 For more information about GameCube and Wii decompilation projects, check out the [GC/Wii Decompilation Discord](https://discord.gg/hKx3FJJgrV).
+
+## Special Thanks
+
+- [kiwi515](https://github.com/kiwi515): For his [open_rvl](https://github.com/kiwi515/open_rvl) repo, which is where some of the RVL SDK headers come from.

@@ -158,12 +158,12 @@ lbl_8054BDC0:
 lbl_8054BE00:
 	.skip 0x300
 
-.global lbl_8054C100
-lbl_8054C100:
+.global BackThread
+BackThread:
 	.skip 0x318
 
-.global lbl_8054C418
-lbl_8054C418:
+.global ThreadStack
+ThreadStack:
 	.skip 0x1008
 
 .global lbl_8054D420

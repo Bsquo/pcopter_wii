@@ -4223,16 +4223,16 @@ lbl_80010138:
 	.4byte func_800858D0
 	.4byte 0x00000420
 	.4byte lbl_8000C2A4
-	.4byte func_80085CF0
+	.4byte DisableInterrupts__Fv
 	.4byte 0x00000038
 	.4byte lbl_8000C2AC
-	.4byte func_80085D28
+	.4byte EnableInterrupts__Fv
 	.4byte 0x0000003C
 	.4byte lbl_8000C2B4
 	.4byte BackThreadStart__Fv
 	.4byte 0x0000006C
 	.4byte lbl_8000C2BC
-	.4byte lbl_80085DD0
+	.4byte BackThreadProc__FPv
 	.4byte 0x0000036C
 	.4byte lbl_8000C2C4
 	.4byte LoadingStart__Fv
@@ -4244,13 +4244,13 @@ lbl_80010138:
 	.4byte LoadingPause__Fv
 	.4byte 0x00000050
 	.4byte lbl_8000C2DC
-	.4byte func_80086354
+	.4byte RenderErrorMessage__Fv
 	.4byte 0x00000068
 	.4byte lbl_8000C2E4
-	.4byte func_800863BC
+	.4byte RenderLoading__Fv
 	.4byte 0x00000080
 	.4byte lbl_8000C2EC
-	.4byte func_8008643C
+	.4byte ReadDvdFile__FPCcP12MEMAllocatorPUl
 	.4byte 0x000000B4
 	.4byte lbl_8000C2F4
 	.4byte func_800B2BB8

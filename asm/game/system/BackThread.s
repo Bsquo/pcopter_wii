@@ -2,64 +2,29 @@
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_80085CF0
-func_80085CF0:
-/* 80085CF0 00076C70  94 21 FF F0 */	stwu r1, -0x10(r1)
-/* 80085CF4 00076C74  7C 08 02 A6 */	mflr r0
-/* 80085CF8 00076C78  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80085CFC 00076C7C  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80085D00 00076C80  48 00 76 7D */	bl OSDisableInterrupts
-/* 80085D04 00076C84  7C 7F 1B 78 */	mr r31, r3
-/* 80085D08 00076C88  48 00 A0 C5 */	bl func_8008FDCC
-/* 80085D0C 00076C8C  7F E3 FB 78 */	mr r3, r31
-/* 80085D10 00076C90  48 00 76 95 */	bl func_8008D3A4
-/* 80085D14 00076C94  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 80085D18 00076C98  83 E1 00 0C */	lwz r31, 0xc(r1)
-/* 80085D1C 00076C9C  7C 08 03 A6 */	mtlr r0
-/* 80085D20 00076CA0  38 21 00 10 */	addi r1, r1, 0x10
-/* 80085D24 00076CA4  4E 80 00 20 */	blr
-
-.global func_80085D28
-func_80085D28:
-/* 80085D28 00076CA8  94 21 FF F0 */	stwu r1, -0x10(r1)
-/* 80085D2C 00076CAC  7C 08 02 A6 */	mflr r0
-/* 80085D30 00076CB0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80085D34 00076CB4  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80085D38 00076CB8  48 00 76 45 */	bl OSDisableInterrupts
-/* 80085D3C 00076CBC  7C 7F 1B 78 */	mr r31, r3
-/* 80085D40 00076CC0  48 00 A0 C9 */	bl func_8008FE08
-/* 80085D44 00076CC4  48 00 A5 E9 */	bl func_8009032C
-/* 80085D48 00076CC8  7F E3 FB 78 */	mr r3, r31
-/* 80085D4C 00076CCC  48 00 76 59 */	bl func_8008D3A4
-/* 80085D50 00076CD0  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 80085D54 00076CD4  83 E1 00 0C */	lwz r31, 0xc(r1)
-/* 80085D58 00076CD8  7C 08 03 A6 */	mtlr r0
-/* 80085D5C 00076CDC  38 21 00 10 */	addi r1, r1, 0x10
-/* 80085D60 00076CE0  4E 80 00 20 */	blr
-
 .global BackThreadStart__Fv
 BackThreadStart__Fv:
 /* 80085D64 00076CE4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80085D68 00076CE8  7C 08 02 A6 */	mflr r0
-/* 80085D6C 00076CEC  3C A0 80 55 */	lis r5, lbl_8054C418@ha
-/* 80085D70 00076CF0  3C 80 80 08 */	lis r4, lbl_80085DD0@ha
+/* 80085D6C 00076CEC  3C A0 80 55 */	lis r5, ThreadStack@ha
+/* 80085D70 00076CF0  3C 80 80 08 */	lis r4, BackThreadProc__FPv@ha
 /* 80085D74 00076CF4  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80085D78 00076CF8  38 A5 C4 18 */	addi r5, r5, lbl_8054C418@l
+/* 80085D78 00076CF8  38 A5 C4 18 */	addi r5, r5, ThreadStack@l
 /* 80085D7C 00076CFC  38 C5 10 00 */	addi r6, r5, lbl_80551000@l
 /* 80085D80 00076D00  38 60 00 01 */	li r3, 0x1
 /* 80085D84 00076D04  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80085D88 00076D08  38 00 00 00 */	li r0, 0x0
-/* 80085D8C 00076D0C  3F E0 80 55 */	lis r31, lbl_8054C100@ha
-/* 80085D90 00076D10  38 84 5D D0 */	addi r4, r4, lbl_80085DD0@l
-/* 80085D94 00076D14  90 6D 8F F0 */	stw r3, lbl_8060EDF0@sda21(r13)
-/* 80085D98 00076D18  38 7F C1 00 */	addi r3, r31, lbl_8054C100@l
+/* 80085D8C 00076D0C  3F E0 80 55 */	lis r31, BackThread@ha
+/* 80085D90 00076D10  38 84 5D D0 */	addi r4, r4, BackThreadProc__FPv@l
+/* 80085D94 00076D14  90 6D 8F F0 */	stw r3, bBackThreadEnable@sda21(r13)
+/* 80085D98 00076D18  38 7F C1 00 */	addi r3, r31, BackThread@l
 /* 80085D9C 00076D1C  38 A0 00 00 */	li r5, 0x0
 /* 80085DA0 00076D20  38 E0 10 00 */	li r7, 0x1000
-/* 80085DA4 00076D24  90 0D 8F F4 */	stw r0, lbl_8060EDF4@sda21(r13)
+/* 80085DA4 00076D24  90 0D 8F F4 */	stw r0, bLoadingEnable@sda21(r13)
 /* 80085DA8 00076D28  39 00 00 1F */	li r8, 0x1f
 /* 80085DAC 00076D2C  39 20 00 01 */	li r9, 0x1
 /* 80085DB0 00076D30  48 00 A5 B9 */	bl func_80090368
-/* 80085DB4 00076D34  38 7F C1 00 */	addi r3, r31, lbl_8054C100@l
+/* 80085DB4 00076D34  38 7F C1 00 */	addi r3, r31, BackThread@l
 /* 80085DB8 00076D38  48 00 AC 19 */	bl func_800909D0
 /* 80085DBC 00076D3C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80085DC0 00076D40  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -67,8 +32,8 @@ BackThreadStart__Fv:
 /* 80085DC8 00076D48  38 21 00 10 */	addi r1, r1, 0x10
 /* 80085DCC 00076D4C  4E 80 00 20 */	blr
 
-.global lbl_80085DD0
-lbl_80085DD0:
+.global BackThreadProc__FPv
+BackThreadProc__FPv:
 /* 80085DD0 00076D50  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80085DD4 00076D54  7C 08 02 A6 */	mflr r0
 /* 80085DD8 00076D58  3C 60 80 1C */	lis r3, lbl_801C4390@ha
@@ -82,14 +47,14 @@ lbl_80085DD0:
 /* 80085DF8 00076D78  93 81 00 10 */	stw r28, 0x10(r1)
 /* 80085DFC 00076D7C  48 00 03 10 */	b func_8008610C
 lbl_80085E00:
-/* 80085E00 00076D80  80 0D 8F F4 */	lwz r0, lbl_8060EDF4@sda21(r13)
+/* 80085E00 00076D80  80 0D 8F F4 */	lwz r0, bLoadingEnable@sda21(r13)
 /* 80085E04 00076D84  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80085E08 00076D88  41 82 00 24 */	beq lbl_80085E2C
 /* 80085E0C 00076D8C  4B F8 B8 75 */	bl GetInstance__4CAppFv
 /* 80085E10 00076D90  80 03 01 28 */	lwz r0, 0x128(r3)
 /* 80085E14 00076D94  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80085E18 00076D98  40 82 00 14 */	bne lbl_80085E2C
-/* 80085E1C 00076D9C  48 00 05 A1 */	bl func_800863BC
+/* 80085E1C 00076D9C  48 00 05 A1 */	bl RenderLoading__Fv
 /* 80085E20 00076DA0  80 6D 8F F8 */	lwz r3, lbl_8060EDF8@sda21(r13)
 /* 80085E24 00076DA4  38 03 00 01 */	addi r0, r3, 0x1
 /* 80085E28 00076DA8  90 0D 8F F8 */	stw r0, lbl_8060EDF8@sda21(r13)
@@ -286,7 +251,7 @@ lbl_80086058:
 
 .global lbl_80086060
 lbl_80086060:
-/* 80086060 00076FE0  80 0D 8F F4 */	lwz r0, lbl_8060EDF4@sda21(r13)
+/* 80086060 00076FE0  80 0D 8F F4 */	lwz r0, bLoadingEnable@sda21(r13)
 /* 80086064 00076FE4  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80086068 00076FE8  41 82 00 08 */	beq func_80086070
 /* 8008606C 00076FEC  3B A0 00 00 */	li r29, 0x0
@@ -324,7 +289,7 @@ lbl_800860BC:
 /* 800860D8 00077058  C0 22 92 68 */	lfs f1, lbl_80610A88@sda21(r2)
 /* 800860DC 0007705C  38 80 00 00 */	li r4, 0x0
 /* 800860E0 00077060  4B FA 72 F5 */	bl func_8002D3D4
-/* 800860E4 00077064  48 00 02 71 */	bl func_80086354
+/* 800860E4 00077064  48 00 02 71 */	bl RenderErrorMessage__Fv
 /* 800860E8 00077068  48 00 00 1C */	b func_80086104
 lbl_800860EC:
 /* 800860EC 0007706C  4B F8 B5 95 */	bl GetInstance__4CAppFv
@@ -341,7 +306,7 @@ func_80086104:
 
 .global func_8008610C
 func_8008610C:
-/* 8008610C 0007708C  80 0D 8F F0 */	lwz r0, lbl_8060EDF0@sda21(r13)
+/* 8008610C 0007708C  80 0D 8F F0 */	lwz r0, bBackThreadEnable@sda21(r13)
 /* 80086110 00077090  2C 00 00 00 */	cmpwi r0, 0x0
 /* 80086114 00077094  40 82 FC EC */	bne lbl_80085E00
 /* 80086118 00077098  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -357,7 +322,7 @@ func_8008610C:
 .global BackThreadEnd__Fv
 BackThreadEnd__Fv:
 /* 8008613C 000770BC  38 00 00 00 */	li r0, 0x0
-/* 80086140 000770C0  90 0D 8F F0 */	stw r0, lbl_8060EDF0@sda21(r13)
+/* 80086140 000770C0  90 0D 8F F0 */	stw r0, bBackThreadEnable@sda21(r13)
 /* 80086144 000770C4  4E 80 00 20 */	blr
 
 .global LoadingStart__Fv
@@ -456,14 +421,14 @@ func_80086254:
 /* 80086278 000771F8  7C 64 1B 78 */	mr r4, r3
 /* 8008627C 000771FC  38 7F 06 5A */	addi r3, r31, 0x65a
 /* 80086280 00077200  38 A0 00 00 */	li r5, 0x0
-/* 80086284 00077204  48 00 01 B9 */	bl func_8008643C
+/* 80086284 00077204  48 00 01 B9 */	bl ReadDvdFile__FPCcP12MEMAllocatorPUl
 /* 80086288 00077208  90 6D 90 00 */	stw r3, lbl_8060EE00@sda21(r13)
 /* 8008628C 0007720C  48 09 2A 1D */	bl func_80118CA8
 /* 80086290 00077210  38 60 00 00 */	li r3, 0x0
 /* 80086294 00077214  38 00 00 01 */	li r0, 0x1
 /* 80086298 00077218  90 6D 8F F8 */	stw r3, lbl_8060EDF8@sda21(r13)
 /* 8008629C 0007721C  90 6D 8F FC */	stw r3, lbl_8060EDFC@sda21(r13)
-/* 800862A0 00077220  90 0D 8F F4 */	stw r0, lbl_8060EDF4@sda21(r13)
+/* 800862A0 00077220  90 0D 8F F4 */	stw r0, bLoadingEnable@sda21(r13)
 /* 800862A4 00077224  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800862A8 00077228  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800862AC 0007722C  7C 08 03 A6 */	mtlr r0
@@ -477,7 +442,7 @@ LoadingEnd__Fv:
 /* 800862C0 00077240  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800862C4 00077244  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800862C8 00077248  3B E0 00 00 */	li r31, 0x0
-/* 800862CC 0007724C  93 ED 8F F4 */	stw r31, lbl_8060EDF4@sda21(r13)
+/* 800862CC 0007724C  93 ED 8F F4 */	stw r31, bLoadingEnable@sda21(r13)
 /* 800862D0 00077250  93 ED 8F F8 */	stw r31, lbl_8060EDF8@sda21(r13)
 /* 800862D4 00077254  93 ED 8F FC */	stw r31, lbl_8060EDFC@sda21(r13)
 /* 800862D8 00077258  4B F8 F5 D5 */	bl GetInstance__11CVLayoutMgrFv
@@ -497,10 +462,10 @@ LoadingPause__Fv:
 /* 80086304 00077284  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80086308 00077288  7C 08 02 A6 */	mflr r0
 /* 8008630C 0007728C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80086310 00077290  80 0D 8F F4 */	lwz r0, lbl_8060EDF4@sda21(r13)
+/* 80086310 00077290  80 0D 8F F4 */	lwz r0, bLoadingEnable@sda21(r13)
 /* 80086314 00077294  7C 00 00 34 */	cntlzw r0, r0
 /* 80086318 00077298  54 00 D9 7E */	srwi r0, r0, 5
-/* 8008631C 0007729C  90 0D 8F F4 */	stw r0, lbl_8060EDF4@sda21(r13)
+/* 8008631C 0007729C  90 0D 8F F4 */	stw r0, bLoadingEnable@sda21(r13)
 /* 80086320 000772A0  4B F8 F5 8D */	bl GetInstance__11CVLayoutMgrFv
 /* 80086324 000772A4  38 80 00 00 */	li r4, 0x0
 /* 80086328 000772A8  4B FA 8F C9 */	bl SetVisibleAll__11CVLayoutMgrFi
@@ -515,8 +480,8 @@ LoadingPause__Fv:
 /* 8008634C 000772CC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80086350 000772D0  4E 80 00 20 */	blr
 
-.global func_80086354
-func_80086354:
+.global RenderErrorMessage__Fv
+RenderErrorMessage__Fv:
 /* 80086354 000772D4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80086358 000772D8  7C 08 02 A6 */	mflr r0
 /* 8008635C 000772DC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -524,7 +489,7 @@ func_80086354:
 /* 80086364 000772E4  80 03 01 2C */	lwz r0, 0x12c(r3)
 /* 80086368 000772E8  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8008636C 000772EC  41 82 00 40 */	beq lbl_800863AC
-/* 80086370 000772F0  4B FF F9 81 */	bl func_80085CF0
+/* 80086370 000772F0  4B FF F9 81 */	bl DisableInterrupts__Fv
 /* 80086374 000772F4  48 12 F6 D9 */	bl G3dReset__Q24nw4r3g3dFv
 /* 80086378 000772F8  48 09 60 05 */	bl BeforeRender__4demoFv
 /* 8008637C 000772FC  4B F8 B3 05 */	bl GetInstance__4CAppFv
@@ -534,7 +499,7 @@ func_80086354:
 /* 8008638C 0007730C  38 80 00 C8 */	li r4, 0xc8
 /* 80086390 00077310  4C C6 31 82 */	crclr 6
 /* 80086394 00077314  48 09 2F 05 */	bl Report__4demoFiiPCce
-/* 80086398 00077318  4B FF F9 91 */	bl func_80085D28
+/* 80086398 00077318  4B FF F9 91 */	bl EnableInterrupts__Fv
 /* 8008639C 0007731C  38 60 00 01 */	li r3, 0x1
 /* 800863A0 00077320  38 80 00 00 */	li r4, 0x0
 /* 800863A4 00077324  38 A0 00 01 */	li r5, 0x1
@@ -545,13 +510,13 @@ lbl_800863AC:
 /* 800863B4 00077334  38 21 00 10 */	addi r1, r1, 0x10
 /* 800863B8 00077338  4E 80 00 20 */	blr
 
-.global func_800863BC
-func_800863BC:
+.global RenderLoading__Fv
+RenderLoading__Fv:
 /* 800863BC 0007733C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800863C0 00077340  7C 08 02 A6 */	mflr r0
 /* 800863C4 00077344  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800863C8 00077348  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 800863CC 0007734C  4B FF F9 25 */	bl func_80085CF0
+/* 800863CC 0007734C  4B FF F9 25 */	bl DisableInterrupts__Fv
 /* 800863D0 00077350  48 12 F6 7D */	bl G3dReset__Q24nw4r3g3dFv
 /* 800863D4 00077354  48 09 5F A9 */	bl BeforeRender__4demoFv
 /* 800863D8 00077358  80 0D 8F F8 */	lwz r0, lbl_8060EDF8@sda21(r13)
@@ -570,7 +535,7 @@ lbl_800863EC:
 /* 80086408 00077388  4B FA 90 05 */	bl func_8002F40C
 /* 8008640C 0007738C  4B F8 F4 A1 */	bl GetInstance__11CVLayoutMgrFv
 /* 80086410 00077390  4B FA 92 FD */	bl func_8002F70C
-/* 80086414 00077394  4B FF F9 15 */	bl func_80085D28
+/* 80086414 00077394  4B FF F9 15 */	bl EnableInterrupts__Fv
 /* 80086418 00077398  38 60 00 07 */	li r3, 0x7
 /* 8008641C 0007739C  38 80 00 00 */	li r4, 0x0
 /* 80086420 000773A0  38 A0 00 01 */	li r5, 0x1
@@ -581,8 +546,8 @@ lbl_800863EC:
 /* 80086434 000773B4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80086438 000773B8  4E 80 00 20 */	blr
 
-.global func_8008643C
-func_8008643C:
+.global ReadDvdFile__FPCcP12MEMAllocatorPUl
+ReadDvdFile__FPCcP12MEMAllocatorPUl:
 /* 8008643C 000773BC  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80086440 000773C0  7C 08 02 A6 */	mflr r0
 /* 80086444 000773C4  90 01 00 64 */	stw r0, 0x64(r1)
@@ -637,12 +602,12 @@ func_800864D0:
 
 .section .sbss, "wa", @nobits
 
-.global lbl_8060EDF0
-lbl_8060EDF0:
+.global bBackThreadEnable
+bBackThreadEnable:
 	.skip 0x4
 
-.global lbl_8060EDF4
-lbl_8060EDF4:
+.global bLoadingEnable
+bLoadingEnable:
 	.skip 0x4
 
 .global lbl_8060EDF8

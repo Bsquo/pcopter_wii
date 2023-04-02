@@ -11,7 +11,7 @@ class CVApp {
         s64 mSceneCurrentTime;      // Current time value
         f32 mSceneRunningTime;      // Total time the current scene has been running
         f32 field_0x14;
-        s64 field_0x18;
+        s64 mScenePreviousTime;     // Previous time value. Used to determine the FPS.
         u32 mFPS;                   // Framerate (frames per second)
         s32 field_0x24;
         s32 field_0x28;

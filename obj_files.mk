@@ -61,8 +61,8 @@ GAME_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/game/managers/ResListMgr.o             \
 	$(BUILD_DIR)/asm/game/gfx/SubWindow.o             \
 	$(BUILD_DIR)/asm/game/managers/VAreaMgr.o             \
-	$(BUILD_DIR)/asm/NW4R/THP/THPSimple.o             \
-	$(BUILD_DIR)/asm/NW4R/THP/THPDraw.o             \
+	$(BUILD_DIR)/asm/RVL/THP/THPSimple.o             \
+	$(BUILD_DIR)/asm/RVL/THP/THPDraw.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Movie/SceneMenuMovie.o             \
 	$(BUILD_DIR)/asm/game/scene/Menu/Setting/SceneMenuSetting2.o             \
 	$(BUILD_DIR)/src/game/managers/VTimerMgr.o             \
@@ -549,8 +549,8 @@ NW4R_O_FILES :=                                         \
 	$(BUILD_DIR)/asm/nw4r/lyt/lyt_arcResourceAccessor.o    \
 	$(BUILD_DIR)/asm/nw4r/lyt/lyt_common.o    \
 	$(BUILD_DIR)/asm/nw4r/lyt/lyt_util.o    \
-	$(BUILD_DIR)/asm/nw4r/THP/THPDec.o    \
-	$(BUILD_DIR)/asm/nw4r/THP/THPAudio.o    \
+	$(BUILD_DIR)/asm/RVL/THP/THPDec.o    \
+	$(BUILD_DIR)/asm/RVL/THP/THPAudio.o    \
 	$(BUILD_DIR)/asm/nw4r/hbm/HBMFrameController.o    \
 	$(BUILD_DIR)/asm/nw4r/hbm/HBMAnmController.o    \
 	$(BUILD_DIR)/asm/nw4r/hbm/HBMGUIManager.o    \

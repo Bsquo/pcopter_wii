@@ -5189,3 +5189,17 @@ lbl_8060ED84:
 .global lbl_8060ED88
 lbl_8060ED88:
 	.skip 0x8
+
+.section .bss, "wa", @nobits
+
+.global lbl_8052E540
+lbl_8052E540:
+	.skip 0x1620
+
+.global lbl_8052FB60
+lbl_8052FB60:
+	.skip 0x768
+
+.global lbl_805302C8
+lbl_805302C8:
+	.skip 0x1B958

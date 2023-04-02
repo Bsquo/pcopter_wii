@@ -1744,3 +1744,17 @@ lbl_8060FFD0:
 	# ROM: 0x1EF690
 	.4byte 0x43300000
 	.4byte 0x80000000
+
+.section .bss, "wa", @nobits
+
+.global lbl_8054BC20
+lbl_8054BC20:
+	.skip 0x1A0
+
+.global lbl_8054BDC0
+lbl_8054BDC0:
+	.skip 0x40
+
+.global lbl_8054BE00
+lbl_8054BE00:
+	.skip 0x300

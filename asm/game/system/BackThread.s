@@ -621,3 +621,13 @@ lbl_8060EDFC:
 .global lbl_8060EE00
 lbl_8060EE00:
 	.skip 0x8
+
+.section .bss, "wa", @nobits
+
+.global BackThread
+BackThread:
+	.skip 0x318
+
+.global ThreadStack
+ThreadStack:
+	.skip 0x1008

@@ -4683,3 +4683,53 @@ _51383:
 
 	# ROM: 0x1EEEE0
 	.asciz "CVScene"
+    
+.section .bss, "wa", @nobits
+
+.global _51209
+_51209:
+	.skip 0x20
+
+.global lbl_801F1F20
+lbl_801F1F20:
+	.skip 0x2AE0E0
+
+.global lbl_804A0000
+lbl_804A0000:
+	.skip 0x51F60
+
+.global lbl_804F1F60
+lbl_804F1F60:
+	.skip 0x18
+
+.global lbl_804F1F78
+lbl_804F1F78:
+	.skip 0xFA50
+
+.global lbl_805019C8
+lbl_805019C8:
+	.skip 0x14
+
+.global lbl_805019DC
+lbl_805019DC:
+	.skip 0x1C
+
+.global lbl_805019F8
+lbl_805019F8:
+	.skip 0x7C
+
+.global lbl_80501A74
+lbl_80501A74:
+	.skip 0x3DC
+
+.global lbl_80501E50
+lbl_80501E50:
+	.skip 0x218
+
+.global lbl_80502068
+lbl_80502068:
+	.skip 0x6858
+
+.global "@LOCAL@GetInstance__4CAppFv@m_instance"
+"@LOCAL@GetInstance__4CAppFv@m_instance":
+	.skip 0x14D00

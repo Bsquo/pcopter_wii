@@ -1733,3 +1733,25 @@ lbl_8060F830:
 	# ROM: 0x1EEEF0
 	.asciz "CVApp"
 	.balign 4
+
+.section .bss, "wa", @nobits
+
+.global lbl_8051D5C0
+lbl_8051D5C0:
+	.skip 0xC
+
+.global lbl_8051D5CC
+lbl_8051D5CC:
+	.skip 0xC
+
+.global lbl_8051D5D8
+lbl_8051D5D8:
+	.skip 0xC
+
+.global lbl_8051D5E4
+lbl_8051D5E4:
+	.skip 0xC
+
+.global lbl_8051D5F0
+lbl_8051D5F0:
+	.skip 0x10

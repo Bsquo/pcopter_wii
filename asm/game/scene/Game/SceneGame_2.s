@@ -4269,3 +4269,49 @@ lbl_8060F880:
 	# ROM: 0x1EEF40
 	.4byte 0x3FA00000
 	.4byte 0
+
+.section .bss, "wa", @nobits
+
+.global lbl_8051D600
+lbl_8051D600:
+	.skip 0xC
+
+.global lbl_8051D60C
+lbl_8051D60C:
+	.skip 0xC
+
+.global lbl_8051D618
+lbl_8051D618:
+	.skip 0xC
+
+.global lbl_8051D624
+lbl_8051D624:
+	.skip 0xC
+
+.global lbl_8051D630
+lbl_8051D630:
+	.skip 0xC
+
+.global lbl_8051D63C
+lbl_8051D63C:
+	.skip 0xC
+
+.global lbl_8051D648
+lbl_8051D648:
+	.skip 0xC
+
+.global lbl_8051D654
+lbl_8051D654:
+	.skip 0xC
+
+.global lbl_8051D660
+lbl_8051D660:
+	.skip 0x10
+
+.global lbl_8051D670
+lbl_8051D670:
+	.skip 0x18
+
+.global lbl_8051D688
+lbl_8051D688:
+	.skip 0x18

@@ -108,7 +108,7 @@ ASM_DIRS := asm                      \
 			asm/nw4r/nw4hbm/math                       \
 			asm/nw4r/nw4hbm/ut                       \
 			asm/nw4r/snd                       \
-			asm/nw4r/THP                       \
+			asm/RVL/THP                       \
 			asm/nw4r/ut                       \
 			asm/runtime                         \
 			asm/runtime/init                         \

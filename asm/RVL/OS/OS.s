@@ -1532,3 +1532,13 @@ lbl_8060EE50:
 .global lbl_8060EE54
 lbl_8060EE54:
 	.skip 0x4
+
+.section .bss, "wa", @nobits
+
+.global lbl_8054D420
+lbl_8054D420:
+	.skip 0x20
+
+.global lbl_8054D440
+lbl_8054D440:
+	.skip 0x50

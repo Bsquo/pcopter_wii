@@ -2574,3 +2574,17 @@ lbl_8060F968:
 	# ROM: 0x1EF028
 	.4byte 0x43800000
 	.4byte 0
+
+.section .bss, "wa", @nobits
+
+.global lbl_8051D6A0
+lbl_8051D6A0:
+	.skip 0xC
+
+.global lbl_8051D6AC
+lbl_8051D6AC:
+	.skip 0xC
+
+.global lbl_8051D6B8
+lbl_8051D6B8:
+	.skip 0x28

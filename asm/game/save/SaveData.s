@@ -1357,3 +1357,13 @@ lbl_8060FA93:
 	# ROM: 0x1EF153
 	.byte 0x57
 	.4byte 0
+
+.section .bss, "wa", @nobits
+
+.global lbl_8051D6E0
+lbl_8051D6E0:
+	.skip 0x1DC0
+
+.global lbl_8051F4A0
+lbl_8051F4A0:
+	.skip 0xF0A0

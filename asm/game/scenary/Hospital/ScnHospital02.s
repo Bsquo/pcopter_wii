@@ -603,6 +603,8 @@ lbl_8005F308:
 
 .section .data, "wa", @progbits
 
+.balign 8	# Needed to add the extra 4 bytes seen at the end of SceneMenuMain3.cpp's .data (due to file boundary)
+
 .global lbl_801CC960
 lbl_801CC960:
 

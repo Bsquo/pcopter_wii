@@ -7,7 +7,7 @@
 class CUserConfig {
     private:
         bool mIsAutoSaveON;
-        SoundOutPutMode SoundOutPutMode;
+        s32 SoundOutPutMode;
         u8 BGM_volume;
         u8 SE_volume;
         u8 ENV_volume;

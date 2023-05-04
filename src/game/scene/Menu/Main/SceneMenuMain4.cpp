@@ -22,91 +22,98 @@ bool CSceneMenuMain4::CalcLocal() {
         if (mOption >= 8) {
             mOption = 0;
         }
-        CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0,  -1, 0);
+        CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
     }
     else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 9) != false) {
         mOption--;
         if (mOption < 0) {
             mOption = 7;
         }
-        CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0,  -1, 0);
+        CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
     }
     switch (mOption) {
         // HideInfo
         case 0:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false) {
-                if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
-                    break;
-                }
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false &&
+                CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+                break;
             }
-            CApp::GetInstance()->mFlags.Set(HIDE_INFO, CApp::GetInstance()->mFlags.Check(HIDE_INFO) == 0);
-            CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0,  -1, 0);
+            else {
+                CApp::GetInstance()->mFlags.Set(HIDE_INFO, CApp::GetInstance()->mFlags.Check(HIDE_INFO) == 0);
+                CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
+            }
             break;
 
         // MoveCam
         case 1:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false) {
-                if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
-                    break;
-                }
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false
+            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+                break;
             }
-            CApp::GetInstance()->mFlags.Set(RESET_CAM, CApp::GetInstance()->mFlags.Check(RESET_CAM) == 0);
-            CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0,  -1, 0);
+            else {
+                CApp::GetInstance()->mFlags.Set(RESET_CAM, CApp::GetInstance()->mFlags.Check(RESET_CAM) == 0);
+                CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
+            }
             break;
 
         // CollDraw
         case 2:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false) {
-                if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
-                    break;
-                }
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false
+            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+                break;
             }
-            CApp::GetInstance()->mFlags.Set(COLL_DRAW, CApp::GetInstance()->mFlags.Check(COLL_DRAW) == 0);
-            CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0,  -1, 0);
+            else {
+                CApp::GetInstance()->mFlags.Set(COLL_DRAW, CApp::GetInstance()->mFlags.Check(COLL_DRAW) == 0);
+                CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
+            }
             break;
 
         // CollDisable
         case 3:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false) {
-                if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
-                    break;
-                }
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false
+            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+                break;
             }
-            CApp::GetInstance()->mFlags.Set(COLL_DISABLE, CApp::GetInstance()->mFlags.Check(COLL_DISABLE) == 0);
-            CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0,  -1, 0);
+            else {
+                CApp::GetInstance()->mFlags.Set(COLL_DISABLE, CApp::GetInstance()->mFlags.Check(COLL_DISABLE) == 0);
+                CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
+            }
             break;
 
         // InfiniteBatt
         case 4:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false) {
-                if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
-                    break;
-                }
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false
+            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+                break;
             }
-            CApp::GetInstance()->mFlags.Set(INFINITE_BATT, CApp::GetInstance()->mFlags.Check(INFINITE_BATT) == 0);
-            CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0,  -1, 0);
+            else {
+                CApp::GetInstance()->mFlags.Set(INFINITE_BATT, CApp::GetInstance()->mFlags.Check(INFINITE_BATT) == 0);
+                CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
+            }
             break;
 
         // InfiniteLife
         case 5:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false) {
-                if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
-                    break;
-                }
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false
+            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+                break;
             }
-            CApp::GetInstance()->mFlags.Set(INFINITE_LIFE, CApp::GetInstance()->mFlags.Check(INFINITE_LIFE) == 0);
-            CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0,  -1, 0);
+            else {
+                CApp::GetInstance()->mFlags.Set(INFINITE_LIFE, CApp::GetInstance()->mFlags.Check(INFINITE_LIFE) == 0);
+                CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
+            }
             break;
 
         // DebugInfo
         case 6:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false) {
-                if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
-                    break;
-                }
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false
+            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+                break;
             }
-            CApp::GetInstance()->mFlags.Set(DEBUG_INFO, CApp::GetInstance()->mFlags.Check(DEBUG_INFO) == 0);
-            CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0,  -1, 0);
+            else {
+                CApp::GetInstance()->mFlags.Set(DEBUG_INFO, CApp::GetInstance()->mFlags.Check(DEBUG_INFO) == 0);
+                CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
+            }
             break;
 
         // Return
@@ -115,7 +122,7 @@ bool CSceneMenuMain4::CalcLocal() {
                 mCurrentOption = 0;
                 mIsEnd = true;
                 CVSoundMgr::GetInstance()->StopSoundAll(0);
-                CVSoundMgr::GetInstance()->StartSound("SE_Decide_A", 0,  -1, 0);
+                CVSoundMgr::GetInstance()->StartSound("SE_Decide_A", 0, -1, 0);
             }
             break;
     }

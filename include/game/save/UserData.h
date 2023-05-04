@@ -30,7 +30,7 @@ class CUserData {
         UNK32 field_0x4C;
         eRoom mMap;
         eScenary mMission;       // Mission ID from "Scenary.txt
-        SoundOutPutMode SoundOutPutMode;
+        s32 SoundOutPutMode;
         UNK32 field_0x5C;     // "Current mission is type `Treasure`" flag?
         UNK32 field_0x60;
         UNK32 field_0x64;

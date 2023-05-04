@@ -33,7 +33,7 @@ lbl_8000CB00:
 	.4byte func_80011A14
 	.4byte 0x00000058
 	.4byte lbl_800067E8
-	.4byte func_80011A6C
+	.4byte __dt__15CSceneMenuMain3Fv
 	.4byte 0x00000058
 	.4byte lbl_800067F0
 	.4byte __dt__15CSceneMenuMain4Fv
@@ -3366,13 +3366,13 @@ lbl_8000CB00:
 	.4byte __ct__15CSceneMenuMain3Fv
 	.4byte 0x00000054
 	.4byte lbl_8000A584
-	.4byte lbl_8005DED8
+	.4byte StartLocal__15CSceneMenuMain3Fv
 	.4byte 0x000000B8
 	.4byte lbl_8000A58C
-	.4byte lbl_8005DF90
+	.4byte CalcLocal__15CSceneMenuMain3Fv
 	.4byte 0x0000065C
 	.4byte lbl_8000A594
-	.4byte lbl_8005E5F4
+	.4byte RenderLocal__15CSceneMenuMain3Fv
 	.4byte 0x000004F8
 	.4byte lbl_8000A59C
 	.4byte lbl_8005EAFC

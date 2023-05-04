@@ -451,8 +451,8 @@ lbl_80011A50:
 /* 80011A64 000029E4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80011A68 000029E8  4E 80 00 20 */	blr
 
-.global func_80011A6C
-func_80011A6C:
+.global __dt__15CSceneMenuMain3Fv
+__dt__15CSceneMenuMain3Fv:
 /* 80011A6C 000029EC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80011A70 000029F0  7C 08 02 A6 */	mflr r0
 /* 80011A74 000029F4  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1385,7 +1385,7 @@ __dt__4CAppFv:
 /* 800126FC 0000367C  4B FF F3 C9 */	bl __dt__15CSceneMenuMain4Fv
 /* 80012700 00003680  38 7E 03 40 */	addi r3, r30, 0x340
 /* 80012704 00003684  38 80 FF FF */	li r4, -0x1
-/* 80012708 00003688  4B FF F3 65 */	bl func_80011A6C
+/* 80012708 00003688  4B FF F3 65 */	bl __dt__15CSceneMenuMain3Fv
 /* 8001270C 0000368C  38 7E 03 10 */	addi r3, r30, 0x310
 /* 80012710 00003690  38 80 FF FF */	li r4, -0x1
 /* 80012714 00003694  4B FF F3 01 */	bl func_80011A14

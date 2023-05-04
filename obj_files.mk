@@ -94,7 +94,7 @@ GAME_O_FILES :=                                                    \
 	$(BUILD_DIR)/asm/game/managers/MarkerMgr.o             \
 	$(BUILD_DIR)/src/game/managers/MarkerMgr.o             \
 	$(BUILD_DIR)/src/game/scene/Menu/Main/SceneMenuMain4.o            \
-	$(BUILD_DIR)/asm/game/scene/Menu/Main/SceneMenuMain3.o            \
+	$(BUILD_DIR)/src/game/scene/Menu/Main/SceneMenuMain3.o            \
 	$(BUILD_DIR)/asm/game/scenary/Hospital/ScnHospital02.o            \
 	$(BUILD_DIR)/asm/game/scenary/KidsRoom/ScnKidsRoom02.o            \
 	$(BUILD_DIR)/asm/game/scenary/KidsRoom/ScnKidsRoom03.o            \

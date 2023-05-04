@@ -36,7 +36,7 @@ lbl_8000CB00:
 	.4byte func_80011A6C
 	.4byte 0x00000058
 	.4byte lbl_800067F0
-	.4byte func_80011AC4
+	.4byte __dt__15CSceneMenuMain4Fv
 	.4byte 0x00000058
 	.4byte lbl_800067F8
 	.4byte func_80011B1C
@@ -1995,7 +1995,7 @@ lbl_8000CB00:
 	.4byte func_800333A8
 	.4byte 0x00000134
 	.4byte lbl_80008760
-	.4byte func_800334DC
+	.4byte CheckDownMap__8CVPadMgrFlUlUl
 	.4byte 0x00000128
 	.4byte lbl_80008768
 	.4byte func_80033604
@@ -3354,13 +3354,13 @@ lbl_8000CB00:
 	.4byte __ct__15CSceneMenuMain4Fv
 	.4byte 0x00000044
 	.4byte lbl_8000A564
-	.4byte lbl_8005D6C4
+	.4byte StartLocal__15CSceneMenuMain4Fv
 	.4byte 0x00000058
 	.4byte lbl_8000A56C
-	.4byte lbl_8005D71C
+	.4byte CalcLocal__15CSceneMenuMain4Fv
 	.4byte 0x0000052C
 	.4byte lbl_8000A574
-	.4byte lbl_8005DC50
+	.4byte RenderLocal__15CSceneMenuMain4Fv
 	.4byte 0x00000224
 	.4byte lbl_8000A57C
 	.4byte __ct__15CSceneMenuMain3Fv
@@ -3387,13 +3387,13 @@ lbl_8000CB00:
 	.4byte lbl_8005F2CC
 	.4byte 0x00000058
 	.4byte lbl_8000A66C
-	.4byte lbl_8005F324
+	.4byte Start__18CScenaryKidsRoom02Fv
 	.4byte 0x000000CC
 	.4byte lbl_8000A674
-	.4byte lbl_8005F3F0
+	.4byte Calc__18CScenaryKidsRoom02Fv
 	.4byte 0x00000344
 	.4byte lbl_8000A68C
-	.4byte lbl_8005F758
+	.4byte __dt__18CScenaryKidsRoom02Fv
 	.4byte 0x00000058
 	.4byte lbl_8000A694
 	.4byte lbl_8005F7B0

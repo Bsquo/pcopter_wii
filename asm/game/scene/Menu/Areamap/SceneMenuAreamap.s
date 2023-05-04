@@ -290,93 +290,56 @@ lbl_801BA978:
 
 	# ROM: 0x1B6A78
 	.asciz "areamap"
-	.4byte 0x2F002E61
-	.4byte 0x72630053
-	.asciz "ceneMenuAreamap.cpp"
-	.asciz "NW4R:Pointer must not be NULL (archiveBuf)"
-	.byte 0x25
-	.asciz "s.brlyt"
+    .asciz "/"
+    .asciz ".arc"
 	.asciz "SceneMenuAreamap.cpp"
-	.byte 0x4E, 0x57, 0x34
-	.asciz "R:Pointer must not be NULL (lytRes)"
+	.asciz "NW4R:Pointer must not be NULL (archiveBuf)"
+	.asciz "%s.brlyt"
+	.asciz "SceneMenuAreamap.cpp"
+	.asciz "NW4R:Pointer must not be NULL (lytRes)"
 	.asciz "%s_Select.brlan"
 	.asciz "SceneMenuAreamap.cpp"
-	.byte 0x4E, 0x57, 0x34
-	.asciz "R:Pointer must not be NULL (rlanRes)"
-	.byte 0x50, 0x5F, 0x49
-	.asciz "Mes_P"
-	.byte 0x50, 0x5F
-	.asciz "IMes_M"
-	.byte 0x50
-	.asciz "_IMes_C"
+	.asciz "NW4R:Pointer must not be NULL (rlanRes)"
+	.asciz "P_IMes_P"
+	.asciz "P_IMes_M"
+	.asciz "P_IMes_C"
 	.asciz "Picture_0%d"
 	.asciz "Point"
-	.byte 0x2F, 0x50
-	.asciz "Copter/Menu/Scenary.txt"
+	.asciz "/PCopter/Menu/Scenary.txt"
 	.asciz "%d/#%d"
-	.byte 0x50
-	.asciz "Copter/ResList.txt"
-	.byte 0x47
-	.asciz "roup#6/#%d"
-	.byte 0x53
-	.asciz "cenary/rank_border"
-	.byte 0x53
-	.asciz "cenary/rank_border"
-	.byte 0x53
-	.asciz "cenary/rank_border"
-	.byte 0x42
-	.asciz "GM02_Map"
-	.byte 0x53, 0x45, 0x5F
-	.asciz "Cancel_A"
-	.byte 0x53, 0x45, 0x5F
-	.asciz "Cursor_A"
-	.byte 0x53, 0x45, 0x5F
-	.asciz "Decide_B"
-	.byte 0x53, 0x45, 0x5F
-	.asciz "Decide_A"
-	.byte 0x44, 0x69, 0x61
-	.4byte 0x6C6F6700
+	.asciz "PCopter/ResList.txt"
+	.asciz "Group#6/#%d"
+	.asciz "Scenary/rank_border"
+	.asciz "Scenary/rank_border"
+	.asciz "Scenary/rank_border"
+	.asciz "BGM02_Map"
+	.asciz "SE_Cancel_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Decide_B"
+	.asciz "SE_Decide_A"
+	.asciz "Dialog"
 	.asciz "SE_Cursor_A"
 	.asciz "SE_Decide_A"
 	.asciz "Dialog"
-	.byte 0x50
-	.asciz "_Mes_0%d"
-	.byte 0x50, 0x5F, 0x53
-	.asciz "tar_%02d_%02d"
-	.byte 0x50, 0x5F
-	.asciz "Star_%02d_%02d"
-	.byte 0x50
-	.asciz "_ReturnD"
-	.byte 0x50, 0x5F, 0x52
-	.asciz "eturnD_Y"
-	.byte 0x50, 0x5F, 0x52
-	.asciz "eturnD_N"
-	.byte 0x50, 0x5F, 0x52
-	.asciz "eturnD"
-	.byte 0x50
-	.asciz "_ReturnD_Y"
-	.byte 0x50
-	.asciz "_ReturnD_N"
-	.byte 0x53
-	.asciz "E_Cancel_A"
-	.byte 0x53
-	.asciz "E_Cursor_A"
-	.byte 0x53
-	.asciz "E_Decide_A"
-	.byte 0x50
-	.asciz "_NewAreaD"
-	.byte 0x50, 0x5F
-	.asciz "NewAreaD_Y"
-	.byte 0x50
-	.asciz "_NewAreaD"
-	.byte 0x50, 0x5F
-	.asciz "NewAreaD_Y"
-	.byte 0x53
-	.asciz "E_Cancel_A"
-	.byte 0x53
-	.asciz "E_Cursor_A"
-	.byte 0x53
-	.asciz "E_Decide_A"
+	.asciz "P_Mes_0%d"
+	.asciz "P_Star_%02d_%02d"
+	.asciz "P_Star_%02d_%02d"
+	.asciz "P_ReturnD"
+	.asciz "P_ReturnD_Y"
+	.asciz "P_ReturnD_N"
+	.asciz "P_ReturnD"
+	.asciz "P_ReturnD_Y"
+	.asciz "P_ReturnD_N"
+	.asciz "SE_Cancel_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Decide_A"
+	.asciz "P_NewAreaD"
+	.asciz "P_NewAreaD_Y"
+	.asciz "P_NewAreaD"
+	.asciz "P_NewAreaD_Y"
+	.asciz "SE_Cancel_A"
+	.asciz "SE_Cursor_A"
+	.asciz "SE_Decide_A"
 	.balign 4
 	.4byte 0
 

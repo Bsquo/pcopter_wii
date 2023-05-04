@@ -170,7 +170,7 @@ lbl_800064F0:
 	.4byte func_80011B1C
 	.4byte 0x0780001F
 	.4byte 0x0000037C
-	.4byte func_80011AC4
+	.4byte __dt__15CSceneMenuMain4Fv
 	.4byte 0x0780001F
 	.4byte 0x00000340
 	.4byte func_80011A6C

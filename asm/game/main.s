@@ -477,8 +477,8 @@ lbl_80011AA8:
 /* 80011ABC 00002A3C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80011AC0 00002A40  4E 80 00 20 */	blr
 
-.global func_80011AC4
-func_80011AC4:
+.global __dt__15CSceneMenuMain4Fv
+__dt__15CSceneMenuMain4Fv:
 /* 80011AC4 00002A44  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80011AC8 00002A48  7C 08 02 A6 */	mflr r0
 /* 80011ACC 00002A4C  2C 03 00 00 */	cmpwi r3, 0x0
@@ -1382,7 +1382,7 @@ __dt__4CAppFv:
 /* 800126F0 00003670  4B FF F4 2D */	bl func_80011B1C
 /* 800126F4 00003674  38 7E 03 7C */	addi r3, r30, 0x37c
 /* 800126F8 00003678  38 80 FF FF */	li r4, -0x1
-/* 800126FC 0000367C  4B FF F3 C9 */	bl func_80011AC4
+/* 800126FC 0000367C  4B FF F3 C9 */	bl __dt__15CSceneMenuMain4Fv
 /* 80012700 00003680  38 7E 03 40 */	addi r3, r30, 0x340
 /* 80012704 00003684  38 80 FF FF */	li r4, -0x1
 /* 80012708 00003688  4B FF F3 65 */	bl func_80011A6C
@@ -1540,7 +1540,7 @@ lbl_8001290C:
 
 .global func_80012928
 func_80012928:
-/* 80012928 000038A8  48 01 AA 4C */	b func_8002D374
+/* 80012928 000038A8  48 01 AA 4C */	b ReleaseHeap__10CVSoundMgrFv
 
 .global __dt__12CVSoundGroupFv
 __dt__12CVSoundGroupFv:
@@ -1670,7 +1670,7 @@ __dt__10CVTimerMgrFv:
 /* 80012AD8 00003A58  3C 80 80 1D */	lis r4, __vt__10CVTimerMgr@ha
 /* 80012ADC 00003A5C  38 84 A5 F4 */	addi r4, r4, __vt__10CVTimerMgr@l
 /* 80012AE0 00003A60  90 83 00 10 */	stw r4, 0x10(r3)
-/* 80012AE4 00003A64  48 00 00 3D */	bl func_80012B20
+/* 80012AE4 00003A64  48 00 00 3D */	bl Release__10CVTimerMgrFv
 /* 80012AE8 00003A68  7F C3 F3 78 */	mr r3, r30
 /* 80012AEC 00003A6C  38 80 FF FF */	li r4, -0x1
 /* 80012AF0 00003A70  48 01 3E 7D */	bl __dt__6CVListFv
@@ -1687,8 +1687,8 @@ lbl_80012B04:
 /* 80012B18 00003A98  38 21 00 10 */	addi r1, r1, 0x10
 /* 80012B1C 00003A9C  4E 80 00 20 */	blr
 
-.global func_80012B20
-func_80012B20:
+.global Release__10CVTimerMgrFv
+Release__10CVTimerMgrFv:
 /* 80012B20 00003AA0  48 01 3E C0 */	b Release__6CVListFv
 
 .global __dt__9CVAreaMgrFv

@@ -14,23 +14,19 @@ lbl_801BFE04:
 
 	# ROM: 0x1BBF04
 	.asciz "SE_Can_A"
-	.byte 0x43, 0x61, 0x6E
-	.4byte 0x48697400
+	.asciz "CanHit"
 	.asciz "Scenary"
 	.asciz "Scenary"
 	.asciz "Count"
-	.byte 0x53, 0x45
-	.asciz "_Fanfare"
-	.byte 0x53, 0x63, 0x65
-	.asciz "nary"
-	.byte 0x53, 0x63, 0x65
-	.asciz "nary"
+	.asciz "SE_Fanfare"
+	.asciz "Scenary"
+    .asciz "Scenary"
 	.balign 4
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global lbl_8005F324
-lbl_8005F324:
+.global Start__18CScenaryKidsRoom02Fv
+Start__18CScenaryKidsRoom02Fv:
 /* 8005F324 000502A4  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8005F328 000502A8  7C 08 02 A6 */	mflr r0
 /* 8005F32C 000502AC  90 01 00 34 */	stw r0, 0x34(r1)
@@ -63,8 +59,6 @@ lbl_8005F360:
 /* 8005F394 00050314  38 A0 00 0D */	li r5, 0xd
 /* 8005F398 00050318  4B FC E5 A1 */	bl GetNext__10CVActorMgrFP7CVActori
 /* 8005F39C 0005031C  7C 7C 1B 78 */	mr r28, r3
-
-.global func_8005F3A0
 func_8005F3A0:
 /* 8005F3A0 00050320  2C 1C 00 00 */	cmpwi r28, 0x0
 /* 8005F3A4 00050324  40 82 FF BC */	bne lbl_8005F360
@@ -80,15 +74,15 @@ func_8005F3A0:
 /* 8005F3CC 0005034C  93 FB 00 04 */	stw r31, 0x4(r27)
 /* 8005F3D0 00050350  93 FB 00 08 */	stw r31, 0x8(r27)
 /* 8005F3D4 00050354  4B FB 74 51 */	bl GetInstance__10CVTimerMgrFv
-/* 8005F3D8 00050358  4B FB 37 49 */	bl func_80012B20
+/* 8005F3D8 00050358  4B FB 37 49 */	bl Release__10CVTimerMgrFv
 /* 8005F3DC 0005035C  BB 61 00 1C */	lmw r27, 0x1c(r1)
 /* 8005F3E0 00050360  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8005F3E4 00050364  7C 08 03 A6 */	mtlr r0
 /* 8005F3E8 00050368  38 21 00 30 */	addi r1, r1, 0x30
 /* 8005F3EC 0005036C  4E 80 00 20 */	blr
 
-.global lbl_8005F3F0
-lbl_8005F3F0:
+.global Calc__18CScenaryKidsRoom02Fv
+Calc__18CScenaryKidsRoom02Fv:
 /* 8005F3F0 00050370  94 21 FF 30 */	stwu r1, -0xd0(r1)
 /* 8005F3F4 00050374  7C 08 02 A6 */	mflr r0
 /* 8005F3F8 00050378  90 01 00 D4 */	stw r0, 0xd4(r1)
@@ -139,8 +133,6 @@ lbl_8005F494:
 /* 8005F49C 0005041C  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8005F4A0 00050420  41 82 00 08 */	beq func_8005F4A8
 /* 8005F4A4 00050424  3B A0 00 04 */	li r29, 0x4
-
-.global func_8005F4A8
 func_8005F4A8:
 /* 8005F4A8 00050428  4B FB 64 05 */	bl GetInstance__11CVLayoutMgrFv
 /* 8005F4AC 0005042C  3C 80 80 1C */	lis r4, lbl_801BFE04@ha
@@ -197,16 +189,12 @@ lbl_8005F56C:
 /* 8005F56C 000504EC  80 1E 00 3C */	lwz r0, 0x3c(r30)
 /* 8005F570 000504F0  7C 00 EB 78 */	or r0, r0, r29
 /* 8005F574 000504F4  90 1E 00 3C */	stw r0, 0x3c(r30)
-
-.global func_8005F578
 func_8005F578:
 /* 8005F578 000504F8  4B FB 63 FD */	bl GetInstance__10CVActorMgrFv
 /* 8005F57C 000504FC  7F 84 E3 78 */	mr r4, r28
 /* 8005F580 00050500  38 A0 00 0D */	li r5, 0xd
 /* 8005F584 00050504  4B FC E3 B5 */	bl GetNext__10CVActorMgrFP7CVActori
 /* 8005F588 00050508  7C 7C 1B 78 */	mr r28, r3
-
-.global func_8005F58C
 func_8005F58C:
 /* 8005F58C 0005050C  2C 1C 00 00 */	cmpwi r28, 0x0
 /* 8005F590 00050510  40 82 FF 50 */	bne lbl_8005F4E0
@@ -306,13 +294,9 @@ lbl_8005F6F0:
 /* 8005F6F8 00050678  38 A0 00 0A */	li r5, 0xa
 /* 8005F6FC 0005067C  4B FC E2 3D */	bl GetNext__10CVActorMgrFP7CVActori
 /* 8005F700 00050680  7C 7D 1B 78 */	mr r29, r3
-
-.global func_8005F704
 func_8005F704:
 /* 8005F704 00050684  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 8005F708 00050688  40 82 FF B8 */	bne lbl_8005F6C0
-
-.global func_8005F70C
 func_8005F70C:
 /* 8005F70C 0005068C  E3 E1 00 C8 */	psq_l f31, 0xc8(r1), 0, qr0
 /* 8005F710 00050690  80 01 00 D4 */	lwz r0, 0xd4(r1)
@@ -325,8 +309,8 @@ func_8005F70C:
 /* 8005F72C 000506AC  38 21 00 D0 */	addi r1, r1, 0xd0
 /* 8005F730 000506B0  4E 80 00 20 */	blr
 
-.global lbl_8005F734
-lbl_8005F734:
+.global GetAchieveRatio__18CScenaryKidsRoom02FPiPi
+GetAchieveRatio__18CScenaryKidsRoom02FPiPi:
 /* 8005F734 000506B4  2C 04 00 00 */	cmpwi r4, 0x0
 /* 8005F738 000506B8  41 82 00 0C */	beq lbl_8005F744
 /* 8005F73C 000506BC  80 03 00 38 */	lwz r0, 0x38(r3)
@@ -338,8 +322,8 @@ lbl_8005F744:
 /* 8005F750 000506D0  90 05 00 00 */	stw r0, 0x0(r5)
 /* 8005F754 000506D4  4E 80 00 20 */	blr
 
-.global lbl_8005F758
-lbl_8005F758:
+.global __dt__18CScenaryKidsRoom02Fv
+__dt__18CScenaryKidsRoom02Fv:
 /* 8005F758 000506D8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005F75C 000506DC  7C 08 02 A6 */	mflr r0
 /* 8005F760 000506E0  2C 03 00 00 */	cmpwi r3, 0x0
@@ -366,24 +350,24 @@ lbl_8005F794:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CC9B8
-lbl_801CC9B8:
+.global __vt__18CScenaryKidsRoom02
+__vt__18CScenaryKidsRoom02:
 
 	# ROM: 0x1C8AB8
-	.4byte lbl_8060E398
+	.4byte __RTTI__18CScenaryKidsRoom02
 	.4byte 0
-	.4byte lbl_8005F758
+	.4byte __dt__18CScenaryKidsRoom02Fv
 	.4byte Init__8CScenaryFP8CVScript
-	.4byte lbl_8005F324
+	.4byte Start__18CScenaryKidsRoom02Fv
 	.4byte ExecCmd__8CScenaryFP8CVAction
-	.4byte lbl_8005F3F0
+	.4byte Calc__18CScenaryKidsRoom02Fv
 	.4byte CalcEnding__8CScenaryFv
 	.4byte Render__8CScenaryFv
 	.4byte LiftActor__8CScenaryFi
 	.4byte PutActor__8CScenaryFiff8CVVector
 	.4byte PutActorDirect__8CScenaryFiiff8CVVector
 	.4byte ForcePut__8CScenaryFP11CActMovable
-	.4byte lbl_8005F734
+	.4byte GetAchieveRatio__18CScenaryKidsRoom02FPiPi
 	.4byte GetPlayerScore__8CScenaryFPiPi
 	.4byte ActionTracking__8CScenaryFP11CActScnBaseUl8CVVector
 	.4byte CoinHitCheck__8CScenaryFPP8CActCoin
@@ -400,8 +384,8 @@ lbl_801CCA04:
 
 .section .sdata, "wa", @progbits
 
-.global lbl_8060E398
-lbl_8060E398:
+.global __RTTI__18CScenaryKidsRoom02
+__RTTI__18CScenaryKidsRoom02:
 
 	# ROM: 0x1EE598
 	.4byte lbl_801BFDF0

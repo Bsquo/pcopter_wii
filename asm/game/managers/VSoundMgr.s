@@ -679,13 +679,13 @@ func_8002D360:
 /* 8002D36C 0001E2EC  54 03 0F FE */	srwi r3, r0, 31
 /* 8002D370 0001E2F0  4E 80 00 20 */	blr
 
-.global func_8002D374
-func_8002D374:
+.global ReleaseHeap__10CVSoundMgrFv
+ReleaseHeap__10CVSoundMgrFv:
 /* 8002D374 0001E2F4  38 63 02 6C */	addi r3, r3, 0x26c
 /* 8002D378 0001E2F8  48 10 20 CC */	b func_8012F444
 
-.global func_8002D37C
-func_8002D37C:
+.global LoadGroup__10CVSoundMgrFPc
+LoadGroup__10CVSoundMgrFPc:
 /* 8002D37C 0001E2FC  38 A3 02 6C */	addi r5, r3, 0x26c
 /* 8002D380 0001E300  38 C0 00 00 */	li r6, 0x0
 /* 8002D384 0001E304  38 63 01 8C */	addi r3, r3, 0x18c

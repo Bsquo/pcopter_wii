@@ -1344,8 +1344,8 @@ func_800334BC:
 /* 800334D4 00024454  38 21 00 30 */	addi r1, r1, 0x30
 /* 800334D8 00024458  4E 80 00 20 */	blr
 
-.global func_800334DC
-func_800334DC:
+.global CheckDownMap__8CVPadMgrFlUlUl
+CheckDownMap__8CVPadMgrFlUlUl:
 /* 800334DC 0002445C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800334E0 00024460  7C 08 02 A6 */	mflr r0
 /* 800334E4 00024464  90 01 00 34 */	stw r0, 0x34(r1)

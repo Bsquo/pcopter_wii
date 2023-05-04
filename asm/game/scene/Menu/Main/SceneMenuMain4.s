@@ -24,36 +24,31 @@ lbl_801BFA70:
 	.asciz "SE_Cursor_A"
 	.asciz "SE_Decide_A"
 	.asciz "BGM12_Shop"
-	.byte 0x43
-	.asciz "heat Setting"
-	.byte 0x4F, 0x4E, 0x00
-	.4byte 0x4F464600
+	.asciz "Cheat Setting"
+	.asciz "ON"
+    .asciz "OFF"
 	.asciz "HideInfo       %s"
-	.byte 0x4F, 0x4E
-	.4byte 0x004F4646
-	.4byte 0x004D6F76
-	.asciz "eCam        %s"
-	.byte 0x4F
-	.4byte 0x4E004F46
-	.4byte 0x4600436F
-	.asciz "llDraw       %s"
-	.4byte 0x4F4E004F
-	.4byte 0x46460043
-	.asciz "ollDisable    %s"
-	.byte 0x4F, 0x4E, 0x00
-	.4byte 0x4F464600
+	.asciz "ON"
+    .asciz "OFF"
+	.asciz "MoveCam        %s"
+	.asciz "ON"
+    .asciz "OFF"
+	.asciz "CollDraw       %s"
+	.asciz "ON"
+    .asciz "OFF"
+	.asciz "CollDisable    %s"
+	.asciz "ON"
+    .asciz "OFF"
 	.asciz "InfiniteBatt   %s"
-	.byte 0x4F, 0x4E
-	.4byte 0x004F4646
-	.4byte 0x00496E66
-	.asciz "initeLife   %s"
-	.byte 0x4F
-	.4byte 0x4E004F46
-	.4byte 0x46004465
-	.asciz "bugInfo      %s"
+	.asciz "ON"
+    .asciz "OFF"
+	.asciz "InfiniteLife   %s"
+	.asciz "ON"
+    .asciz "OFF"
+	.asciz "DebugInfo      %s"
 	.asciz "Return"
-	.byte 0x2A
-	.4byte 0
+    .asciz "*"
+	.balign 4
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
@@ -65,9 +60,9 @@ __ct__15CSceneMenuMain4Fv:
 /* 8005D68C 0004E60C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8005D690 0004E610  7C 7F 1B 78 */	mr r31, r3
 /* 8005D694 0004E614  4B FC E3 B5 */	bl __ct__7CVSceneFv
-/* 8005D698 0004E618  3C 80 80 1D */	lis r4, lbl_801CC8F0@ha
+/* 8005D698 0004E618  3C 80 80 1D */	lis r4, __vt__15CSceneMenuMain4@ha
 /* 8005D69C 0004E61C  38 00 00 00 */	li r0, 0x0
-/* 8005D6A0 0004E620  38 84 C8 F0 */	addi r4, r4, lbl_801CC8F0@l
+/* 8005D6A0 0004E620  38 84 C8 F0 */	addi r4, r4, __vt__15CSceneMenuMain4@l
 /* 8005D6A4 0004E624  90 1F 00 2C */	stw r0, 0x2c(r31)
 /* 8005D6A8 0004E628  7F E3 FB 78 */	mr r3, r31
 /* 8005D6AC 0004E62C  90 9F 00 28 */	stw r4, 0x28(r31)
@@ -77,8 +72,8 @@ __ct__15CSceneMenuMain4Fv:
 /* 8005D6BC 0004E63C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005D6C0 0004E640  4E 80 00 20 */	blr
 
-.global lbl_8005D6C4
-lbl_8005D6C4:
+.global StartLocal__15CSceneMenuMain4Fv
+StartLocal__15CSceneMenuMain4Fv:
 /* 8005D6C4 0004E644  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005D6C8 0004E648  7C 08 02 A6 */	mflr r0
 /* 8005D6CC 0004E64C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -88,11 +83,11 @@ lbl_8005D6C4:
 /* 8005D6DC 0004E65C  7C 7E 1B 78 */	mr r30, r3
 /* 8005D6E0 0004E660  93 E3 00 18 */	stw r31, 0x18(r3)
 /* 8005D6E4 0004E664  4B FB 72 09 */	bl GetInstance__10CVSoundMgrFv
-/* 8005D6E8 0004E668  4B FC FC 8D */	bl func_8002D374
+/* 8005D6E8 0004E668  4B FC FC 8D */	bl ReleaseHeap__10CVSoundMgrFv
 /* 8005D6EC 0004E66C  4B FB 72 01 */	bl GetInstance__10CVSoundMgrFv
 /* 8005D6F0 0004E670  3C 80 80 1C */	lis r4, lbl_801BFA70@ha
 /* 8005D6F4 0004E674  38 84 FA 70 */	addi r4, r4, lbl_801BFA70@l
-/* 8005D6F8 0004E678  4B FC FC 85 */	bl func_8002D37C
+/* 8005D6F8 0004E678  4B FC FC 85 */	bl LoadGroup__10CVSoundMgrFPc
 /* 8005D6FC 0004E67C  93 FE 00 2C */	stw r31, 0x2c(r30)
 /* 8005D700 0004E680  38 60 00 01 */	li r3, 0x1
 /* 8005D704 0004E684  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -102,8 +97,8 @@ lbl_8005D6C4:
 /* 8005D714 0004E694  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005D718 0004E698  4E 80 00 20 */	blr
 
-.global lbl_8005D71C
-lbl_8005D71C:
+.global CalcLocal__15CSceneMenuMain4Fv
+CalcLocal__15CSceneMenuMain4Fv:
 /* 8005D71C 0004E69C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005D720 0004E6A0  7C 08 02 A6 */	mflr r0
 /* 8005D724 0004E6A4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -113,7 +108,7 @@ lbl_8005D71C:
 /* 8005D734 0004E6B4  38 80 00 00 */	li r4, 0x0
 /* 8005D738 0004E6B8  38 A0 00 00 */	li r5, 0x0
 /* 8005D73C 0004E6BC  38 C0 00 0A */	li r6, 0xa
-/* 8005D740 0004E6C0  4B FD 5D 9D */	bl func_800334DC
+/* 8005D740 0004E6C0  4B FD 5D 9D */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005D744 0004E6C4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D748 0004E6C8  41 82 00 44 */	beq lbl_8005D78C
 /* 8005D74C 0004E6CC  80 7F 00 2C */	lwz r3, 0x2c(r31)
@@ -138,7 +133,7 @@ lbl_8005D78C:
 /* 8005D790 0004E710  38 80 00 00 */	li r4, 0x0
 /* 8005D794 0004E714  38 A0 00 00 */	li r5, 0x0
 /* 8005D798 0004E718  38 C0 00 09 */	li r6, 0x9
-/* 8005D79C 0004E71C  4B FD 5D 41 */	bl func_800334DC
+/* 8005D79C 0004E71C  4B FD 5D 41 */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005D7A0 0004E720  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D7A4 0004E724  41 82 00 3C */	beq func_8005D7E0
 /* 8005D7A8 0004E728  80 7F 00 2C */	lwz r3, 0x2c(r31)
@@ -175,14 +170,14 @@ lbl_8005D804:
 /* 8005D808 0004E788  38 80 00 00 */	li r4, 0x0
 /* 8005D80C 0004E78C  38 A0 00 00 */	li r5, 0x0
 /* 8005D810 0004E790  38 C0 00 08 */	li r6, 0x8
-/* 8005D814 0004E794  4B FD 5C C9 */	bl func_800334DC
+/* 8005D814 0004E794  4B FD 5C C9 */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005D818 0004E798  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D81C 0004E79C  40 82 00 20 */	bne lbl_8005D83C
 /* 8005D820 0004E7A0  4B FB 6B D5 */	bl GetInstance__8CVPadMgrFv
 /* 8005D824 0004E7A4  38 80 00 00 */	li r4, 0x0
 /* 8005D828 0004E7A8  38 A0 00 00 */	li r5, 0x0
 /* 8005D82C 0004E7AC  38 C0 00 07 */	li r6, 0x7
-/* 8005D830 0004E7B0  4B FD 5C AD */	bl func_800334DC
+/* 8005D830 0004E7B0  4B FD 5C AD */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005D834 0004E7B4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D838 0004E7B8  41 82 03 DC */	beq func_8005DC14
 lbl_8005D83C:
@@ -213,14 +208,14 @@ lbl_8005D88C:
 /* 8005D890 0004E810  38 80 00 00 */	li r4, 0x0
 /* 8005D894 0004E814  38 A0 00 00 */	li r5, 0x0
 /* 8005D898 0004E818  38 C0 00 08 */	li r6, 0x8
-/* 8005D89C 0004E81C  4B FD 5C 41 */	bl func_800334DC
+/* 8005D89C 0004E81C  4B FD 5C 41 */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005D8A0 0004E820  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D8A4 0004E824  40 82 00 20 */	bne lbl_8005D8C4
 /* 8005D8A8 0004E828  4B FB 6B 4D */	bl GetInstance__8CVPadMgrFv
 /* 8005D8AC 0004E82C  38 80 00 00 */	li r4, 0x0
 /* 8005D8B0 0004E830  38 A0 00 00 */	li r5, 0x0
 /* 8005D8B4 0004E834  38 C0 00 07 */	li r6, 0x7
-/* 8005D8B8 0004E838  4B FD 5C 25 */	bl func_800334DC
+/* 8005D8B8 0004E838  4B FD 5C 25 */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005D8BC 0004E83C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D8C0 0004E840  41 82 03 54 */	beq func_8005DC14
 lbl_8005D8C4:
@@ -251,14 +246,14 @@ lbl_8005D914:
 /* 8005D918 0004E898  38 80 00 00 */	li r4, 0x0
 /* 8005D91C 0004E89C  38 A0 00 00 */	li r5, 0x0
 /* 8005D920 0004E8A0  38 C0 00 08 */	li r6, 0x8
-/* 8005D924 0004E8A4  4B FD 5B B9 */	bl func_800334DC
+/* 8005D924 0004E8A4  4B FD 5B B9 */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005D928 0004E8A8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D92C 0004E8AC  40 82 00 20 */	bne lbl_8005D94C
 /* 8005D930 0004E8B0  4B FB 6A C5 */	bl GetInstance__8CVPadMgrFv
 /* 8005D934 0004E8B4  38 80 00 00 */	li r4, 0x0
 /* 8005D938 0004E8B8  38 A0 00 00 */	li r5, 0x0
 /* 8005D93C 0004E8BC  38 C0 00 07 */	li r6, 0x7
-/* 8005D940 0004E8C0  4B FD 5B 9D */	bl func_800334DC
+/* 8005D940 0004E8C0  4B FD 5B 9D */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005D944 0004E8C4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D948 0004E8C8  41 82 02 CC */	beq func_8005DC14
 lbl_8005D94C:
@@ -289,14 +284,14 @@ lbl_8005D99C:
 /* 8005D9A0 0004E920  38 80 00 00 */	li r4, 0x0
 /* 8005D9A4 0004E924  38 A0 00 00 */	li r5, 0x0
 /* 8005D9A8 0004E928  38 C0 00 08 */	li r6, 0x8
-/* 8005D9AC 0004E92C  4B FD 5B 31 */	bl func_800334DC
+/* 8005D9AC 0004E92C  4B FD 5B 31 */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005D9B0 0004E930  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D9B4 0004E934  40 82 00 20 */	bne lbl_8005D9D4
 /* 8005D9B8 0004E938  4B FB 6A 3D */	bl GetInstance__8CVPadMgrFv
 /* 8005D9BC 0004E93C  38 80 00 00 */	li r4, 0x0
 /* 8005D9C0 0004E940  38 A0 00 00 */	li r5, 0x0
 /* 8005D9C4 0004E944  38 C0 00 07 */	li r6, 0x7
-/* 8005D9C8 0004E948  4B FD 5B 15 */	bl func_800334DC
+/* 8005D9C8 0004E948  4B FD 5B 15 */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005D9CC 0004E94C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005D9D0 0004E950  41 82 02 44 */	beq func_8005DC14
 lbl_8005D9D4:
@@ -327,14 +322,14 @@ lbl_8005DA24:
 /* 8005DA28 0004E9A8  38 80 00 00 */	li r4, 0x0
 /* 8005DA2C 0004E9AC  38 A0 00 00 */	li r5, 0x0
 /* 8005DA30 0004E9B0  38 C0 00 08 */	li r6, 0x8
-/* 8005DA34 0004E9B4  4B FD 5A A9 */	bl func_800334DC
+/* 8005DA34 0004E9B4  4B FD 5A A9 */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005DA38 0004E9B8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005DA3C 0004E9BC  40 82 00 20 */	bne lbl_8005DA5C
 /* 8005DA40 0004E9C0  4B FB 69 B5 */	bl GetInstance__8CVPadMgrFv
 /* 8005DA44 0004E9C4  38 80 00 00 */	li r4, 0x0
 /* 8005DA48 0004E9C8  38 A0 00 00 */	li r5, 0x0
 /* 8005DA4C 0004E9CC  38 C0 00 07 */	li r6, 0x7
-/* 8005DA50 0004E9D0  4B FD 5A 8D */	bl func_800334DC
+/* 8005DA50 0004E9D0  4B FD 5A 8D */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005DA54 0004E9D4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005DA58 0004E9D8  41 82 01 BC */	beq func_8005DC14
 lbl_8005DA5C:
@@ -365,14 +360,14 @@ lbl_8005DAAC:
 /* 8005DAB0 0004EA30  38 80 00 00 */	li r4, 0x0
 /* 8005DAB4 0004EA34  38 A0 00 00 */	li r5, 0x0
 /* 8005DAB8 0004EA38  38 C0 00 08 */	li r6, 0x8
-/* 8005DABC 0004EA3C  4B FD 5A 21 */	bl func_800334DC
+/* 8005DABC 0004EA3C  4B FD 5A 21 */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005DAC0 0004EA40  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005DAC4 0004EA44  40 82 00 20 */	bne lbl_8005DAE4
 /* 8005DAC8 0004EA48  4B FB 69 2D */	bl GetInstance__8CVPadMgrFv
 /* 8005DACC 0004EA4C  38 80 00 00 */	li r4, 0x0
 /* 8005DAD0 0004EA50  38 A0 00 00 */	li r5, 0x0
 /* 8005DAD4 0004EA54  38 C0 00 07 */	li r6, 0x7
-/* 8005DAD8 0004EA58  4B FD 5A 05 */	bl func_800334DC
+/* 8005DAD8 0004EA58  4B FD 5A 05 */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005DADC 0004EA5C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005DAE0 0004EA60  41 82 01 34 */	beq func_8005DC14
 lbl_8005DAE4:
@@ -403,14 +398,14 @@ lbl_8005DB34:
 /* 8005DB38 0004EAB8  38 80 00 00 */	li r4, 0x0
 /* 8005DB3C 0004EABC  38 A0 00 00 */	li r5, 0x0
 /* 8005DB40 0004EAC0  38 C0 00 08 */	li r6, 0x8
-/* 8005DB44 0004EAC4  4B FD 59 99 */	bl func_800334DC
+/* 8005DB44 0004EAC4  4B FD 59 99 */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005DB48 0004EAC8  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005DB4C 0004EACC  40 82 00 20 */	bne lbl_8005DB6C
 /* 8005DB50 0004EAD0  4B FB 68 A5 */	bl GetInstance__8CVPadMgrFv
 /* 8005DB54 0004EAD4  38 80 00 00 */	li r4, 0x0
 /* 8005DB58 0004EAD8  38 A0 00 00 */	li r5, 0x0
 /* 8005DB5C 0004EADC  38 C0 00 07 */	li r6, 0x7
-/* 8005DB60 0004EAE0  4B FD 59 7D */	bl func_800334DC
+/* 8005DB60 0004EAE0  4B FD 59 7D */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005DB64 0004EAE4  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005DB68 0004EAE8  41 82 00 AC */	beq func_8005DC14
 lbl_8005DB6C:
@@ -441,7 +436,7 @@ lbl_8005DBBC:
 /* 8005DBC0 0004EB40  38 80 00 00 */	li r4, 0x0
 /* 8005DBC4 0004EB44  38 A0 00 00 */	li r5, 0x0
 /* 8005DBC8 0004EB48  38 C0 00 0B */	li r6, 0xb
-/* 8005DBCC 0004EB4C  4B FD 59 11 */	bl func_800334DC
+/* 8005DBCC 0004EB4C  4B FD 59 11 */	bl CheckDownMap__8CVPadMgrFlUlUl
 /* 8005DBD0 0004EB50  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8005DBD4 0004EB54  41 82 00 40 */	beq func_8005DC14
 /* 8005DBD8 0004EB58  38 60 00 00 */	li r3, 0x0
@@ -476,13 +471,13 @@ func_8005DC14:
 /* 8005DC40 0004EBC0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005DC44 0004EBC4  4E 80 00 20 */	blr
 
-.global lbl_8005DC48
-lbl_8005DC48:
+.global CalcLocalPause__15CSceneMenuMain4Fv
+CalcLocalPause__15CSceneMenuMain4Fv:
 /* 8005DC48 0004EBC8  38 60 00 01 */	li r3, 0x1
 /* 8005DC4C 0004EBCC  4E 80 00 20 */	blr
 
-.global lbl_8005DC50
-lbl_8005DC50:
+.global RenderLocal__15CSceneMenuMain4Fv
+RenderLocal__15CSceneMenuMain4Fv:
 /* 8005DC50 0004EBD0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005DC54 0004EBD4  7C 08 02 A6 */	mflr r0
 /* 8005DC58 0004EBD8  38 80 00 3C */	li r4, 0x3c
@@ -628,13 +623,13 @@ lbl_8005DE0C:
 /* 8005DE6C 0004EDEC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005DE70 0004EDF0  4E 80 00 20 */	blr
 
-.global lbl_8005DE74
-lbl_8005DE74:
+.global RenderLocalPause__15CSceneMenuMain4Fv
+RenderLocalPause__15CSceneMenuMain4Fv:
 /* 8005DE74 0004EDF4  38 60 00 01 */	li r3, 0x1
 /* 8005DE78 0004EDF8  4E 80 00 20 */	blr
 
-.global lbl_8005DE7C
-lbl_8005DE7C:
+.global EndLocal__15CSceneMenuMain4Fv
+EndLocal__15CSceneMenuMain4Fv:
 /* 8005DE7C 0004EDFC  38 60 00 01 */	li r3, 0x1
 /* 8005DE80 0004EE00  4E 80 00 20 */	blr
 
@@ -653,20 +648,20 @@ lbl_801CC8D0:
 	.4byte lbl_8005DB34
 	.4byte lbl_8005DBBC
 
-.global lbl_801CC8F0
-lbl_801CC8F0:
+.global __vt__15CSceneMenuMain4
+__vt__15CSceneMenuMain4:
 
 	# ROM: 0x1C89F0
-	.4byte lbl_8060E378
+	.4byte __RTTI__15CSceneMenuMain4
 	.4byte 0
-	.4byte lbl_8005D6C4
-	.4byte lbl_8005D71C
-	.4byte lbl_8005DC50
-	.4byte lbl_8005DC48
-	.4byte lbl_8005DE74
+	.4byte StartLocal__15CSceneMenuMain4Fv
+	.4byte CalcLocal__15CSceneMenuMain4Fv
+	.4byte RenderLocal__15CSceneMenuMain4Fv
+	.4byte CalcLocalPause__15CSceneMenuMain4Fv
+	.4byte RenderLocalPause__15CSceneMenuMain4Fv
 	.4byte CalcLocalSystem__7CVSceneFv
-	.4byte lbl_8005DE7C
-	.4byte func_80011AC4
+	.4byte EndLocal__15CSceneMenuMain4Fv
+	.4byte __dt__15CSceneMenuMain4Fv
 
 .global lbl_801CC918
 lbl_801CC918:
@@ -679,8 +674,8 @@ lbl_801CC918:
 
 .section .sdata, "wa", @progbits
 
-.global lbl_8060E378
-lbl_8060E378:
+.global __RTTI__15CSceneMenuMain4
+__RTTI__15CSceneMenuMain4:
 
 	# ROM: 0x1EE578
 	.4byte lbl_801BFA60

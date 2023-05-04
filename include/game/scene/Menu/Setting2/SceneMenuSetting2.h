@@ -17,10 +17,10 @@ class CSceneMenuSetting2: public CSceneMenuBase {
 		CSceneMenuSetting2();
 		bool StartLocal();
 		bool CalcLocal();
-		void RenderLocal();
-		void CalcLocalPause();
-		void RenderLocalPause();
-		void EndLocal();
+		bool RenderLocal();
+		bool CalcLocalPause();
+		bool RenderLocalPause();
+		bool EndLocal();
 		~CSceneMenuSetting2();
 };
 

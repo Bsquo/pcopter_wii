@@ -709,8 +709,8 @@ StartSound__10CVSoundMgrFPciii:
 /* 8002D3B4 0001E334  38 68 02 98 */	addi r3, r8, 0x298
 /* 8002D3B8 0001E338  4B FF FA 44 */	b func_8002CDFC
 
-.global func_8002D3BC
-func_8002D3BC:
+.global HoldSound__10CVSoundMgrFPcii
+HoldSound__10CVSoundMgrFPcii:
 /* 8002D3BC 0001E33C  1C 05 00 28 */	mulli r0, r5, 0x28
 /* 8002D3C0 0001E340  7C 85 23 78 */	mr r5, r4
 /* 8002D3C4 0001E344  38 83 01 8C */	addi r4, r3, 0x18c
@@ -808,8 +808,8 @@ func_8002D4B0:
 /* 8002D4C8 0001E448  38 63 02 98 */	addi r3, r3, 0x298
 /* 8002D4CC 0001E44C  4B FF FB 40 */	b func_8002D00C
 
-.global func_8002D4D0
-func_8002D4D0:
+.global StopSoundAll__10CVSoundMgrFi
+StopSoundAll__10CVSoundMgrFi:
 /* 8002D4D0 0001E450  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8002D4D4 0001E454  7C 08 02 A6 */	mflr r0
 /* 8002D4D8 0001E458  90 01 00 24 */	stw r0, 0x24(r1)

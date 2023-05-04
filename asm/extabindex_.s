@@ -1590,7 +1590,7 @@ lbl_8000CB00:
 	.4byte func_8002D460
 	.4byte 0x00000034
 	.4byte lbl_80007DEC
-	.4byte func_8002D4D0
+	.4byte StopSoundAll__10CVSoundMgrFi
 	.4byte 0x00000060
 	.4byte lbl_80007DF4
 	.4byte PauseSoundAll__10CVSoundMgrFii

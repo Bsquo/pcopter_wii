@@ -71,11 +71,11 @@ class CSceneGame: public CVScene {
 		CSceneGame();
 		virtual bool StartLocal();
 		virtual bool CalcLocal();
-		virtual void RenderLocal();
-		virtual void CalcLocalPause();
-		virtual void RenderLocalPause();
+		virtual bool RenderLocal();
+		virtual bool CalcLocalPause();
+		virtual bool RenderLocalPause();
 		virtual void CalcLocalSystem();
-		virtual void EndLocal();
+		virtual bool EndLocal();
 		virtual ~CSceneGame();
 		virtual void SetupScenary();
 		virtual void CreateActors();

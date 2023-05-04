@@ -10,11 +10,11 @@ class CSceneGameMulti: public CSceneGame {
 		CSceneGameMulti();
         bool StartLocal();
 		bool CalcLocal();
-		void RenderLocal();
-		void CalcLocalPause();
-		void RenderLocalPause();
+		bool RenderLocal();
+		bool CalcLocalPause();
+		bool RenderLocalPause();
 		void CalcLocalSystem();
-		void EndLocal();
+		bool EndLocal();
 		~CSceneGameMulti();
 		void SetupScenary();
 		void CreateActors();

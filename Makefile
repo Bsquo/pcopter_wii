@@ -34,6 +34,7 @@ SRC_DIRS := src                      	\
 			src/game/scene/Game      	\
 			src/game/scene/Menu      	\
 			src/game/scene/Menu/Logo    \
+			src/game/scene/Menu/Main    \
 			src/game/system           	\
 			src/game/utils           	\
 			src/MSL_C                	\

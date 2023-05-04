@@ -25,10 +25,10 @@ class CSceneMenuMain4: public CVScene {
 		CSceneMenuMain4();
 		bool StartLocal();
 		bool CalcLocal();
-		void RenderLocal();
-		void CalcLocalPause();
-		void RenderLocalPause();
-		void EndLocal();
+		bool RenderLocal();
+		bool CalcLocalPause();
+		bool RenderLocalPause();
+		bool EndLocal();
 		~CSceneMenuMain4();
 };
 

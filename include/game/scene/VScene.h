@@ -13,7 +13,7 @@ class CVScene {
 		u32 mIsEnd;
 		u32 mSceneExited;
 		u32 mIsControllerDisconnected;
-		s32 mOption;			// Used by some menu scenes to hold the currently selected option
+		s32 mCurrentOption;			// Used by some menu scenes to hold the currently selected option
 		u32 mFrameTimer;
 
 		// __ct__7CVSceneFv (0x8002ba48)
@@ -35,15 +35,15 @@ class CVScene {
 		// CalcLocal__7CVSceneFv (0x8002bea4)
 		virtual bool CalcLocal();
 		// RenderLocal__7CVSceneFv (0x8002bf24)
-		virtual void RenderLocal();
+		virtual bool RenderLocal();
 		// CalcLocalPause__7CVSceneFv (0x8002be9c)
-		virtual void CalcLocalPause();
+		virtual bool CalcLocalPause();
 		// RenderLocalPause__7CVSceneFv (0x8002bf1c)
-		virtual void RenderLocalPause();
+		virtual bool RenderLocalPause();
 		// CalcLocalSystem__7CVSceneFv (0x8002be94)
 		virtual void CalcLocalSystem();
 		// EndLocal__7CVSceneFv (0x8002bdd8)
-		virtual void EndLocal();
+		virtual bool EndLocal();
 		// __dt__7CVSceneFv (0x8002bbc0)
 		virtual ~CVScene();
 };

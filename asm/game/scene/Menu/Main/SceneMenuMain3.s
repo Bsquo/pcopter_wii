@@ -553,7 +553,7 @@ lbl_8005E558:
 /* 8005E580 0004F500  90 1F 00 14 */	stw r0, 0x14(r31)
 /* 8005E584 0004F504  4B FB 63 69 */	bl GetInstance__10CVSoundMgrFv
 /* 8005E588 0004F508  38 80 00 00 */	li r4, 0x0
-/* 8005E58C 0004F50C  4B FC EF 45 */	bl func_8002D4D0
+/* 8005E58C 0004F50C  4B FC EF 45 */	bl StopSoundAll__10CVSoundMgrFi
 /* 8005E590 0004F510  4B FB 63 5D */	bl GetInstance__10CVSoundMgrFv
 /* 8005E594 0004F514  3C 80 80 1C */	lis r4, lbl_801BFC18@ha
 /* 8005E598 0004F518  38 A0 00 00 */	li r5, 0x0
@@ -571,7 +571,7 @@ func_8005E5B0:
 /* 8005E5BC 0004F53C  38 84 FC 18 */	addi r4, r4, lbl_801BFC18@l
 /* 8005E5C0 0004F540  38 C0 00 00 */	li r6, 0x0
 /* 8005E5C4 0004F544  38 84 00 90 */	addi r4, r4, 0x90
-/* 8005E5C8 0004F548  4B FC ED F5 */	bl func_8002D3BC
+/* 8005E5C8 0004F548  4B FC ED F5 */	bl HoldSound__10CVSoundMgrFPcii
 /* 8005E5CC 0004F54C  38 60 00 01 */	li r3, 0x1
 /* 8005E5D0 0004F550  E3 E1 00 28 */	psq_l f31, 0x28(r1), 0, qr0
 /* 8005E5D4 0004F554  CB E1 00 20 */	lfd f31, 0x20(r1)
@@ -926,6 +926,8 @@ lbl_8005EAF4:
 /* 8005EAF8 0004FA78  4E 80 00 20 */	blr
 
 .section .data, "wa", @progbits
+
+.balign 8	# Needed to add the extra 4 bytes seen at the end of SceneMenuMain4.cpp's .data (due to file boundary)
 
 .global lbl_801CC928
 lbl_801CC928:

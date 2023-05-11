@@ -20,27 +20,26 @@ lbl_801BD1A8:
 
 	# ROM: 0x1B92A8
 	.asciz "Group#%d/name"
-	.byte 0x47, 0x72
-	.asciz "oup#%d/#%d"
+	.asciz "Group#%d/#%d"
 	.balign 4
 	.4byte 0
 
 .section .text, "ax", @progbits  # 0x80011660 - 0x801B8340 ; 0x001A6CE0
 
-.global func_800490B8
-func_800490B8:
+.global GetStartElement__13CResListGroupFv
+GetStartElement__13CResListGroupFv:
 /* 800490B8 0003A038  38 63 00 1C */	addi r3, r3, 0x1c
 /* 800490BC 0003A03C  4B FD D9 AC */	b GetStart__6CVListFv
 
-.global func_800490C0
-func_800490C0:
+.global GetElement__13CResListGroupFPc
+GetElement__13CResListGroupFPc:
 /* 800490C0 0003A040  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800490C4 0003A044  7C 08 02 A6 */	mflr r0
 /* 800490C8 0003A048  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800490CC 0003A04C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800490D0 0003A050  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 800490D4 0003A054  7C 9E 23 78 */	mr r30, r4
-/* 800490D8 0003A058  4B FF FF E1 */	bl func_800490B8
+/* 800490D8 0003A058  4B FF FF E1 */	bl GetStartElement__13CResListGroupFv
 /* 800490DC 0003A05C  7C 7F 1B 78 */	mr r31, r3
 /* 800490E0 0003A060  48 00 00 28 */	b func_80049108
 lbl_800490E4:
@@ -70,8 +69,8 @@ func_80049114:
 /* 80049124 0003A0A4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80049128 0003A0A8  4E 80 00 20 */	blr
 
-.global func_8004912C
-func_8004912C:
+.global GetElement__13CResListGroupFi
+GetElement__13CResListGroupFi:
 /* 8004912C 0003A0AC  38 63 00 1C */	addi r3, r3, 0x1c
 /* 80049130 0003A0B0  4B FD D9 48 */	b GetElement__6CVListFi
 
@@ -128,7 +127,7 @@ func_800491AC:
 /* 800491E0 0003A160  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800491E4 0003A164  7C 7D 1B 78 */	mr r29, r3
 /* 800491E8 0003A168  41 82 00 08 */	beq lbl_800491F0
-/* 800491EC 0003A16C  48 00 00 F5 */	bl func_800492E0
+/* 800491EC 0003A16C  48 00 00 F5 */	bl __ct__13CResListGroupFv
 lbl_800491F0:
 /* 800491F0 0003A170  2C 1D 00 00 */	cmpwi r29, 0x0
 /* 800491F4 0003A174  41 82 00 C0 */	beq lbl_800492B4
@@ -159,7 +158,7 @@ func_80049214:
 /* 8004924C 0003A1CC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80049250 0003A1D0  7C 7C 1B 78 */	mr r28, r3
 /* 80049254 0003A1D4  41 82 00 08 */	beq lbl_8004925C
-/* 80049258 0003A1D8  48 00 00 D5 */	bl func_8004932C
+/* 80049258 0003A1D8  48 00 00 D5 */	bl __ct__15CResListElementFv
 lbl_8004925C:
 /* 8004925C 0003A1DC  2C 1C 00 00 */	cmpwi r28, 0x0
 /* 80049260 0003A1E0  41 82 00 40 */	beq lbl_800492A0
@@ -202,17 +201,17 @@ func_800492CC:
 /* 800492D8 0003A258  38 21 01 40 */	addi r1, r1, 0x140
 /* 800492DC 0003A25C  4E 80 00 20 */	blr
 
-.global func_800492E0
-func_800492E0:
+.global __ct__13CResListGroupFv
+__ct__13CResListGroupFv:
 /* 800492E0 0003A260  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800492E4 0003A264  7C 08 02 A6 */	mflr r0
 /* 800492E8 0003A268  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800492EC 0003A26C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800492F0 0003A270  7C 7F 1B 78 */	mr r31, r3
 /* 800492F4 0003A274  4B FD D5 21 */	bl __ct__10CVListBaseFv
-/* 800492F8 0003A278  3C 80 80 1D */	lis r4, lbl_801CBD70@ha
+/* 800492F8 0003A278  3C 80 80 1D */	lis r4, __vt__13CResListGroup@ha
 /* 800492FC 0003A27C  38 7F 00 14 */	addi r3, r31, 0x14
-/* 80049300 0003A280  38 84 BD 70 */	addi r4, r4, lbl_801CBD70@l
+/* 80049300 0003A280  38 84 BD 70 */	addi r4, r4, __vt__13CResListGroup@l
 /* 80049304 0003A284  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 80049308 0003A288  4B FD 72 AD */	bl __ct__8CVStringFv
 /* 8004930C 0003A28C  38 7F 00 1C */	addi r3, r31, 0x1c
@@ -224,17 +223,17 @@ func_800492E0:
 /* 80049324 0003A2A4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80049328 0003A2A8  4E 80 00 20 */	blr
 
-.global func_8004932C
-func_8004932C:
+.global __ct__15CResListElementFv
+__ct__15CResListElementFv:
 /* 8004932C 0003A2AC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80049330 0003A2B0  7C 08 02 A6 */	mflr r0
 /* 80049334 0003A2B4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80049338 0003A2B8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8004933C 0003A2BC  7C 7F 1B 78 */	mr r31, r3
 /* 80049340 0003A2C0  4B FD D4 D5 */	bl __ct__10CVListBaseFv
-/* 80049344 0003A2C4  3C 80 80 1D */	lis r4, lbl_801CBD88@ha
+/* 80049344 0003A2C4  3C 80 80 1D */	lis r4, __vt__15CResListElement@ha
 /* 80049348 0003A2C8  38 7F 00 14 */	addi r3, r31, 0x14
-/* 8004934C 0003A2CC  38 84 BD 88 */	addi r4, r4, lbl_801CBD88@l
+/* 8004934C 0003A2CC  38 84 BD 88 */	addi r4, r4, __vt__15CResListElement@l
 /* 80049350 0003A2D0  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 80049354 0003A2D4  4B FD 72 61 */	bl __ct__8CVStringFv
 /* 80049358 0003A2D8  38 7F 00 1C */	addi r3, r31, 0x1c
@@ -250,19 +249,19 @@ func_8004932C:
 Release__11CResListMgrFv:
 /* 80049378 0003A2F8  4B FD D6 68 */	b Release__6CVListFv
 
-.global func_8004937C
-func_8004937C:
+.global GetStartGroup__11CResListMgrFv
+GetStartGroup__11CResListMgrFv:
 /* 8004937C 0003A2FC  4B FD D6 EC */	b GetStart__6CVListFv
 
-.global func_80049380
-func_80049380:
+.global GetGroup__11CResListMgrFPc
+GetGroup__11CResListMgrFPc:
 /* 80049380 0003A300  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80049384 0003A304  7C 08 02 A6 */	mflr r0
 /* 80049388 0003A308  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8004938C 0003A30C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80049390 0003A310  93 C1 00 08 */	stw r30, 0x8(r1)
 /* 80049394 0003A314  7C 9E 23 78 */	mr r30, r4
-/* 80049398 0003A318  4B FF FF E5 */	bl func_8004937C
+/* 80049398 0003A318  4B FF FF E5 */	bl GetStartGroup__11CResListMgrFv
 /* 8004939C 0003A31C  7C 7F 1B 78 */	mr r31, r3
 /* 800493A0 0003A320  48 00 00 28 */	b func_800493C8
 lbl_800493A4:
@@ -292,12 +291,12 @@ func_800493D4:
 /* 800493E4 0003A364  38 21 00 10 */	addi r1, r1, 0x10
 /* 800493E8 0003A368  4E 80 00 20 */	blr
 
-.global func_800493EC
-func_800493EC:
+.global GetGroupSize__11CResListMgrFPc
+GetGroupSize__11CResListMgrFPc:
 /* 800493EC 0003A36C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800493F0 0003A370  7C 08 02 A6 */	mflr r0
 /* 800493F4 0003A374  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800493F8 0003A378  4B FF FF 89 */	bl func_80049380
+/* 800493F8 0003A378  4B FF FF 89 */	bl GetGroup__11CResListMgrFPc
 /* 800493FC 0003A37C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80049400 0003A380  41 82 00 10 */	beq lbl_80049410
 /* 80049404 0003A384  38 63 00 1C */	addi r3, r3, 0x1c
@@ -313,18 +312,18 @@ func_80049414:
 /* 8004941C 0003A39C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80049420 0003A3A0  4E 80 00 20 */	blr
 
-.global func_80049424
-func_80049424:
+.global GetElement__11CResListMgrFPcPc
+GetElement__11CResListMgrFPcPc:
 /* 80049424 0003A3A4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80049428 0003A3A8  7C 08 02 A6 */	mflr r0
 /* 8004942C 0003A3AC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80049430 0003A3B0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80049434 0003A3B4  7C BF 2B 78 */	mr r31, r5
-/* 80049438 0003A3B8  4B FF FF 49 */	bl func_80049380
+/* 80049438 0003A3B8  4B FF FF 49 */	bl GetGroup__11CResListMgrFPc
 /* 8004943C 0003A3BC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80049440 0003A3C0  41 82 00 10 */	beq lbl_80049450
 /* 80049444 0003A3C4  7F E4 FB 78 */	mr r4, r31
-/* 80049448 0003A3C8  4B FF FC 79 */	bl func_800490C0
+/* 80049448 0003A3C8  4B FF FC 79 */	bl GetElement__13CResListGroupFPc
 /* 8004944C 0003A3CC  48 00 00 08 */	b func_80049454
 lbl_80049450:
 /* 80049450 0003A3D0  38 60 00 00 */	li r3, 0x0
@@ -337,18 +336,18 @@ func_80049454:
 /* 80049460 0003A3E0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80049464 0003A3E4  4E 80 00 20 */	blr
 
-.global func_80049468
-func_80049468:
+.global GetElement__11CResListMgrFPci
+GetElement__11CResListMgrFPci:
 /* 80049468 0003A3E8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8004946C 0003A3EC  7C 08 02 A6 */	mflr r0
 /* 80049470 0003A3F0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80049474 0003A3F4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80049478 0003A3F8  7C BF 2B 78 */	mr r31, r5
-/* 8004947C 0003A3FC  4B FF FF 05 */	bl func_80049380
+/* 8004947C 0003A3FC  4B FF FF 05 */	bl GetGroup__11CResListMgrFPc
 /* 80049480 0003A400  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80049484 0003A404  41 82 00 10 */	beq lbl_80049494
 /* 80049488 0003A408  7F E4 FB 78 */	mr r4, r31
-/* 8004948C 0003A40C  4B FF FC A1 */	bl func_8004912C
+/* 8004948C 0003A40C  4B FF FC A1 */	bl GetElement__13CResListGroupFi
 /* 80049490 0003A410  48 00 00 08 */	b func_80049498
 lbl_80049494:
 /* 80049494 0003A414  38 60 00 00 */	li r3, 0x0
@@ -361,8 +360,8 @@ func_80049498:
 /* 800494A4 0003A424  38 21 00 10 */	addi r1, r1, 0x10
 /* 800494A8 0003A428  4E 80 00 20 */	blr
 
-.global lbl_800494AC
-lbl_800494AC:
+.global __dt__15CResListElementFv
+__dt__15CResListElementFv:
 /* 800494AC 0003A42C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800494B0 0003A430  7C 08 02 A6 */	mflr r0
 /* 800494B4 0003A434  2C 03 00 00 */	cmpwi r3, 0x0
@@ -394,8 +393,8 @@ lbl_80049504:
 /* 80049518 0003A498  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004951C 0003A49C  4E 80 00 20 */	blr
 
-.global lbl_80049520
-lbl_80049520:
+.global __dt__13CResListGroupFv
+__dt__13CResListGroupFv:
 /* 80049520 0003A4A0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80049524 0003A4A4  7C 08 02 A6 */	mflr r0
 /* 80049528 0003A4A8  2C 03 00 00 */	cmpwi r3, 0x0
@@ -429,13 +428,13 @@ lbl_80049578:
 
 .section .data, "wa", @progbits
 
-.global lbl_801CBD70
-lbl_801CBD70:
+.global __vt__13CResListGroup
+__vt__13CResListGroup:
 
 	# ROM: 0x1C7E70
-	.4byte lbl_8060E280
+	.4byte __RTTI__13CResListGroup
 	.4byte 0
-	.4byte lbl_80049520
+	.4byte __dt__13CResListGroupFv
 
 .global lbl_801CBD7C
 lbl_801CBD7C:
@@ -445,13 +444,13 @@ lbl_801CBD7C:
 	.4byte 0
 	.4byte 0
 
-.global lbl_801CBD88
-lbl_801CBD88:
+.global __vt__15CResListElement
+__vt__15CResListElement:
 
 	# ROM: 0x1C7E88
-	.4byte lbl_8060E288
+	.4byte __RTTI__15CResListElement
 	.4byte 0
-	.4byte lbl_800494AC
+	.4byte __dt__15CResListElementFv
 
 .global lbl_801CBD94
 lbl_801CBD94:
@@ -463,15 +462,15 @@ lbl_801CBD94:
 
 .section .sdata, "wa", @progbits
 
-.global lbl_8060E280
-lbl_8060E280:
+.global __RTTI__13CResListGroup
+__RTTI__13CResListGroup:
 
 	# ROM: 0x1EE480
 	.4byte lbl_801BD188
 	.4byte lbl_801CBD7C
 
-.global lbl_8060E288
-lbl_8060E288:
+.global __RTTI__15CResListElement
+__RTTI__15CResListElement:
 
 	# ROM: 0x1EE488
 	.4byte lbl_801BD198

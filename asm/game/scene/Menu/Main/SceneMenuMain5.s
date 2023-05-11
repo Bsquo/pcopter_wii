@@ -10,9 +10,9 @@ __ct__15CSceneMenuMain5Fv:
 /* 80067D00 00058C80  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80067D04 00058C84  7C 7F 1B 78 */	mr r31, r3
 /* 80067D08 00058C88  4B FC 3D 41 */	bl __ct__7CVSceneFv
-/* 80067D0C 00058C8C  3C 80 80 1D */	lis r4, lbl_801CCF50@ha
+/* 80067D0C 00058C8C  3C 80 80 1D */	lis r4, __vt__15CSceneMenuMain5@ha
 /* 80067D10 00058C90  38 00 00 00 */	li r0, 0x0
-/* 80067D14 00058C94  38 84 CF 50 */	addi r4, r4, lbl_801CCF50@l
+/* 80067D14 00058C94  38 84 CF 50 */	addi r4, r4, __vt__15CSceneMenuMain5@l
 /* 80067D18 00058C98  90 1F 00 2C */	stw r0, 0x2c(r31)
 /* 80067D1C 00058C9C  7F E3 FB 78 */	mr r3, r31
 /* 80067D20 00058CA0  90 9F 00 28 */	stw r4, 0x28(r31)
@@ -23,8 +23,8 @@ __ct__15CSceneMenuMain5Fv:
 /* 80067D34 00058CB4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80067D38 00058CB8  4E 80 00 20 */	blr
 
-.global lbl_80067D3C
-lbl_80067D3C:
+.global StartLocal__15CSceneMenuMain5Fv
+StartLocal__15CSceneMenuMain5Fv:
 /* 80067D3C 00058CBC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80067D40 00058CC0  7C 08 02 A6 */	mflr r0
 /* 80067D44 00058CC4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -48,8 +48,8 @@ lbl_80067D3C:
 /* 80067D8C 00058D0C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80067D90 00058D10  4E 80 00 20 */	blr
 
-.global lbl_80067D94
-lbl_80067D94:
+.global CalcLocal__15CSceneMenuMain5Fv
+CalcLocal__15CSceneMenuMain5Fv:
 /* 80067D94 00058D14  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80067D98 00058D18  7C 08 02 A6 */	mflr r0
 /* 80067D9C 00058D1C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -164,7 +164,7 @@ lbl_80067F00:
 /* 80067F20 00058EA0  3C 80 80 1C */	lis r4, lbl_801C106C@ha
 /* 80067F24 00058EA4  38 84 10 6C */	addi r4, r4, lbl_801C106C@l
 /* 80067F28 00058EA8  38 84 00 30 */	addi r4, r4, 0x30
-/* 80067F2C 00058EAC  4B FE 14 C1 */	bl func_800493EC
+/* 80067F2C 00058EAC  4B FE 14 C1 */	bl GetGroupSize__11CResListMgrFPc
 /* 80067F30 00058EB0  3B E3 FF FF */	addi r31, r3, -0x1
 /* 80067F34 00058EB4  4B FA 97 4D */	bl GetInstance__4CAppFv
 /* 80067F38 00058EB8  80 03 03 E8 */	lwz r0, 0x3e8(r3)
@@ -224,7 +224,7 @@ lbl_80067FD8:
 /* 80067FF8 00058F78  3C 80 80 1C */	lis r4, lbl_801C106C@ha
 /* 80067FFC 00058F7C  38 84 10 6C */	addi r4, r4, lbl_801C106C@l
 /* 80068000 00058F80  38 84 00 55 */	addi r4, r4, 0x55
-/* 80068004 00058F84  4B FE 13 E9 */	bl func_800493EC
+/* 80068004 00058F84  4B FE 13 E9 */	bl GetGroupSize__11CResListMgrFPc
 /* 80068008 00058F88  3B E3 FF FF */	addi r31, r3, -0x1
 /* 8006800C 00058F8C  4B FA 96 75 */	bl GetInstance__4CAppFv
 /* 80068010 00058F90  80 03 04 0C */	lwz r0, 0x40c(r3)
@@ -469,13 +469,13 @@ func_80068330:
 /* 80068360 000592E0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80068364 000592E4  4E 80 00 20 */	blr
 
-.global lbl_80068368
-lbl_80068368:
+.global CalcLocalPause__15CSceneMenuMain5Fv
+CalcLocalPause__15CSceneMenuMain5Fv:
 /* 80068368 000592E8  38 60 00 01 */	li r3, 0x1
 /* 8006836C 000592EC  4E 80 00 20 */	blr
 
-.global lbl_80068370
-lbl_80068370:
+.global RenderLocal__15CSceneMenuMain5Fv
+RenderLocal__15CSceneMenuMain5Fv:
 /* 80068370 000592F0  94 21 FD B0 */	stwu r1, -0x250(r1)
 /* 80068374 000592F4  7C 08 02 A6 */	mflr r0
 /* 80068378 000592F8  3C 80 80 1C */	lis r4, lbl_801C0F20@ha
@@ -843,13 +843,13 @@ lbl_800683A0:
 /* 8006891C 0005989C  4B FA BE 39 */	bl GetInstance__11CResListMgrFv
 /* 80068920 000598A0  80 AE 03 E8 */	lwz r5, 0x3e8(r14)
 /* 80068924 000598A4  38 90 00 E9 */	addi r4, r16, 0xe9
-/* 80068928 000598A8  4B FE 0B 41 */	bl func_80049468
+/* 80068928 000598A8  4B FE 0B 41 */	bl GetElement__11CResListMgrFPci
 /* 8006892C 000598AC  2C 03 00 00 */	cmpwi r3, 0x0
 /* 80068930 000598B0  7C 6F 1B 78 */	mr r15, r3
 /* 80068934 000598B4  41 82 00 70 */	beq lbl_800689A4
 /* 80068938 000598B8  4B FA BE 1D */	bl GetInstance__11CResListMgrFv
 /* 8006893C 000598BC  38 90 00 FA */	addi r4, r16, 0xfa
-/* 80068940 000598C0  4B FE 0A AD */	bl func_800493EC
+/* 80068940 000598C0  4B FE 0A AD */	bl GetGroupSize__11CResListMgrFPc
 /* 80068944 000598C4  39 C3 FF FF */	addi r14, r3, -0x1
 /* 80068948 000598C8  4B FA 8D 39 */	bl GetInstance__4CAppFv
 /* 8006894C 000598CC  80 03 03 E8 */	lwz r0, 0x3e8(r3)
@@ -884,13 +884,13 @@ lbl_800689A4:
 /* 800689B4 00059934  80 AE 04 0C */	lwz r5, 0x40c(r14)
 /* 800689B8 00059938  3A 10 10 6C */	addi r16, r16, lbl_801C106C@l
 /* 800689BC 0005993C  38 90 01 23 */	addi r4, r16, 0x123
-/* 800689C0 00059940  4B FE 0A A9 */	bl func_80049468
+/* 800689C0 00059940  4B FE 0A A9 */	bl GetElement__11CResListMgrFPci
 /* 800689C4 00059944  2C 03 00 00 */	cmpwi r3, 0x0
 /* 800689C8 00059948  7C 6F 1B 78 */	mr r15, r3
 /* 800689CC 0005994C  41 82 00 70 */	beq lbl_80068A3C
 /* 800689D0 00059950  4B FA BD 85 */	bl GetInstance__11CResListMgrFv
 /* 800689D4 00059954  38 90 01 34 */	addi r4, r16, 0x134
-/* 800689D8 00059958  4B FE 0A 15 */	bl func_800493EC
+/* 800689D8 00059958  4B FE 0A 15 */	bl GetGroupSize__11CResListMgrFPc
 /* 800689DC 0005995C  39 C3 FF FF */	addi r14, r3, -0x1
 /* 800689E0 00059960  4B FA 8C A1 */	bl GetInstance__4CAppFv
 /* 800689E4 00059964  80 03 04 0C */	lwz r0, 0x40c(r3)
@@ -1022,12 +1022,12 @@ lbl_80068B40:
 /* 80068BB8 00059B38  38 21 02 50 */	addi r1, r1, 0x250
 /* 80068BBC 00059B3C  4E 80 00 20 */	blr
 
-.global lbl_80068BC0
-lbl_80068BC0:
+.global RenderLocalPause__15CSceneMenuMain5Fv
+RenderLocalPause__15CSceneMenuMain5Fv:
 /* 80068BC0 00059B40  38 60 00 01 */	li r3, 0x1
 /* 80068BC4 00059B44  4E 80 00 20 */	blr
 
-.global lbl_80068BC8
-lbl_80068BC8:
+.global EndLocal__15CSceneMenuMain5Fv
+EndLocal__15CSceneMenuMain5Fv:
 /* 80068BC8 00059B48  38 60 00 01 */	li r3, 0x1
 /* 80068BCC 00059B4C  4E 80 00 20 */	blr

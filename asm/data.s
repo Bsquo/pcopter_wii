@@ -168,19 +168,19 @@ lbl_801CCF30:
 	.4byte lbl_800682D8
 	.4byte 0
 
-.global lbl_801CCF50
-lbl_801CCF50:
+.global __vt__15CSceneMenuMain5
+__vt__15CSceneMenuMain5:
 
 	# ROM: 0x1C9050
 	.4byte lbl_8060E498
 	.4byte 0
-	.4byte lbl_80067D3C
-	.4byte lbl_80067D94
-	.4byte lbl_80068370
-	.4byte lbl_80068368
-	.4byte lbl_80068BC0
+	.4byte StartLocal__15CSceneMenuMain5Fv
+	.4byte CalcLocal__15CSceneMenuMain5Fv
+	.4byte RenderLocal__15CSceneMenuMain5Fv
+	.4byte CalcLocalPause__15CSceneMenuMain5Fv
+	.4byte RenderLocalPause__15CSceneMenuMain5Fv
 	.4byte CalcLocalSystem__7CVSceneFv
-	.4byte lbl_80068BC8
+	.4byte EndLocal__15CSceneMenuMain5Fv
 	.4byte func_80011B1C
 
 .global lbl_801CCF78

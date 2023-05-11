@@ -2691,34 +2691,34 @@ lbl_8000CB00:
 	.4byte lbl_80049044
 	.4byte 0x00000074
 	.4byte lbl_800096A8
-	.4byte func_800490C0
+	.4byte GetElement__13CResListGroupFPc
 	.4byte 0x0000006C
 	.4byte lbl_800096B0
 	.4byte Init__11CResListMgrFPc
 	.4byte 0x000001AC
 	.4byte lbl_800096B8
-	.4byte func_800492E0
+	.4byte __ct__13CResListGroupFv
 	.4byte 0x0000004C
 	.4byte lbl_80009710
-	.4byte func_8004932C
+	.4byte __ct__15CResListElementFv
 	.4byte 0x0000004C
 	.4byte lbl_80009740
-	.4byte func_80049380
+	.4byte GetGroup__11CResListMgrFPc
 	.4byte 0x0000006C
 	.4byte lbl_80009770
-	.4byte func_800493EC
+	.4byte GetGroupSize__11CResListMgrFPc
 	.4byte 0x00000038
 	.4byte lbl_80009778
-	.4byte func_80049424
+	.4byte GetElement__11CResListMgrFPcPc
 	.4byte 0x00000044
 	.4byte lbl_80009780
-	.4byte func_80049468
+	.4byte GetElement__11CResListMgrFPci
 	.4byte 0x00000044
 	.4byte lbl_80009788
-	.4byte lbl_800494AC
+	.4byte __dt__15CResListElementFv
 	.4byte 0x00000074
 	.4byte lbl_80009790
-	.4byte lbl_80049520
+	.4byte __dt__13CResListGroupFv
 	.4byte 0x00000074
 	.4byte lbl_80009798
 	.4byte func_80049594
@@ -3584,13 +3584,13 @@ lbl_80010138:
 	.4byte __ct__15CSceneMenuMain5Fv
 	.4byte 0x00000048
 	.4byte lbl_8000ACC4
-	.4byte lbl_80067D3C
+	.4byte StartLocal__15CSceneMenuMain5Fv
 	.4byte 0x00000058
 	.4byte lbl_8000ACCC
-	.4byte lbl_80067D94
+	.4byte CalcLocal__15CSceneMenuMain5Fv
 	.4byte 0x000005D4
 	.4byte lbl_8000ACD4
-	.4byte lbl_80068370
+	.4byte RenderLocal__15CSceneMenuMain5Fv
 	.4byte 0x00000850
 	.4byte lbl_8000ACDC
 	.4byte __ct__20CSceneMenuPartSelectFv

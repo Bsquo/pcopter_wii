@@ -3,6 +3,7 @@
 
 #include "include/MSL_C/PPC_EABI/Runtime/__mem.h"
 #include "types.h"
+#include "include/game/system/demo.h"       // Temporary. Needed for the assembly in VString.cpp
 
 class CVString {
     public:
@@ -42,5 +43,18 @@ void* operator new[](size_t);
 
 // __dla__FPv (0x800208d8)
 void operator delete[](void*);
+
+
+// Temporary. Needed for the assembly in VString.cpp
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void* Alloc__4demoFUliQ24demo6Memory(size_t, int, demo::Memory);
+void Free__4demoFPv(void*);
+
+#ifdef __cplusplus
+}
+#endif // __cplusplus
 
 #endif // VSTRING_H

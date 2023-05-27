@@ -2,18 +2,42 @@
 #define VPADDATA_H
 
 #include "include/game/math/VVector.h"
+#include "include/RVL/KPAD/KPAD.h"
 #include "types.h"
 
 class CVPadData {
     public:
-        UNK8 field_0x00[132];
-        CVVector mPos;
-        CVVector field_0x90;
-        UNK32 field_0x9C;
-        CVVector field_0xA0;
-        UNK8 field_0xAC[96];
+        KPADStatus status;
+        CVVector mPos;          // Cursor position
+        CVVector mDir;          // Cursor angle
+        f32 mRoll;              // Cursor roll angle
+        CVVector mAcc;          // Cursor acceleration
+
+        // Contains position data for all joystick directional inputs the game supports.
+        // There are two per joystick input:
+        //      mStick[i][0] ---> Current joystick value
+        //      mStick[i][1] ---> Previous joystick value
+        f32 mStick[12][2];
 
         CVPadData();
+        void Update();
+        bool CheckCLEnable();
+        bool CheckNunEnable();
+        bool CheckDPD();
+        bool CheckUp(u32);
+        bool CheckDown(u32);
+        bool CheckHold(u32);
+        bool CheckUpCL(u32);
+        bool CheckDownCL(u32);
+        bool CheckHoldCL(u32);
+        const CVVector& GetPos();
+        const CVVector& GetDir();
+        const f32 GetRoll();
+        const CVVector& GetAcc();
+        const CVVector GetStick();
+        const CVVector GetStickCLL();
+        const CVVector GetStickCLR();
+        void Reset();
 };
 
 #endif // VPADDATA_H

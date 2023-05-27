@@ -1950,37 +1950,37 @@ lbl_8000CB00:
 	.4byte __dt__8CVCameraFv
 	.4byte 0x00000068
 	.4byte lbl_800086A0
-	.4byte func_80032460
+	.4byte Update__9CVPadDataFv
 	.4byte 0x000002E0
 	.4byte lbl_800086A8
-	.4byte func_800327C8
+	.4byte CheckUpCL__9CVPadDataFUl
 	.4byte 0x0000005C
 	.4byte lbl_800086B0
-	.4byte func_80032824
+	.4byte CheckDownCL__9CVPadDataFUl
 	.4byte 0x0000005C
 	.4byte lbl_800086B8
-	.4byte func_80032880
+	.4byte CheckHoldCL__9CVPadDataFUl
 	.4byte 0x0000005C
 	.4byte lbl_800086C0
-	.4byte func_800328FC
+	.4byte GetStick__9CVPadDataFv
 	.4byte 0x00000058
 	.4byte lbl_800086C8
-	.4byte func_80032954
+	.4byte GetStickCLL__9CVPadDataFv
 	.4byte 0x00000058
 	.4byte lbl_800086D0
-	.4byte func_800329AC
+	.4byte GetStickCLR__9CVPadDataFv
 	.4byte 0x00000058
 	.4byte lbl_800086D8
 	.4byte Init__8CVPadMgrFv
 	.4byte 0x00000064
 	.4byte lbl_800086E0
-	.4byte lbl_80032A68
+	.4byte AllocForWPAD__8CVPadMgrFUl
 	.4byte 0x00000054
 	.4byte lbl_800086E8
-	.4byte lbl_80032ABC
+	.4byte FreeForWPAD__8CVPadMgrFPv
 	.4byte 0x00000024
 	.4byte lbl_80008700
-	.4byte func_80032AEC
+	.4byte GetMapID__8CVPadMgrFPcPUlPiPi
 	.4byte 0x000005AC
 	.4byte lbl_80008708
 	.4byte InitControlMap__8CVPadMgrF10CVFilePath
@@ -1989,16 +1989,16 @@ lbl_8000CB00:
 	.4byte Update__8CVPadMgrFl
 	.4byte 0x00000088
 	.4byte lbl_80008750
-	.4byte func_800332D4
+	.4byte CheckLink__8CVPadMgrFl
 	.4byte 0x00000044
 	.4byte lbl_80008758
-	.4byte func_800333A8
+	.4byte CheckUpMap__8CVPadMgrFlUlUl
 	.4byte 0x00000134
 	.4byte lbl_80008760
 	.4byte CheckDownMap__8CVPadMgrFlUlUl
 	.4byte 0x00000128
 	.4byte lbl_80008768
-	.4byte func_80033604
+	.4byte CheckHoldMap__8CVPadMgrFlUlUl
 	.4byte 0x00000128
 	.4byte lbl_80008770
 	.4byte verify__FPCcUl

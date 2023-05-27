@@ -1,7 +1,7 @@
 .include "macros.s"
 .section .text, "ax"
-.global func_80115E08
-func_80115E08:
+.global KPADSetPosParam
+KPADSetPosParam:
 /* 80115E08 00106D88  1C 03 05 24 */	mulli r0, r3, 0x524
 /* 80115E0C 00106D8C  3C 60 80 5C */	lis r3, lbl_805C6918@ha
 /* 80115E10 00106D90  38 63 69 18 */	addi r3, r3, lbl_805C6918@l
@@ -2393,8 +2393,8 @@ func_80117F6C:
 /* 80117F7C 00108EFC  7C 08 03 A6 */	mtlr r0
 /* 80117F80 00108F00  38 21 00 30 */	addi r1, r1, 0x30
 /* 80117F84 00108F04  4E 80 00 20 */	blr
-.global func_80117F88
-func_80117F88:
+.global KPADRead
+KPADRead:
 /* 80117F88 00108F08  94 21 FF 40 */	stwu r1, -0xc0(r1)
 /* 80117F8C 00108F0C  7C 08 02 A6 */	mflr r0
 /* 80117F90 00108F10  90 01 00 C4 */	stw r0, 0xc4(r1)
@@ -2897,8 +2897,8 @@ func_80118688:
 /* 80118694 00109614  7C 08 03 A6 */	mtlr r0
 /* 80118698 00109618  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 8011869C 0010961C  4E 80 00 20 */	blr
-.global func_801186A0
-func_801186A0:
+.global KPADInit
+KPADInit:
 /* 801186A0 00109620  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 801186A4 00109624  7C 08 02 A6 */	mflr r0
 /* 801186A8 00109628  90 01 00 94 */	stw r0, 0x94(r1)
@@ -3148,8 +3148,8 @@ lbl_80118990:
 /* 801189F0 00109970  7C 08 03 A6 */	mtlr r0
 /* 801189F4 00109974  38 21 00 90 */	addi r1, r1, 0x90
 /* 801189F8 00109978  4E 80 00 20 */	blr
-.global func_801189FC
-func_801189FC:
+.global KPADDisableDPD
+KPADDisableDPD:
 /* 801189FC 0010997C  1C 03 05 24 */	mulli r0, r3, 0x524
 /* 80118A00 00109980  3C 60 80 5C */	lis r3, lbl_805C6918@ha
 /* 80118A04 00109984  38 80 00 00 */	li r4, 0x0
@@ -3157,8 +3157,8 @@ func_801189FC:
 /* 80118A0C 0010998C  7C 63 02 14 */	add r3, r3, r0
 /* 80118A10 00109990  98 83 05 20 */	stb r4, 0x520(r3)
 /* 80118A14 00109994  4E 80 00 20 */	blr
-.global func_80118A18
-func_80118A18:
+.global KPADEnableDPD
+KPADEnableDPD:
 /* 80118A18 00109998  1C 03 05 24 */	mulli r0, r3, 0x524
 /* 80118A1C 0010999C  3C 60 80 5C */	lis r3, lbl_805C6918@ha
 /* 80118A20 001099A0  38 80 00 01 */	li r4, 0x1

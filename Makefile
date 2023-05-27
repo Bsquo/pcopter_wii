@@ -288,6 +288,9 @@ $(BUILD_DIR)/src/game/managers/VCameraMgr.o: src/game/managers/VCameraMgr.cpp
 	
 $(BUILD_DIR)/src/game/managers/VEffectMgr.o: src/game/managers/VEffectMgr.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
+
+$(BUILD_DIR)/src/game/managers/VPadMgr.o: src/game/managers/VPadMgr.cpp
+	$(CC) $(CFLAGS) -c -o $@ $<
 	
 $(BUILD_DIR)/src/game/managers/VTimerMgr.o: src/game/managers/VTimerMgr.cpp
 	#$(CC) $(CFLAGS_CPP_EXCEPTIONS) -c -o $@ $<

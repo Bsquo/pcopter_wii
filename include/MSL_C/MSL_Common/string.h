@@ -16,6 +16,7 @@ char* strchr(char*, int);
 size_t strlen(const char * str);
 int sprintf(char* str, const char* format, ...);
 int swprintf(wchar_t* ws, size_t len, const wchar_t* format, ...);
+void* memset(void* ptr, int value, size_t num);
 
 #ifdef __cplusplus
 }

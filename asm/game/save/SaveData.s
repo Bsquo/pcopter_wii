@@ -5,6 +5,8 @@
 
 .section .rodata, "a", @progbits 
 
+.balign 8	# Needed to add the extra 4 bytes seen at the end of VPadMgr.cpp's .rodata (due to file boundary)
+
 .global lbl_801BA570
 lbl_801BA570:
 

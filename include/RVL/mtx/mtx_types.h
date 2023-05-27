@@ -4,6 +4,10 @@
 #include "types.h"
 
 typedef struct {
+    f32 x, y, z;
+} Vec;
+
+typedef struct {
     f32 x, y;
 } Vec2;
 

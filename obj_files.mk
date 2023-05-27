@@ -42,7 +42,7 @@ GAME_O_FILES :=                                                    \
     $(BUILD_DIR)/asm/game/managers/VCameraMgr_1.o                \
 	$(BUILD_DIR)/src/game/managers/VCameraMgr.o                \
 	$(BUILD_DIR)/asm/game/managers/VCameraMgr_2.o                \
-    $(BUILD_DIR)/asm/game/managers/VPadMgr.o                   \
+    $(BUILD_DIR)/src/game/managers/VPadMgr.o                   \
 	$(BUILD_DIR)/src/game/save/UserData.o                      \
     $(BUILD_DIR)/asm/game/save/SaveData.o                      \
     $(BUILD_DIR)/asm/game/scene/Menu/Areamap/SceneMenuAreamap.o            \

@@ -2227,8 +2227,8 @@ func_800D7380:
 .global func_800D7384
 func_800D7384:
 /* 800D7384 000C8304  48 00 D0 14 */	b func_800E4398
-.global func_800D7388
-func_800D7388:
+.global WPADRegisterAllocator
+WPADRegisterAllocator:
 /* 800D7388 000C8308  48 00 CD 48 */	b func_800E40D0
 .global func_800D738C
 func_800D738C:

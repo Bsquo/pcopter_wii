@@ -11,6 +11,22 @@ enum eButtonType {
     BUTTON_CLASSIC
 };
 
+enum eCVPadMgrAction {
+    ENGINE_ACCELERATE,           // エンジン出力
+    OPEN_CLOSE_MENU,             // メニュー開閉
+    CAMERA_SWTCHING,             // カメラ切り替え
+    AUTO_HOVERING,               // オートホバリング
+    ITEM_SWITCH_ASCENDING,       // アイテム切り替え：昇順
+    ITEM_SWITCH_DESCENDING,      // アイテム切り替え：降順
+    USE_ITEM,                    // アイテム使用
+    CURSOR_MOVE_LEFT,            // カーソル移動左
+    CURSOR_MOVE_RIGHT,           // カーソル移動右
+    CURSOR_MOVE_UP,              // カーソル移動上
+    CURSOR_MOVE_DOWN,            // カーソル移動下
+    OK_MENU,                     // ポーズメニュー等でのOK
+    CANCEL_MENU                  // ポーズメニュー等でのCANCEL
+};
+
 // The name of this struct is unknown, so it was made up.
 union CVPadInpuInfo {
     unsigned long input[8];

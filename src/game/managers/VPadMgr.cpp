@@ -291,7 +291,7 @@ void CVPadMgr::Init() {
 }
 
 void* CVPadMgr::AllocForWPAD(u32 size) {
-    demo::detail::UseSystemHeap use_system_heap;    // This variable gets set to 'true' when calling its constructor.
+    demo::detail::UseSystemHeap use_system_heap;    // 'sbUseSystemHeap' gets set to 'true' when calling the 'demo::detail::UseSystemHeap' constructor.
     return demo::Alloc(size, 0x20, demo::MEM1);
 }
 

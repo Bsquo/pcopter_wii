@@ -25,7 +25,7 @@ namespace demo {
         };
     }
     namespace {
-        bool sbUseSystemHeap;
+        static bool sbUseSystemHeap;
     }
 }
 

@@ -14,6 +14,8 @@ class CVPadData {
         CVVector mAcc;          // Cursor acceleration
 
         // Contains position data for all joystick directional inputs the game supports.
+        // Used for navigating through menu options using the joystick.
+        //
         // There are two per joystick input:
         //      mStick[i][0] ---> Current joystick value
         //      mStick[i][1] ---> Previous joystick value

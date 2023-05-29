@@ -17,14 +17,14 @@ bool CSceneMenuMain4::StartLocal() {
 }
 
 bool CSceneMenuMain4::CalcLocal() {
-    if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 10) != false) {
+    if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_DOWN) != false) {
         mOption++;
         if (mOption >= 8) {
             mOption = 0;
         }
         CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
     }
-    else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 9) != false) {
+    else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_UP) != false) {
         mOption--;
         if (mOption < 0) {
             mOption = 7;
@@ -34,8 +34,8 @@ bool CSceneMenuMain4::CalcLocal() {
     switch (mOption) {
         // HideInfo
         case 0:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false &&
-                CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_RIGHT) == false &&
+                CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_LEFT) == false) {
                 break;
             }
             else {
@@ -46,8 +46,8 @@ bool CSceneMenuMain4::CalcLocal() {
 
         // MoveCam
         case 1:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false
-            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_RIGHT) == false
+            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_LEFT) == false) {
                 break;
             }
             else {
@@ -58,8 +58,8 @@ bool CSceneMenuMain4::CalcLocal() {
 
         // CollDraw
         case 2:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false
-            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_RIGHT) == false
+            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_LEFT) == false) {
                 break;
             }
             else {
@@ -70,8 +70,8 @@ bool CSceneMenuMain4::CalcLocal() {
 
         // CollDisable
         case 3:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false
-            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_RIGHT) == false
+            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_LEFT) == false) {
                 break;
             }
             else {
@@ -82,8 +82,8 @@ bool CSceneMenuMain4::CalcLocal() {
 
         // InfiniteBatt
         case 4:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false
-            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_RIGHT) == false
+            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_LEFT) == false) {
                 break;
             }
             else {
@@ -94,8 +94,8 @@ bool CSceneMenuMain4::CalcLocal() {
 
         // InfiniteLife
         case 5:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false
-            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_RIGHT) == false
+            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_LEFT) == false) {
                 break;
             }
             else {
@@ -106,8 +106,8 @@ bool CSceneMenuMain4::CalcLocal() {
 
         // DebugInfo
         case 6:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) == false
-            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) == false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_RIGHT) == false
+            && CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_LEFT) == false) {
                 break;
             }
             else {
@@ -118,7 +118,7 @@ bool CSceneMenuMain4::CalcLocal() {
 
         // Return
         case 7:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 11) != false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, OK_MENU) != false) {
                 mCurrentOption = 0;
                 mIsEnd = true;
                 CVSoundMgr::GetInstance()->StopSoundAll(0);

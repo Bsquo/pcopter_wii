@@ -50,7 +50,7 @@ void CVPadData::Update() {
     mAcc.z = status.acc.z;
 
     // Update joystick "previous" values
-    for(int i = 0; i < 12; i++) {
+    for (s32 i = 0; i < 12; i++) {
         mStick[i][1] = mStick[i][0];
     }
 
@@ -182,30 +182,26 @@ bool CVPadData::CheckNunEnable() {
 }
 
 bool CVPadData::CheckDPD() {
-    return (u32) (-status.dpd_valid_fg & ~status.dpd_valid_fg) >> 0x1F;
+    return status.dpd_valid_fg > 0;
 }
 
 bool CVPadData::CheckUp(u32 button) {
-    u32 release = status.release & button;
-    return (u32) (-release | release) >> 0x1F;
+    return (status.release & button) != false;
 }
 
 bool CVPadData::CheckDown(u32 button) {
-    u32 down = status.trig & button;
-    return (u32) (-down | down) >> 0x1F;
+    return (status.trig & button) != false;
 }
 
 bool CVPadData::CheckHold(u32 button) {
-    u32 hold = status.hold & button;
-    return (u32) (-hold | hold) >> 0x1F;
+    return (status.hold & button) != false;
 }
 
 bool CVPadData::CheckUpCL(u32 button) {
     u32 up;
     
     if (CheckCLEnable()) {
-        up = status.ex_status.cl.release & button;
-        return (u32) (-up | up) >> 0x1F;
+        return (status.ex_status.cl.release & button) != false;
     }
     else {
         return false;
@@ -216,8 +212,7 @@ bool CVPadData::CheckDownCL(u32 button) {
     u32 down;
     
     if (CheckCLEnable()) {
-        down = status.ex_status.cl.trig & button;
-        return (u32) (-down | down) >> 0x1F;
+        return (status.ex_status.cl.trig & button) != false;
     }
     else {
         return false;
@@ -228,8 +223,7 @@ bool CVPadData::CheckHoldCL(u32 button) {
     u32 hold;
     
     if (CheckCLEnable()) {
-        hold = status.ex_status.cl.hold & button;
-        return (u32) (-hold | hold) >> 0x1F;
+        return (status.ex_status.cl.hold & button) != false;
     }
     else {
         return false;
@@ -593,13 +587,12 @@ bool CVPadMgr::CheckUpMap(s32 controller, u32 layout, u32 action) {
     s32 input;
     s32 input_type;
     s32 stick_input;
-    bool down;
     
     if (layout < mLayoutDataNum && action < mLayoutData[layout].mActionDataNum) {
-        for (u16 button_string_ID = 0; button_string_ID < mLayoutData[layout].mActionData[action].mInputInfoNum; button_string_ID++) {
-            input = mLayoutData[layout].mActionData[action].mInputInfo[0].input[button_string_ID];
-            input_type = mLayoutData[layout].mActionData[action].mInputInfo[1].input_type[button_string_ID];
-            stick_input = mLayoutData[layout].mActionData[action].mInputInfo[2].stick_input[button_string_ID];
+        for (u16 input_info_ID = 0; input_info_ID < mLayoutData[layout].mActionData[action].mInputInfoNum; input_info_ID++) {
+            input = mLayoutData[layout].mActionData[action].mInputInfo[0].input[input_info_ID];
+            input_type = mLayoutData[layout].mActionData[action].mInputInfo[1].input_type[input_info_ID];
+            stick_input = mLayoutData[layout].mActionData[action].mInputInfo[2].stick_input[input_info_ID];
 
             switch (input_type) {
                 case BUTTON_WIIMOTE:
@@ -627,13 +620,12 @@ bool CVPadMgr::CheckDownMap(s32 controller, u32 layout, u32 action) {
     s32 input;
     s32 input_type;
     s32 stick_input;
-    bool down;
     
     if (layout < mLayoutDataNum && action < mLayoutData[layout].mActionDataNum) {
-        for (u16 button_string_ID = 0; button_string_ID < mLayoutData[layout].mActionData[action].mInputInfoNum; button_string_ID++) {
-            input = mLayoutData[layout].mActionData[action].mInputInfo[0].input[button_string_ID];
-            input_type = mLayoutData[layout].mActionData[action].mInputInfo[1].input_type[button_string_ID];
-            stick_input = mLayoutData[layout].mActionData[action].mInputInfo[2].stick_input[button_string_ID];
+        for (u16 input_info_ID = 0; input_info_ID < mLayoutData[layout].mActionData[action].mInputInfoNum; input_info_ID++) {
+            input = mLayoutData[layout].mActionData[action].mInputInfo[0].input[input_info_ID];
+            input_type = mLayoutData[layout].mActionData[action].mInputInfo[1].input_type[input_info_ID];
+            stick_input = mLayoutData[layout].mActionData[action].mInputInfo[2].stick_input[input_info_ID];
 
             switch (input_type) {
                 case BUTTON_WIIMOTE:
@@ -659,13 +651,12 @@ bool CVPadMgr::CheckHoldMap(s32 controller, u32 layout, u32 action) {
     s32 input;
     s32 input_type;
     s32 stick_input;
-    bool down;
     
     if (layout < mLayoutDataNum && action < mLayoutData[layout].mActionDataNum) {
-        for (u16 button_string_ID = 0; button_string_ID < mLayoutData[layout].mActionData[action].mInputInfoNum; button_string_ID++) {
-            input = mLayoutData[layout].mActionData[action].mInputInfo[0].input[button_string_ID];
-            input_type = mLayoutData[layout].mActionData[action].mInputInfo[1].input_type[button_string_ID];
-            stick_input = mLayoutData[layout].mActionData[action].mInputInfo[2].stick_input[button_string_ID];
+        for (u16 input_info_ID = 0; input_info_ID < mLayoutData[layout].mActionData[action].mInputInfoNum; input_info_ID++) {
+            input = mLayoutData[layout].mActionData[action].mInputInfo[0].input[input_info_ID];
+            input_type = mLayoutData[layout].mActionData[action].mInputInfo[1].input_type[input_info_ID];
+            stick_input = mLayoutData[layout].mActionData[action].mInputInfo[2].stick_input[input_info_ID];
 
             switch (input_type) {
                 case BUTTON_WIIMOTE:

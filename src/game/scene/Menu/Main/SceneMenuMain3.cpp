@@ -25,14 +25,14 @@ bool CSceneMenuMain3::StartLocal() {
 }
 
 bool CSceneMenuMain3::CalcLocal() {
-    if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 10) != false) {
+    if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_DOWN) != false) {
         mOption++;
         if (mOption >= 5) {
             mOption = 0;
         }
         CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
     }
-    else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 9) != false) {
+    else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_UP) != false) {
         mOption--;
         if (mOption < 0) {
             mOption = 4;
@@ -43,14 +43,14 @@ bool CSceneMenuMain3::CalcLocal() {
     switch (mOption) {
         // SoundOutPut
         case 0:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) != false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_RIGHT) != false) {
                 if (CApp::GetInstance()->mUserData.SoundOutPutMode < 3) {
                     CApp::GetInstance()->mUserData.SoundOutPutMode++;
                 }
                 CVSoundMgr::GetInstance()->SetOutPutMode(CApp::GetInstance()->mUserData.SoundOutPutMode);
                 CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
             }
-            else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) != false) {
+            else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_LEFT) != false) {
                 if (CApp::GetInstance()->mUserData.SoundOutPutMode > 0) {
                     CApp::GetInstance()->mUserData.SoundOutPutMode--;
                 }
@@ -61,7 +61,7 @@ bool CSceneMenuMain3::CalcLocal() {
 
         // SE_Volume
         case 1:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) != false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_RIGHT) != false) {
                 if (SE_volume < 10) {
                     SE_volume++;
                 }
@@ -71,7 +71,7 @@ bool CSceneMenuMain3::CalcLocal() {
                 CVSoundMgr::GetInstance()->SetVolume(3, CApp::GetInstance()->mUserData.SE_volume);
                 CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
             }
-            else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) != false) {
+            else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_LEFT) != false) {
                 if (SE_volume > 0) {
                     SE_volume--;
                 }
@@ -85,7 +85,7 @@ bool CSceneMenuMain3::CalcLocal() {
 
         // BGM_Volume
         case 2:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) != false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_RIGHT) != false) {
                 if (BGM_volume < 10) {
                     BGM_volume++;
                 }
@@ -93,7 +93,7 @@ bool CSceneMenuMain3::CalcLocal() {
                 CVSoundMgr::GetInstance()->SetVolume(1, CApp::GetInstance()->mUserData.BGM_volume);
                 CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
             }
-            else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) != false) {
+            else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_LEFT) != false) {
                 if (BGM_volume > 0) {
                     BGM_volume--;
                 }
@@ -105,7 +105,7 @@ bool CSceneMenuMain3::CalcLocal() {
 
         // ENV_Volume
         case 3:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 8) != false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_RIGHT) != false) {
                 if (ENV_volume < 10) {
                     ENV_volume++;
                 }
@@ -113,7 +113,7 @@ bool CSceneMenuMain3::CalcLocal() {
                 CVSoundMgr::GetInstance()->SetVolume(4, CApp::GetInstance()->mUserData.ENV_volume);
                 CVSoundMgr::GetInstance()->StartSound("SE_Cursor_A", 0, -1, 0);
             }
-            else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 7) != false) {
+            else if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, CURSOR_MOVE_LEFT) != false) {
                 if (ENV_volume > 0) {
                     ENV_volume--;
                 }
@@ -125,7 +125,7 @@ bool CSceneMenuMain3::CalcLocal() {
 
         // Return
         case 4:
-            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, 11) != false) {
+            if (CVPadMgr::GetInstance()->CheckDownMap(0, MOTION, OK_MENU) != false) {
                 mCurrentOption = 0;
                 mIsEnd = true;
                 CVSoundMgr::GetInstance()->StopSoundAll(0);

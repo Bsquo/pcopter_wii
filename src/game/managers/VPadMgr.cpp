@@ -198,8 +198,6 @@ bool CVPadData::CheckHold(u32 button) {
 }
 
 bool CVPadData::CheckUpCL(u32 button) {
-    u32 up;
-    
     if (CheckCLEnable()) {
         return (status.ex_status.cl.release & button) != false;
     }
@@ -209,8 +207,6 @@ bool CVPadData::CheckUpCL(u32 button) {
 }
 
 bool CVPadData::CheckDownCL(u32 button) {
-    u32 down;
-    
     if (CheckCLEnable()) {
         return (status.ex_status.cl.trig & button) != false;
     }
@@ -220,8 +216,6 @@ bool CVPadData::CheckDownCL(u32 button) {
 }
 
 bool CVPadData::CheckHoldCL(u32 button) {
-    u32 hold;
-    
     if (CheckCLEnable()) {
         return (status.ex_status.cl.hold & button) != false;
     }

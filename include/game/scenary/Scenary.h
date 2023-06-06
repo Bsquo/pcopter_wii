@@ -6,11 +6,13 @@
 #include "include/game/actor/ActScn/ActMovable.h"
 #include "include/game/actor/ActScn/ActCoin.h"
 #include "include/game/math/VVector.h"
+#include "include/game/utils/VFlag.h"
+#include "include/game/managers/MarkerMgr.h"
 #include "types.h"
 
 class CScenary {
     public:
-        CVScript* pScript;        // Script for the current mission scenario
+        CVScript* pScript;          // Script for the current mission scenario
         u32 mObjectiveFulfilled;
         u32 mMissionCompleted;
         u32 mCoinHitCheck;
@@ -43,6 +45,14 @@ class CScenary {
         virtual void CalcExit(int);
         bool Release();
         void PopStar(int, CVVector, u32);
+
+        // Appears to be an inline function.
+        // The name of this function is unknown, so it was made up
+        void ReleaseMarkerMgr() {
+            CVFlag unused;
+            
+            CMarkerMgr::GetInstance()->Release();
+        }
 };
 
 #endif // SCENARY_H

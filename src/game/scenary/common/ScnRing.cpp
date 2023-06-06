@@ -1,7 +1,6 @@
 #include "include/game/scenary/common/ScnRing.h"
 #include "include/game/actor/ActScn/ActRing.h"
 #include "include/game/managers/ActorMgr.h"
-#include "include/game/managers/MarkerMgr.h"
 #include "include/game/app/App.h"
 #include "include/game/managers/VTimerMgr.h"
 #include "include/game/managers/VLayoutMgr.h"
@@ -26,7 +25,7 @@ void CScenaryRing::Start() {
     mMaxScore = 0;
 
     // Iterate through each of the rings defined in the parameter file
-    for (CActRing* ring = (CActRing*)CVActorMgr::GetInstance()->GetStart(11); ring != nullptr; ring = (CActRing*)CVActorMgr::GetInstance()->GetNext(ring, 11)) {
+    for (CActRing* ring = (CActRing*) CVActorMgr::GetInstance()->GetStart(11); ring != nullptr; ring = (CActRing*) CVActorMgr::GetInstance()->GetNext(ring, 11)) {
         if (ring_scale != nullptr) {
             // Set the ring scale
             ring->mRingScale = ring_scale->GetParam(mMaxScore);
@@ -45,16 +44,7 @@ void CScenaryRing::Start() {
     }
 
     mCurrentScore = 0;
-
-    // This CVFlag is destroyed outside of the scope
-    // Therefore we have to change the scope of the variable
-    // We also have to change the "CMarkerMgr::GetInstance()->Release()" outside of the scope for it to match
-    // (thanks to kiwi for helping with this!)
-    {
-        CVFlag unused;
-        CMarkerMgr::GetInstance()->Release();
-    }
-    
+    ReleaseMarkerMgr();
     mObjectiveFulfilled = false;
     mMissionCompleted = false;
 }
@@ -85,7 +75,7 @@ void CScenaryRing::Calc() {
                         }
                         CVLayoutMgr::GetInstance()->SetState("Scenary", message);
                         // Iterate through all the rings
-                        for (CActRing* ring = (CActRing*)CVActorMgr::GetInstance()->GetStart(11); ring != nullptr; ring = (CActRing*)CVActorMgr::GetInstance()->GetNext(ring, 11)) {
+                        for (CActRing* ring = (CActRing*) CVActorMgr::GetInstance()->GetStart(11); ring != nullptr; ring = (CActRing*) CVActorMgr::GetInstance()->GetNext(ring, 11)) {
                             if(ring->mFlags.Check(CActRing::INACTIVE) != false) {
                                 // If the helicopter passed through an active ring...
                                 if (ring->CheckPass(CApp::GetInstance()->GetSceneGame()->pHelicopter) != false) {

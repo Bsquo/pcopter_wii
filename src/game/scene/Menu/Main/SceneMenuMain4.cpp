@@ -207,7 +207,7 @@ bool CSceneMenuMain4::RenderLocal() {
 
     // Cursor
     demo::Report(168, mOption * 30 + 120, "*");
-    return 1;
+    return true;
 }
 
 bool CSceneMenuMain4::RenderLocalPause() {

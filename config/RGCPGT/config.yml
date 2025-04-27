@@ -1,0 +1,6 @@
+object_base: orig/RGCPGT
+object: sys/main.dol
+hash: 772bec0b25fa6f947701b3355823608ad8171a27
+symbols: config/RGCPGT/symbols.txt
+splits: config/RGCPGT/splits.txt
+mw_comment_version: 14

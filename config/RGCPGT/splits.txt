@@ -20,6 +20,7 @@ src/main.cpp:
 	.rodata     start:0x801B8400 end:0x801B8638
 	.data       start:0x801CA560 end:0x801CB2E0
 	.bss        start:0x801F1F00 end:0x801F1F20
+	.bss        start:0x801F1F20 end:0x8051D5C0
 	.sdata      start:0x8060DE00 end:0x8060DEF8
 	.sbss       start:0x8060ECE0 end:0x8060ECF0
 	.sdata2     start:0x8060F820 end:0x8060F828

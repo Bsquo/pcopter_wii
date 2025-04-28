@@ -2053,7 +2053,7 @@ lib/RVL_SDK/src/revolution/wpad/WPADEncrypt.c:
 	.data       start:0x801E3E80 end:0x801E51A8
 	.sbss       start:0x8060F490 end:0x8060F498
 
-lib/RVL_SDK/src/revolution/wud/debug_msg.c:
+lib/RVL_SDK/src/revolution/wpad/debug_msg.c:
 	.text       start:0x800E2588 end:0x800E25D8
 
 lib/RVL_SDK/src/revolution/wud/WUD.c:
@@ -3001,124 +3001,124 @@ lib/RVL_SDK/src/revolution/hbm/HBMBase.cpp:
 	.data       start:0x801EEB80 end:0x801EF8B0
 	.bss        start:0x805F0680 end:0x805F06B0
 
-lib/nw4r/src/lyt/lyt_animation.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_animation.cpp:
 	.text       start:0x80179C0C end:0x8017A7A8
 	.rodata     start:0x801C90B8 end:0x801C90D8
 	.data       start:0x801EF8B0 end:0x801EF930
 
-lib/nw4r/src/lyt/lyt_arcResourceAccessor.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_arcResourceAccessor.cpp:
 	.text       start:0x8017A7A8 end:0x8017AB34
 	.data       start:0x801EF930 end:0x801EF9B0
 
-lib/nw4r/src/lyt/lyt_bounding.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_bounding.cpp:
 	.text       start:0x8017AB34 end:0x8017AC98
 	.ctors      start:0x801B8398 end:0x801B839C
 	.data       start:0x801EF9B0 end:0x801EFA98
 	.bss        start:0x805F06B0 end:0x805F06B8
 
-lib/nw4r/src/lyt/lyt_common.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_common.cpp:
 	.text       start:0x8017AC98 end:0x8017BAAC
 	.rodata     start:0x801C90D8 end:0x801C90E8
 	.bss        start:0x805F06B8 end:0x805F06E0
 
-lib/nw4r/src/lyt/lyt_drawInfo.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_drawInfo.cpp:
 	.text       start:0x8017BAAC end:0x8017BB68
 	.rodata     start:0x801C90E8 end:0x801C90F0
 	.data       start:0x801EFA98 end:0x801EFAC8
 
-lib/nw4r/src/lyt/lyt_group.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_group.cpp:
 	.text       start:0x8017BB68 end:0x8017BE94
 	.data       start:0x801EFAC8 end:0x801EFAF0
 
-lib/nw4r/src/lyt/lyt_layout.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_layout.cpp:
 	.text       start:0x8017BE94 end:0x8017CB40
 	.rodata     start:0x801C90F0 end:0x801C90F8
 	.data       start:0x801EFAF0 end:0x801EFB40
 	.bss        start:0x805F06E0 end:0x805F06E8
 
-lib/nw4r/src/lyt/lyt_material.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_material.cpp:
 	.text       start:0x8017CB40 end:0x8017FF74
 	.rodata     start:0x801C90F8 end:0x801C9128
 	.data       start:0x801EFB40 end:0x801EFBC8
 
-lib/nw4r/src/lyt/lyt_pane.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_pane.cpp:
 	.text       start:0x8017FF74 end:0x80180EE8
 	.ctors      start:0x801B839C end:0x801B83A0
 	.rodata     start:0x801C9128 end:0x801C9148
 	.data       start:0x801EFBC8 end:0x801EFC30
 	.bss        start:0x805F06E8 end:0x805F06F0
 
-lib/nw4r/src/lyt/lyt_picture.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_picture.cpp:
 	.text       start:0x80180EE8 end:0x80181420
 	.ctors      start:0x801B83A0 end:0x801B83A4
 	.rodata     start:0x801C9148 end:0x801C9150
 	.data       start:0x801EFC30 end:0x801EFCD0
 	.bss        start:0x805F06F0 end:0x805F06F8
 
-lib/nw4r/src/lyt/lyt_resourceAccessor.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_resourceAccessor.cpp:
 	.text       start:0x80181420 end:0x80181478
 	.data       start:0x801EFCD0 end:0x801EFCE8
 
-lib/nw4r/src/lyt/lyt_textBox.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_textBox.cpp:
 	.text       start:0x80181478 end:0x80182B0C
 	.ctors      start:0x801B83A4 end:0x801B83A8
 	.rodata     start:0x801C9150 end:0x801C9168
 	.data       start:0x801EFCE8 end:0x801EFD98
 	.bss        start:0x805F06F8 end:0x805F0700
 
-lib/nw4r/src/lyt/lyt_window.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/lyt/lyt_window.cpp:
 	.text       start:0x80182B0C end:0x80184FBC
 	.ctors      start:0x801B83A8 end:0x801B83AC
 	.rodata     start:0x801C9168 end:0x801C9180
 	.data       start:0x801EFD98 end:0x801EFE80
 	.bss        start:0x805F0700 end:0x805F0708
 
-lib/nw4r/src/math/math_triangular.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/math/math_triangular.cpp:
 	.text       start:0x80184FBC end:0x80185240
 	.rodata     start:0x801C9180 end:0x801C91A8
 	.data       start:0x801EFE80 end:0x801F0F98
 
-lib/nw4r/src/ut/ut_binaryFileFormat.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/ut/ut_binaryFileFormat.cpp:
 	.text       start:0x80185240 end:0x801852B4
 
-lib/nw4r/src/ut/ut_CharStrmReader.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/ut/ut_CharStrmReader.cpp:
 	.text       start:0x801852B4 end:0x801853C4
 
-lib/nw4r/src/ut/ut_CharWriter.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/ut/ut_CharWriter.cpp:
 	.text       start:0x801853C4 end:0x80186EB4
 	.rodata     start:0x801C91A8 end:0x801C91C8
 	.bss        start:0x805F0708 end:0x805F0730
 
-lib/nw4r/src/ut/ut_Font.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/ut/ut_Font.cpp:
 	.text       start:0x80186EB4 end:0x80186F5C
 	.data       start:0x801F0F98 end:0x801F0FC8
 
-lib/nw4r/src/ut/ut_LinkList.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/ut/ut_LinkList.cpp:
 	.text       start:0x80186F5C end:0x80187054
 
 lib/RVL_SDK/src/revolution/hbm/nw4hbm/ut/ut_list.cpp:
 	.text       start:0x80187054 end:0x801871B4
 
-lib/nw4r/src/ut/ut_ResFont.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/ut/ut_ResFont.cpp:
 	.text       start:0x801871B4 end:0x801874B8
 	.data       start:0x801F0FC8 end:0x801F10A8
 
-lib/nw4r/src/ut/ut_ResFontBase.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/ut/ut_ResFontBase.cpp:
 	.text       start:0x801874B8 end:0x80187A88
 	.data       start:0x801F10A8 end:0x801F1168
 
-lib/nw4r/src/ut/ut_TagProcessorBase.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/ut/ut_TagProcessorBase.cpp:
 	.text       start:0x80187A88 end:0x80188258
 	.rodata     start:0x801C91C8 end:0x801C91D0
 	.data       start:0x801F1168 end:0x801F11F0
 
-lib/nw4r/src/ut/ut_TextWriterBase.cpp:
+lib/RVL_SDK/src/revolution/hbm/nw4hbm/ut/ut_TextWriterBase.cpp:
 	.text       start:0x80188258 end:0x80189CE8
 	.ctors      start:0x801B83AC end:0x801B83B0
 	.rodata     start:0x801C91D0 end:0x801C91E8
 	.bss        start:0x805F0730 end:0x805F0758
 
-lib/RVL_SDK/src/revolution/hbm/nw4hbm/ut/ut_list.cpp:
+lib/nw4r/src/ut/ut_list.cpp:
 	.text       start:0x80189CE8 end:0x80189F38
 
 lib/nw4r/src/ut/ut_LinkList.cpp:

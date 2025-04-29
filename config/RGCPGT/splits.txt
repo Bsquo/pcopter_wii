@@ -13,7 +13,7 @@ Sections:
 	.sdata2     type:rodata align:32
 	.sbss2      type:bss align:32
 
-src/main.cpp:
+game/main.cpp:
 	extab       start:0x800064E0 end:0x80006A88
 	extabindex  start:0x8000CB00 end:0x8000CF20
 	.text       start:0x80011660 end:0x800140F0
@@ -25,7 +25,7 @@ src/main.cpp:
 	.sbss       start:0x8060ECE0 end:0x8060ECF0
 	.sdata2     start:0x8060F820 end:0x8060F828
 
-src/App.cpp:
+game/App.cpp:
 	extab       start:0x80006A88 end:0x80006B9C
 	extabindex  start:0x8000CF20 end:0x8000D010
 	.text       start:0x800140F0 end:0x8001569C
@@ -36,7 +36,7 @@ src/App.cpp:
 	.sbss       start:0x8060ECF0 end:0x8060ECF8
 	.sdata2     start:0x8060F828 end:0x8060F838
 
-src/SceneGame.cpp:
+game/SceneGame.cpp:
 	extab       start:0x80006B9C end:0x80006D00
 	extabindex  start:0x8000D010 end:0x8000D1C0
 	.text       start:0x8001569C end:0x8001A0D0
@@ -47,7 +47,7 @@ src/SceneGame.cpp:
 	.sbss       start:0x8060ECF8 end:0x8060ED38
 	.sdata2     start:0x8060F838 end:0x8060F888
 
-src/ActCopter.cpp:
+game/ActCopter.cpp:
 	extab       start:0x80006D00 end:0x80006FAC
 	extabindex  start:0x8000D1C0 end:0x8000D3F4
 	.text       start:0x8001A0D0 end:0x8001E6BC
@@ -57,7 +57,7 @@ src/ActCopter.cpp:
 	.sbss       start:0x8060ED38 end:0x8060ED40
 	.sdata2     start:0x8060F888 end:0x8060F940
 
-src/Shadow.cpp:
+game/Shadow.cpp:
 	extab       start:0x80006FAC end:0x80007164
 	extabindex  start:0x8000D3F4 end:0x8000D640
 	.text       start:0x8001E6BC end:0x800205B4
@@ -68,7 +68,7 @@ src/Shadow.cpp:
 	.sbss       start:0x8060ED40 end:0x8060ED58
 	.sdata2     start:0x8060F940 end:0x8060F970
 
-src/VString.cpp:
+game/VString.cpp:
 	extab       start:0x80007164 end:0x800071F4
 	extabindex  start:0x8000D640 end:0x8000D6B8
 	.text       start:0x800205B4 end:0x800209F4
@@ -76,7 +76,7 @@ src/VString.cpp:
 	.data       start:0x801CB670 end:0x801CB680
 	.sdata      start:0x8060DF58 end:0x8060DF60
 
-src/VActor.cpp:
+game/VActor.cpp:
 	extab       start:0x800071F4 end:0x800073F8
 	extabindex  start:0x8000D6B8 end:0x8000D88C
 	.text       start:0x800209F4 end:0x80023168
@@ -85,7 +85,7 @@ src/VActor.cpp:
 	.sdata      start:0x8060DF60 end:0x8060DF78
 	.sdata2     start:0x8060F970 end:0x8060F990
 
-src/VApp.cpp:
+game/VApp.cpp:
 	extab       start:0x800073F8 end:0x80007440
 	extabindex  start:0x8000D88C end:0x8000D8F8
 	.text       start:0x80023168 end:0x800237AC
@@ -93,7 +93,7 @@ src/VApp.cpp:
 	.sbss       start:0x8060ED58 end:0x8060ED60
 	.sdata2     start:0x8060F990 end:0x8060F998
 
-src/VColl.cpp:
+game/VColl.cpp:
 	extab       start:0x80007440 end:0x800076B8
 	extabindex  start:0x8000D8F8 end:0x8000DB14
 	.text       start:0x800237AC end:0x80026340
@@ -102,17 +102,17 @@ src/VColl.cpp:
 	.sdata      start:0x8060DF78 end:0x8060DFC0
 	.sdata2     start:0x8060F998 end:0x8060F9A8
 
-src/VColor.cpp:
+game/VColor.cpp:
 	.text       start:0x80026340 end:0x80026370
 	.sdata2     start:0x8060F9A8 end:0x8060F9B0
 
-src/VFile.cpp:
+game/VFile.cpp:
 	extab       start:0x800076B8 end:0x80007708
 	extabindex  start:0x8000DB14 end:0x8000DB8C
 	.text       start:0x80026370 end:0x80026760
 	.rodata     start:0x801B9C58 end:0x801B9C60
 
-src/VFlag.cpp:
+game/utils/VFlag.cpp:
 	extab       start:0x80007708 end:0x80007710
 	extabindex  start:0x8000DB8C end:0x8000DB98
 	.text       start:0x80026760 end:0x80026814
@@ -120,7 +120,7 @@ src/VFlag.cpp:
 	.sdata      start:0x8060DFC0 end:0x8060DFC8
 	.sdata2     start:0x8060F9B0 end:0x8060F9B8
 
-src/VList.cpp:
+game/VList.cpp:
 	extab       start:0x80007710 end:0x80007748
 	extabindex  start:0x8000DB98 end:0x8000DBEC
 	.text       start:0x80026814 end:0x80026C5C
@@ -128,13 +128,13 @@ src/VList.cpp:
 	.sdata      start:0x8060DFC8 end:0x8060DFD0
 	.sdata2     start:0x8060F9B8 end:0x8060F9C8
 
-src/VMath.cpp:
+game/VMath.cpp:
 	extab       start:0x80007748 end:0x800077F0
 	extabindex  start:0x8000DBEC end:0x8000DCE8
 	.text       start:0x80026C5C end:0x80027F34
 	.sdata2     start:0x8060F9C8 end:0x8060F9E0
 
-src/VModel.cpp:
+game/VModel.cpp:
 	extab       start:0x800077F0 end:0x80007AFC
 	extabindex  start:0x8000DCE8 end:0x8000E0B4
 	.text       start:0x80027F34 end:0x8002AE8C
@@ -143,21 +143,21 @@ src/VModel.cpp:
 	.sdata      start:0x8060DFD0 end:0x8060DFF0
 	.sdata2     start:0x8060F9E0 end:0x8060F9E8
 
-src/VRigid.cpp:
+game/VRigid.cpp:
 	extab       start:0x80007AFC end:0x80007B68
 	extabindex  start:0x8000E0B4 end:0x8000E138
 	.text       start:0x8002AE8C end:0x8002BA48
 	.data       start:0x801CB808 end:0x801CB828
 	.sdata2     start:0x8060F9E8 end:0x8060FA10
 
-src/VScene.cpp:
+game/VScene.cpp:
 	extab       start:0x80007B68 end:0x80007BC8
 	extabindex  start:0x8000E138 end:0x8000E1C8
 	.text       start:0x8002BA48 end:0x8002BF34
 	.rodata     start:0x801BA138 end:0x801BA148
 	.data       start:0x801CB828 end:0x801CB850
 
-src/VScript.cpp:
+game/VScript.cpp:
 	extab       start:0x80007BC8 end:0x80007D14
 	extabindex  start:0x8000E1C8 end:0x8000E2A0
 	.text       start:0x8002BF34 end:0x8002C9D0
@@ -166,19 +166,19 @@ src/VScript.cpp:
 	.sdata      start:0x8060DFF0 end:0x8060E010
 	.sdata2     start:0x8060FA10 end:0x8060FA18
 
-src/VModelMgr.cpp:
+game/VModelMgr.cpp:
 	extab       start:0x80007D14 end:0x80007D3C
 	extabindex  start:0x8000E2A0 end:0x8000E2C4
 	.text       start:0x8002C9D0 end:0x8002CB08
 
-src/VSoundMgr.cpp:
+game/VSoundMgr.cpp:
 	extab       start:0x80007D3C end:0x80007E14
 	extabindex  start:0x8000E2C4 end:0x8000E3F0
 	.text       start:0x8002CB08 end:0x8002D634
 	.rodata     start:0x801BA190 end:0x801BA1F0
 	.sdata2     start:0x8060FA18 end:0x8060FA20
 
-src/VActorMgr.cpp:
+game/VActorMgr.cpp:
 	extab       start:0x80007E14 end:0x80007E5C
 	extabindex  start:0x8000E3F0 end:0x8000E45C
 	.text       start:0x8002D634 end:0x8002DB68
@@ -187,7 +187,7 @@ src/VActorMgr.cpp:
 	.sdata      start:0x8060E010 end:0x8060E018
 	.sdata2     start:0x8060FA20 end:0x8060FA38
 
-src/VLayoutMgr.cpp:
+game/VLayoutMgr.cpp:
 	extab       start:0x80007E5C end:0x80008128
 	extabindex  start:0x8000E45C end:0x8000E6F0
 	.text       start:0x8002DB68 end:0x8002F7CC
@@ -196,7 +196,7 @@ src/VLayoutMgr.cpp:
 	.sdata      start:0x8060E018 end:0x8060E030
 	.sdata2     start:0x8060FA38 end:0x8060FA48
 
-src/VEffectMgr.cpp:
+game/VEffectMgr.cpp:
 	extab       start:0x80008128 end:0x80008570
 	extabindex  start:0x8000E6F0 end:0x8000E8A0
 	.text       start:0x8002F7CC end:0x80031678
@@ -205,7 +205,7 @@ src/VEffectMgr.cpp:
 	.sdata      start:0x8060E030 end:0x8060E038
 	.sdata2     start:0x8060FA48 end:0x8060FA50
 
-src/VCameraMgr.cpp:
+game/VCameraMgr.cpp:
 	extab       start:0x80008570 end:0x800086A8
 	extabindex  start:0x8000E8A0 end:0x8000E960
 	.text       start:0x80031678 end:0x80032460
@@ -214,18 +214,18 @@ src/VCameraMgr.cpp:
 	.sdata      start:0x8060E038 end:0x8060E040
 	.sdata2     start:0x8060FA50 end:0x8060FA70
 
-src/VPadMgr.cpp:
+game/VPadMgr.cpp:
 	extab       start:0x800086A8 end:0x80008778
 	extabindex  start:0x8000E960 end:0x8000EA2C
 	.text       start:0x80032460 end:0x80033794
 	.rodata     start:0x801BA458 end:0x801BA570
 	.sdata2     start:0x8060FA70 end:0x8060FA88
 
-src/UserData.cpp:
+game/UserData.cpp:
 	.text       start:0x80033794 end:0x80033880
 	.sdata2     start:0x8060FA88 end:0x8060FA90
 
-src/SaveData.cpp:
+game/SaveData.cpp:
 	extab       start:0x80008778 end:0x80008820
 	extabindex  start:0x8000EA2C end:0x8000EB28
 	.text       start:0x80033880 end:0x8003492C
@@ -236,7 +236,7 @@ src/SaveData.cpp:
 	.sbss       start:0x8060ED60 end:0x8060ED70
 	.sdata2     start:0x8060FA90 end:0x8060FA98
 
-src/SceneMenuAreamap.cpp:
+game/SceneMenuAreamap.cpp:
 	extab       start:0x80008820 end:0x800089A0
 	extabindex  start:0x8000EB28 end:0x8000EBE8
 	.text       start:0x8003492C end:0x80036A04
@@ -245,7 +245,7 @@ src/SceneMenuAreamap.cpp:
 	.sdata      start:0x8060E040 end:0x8060E090
 	.sdata2     start:0x8060FA98 end:0x8060FB20
 
-src/SceneMenuBase.cpp:
+game/SceneMenuBase.cpp:
 	extab       start:0x800089A0 end:0x80008C48
 	extabindex  start:0x8000EBE8 end:0x8000EEB8
 	.text       start:0x80036A04 end:0x8003A834
@@ -257,7 +257,7 @@ src/SceneMenuBase.cpp:
 	.sbss       start:0x8060ED70 end:0x8060ED90
 	.sdata2     start:0x8060FB20 end:0x8060FBD8
 
-src/SceneMenuConfig.cpp:
+game/SceneMenuConfig.cpp:
 	extab       start:0x80008C48 end:0x80008CA0
 	extabindex  start:0x8000EEB8 end:0x8000EEF4
 	.text       start:0x8003A834 end:0x8003B3EC
@@ -266,7 +266,7 @@ src/SceneMenuConfig.cpp:
 	.sdata      start:0x8060E098 end:0x8060E0A8
 	.sdata2     start:0x8060FBD8 end:0x8060FC58
 
-src/SceneMenuCopterSelect.cpp:
+game/SceneMenuCopterSelect.cpp:
 	extab       start:0x80008CA0 end:0x80008DD0
 	extabindex  start:0x8000EEF4 end:0x8000EFB4
 	.text       start:0x8003B3EC end:0x8003D9C4
@@ -275,7 +275,7 @@ src/SceneMenuCopterSelect.cpp:
 	.sdata      start:0x8060E0A8 end:0x8060E0B0
 	.sdata2     start:0x8060FC58 end:0x8060FD10
 
-src/SceneMenuHome.cpp:
+game/SceneMenuHome.cpp:
 	extab       start:0x80008DD0 end:0x80008E28
 	extabindex  start:0x8000EFB4 end:0x8000EFF0
 	.text       start:0x8003D9C4 end:0x8003E1DC
@@ -284,7 +284,7 @@ src/SceneMenuHome.cpp:
 	.sdata      start:0x8060E0B0 end:0x8060E0C0
 	.sdata2     start:0x8060FD10 end:0x8060FD60
 
-src/SceneMenuMissionSelect.cpp:
+game/SceneMenuMissionSelect.cpp:
 	extab       start:0x80008E28 end:0x80008F38
 	extabindex  start:0x8000EFF0 end:0x8000F05C
 	.text       start:0x8003E1DC end:0x800400FC
@@ -293,7 +293,7 @@ src/SceneMenuMissionSelect.cpp:
 	.sdata      start:0x8060E0C0 end:0x8060E1E0
 	.sdata2     start:0x8060FD60 end:0x8060FDB8
 
-src/SceneMenuScore.cpp:
+game/SceneMenuScore.cpp:
 	extab       start:0x80008F38 end:0x80008F98
 	extabindex  start:0x8000F05C end:0x8000F0A4
 	.text       start:0x800400FC end:0x8004085C
@@ -302,7 +302,7 @@ src/SceneMenuScore.cpp:
 	.sdata      start:0x8060E1E0 end:0x8060E1F0
 	.sdata2     start:0x8060FDB8 end:0x8060FDE8
 
-src/SceneMenuShop.cpp:
+game/SceneMenuShop.cpp:
 	extab       start:0x80008F98 end:0x80009008
 	extabindex  start:0x8000F0A4 end:0x8000F104
 	.text       start:0x8004085C end:0x800418E8
@@ -311,13 +311,13 @@ src/SceneMenuShop.cpp:
 	.sdata      start:0x8060E1F0 end:0x8060E240
 	.sdata2     start:0x8060FDE8 end:0x8060FE70
 
-src/SceneMenuShopBuy.cpp:
+game/SceneMenuShopBuy.cpp:
 	.text       start:0x800418E8 end:0x80041AC8
 
-src/SceneMenuShopSell.cpp:
+game/SceneMenuShopSell.cpp:
 	.text       start:0x80041AC8 end:0x80041B70
 
-src/SceneMenuTitle.cpp:
+game/SceneMenuTitle.cpp:
 	extab       start:0x80009008 end:0x800090CC
 	extabindex  start:0x8000F104 end:0x8000F1AC
 	.text       start:0x80041B70 end:0x80044390
@@ -327,7 +327,7 @@ src/SceneMenuTitle.cpp:
 	.sbss       start:0x8060ED90 end:0x8060ED98
 	.sdata2     start:0x8060FE70 end:0x8060FF18
 
-src/SceneMenuTreasure.cpp:
+game/SceneMenuTreasure.cpp:
 	extab       start:0x800090CC end:0x80009124
 	extabindex  start:0x8000F1AC end:0x8000F1E8
 	.text       start:0x80044390 end:0x80044BF0
@@ -336,7 +336,7 @@ src/SceneMenuTreasure.cpp:
 	.sdata      start:0x8060E250 end:0x8060E260
 	.sdata2     start:0x8060FF18 end:0x8060FF68
 
-src/ScenaryMgr.cpp:
+game/ScenaryMgr.cpp:
 	extab       start:0x80009124 end:0x800096B0
 	extabindex  start:0x8000F1E8 end:0x8000F4F4
 	.text       start:0x80044BF0 end:0x800490B8
@@ -345,7 +345,7 @@ src/ScenaryMgr.cpp:
 	.sdata      start:0x8060E260 end:0x8060E280
 	.sdata2     start:0x8060FF68 end:0x8060FF90
 
-src/ResListMgr.cpp:
+game/ResListMgr.cpp:
 	extab       start:0x800096B0 end:0x800097A0
 	extabindex  start:0x8000F4F4 end:0x8000F56C
 	.text       start:0x800490B8 end:0x80049594
@@ -353,13 +353,13 @@ src/ResListMgr.cpp:
 	.data       start:0x801CBD70 end:0x801CBDA0
 	.sdata      start:0x8060E280 end:0x8060E290
 
-src/SubWindow.cpp:
+game/SubWindow.cpp:
 	extab       start:0x800097A0 end:0x800097A8
 	extabindex  start:0x8000F56C end:0x8000F578
 	.text       start:0x80049594 end:0x8004983C
 	.sdata2     start:0x8060FF90 end:0x8060FFB8
 
-src/VAreaMgr.cpp:
+game/VAreaMgr.cpp:
 	extab       start:0x800097A8 end:0x800097F8
 	extabindex  start:0x8000F578 end:0x8000F5D8
 	.text       start:0x8004983C end:0x8004A498
@@ -384,7 +384,7 @@ lib/RVL_SDK/src/revolution/thp/THPDraw.c:
 	.text       start:0x8004BA30 end:0x8004C260
 	.sdata2     start:0x8060FFD8 end:0x80610000
 
-src/SceneMenuMovie.cpp:
+game/SceneMenuMovie.cpp:
 	extab       start:0x80009898 end:0x800098C0
 	extabindex  start:0x8000F6C8 end:0x8000F704
 	.text       start:0x8004C260 end:0x8004C6E4
@@ -394,7 +394,7 @@ src/SceneMenuMovie.cpp:
 	.sbss       start:0x8060EDB0 end:0x8060EDB8
 	.sdata2     start:0x80610000 end:0x80610008
 
-src/SceneMenuSetting2.cpp:
+game/SceneMenuSetting2.cpp:
 	extab       start:0x800098C0 end:0x8000993C
 	extabindex  start:0x8000F704 end:0x8000F740
 	.text       start:0x8004C6E4 end:0x8004D090
@@ -403,7 +403,7 @@ src/SceneMenuSetting2.cpp:
 	.sdata      start:0x8060E2A0 end:0x8060E2A8
 	.sdata2     start:0x80610008 end:0x80610090
 
-src/VTimerMgr.cpp:
+game/VTimerMgr.cpp:
 	extab       start:0x8000993C end:0x80009984
 	extabindex  start:0x8000F740 end:0x8000F794
 	.text       start:0x8004D090 end:0x8004D348
@@ -411,7 +411,7 @@ src/VTimerMgr.cpp:
 	.sdata      start:0x8060E2A8 end:0x8060E2B0
 	.sdata2     start:0x80610090 end:0x80610098
 
-src/VAction.cpp:
+game/VAction.cpp:
 	extab       start:0x80009984 end:0x80009A34
 	extabindex  start:0x8000F794 end:0x8000F7D0
 	.text       start:0x8004D348 end:0x8004DF14
@@ -420,7 +420,7 @@ src/VAction.cpp:
 	.sdata      start:0x8060E2B0 end:0x8060E2C0
 	.sdata2     start:0x80610098 end:0x806100A0
 
-src/AirCannon.cpp:
+game/AirCannon.cpp:
 	extab       start:0x80009A34 end:0x80009A8C
 	extabindex  start:0x8000F7D0 end:0x8000F824
 	.text       start:0x8004DF14 end:0x8004E7FC
@@ -429,14 +429,14 @@ src/AirCannon.cpp:
 	.sdata      start:0x8060E2C0 end:0x8060E2C8
 	.sdata2     start:0x806100A0 end:0x806100B8
 
-src/LiftCup.cpp:
+game/LiftCup.cpp:
 	extab       start:0x80009A8C end:0x80009AD4
 	extabindex  start:0x8000F824 end:0x8000F878
 	.text       start:0x8004E7FC end:0x8004EEAC
 	.rodata     start:0x801BD550 end:0x801BD580
 	.sdata2     start:0x806100B8 end:0x806100C8
 
-src/SceneMenuSDataCheak.cpp:
+game/SceneMenuSDataCheak.cpp:
 	extab       start:0x80009AD4 end:0x80009B98
 	extabindex  start:0x8000F878 end:0x8000F908
 	.text       start:0x8004EEAC end:0x80050048
@@ -445,7 +445,7 @@ src/SceneMenuSDataCheak.cpp:
 	.sdata      start:0x8060E2C8 end:0x8060E2D8
 	.sdata2     start:0x806100C8 end:0x80610110
 
-src/SceneMenuDataAccess.cpp:
+game/SceneMenuDataAccess.cpp:
 	extab       start:0x80009B98 end:0x80009CA8
 	extabindex  start:0x8000F908 end:0x8000F9A4
 	.text       start:0x80050048 end:0x80052D60
@@ -454,7 +454,7 @@ src/SceneMenuDataAccess.cpp:
 	.sdata      start:0x8060E2D8 end:0x8060E2E8
 	.sdata2     start:0x80610110 end:0x806101C8
 
-src/SceneMenuLogo.cpp:
+game/SceneMenuLogo.cpp:
 	extab       start:0x80009CA8 end:0x80009D50
 	extabindex  start:0x8000F9A4 end:0x8000F9F8
 	.text       start:0x80052D60 end:0x80053770
@@ -463,7 +463,7 @@ src/SceneMenuLogo.cpp:
 	.sdata      start:0x8060E2E8 end:0x8060E300
 	.sdata2     start:0x806101C8 end:0x806101F0
 
-src/Scenary.cpp:
+game/Scenary.cpp:
 	extab       start:0x80009D50 end:0x80009D88
 	extabindex  start:0x8000F9F8 end:0x8000FA4C
 	.text       start:0x80053770 end:0x80053FA0
@@ -472,7 +472,7 @@ src/Scenary.cpp:
 	.sdata      start:0x8060E300 end:0x8060E308
 	.sdata2     start:0x806101F0 end:0x80610200
 
-src/VHomeButton.cpp:
+game/VHomeButton.cpp:
 	extab       start:0x80009D88 end:0x80009DE0
 	extabindex  start:0x8000FA4C end:0x8000FAD0
 	.text       start:0x80053FA0 end:0x80054BC8
@@ -480,7 +480,7 @@ src/VHomeButton.cpp:
 	.data       start:0x801CC3B8 end:0x801CC3D8
 	.sdata2     start:0x80610200 end:0x80610238
 
-src/ActHeliPad.cpp:
+game/ActHeliPad.cpp:
 	extab       start:0x80009DE0 end:0x80009E08
 	extabindex  start:0x8000FAD0 end:0x8000FB0C
 	.text       start:0x80054BC8 end:0x80054EB0
@@ -489,7 +489,7 @@ src/ActHeliPad.cpp:
 	.sdata      start:0x8060E308 end:0x8060E318
 	.sdata2     start:0x80610238 end:0x80610258
 
-src/ActRing.cpp:
+game/ActRing.cpp:
 	extab       start:0x80009E08 end:0x80009E38
 	extabindex  start:0x8000FB0C end:0x8000FB54
 	.text       start:0x80054EB0 end:0x80055278
@@ -498,7 +498,7 @@ src/ActRing.cpp:
 	.sdata      start:0x8060E318 end:0x8060E320
 	.sdata2     start:0x80610258 end:0x80610280
 
-src/ActCoin.cpp:
+game/ActCoin.cpp:
 	extab       start:0x80009E38 end:0x80009E50
 	extabindex  start:0x8000FB54 end:0x8000FB78
 	.text       start:0x80055278 end:0x800553A0
@@ -507,13 +507,13 @@ src/ActCoin.cpp:
 	.sdata      start:0x8060E320 end:0x8060E328
 	.sdata2     start:0x80610280 end:0x80610288
 
-src/ActorFactory.cpp:
+game/ActorFactory.cpp:
 	extab       start:0x80009E50 end:0x80009EE8
 	extabindex  start:0x8000FB78 end:0x8000FB84
 	.text       start:0x800553A0 end:0x80055538
 	.data       start:0x801CC548 end:0x801CC588
 
-src/SceneMenuMain2.cpp:
+game/SceneMenuMain2.cpp:
 	extab       start:0x80009EE8 end:0x80009F08
 	extabindex  start:0x8000FB84 end:0x8000FBB4
 	.text       start:0x80055538 end:0x80056424
@@ -521,7 +521,7 @@ src/SceneMenuMain2.cpp:
 	.data       start:0x801CC588 end:0x801CC5E8
 	.sdata      start:0x8060E328 end:0x8060E330
 
-src/SceneMenuMain.cpp:
+game/SceneMenuMain.cpp:
 	extab       start:0x80009F08 end:0x80009F28
 	extabindex  start:0x8000FBB4 end:0x8000FBE4
 	.text       start:0x80056424 end:0x80056F88
@@ -529,7 +529,7 @@ src/SceneMenuMain.cpp:
 	.data       start:0x801CC5E8 end:0x801CC620
 	.sdata      start:0x8060E330 end:0x8060E338
 
-src/ActMovable.cpp:
+game/ActMovable.cpp:
 	extab       start:0x80009F28 end:0x80009F84
 	extabindex  start:0x8000FBE4 end:0x8000FC38
 	.text       start:0x80056F88 end:0x800572C8
@@ -538,14 +538,14 @@ src/ActMovable.cpp:
 	.sdata      start:0x8060E338 end:0x8060E340
 	.sdata2     start:0x80610288 end:0x80610290
 
-src/ActScnBase.cpp:
+game/ActScnBase.cpp:
 	extab       start:0x80009F84 end:0x80009FD4
 	extabindex  start:0x8000FC38 end:0x8000FC74
 	.text       start:0x800572C8 end:0x8005773C
 	.data       start:0x801CC690 end:0x801CC6E0
 	.sdata2     start:0x80610290 end:0x806102A0
 
-src/SceneGameInit.cpp:
+game/SceneGameInit.cpp:
 	extab       start:0x80009FD4 end:0x8000A1E8
 	extabindex  start:0x8000FC74 end:0x8000FD28
 	.text       start:0x8005773C end:0x80059F6C
@@ -553,7 +553,7 @@ src/SceneGameInit.cpp:
 	.data       start:0x801CC6E0 end:0x801CC6F0
 	.sdata2     start:0x806102A0 end:0x806102E0
 
-src/ActTarget.cpp:
+game/ActTarget.cpp:
 	extab       start:0x8000A1E8 end:0x8000A230
 	extabindex  start:0x8000FD28 end:0x8000FD58
 	.text       start:0x80059F6C end:0x8005A1F4
@@ -561,7 +561,7 @@ src/ActTarget.cpp:
 	.data       start:0x801CC6F0 end:0x801CC760
 	.sdata      start:0x8060E340 end:0x8060E348
 
-src/ActBalloon.cpp:
+game/ActBalloon.cpp:
 	extab       start:0x8000A230 end:0x8000A294
 	extabindex  start:0x8000FD58 end:0x8000FD94
 	.text       start:0x8005A1F4 end:0x8005A944
@@ -570,7 +570,7 @@ src/ActBalloon.cpp:
 	.sdata      start:0x8060E348 end:0x8060E350
 	.sdata2     start:0x806102E0 end:0x80610320
 
-src/SceneMenuSoundSetting.cpp:
+game/SceneMenuSoundSetting.cpp:
 	extab       start:0x8000A294 end:0x8000A304
 	extabindex  start:0x8000FD94 end:0x8000FDF4
 	.text       start:0x8005A944 end:0x8005BC8C
@@ -579,7 +579,7 @@ src/SceneMenuSoundSetting.cpp:
 	.sdata      start:0x8060E350 end:0x8060E360
 	.sdata2     start:0x80610320 end:0x80610370
 
-src/SceneMenuStrap.cpp:
+game/SceneMenuStrap.cpp:
 	extab       start:0x8000A304 end:0x8000A35C
 	extabindex  start:0x8000FDF4 end:0x8000FE30
 	.text       start:0x8005BC8C end:0x8005C5E0
@@ -588,7 +588,7 @@ src/SceneMenuStrap.cpp:
 	.sdata      start:0x8060E360 end:0x8060E368
 	.sdata2     start:0x80610370 end:0x80610398
 
-src/MarkerMgr.cpp:
+game/MarkerMgr.cpp:
 	extab       start:0x8000A35C end:0x8000A564
 	extabindex  start:0x8000FE30 end:0x8000FF44
 	.text       start:0x8005C5E0 end:0x8005D680
@@ -597,7 +597,7 @@ src/MarkerMgr.cpp:
 	.sdata      start:0x8060E368 end:0x8060E378
 	.sdata2     start:0x80610398 end:0x806103B0
 
-src/SceneMenuMain4.cpp:
+game/SceneMenuMain4.cpp:
 	extab       start:0x8000A564 end:0x8000A584
 	extabindex  start:0x8000FF44 end:0x8000FF74
 	.text       start:0x8005D680 end:0x8005DE84
@@ -605,7 +605,7 @@ src/SceneMenuMain4.cpp:
 	.data       start:0x801CC8D0 end:0x801CC928
 	.sdata      start:0x8060E378 end:0x8060E380
 
-src/SceneMenuMain3.cpp:
+game/SceneMenuMain3.cpp:
 	extab       start:0x8000A584 end:0x8000A5A4
 	extabindex  start:0x8000FF74 end:0x8000FFA4
 	.text       start:0x8005DE84 end:0x8005EAFC
@@ -614,7 +614,7 @@ src/SceneMenuMain3.cpp:
 	.sdata      start:0x8060E380 end:0x8060E388
 	.sdata2     start:0x806103B0 end:0x806103C0
 
-src/ScnHospital02.cpp:
+game/ScnHospital02.cpp:
 	extab       start:0x8000A5A4 end:0x8000A674
 	extabindex  start:0x8000FFA4 end:0x8000FFD4
 	.text       start:0x8005EAFC end:0x8005F324
@@ -623,7 +623,7 @@ src/ScnHospital02.cpp:
 	.sdata      start:0x8060E388 end:0x8060E398
 	.sdata2     start:0x806103C0 end:0x806103D8
 
-src/ScnKidsRoom02.cpp:
+game/ScnKidsRoom02.cpp:
 	extab       start:0x8000A674 end:0x8000A69C
 	extabindex  start:0x8000FFD4 end:0x8000FFF8
 	.text       start:0x8005F324 end:0x8005F7B0
@@ -632,7 +632,7 @@ src/ScnKidsRoom02.cpp:
 	.sdata      start:0x8060E398 end:0x8060E3A8
 	.sdata2     start:0x806103D8 end:0x806103E0
 
-src/ScnKidsRoom03.cpp:
+game/ScnKidsRoom03.cpp:
 	extab       start:0x8000A69C end:0x8000A764
 	extabindex  start:0x8000FFF8 end:0x80010028
 	.text       start:0x8005F7B0 end:0x800601DC
@@ -641,7 +641,7 @@ src/ScnKidsRoom03.cpp:
 	.sdata      start:0x8060E3A8 end:0x8060E3B8
 	.sdata2     start:0x806103E0 end:0x80610400
 
-src/ScnKidsRoom04.cpp:
+game/ScnKidsRoom04.cpp:
 	extab       start:0x8000A764 end:0x8000A814
 	extabindex  start:0x80010028 end:0x80010064
 	.text       start:0x800601DC end:0x80060DDC
@@ -650,7 +650,7 @@ src/ScnKidsRoom04.cpp:
 	.sdata      start:0x8060E3B8 end:0x8060E3C8
 	.sdata2     start:0x80610400 end:0x80610410
 
-src/ScnPark02.cpp:
+game/ScnPark02.cpp:
 	extab       start:0x8000A814 end:0x8000A8BC
 	extabindex  start:0x80010064 end:0x80010094
 	.text       start:0x80060DDC end:0x80061608
@@ -659,7 +659,7 @@ src/ScnPark02.cpp:
 	.sdata      start:0x8060E3C8 end:0x8060E3D8
 	.sdata2     start:0x80610410 end:0x80610438
 
-src/ScnPark03.cpp:
+game/ScnPark03.cpp:
 	extab       start:0x8000A8BC end:0x8000A8E4
 	extabindex  start:0x80010094 end:0x800100B8
 	.text       start:0x80061608 end:0x80061AC8
@@ -668,7 +668,7 @@ src/ScnPark03.cpp:
 	.sdata      start:0x8060E3D8 end:0x8060E3E8
 	.sdata2     start:0x80610438 end:0x80610450
 
-src/ScnPark05.cpp:
+game/ScnPark05.cpp:
 	extab       start:0x8000A8E4 end:0x8000A924
 	extabindex  start:0x800100B8 end:0x800100DC
 	.text       start:0x80061AC8 end:0x80061FA4
@@ -677,7 +677,7 @@ src/ScnPark05.cpp:
 	.sdata      start:0x8060E3E8 end:0x8060E3F8
 	.sdata2     start:0x80610450 end:0x80610458
 
-src/ScnPark06.cpp:
+game/ScnPark06.cpp:
 	extab       start:0x8000A924 end:0x8000A9FC
 	extabindex  start:0x800100DC end:0x80010118
 	.text       start:0x80061FA4 end:0x80062A98
@@ -686,7 +686,7 @@ src/ScnPark06.cpp:
 	.sdata      start:0x8060E3F8 end:0x8060E408
 	.sdata2     start:0x80610458 end:0x80610478
 
-src/ScnRing.cpp:
+game/ScnRing.cpp:
 	extab       start:0x8000A9FC end:0x8000AA24
 	extabindex  start:0x80010118 end:0x8001013C
 	.text       start:0x80062A98 end:0x80063050
@@ -695,7 +695,7 @@ src/ScnRing.cpp:
 	.sdata      start:0x8060E408 end:0x8060E418
 	.sdata2     start:0x80610478 end:0x80610490
 
-src/ScnStar.cpp:
+game/ScnStar.cpp:
 	extab       start:0x8000AA24 end:0x8000AA54
 	extabindex  start:0x8001013C end:0x8001016C
 	.text       start:0x80063050 end:0x800635A0
@@ -704,7 +704,7 @@ src/ScnStar.cpp:
 	.sdata      start:0x8060E418 end:0x8060E428
 	.sdata2     start:0x80610490 end:0x80610498
 
-src/ScnHeliPad.cpp:
+game/ScnHeliPad.cpp:
 	extab       start:0x8000AA54 end:0x8000AA7C
 	extabindex  start:0x8001016C end:0x80010190
 	.text       start:0x800635A0 end:0x80063A04
@@ -713,7 +713,7 @@ src/ScnHeliPad.cpp:
 	.sdata      start:0x8060E428 end:0x8060E438
 	.sdata2     start:0x80610498 end:0x806104B0
 
-src/ScnHospital03.cpp:
+game/ScnHospital03.cpp:
 	extab       start:0x8000AA7C end:0x8000AB30
 	extabindex  start:0x80010190 end:0x800101C0
 	.text       start:0x80063A04 end:0x80064458
@@ -722,7 +722,7 @@ src/ScnHospital03.cpp:
 	.sdata      start:0x8060E438 end:0x8060E448
 	.sdata2     start:0x806104B0 end:0x806104D0
 
-src/ScnHospital05.cpp:
+game/ScnHospital05.cpp:
 	extab       start:0x8000AB30 end:0x8000ABEC
 	extabindex  start:0x800101C0 end:0x800101FC
 	.text       start:0x80064458 end:0x80064ECC
@@ -731,7 +731,7 @@ src/ScnHospital05.cpp:
 	.sdata      start:0x8060E448 end:0x8060E458
 	.sdata2     start:0x806104D0 end:0x806104E8
 
-src/ScnKidsRoom06.cpp:
+game/ScnKidsRoom06.cpp:
 	extab       start:0x8000ABEC end:0x8000AC3C
 	extabindex  start:0x800101FC end:0x80010238
 	.text       start:0x80064ECC end:0x800655EC
@@ -740,7 +740,7 @@ src/ScnKidsRoom06.cpp:
 	.sdata      start:0x8060E458 end:0x8060E468
 	.sdata2     start:0x806104E8 end:0x806104F8
 
-src/ScnHospital06.cpp:
+game/ScnHospital06.cpp:
 	extab       start:0x8000AC3C end:0x8000AC84
 	extabindex  start:0x80010238 end:0x80010268
 	.text       start:0x800655EC end:0x80065A38
@@ -749,7 +749,7 @@ src/ScnHospital06.cpp:
 	.sdata      start:0x8060E468 end:0x8060E478
 	.sdata2     start:0x806104F8 end:0x80610500
 
-src/SceneGameMulti.cpp:
+game/SceneGameMulti.cpp:
 	extab       start:0x8000AC84 end:0x8000ACC4
 	extabindex  start:0x80010268 end:0x800102C8
 	.text       start:0x80065A38 end:0x80067CF4
@@ -759,7 +759,7 @@ src/SceneGameMulti.cpp:
 	.sbss       start:0x8060EDB8 end:0x8060EDD8
 	.sdata2     start:0x80610500 end:0x80610538
 
-src/SceneMenuMain5.cpp:
+game/SceneMenuMain5.cpp:
 	extab       start:0x8000ACC4 end:0x8000ACE4
 	extabindex  start:0x800102C8 end:0x800102F8
 	.text       start:0x80067CF4 end:0x80068BD0
@@ -767,7 +767,7 @@ src/SceneMenuMain5.cpp:
 	.data       start:0x801CCF30 end:0x801CCF88
 	.sdata      start:0x8060E498 end:0x8060E4A0
 
-src/SceneMenuPartSelect.cpp:
+game/SceneMenuPartSelect.cpp:
 	extab       start:0x8000ACE4 end:0x8000AD88
 	extabindex  start:0x800102F8 end:0x80010388
 	.text       start:0x80068BD0 end:0x80069DF8
@@ -777,7 +777,7 @@ src/SceneMenuPartSelect.cpp:
 	.sbss       start:0x8060EDD8 end:0x8060EDE0
 	.sdata2     start:0x80610538 end:0x80610590
 
-src/SceneMenuItemList.cpp:
+game/SceneMenuItemList.cpp:
 	extab       start:0x8000AD88 end:0x8000B13C
 	extabindex  start:0x80010388 end:0x80010598
 	.text       start:0x80069DF8 end:0x800706EC
@@ -787,7 +787,7 @@ src/SceneMenuItemList.cpp:
 	.sbss       start:0x8060EDE0 end:0x8060EDE8
 	.sdata2     start:0x80610590 end:0x80610728
 
-src/ScnHotel03.cpp:
+game/ScnHotel03.cpp:
 	extab       start:0x8000B13C end:0x8000B244
 	extabindex  start:0x80010598 end:0x800105C8
 	.text       start:0x800706EC end:0x8007108C
@@ -796,7 +796,7 @@ src/ScnHotel03.cpp:
 	.sdata      start:0x8060E5C8 end:0x8060E5D8
 	.sdata2     start:0x80610728 end:0x80610748
 
-src/ScnHotel02.cpp:
+game/ScnHotel02.cpp:
 	extab       start:0x8000B244 end:0x8000B2F8
 	extabindex  start:0x800105C8 end:0x800105F8
 	.text       start:0x8007108C end:0x8007183C
@@ -805,7 +805,7 @@ src/ScnHotel02.cpp:
 	.sdata      start:0x8060E5D8 end:0x8060E5E8
 	.sdata2     start:0x80610748 end:0x80610760
 
-src/ScnHotel05.cpp:
+game/ScnHotel05.cpp:
 	extab       start:0x8000B2F8 end:0x8000B3C4
 	extabindex  start:0x800105F8 end:0x8001064C
 	.text       start:0x8007183C end:0x80072370
@@ -814,7 +814,7 @@ src/ScnHotel05.cpp:
 	.sdata      start:0x8060E5E8 end:0x8060E5F0
 	.sdata2     start:0x80610760 end:0x80610780
 
-src/ScnHotel06.cpp:
+game/ScnHotel06.cpp:
 	extab       start:0x8000B3C4 end:0x8000B464
 	extabindex  start:0x8001064C end:0x80010688
 	.text       start:0x80072370 end:0x80072E28
@@ -823,7 +823,7 @@ src/ScnHotel06.cpp:
 	.sdata      start:0x8060E5F0 end:0x8060E600
 	.sdata2     start:0x80610780 end:0x80610798
 
-src/ScnCompany02.cpp:
+game/ScnCompany02.cpp:
 	extab       start:0x8000B464 end:0x8000B518
 	extabindex  start:0x80010688 end:0x800106B8
 	.text       start:0x80072E28 end:0x80073734
@@ -832,7 +832,7 @@ src/ScnCompany02.cpp:
 	.sdata      start:0x8060E600 end:0x8060E610
 	.sdata2     start:0x80610798 end:0x806107B0
 
-src/ScnCompany05.cpp:
+game/ScnCompany05.cpp:
 	extab       start:0x8000B518 end:0x8000B5C0
 	extabindex  start:0x800106B8 end:0x80010700
 	.text       start:0x80073734 end:0x800744C4
@@ -841,7 +841,7 @@ src/ScnCompany05.cpp:
 	.sdata      start:0x8060E610 end:0x8060E618
 	.sdata2     start:0x806107B0 end:0x806107D0
 
-src/ScnCompany03.cpp:
+game/ScnCompany03.cpp:
 	extab       start:0x8000B5C0 end:0x8000B608
 	extabindex  start:0x80010700 end:0x80010730
 	.text       start:0x800744C4 end:0x80074A64
@@ -850,7 +850,7 @@ src/ScnCompany03.cpp:
 	.sdata      start:0x8060E618 end:0x8060E628
 	.sdata2     start:0x806107D0 end:0x806107D8
 
-src/ScnCompany06.cpp:
+game/ScnCompany06.cpp:
 	extab       start:0x8000B608 end:0x8000B6A8
 	extabindex  start:0x80010730 end:0x8001076C
 	.text       start:0x80074A64 end:0x8007560C
@@ -859,7 +859,7 @@ src/ScnCompany06.cpp:
 	.sdata      start:0x8060E628 end:0x8060E638
 	.sdata2     start:0x806107D8 end:0x806107F0
 
-src/SceneMenuMultiCopterSelect.cpp:
+game/SceneMenuMultiCopterSelect.cpp:
 	extab       start:0x8000B6A8 end:0x8000B740
 	extabindex  start:0x8001076C end:0x800107E4
 	.text       start:0x8007560C end:0x80077054
@@ -868,7 +868,7 @@ src/SceneMenuMultiCopterSelect.cpp:
 	.sdata      start:0x8060E638 end:0x8060E648
 	.sdata2     start:0x806107F0 end:0x80610830
 
-src/SceneMenuMultiModeSelect.cpp:
+game/SceneMenuMultiModeSelect.cpp:
 	extab       start:0x8000B740 end:0x8000B7B8
 	extabindex  start:0x800107E4 end:0x80010850
 	.text       start:0x80077054 end:0x80078634
@@ -877,7 +877,7 @@ src/SceneMenuMultiModeSelect.cpp:
 	.sdata      start:0x8060E648 end:0x8060E658
 	.sdata2     start:0x80610830 end:0x80610880
 
-src/SceneMenuKeySetting.cpp:
+game/SceneMenuKeySetting.cpp:
 	extab       start:0x8000B7B8 end:0x8000B908
 	extabindex  start:0x80010850 end:0x800108E0
 	.text       start:0x80078634 end:0x8007A160
@@ -886,7 +886,7 @@ src/SceneMenuKeySetting.cpp:
 	.sdata      start:0x8060E658 end:0x8060E668
 	.sdata2     start:0x80610880 end:0x806108D0
 
-src/ScnBGShop03.cpp:
+game/ScnBGShop03.cpp:
 	extab       start:0x8000B908 end:0x8000B9B8
 	extabindex  start:0x800108E0 end:0x80010934
 	.text       start:0x8007A160 end:0x8007B124
@@ -895,7 +895,7 @@ src/ScnBGShop03.cpp:
 	.sdata      start:0x8060E668 end:0x8060E678
 	.sdata2     start:0x806108D0 end:0x806108E0
 
-src/ScnBGShop02.cpp:
+game/ScnBGShop02.cpp:
 	extab       start:0x8000B9B8 end:0x8000BB00
 	extabindex  start:0x80010934 end:0x80010970
 	.text       start:0x8007B124 end:0x8007BFC0
@@ -904,7 +904,7 @@ src/ScnBGShop02.cpp:
 	.sdata      start:0x8060E678 end:0x8060E688
 	.sdata2     start:0x806108E0 end:0x80610908
 
-src/ScnBGShop05.cpp:
+game/ScnBGShop05.cpp:
 	extab       start:0x8000BB00 end:0x8000BBE8
 	extabindex  start:0x80010970 end:0x800109C4
 	.text       start:0x8007BFC0 end:0x8007D574
@@ -913,7 +913,7 @@ src/ScnBGShop05.cpp:
 	.sdata      start:0x8060E688 end:0x8060E698
 	.sdata2     start:0x80610908 end:0x80610920
 
-src/ScnJapan03.cpp:
+game/ScnJapan03.cpp:
 	extab       start:0x8000BBE8 end:0x8000BC40
 	extabindex  start:0x800109C4 end:0x80010A0C
 	.text       start:0x8007D574 end:0x8007DF9C
@@ -922,7 +922,7 @@ src/ScnJapan03.cpp:
 	.sdata      start:0x8060E698 end:0x8060E6A0
 	.sdata2     start:0x80610920 end:0x80610938
 
-src/ScnJapan02.cpp:
+game/ScnJapan02.cpp:
 	extab       start:0x8000BC40 end:0x8000BCD8
 	extabindex  start:0x80010A0C end:0x80010A3C
 	.text       start:0x8007DF9C end:0x8007EC84
@@ -931,7 +931,7 @@ src/ScnJapan02.cpp:
 	.sdata      start:0x8060E6A0 end:0x8060E6B0
 	.sdata2     start:0x80610938 end:0x80610958
 
-src/ScnBGShop06.cpp:
+game/ScnBGShop06.cpp:
 	extab       start:0x8000BCD8 end:0x8000BE44
 	extabindex  start:0x80010A3C end:0x80010A84
 	.text       start:0x8007EC84 end:0x8007FBEC
@@ -940,7 +940,7 @@ src/ScnBGShop06.cpp:
 	.sdata      start:0x8060E6B0 end:0x8060E6C0
 	.sdata2     start:0x80610958 end:0x80610980
 
-src/ScnJapan05.cpp:
+game/ScnJapan05.cpp:
 	extab       start:0x8000BE44 end:0x8000BF34
 	extabindex  start:0x80010A84 end:0x80010B08
 	.text       start:0x8007FBEC end:0x80081430
@@ -949,7 +949,7 @@ src/ScnJapan05.cpp:
 	.sdata      start:0x8060E6C0 end:0x8060E6D0
 	.sdata2     start:0x80610980 end:0x806109D0
 
-src/ScnJapan06.cpp:
+game/ScnJapan06.cpp:
 	extab       start:0x8000BF34 end:0x8000BFA4
 	extabindex  start:0x80010B08 end:0x80010B50
 	.text       start:0x80081430 end:0x80082114
@@ -958,7 +958,7 @@ src/ScnJapan06.cpp:
 	.sdata      start:0x8060E6D0 end:0x8060E6E0
 	.sdata2     start:0x806109D0 end:0x806109E8
 
-src/ScenaryMisc.cpp:
+game/ScenaryMisc.cpp:
 	extab       start:0x8000BFA4 end:0x8000C058
 	extabindex  start:0x80010B50 end:0x80010BC8
 	.text       start:0x80082114 end:0x80082C14
@@ -967,7 +967,7 @@ src/ScenaryMisc.cpp:
 	.sdata      start:0x8060E6E0 end:0x8060E6E8
 	.sdata2     start:0x806109E8 end:0x806109F8
 
-src/SceneGameMultiInit.cpp:
+game/SceneGameMultiInit.cpp:
 	extab       start:0x8000C058 end:0x8000C1D4
 	extabindex  start:0x80010BC8 end:0x80010C1C
 	.text       start:0x80082C14 end:0x80084694
@@ -975,7 +975,7 @@ src/SceneGameMultiInit.cpp:
 	.sdata      start:0x8060E6E8 end:0x8060E708
 	.sdata2     start:0x806109F8 end:0x80610A40
 
-src/ScnStarMP.cpp:
+game/ScnStarMP.cpp:
 	extab       start:0x8000C1D4 end:0x8000C204
 	extabindex  start:0x80010C1C end:0x80010C4C
 	.text       start:0x80084694 end:0x80084BE4
@@ -984,7 +984,7 @@ src/ScnStarMP.cpp:
 	.sdata      start:0x8060E708 end:0x8060E718
 	.sdata2     start:0x80610A40 end:0x80610A48
 
-src/ScnRingMP.cpp:
+game/ScnRingMP.cpp:
 	extab       start:0x8000C204 end:0x8000C234
 	extabindex  start:0x80010C4C end:0x80010C7C
 	.text       start:0x80084BE4 end:0x8008515C
@@ -993,7 +993,7 @@ src/ScnRingMP.cpp:
 	.sdata      start:0x8060E718 end:0x8060E720
 	.sdata2     start:0x80610A48 end:0x80610A50
 
-src/SceneMenuClassicCheak.cpp:
+game/SceneMenuClassicCheak.cpp:
 	extab       start:0x8000C234 end:0x8000C28C
 	extabindex  start:0x80010C7C end:0x80010CB8
 	.text       start:0x8008515C end:0x8008571C
@@ -1003,14 +1003,14 @@ src/SceneMenuClassicCheak.cpp:
 	.sbss       start:0x8060EDE8 end:0x8060EDF0
 	.sdata2     start:0x80610A50 end:0x80610A70
 
-src/Rotor.cpp:
+game/Rotor.cpp:
 	extab       start:0x8000C28C end:0x8000C2AC
 	extabindex  start:0x80010CB8 end:0x80010CD0
 	.text       start:0x8008571C end:0x80085CF0
 	.rodata     start:0x801C4330 end:0x801C4390
 	.sdata2     start:0x80610A70 end:0x80610A88
 
-src/BackThread.cpp:
+game/BackThread.cpp:
 	extab       start:0x8000C2AC end:0x8000C2FC
 	extabindex  start:0x80010CD0 end:0x80010D48
 	.text       start:0x80085CF0 end:0x800864F0
@@ -2391,7 +2391,7 @@ lib/RVL_SDK/src/revolution/tpl/TPL.c:
 	.data       start:0x801ECE18 end:0x801ECE48
 	.sdata      start:0x8060EBB8 end:0x8060EBC0
 
-src/report.cpp:
+game/report.cpp:
 	extab       start:0x8000C628 end:0x8000C680
 	extabindex  start:0x8001106C end:0x800110B4
 	.text       start:0x80118DDC end:0x801194A0
@@ -2401,7 +2401,7 @@ src/report.cpp:
 	.sbss       start:0x8060F520 end:0x8060F528
 	.sdata2     start:0x80611350 end:0x80611358
 
-src/resource.cpp:
+game/resource.cpp:
 	extab       start:0x8000C680 end:0x8000CA14
 	extabindex  start:0x800110B4 end:0x8001112C
 	extabindex  start:0x8001112C end:0x80011228
@@ -2427,7 +2427,7 @@ src/resource.cpp:
 	.data       start:0x801ECF48 end:0x801ED070
 	.bss        start:0x805C7DD0 end:0x805C7DE8
 
-src/system.cpp:
+game/system.cpp:
 	extab       start:0x8000CA14 end:0x8000CAA4
 	extabindex  start:0x80011510 end:0x80011588
 	extabindex  start:0x80011588 end:0x800115AC

@@ -1,0 +1,11 @@
+#ifndef MSL_CPP_CSTRING_H
+#define MSL_CPP_CSTRING_H
+#include <string.h>
+#ifdef __cplusplus
+
+namespace std {
+    char* strchr(char*, int);
+} // namespace std
+
+#endif
+#endif

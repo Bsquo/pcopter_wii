@@ -193,13 +193,17 @@ cflags_base = [
     "-inline auto",
     '-pragma "cats off"',
     '-pragma "warn_notinlined off"',
+    # We have to use this pragma to avoid the empty string in CVFilePath::Init()
+    # to reuse the same string as the one in CVFilePath::CVFilePath()
+    '-pragma "dont_reuse_strings on"',
     "-maxerrors 1",
     "-nosyspath",
-    "-RTTI off",
+    "-RTTI on",
     "-fp_contract on",
     "-str reuse",
     "-multibyte",  # For Wii compilers, replace with `-enc SJIS`
     "-i include",
+    "-i include/MSL",
     f"-i build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
@@ -215,6 +219,7 @@ else:
 # Game code flags
 cflags_game = [
     *cflags_base,
+    "-lang=c++",
     "-Cpp_exceptions on",
     "-fp fmadd",
     "-use_lmw_stmw on",
@@ -338,7 +343,7 @@ config.libs = [
             Object(NonMatching, "game/app/VApp.cpp"),
             Object(NonMatching, "game/coll/VColl.cpp"),
             Object(Matching,    "game/gfx/VColor.cpp"),
-            Object(NonMatching, "game/utils/VFile.cpp"),
+            Object(Matching,    "game/utils/VFile.cpp"),
             Object(Matching,    "game/utils/VFlag.cpp"),
             Object(Matching,    "game/utils/VList.cpp"),
             Object(NonMatching, "game/math/VMath.cpp"),

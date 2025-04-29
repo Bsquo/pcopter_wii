@@ -1,43 +1,19 @@
-Some Game  
-[![Build Status]][actions] ![Progress] ![DOL Progress] ![RELs Progress] [![Discord Badge]][discord]
+Radio Helicopter
+[![Discord Badge]][discord]
 =============
 
-<!--
-Replace with your repository's URL.
--->
-[Build Status]: https://github.com/zeldaret/tww/actions/workflows/build.yml/badge.svg
-[actions]: https://github.com/zeldaret/tww/actions/workflows/build.yml
-<!---
-Code progress URL:
-https://progress.decomp.club/data/[project]/[version]/all/?mode=shield&measure=code
-URL encoded then appended to: https://img.shields.io/endpoint?label=Code&url=
--->
-[Progress]: https://img.shields.io/endpoint?label=Code&url=https%3A%2F%2Fprogress.decomp.club%2Fdata%2Ftww%2FGZLE01%2Fall%2F%3Fmode%3Dshield%26measure%3Dcode
-<!---
-DOL progress URL:
-https://progress.decomp.club/data/[project]/[version]/dol/?mode=shield&measure=code
-URL encoded then appended to: https://img.shields.io/endpoint?label=DOL&url=
--->
-[DOL Progress]: https://img.shields.io/endpoint?label=DOL&url=https%3A%2F%2Fprogress.decomp.club%2Fdata%2Ftww%2FGZLE01%2Fdol%2F%3Fmode%3Dshield%26measure%3Dcode
-<!--
-REL progress URL:
-https://progress.decomp.club/data/[project]/[version]/modules/?mode=shield&measure=code
-URL encoded then appended to: https://img.shields.io/endpoint?label=RELs&url=
--->
-[RELs Progress]: https://img.shields.io/endpoint?label=RELs&url=https%3A%2F%2Fprogress.decomp.club%2Fdata%2Ftww%2FGZLE01%2Fmodules%2F%3Fmode%3Dshield%26measure%3Dcode
-<!--
-Replace with your Discord server's ID and invite URL.
--->
 [Discord Badge]: https://img.shields.io/discord/727908905392275526?color=%237289DA&logo=discord&logoColor=%23FFFFFF
-[discord]: https://discord.gg/hKx3FJJgrV
+[discord]: https://discord.gg/AsBpasctyc
 
-A work-in-progress decompilation of Some Game.
+This repository contains a work-in-progress decompilation of Radio Helicopter, also known as *MiniCopter: Adventure Flight* in the Americas, and *プチコプターWii アドベンチャーフライト* (*Puchi Copter Wii: Adventure Flight*) in Japan.
 
 This repository does **not** contain any game assets or assembly whatsoever. An existing copy of the game is required.
 
 Supported versions:
 
-- `GAMEID`: Rev 0 (USA)
+- `RGCPGT` (EUR)
+
+We recommend joining [our Discord server](https://discord.gg/AsBpasctyc) for discussing the game, as well as for getting help if needed.
 
 Dependencies
 ============
@@ -90,7 +66,7 @@ Building
   git clone https://github.com/my/repo.git
   ```
 
-- Copy your game's disc image to `orig/GAMEID`.
+- Copy your game's disc image to `orig/RGCPGT`.
   - Supported formats: ISO (GCM), RVZ, WIA, WBFS, CISO, NFS, GCZ, TGC
   - After the initial build, the disc image can be deleted to save space.
 
@@ -100,13 +76,14 @@ Building
   python configure.py
   ```
 
-  To use a version other than `GAMEID` (USA), specify it with `--version`.
+  To use a version other than `RGCPGT` (EUR), specify it with `--version`.
 
 - Build:
 
   ```sh
   ninja
   ```
+  The final `main.dol` file will be located in `build/[VERSION]/`
 
 Diffing
 =======
@@ -118,3 +95,12 @@ Download the latest release from [encounter/objdiff](https://github.com/encounte
 Select an object from the left sidebar to begin diffing. Changes to the project will rebuild automatically: changes to source files, headers, `configure.py`, `splits.txt` or `symbols.txt`.
 
 ![](assets/objdiff.png)
+
+Credits
+=======
+
+- [GC/Wii Decompilation Discord](https://discord.gg/hKx3FJJgrV): Contains usefult resources for Wii decompilation.
+
+- [Wii Sports](https://github.com/doldecomp/ogws) and [Xenoblade Chronicles](https://github.com/xbret/xenoblade) contributors: For the library code and headers.
+
+- [decomp-toolkit](https://github.com/encounter/decomp-toolkit) contributors: For the [template](https://github.com/encounter/dtk-template) used to create this project.

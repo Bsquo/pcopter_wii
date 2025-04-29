@@ -101,7 +101,9 @@ CVFilePath CVFilePath::GetNameOnly() {
     return temp;
 }
 
-char* CVFilePath::GetFullPath() {}
+char* CVFilePath::GetFullPath() {
+    return mFilePath;
+}
 
 CVFilePath CVFilePath::CalcFullPath(CVFilePath* param) {
     CVFilePath temp;

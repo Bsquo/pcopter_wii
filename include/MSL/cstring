@@ -11,7 +11,11 @@ using ::memcpy;
 using ::memmove;
 using ::memset;
 using ::strcat;
-char* strchr(char*, int);
+
+inline char* strchr(char* s, int c) {
+    return ::strchr(s, c);
+}
+
 using ::strcmp;
 using ::strcpy;
 using ::stricmp;

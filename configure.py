@@ -367,7 +367,7 @@ config.libs = [
             Object(NonMatching, "game/scene/Game/SceneGame.cpp"),
             Object(NonMatching, "game/actor/copter/ActCopter.cpp"),
             Object(NonMatching, "game/gfx/Shadow.cpp"),
-            Object(Matching,    "game/utils/VString.cpp"),
+            Object(NonMatching,    "game/utils/VString.cpp"),
             Object(NonMatching, "game/actor/VActor.cpp"),
             Object(NonMatching, "game/app/VApp.cpp"),
             Object(NonMatching, "game/coll/VColl.cpp"),

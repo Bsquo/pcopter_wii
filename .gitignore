@@ -16,6 +16,10 @@ orig/*/*
 *.o
 *.map
 *.MAP
+!/maps/
+!/maps/**/
+!/maps/**/*.map
+!/maps/**/*.MAP
 
 # Build files
 build/

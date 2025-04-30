@@ -193,9 +193,6 @@ cflags_base = [
     "-inline auto",
     '-pragma "cats off"',
     '-pragma "warn_notinlined off"',
-    # We have to use this pragma to avoid the empty string in CVFilePath::Init()
-    # to reuse the same string as the one in CVFilePath::CVFilePath()
-    '-pragma "dont_reuse_strings on"',
     "-maxerrors 1",
     "-nosyspath",
     "-RTTI on",
@@ -227,6 +224,10 @@ cflags_game = [
     "-str pool",
     "-RTTI on",
     "-inline off",
+    '-pragma "cats on"',   # For generating the rela.* sections in the ELF, in order to match the leftover ELF.
+    # We have to use this pragma to avoid the empty string in CVFilePath::Init()
+    # to reuse the same string as the one in CVFilePath::CVFilePath()
+    '-pragma "dont_reuse_strings on"',
     "-ir include/game",
     "-ir include/nw4r",
 ]

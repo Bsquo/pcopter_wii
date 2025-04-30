@@ -201,11 +201,9 @@ cflags_base = [
     "-RTTI on",
     "-fp_contract on",
     "-str reuse",
-    "-multibyte",  # For Wii compilers, replace with `-enc SJIS`
+    "-enc SJIS",
     "-i include",
-    "-i include/MSL",
-    "-i include/nw4r",
-    "-i include/revolution",
+    "-ir include/MSL",
     f"-i build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
@@ -228,89 +226,117 @@ cflags_game = [
     "-rostr",
     "-str pool",
     "-RTTI on",
-    "-inline noauto",
-    "-i include/game/",
-    "-i libs/nw4r/include/",
-    "-i libs/revolution/include/",
+    "-inline off",
+    "-ir include/game",
+    "-ir include/nw4r",
 ]
 
-# The flags below come from the Xenoblade decompilation: https://github.com/xbret/xenoblade/blob/e426001025aa0db5e481c1279ff3a5527dd10500/configure.py#L264
+# The flags below come from the OGWS and Xenoblade decompilations
+cflags_pedantic = [
+    "-w unused",
+    "-w missingreturn",
+    "-w hidevirtual",
+    "-w filecaps",
+    "-w sysfilecaps",
+    "-w tokenpasting",
+    "-w impl_float2int",
+    '-pragma "warn_no_explicit_virtual on"',
+    "-w err",
+]
+
 # Metrowerks library flags
 cflags_runtime = [
     *cflags_base,
     "-use_lmw_stmw on",
     "-str reuse,pool,readonly",
-    "-gccinc",
-    "-common off",
-    "-inline auto",
-]
-
-cflags_mslc = [
-    *cflags_base,
-    "-use_lmw_stmw on",
-    "-str reuse,pool,readonly",
     "-fp_contract off",
-    "-inline on",
-    "-ipa file",
-    "-func_align 4",
-    "-i revolution/include/",
+    "-D_IEEE_LIBM",
 ]
 
+# MetroTRK flags
 cflags_trk = [
     *cflags_base,
     "-use_lmw_stmw on",
-    "-inline on",
-    "-func_align 4",
-    "-i NdevExi2A/include/",
-    "-i revolution/include/",
-]
-
-# Revolution library flags
-cflags_rvl_sdk = [
-    *cflags_base,
-    "-lang=c",
-    "-inline auto",
-    "-ipa file",
-    "-fp_contract off",
-    "-func_align 16",
-    "-i revolution/include/",
-]
-
-# Home Button library flags
-cflags_hbm = [
-    *cflags_base,
-    "-lang=c99",
-    "-inline auto",
-    "-ipa file",
-    "-fp_contract off",
-    "-func_align 16",
+    "-str reuse,pool,readonly",
+    "-inline deferred",
     "-sdata 0",
-    "-sdata2 0",
-    "-RTTI on",
-    "-i revolution/include/",
-    "-i revolution/hbm/include/",
 ]
 
-# Ndev flags
-cflags_ndev = [
+# NW4R utility library flags
+cflags_libnw4r_ut = [
     *cflags_base,
-    "-lang=c99",
-    "-inline auto",
+    *cflags_pedantic,
+    "-enc SJIS",
+    "-fp_contract off",
     "-ipa file",
-    "-func_align 4",
-    "-i NdevExi2A/include/",
-    "-i revolution/include/",
+    "-ir include/nw4r",
 ]
 
+# NW4R effect library flags
+cflags_libnw4r_ef = [
+    *cflags_base,
+    *cflags_pedantic,
+    "-enc SJIS",
+    "-fp_contract off",
+    "-ipa file",
+    "-ir include/nw4r",
+]
 
-# nw4r flags
-cflags_nw4r = [
+# NW4R math library flags
+cflags_libnw4r_math = [
+    *cflags_base,
+    *cflags_pedantic,
+    "-enc SJIS",
+    "-fp_contract off",
+    "-ipa file",
+    "-ir include/nw4r",
+]
+
+# NW4R sound library flags
+cflags_libnw4r_snd = [
+    *cflags_base,
+    *cflags_pedantic,
+    "-enc SJIS",
+    "-fp_contract off",
+    "-ipa file",
+    "-ir include/nw4r",
+]
+
+# NW4R 3D graphics library flags
+cflags_libnw4r_g3d = [
+    *cflags_base,
+    *cflags_pedantic,
+    "-enc SJIS",
+    "-fp_contract off",
+    "-ipa file",
+    "-ir include/nw4r",
+]
+
+# NW4R layout library flags
+cflags_libnw4r_lyt = [
+    *cflags_base,
+    *cflags_pedantic,
+    "-enc SJIS",
+    "-fp_contract off",
+    "-ipa file",
+    "-ir include/nw4r",
+]
+
+# NW4R debug library flags
+cflags_libnw4r_db = [
     *cflags_base,
     "-inline auto",
     "-fp_contract off",
     "-func_align 4",
-    "-i nw4r/include/",
-    "-i revolution/include/",
+    "-ir include/nw4r",
+]
+
+# RVL SDK flags
+cflags_rvl = [
+    *cflags_base,
+    "-enc SJIS",
+    "-fp_contract off",
+    "-ipa file",
 ]
 
 config.linker_version = "GC/3.0a3"
@@ -477,7 +503,7 @@ config.libs = [
     {
         "lib": "MSL_C.PPCEABI.bare.H",
         "mw_version": config.linker_version,
-        "cflags": cflags_mslc,
+        "cflags": cflags_runtime,
         "progress_category": "mw",
         "objects": [
             Object(NonMatching, "PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/alloc.c"),
@@ -588,7 +614,7 @@ config.libs = [
     {
         "lib": "NdevExi2A",
         "mw_version": config.linker_version,
-        "cflags": cflags_ndev,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/NdevExi2A/DebuggerDriver.c"),
@@ -599,7 +625,7 @@ config.libs = [
     {
         "lib": "ai",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/ai/ai.c"),
@@ -609,7 +635,7 @@ config.libs = [
     {
         "lib": "thp",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/thp/THPSimple.c"),
@@ -622,7 +648,7 @@ config.libs = [
     {
         "lib": "base",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/base/PPCArch.c"),
@@ -632,7 +658,7 @@ config.libs = [
     {
         "lib": "db",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/db/db.c"),
@@ -642,7 +668,7 @@ config.libs = [
     {
         "lib": "os",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/os/OS.c"),
@@ -682,7 +708,7 @@ config.libs = [
     {
         "lib": "mtx",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/mtx/mtx.c"),
@@ -695,7 +721,7 @@ config.libs = [
     {
         "lib": "dvd",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/dvd/dvdfs.c"),
@@ -711,7 +737,7 @@ config.libs = [
     {
         "lib": "vi",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/vi/vi.c"),
@@ -723,7 +749,7 @@ config.libs = [
     {
         "lib": "pad",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/pad/Pad.c"),
@@ -733,7 +759,7 @@ config.libs = [
     {
         "lib": "ax",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/ax/AX.c"),
@@ -752,7 +778,7 @@ config.libs = [
     {
         "lib": "axfx",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/axfx/AXFXReverbHi.c"),
@@ -764,7 +790,7 @@ config.libs = [
     {
         "lib": "mix",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/mix/mix.c"),
@@ -775,7 +801,7 @@ config.libs = [
     {
         "lib": "hbm",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/hbm/syn.c"),
@@ -825,7 +851,7 @@ config.libs = [
     {
         "lib": "dsp",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/dsp/dsp.c"),
@@ -837,7 +863,7 @@ config.libs = [
     {
         "lib": "gx",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/gx/GXInit.c"),
@@ -860,7 +886,7 @@ config.libs = [
     {
         "lib": "exi",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/exi/EXIBios.c"),
@@ -872,7 +898,7 @@ config.libs = [
     {
         "lib": "si",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/si/SIBios.c"),
@@ -883,7 +909,7 @@ config.libs = [
     {
         "lib": "mem",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/mem/mem_heapCommon.c"),
@@ -897,7 +923,7 @@ config.libs = [
     {
         "lib": "euart",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/euart/euart.c"),
@@ -907,7 +933,7 @@ config.libs = [
     {
         "lib": "fs",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/fs/fs.c"),
@@ -917,7 +943,7 @@ config.libs = [
     {
         "lib": "ipc",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/ipc/ipcMain.c"),
@@ -930,7 +956,7 @@ config.libs = [
     {
         "lib": "nand",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/nand/nand.c"),
@@ -943,7 +969,7 @@ config.libs = [
     {
         "lib": "sc",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/sc/scsystem.c"),
@@ -955,7 +981,7 @@ config.libs = [
     {
         "lib": "wenc",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/wenc/wenc.c"),
@@ -965,7 +991,7 @@ config.libs = [
     {
         "lib": "arc",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/arc/arc.c"),
@@ -975,7 +1001,7 @@ config.libs = [
     {
         "lib": "wpad",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/wpad/WPAD.c"),
@@ -989,7 +1015,7 @@ config.libs = [
     {
         "lib": "wud",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/wud/WUD.c"),
@@ -1001,7 +1027,7 @@ config.libs = [
     {
         "lib": "bte",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/bte/gki/gki_buffer.c"),
@@ -1078,7 +1104,7 @@ config.libs = [
     {
         "lib": "usb",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/usb/usb.c"),
@@ -1088,7 +1114,7 @@ config.libs = [
     {
         "lib": "kpad",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/kpad/KPAD.c"),
@@ -1098,7 +1124,7 @@ config.libs = [
     {
         "lib": "tpl",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/tpl/TPL.c"),
@@ -1108,7 +1134,7 @@ config.libs = [
     {
         "lib": "demo",
         "mw_version": config.linker_version,
-        "cflags": cflags_rvl_sdk,
+        "cflags": cflags_rvl,
         "progress_category": "rvl_sdk",
         "objects": [
             Object(NonMatching, "revolution/demo/DEMOInit.c"),
@@ -1118,7 +1144,7 @@ config.libs = [
     {
         "lib": "snd",
         "mw_version": config.linker_version,
-        "cflags": cflags_nw4r,
+        "cflags": cflags_libnw4r_snd,
         "progress_category": "nw4r",
         "objects": [
             Object(NonMatching, "nw4r/snd/snd_AxManager.cpp"),
@@ -1183,7 +1209,7 @@ config.libs = [
     {
         "lib": "ef",
         "mw_version": config.linker_version,
-        "cflags": cflags_nw4r,
+        "cflags": cflags_libnw4r_ef,
         "progress_category": "nw4r",
         "objects": [
             Object(NonMatching, "nw4r/ef/ef_draworder.cpp"),
@@ -1222,7 +1248,7 @@ config.libs = [
     {
         "lib": "lyt",
         "mw_version": config.linker_version,
-        "cflags": cflags_nw4r,
+        "cflags": cflags_libnw4r_lyt,
         "progress_category": "nw4r",
         "objects": [
             Object(NonMatching, "nw4r/lyt/lyt_init.cpp"),
@@ -1247,7 +1273,7 @@ config.libs = [
     {
         "lib": "ut",
         "mw_version": config.linker_version,
-        "cflags": cflags_nw4r,
+        "cflags": cflags_libnw4r_ut,
         "progress_category": "nw4r",
         "objects": [
             Object(NonMatching, "nw4r/ut/ut_list.cpp"),
@@ -1272,7 +1298,7 @@ config.libs = [
     {
         "lib": "db",
         "mw_version": config.linker_version,
-        "cflags": cflags_nw4r,
+        "cflags": cflags_libnw4r_db,
         "progress_category": "nw4r",
         "objects": [
             Object(NonMatching, "nw4r/db/db_console.cpp"),
@@ -1284,7 +1310,7 @@ config.libs = [
     {
         "lib": "g3d",
         "mw_version": config.linker_version,
-        "cflags": cflags_nw4r,
+        "cflags": cflags_libnw4r_g3d,
         "progress_category": "nw4r",
         "objects": [
             Object(NonMatching, "nw4r/g3d/res/g3d_rescommon.cpp"),
@@ -1350,7 +1376,7 @@ config.libs = [
     {
         "lib": "math",
         "mw_version": config.linker_version,
-        "cflags": cflags_nw4r,
+        "cflags": cflags_libnw4r_math,
         "progress_category": "nw4r",
         "objects": [
             Object(NonMatching, "nw4r/math/math_arithmetic.cpp"),

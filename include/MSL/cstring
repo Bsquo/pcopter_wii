@@ -4,7 +4,22 @@
 #ifdef __cplusplus
 
 namespace std {
-    char* strchr(char*, int);
+using ::__memrchr;
+using ::memchr;
+using ::memcmp;
+using ::memcpy;
+using ::memmove;
+using ::memset;
+using ::strcat;
+char* strchr(char*, int);
+using ::strcmp;
+using ::strcpy;
+using ::stricmp;
+using ::strlen;
+using ::strncat;
+using ::strncmp;
+using ::strncpy;
+using ::strstr;
 } // namespace std
 
 #endif

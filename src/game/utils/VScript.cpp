@@ -1,5 +1,8 @@
 #include "utils/VScript.h"
+#include "system/demo.h"
 #include <cstring>
+#include <revolution/DVD.h>
+#include <nw4r/ut.h>
 
 CVScriptParam::CVScriptParam() {
     mParam = 0.0f;
@@ -128,4 +131,32 @@ char* CVScript::GetString(char* label, int index) {
     }
 
     return nullptr;
+}
+
+
+
+s32 CVScript::LoadFromFile(char* filePath) {
+    DVDFileInfo info;
+    
+    if (DVDOpen(filePath, &info) == false) {
+        return false;
+    }
+    
+    mList.Release();
+    size_t fileSize = nw4r::ut::RoundUp<u32>(info.size, 32);
+    char* fileBuffer = static_cast<char*>(demo::Alloc(fileSize, 32, demo::MEM1));
+    // @bug Malformed `memset` call
+    // Memory is already cleared when allocating the buffer,
+    // so nothing happens in practice.
+    memset(fileBuffer, fileSize, '\0');
+    DVDReadPrio(&info, fileBuffer, fileSize, 0, DVD_PRIO_MEDIUM);
+    AddElementFromString(fileBuffer);
+    demo::Free(fileBuffer);
+    DVDClose(&info);
+
+    return true;
+}
+
+void CVScript::Release() {
+    mList.Release();
 }

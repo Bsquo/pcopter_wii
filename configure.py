@@ -225,6 +225,11 @@ else:
 cflags_game = [
     *cflags_base,
     "-lang=c++",
+    # For functions defined in header files, if a TU includes this header file
+    # (or other header files include this header file), said functions would be included
+    # in the TU, even if the function is not used at all.
+    # "-ipa file" is used to avoid this.
+    "-ipa file",
     "-Cpp_exceptions on",
     "-fp fmadd",
     "-use_lmw_stmw on",

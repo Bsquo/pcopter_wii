@@ -1,7 +1,7 @@
 #ifndef BACKTHREAD_H
 #define BACKTHREAD_H
 
-#include <revolution/MEM.h>
+#include <revolution/MEM/mem_allocator.h>
 
 void DisableInterrupts();
 void EnableInterrupts();

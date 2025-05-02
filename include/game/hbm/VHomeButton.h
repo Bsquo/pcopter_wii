@@ -3,7 +3,7 @@
 
 #include "utils/VString.h"
 #include <revolution/HBM.h>
-#include <revolution/MEM.h>
+#include <revolution/MEM/mem_allocator.h>
 #include <revolution/OS/OSReset.h>
 
 class CVHomeButton {

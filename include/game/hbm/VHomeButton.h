@@ -12,7 +12,7 @@ class CVHomeButton {
         void* pHomeButtonSeArchive;
         u32 is50Hz;
         HBMDataInfo mHBMDataInfo;
-        HBMControllerData mHBMControllers[4];
+        HBMControllerData mHBMControllers;
         BOOL bIsOpen;
         s32 field_0x90;
         s32 mRemoteConnectionResult[4];

@@ -353,7 +353,7 @@ cflags_rvl = [
     "-ipa file",
 ]
 
-config.linker_version = "GC/3.0a3"
+config.linker_version = "GC/3.0a5.2"
 
 
 Matching = True                   # Object matches and should be linked
@@ -382,7 +382,7 @@ config.libs = [
             Object(NonMatching, "game/gfx/Shadow.cpp"),
             Object(NonMatching, "game/utils/VString.cpp"),
             Object(NonMatching, "game/actor/VActor.cpp"),
-            Object(NonMatching, "game/app/VApp.cpp"),
+            Object(Matching,    "game/app/VApp.cpp"),
             Object(NonMatching, "game/coll/VColl.cpp"),
             Object(Matching,    "game/gfx/VColor.cpp"),
             Object(Matching,    "game/utils/VFile.cpp"),
@@ -443,8 +443,8 @@ config.libs = [
             Object(NonMatching, "game/scene/Menu/SceneMenuSoundSetting.cpp"),
             Object(NonMatching, "game/scene/Menu/SceneMenuStrap.cpp"),
             Object(NonMatching, "game/actor/MarkerMgr.cpp"),
-            Object(NonMatching, "game/scene/Menu/SceneMenuMain4.cpp"),
-            Object(NonMatching, "game/scene/Menu/SceneMenuMain3.cpp"),
+            Object(Matching,    "game/scene/Menu/SceneMenuMain4.cpp"),
+            Object(Matching,    "game/scene/Menu/SceneMenuMain3.cpp"),
             Object(NonMatching, "game/scenary/Hospital/ScnHospital02.cpp"),
             Object(NonMatching, "game/scenary/KidsRoom/ScnKidsRoom02.cpp"),
             Object(NonMatching, "game/scenary/KidsRoom/ScnKidsRoom03.cpp"),

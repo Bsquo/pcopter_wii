@@ -14,7 +14,6 @@ namespace demo {
     void Report(int, int, const char*, ...);
     void BeforeRender();
     void DoneRender(unsigned long, int, int);
-    void Report(int, int, const char*, ...);
     void InitDemoLib(const GXRenderModeObj*);
 
     namespace detail {

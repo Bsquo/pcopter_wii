@@ -2,24 +2,21 @@
 #define VHOMEBUTTON_H
 
 #include "utils/VString.h"
-#include "include/nw4r/hbm/HBMDataInfo.h"
-#include "include/nw4r/hbm/HBMControllerData.h"
-#include "include/RVL/wpad/wpad.h"
-#include "include/RVL/mtx/mtx_types.h"
-#include "include/RVL/mem/mem_allocator.h"
-#include <types.h>
+#include <revolution/HBM.h>
+#include <revolution/MEM.h>
+#include <revolution/OS/OSReset.h>
 
 class CVHomeButton {
     public:
-        void* field_0x00;                   // Pointer to an structure of 0x1D128 bytes. Allocated on MEM1.
+        void* field_0x00;
         void* pHomeButtonSeArchive;
         u32 is50Hz;
         HBMDataInfo mHBMDataInfo;
         HBMControllerData mHBMControllers[4];
         BOOL bIsOpen;
         s32 field_0x90;
-        WPADProbe_connectionResult mRemoteConnectionResult[4];
-        WPADExtensionType mControllerType[4];
+        s32 mRemoteConnectionResult[4];
+        s32 mControllerType[4];
         u8 field_0xB4[0x38];
         CVString mHBMPath;
 

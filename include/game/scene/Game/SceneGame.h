@@ -5,6 +5,7 @@
 #include "actor/Copter/ActCopter.h"
 #include "utils/VString.h"
 #include "math/VVector.h"
+#include <nw4r/g3d/g3d_scnproc.h>
 
 // Single player gameplay scene
 class CSceneGame: public CVScene {
@@ -28,7 +29,7 @@ class CSceneGame: public CVScene {
 		s32 field_0x84;
 		u32 mMissionFinishingTime;
 		s32 field_0x8C;
-		eGameplayState mGameplayState;
+		s32 mGameplayState;
 		s32 field_0x94;
 		s32 ground_smoke;
 		f32 limit_height;

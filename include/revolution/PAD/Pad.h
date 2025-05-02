@@ -7,10 +7,6 @@ extern "C" {
 
 extern u32 __PADSpec;
 
-typedef struct PADStatus {
-    u8 dummy;
-} PADStatus;
-
 typedef enum {
     PAD_FLAG_NO_RECALIBRATE = (1 << 6),
 } PADFlag;

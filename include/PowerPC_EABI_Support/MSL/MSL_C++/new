@@ -1,0 +1,25 @@
+#ifndef _STD_NEW
+#define _STD_NEW
+
+#include <MSL_C++/cstddef>
+#include <MSL_C++/exception>
+
+namespace std {
+
+    class bad_alloc : public exception {
+    public:
+        virtual ~bad_alloc() {}
+        virtual const char *what() const { return "bad_alloc"; }
+    };
+
+    struct nothrow_t {
+        explicit nothrow_t() {}
+    };
+    extern const nothrow_t nothrow;
+
+    typedef void (*new_handler)();
+    new_handler set_new_handler(new_handler new_p) throw();
+
+}
+
+#endif

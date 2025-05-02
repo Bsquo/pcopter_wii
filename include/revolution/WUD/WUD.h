@@ -13,6 +13,9 @@ extern "C" {
 #define WUD_MAX_DEV_ENTRY 16
 #define WUD_DEV_HANDLE_INVALID (-1)
 
+typedef s8 WUDDevHandle;
+#define WUD_DEV_HANDLE_INVALID	(-1)
+
 // Forward declarations
 typedef struct WUDDevInfo WUDDevInfo;
 

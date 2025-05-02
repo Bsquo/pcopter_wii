@@ -28,6 +28,9 @@ typedef signed char s8;
 typedef float f32;
 typedef double f64;
 
+typedef unsigned char byte_t;
+typedef unsigned int register_t;
+
 typedef int UNKWORD;
 typedef void UNKTYPE;
 

@@ -80,7 +80,6 @@ typedef struct _GXData {
 
 extern GXData* const __GXData;
 
-// I hate typing this name out
 #define gxdt __GXData
 
 GXFifoObj* GXInit(void*, u32);

@@ -15,6 +15,16 @@ Supported versions:
 
 We recommend joining [our Discord server](https://discord.gg/AsBpasctyc) for discussing the game, as well as for getting help if needed.
 
+Credits
+=======
+
+- [GC/Wii Decompilation Discord](https://discord.gg/hKx3FJJgrV): Contains usefult resources for Wii decompilation.
+
+- [Wii Sports](https://github.com/doldecomp/ogws), [Xenoblade Chronicles](https://github.com/xbret/xenoblade) and [Kirby's Epic Yarn](https://github.com/Swiftshine/key) decompilation projects contributors: For the library code and headers.
+
+- [decomp-toolkit](https://github.com/encounter/decomp-toolkit) contributors: For the [template](https://github.com/encounter/dtk-template) used to create this project.
+
+
 Dependencies
 ============
 
@@ -95,12 +105,3 @@ Download the latest release from [encounter/objdiff](https://github.com/encounte
 Select an object from the left sidebar to begin diffing. Changes to the project will rebuild automatically: changes to source files, headers, `configure.py`, `splits.txt` or `symbols.txt`.
 
 ![](assets/objdiff.png)
-
-Credits
-=======
-
-- [GC/Wii Decompilation Discord](https://discord.gg/hKx3FJJgrV): Contains usefult resources for Wii decompilation.
-
-- [Wii Sports](https://github.com/doldecomp/ogws) and [Xenoblade Chronicles](https://github.com/xbret/xenoblade) contributors: For the library code and headers.
-
-- [decomp-toolkit](https://github.com/encounter/decomp-toolkit) contributors: For the [template](https://github.com/encounter/dtk-template) used to create this project.

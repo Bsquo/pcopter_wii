@@ -200,10 +200,18 @@ cflags_base = [
     "-str reuse",
     "-enc SJIS",
     "-i include",
-    "-ir include/MSL",
+    "-i include/PowerPC_EABI_Support/",
+    "-i include/PowerPC_EABI_Support/MSL/",
+    "-i include/PowerPC_EABI_Support/MSL/MSL_C/",
+    "-i include/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/",
+    "-i include/PowerPC_EABI_Support/MSL/MSL_C++/",
+    "-i include/PowerPC_EABI_Support/MetroTRK/",
+    "-i include/PowerPC_EABI_Support/Runtime/",
     f"-i build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
+    "-ir include/revolution/BTE",  # Broadcom headers
+    "-DREVOLUTION",  # BTE changes
 ]
 
 # Debug flags
@@ -367,7 +375,7 @@ config.libs = [
             Object(NonMatching, "game/scene/Game/SceneGame.cpp"),
             Object(NonMatching, "game/actor/copter/ActCopter.cpp"),
             Object(NonMatching, "game/gfx/Shadow.cpp"),
-            Object(NonMatching,    "game/utils/VString.cpp"),
+            Object(NonMatching, "game/utils/VString.cpp"),
             Object(NonMatching, "game/actor/VActor.cpp"),
             Object(NonMatching, "game/app/VApp.cpp"),
             Object(NonMatching, "game/coll/VColl.cpp"),

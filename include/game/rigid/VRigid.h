@@ -2,7 +2,7 @@
 #define VRIGID_H
 
 #include "math/VAxis.h"
-#include "utils/VListBase.h"
+#include "utils/VList.h"
 #include "math/VMatrix.h"
 #include "math/VVector.h"
 

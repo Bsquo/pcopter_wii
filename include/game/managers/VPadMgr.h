@@ -3,6 +3,7 @@
 
 #include "pad/VPadData.h"
 #include "utils/VFilePath.h"
+#include "constants.h"
 
 enum eButtonType {
     BUTTON_WIIMOTE,

@@ -4,7 +4,7 @@
 #include "app/VApp.h"
 #include "utils/VFlag.h"
 #include "scene/Game/SceneGame.h"
-#include "scene/GameMulti/SceneGameMulti.h"
+#include "scene/Game/SceneGameMulti.h"
 #include "scene/Menu/Main/SceneMenuMain.h"
 #include "scene/Menu/Main/SceneMenuMain2.h"
 #include "scene/Menu/Main/SceneMenuMain3.h"

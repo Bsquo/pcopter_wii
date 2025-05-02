@@ -1,12 +1,14 @@
 #ifndef VSCENE_H
 #define VSCENE_H
 
-#include <nw4r/g3d.h>
+#include <nw4r/g3d/g3d_scnroot.h>
+#include <nw4r/g3d/g3d_obj.h>
+#include <vector>
 
 class CVScene {
 	public:
 		nw4r::g3d::ScnRoot* field_0x00;
-		void* field_0x04;			// std::vector<nw4r::g3d::G3dObj>*
+		std::vector<nw4r::g3d::G3dObj>* field_0x04;
 		s32 field_0x08;
 		s32 field_0x0C;
 		s32 field_0x10;

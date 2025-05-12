@@ -3,13 +3,13 @@
 
 #include "utils/VList.h"
 #include "utils/VString.h"
-#include <nw4r/lyt.h>
+#include <nw4hbm/lyt/lyt_arcResourceAccessor.hpp>
 
 class CVArchive: public CVListBase {
     public:
         CVString m_FilePath;
         void* m_pBuf;     // File buffer. Actual symbol.
-        nw4r::lyt::ArcResourceLink* m_pArcResourceLink;
+        nw4hbm::lyt::ArcResourceLink* m_pArcResourceLink;
 
         CVArchive();
         ~CVArchive();

@@ -21,9 +21,9 @@ class CVActorMgr {
         void AddActor(CVActor*, CVFilePath, int);
         u32 GetActorNum(int);
         s32 GetActorIndex(CVActor*, int);
-        const CVActor& GetActor(int, int);
-        const CVActor& GetStart(int);
-        const CVActor& GetNext(CVActor*, int);
+        CVActor& GetActor(int, int);
+        CVActor& GetStart(int);
+        CVActor& GetNext(CVActor*, int);
         void Move();
         void UpdateCollVtx(int);
         void UpdateArea();

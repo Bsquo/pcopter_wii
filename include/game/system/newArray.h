@@ -3,11 +3,11 @@
 #include "demo.h"
 #ifdef __cplusplus
 
-inline void* operator new[](size_t size) throw() {
+void* operator new[](size_t size) throw() {
     return demo::Alloc(size, 4, demo::MEM1);
 }
 
-inline void operator delete[](void* ptr) throw() {
+void operator delete[](void* ptr) throw() {
     return demo::Free(ptr);
 }
 

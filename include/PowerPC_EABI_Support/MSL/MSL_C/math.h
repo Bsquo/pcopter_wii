@@ -1,80 +1,109 @@
-#ifndef _MATH_H
-#define _MATH_H
+#ifndef MSL_MATH_H_
+#define MSL_MATH_H_
 
-#include "MSL_Common/math_api.h"
 #include "MSL_Common/float.h"
-#include "MSL_Common_Embedded/Math/Double_precision/fdlibm.h"
+#include "MSL_Common/math_api.h"
+
+#define M_PI    3.14159265358979323846f
+#define M_SQRT3 1.73205f
+
+#define DEG_TO_RAD(degrees) (degrees * (M_PI / 180.0f))
+#define RAD_TO_DEG(radians)                                                    \
+	(radians                                                                   \
+	 * (180.0f / M_PI + 0.000005f)) // the 0.000005f is probably a fakematch
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-#ifndef __MWERKS__
-/* Get clangd to shut up about __fabs being undefined. */
-#define __fabs(x) (x)
-#define __frsqrte(x) (x)
-#endif
+int abs(int);
+double acos(double);
+float acosf(float);
+double asin(double);
+double atan(double);
+double atan2(double, double);
+float atan2f(float, float);
+double ceil(double);
+double copysign(double, double);
+double cos(double);
+float cosf(float);
+double exp(double);
+float expf(float);
 
-/*
-#define HUGE_VALF
-#define HUGE_VALL
-*/
+extern double __fabs(double);
+extern float __fabsf(float);
+inline double fabs(double f) { return __fabs(f); }
+inline float fabsf(float f) { return __fabsf(f); }
 
-#ifndef M_PI
-#    define M_PI 3.14159265358979323846
-#endif
+double __frsqrte(double);
+float __fres(float);
 
+double floor(double);
+double fmod(double, double);
 
-#define FP_NAN 1
-#define FP_INFINITE 2
-#define FP_ZERO 3
-#define FP_NORMAL 4
-#define FP_SUBNORMAL 5
+double frexp(double, int*);
+double ldexp(double, int);
+double modf(double, double*);
+double pow(double, double);
+float powf(float, float);
+double sin(double);
+float sinf(float);
+double tan(double);
+float tanf(float);
 
-int __signbitf(float);
-int __fpclassifyf(float);
-int __signbitd(double);
-int __fpclassifyd(double);
+extern inline double sqrt(double x)
+{
+	if (x > 0.0) {
+		double guess = __frsqrte(x); /* returns an approximation to    */
+		guess
+		    = .5 * guess * (3.0 - guess * guess * x); /* now have 8 sig bits */
+		guess
+		    = .5 * guess * (3.0 - guess * guess * x); /* now have 16 sig bits */
+		guess
+		    = .5 * guess * (3.0 - guess * guess * x); /* now have 32 sig bits */
+		guess = .5 * guess
+		        * (3.0 - guess * guess * x); /* now have > 53 sig bits        */
+		return x * guess;
+	} else if (x == 0)
+		return 0;
+	else if (x)
+		return NAN;
 
-/* clang-format off */
-#define fpclassify(x) ((sizeof(x) == sizeof(float)) ? __fpclassifyf((float)(x)) : __fpclassifyd((double)(x)))
-#define signbit(x) ((sizeof(x) == sizeof(float)) ? __signbitf((float)(x)) : __signbitd((double)(x)))
-/* clang-format on */
-
-#define isfinite(x) ((fpclassify(x) > FP_INFINITE))
-/* #define isinf(x) */
-#define isnan(x) (fpclassify(x) == FP_NAN)
-#define isnormal(x) (fpclassify(x) == FP_NORMAL)
-
-/*
-#define isgreater(x, y)
-#define isgreaterequal(x, y)
-#define isless(x, y)
-#define islessequal(x, y)
-#define islessgreater(x, y)
-#define isunordered(x, y)
-*/
-
-#define MATH_ERRNO 1
-#define MATH_ERREXCEPT 2
-#define math_errhandling (MATH_ERRNO | MATH_ERREXCEPT)
-
-/*
-#define FP_FAST_FMA
-#define FP_FAST_FMAF
-#define FP_FAST_FMAL
-#define FP_ILOGB0
-#define FP_ILOGBNAN
-*/
-
-double nan(const char *str);
-
-inline long double fabsl(long double x) {
-    return __fabs((double)x);
+	return HUGE_VAL;
 }
 
 #ifdef __cplusplus
+};
+
+namespace std {
+inline float fabsf(float f) { return ::fabsf(f); }
+inline float abs(float f) { return ::fabs(f); }
+inline float fmodf(float x, float y) { return ::fmod(x, y); }
+inline float atan2f(float y, float x) { return ::atan2(y, x); }
+inline float sinf(float x) { return ::sin(x); }
+inline float cosf(float x) { return ::cos(x); }
+inline float tanf(float x) { return ::tan(x); }
+inline float powf(float e, float x) { return ::powf(e, x); }
+
+extern inline float sqrtf(float x)
+{
+	const double _half  = .5;
+	const double _three = 3.0;
+	volatile float y;
+	if (x > 0.0f) {
+		double guess = __frsqrte((double)x); // returns an approximation to
+		guess        = _half * guess
+		        * (_three - guess * guess * x); // now have 12 sig bits
+		guess = _half * guess
+		        * (_three - guess * guess * x); // now have 24 sig bits
+		guess = _half * guess
+		        * (_three - guess * guess * x); // now have 32 sig bits
+		y = (float)(x * guess);
+		return y;
+	}
+	return x;
 }
+}; // namespace std
 #endif
 
 #endif

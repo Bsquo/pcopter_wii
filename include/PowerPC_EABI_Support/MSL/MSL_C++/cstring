@@ -15,9 +15,7 @@ namespace std {
     using ::strncpy;
     using ::strxfrm;
 
-    inline char* strchr(char* s, int c) {
-        return ::strchr(s, c);
-    }
+    char* strchr(char* s, int c);
     
     using ::strcmp;
     using ::strcoll;

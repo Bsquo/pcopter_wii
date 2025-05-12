@@ -6,7 +6,9 @@
 #include "math/VMatrix.h"
 #include <nw4r/math/math_types.h>
 
-class CVMatrix;     // Forward declaration
+// Forward declarations
+class CVMatrix;
+class CVAngle;
 
 class CVAxis {
     public:

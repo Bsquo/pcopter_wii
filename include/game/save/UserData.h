@@ -1,6 +1,7 @@
 #ifndef USERDATA_H
 #define USERDATA_H
 
+#include "constants.h"
 #include <types.h>
 
 class CUserData {

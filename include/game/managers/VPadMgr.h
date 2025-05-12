@@ -66,7 +66,7 @@ class CVPadMgr {
         virtual ~CVPadMgr();
         void Init();
         static void* AllocForWPAD(u32);
-        static bool FreeForWPAD(void*);
+        static BOOL FreeForWPAD(void*);
         void GetMapID(char*, u32*, int*, int*);
         bool InitControlMap(CVFilePath);
         void Reset(s32);

@@ -236,13 +236,14 @@ cflags_game = [
     "-rostr",
     "-str pool",
     "-RTTI on",
-    "-inline off",
+    "-inline noauto",
     '-pragma "cats on"',   # For generating the rela.* sections in the ELF, in order to match the leftover ELF.
     # We have to use this pragma to avoid the empty string in CVFilePath::Init()
     # to reuse the same string as the one in CVFilePath::CVFilePath()
     '-pragma "dont_reuse_strings on"',
     "-ir include/game",
     "-ir include/nw4r",
+    "-ir include/hbm",
 ]
 
 # The flags below come from the OGWS and Xenoblade decompilations
@@ -388,7 +389,7 @@ config.libs = [
             Object(Matching,    "game/utils/VFile.cpp"),
             Object(Matching,    "game/utils/VFlag.cpp"),
             Object(Matching,    "game/utils/VList.cpp"),
-            Object(NonMatching, "game/math/VMath.cpp"),
+            Object(NonMatching,    "game/math/VMath.cpp"),
             Object(NonMatching, "game/gfx/VModel.cpp"),
             Object(NonMatching, "game/coll/VRigid.cpp"),
             Object(NonMatching, "game/scene/VScene.cpp"),
@@ -399,8 +400,8 @@ config.libs = [
             Object(NonMatching, "game/ui/VLayoutMgr.cpp"),
             Object(NonMatching, "game/effect/VEffectMgr.cpp"),
             Object(NonMatching, "game/camera/VCameraMgr.cpp"),
-            Object(NonMatching, "game/pad/VPadMgr.cpp"),
-            Object(NonMatching, "game/save/UserData.cpp"),
+            Object(NonMatching,    "game/pad/VPadMgr.cpp"),
+            Object(NonMatching,    "game/save/UserData.cpp"),
             Object(NonMatching, "game/save/SaveData.cpp"),
             Object(NonMatching, "game/scene/Menu/SceneMenuAreamap.cpp"),
             Object(NonMatching, "game/scene/Menu/SceneMenuBase.cpp"),
@@ -453,7 +454,7 @@ config.libs = [
             Object(NonMatching, "game/scenary/Park/ScnPark03.cpp"),
             Object(NonMatching, "game/scenary/Park/ScnPark05.cpp"),
             Object(NonMatching, "game/scenary/Park/ScnPark06.cpp"),
-            Object(NonMatching, "game/scenary/common/ScnRing.cpp"),
+            Object(NonMatching,    "game/scenary/common/ScnRing.cpp"),
             Object(NonMatching, "game/scenary/common/ScnStar.cpp"),
             Object(NonMatching, "game/scenary/common/ScnHeliPad.cpp"),
             Object(NonMatching, "game/scenary/Hospital/ScnHospital03.cpp"),

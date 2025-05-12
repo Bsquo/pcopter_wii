@@ -6,7 +6,8 @@ namespace std {
     using ::double_t;
     using ::float_t;
 
-    using ::fabs;
+    float fabs(float f);
+
     using ::fmod;
 
     using ::exp;
@@ -16,10 +17,12 @@ namespace std {
     using ::pow;
     using ::sqrt;
 
-    using ::sin;
-    using ::cos;
+    float sin(float f);
+
+    float cos(float f);
+
     using ::tan;
-    using ::asin;
+    float asin(float f);
     using ::acos;
     using ::atan;
     using ::atan2;

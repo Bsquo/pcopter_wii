@@ -5,7 +5,6 @@
 #include "archive/VArchive.h"
 #include "layout/VLayout.h"
 #include <nw4r/lyt.h>
-#include <nw4r/ut/Color.h>
 
 class CVLayoutMgr {
     protected:
@@ -14,7 +13,7 @@ class CVLayoutMgr {
     public:
         nw4r::lyt::DrawInfo mDrawInfo;
         u8 field_0x51[3];
-        nw4r::lyt::MultiArcResourceAccessor* pMultiArcResourceAccessor;
+        nw4hbm::lyt::MultiArcResourceAccessor* pMultiArcResourceAccessor;
         CVList mArchiveGroup;
         CVList mLayoutGroup;
 
@@ -32,7 +31,7 @@ class CVLayoutMgr {
         void SetVisibleAll(int);
         void SetState(char*, int);
         void SetAnimFrame(char*, int);
-        void SetText(char*, char*, u16);
+        void SetText(char*, char*, u16*);
         void SetAlpha(char*, char*, int, f32);
         void SetColor(char*, char*, u32, nw4r::ut::Color, f32);
         void SetScale(char*, char*, CVVector, f32);

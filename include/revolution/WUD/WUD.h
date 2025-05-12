@@ -42,8 +42,8 @@ typedef enum {
     WUD_SYNC_TYPE_SIMPLE,
 } WUDSyncType;
 
-typedef void* (*WUDAllocFunc)(u32 size);
-typedef BOOL (*WUDFreeFunc)(void* pBlock);
+typedef void* (WUDAllocFunc)(u32 size);
+typedef BOOL (WUDFreeFunc)(void* pBlock);
 
 typedef void (*WUDSyncDeviceCallback)(s32 result, s32 num);
 typedef void (*WUDClearDeviceCallback)(s32 result);

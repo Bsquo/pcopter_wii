@@ -5,7 +5,8 @@
 #include "utils/VString.h"
 #include "math/VVector.h"
 #include <nw4r/lyt.h>
-#include <nw4r/ut/Color.h>
+#include <nw4r/ut/ut_Color.h>
+#include <cwchar>
 
 class CVLayout: public CVListBase {
     public:

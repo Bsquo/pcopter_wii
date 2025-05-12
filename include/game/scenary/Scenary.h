@@ -47,7 +47,7 @@ class CScenary {
 
         // Appears to be an inline function.
         // The name of this function is unknown, so it was made up
-        void ReleaseMarkerMgr() {
+        inline void ReleaseMarkerMgr() {
             CVFlag temp;
             
             CMarkerMgr::GetInstance()->Release();

@@ -1,6 +1,8 @@
 #ifndef MSL_COMMON_FLOAT_H
 #define MSL_COMMON_FLOAT_H
 
+#include <MSL_Common_Embedded/Math/Double_precision/fdlibm.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif

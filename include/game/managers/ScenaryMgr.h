@@ -5,7 +5,7 @@
 #include "utils/VScript.h"
 #include "scenary/Scenary.h"
 #include "utils/VFilePath.h"
-#include "action/VAction.h"
+#include "utils/VAction.h"
 
 class CScenaryMgr {
     protected:

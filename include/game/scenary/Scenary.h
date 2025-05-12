@@ -28,7 +28,7 @@ class CScenary {
         virtual ~CScenary();
         virtual bool Init(CVScript*);
         virtual void Start();
-        virtual bool ExecCmd(void*);
+        virtual bool ExecCmd(CVScript*);
         virtual void Calc();
         virtual bool CalcEnding();
         virtual bool Render();
@@ -46,7 +46,7 @@ class CScenary {
         void PopStar(int, CVVector, u32);
 
         // Appears to be an inline function.
-        // The name of this function is unknown, so it was made up
+        // The name of this function is unknown, so it was made up.
         inline void ReleaseMarkerMgr() {
             CVFlag temp;
             
